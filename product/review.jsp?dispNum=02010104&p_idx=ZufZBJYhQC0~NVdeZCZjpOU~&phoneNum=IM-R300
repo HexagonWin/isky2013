@@ -1,0 +1,351 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/product/review.jsp">
+
+	<input type="hidden" name="dispNum" value="02010104">
+
+	<input type="hidden" name="p_idx" value="ZufZBJYhQC0~NVdeZCZjpOU~">
+
+	<input type="hidden" name="phoneNum" value="IM-R300">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="02010104";var phoneNum="IM-R300"</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color:#999999 ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color:#999999 ; text-decoration: none;}
+
+.location_here {color:#999999;}
+
+A.a_paging { font: 11px/14px "돋움"; color:#8a8b8f ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color:#8a8b8f ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background:#000000 url('/static/images/common/contBg_02.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background:#000000 url('/static/images/common/contBg_02.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:#000000;}
+
+.twoDepth {border-bottom:solid 1px #535663;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_02.gif') right bottom no-repeat;}
+.Location {color:#999999;border-bottom:solid 1px #535663;text-align:right;}
+.pthreeDepth {color:#999999;border-bottom:solid 1px #535663;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/product/020101_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/product/0201_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board02 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board02 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+</style>
+<script language="JavaScript" src="/static/js/product/product.js"></script>
+</head>
+<body scroll="no">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td width="140" class="PsubLeft"><script type="text/javascript">swfProductLeft('/static/flash/leftFlex.swf?PageCode=02010104&sPrm=', '100%', '100%')</script><!-- <img src="/static/flash/PsubLeft.gif" width="140" height="100" border="0" id="flashelement" /> --></td>
+		<td class="PsubRight"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+			<table width="740" cellpadding="0" cellspacing="0" border="0">
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right">
+					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><a href="javascript:menuLink('0201');"><img src="/static/images/product/02_snavi_01_.gif"></a></td>
+							<td><a href="javascript:menuLink('0202');"><img src="/static/images/product/02_snavi_02.gif"></a></td>
+							<td><a href="javascript:menuLink('0203');"><img src="/static/images/product/02_snavi_03.gif"></a></td>
+							<td><a href="javascript:menuLink('0204');"><img src="/static/images/product/02_snavi_04.gif"></a></td>
+							<td><a href="javascript:menuLink('0205');"><img src="/static/images/product/02_snavi_05.gif"></a></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+
+				<!-- [s] Ptitle & location -->
+				<tr valign="top">
+					<td><table width="740" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><!--img src="/static/images/product/ptitle_IM-R300.gif" border="0" /--><script language="javascript">
+								//swftrans("http://file.isky.co.kr/upload/isky_phone/", "90", "33");
+								swftrans("/static/flash/product/ptitle.swf?pTitle=IM-R300", "110", "33");
+							</script></div></td>
+							<td class="pthreeDepth" valign="bottom"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td width="65"><a href="/product/good.jsp?dispNum=02010101&p_idx=NNgdru0w5Sg~fd1qtddb8jQ~&phoneNum=IM-R300"><img src="/static/images/product/02_psnavi_01.gif" border="0" /></a></td>
+									<td width="77"><a href="/product/function.jsp?dispNum=02010102&p_idx=bTsMrs0Tg/c~RIQvfR7UFxQ~&phoneNum=IM-R300"><img src="/static/images/product/02_psnavi_02.gif" border="0" /></a></td>
+									<td width="74"><a href="/product/download.jsp?dispNum=02010103&p_idx=R/kXro18xG0~nTHQMAmEGUc~&phoneNum=IM-R300"><img src="/static/images/product/02_psnavi_03.gif" border="0" /></a></td>
+									<td><a href="/product/review.jsp?dispNum=02010104&p_idx=zODure2N308~OzcjMCpafgU~&phoneNum=IM-R300"><img src="/static/images/product/02_psnavi_04_.gif" border="0" /></a></td>
+								</tr>
+							</table></td>
+							<!--td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td-->
+						</tr>
+					</table></td>
+				</tr>
+
+				<!-- [e] Ptitle & location -->
+
+				<tr valign="top">
+					<!-- [s] contents Area -->
+					<td width="740" class="contentsAreaP2"><table width="720" cellpadding="0" cellspacing="0" border="0">
+						<tr align="right" valign="top">
+							<td height="30" colspan="2"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td><a xhref="#" style='cursor:hand;' onClick='goScrapSourceSpecSwf("http://file.isky.co.kr/upload/isky_phone/IM-R300(0).swf")'><img src="/static/images/product/btn_source.gif" border="0"></a></td>
+								</tr>
+							</table></td>
+						</tr>
+
+						<tr valign="top">
+							<td width="300" align="center"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td><script language="javascript">swftrans("http://file.isky.co.kr/upload/isky_phone/IM-R300(0).swf", "300", "362");</script></td>
+								</tr>
+								<tr valign="top">
+									<td style="font:12px/16px 돋움; color:#787878;" align="center">※ 제품 기능향상 및 개선을 위해 사양 및 디자인이 <br />&nbsp;&nbsp;&nbsp;&nbsp;일부 변경될 수 있습니다.</td>
+								</tr>
+							</table></td>
+							<td width="420"><table width="420" cellpadding="0" cellspacing="0" border="0">
+
+
+
+								<!-- page //--
+								<div class="page">
+									&nbsp;<b>1</b>&nbsp;
+								</div>
+								!--// page -->
+
+								<!--tr valign="top">
+									<td colspan="2" class="p20l p30b"><dl class="reviewList">
+										<dt><a href="#"><img src="/static/images/product/review_thumb_01.jpg" border="0"></a></dt>
+										<dd><table width="" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top">
+												<td class="model">[IM-S240K]</td>
+												<td class="name" align="right"><b>Skylove</b> 추천:0</td>
+											</tr>
+											<tr>
+												<td class="title" colspan="2">제목제목제목</td>
+											</tr>
+											<tr>
+												<td class="txt" colspan="2">내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 </td>
+											</tr>
+										</table></dd>
+									</dl></td>
+								</tr-->
+								<!-- [e] 전문가 리뷰 -->
+
+
+
+								<!-- [s] 사용자 리뷰 -->
+								<tr>
+									<td><img src="/static/images/product/review_stit_02.gif"></td>
+									<td align="right"><a href="javascript:menuLink('0401');"><img src="/static/images/product/btn_more.gif" border="0"></a></td>
+								</tr>
+								<tr><td height="7"></td></tr>
+
+								<!-- [s] 반복 : 사용자 리뷰 內 -->
+								<tr valign="top">
+									<td colspan="2" class="p20l p15b"><dl class="UreviewList">
+										<dt><a href="/lounge/review/product_view.jsp?num=4429"><img src='http://file.isky.co.kr/upload/isky_phone/IM-R300_m.gif' xwidth='94' xheight='75'></a></dt>
+										<dd><table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top">
+												<td class="model">[IM-R300]</td>
+												<td class="name" align="right"><b>alstn32</b>&nbsp; 추천:0</td>
+											</tr>
+											<tr>
+												<td class="title" colspan="2"><a href="/lounge/review/product_view.jsp?num=4429" title="조회수:2392 작성일:2008-07-02"><span style='color=#ffffff;'>오늘 질렀는데요 최고에요...</span></a></td>
+											</tr>
+											<tr>
+												<td class="txt" colspan="2">나온지 얼마 안&#46124;다고 가격쌔더라구요?? 71마넌....근데 가격 값 제대로 하네요 진짜 최고에요 외장되...</td>
+											</tr>
+										</table></dd>
+									</dl></td>
+								</tr>
+								<!-- [e] 반복 : 사용자 리뷰 內 -->
+
+								<!-- [s] 반복 : 사용자 리뷰 內 -->
+								<tr valign="top">
+									<td colspan="2" class="p20l p15b"><dl class="UreviewList">
+										<dt><a href="/lounge/review/product_view.jsp?num=4424"><img src='http://file.isky.co.kr/upload/isky_phone/IM-R300_m.gif' xwidth='94' xheight='75'></a></dt>
+										<dd><table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top">
+												<td class="model">[IM-R300]</td>
+												<td class="name" align="right"><b>vwindv</b>&nbsp; 추천:0</td>
+											</tr>
+											<tr>
+												<td class="title" colspan="2"><a href="/lounge/review/product_view.jsp?num=4424" title="조회수:1457 작성일:2008-07-01"><span style='color=#ffffff;'>드뎌 받았다 ㅋㅋ</span></a></td>
+											</tr>
+											<tr>
+												<td class="txt" colspan="2">아~~ 드디어 오늘 개통 ㅎㅎ&nbsp;스키니폰의 잦은 고장과 작은 메모리에 좌절해서 뭘로 바꾸지 고민하던차에&nb...</td>
+											</tr>
+										</table></dd>
+									</dl></td>
+								</tr>
+								<!-- [e] 반복 : 사용자 리뷰 內 -->
+
+								<!-- [s] 반복 : 사용자 리뷰 內 -->
+								<tr valign="top">
+									<td colspan="2" class="p20l p15b"><dl class="UreviewList">
+										<dt><a href="/lounge/review/product_view.jsp?num=4405"><img src='http://file.isky.co.kr/upload/isky_phone/IM-R300_m.gif' xwidth='94' xheight='75'></a></dt>
+										<dd><table width="100%" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top">
+												<td class="model">[IM-R300]</td>
+												<td class="name" align="right"><b>hkm0667</b>&nbsp; 추천:0</td>
+											</tr>
+											<tr>
+												<td class="title" colspan="2"><a href="/lounge/review/product_view.jsp?num=4405" title="조회수:2371 작성일:2008-07-01"><span style='color=#ffffff;'>&#52573;오예효 !! IM - R 300 이거 찾아 다니느라 죽을뻔 ㅋㅋ</span></a></td>
+											</tr>
+											<tr>
+												<td class="txt" colspan="2">터치 생각하면 별로 라는 생각이 먼저 들더라구요 [다른 핸드폰을 말하는 것임 ㄷㄷ;;ㅋ]제가 모바일게임을 많이해서요...</td>
+											</tr>
+										</table></dd>
+									</dl></td>
+								</tr>
+								<!-- [e] 반복 : 사용자 리뷰 內 -->
+
+								<!-- page //--
+								<div class="page">
+									<b>1</b>&nbsp;|&nbsp;&nbsp;<a href=?page=2&>2</a>&nbsp;|&nbsp;&nbsp;<a href=?page=3&>3</a>&nbsp;|&nbsp;&nbsp;<a href=?page=4&>4</a>&nbsp;|&nbsp;&nbsp;<a href=?page=5&>5</a>&nbsp;|&nbsp;&nbsp;<a href=?page=6&>6</a>&nbsp;|&nbsp;&nbsp;<a href=?page=7&>7</a>&nbsp;|&nbsp;&nbsp;<a href=?page=8&>8</a>&nbsp;
+								</div>
+								!--// page -->
+
+								<!--tr valign="top">
+									<td colspan="2" class="p20l p15b"><dl class="UreviewList">
+										<dt><a href="#"><img src="/static/images/product/reviewU_thumb_01.jpg" border="0"></a></dt>
+										<dd><table width="" cellpadding="0" cellspacing="0" border="0">
+											<tr valign="top">
+												<td class="model">[IM-S240K]</td>
+												<td class="name" align="right"><b>Skylove</b> 추천:0</td>
+											</tr>
+											<tr>
+												<td class="title" colspan="2">제목제목제목</td>
+											</tr>
+											<tr>
+												<td class="txt" colspan="2">내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 내용글 </td>
+											</tr>
+										</table></dd>
+									</dl></td>
+								</tr-->
+								<!-- [e] 사용자 리뷰 -->
+							</table></td>
+						</tr>
+					</table></td>
+					<!-- [s] contents Area -->
+				</tr>
+
+			</table>
+			</div></div></td>
+	</tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function LeftFlashHeight(){
+
+	document.getElementById("productLeftFlash").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+
+//	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+	parent.document.getElementById("adBanner").innerHTML = "";
+
+//alert(document.getElementById("bodyTable").style.height);
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/product/review.jsp";
+refurl_param = "&dispNum=02010104&p_idx=ZufZBJYhQC0~NVdeZCZjpOU~&phoneNum=IM-R300";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 02010104;
+	parent.callExternalInterface(1);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

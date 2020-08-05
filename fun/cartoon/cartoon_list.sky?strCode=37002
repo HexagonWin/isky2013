@@ -1,0 +1,300 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/fun/cartoon/cartoon_list.sky?strCode=37002[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/fun/cartoon/cartoon_list.sky?strCode=37002[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/fun/cartoon/cartoon_list.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100623");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Fun.css" />
+<script>var dispNum="0303"; var firstDepth ="03";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function goList(targetPage, targetGroup) {
+	
+		var obj = $('cartoon');
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/fun/cartoon/cartoon_list.sky";
+		obj.submit();
+	}
+
+	function CartoonView(intSeq){
+		location.href = "/fun/cartoon/cartoon_view.sky?dispNum=&strCode=37002&intSeq=" + intSeq;
+	}
+
+</script>
+<script type="text/javascript">
+<!--
+var max = 3;
+function view_focus(focusnum) 
+{
+	for(var i = 1; i <= max; i++)
+	{
+		if(document.getElementById('focus_rolling_'+i) != null)
+		{
+			if(focusnum == i)
+			{
+				if(document.getElementById('btn_img_'+i) != null)
+					//document.getElementById('btn_img_'+i).className = 'btn_on_'+ i;
+					document.getElementById('focus_rolling_'+i).style.display = 'block';
+			}
+			else
+			{
+				if(document.getElementById('btn_img_'+i) != null)
+					//document.getElementById('btn_img_'+i).className = 'btn_off_'+ i;
+					document.getElementById('focus_rolling_'+i).style.display = 'none';
+			}
+		}
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body>
+<form name="cartoon" id="cartoon">
+	<input type="hidden" name="targetPage" id="targetPage" value="1"/>
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1"/>
+	<input type="hidden" name="dispNum" value=""/>
+	<input type="hidden" name="strCode" value="37002"/>
+</form>
+<div id="Wrap" class="fun">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0303&LogSess=N','740','26','','','transparent','')</script></div>
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Fun.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"></div>
+		</div>
+		
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Contents.swf?PageCode=0303','740','81','','','transparent','')</script></div>
+		
+		<div id="Content">
+			<!-- <div id="focus_rolling_1" class="visualCartoon">
+				<script>swf_include('/static/flash/cartoon_banner.swf','720','386','always','','transparent','')</script>
+			</div> -->
+
+			<div class="visualCartoonV" style="background:url('/static/images/fun/cartoon/cartoonV_vis_37002.gif') 0 50px no-repeat;">
+				<!-- <div class="btn"><a href="javascript:CartoonView('')"><img src="/static/images/fun/cartoon/btn_viewFirst.gif" border="0" alt="첫회보기" title="첫회보기" /></a> <a href="javascript:CartoonList()"><img src="/static/images/fun/cartoon/btn_list2.gif" border="0" alt="목록보기" title="목록보기" /></a></div> -->
+			</div>
+
+			<div class="cartoon_cont02">
+				
+				<dl class="list"
+					><dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('ohNrOLA4Uvw~VzOjoLZZsV8~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_53.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[53화]이젠 안녕</li
+						><li class="date">2010.04.13&nbsp;&nbsp;hit:52,433</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('/Ier02ZPSBA~Ky4BNIw3cjg~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_52.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[52화]하얀 미스...</li
+						><li class="date">2010.04.07&nbsp;&nbsp;hit:53,028</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('9jtDkkcL5iY~tWlanaWld0I~')"><img src="http://file.isky.co.kr/upload/content/cartoon/mon_51.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[51화]샬라샬라</li
+						><li class="date">2010.03.30&nbsp;&nbsp;hit:49,404</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('wqmm9BXpd5Q~EwNumrDX0c4~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_50.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[50화]가지마세 ...</li
+						><li class="date">2010.03.24&nbsp;&nbsp;hit:53,795</li
+					></ul></dd
+					>
+				
+				<dd class='last'><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('YUcv3bRxwSs~naeadC_aWUc~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_49.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[49화]삐용삐용</li
+						><li class="date">2010.03.16&nbsp;&nbsp;hit:67,021</li
+					></ul></dd
+					></dl>
+				
+				<dl class="list"
+					><dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('pI6I6D5x9c4~5tWT0PHGzZ0~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_48[1].gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[48화]열어줘</li
+						><li class="date">2010.03.10&nbsp;&nbsp;hit:65,351</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('iqXjCZjwzGY~UG9kzx1xpWA~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_47.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[47화]반갑지 않...</li
+						><li class="date">2010.03.02&nbsp;&nbsp;hit:57,939</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('Pk0_ywgsS/k~AzNhy9ZmjRA~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_46[1].gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[46화]삐용삐용</li
+						><li class="date">2010.02.23&nbsp;&nbsp;hit:62,839</li
+					></ul></dd
+					>
+				
+				<dd><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('TiCqiJOol14~It3bVXLeTmU~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_45.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[45화]배려의 차...</li
+						><li class="date">2010.02.16&nbsp;&nbsp;hit:67,242</li
+					></ul></dd
+					>
+				
+				<dd class='last'><ul
+						><li class="thumbBox"><a href="javascript:CartoonView('r889sJzE_Jg~lNJRRXjSyO0~')"><img src="http://file.isky.co.kr/upload/content/cartoon/wed_44.gif" border="0" class="thumb" width='101' height='101'/></a></li
+						><li class="title">[44화]오타쟁이</li
+						><li class="date">2010.02.09&nbsp;&nbsp;hit:66,306</li
+					></ul></dd
+					></dl>
+				
+			</div>
+			
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #aac087;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+
+</body>
+</html>

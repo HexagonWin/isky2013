@@ -1,0 +1,490 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>It's different, SKY</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+
+<!-- 공통 js -css 영역 -->
+<script language="JavaScript" src="./js/album.js"></script>
+</HEAD>
+<BODY>
+<div class="ALL" style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%">
+<table class="LAYOUT" style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_left.gif); WIDTH: 950px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+	<tr>
+		<td valign="top" align="right" width="222" >
+		        <!-- 좌측-상단 메뉴 START -->
+			<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+				height="475" width="222" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+				<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/left/isky_mypage.swf?code=AA1">
+				<embed src="http://file.isky.co.kr/flash/left/isky_mypage.swf?code=AA1">
+		</OBJECT>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:goURL('A')"><IMG SRC="http://file.isky.co.kr/images/com/left_mypage_title.jpg" WIDTH="222" HEIGHT="19"></a><BR>
+		</td>
+	</tr>
+</table>
+			<!-- 좌측-상단 메뉴 END -->
+			<!-- 사용자 정보 영역 START -->
+			
+<iframe name="leftlogin" src="/WUC/leftLogin.aspx?wbSurl=http://www.isky.co.kr/mobile/main.asp&amp;wbExt=" width="222" height="138" border="0" NORESIZE SCROLLING=no FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0></iframe>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<IMG SRC="http://file.isky.co.kr/images/com/left_deco_bottom.jpg"><BR>
+		</tD>
+	</tr>
+</table>
+			<!-- 사용자 정보 영역 END -->
+		</td>
+		<td vAlign="top" align="left" width="*">
+			<!-- 우측 상단 플래쉬 메뉴 영역 START -->
+			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+	<td style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); BACKGROUND-REPEAT: repeat-x">
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+		height="169" width="728" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+		
+		<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N">
+		<embed src="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N" width=728 height=169>
+		
+		</OBJECT>
+	</td>
+	</tr>
+</table>
+
+			
+
+			<!-- 우측 상단 플래쉬 메뉴 영역 END -->
+			<table cellSpacing="0" cellPadding="0" width="728" border="0">
+				<tr>
+					<td>
+					
+					<!-- 컨텐츠 BODY 역역 START -->
+					<DIV class="CONTENTS">
+					<!-- path 영역 --><DIV class="LINEMAP"><a href="http://www.isky.co.kr">Home</a> &gt; <a href="/User/Mypage/MypageMain.aspx?menuCode=A">마이페이지</a> &gt; 포토앨범</DIV><!-- path 영역 -->
+					<!-- 타이틀 이미지 영역 START-->
+					<IMG SRC="http://file.isky.co.kr/images/mypage/mobile_album_title.gif"><BR>
+					<!-- 타이틀 이미지 영역 End-->
+					<!-- 타이틀 카피 영역 START-->
+					<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" CLASS="BD2">
+					<TR>
+					<TD><IMG SRC="http://file.isky.co.kr/images/mypage/mobile_album_title_txt.gif"></TD>
+					<TD ALIGN="RIGHT"><IMG SRC="http://file.isky.co.kr/images/mypage/mobile_album_title_illust.gif"></TD>
+					</TR>
+					</TABLE>
+					<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+					<!-- 타이틀 카피 영역 END-->
+
+
+
+					<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="690" HEIGHT="44" background="http://file.isky.co.kr/images/mobile/search_bg.gif">
+					<TR>
+						<td width=12></td>
+						<!--------------------------------------------->
+						<!-- 아래이미지 태그의 width를 0~160px으로.. -->
+						<!--------------------------------------------->
+						  
+						<TD width=166>
+							<div style="width:100%; height:9px; margin:15 3 5 3; background-color:#CFCFCF"><img src="http://file.isky.co.kr/images/mypage/main_top_gauge.gif" width="9.46%" height=9 align=absmiddle></div>
+							0<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="70" HEIGHT="1">50<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="60" HEIGHT="1">100<BR>
+						<td width=512>
+							<div style="padding:2 0 0 38">
+								<img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" align=absmiddle>&nbsp;이미지 저장 공간 : <span class="brown_search"><b>9.46 /100M</b></span>
+							</div>
+						</td>
+					</TR>
+					</TABLE>
+					<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+
+
+
+					<STYLE TYPE="TEXT/CSS">
+					#LINE_2 { HEIGHT:1PX; BACKGROUND-IMAGE:URL('http://file.isky.co.kr/images/com/line_dot_02.gif'); FONT-SIZE:1PX; }
+					</STYLE>
+		
+		
+				<DIV class="CONTENTS_SUB">
+				<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="690" HEIGHT="25" >
+				<TR>
+				  <td>① SKT 가입자의 경우 휴대폰 내 포토를 <b><span class="brown_search">[*7800]</span></b>으로 전송하시면 MyPage > <span class="brown_search"><b>포토앨범</b></span>으로 등록됩니다.</td>
+				</tr>
+				<TR>
+				  <td>② 전송시 <b><span class="brown_search">정보이용료</span></b>는 부과되지 않습니다. <b><span class="brown_search">SKT 데이타이용료(50K미만-200원)</span></b>이 소요됩니다.</td>
+				</tr>
+				</table>  
+				<!-- 리스트 -->
+				<IMG SRC="http://file.isky.co.kr/images/community/photo_contest_deco_top.gif" WIDTH="100%" HEIGHT="4"><BR>
+
+
+				<DIV STYLE="BORDER:1PX SOLID #E7D2D2; WIDTH:100%; PADDING:20PX 10PX 10PX 10PX;">
+					<form name="srch_list" method="post" action="process_db.asp">
+					<input type=hidden name="smode">
+					<input type=hidden name="seq">
+					<input type=hidden name="MsgID">
+					<input type=hidden name="class2_1">
+					<input type=hidden name="title">
+					<input type=hidden name="comment">
+					<input type=hidden name="class2">
+					<input type=hidden name="class2_won">
+					<input type=hidden name=img_name>
+					<input type=hidden name=file_name>
+                                        <input type=hidden name=file_size>
+					<input type=hidden name=imgwidth>
+					<input type=hidden name=imgheight>
+					<input type=hidden name=Score>
+					
+					<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="647">
+					<col width=323 align=left></col><col width=1></col><col width=323 align=right></col>
+					
+					<style type="text/css">
+					textarea{FONT-FAMILY:"돋움","굴림";FONT-SIZE:12PX;COLOR:#666666;	LINE-HEIGHT:16PX;TEXT-DECORATION:NONE;	}
+					</style>
+
+					
+						<tr>
+						
+						<td>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311">
+							<tr height=25 valign=top>
+								<td colspan=2 class="brown">
+									<input type=checkbox class="NO" name=checkbox value=59945|1 style="height:14px"> 인화할 사진선택
+								</td>
+							</tr>
+							<tr valign=top>
+								<td width=135><A HREF="javascript:prev_photo('640','480','http://file.isky.co.kr/ATT01/2005/ALM/ph_album/011911560168.jpg');"><img src="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/011911560168.jpg" CLASS="BBS_PHOTO" onload="TresizeImage(this);" width="120" height="96" name="img59945" border="0"></a></td>
+								<td width=176>
+									<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="176">
+									<col width=56></col><col width=120></col>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;제목&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><input type=text name="title" style="width:120; padding-left:3; background-color:#FFFFFF; color:#666666" value="제목없음"></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;내용&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><textarea name="comment"  style="width:120; height:53; padding:2 2 2 3; background-color:#FFFFFF; color:#666666"></textarea></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;등록일&nbsp;:&nbsp;</td>
+										<td>2005-08-10</td>
+									</tr>
+									<tr height=32>
+										<td colspan=2 align=right>
+											<a href="javascript:photo_modify('1','59945');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r1.gif" align=absmiddle></a>
+											<a href="javascript:delete_modify('1','59945');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r2.gif" align=absmiddle></a>
+										</td>
+									</tr>
+									</table>
+									<input type=hidden name="class2_won" value="">
+									<input type=hidden name=img_name value="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/011911560168.jpg">
+									<input type=hidden name=file_name value="011911560168.jpg">
+									<input type=hidden name=file_size value="70616">
+									<input type=hidden name=imgwidth value="640">
+									<input type=hidden name=imgheight value="480">
+									<input type=hidden name=Score value="">
+								</td>
+							</tr>
+							</table>
+							
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311" height="37" bgcolor="#F6F6F6" style="border:solid 1 #EBEBEB">
+							<tr>
+								<td width=90><img src="http://file.isky.co.kr/images/mypage/mobile_album_st.gif"></td>
+								<td width=173>
+									<SCRIPT LANGUAGE="Javascript">
+									SELECT("<SELECT NAME='class2' STYLE='WIDTH:128PX;'>\n"
+									+"  <OPTION VALUE=''>주제선택</OPTION>\n"
+									+"  <OPTION VALUE='인물'>인물</OPTION>\n"
+									+"  <OPTION VALUE='배경'>배경</OPTION>\n"
+									+"  <OPTION VALUE='자랑거리'>자랑거리</OPTION>\n"
+									+"  <OPTION VALUE='기타'>기타</OPTION>\n"
+									+"</SELECT>");
+									</SCRIPT>
+								</td>
+								<td width=48><a href="javascript:photo_reg('1','59945');"><img src="http://file.isky.co.kr/images/mypage/btn_register.gif" align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td>
+						<td bgcolor="#E2E2E2"></td>
+						<td>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311">
+							<tr height=25 valign=top>
+								<td colspan=2 class="brown">
+									<input type=checkbox class="NO" name=checkbox value=59859|2 style="height:14px"> 인화할 사진선택
+								</td>
+							</tr>
+							<tr valign=top>
+								<td width=135><A HREF="javascript:prev_photo('240','320','http://file.isky.co.kr/ATT01/2005/ALM/ph_album/010631675861.jpg');"><img src="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/010631675861.jpg" CLASS="BBS_PHOTO" onload="TresizeImage(this);" width="120" height="96" name="img59859" border="0"></a></td>
+								<td width=176>
+									<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="176">
+									<col width=56></col><col width=120></col>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;제목&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><input type=text name="title" style="width:120; padding-left:3; background-color:#FFFFFF; color:#666666" value="제목없음"></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;내용&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><textarea name="comment"  style="width:120; height:53; padding:2 2 2 3; background-color:#FFFFFF; color:#666666"></textarea></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;등록일&nbsp;:&nbsp;</td>
+										<td>2005-08-10</td>
+									</tr>
+									<tr height=32>
+										<td colspan=2 align=right>
+											<a href="javascript:photo_modify('2','59859');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r1.gif" align=absmiddle></a>
+											<a href="javascript:delete_modify('2','59859');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r2.gif" align=absmiddle></a>
+										</td>
+									</tr>
+									</table>
+									<input type=hidden name="class2_won" value="">
+									<input type=hidden name=img_name value="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/010631675861.jpg">
+									<input type=hidden name=file_name value="010631675861.jpg">
+									<input type=hidden name=file_size value="15460">
+									<input type=hidden name=imgwidth value="240">
+									<input type=hidden name=imgheight value="320">
+									<input type=hidden name=Score value="">
+								</td>
+							</tr>
+							</table>
+							
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311" height="37" bgcolor="#F6F6F6" style="border:solid 1 #EBEBEB">
+							<tr>
+								<td width=90><img src="http://file.isky.co.kr/images/mypage/mobile_album_st.gif"></td>
+								<td width=173>
+									<SCRIPT LANGUAGE="Javascript">
+									SELECT("<SELECT NAME='class2' STYLE='WIDTH:128PX;'>\n"
+									+"  <OPTION VALUE=''>주제선택</OPTION>\n"
+									+"  <OPTION VALUE='인물'>인물</OPTION>\n"
+									+"  <OPTION VALUE='배경'>배경</OPTION>\n"
+									+"  <OPTION VALUE='자랑거리'>자랑거리</OPTION>\n"
+									+"  <OPTION VALUE='기타'>기타</OPTION>\n"
+									+"</SELECT>");
+									</SCRIPT>
+								</td>
+								<td width=48><a href="javascript:photo_reg('2','59859');"><img src="http://file.isky.co.kr/images/mypage/btn_register.gif" align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td>
+						   
+					</tr>
+					
+					
+					<tr><td colspan=3><DIV ID="LINE_2" STYLE="WIDTH:647px;" STYLE="MARGIN:18PX 0PX 18PX 0PX;"></DIV></td></tr>
+						<tr>
+						
+						<td>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311">
+							<tr height=25 valign=top>
+								<td colspan=2 class="brown">
+									<input type=checkbox class="NO" name=checkbox value=59289|3 style="height:14px"> 인화할 사진선택
+								</td>
+							</tr>
+							<tr valign=top>
+								<td width=135><A HREF="javascript:prev_photo('600','800','http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01193993127.jpg');"><img src="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01193993127.jpg" CLASS="BBS_PHOTO" onload="TresizeImage(this);" width="120" height="96" name="img59289" border="0"></a></td>
+								<td width=176>
+									<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="176">
+									<col width=56></col><col width=120></col>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;제목&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><input type=text name="title" style="width:120; padding-left:3; background-color:#FFFFFF; color:#666666" value="제목없음"></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;내용&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><textarea name="comment"  style="width:120; height:53; padding:2 2 2 3; background-color:#FFFFFF; color:#666666"></textarea></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;등록일&nbsp;:&nbsp;</td>
+										<td>2005-08-06</td>
+									</tr>
+									<tr height=32>
+										<td colspan=2 align=right>
+											<a href="javascript:photo_modify('3','59289');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r1.gif" align=absmiddle></a>
+											<a href="javascript:delete_modify('3','59289');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r2.gif" align=absmiddle></a>
+										</td>
+									</tr>
+									</table>
+									<input type=hidden name="class2_won" value="">
+									<input type=hidden name=img_name value="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01193993127.jpg">
+									<input type=hidden name=file_name value="01193993127.jpg">
+									<input type=hidden name=file_size value="148432">
+									<input type=hidden name=imgwidth value="600">
+									<input type=hidden name=imgheight value="800">
+									<input type=hidden name=Score value="">
+								</td>
+							</tr>
+							</table>
+							
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311" height="37" bgcolor="#F6F6F6" style="border:solid 1 #EBEBEB">
+							<tr>
+								<td width=90><img src="http://file.isky.co.kr/images/mypage/mobile_album_st.gif"></td>
+								<td width=173>
+									<SCRIPT LANGUAGE="Javascript">
+									SELECT("<SELECT NAME='class2' STYLE='WIDTH:128PX;'>\n"
+									+"  <OPTION VALUE=''>주제선택</OPTION>\n"
+									+"  <OPTION VALUE='인물'>인물</OPTION>\n"
+									+"  <OPTION VALUE='배경'>배경</OPTION>\n"
+									+"  <OPTION VALUE='자랑거리'>자랑거리</OPTION>\n"
+									+"  <OPTION VALUE='기타'>기타</OPTION>\n"
+									+"</SELECT>");
+									</SCRIPT>
+								</td>
+								<td width=48><a href="javascript:photo_reg('3','59289');"><img src="http://file.isky.co.kr/images/mypage/btn_register.gif" align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td>
+						<td bgcolor="#E2E2E2"></td>
+						<td>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311">
+							<tr height=25 valign=top>
+								<td colspan=2 class="brown">
+									<input type=checkbox class="NO" name=checkbox value=59201|4 style="height:14px"> 인화할 사진선택
+								</td>
+							</tr>
+							<tr valign=top>
+								<td width=135><A HREF="javascript:prev_photo('320','240','http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01071505819.jpg');"><img src="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01071505819.jpg" CLASS="BBS_PHOTO" onload="TresizeImage(this);" width="120" height="96" name="img59201" border="0"></a></td>
+								<td width=176>
+									<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="176">
+									<col width=56></col><col width=120></col>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;제목&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><input type=text name="title" style="width:120; padding-left:3; background-color:#FFFFFF; color:#666666" value="제목없음"></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;내용&nbsp;&nbsp;&nbsp;:&nbsp;</td>
+										<td><textarea name="comment"  style="width:120; height:53; padding:2 2 2 3; background-color:#FFFFFF; color:#666666"></textarea></td>
+									</tr>
+									<tr valign=top>
+										<td><img src="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=7 align=absmiddle>&nbsp;등록일&nbsp;:&nbsp;</td>
+										<td>2005-08-05</td>
+									</tr>
+									<tr height=32>
+										<td colspan=2 align=right>
+											<a href="javascript:photo_modify('4','59201');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r1.gif" align=absmiddle></a>
+											<a href="javascript:delete_modify('4','59201');"><img src="http://file.isky.co.kr/images/mypage/mobile_address_btn_r2.gif" align=absmiddle></a>
+										</td>
+									</tr>
+									</table>
+									<input type=hidden name="class2_won" value="">
+									<input type=hidden name=img_name value="http://file.isky.co.kr/ATT01/2005/ALM/ph_album/01071505819.jpg">
+									<input type=hidden name=file_name value="01071505819.jpg">
+									<input type=hidden name=file_size value="15426">
+									<input type=hidden name=imgwidth value="320">
+									<input type=hidden name=imgheight value="240">
+									<input type=hidden name=Score value="">
+								</td>
+							</tr>
+							</table>
+							
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="311" height="37" bgcolor="#F6F6F6" style="border:solid 1 #EBEBEB">
+							<tr>
+								<td width=90><img src="http://file.isky.co.kr/images/mypage/mobile_album_st.gif"></td>
+								<td width=173>
+									<SCRIPT LANGUAGE="Javascript">
+									SELECT("<SELECT NAME='class2' STYLE='WIDTH:128PX;'>\n"
+									+"  <OPTION VALUE=''>주제선택</OPTION>\n"
+									+"  <OPTION VALUE='인물'>인물</OPTION>\n"
+									+"  <OPTION VALUE='배경'>배경</OPTION>\n"
+									+"  <OPTION VALUE='자랑거리'>자랑거리</OPTION>\n"
+									+"  <OPTION VALUE='기타'>기타</OPTION>\n"
+									+"</SELECT>");
+									</SCRIPT>
+								</td>
+								<td width=48><a href="javascript:photo_reg('4','59201');"><img src="http://file.isky.co.kr/images/mypage/btn_register.gif" align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td>
+						   
+					</tr>
+					
+					
+					
+
+					
+					
+					
+					</table>
+
+
+					<!-- 페이징 & 버튼 -->
+					<TABLE ID="BBS_LIST" CELLPADDING="0" CELLSPACING="0" STYLE="MARGIN-TOP:15PX;" WIDTH="100%">
+					<TR height=30>
+						<TD ALIGN="CENTER">
+							
+							<IMG SRC='http://file.isky.co.kr/images/com/bbs_paging_first.gif' ALIGN='ABSMIDDLE' CLASS='BLT'> <a href='./album_list.asp?ddd=&gotopage=6&startpage=1'><IMG SRC='http://file.isky.co.kr/images/com/bbs_paging_prev.gif' ALIGN='ABSMIDDLE' CLASS='BLT'> </a><a href='./album_list.asp?ddd=&gotopage=1&startpage=1'>1</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=2&startpage=1'>2</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=3&startpage=1'>3</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=4&startpage=1'>4</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=5&startpage=1'>5</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=6&startpage=1'>6</a>&nbsp;&nbsp;<b>7</b>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=8&startpage=1'>8</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=9&startpage=1'>9</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=10&startpage=1'>10</a>&nbsp;&nbsp;<a href='./album_list.asp?ddd=&gotopage=8&startpage=1'> <IMG SRC='http://file.isky.co.kr/images/com/bbs_paging_next.gif' ALIGN='ABSMIDDLE' CLASS='BLT' STYLE='MARGIN-LEFT:-6PX;'></a><a href='./album_list.asp?ddd=&gotopage=11&startpage=11'> <IMG SRC='http://file.isky.co.kr/images/com/bbs_paging_end.gif' ALIGN='ABSMIDDLE' CLASS='BLT'></a>							</TD>
+						</TD>
+					</tr>
+					<tr>
+						<TD ALIGN="RIGHT">
+							<A HREF="javascript:select_submit();"><IMG SRC="http://file.isky.co.kr/images/mypage/mobile_album_btn_print.gif" ALIGN="ABSMIDDLE"></A>
+							<A HREF="javascript:pc_img_reg();"><IMG SRC="http://file.isky.co.kr/images/mypage/mobile_album_button.gif" ALIGN="ABSMIDDLE"></A>
+						</TD>
+					</TR>
+					</TABLE>
+					</form>
+				</div>	
+				</div>
+
+
+			<!-- FOOT 역역 START -->
+					<table cellSpacing="0" cellPadding="0" width="100%">
+	<tr>
+	 <td><br>
+	<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+	height="85" width="690" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="_cx" VALUE="18256">
+	<PARAM NAME="_cy" VALUE="2249">
+	<PARAM NAME="FlashVars" VALUE="">
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="Src" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="WMode" VALUE="Transparent">
+	<PARAM NAME="Play" VALUE="-1">
+	<PARAM NAME="Loop" VALUE="-1">
+	<PARAM NAME="Quality" VALUE="High">
+	<PARAM NAME="SAlign" VALUE="">
+	<PARAM NAME="Menu" VALUE="-1">
+	<PARAM NAME="Base" VALUE="">
+	<PARAM NAME="AllowScriptAccess" VALUE="always">
+	<PARAM NAME="Scale" VALUE="ShowAll">
+	<PARAM NAME="DeviceFont" VALUE="0">
+	<PARAM NAME="EmbedMovie" VALUE="0">
+	<PARAM NAME="BGColor" VALUE="FFFFFF">
+	<PARAM NAME="SWRemote" VALUE="">
+	<PARAM NAME="MovieData" VALUE="">
+	<PARAM NAME="SeamlessTabbing" VALUE="1">
+</OBJECT>
+		</td>
+	</tr>
+</table>       
+					<!-- FOOT 역역 END -->
+			</DIV>
+					<!-- 컨텐츠 BODY 역역 END -->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div> 
+<iframe name="target_iframe" src="" marginwidth="0" marginheight="0" height="0" width="0" scrolling="no" border="0" frameborder="0"></iframe>
+</BODY>
+</HTML>

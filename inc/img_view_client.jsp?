@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/inc/img_view_client.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<HTML>
+<HEAD>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/popup.css">
+<STYLE>
+TD, BODY { margin:0; padding:0;  }
+</STYLE>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<SCRIPT>
+function imgresize(){
+	self.focus();
+
+	/*
+	// 그림크기가 해상도보다 클??..
+	if( PHOTO.width >= screen.width ) {
+		window.resizeTo( screen.width-50, screen.height-50 );
+		var winl = (screen.width-document.body.clientWidth) / 2; 
+		var wint = (screen.height-document.body.clientHeight) / 2;
+		window.moveTo( winl, wint );
+	}
+	else {
+		window.resizeTo( PHOTO.width+30, PHOTO.height+75 );
+		var winl = (screen.width-document.body.clientWidth) / 2; 
+		var wint = (screen.height-document.body.clientHeight) / 2;
+		window.moveTo( winl, wint );
+	
+		if( PHOTO.height >= screen.height ) {
+			window.resizeTo( screen.width+30, screen.height-30 );
+			var winl = (screen.width-document.body.clientWidth) / 2; 
+			var wint = (screen.height-document.body.clientHeight) / 2;
+			window.moveTo( winl, wint );
+		}
+		else {
+			window.resizeTo( PHOTO.width+30, PHOTO.height+57 );
+			var winl = (screen.width-document.body.clientWidth) / 2; 
+			var wint = (screen.height-document.body.clientHeight) / 2;
+			window.moveTo( winl, wint );
+		}
+	}
+	*/
+
+	  var width = document.all.mainImg.width;
+	  var height = document.all.mainImg.height;
+  
+	  var swidth = screen.width-200;
+	  var sheight = screen.height-200;
+
+	  if (height >= sheight){
+		 height = height - (height - sheight);
+	  }
+	  if (width >= swidth){
+		 width = width - (width - swidth);
+	  }
+
+	  window.resizeTo(width+65, height+180);
+}
+</SCRIPT>
+<TITLE>그림보기</TITLE>
+</HEAD>
+
+<BODY>
+
+ </td>
+			</tr>
+
+			<tr valign="bottom">
+				<td height="19" colspan="2" align="right"><a href="javascript:self.close();"><img src="/static/images/cs/popup/cs_close.gif" border="0"></a></td>
+			</tr>
+		</table></td>
+	</tr>
+</table>
+</BODY>
+</table>
+</HTML>
+
+
+
+

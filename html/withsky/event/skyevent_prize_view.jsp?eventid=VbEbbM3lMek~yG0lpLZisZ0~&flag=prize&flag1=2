@@ -1,0 +1,250 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/event/skyevent_prize_view.jsp">
+
+	<input type="hidden" name="eventid" value="VbEbbM3lMek~yG0lpLZisZ0~">
+
+	<input type="hidden" name="flag" value="prize">
+
+	<input type="hidden" name="flag1" value="2">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function goList(form,flag,flag1){
+		if(flag1 == "1") {
+			form.action = "skyevent.jsp";
+		} else {
+			form.action = "skyevent_prize.jsp";
+		}
+		form.flag.value = flag;
+		form.submit();
+	}
+	function goView(form, eventid){
+		form.action = "skyevent_prize_view.jsp";
+		form.eventid.value = eventid;
+		form.submit();
+	}
+	function goView1(form, top_eventid,eventid,flag,flag1){
+		form.action = "skyevent_prize_view.jsp";
+		form.eventid.value = top_eventid;
+		form.eventid1.value = eventid;
+		form.flag.value = flag;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+	var gocn=2;
+//-->
+</SCRIPT>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+</head>
+<body style="margin:0px;">
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,1);</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_skyevent.gif" height="52"></div>
+				<div id="Path"><script>path('2_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+				<form name=iForm method=post>
+					<input type="hidden" name="page" value="1">
+					<input type="hidden" name="s_kind" value="">
+					<input type="hidden" name="s_value" value="">
+					<input type="hidden" name="eventid">
+					<input type="hidden" name="eventid1">
+					<input type="hidden" name="flag" value="prize">
+					<input type="hidden" name="flag1" value="2">
+				</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="51">
+					<col width="68" class="p_t3 p_l10">
+					<col width="70">
+					<col width="178" class="p_t3 p_l10">
+					<col width="45">
+					<col width="65" class="p_t3 p_l10">
+					<col width="42">
+					<col width="45" class="p_t3 p_l10">
+					<tr height="24">
+						<th colspan="8">스카이리더 9th 이벤트 당첨자 발표</th>
+					</tr>
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_no.gif"></th>
+						<td>1765</td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_eventperiod.gif"></th>
+						<td>2007/08/08 ~ 2007/08/19</td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_type.gif"></th>
+						<td><img src="http://www.isky.co.kr/source/img/bbs/b2_prize.gif"></td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_hit.gif"></th>
+						<td>1103</td>
+					</tr>
+					<tr class="line"><td colspan="8"></td></tr>
+					<tr><td class="p_t10 p_b8 aC" colspan="8">
+						<!-- 이벤트 최대 가로 사이즈 : 569 <img src="http://www.isky.co.kr/source/img/withsky/event/tmp02.gif" width="562" height="615">-->
+						<HTML><HEAD>
+<STYLE type=text/css>
+<!--
+td.plist {font:11px/22px 돋움;color:#FFFFFF;}
+span.plisteng {font:11px/18px arial;color:#FFFFFF;}
+//-->
+</STYLE>
+
+<META content="MSHTML 6.00.2900.3157" name=GENERATOR></HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width=567 border=0>
+<TBODY>
+<TR vAlign=top>
+<TD><IMG height=359 src="http://www.isky.co.kr/source/img/withsky/event/070820/eventP_cont_01.jpg" width=567></TD></TR>
+<TR vAlign=top>
+<TD style="PADDING-RIGHT: 0px; PADDING-LEFT: 70px; BACKGROUND: url(http://www.isky.co.kr/source/img/withsky/event/070820/eventP_cont_02.jpg) no-repeat; PADDING-BOTTOM: 0px; PADDING-TOP: 79px; HEIGHT: 373px">
+<TABLE cellSpacing=0 cellPadding=0 width=440 border=0>
+<COLGROUP>
+<COL width=110>
+<COL width=110>
+<COL width=110>
+<COL width=110>
+<TBODY>
+<TR vAlign=top>
+<TD class=plist>윤혜주 <SPAN class=plisteng>(alla11**)</SPAN></TD>
+<TD class=plist>전성배 <SPAN class=plisteng>(blueinpia**)</SPAN></TD>
+<TD class=plist>전준명 <SPAN class=plisteng>(carr**)</SPAN></TD>
+<TD class=plist>유창환 <SPAN class=plisteng>(chwor**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>김효식 <SPAN class=plisteng>(cutehs**)</SPAN></TD>
+<TD class=plist>이혜미 <SPAN class=plisteng>(cutydal**)</SPAN></TD>
+<TD class=plist>조현진 <SPAN class=plisteng>(hein**)</SPAN></TD>
+<TD class=plist>유형일 <SPAN class=plisteng>(hiyu**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>이나영 <SPAN class=plisteng>(hoochoo4**)</SPAN></TD>
+<TD class=plist>박주현 <SPAN class=plisteng>(juhyun07**)</SPAN></TD>
+<TD class=plist>김기준 <SPAN class=plisteng>(mymyk2j)</SPAN></TD>
+<TD class=plist>우상욱 <SPAN class=plisteng>(kei**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>김영일 <SPAN class=plisteng>(lemony**)</SPAN></TD>
+<TD class=plist>신수경 <SPAN class=plisteng>(pacific0**)</SPAN></TD>
+<TD class=plist>이지영 <SPAN class=plisteng>(plex**)</SPAN></TD>
+<TD class=plist>이인구 <SPAN class=plisteng>(praisel**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>오세경 <SPAN class=plisteng>(prosain**)</SPAN></TD>
+<TD class=plist>김채원 <SPAN class=plisteng>(redsun12**)</SPAN></TD>
+<TD class=plist>정동준 <SPAN class=plisteng>(ritjja**)</SPAN></TD>
+<TD class=plist>정인성 <SPAN class=plisteng>(scam**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>김동민 <SPAN class=plisteng>(sevend**)</SPAN></TD>
+<TD class=plist>최인호 <SPAN class=plisteng>(shakara**)</SPAN></TD>
+<TD class=plist>신지훈 <SPAN class=plisteng>(shinji67**)</SPAN></TD>
+<TD class=plist>양나래 <SPAN class=plisteng>(spicewi**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>이기동 <SPAN class=plisteng>(standea**)</SPAN></TD>
+<TD class=plist>박윤경 <SPAN class=plisteng>(stitch**)</SPAN></TD>
+<TD class=plist>김수영 <SPAN class=plisteng>(sunso**)</SPAN></TD>
+<TD class=plist>고유석 <SPAN class=plisteng>(tomatoa**)</SPAN></TD></TR>
+<TR vAlign=top>
+<TD class=plist>이지현 <SPAN class=plisteng>(vivari**)</SPAN></TD>
+<TD class=plist>나혜정 <SPAN class=plisteng>(wognl05**)</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></BODY></HTML>
+					</td></tr>
+					<tr class="line"><td colspan="8"></td></tr>
+					</table>
+
+					<!-- 이전글/다음글 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="72" class="p_t3">
+					<col class="p_t3 p_l10">
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_prev.gif"></th>
+
+						<td><a href="javascript:goView(document.iForm, 'JibalVppRCk~Yel0KY0fGkY~','prize','2')">오현란 디지털 싱글 이벤트 당첨자 발표</a></td>
+					</tr>
+					<tr class="line"><td colspan="2"></td></tr>
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_next.gif"></th>
+
+						<td>다음글이 없습니다</td>
+					</tr>
+					<tr height="3" class="line"><td colspan="2"></td></tr>
+					</table>
+					<!--// 이전글/다음글 -->
+
+					<div class="btn2">
+						<a href="javascript:goList(iForm,'prize',2)"><img src="http://www.isky.co.kr/source/img/bbs/btn1_list.gif" height="23"></a>
+					</div>
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_prize_view.jsp?eventid=VbEbbM3lMek~yG0lpLZisZ0~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/skyleader_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?eventid=Sa7TdMgvRh8~2eESunOXBBI~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/sktday_result_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

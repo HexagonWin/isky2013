@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1145" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFvrrLjsnpBd7ZWc67KI7JeQIOusuOyekOulvCDsl7Dsho3tlbTshJwg67O064K06rOgIOyLtuyWtOyalC47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyghOyGoeywveyXkCDrs7Tsi5zrqbQgXDxiclw+7JWh7KCV7ZWY64uo7JeQIDEsMiwzIOydtOudvOuKlCDrsoTtirzsnbQg7J6I7Iq164uI64ukLlw8YnJcPuydtCDrsoTtirzsnYAg7Jew7IaN7KCB7Jy866GcIOusuOyekOulvCDrs7Trgrwg65WMIFw8YnJcPuyCrOyaqeuQmOuKlCDrqZTribTsnoXri4jri6QuXDxiclw+66y47J6Q64qUIOuMgOueteyggeycvOuhnCDtlZzquIA0MOyekCwg7JiB66y4IDgw7J6Q66W8IFw8YnJcPuq4sOuzuOycvOuhnCDsoITshqHsnbQg65Cp64uI64ukLlw8YnJcPuuztOuCtOyLnOugpOqzoCDtlZjripQg6riA7J2YIOyImOqwgCA4MGJ5dGXsnYQg64SY6rKoIOuQoCDrlYwgXDxiclw+7J207Jqp7ZWY7Iuc66m0IOuQqeuLiOuLpC5cPGJyXD7snbzrqoUg7IS47Yq466y47J6Q65286rOgIO2VmOq1rOyalC5cPGJyXD7qt7jro7nrqZTshLjsp4Ag7KCE7Iah7Iuc7JeQ64+EIFw8YnJcPuyEuO2KuOusuOyekOulvCDsnbTsmqntlZjsi6Qg7IiYIOyeiOyKteuLiOuLpC5cPGJyXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">[문자]한번에 문자를 연속해서 보내고 싶어요.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">전송창에 보시면 <br>액정하단에 1,2,3 이라는 버튼이 있습니다.<br>이 버튼은 연속적으로 문자를 보낼 때 <br>사용되는 메뉴입니다.<br>문자는 대략적으로 한글40자, 영문 80자를 <br>기본으로 전송이 됩니다.<br>보내시려고 하는 글의 수가 80byte을 넘겨 될 때 <br>이용하시면 됩니다.<br>일명 세트문자라고 하구요.<br>그룹메세지 전송시에도 <br>세트문자를 이용하실 수 있습니다.<br></span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

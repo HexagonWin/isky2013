@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=54315" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOqwleuCqOyEnOu5hOyKpOyEvO2EsOydmCDrhbjsnKDtmZgg6riw7IKs64uYIOqwkOyCrO2VqeuLiOuLpC47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEEvUzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w86rmA66qF7KeEOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw1NDMxNTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS0wNC0yNzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NTU7Pj47Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8XGU7Pj47Pjs7Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPFw8UFw+Jm5ic3BcOyBcPEZPTlQgZmFjZT3sg4jqtbTrprxcPuq3uOuPmeyViCDsgrzshLHtj7DsnYQg7KO866GcIOydtOyaqe2VmOuLpOqwgCA07JuUIDIw7J28IOyImOyalOydvCDsiqTsubTsnbQgODEwMOycvOuhnCDrsJTqv6jsirXri4jri6QuXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+7Iqs65287J2065Oc7ZiV7J206riw7JeQIOyVveqwhCDti4jsnbQg67KM7Ja07KC4IOyeiOyXiOq4sOyXkCBBL1Prpbwg7ZW07JW86rKg64uoIOuniOydjOydhCDrqLnsnYAg64KgXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+7ZWY7ZWE7J2066m0IOq4uOyXkOyEnCDrlqjslrTrnKjrpqzqs6Ag66eQ7JWY7Iq164uI64ukLlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIGZhY2U97IOI6rW066a8XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPu2LiOyDiOuKlCDrjZTsmrEg67KM7Ja07KGM7Jy866mwLCDsvIDsnbTsiqTripQg7IKw7KeAIOupsOy5oOunjOyXkCDsiqTtgazroIjsuZgg7KCV64+E6rCAIOyVhOuLjCDtkbkg7Y6Y7J24IOyImOykgOydtCDrkJjsl4jsirXri4jri6QuXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+6rKw6rWtIEEvU+ulvCDsnITtlbQg6rWs7J6F7ZWcIOuMgOumrOygkOyXkCDrsKnrrLjsnYQg7ZaI642U64uILCBBL1Prpbwg7J2Y66Kw66W8IO2VmOqyoOyngOunjCwg7ZW0IOykhOufsOyngOuPhCDrqqjrpbTqsqDqs6AsIOyepeuLtOydhCDrqrvtlZzri6Tqs6Ag7ZWY642U6rWw7JqULi4uXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+66eI7J2M7J20IOuzhOuhnCDsoovsp4Ag7JWK7JWY7Iq164uI64ukLlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIGZhY2U97IOI6rW066a8XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPuq3uOuemOyEnCDsoJzqsIAg7KeB7KCRIOyEnOu5hOyKpOyEvO2EsOuhnCDqsIDqsowg65CY7JeI7KeA7JqULi4uXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+7ISc67mE7Iqk7IS87YSw7JeQ7ISc64qUIOydvOyjvOydvOunjOyXkCDsnbTroIfqsowg65CcIOygkOydhCDslYTsi5zqs6QsIOygleunkCDstZzsg4HsnZgg7ISc67mE7Iqk66GcIEEvU+ulvCDtlbQg7KO87IWo7Iq164uI64ukLlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIGZhY2U97IOI6rW066a8XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPuygnCDqs7zsi6TroZwg7J247ZWcIOy8gOydtOyKpOuPhCDrqqjrkZAg7IOI6rKD7Jy866GcLCDrsKfrjbDrpqzrj4Qg7IOI6rKD7Jy866GcIOq1kOyytO2VtCDso7zshajsirXri4jri6QuXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBmYWNlPeyDiOq1tOumvFw+6rWs7J6F7ZWcIOuMgOumrOygkOyXkOyEnOuKlCDqtazsnoXtlZzsp4AgMTTsnbzslYjsl5Ag7KCcIOqzvOyLpOydtCDsl4bsnLzrqbQg7IOIIOygnO2SiOycvOuhnCDqtZDtmZjsnYQg7ZW0IOyjvOqyjOuQmOyWtOyeiOuKlOuNsCwg7KCcIOqzvOyLpOuhnCDsnbjtlZwg6riw6riwIO2MjOyGkOuPhCDsnojsl4jquLDsl5Ag6re465+w6rGwIOqwmeuLpCDtlZjsi5zrqbTshJwg7LyA7J207Iqk64+EIOuqqOuRkCDqtZDssrTtlbQg7KO87IWo7Iq164uI64ukLlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIGZhY2U97IOI6rW066a8XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgZmFjZT3sg4jqtbTrprxcPuuFuOycoO2ZmCDquLDsgqzri5ghIOqwkOyCrOuTnOugpOyalH4gKl5eKlw8L0ZPTlRcPlw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">강남서비스센터의 노유환 기사님 감사합니다.</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">A/S</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">김명진</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">54315</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-27</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">55</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; <FONT face=새굴림>그동안 삼성폰을 주로 이용하다가 4월 20일 수요일 스카이 8100으로 바꿨습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>슬라이드형이기에 약간 틈이 벌어져 있었기에 A/S를 해야겠단 마음을 먹은 날</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>하필이면 길에서 떨어뜨리고 말았습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>틈새는 더욱 벌어졌으며, 케이스는 산지 며칠만에 스크레치 정도가 아닌 푹 페인 수준이 되었습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>결국 A/S를 위해 구입한 대리점에 방문을 했더니, A/S를 의뢰를 하겠지만, 해 줄런지도 모르겠고, 장담을 못한다고 하더군요...</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>마음이 별로 좋지 않았습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>그래서 제가 직접 서비스센터로 가게 되었지요...</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>서비스센터에서는 일주일만에 이렇게 된 점을 아시곤, 정말 최상의 서비스로 A/S를 해 주셨습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>제 과실로 인한 케이스도 모두 새것으로, 밧데리도 새것으로 교체해 주셨습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>구입한 대리점에서는 구입한지 14일안에 제 과실이 없으면 새 제품으로 교환을 해 주게되어있는데, 제 과실로 인한 기기 파손도 있었기에 그런거 같다 하시면서 케이스도 모두 교체해 주셨습니다.</FONT></P><BR><P><FONT face=새굴림></FONT>&nbsp;</P><BR><P><FONT face=새굴림>노유환 기사님! 감사드려요~ *^^*</FONT></P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

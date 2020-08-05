@@ -1,0 +1,208 @@
+
+<HTML>
+<HEAD>
+<TITLE>It's different, SKY</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+
+
+<!-- 공통 js -css 영역 -->
+<script language="JavaScript" src="./js/sms.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+	function TabChange(tab){//탭변경
+		location.href="http://www.isky.co.kr/mobile/character/sky_char_list.asp?category=999&size=m&Search_String="+tab;
+	}
+//-->
+</script>
+</HEAD>
+
+
+
+<BODY onLoad="resize_iframes();" "onLoad="MM_preloadImages(http://file.isky.co.kr/images/mobile/adtab_im7000_on.gif',http://file.isky.co.kr/images/mobile/adtab_im8000_on.gif',http://file.isky.co.kr/images/mobile/adtab_imb_on.gif',http://file.isky.co.kr/images/mobile/adtab_u100_on.gif')">
+<body onLoad="MM_preloadImages('http://file.isky.co.kr/images/mobile/adtab_im7000_on.gif','http://file.isky.co.kr/images/mobile/adtab_imb_on.gif','http://file.isky.co.kr/images/mobile/adtab_im8000_on.gif','http://file.isky.co.kr/images/mobile/adtab_im7000_on.gif');MM_preloadImages('http://file.isky.co.kr/images/mobile/adtab_im8000_on.gif');MM_preloadImages('http://file.isky.co.kr/images/mobile/adtab_imb_on.gif')">
+<iframe name="zzim" src="about:blank"  marginwidth="0" marginheight="0" height="0" width="0" scrolling="no" border="0" frameborder="0"></iframe>
+
+			<!-- 컨텐츠 검색 -->
+
+			<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+			<DIV ID="CONTENTS_SUB">
+
+
+
+				<!-- 갤러리 리스트 -->
+
+<table width="340" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="110"><a href="javascript:TabChange('IM-U1')"><img src="http://file.isky.co.kr/images/mobile/adtab_u100_on.gif" name="U100" width="112" height="29" border="0"></a></td>
+    <td width="115"><a href="javascript:TabChange('IMB')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('IMB','','http://file.isky.co.kr/images/mobile/adtab_imb_on.gif',1)"><img src="http://file.isky.co.kr/images/mobile/adtab_imb_off.gif" name="IMB" width="114" height="29" border="0"></a></td>
+    <td width="115"><a href="javascript:TabChange('IM-8')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('IM8000','','http://file.isky.co.kr/images/mobile/adtab_im8000_on.gif',1)"><img src="http://file.isky.co.kr/images/mobile/adtab_im8000_off.gif" name="IM8000" width="114" height="29" border="0"></a></td>
+    <td width="115"><a href="javascript:TabChange('IM-7')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('IM7000','','http://file.isky.co.kr/images/mobile/adtab_im7000_on.gif',1)"><img src="http://file.isky.co.kr/images/mobile/adtab_im7000_off.gif" name="IM7000" width="114" height="29" border="0"></a></td>
+  </tr>
+</table>
+
+				<DIV STYLE="BORDER:1PX SOLID #E7D2D2; WIDTH:100%; PADDING:10PX 10PX 10PX 10PX;">
+
+					<!--한줄 블락시작-->
+					<TABLE CELLPADDING="0" CELLSPACING="0" align=center>
+					<tr valign=top align=center>
+
+							<!--블락출력 시작-->
+							<td width="220" style="border-right:solid 1 #E2E2E2">
+
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr><td align=center><img src="http://file.isky.co.kr/content/mobile/grim/jstart/gif/06020800817.gif" CLASS="BBS_PHOTO"></td></tr>
+							<tr height=22 valign=bottom>
+								<td>IM-U100</td>
+								<!--td align=right><span class="BROWN_SEARCH">[457건]</span></td-->
+							</tr>
+							</table>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr height=20 valign=middle>
+								<td><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_week.gif' ALIGN='ABSMIDDLE'></td>
+								<td align=right><a href="javascript:char_pop01('1181');"><img src="http://file.isky.co.kr/images/mobile/button_send.gif" border=0 align=absmiddle></a>&nbsp;<a href="javascript:YesNo('1181');"><img src="http://file.isky.co.kr/images/mobile/button_wish.gif" border=0 align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td><!--블락출력 끝-->
+
+							<!--블락출력 시작-->
+							<td width="220" style="border-right:solid 1 #E2E2E2">
+
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr><td align=center><img src="http://file.isky.co.kr/content/mobile/grim/jstart/gif/06020800717.gif" CLASS="BBS_PHOTO"></td></tr>
+							<tr height=22 valign=bottom>
+								<td>IM-U100</td>
+								<!--td align=right><span class="BROWN_SEARCH">[941건]</span></td-->
+							</tr>
+							</table>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr height=20 valign=middle>
+								<td><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_week.gif' ALIGN='ABSMIDDLE'></td>
+								<td align=right><a href="javascript:char_pop01('1180');"><img src="http://file.isky.co.kr/images/mobile/button_send.gif" border=0 align=absmiddle></a>&nbsp;<a href="javascript:YesNo('1180');"><img src="http://file.isky.co.kr/images/mobile/button_wish.gif" border=0 align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td><!--블락출력 끝-->
+
+							<!--블락출력 시작-->
+							<td width="220">
+
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr><td align=center><img src="http://file.isky.co.kr/content/mobile/grim/jstart/gif/06020800617.gif" CLASS="BBS_PHOTO"></td></tr>
+							<tr height=22 valign=bottom>
+								<td>IM-U110</td>
+								<!--td align=right><span class="BROWN_SEARCH">[2074건]</span></td-->
+							</tr>
+							</table>
+							<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="182">
+							<tr height=20 valign=middle>
+								<td><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_week.gif' ALIGN='ABSMIDDLE'></td>
+								<td align=right><a href="javascript:char_pop01('1179');"><img src="http://file.isky.co.kr/images/mobile/button_send.gif" border=0 align=absmiddle></a>&nbsp;<a href="javascript:YesNo('1179');"><img src="http://file.isky.co.kr/images/mobile/button_wish.gif" border=0 align=absmiddle></a></td>
+							</tr>
+							</table>
+						</td><!--블락출력 끝-->
+
+					</tr>
+					</table>
+					<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+
+
+					<!-- 점선 -->
+					<TABLE CELLPADDING="0" CELLSPACING="0" width="100%">
+					<tr height=10><td><spacer type=block width=1 height=1></td></tr>
+					<tr height=1><td background="http://file.isky.co.kr/images/mobile/char_dots_long.gif"><spacer type=block width=1 height=1></td></tr>
+					<tr height=20><td><spacer type=block width=1 height=1></td></tr>
+					</table>
+
+					<!--한줄 블락시작-->
+					<TABLE CELLPADDING="0" CELLSPACING="0" align=center>
+					<tr valign=top align=center>
+
+							<!--블락출력 시작-->
+							<!--<td width="220" style="border-right:solid 1 #E2E2E2">&nbsp;</td>-->
+							<td width="220">&nbsp;</td>
+
+							<!--블락출력 시작-->
+							<!--<td width="220" style="border-right:solid 1 #E2E2E2">&nbsp;</td>-->
+							<td width="220">&nbsp;</td>
+
+							<!--블락출력 시작-->							
+							<td width="220">&nbsp;</td>
+
+					</tr>
+					</table>
+					<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+
+
+					<!-- 페이징 & 버튼 -->
+
+
+				</DIV>
+
+
+			</DIV CLOSE="CONTENTS_SUB">
+			
+
+
+					<!-- FOOT 역역 START -->
+	
+		</td>
+	</tr>
+</table>
+</div>
+</BODY>
+</HTML>
+
+<script language="javascript">
+	function char_pop01(param) {		
+		var popup	= window.open("./char_pop01.asp?event=Y&"+"character_code="+param+"&size=m", "frenp","height=700,width=380,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+		popup.focus();
+	}
+
+	function YesNo(code) 	{
+		if (confirm("마이찜에 등록 하시겠습니까?")) {
+			document.frames['zzim'].location.href = "./character_zzim.asp?code=" + code;
+		}
+	}	
+</script>
+
+<script language="JavaScript">
+function resize_iframes() {
+ if(document.body.scrollHeight > 0) {
+  self.resizeTo(document.body.scrollWidth, document.body.scrollHeight);
+ }
+}
+</script>

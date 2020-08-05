@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1242" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyDge2SiOyXkCDtlZjsnpDqsIAg7J6I7Ja0IOq1kO2ZmOydtOuCmCDrsJjtkojsnYQg7ZWY66Ck66m0IOyWtOuWu+qyjCDtlZjrgpjsmpQ/Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzrsLDshqHrkJwg7KCc7ZKI7JeQIO2VmOyekOqwgCDsnojqsbDrgpgsIOyjvOusuOuCtOyaqeydtCBTS+2FlOugiO2FjeydtCDsoJzqs7XtlZwg7KCV67O0IOuTseqzvCDsg4HsnbTtlaAg6rK97JqwLCBcPGJyXD7rmJDripQg66eI7J2M7JeQIOyViCDrk5zsi5zripQg6rK97Jqw7JeQ64qUIOyDge2SiOydgCDrsLDshqHrkJwg64Kg67aA7YSwIDMw7J28IOydtOuCtOyXkCDqtZDtmZgsIOuwmO2SiCDrsI8g7ZmY67aI7J20IOqwgOuKpe2VqeuLiOuLpC4gXDxiclw+6rOg6rCd64uY7J2YIOuzgOyLrOycvOuhnCDsnbjtlZwg67CY7ZKI7IucIOqzoOqwneuLmOq7mOyEnCDrsJjtkogg67CPIOyerOuwnOyGoSDruYTsmqnsnYQg67aA64u07ZWY7IWU7JW8IO2VqeuLiOuLpC47Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">상품에 하자가 있어 교환이나 반품을 하려면 어떻게 하나요?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">배송된 제품에 하자가 있거나, 주문내용이 SK텔레텍이 제공한 정보 등과 상이할 경우, <br>또는 마음에 안 드시는 경우에는 상품은 배송된 날부터 30일 이내에 교환, 반품 및 환불이 가능합니다. <br>고객님의 변심으로 인한 반품시 고객님께서 반품 및 재발송 비용을 부담하셔야 합니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

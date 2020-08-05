@@ -1,0 +1,251 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event/event_experience.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+			
+		url += "?p_url=http://www.isky.co.kr:80/etc/event/event_experience.sky";
+		
+		
+		location.href = url;	
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event/event_experience.jsp");
+	}
+	
+//-->
+</script>
+
+
+
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0901"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+
+
+<style type="text/css">
+<!--
+div.evexpe h1,div.evexpe ul,div.evexpe li,div.evexpe fieldset  {margin:0;padding:0;border:none;vertical-align:top;}
+div.evexpe img {vertical-align:top;}
+div.evexpe {width:710px;}
+div.evexpe li.btn {width:710px;height:450px;background:url('/static/images/poll/20091008/poll_top03.jpg') left top no-repeat;}
+div.evexpe li.btn img {position:relative;top:308px;left:473px;}
+div.evexpe fieldset {width:678px;margin:0 auto;background:url('/static/images/poll/20091008/poll_questbg.jpg') left top repeat-x;}
+div.evexpe fieldset dl {padding:20px 0 20px 70px;}
+div.evexpe fieldset dt {padding:10px 0 0 0;}
+div.evexpe div.btn {text-align:center;padding:1px 0 20px 0;}
+div.evexpe fieldset dd input {width:540px;padding-left:10px;height:18px;background:#cdcdcd;border:1px solid #909090;}
+div.evexpe fieldset dd textarea {width:540px;padding-left:10px;height:62px;background:#cdcdcd;border:1px solid #909090;}
+-->
+</style>
+<script>
+
+
+
+var isLogin = false;
+
+
+function Event_Chk(){
+	var form = $('event');
+
+	if($('strAnswer1').value == ""){
+		alert('블로그 주소를 입력해 주세요');
+		$('strAnswer1').focus();
+		return;
+	}
+
+	if($('strAnswer2').value == ""){
+		alert('블로그 소개글을 입력해 주세요');
+		$('strAnswer2').focus();
+		return;
+	}
+
+	if($('strAnswer3').value == ""){
+		alert('첫인상과 느낌을 적어주세요');
+		$('strAnswer3').focus();
+		return;
+	}
+
+	var ans = confirm('응모 하시겠습니까?');
+
+	if(ans == true){
+
+		var strResult = "";
+		
+		strResult += "내블로그 주소: " + $('strAnswer1').value;
+		strResult += "|내블로그 소개: " + $('strAnswer2').value;
+		strResult += "|첫인상: " + $('strAnswer3').value;
+
+		form.strResult.value = strResult;
+
+		form.action = "event_result_insert.sky";
+		form.target = "dataProcess";
+		form.method = "post";
+		form.submit();
+	}else{
+		return;
+	}
+}
+
+function LoginChk(){
+	if(isLogin == false){
+		LoginConfirm('http://www.isky.co.kr/etc/event/event_experience.sky');
+		return;
+	}
+}
+</script>
+</head>
+<body>
+<form name="event" id="event">
+<input type="hidden" name="intEventSeq" value='361'>
+<input type="hidden" name="strGubun" value='2'>
+<input type="hidden" name="strResult">
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0901&LogSess=N','740','26','','','transparent','')</script></div>
+<div id="Container">
+			<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0901','222','500','','','transparent','')</script></div>
+		</div>
+		
+	<div id="Content">
+				<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0901&LogSess=N','740','81','','','transparent','')</script></div>
+		
+		<!-- [s] page title 2 -->
+		<div class="ptitle2">
+			<ul>
+				<li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li>
+			</ul>
+		</div>
+		<!-- [e] page title 2 -->
+
+		<!-- [s] event contents -->
+		<div class="evexpe">
+			<h1><img src="/static/images/poll/20091008/poll_top01.jpg" alt="IM-U510S 체험단 모집" /></h1>
+			<ul>
+				<li><img src="/static/images/poll/20091008/poll_top02.jpg" alt="라이터 형상을 닮은 홀드커버 디자인과 2G폰의 장점까지! IM-U510S의 Unique 매력에 푹 빠졌다면 지금 도전하세요. SKY를 사랑하고 홍보에 자신 있다면 누구나 참여할 수 있습니다. (IM-U501S는 SK 전용 모델입니다.)" /></li>
+				<li class="btn"><a href="http://www.isky.co.kr/product/feature.sky?telCode=SKT&dispNum=0101&seq=2RgUgI_cZMI%7E9YlSlQ12nBM%7E" target="_blank"><img src="/static/images/poll/20091008/poll_btn01.jpg"  alt="IM-U510S 자세히 보기" /></a></li>
+				<li><img src="/static/images/poll/20091008/poll_top04.jpg" alt="응모기간  10월 9일~10월 0일/당첨자 발표  10월 0일/체험단 혜택  체험단 우수 활동자에게 IM-U510S 증정" /></li>
+			</ul>
+			<fieldset>
+				<dl>
+					<dt><img src="/static/images/poll/20091008/poll_quest01.jpg" alt="자신의  블로그 주소를 알려주세요. " /></dt>
+					<dd><input type="text" id="strAnswer1" name="strAnswer1" onfocus="LoginChk()" value="" /></dd>
+					<dt><img src="/static/images/poll/20091008/poll_quest02.jpg" alt="자신의 블로그를 소개해주세요." /></dt>
+					<dd><textarea id="strAnswer2" name="strAnswer2" onfocus="LoginChk()"></textarea></dd>
+					<dt><img src="/static/images/poll/20091008/poll_quest03.jpg" alt="IM- U510S에 대한 첫인상과  느낌을 적어주세요." /></dt>
+					<dd><textarea id="strAnswer3" name="strAnswer3" onfocus="LoginChk()"></textarea></dd>
+				</dl>
+				<div class="btn"><a href="javascript:Event_Chk()"><img src="/static/images/poll/20091008/poll_btn02.jpg" /></div>
+			</fieldset>
+		</div>
+		<!-- [e] event contents -->
+
+	</div>
+	</div>
+	
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

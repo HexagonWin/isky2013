@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=53931" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPO2ajO2YhCDsnbTssL3smrEg6riw7IKs64uYISE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEEvUzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87Jyk7KeA7Z2sOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw1MzkzMTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS0wNC0yNTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NjU7Pj47Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8XGU7Pj47Pjs7Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPFw8UFw+Jm5ic3BcOyDsnYwg6riw7IKs64uY7J2065286rOgIO2VmOuKlOqyjCDrp57so6A/XDwvUFw+XDxCUlw+XDxQXD7sp4Hsm5DrtoTrk6TsnYAg7Iuk7J6l64uY7J2065286rOgIO2VmOuNmOuNsCDslrTsqIzqsbQg44WL44WLXDwvUFw+XDxCUlw+XDxQXD7smrDshKAg7KCA64qUIOyKpOy5tOydtCDshLzthLDsl5Ag6rCA6riwIOyghOq5jOyngOunjCDtlbTrj4Qg7JmE7KCEIO2QiOqwgCDrgpjshJwg6rCU7JeI7Iq164uI64ukLlw8L1BcPlw8QlJcPlw8UFw+6re466as6rOgIOyEvO2EsOyXkCDqsIDshJzrj4Qg662QIOq3uOuDpSDqt7jrnqzripTrjbBcPC9QXD5cPEJSXD5cPFBcPuygnCDtlbjrk5ztj7DsnYQg7IiY66as7ZWY64qQ6528IOq4sOyCrOuLmOydtCDrk6TslrTsmKTrnbzqs6Ag7ZWY7IWU7IScIOq3uCDsiJjrpqztlZjripTrjbAg65Ok7Ja06rCA7IScIO2VuOuTnO2PsCDqs6DsuZjripTqsbAg67O06rOgIOuYkCDquLDsgqzri5jtlZjqs6Ag7JaY6riwIO2VmOuptOyEnCDsp4Tsp5wg6riw67aE7J20IOuEiOustOuEiOustCDsoovslYTsoYzsirXri4jri6QuXDwvUFw+XDxCUlw+XDxQXD7smrDshKAg7LKr7Ke464qUIOq4sOyCrOuLmOydtCDrhIjrrLQg6reA7Jes7Jqw7Iuc6rWs7JqUIOOFi+OFiyBcPC9QXD5cPEJSXD5cPFBcPuuRkOuyiOynuOuKlCDsoJDsi6zrj4Qg6rGw66W07Iuc6rOgIOydvO2VmOyLnOuKlCDrqqjsirXsnbQg64SI66y0IOupi+yeiOyXiOyKteuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPuq3uOumrOqzoCDsoJzqsIAg7KeE7KecIOq3gOywruqyjCDrp4kg7ZWY64KY7ZWY64KYIOuLpCDrrLzslrTrs7Tqs6Ag66eJIOydvO2VmOyLnOuKlOqxsCDsp4Tsp5wg6rCA6rmM7J207IScIOuniSDrmqvslrTsoLjrnbwg7LOQ64uk67O06rOgIOq3uOuerOuKlOuNsOuPhCDrjZQg7Lmc7KCI7ZWY6rKMIOuMgO2VtOyjvOyLnOqzoCDjhYvjhYsgXDwvUFw+XDxCUlw+XDxQXD7sp4Tsp5wg7KSR7JqU7ZWc6rG0IOyXhOyyrSDsuZzsoIgg7ZWY7IWo6rOgIFw8L1BcPlw8QlJcPlw8UFw+7LKY7J2MIOunjOuCmOuKlCDsgqzrnoztlZjqs6Ag7JaY6riw7ZWY64qU6rKDIOqwmeyngCDslYrslZjri6TripTqsowg7KCc7J28IOq4sOu2hCDsoovslZjsirXri4jri6QuLlw8L1BcPlw8QlJcPlw8UFw+7JWEIVw8L1BcPlw8QlJcPlw8UFw+6re466as6rOgIOygnCDtlbjrk5ztj7DsnbQg7Jib64KgIOq4sOyiheyduOuNsCDsgrDsp4Ag7Ja866eIIOuQmOyngCDslYrslZjri6TripTqsbDsl5Ag7KKAIOuGgOudvOyFqOuKlOuNsCDrr7/qs6Ag66y07IOB7IiY66asIO2VtOyjvOyLoOqyg+uPhCDsp4Tsp5wg64SI66y0IOqwkOyCrO2VqeuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPuyGlOynge2eiCDqt7jrlYzripQgIuyVhCDqt4DssK7snYDrjbAiIOydtOugh+qyjCDsg53qsIHtlojripTrjbAg6riw7IKs64uY7J20IOq0nOywruuLpOqzoCDqt7jroIfqsowg66eQ7JSA7ZWY7Iuc64qU642wIOyViOq3gOywruyVhOyEnCDsoovri6Tqs6Drp4wg7IOd6rCB7ZaI64qU642wIOuCmOykkeyXkCDsg53qsIHtlbQg67O064uI6rmQIOygiCDrr7/qs6Ag67Cw66Ck7ZW0IOyjvOyLoOqxsOyXkCDrjIDtlbTshJwg64SI66y0IOqwkOyCrO2VmOuLpOuKlCDsg53qsIHsnYQg7ZWY6rKMID/nh5/snLHmsYI/44WLXDwvUFw+XDxCUlw+XDxQXD7qt7jrpqzqs6Ag65iQIOusuOygnCDsg53quLDrqbQg7Jew652964us65286rOgIOuqhe2VqOq5jOyngCDso7zsi5zqs6Ag44WL44WLIOycvO2VmO2VmO2VmFw8L1BcPlw8QlJcPlw8UFw+7KeE7KecIOq8rSDtlbjrk5ztj7AgQVPtlZjrn6wg6rCU64uk7Jio6rKMIOyVhOuLiOqzoCDqt7jrg6Ug7J6g6rmQIOuGgOufrCDqsJTri6TsmKjrk6/tlZwg6riw67aE7J20IOuTpOyWtOyEnCDrhIjrrLTrhIjrrLQg7KKL6rWs7JqUJm5ic3BcOyBcPC9QXD5cPEJSXD5cPFBcPuq8vOq8vO2eiCDri6Qg7LGZ6rKo7KO87IWU7IScIOuEiOustCDqsJDsgqztlanri4jri6QuXDwvUFw+XDxCUlw+XDxQXD7snLztlZjtlZjtlZhcPC9QXD5cPEJSXD5cPFBcPuyYqO2GtSDqsJDsgqztlZjri6TripQg7JaY6riwIOu/kOydtOyngOunjCDsoJXrp5Ag6rCQ7IKs7ZWY6rOgIFw8L1BcPlw8QlJcPlw8UFw+7J207LC97JqxIOq4sOyCrOuLmCEhXDwvUFw+XDxCUlw+XDxQXD7tlbjrk5ztj7Ag642Y7KeA7KeAIOuniOyLnOqzoCDsi53sgqwg7LGZ6rKo65Oc7Iuc6ri4IOOFi+OFiyDqsJDsgqztlbTsmpReXipcPC9QXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">회현 이창욱 기사님!!</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">A/S</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">윤지희</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">1</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">53931</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-25</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">65</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; 음 기사님이라고 하는게 맞죠?</P><BR><P>직원분들은 실장님이라고 하던데 어쨌건 ㅋㅋ</P><BR><P>우선 저는 스카이 센터에 가기 전까지만 해도 완전 퐈가 나서 갔었습니다.</P><BR><P>그리고 센터에 가서도 뭐 그냥 그랬는데</P><BR><P>제 핸드폰을 수리하느라 기사님이 들어오라고 하셔서 그 수리하는데 들어가서 핸드폰 고치는거 보고 또 기사님하고 얘기 하면서 진짜 기분이 너무너무 좋아졌습니다.</P><BR><P>우선 첫째는 기사님이 너무 귀여우시구요 ㅋㅋ </P><BR><P>두번째는 점심도 거르시고 일하시는 모습이 너무 멋있었습니다.</P><BR><P>그리고 제가 진짜 귀찮게 막 하나하나 다 물어보고 막 일하시는거 진짜 가까이서 막 뚫어져라 쳐다보고 그랬는데도 더 친절하게 대해주시고 ㅋㅋ </P><BR><P>진짜 중요한건 엄청 친절 하셨고 </P><BR><P>처음 만나는 사람하고 얘기하는것 같지 않았다는게 제일 기분 좋았습니다..</P><BR><P>아!</P><BR><P>그리고 제 핸드폰이 옛날 기종인데 산지 얼마 되지 않았다는거에 좀 놀라셨는데 믿고 무상수리 해주신것도 진짜 너무 감사합니다.</P><BR><P>솔직히 그때는 "아 귀찮은데" 이렇게 생각했는데 기사님이 괜찮다고 그렇게 말씀하시는데 안귀찮아서 좋다고만 생각했는데 나중에 생각해 보니깐 절 믿고 배려해 주신거에 대해서 너무 감사하다는 생각을 하게 ?營윱求?ㅋ</P><BR><P>그리고 또 문제 생기면 연락달라고 명함까지 주시고 ㅋㅋ 으하하하</P><BR><P>진짜 꼭 핸드폰 AS하러 갔다온게 아니고 그냥 잠깐 놀러 갔다온듯한 기분이 들어서 너무너무 좋구요&nbsp; </P><BR><P>꼼꼼히 다 챙겨주셔서 너무 감사합니다.</P><BR><P>으하하하</P><BR><P>온통 감사하다는 얘기 뿐이지만 정말 감사하고 </P><BR><P>이창욱 기사님!!</P><BR><P>핸드폰 던지지 마시고 식사 챙겨드시길 ㅋㅋ 감사해요^^*</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

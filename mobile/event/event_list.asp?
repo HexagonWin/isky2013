@@ -1,0 +1,432 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>It's different, SKY</TITLE>
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+
+<!-- 공통 js -css 영역 -->
+</HEAD>
+<BODY>
+<iframe name="zzim" src="about:blank"  marginwidth="0" marginheight="0" height="0" width="0" scrolling="no" border="0" frameborder="0"></iframe>
+<div style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%">
+<table style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_left.gif); WIDTH: 950px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+	<tr>
+		<td vAlign="top" align="right" width="222">
+		        <!-- 좌측-상단 메뉴 START -->
+			<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+				height="475" width="222" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+				<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/left/isky_event.swf?code=">
+				<embed src="http://file.isky.co.kr/flash/left/isky_event.swf?code=">
+		</OBJECT>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="javascript:goURL('A')"><IMG SRC="http://file.isky.co.kr/images/com/left_mypage_title.jpg" WIDTH="222" HEIGHT="19"></a><BR>
+		</td>
+	</tr>
+</table>
+			<!-- 좌측-상단 메뉴 END -->
+			<!-- 사용자 정보 영역 START -->
+			
+<iframe name="leftlogin" src="/WUC/leftLogin.aspx?wbSurl=http://www.isky.co.kr/mobile/main.asp&amp;wbExt=" width="222" height="138" border="0" NORESIZE SCROLLING=no FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0></iframe>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<IMG SRC="http://file.isky.co.kr/images/com/left_deco_bottom.jpg"><BR>
+		</tD>
+	</tr>
+</table>
+			<!-- 사용자 정보 영역 END -->
+		</td>
+		<td vAlign="top" align="left" width="*">
+			<!-- 우측 상단 플래쉬 메뉴 영역 START -->
+			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+	<td style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); BACKGROUND-REPEAT: repeat-x">
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+		height="169" width="728" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+		
+		<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N">
+		<embed src="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N" width=728 height=169>
+		
+		</OBJECT>
+	</td>
+	</tr>
+</table>
+
+			
+
+			<!-- 우측 상단 플래쉬 메뉴 영역 END -->
+			<table cellSpacing="0" cellPadding="0" width="728" border="0">
+				<tr>
+					<td>
+					<!-- 컨텐츠 BODY 역역 START -->
+					&nbsp;&nbsp;<img src="http://file.isky.co.kr/images/mobile/mobile_title.gif">
+<table cellpadding="0" cellspacing="0" border="0" width="690">
+  <tr>
+    <td bgcolor="white" height="30"  style="padding-top:5px;"> 
+&nbsp
+    </td>
+    <td width="200" align="right">
+      Page ( 1 / 2 ) 
+    </td>
+  </tr>
+</table>
+<TABLE CELLPADDING="5" CELLSPACING="1" WIDTH="690" BGCOLOR="#E7D2D2">
+	<TR HEIGHT="27" ALIGN="CENTER" style="BACKGROUND-COLOR:#8D6164">
+		<TD WIDTH="50"><img src="http://file.isky.co.kr/images/community/tab_no.gif"></TD>
+		<TD WIDTH="50"><img src="http://file.isky.co.kr/images/community/tab_part.gif"></TD>
+		<TD><img src="http://file.isky.co.kr/images/community/tab_title.gif"></TD>
+		<TD WIDTH="150"><img src="http://file.isky.co.kr/images/user/event/tab_event.gif"></TD>
+		<TD WIDTH="50"><img src="http://file.isky.co.kr/images/community/tab_hit.gif"></TD>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">15</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[진행중]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=15">THE FRIENDS 벨소리 이벤트</a>
+	
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-12-14 ~ 2006-01-06</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">407</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">14</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[진행중]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=14">7공주 벨소리 이벤트</a>
+	
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-12-07 ~ 2005-12-25</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">477</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">13</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=13">호동&채은 X-MAS 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-12-07 ~ 2005-12-21</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">351</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=13&code=s">호동&채은 X-MAS 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-12-07 ~ 2005-12-21</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">10</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">12</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[진행중]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=12">SKT 컬러링 & 라이브벨 무료 체험단 이벤트</a>
+	
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-12-01 ~ 2005-12-31</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">884</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">11</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=11">NRG 7집 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-25 ~ 2005-12-13</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">770</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=11&code=s">NRG 7집 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-25 ~ 2005-12-13</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">18</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">10</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=10">마스터 창 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-09 ~ 2005-11-22</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">641</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=10&code=s">마스터 창 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-09 ~ 2005-11-22</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">63</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">9</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=9">오렌지 1집 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-09 ~ 2005-11-22</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">466</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=9&code=s">오렌지 1집 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-11-09 ~ 2005-11-22</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">53</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">8</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=8">가문의위기, 강력3반 영화 OST 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-10-13 ~ 2005-11-03</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">941</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=8&code=s">가문의위기, 강력3반 영화 OST 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-10-13 ~ 2005-11-03</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">79</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">7</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=7">프리스타일 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-10-12 ~ 2005-10-31</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">1352</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=7&code=s">프리스타일 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-10-12 ~ 2005-10-31</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">83</td>
+  </tr>
+  
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">6</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[이벤트]
+	</td>
+    <td align="left" bgcolor="#FFFFFF"><a href="event_view.asp?EventID=6">미나 벨소리 이벤트</a>
+	<img src="http://file.isky.co.kr/images/event/icon_event_end.gif">
+	
+	</td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-09-21 ~ 2005-10-10</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">2978</td>
+  </tr>
+
+  <tr>
+    <td align="center" bgcolor="#FFFFFF" width="50">&nbsp;</td>
+    <td align="center" bgcolor="#FFFFFF" width="60">
+	[당첨결과]
+	</td>
+    <td align="left" bgcolor="#FFFFFF">&nbsp;<img src="http://file.isky.co.kr/Images/event/arrow.gif">&nbsp;<a href="event_view.asp?EventID=6&code=s">미나 벨소리 이벤트</a></td>
+    <td align="center" bgcolor="#FFFFFF" width="150">2005-09-21 ~ 2005-10-10</td>
+    <td align="center" bgcolor="#FFFFFF" width="50">108</td>
+  </tr>
+  
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="690">
+  <tr>
+    <td bgcolor="white" height="30"  style="padding-top:5px;" align=center> 
+       
+        <font color="gray">[이전]</font> 
+      
+      &nbsp;
+      
+        [<ahref="event_list.asp?gotopage=2">다음</a>]
+       
+    </td>
+  </tr>
+</table>
+					       
+					       
+
+
+
+
+					<!-- FOOT 역역 START -->
+					<table cellSpacing="0" cellPadding="0" width="100%">
+	<tr>
+	 <td><br>
+	<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+	height="85" width="690" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="_cx" VALUE="18256">
+	<PARAM NAME="_cy" VALUE="2249">
+	<PARAM NAME="FlashVars" VALUE="">
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="Src" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="WMode" VALUE="Transparent">
+	<PARAM NAME="Play" VALUE="-1">
+	<PARAM NAME="Loop" VALUE="-1">
+	<PARAM NAME="Quality" VALUE="High">
+	<PARAM NAME="SAlign" VALUE="">
+	<PARAM NAME="Menu" VALUE="-1">
+	<PARAM NAME="Base" VALUE="">
+	<PARAM NAME="AllowScriptAccess" VALUE="always">
+	<PARAM NAME="Scale" VALUE="ShowAll">
+	<PARAM NAME="DeviceFont" VALUE="0">
+	<PARAM NAME="EmbedMovie" VALUE="0">
+	<PARAM NAME="BGColor" VALUE="FFFFFF">
+	<PARAM NAME="SWRemote" VALUE="">
+	<PARAM NAME="MovieData" VALUE="">
+	<PARAM NAME="SeamlessTabbing" VALUE="1">
+</OBJECT>
+		</td>
+	</tr>
+</table>       
+					<!-- FOOT 역역 END -->
+					</DIV>
+					<!-- 컨텐츠 BODY 역역 END -->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+</BODY>
+</HTML>
+<script language="javascript">
+	function all_search() {
+	
+		var forms=document.regfrom;
+		if(forms.search_string.value==""){
+			alert("검색어를 넣어 주세요.!");
+				forms.search_string.focus();
+				return;
+			}	
+		if(forms.sub_cate.value=="all"){
+		forms.action = "search.asp";
+		}
+		else if(forms.sub_cate.value=="bell"){
+		forms.action = "/mobile/bell/bell_list.asp";
+		}
+		else if(forms.sub_cate.value=="character"){
+		forms.action = "/mobile/character/char_list.asp";
+		}
+		else if(forms.sub_cate.value=="photo"){
+		forms.action = "/mobile/photo/photo_list.asp";
+		}
+		else if(forms.sub_cate.value=="sms"){
+		forms.keyword.value = forms.search_string.value;
+		forms.action = "/mobile/sms/sms_list.asp";
+		}
+		forms.submit();
+	}
+	function enter_check()
+	{
+	if(event.keyCode==13)
+	{
+		event.keyCode = 0;
+	        all_search();
+	                
+	}
+}
+	function char_pop01(param) {
+	var popup=window.open("/mobile/character/char_pop01.asp?character_code="+param+"&size=s", "frenp","height=700,width=380,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+	popup.focus();
+	}
+
+	function YesNo_char(code) 	{
+		if (confirm("마이찜에 등록 하시겠습니까?")) {
+			document.frames['zzim'].location.href = "/mobile/character/character_zzim.asp?code=" + code;
+		}
+	}	
+	function photo_pop01(param) {
+	var popup=window.open("/mobile/photo/photo_pop01.asp?photo_code="+param+"&size=s", "frenp","height=700,width=380,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+	popup.focus();
+	}
+
+	function YesNo_photo(code) 	{
+		if (confirm("마이찜에 등록 하시겠습니까?")) {
+			document.frames['zzim'].location.href = "/mobile/photo/photo_zzim.asp?code=" + code;
+		}
+	}
+	function bell_pop01(param) {
+		var popup=window.open("/mobile/bell/bell_pop01.asp?bell_code="+param+"&poly=64", "frenp","height=200,width=380,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+		popup.focus();
+	}
+
+	function bell_pop02(param) {
+		var popup=window.open("/mobile/bell/bell_pop02.asp?bell_code="+ param+"&poly=64","frenp","height=700,width=380,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+		popup.focus();
+	}
+
+	function YesNo(code) 	{
+		if (confirm("마이찜에 등록 하시겠습니까?")) {
+			document.frames['zzim'].location.href = "/mobile/bell/bell_zzim.asp?code=" + code;
+		}
+	}	
+</script>

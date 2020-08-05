@@ -1,0 +1,439 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/leader/experience_pre_view.jsp">
+
+	<input type="hidden" name="page" value="1">
+
+	<input type="hidden" name="uid" value="">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="msgid" value="xc87PqvAa0A~ugFqIx4T9Vc~">
+
+	<input type="hidden" name="s_value" value="">
+
+	<input type="hidden" name="pid" value="IM-S110,S110K">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function chkfrm()
+{
+
+		goLogin();
+
+	document.frm.act.value = "cmtwrite";
+}
+
+function delcmt(cmtid)
+{
+	if(confirm("정말로 삭제하시겠습니까?"))
+	{
+		document.frm.act.value = "cmtdel";
+		document.frm.cmtid.value = cmtid;
+		document.frm.submit();
+	}
+}
+
+function recom()
+{
+
+		goLogin();
+
+}
+//-->
+</SCRIPT>
+
+<script type="text/javascript">
+
+function EXBlank() {
+	document.all.EXBlank.style.height = document.body.scrollHeight - 150;
+}
+
+</script>
+<script>
+var initBody;
+function beforePrint()
+{
+	initBody=document.body.innerHTML;
+	document.body.innerHTML=idPrint.innerHTML;
+}
+function afterPrint()
+{
+	document.body.innerHTML=initBody;
+}
+
+window.onbeforeprint = beforePrint;
+window.onafterprint = afterPrint;
+</script>
+</head>
+<body onload="EXBlank()">
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,2,1);</script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_experience.gif" height="52"></div>
+				<div id="Path"><script>path('2_2_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div style="position:absolute;z-index:1;">
+
+					<!-- 검색 //-->
+					<div class="aR m_b5" style="width:569">
+						<img src="http://www.isky.co.kr/source/img/bbs/th2_select.gif" align="absmiddle">
+							<select class="sel01" onChange="location.href='experience_pre_list.jsp?pid=' + this.value">
+								<OPTION VALUE='IM-U200'>IM-U200 기수</OPTION>
+								<OPTION VALUE='IM-S110,S110K' selected>IM-S110,S110K 기수</OPTION>
+								<OPTION VALUE='IM-U100'>IM-U100 기수</OPTION>
+								<OPTION VALUE='IM-U110'>IM-U110 기수</OPTION>
+								<OPTION VALUE='IM-8500,8500L'>IM-8500,8500L 기수</OPTION>
+								<OPTION VALUE='IM-8400'>IM-8400 기수</OPTION>
+								<OPTION VALUE='IM-8300'>IM-8300 기수</OPTION>
+								<OPTION VALUE='IM-8100'>IM-8100 기수</OPTION>
+								<OPTION VALUE='IM-7700'>IM-7700 기수</OPTION>
+								<OPTION VALUE='IM-7400'>IM-7400 기수</OPTION>
+							</select>
+					</div>
+					<!--// 검색 -->
+
+					<div style="position:relative;" id="idPrint">
+						<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01 m_t10">
+						<col width="72" class="p_t3">
+						<col width="210" class="p_t3 p_l10">
+						<col width="50" class="p_t3">
+						<col width="95" class="p_t3 p_l10">
+						<col width="43" class="p_t3">
+						<col width="99" class="p_t3 p_l10">
+						<tr height="22">
+							<th colspan="6" class="b">[S110K] 오래도록 정겨운 친구가 되자구~!</th>
+						</tr>
+						
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_no.gif"></th>
+							<td>110314</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_writer.gif"></th>
+							<td>pjh0215</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_recom.gif"></th>
+							<td>3</td>
+						</tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_wdate.gif"></th>
+							<td colspan="3">2006/08/17 12:08:01</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_hit.gif"></th>
+							<td>8350</td>
+						</tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_addfile.gif"></th>
+							<td colspan=5>
+
+
+							</td>
+						</tr>
+
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr><td colspan="6" class="summary">
+							<div class="L"><img src='http://file.isky.co.kr/ATT01/2006/BBS_10/57/사진_002[20060817003019].jpg' width='94' height='75' class='gborder'></div>
+							<div class="L p_l10 aL l16">
+								아쉽지만 마지막 체험기까지 왔네요.
+어느새 장마가 끝나고 열대아가 찾아 온 것처럼...
+S110K와 함께 한 시간이 벌써 이렇게 지나와 있었습니다.
+
+하지만... 분명 끝이 아니기에.. 기쁨니다~^^
+오래도록 함께 할 수 있는 좋은 친구가 될꺼니까요!
+							</div>
+						</td></tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						</table>
+
+						<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01 m_t20">
+						<tr><td class="detail" style="width:569">
+							<IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2006/BBS_10/57/25234[20060817003015].jpg" align=baseline border=0><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2006/BBS_10/57/Untitled-1[20060817003015].jpg" align=baseline border=0>&nbsp; 
+						</td></tr>
+						</table>
+					</div>
+
+					<!-- 이전글/다음글 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="70" class="p_t3">
+					<col width="499" class="p_t3 p_l10">
+					<tr height="2" class="line"><td colspan="2"></td></tr>
+
+					<tr class="line"><td colspan="2"></td></tr>
+
+					<tr height="1" class="line"><td colspan="2"></td></tr>
+					</table>
+					<!--// 이전글/다음글 -->
+
+					<div class="btn2" style="width:569">
+						<a href="javascript:;" onclick="window.print()"><img src="http://www.isky.co.kr/source/img/bbs/btn1_print2.gif" height="23"></a>
+						<a href="javascript:recom()"><img src="http://www.isky.co.kr/source/img/bbs/btn1_recom.gif" height="23"></a>
+						<a href="experience_pre_list.jsp?pid=IM-S110,S110K&uid=&page=1&s_kind=&s_value="><img src="http://www.isky.co.kr/source/img/bbs/btn1_list.gif" height="23"></a>
+					</div>
+
+					<!-- 한줄리플 //-->
+					<div class="m_t15">
+						<div class="L p_t8"><h3 style="margin:0;"><img src="http://www.isky.co.kr/source/img/withsky/tss_reply.gif"></h3></div>
+	
+						<div class="R"><a href="experience_pre_view.jsp?msgid=SKZ1vZsZFfU~/vafsjboKR4~&pid=IM-S110,S110K&uid=&page=1&s_kind=&s_value=&mycmt=Y"><img src="http://www.isky.co.kr/source/img/bbs/btn1_myreply.gif" height="23"></a></div>
+
+						<span class="clear"></span>
+					</div>
+					<div class="reply m_t5" style="width:569">
+						<div class="reply_top">
+							<!-- 한줄 쓰기 //-->
+							<div class="m_l3">
+<iframe id=ifrm name=ifrm width=0 height=0></iframe>
+<form name=frm method=post target=ifrm action="experience_pre_exec.jsp" style="margin:0" onSubmit="return chkfrm()">
+<input type=hidden name="act" value="cmtwrite">
+<input type=hidden name="msgid" value="ImSBvVuCVms~RG51NajBl34~">
+<input type=hidden name="cmtid">
+								<input type="text" name="content" style="width:493"> <input type=image src="http://www.isky.co.kr/source/img/bbs/btn4_submit.gif" height="17" align="absmiddle" class="inputbtn" style="height:17">
+</form>
+							</div>
+						</div>
+						<div class="reply_btm">
+
+							<table border="0" cellpadding="0" cellspacing="0">
+							<col width="80" class="p_t3 p_l10">
+							<col width="390" class="p_t3 p_l10">
+							<col width="73" align="center" class="p_t3">
+							<!-- 반복, 마지막 라인은 class="w_dot1" tr행 제외 //-->
+	
+							<tr height="26">
+								<td class="b">jjj0709</td>
+								<td class="lbar">제꺼두 버그가좀있는것같긴하요 또21님처럼 가끔꺼지기도 했구요 흠집도 너무잘나는것같구요 그래도 이단점을 단번에보안해주는 화질과 음질!!빵빵하죠 ㅋ
+
+								</td>
+								<td>2007/08/14</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">90jungin</td>
+								<td class="lbar">저는 s110사용했엇는데요 버그하나도안나고 잘되던데요 , 예전에 초기에나온 제품들이 버그가잇지 나중에나온건버그없답니다요
+
+								</td>
+								<td>2007/08/09</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">susse</td>
+								<td class="lbar">사진은 잘 나오는데 찍히는데 시간이 걸려서 좀 불편해요 근데 다른것들보다 슬림하고 이뻐요!
+
+								</td>
+								<td>2007/05/05</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">inko35</td>
+								<td class="lbar">엠피쓰리기능 어케해야해요~ㅠㅠ
+
+								</td>
+								<td>2007/04/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">killerme12</td>
+								<td class="lbar">사진좋네요
+
+								</td>
+								<td>2007/04/14</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">turbo709</td>
+								<td class="lbar">ㅋㅋㅋ 사진 진짜 잘나와요 다른 핸펀 이랑 비교불가~!
+
+								</td>
+								<td>2007/03/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hgggh</td>
+								<td class="lbar">기스존나만히나ㅠ외부화면아래에 기스두개나ㅠ전니 미치겠다-_-
+
+								</td>
+								<td>2007/03/08</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wlalsdn63</td>
+								<td class="lbar">이거.....대게좋지요~근데기스-_-.....흠집이아주딱&#48419;을&#46472;없은데햇빛에비추어보거나이러면...아주많아요 ㅠ
+
+								</td>
+								<td>2007/01/28</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">asjkvb21</td>
+								<td class="lbar">제껀 가끔 혼자 전원이 꺼질 때가 있음 ㅠㅠ  저번에도 겜 할 때 갑자기 꺼졌다가 켜져서 넘 슬펐음...제껏만 이런가요?
+
+								</td>
+								<td>2006/12/14</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">tjswngus119</td>
+								<td class="lbar">스백십이 이쁘긴 이쁘죠..^^ 조심해도 상처가 날때면..ㅡㅡ;; 얼마나 슬픈지..^^
+
+								</td>
+								<td>2006/10/30</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dusdn527</td>
+								<td class="lbar">사진찍을때 해상도 조절하시면 꽉차게 나옴/
+
+								</td>
+								<td>2006/10/14</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dhseo8211</td>
+								<td class="lbar">글쎄여... 객관적으로봤을땐 화면좋고한데... 제가보는 관점에선.. 버그가 다소 많다는점은 어쩔수가없네여.
+
+								</td>
+								<td>2006/10/10</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hm9940</td>
+								<td class="lbar">저두 이거 샀어용~~핑크로~~
+넘 이뿌구~~좋아용~~
+근데 아직 기능다 모른다는거 ㅋㅋㅋ
+애니콜 쓰다 바꿔서 문자익히는게 쫌 어렵네요
+사진촬영 모드에서 메뉴 누르그 화면크기 선택하면 되용
+
+								</td>
+								<td>2006/10/07</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">rlask2001</td>
+								<td class="lbar">바탕화면 어떻게 꽉차게 나오나요?ㅜㅜ
+
+								</td>
+								<td>2006/10/02</td>
+							</tr>
+
+							<!--// 반복 -->
+							</table>
+						</div>
+					</div>
+					<!--// 한줄리플 -->
+
+					</div>
+
+					<div id="EXBlank" style="width:569;height:400"></div>
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_prize_view.jsp?eventid=VbEbbM3lMek~yG0lpLZisZ0~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/skyleader_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/brandstory/sponsor/superpreview.jsp"><img src="http://file.isky.co.kr/upload/r_banner/superpreview.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

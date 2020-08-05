@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1264" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOuNsOydtO2EsCDrp6Tri4jsoIAg67CU7J2065+s7IqkIOyytO2BrOuwqeuylTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD7slYjrhZXtlZjshLjsmpQgaVNLWeyeheuLiOuLpC5cPC9QXD4NClw8UFw+67CU7J2065+s7IqkKFNweXdhcmUgImlHdWFyZCIpIOy5mOujjOulvCDtlojripTrjbDrj4Qg65CY7KeAIOyViuuKlOuLpOqzoCDtlZjsi5zripQg67aE65Ok7J20IOunjuydtCDqs4TshZTshJxcPC9QXD4NClw8UFw+7LmY66OM6rCAIOygnOuMgOuhnCDrkJjsl4jripTsp4Ag7ZmV7J247ZWY64qUIOuwqeuyleydhCDqs7Xsp4DtlZjsl6wg65Oc66as7Jik64uILFw8L1BcPg0KXDxQXD5QQ+ulvCDtmZXsnbjtlbQg67O07Iuc6riwIOuwlOuejeuLiOuLpC4gXDwvUFw+DQpcPFBcPjEuIOyciOuPhOyasCDtmZTrqbQg7Jm87Kq9IO2ZlOuLqOyXkCDsnojripQg7Iuc7J6RIOuyhO2KvOydhCDriIzrn6wg7Iuk7ZaJIOuplOuJtOulvCDshKDtg53tlanri4jri6QuXDwvUFw+DQpcPFBcPlw8SU1HIGFsdD0iIiBoc3BhY2U9MCBzcmM9Imh0dHA6Ly9maWxlLmlza3kuY28ua3IvQVRUMDEvMjAwNS9CQlNfMS8xODQvMjY1MlsyMDA1MDQyMjE0MzE1MV0uZ2lmIiBhbGlnbj1iYXNlbGluZSBib3JkZXI9MFw+XDwvUFw+DQpcPFBcPjIuIOyLpO2WiSDssL3sl5AgJ3JlZ2VkaXQn65286rOgIOyeheugpe2VmOqzoCAn7ZmV7J24J+uyhO2KvOydhCDriITrpbTrqbQgJ+ugiOyngOyKpO2KuOumrCDtjrjsp5HquLAnIOqwgCDsi6TtlonrkKnri4jri6QuXDwvUFw+DQpcPFBcPlw8SU1HIGFsdD0iIiBoc3BhY2U9MCBzcmM9Imh0dHA6Ly9maWxlLmlza3kuY28ua3IvQVRUMDEvMjAwNS9CQlNfMS8xODQvMjUzOTRbMjAwNTA0MjIxNDMxNTFdLmdpZiIgYWxpZ249YmFzZWxpbmUgYm9yZGVyPTBcPlw8L1BcPg0KXDxQXD4zLiDroIjsp4DsiqTtirjrpqwg7Y647KeR6riw7J2YIOyZvOyqvSDtla3rqqnsl5BcPEJSXD4mbmJzcFw7SEtFWV9MT0NBTF9NQUNISU5FL1NZU1RFTS9DdXJyZW50Q29udHJvbFNldC9FbnVtL1Jvb3QvTEVHQUNZX1hQUlRFQ1Qg652864qUIO2PtOuNlOqwgCDsnojripTsp4Ag7ZmV7J247ZWp64uI64ukXDwvUFw+DQpcPFBcPlw8SU1HIGFsdD0iIiBoc3BhY2U9MCBzcmM9Imh0dHA6Ly9maWxlLmlza3kuY28ua3IvQVRUMDEvMjAwNS9CQlNfMS8xODQvMDUwNDIyMDRbMjAwNTA0MjIxNDMxNTFdLmdpZiIgYWxpZ249YmFzZWxpbmUgYm9yZGVyPTBcPlw8L1BcPg0KXDxQXD4mbmJzcFw77J20IExFR0FDWV9YUFJURUNUIOudvOuKlCDtj7TrjZTqsIAg7J6I7Jy866m0IOuwlOydtOufrOyKpCDsuZjro4zqsIAg7KCc64yA66GcIOyViCDrkJwg6rK97Jqw7J2066mwLFw8QlJcPuychOydmCDtj7TrjZTqsIAg7JeG7Ja07JW8IFVTQiDtj6ztirjrpbwg7KCc64yA66GcIOyduOyLne2VoCDsiJgg7J6I7Iq164uI64ukLlw8QlJcPijsnIQg6re466a87JeQ64qUIExFR0FDWV9YUFJURUNUIOudvOuKlCDtj7TrjZTqsIAg7JeG7KeA7JqUKVw8L1BcPg0KXDxQXD7rsJTsnbTrn6zsiqQoU3B5d2FyZSAiaUd1YXJkIikg6rCQ7Je87J20IOydmOyLrOuQmOuKlCDqsr3smrBcPEJSXD7smrDshKAgUEMg67Cx7IugIOq0gOugqCDsgqzsnbTtirjsl5DshJwgaUd1YXJkIOqwkOyXvOyXrOu2gOulvCDssrTtgaztlbQg67SF64uI64ukLlw8QlJcPuunjOydvCDqsJDsl7zrkJjsl4jri6TrqbQsIOuzuOyduOydmCZuYnNwXDsgUEMg7ZmY6rK97J20IOyViOyghOuqqOuTnOyXkOyEnCDsnbjthLDrhLcg7KCR7IaN7J2EIOyngOybkO2VmOuKlOyngCDtmZXsnbjtlZjsi5zqs6AsXDxCUlw+7J207ZuELCDsuZjro4zrsLHsi6Ao7Jyg66OMKeydhCDsgqzsmqntlZjshZTslbwg7ZWp64uI64ukLlw8QlJcPihpR3VhcmQg7J2YIO2MjOydvOuztO2YuOq4sOuKpeycvOuhnCDsnbjtlbQg7JWI7KCE66qo65Oc66W8IO2Gte2VtOyEnOunjCDsuZjro4zqsIAg6rCA64ql7ZWY6riwIOuVjOusuOyeheuLiOuLpClcPC9QXD4NClw8UFw+7Y647J2Y66W8IOychO2VtCDri7nsgqzqsIAg67Cc6rKs7ZWcIOy5mOujjOuwseyLoOqzvCDtlbTri7kg7IKs7J207Yq466W8IOyViOuCtO2VmOyYpOuCmCxcPEJSXD5pR3VhcmTrpbwg7LmY66OM7ZWgIOyImCDsnojripQg64uk66W4IOuwseyLoOydtCDsnojri6TrqbQg7Ja065akIOuwseyLoOydtOuToOyngCDsgqzsmqnqsIDriqXtlanri4jri6QuXDxCUlw+Jm5ic3BcOyAtIOy5mOujjOuwseyLoCA6IFNweVplcm9cPEJSXD4mbmJzcFw7IC0g7IKs7J207Yq4IDombmJzcFw7IFw8QSBocmVmPSJodHRwOi8vY2xpbmljLmFobmxhYi5jb20vY2xpbmljL3NweXplcm8uanNwIlw+aHR0cDovL2NsaW5pYy5haG5sYWIuY29tL2NsaW5pYy9zcHl6ZXJvLmpzcFw8L0FcPlw8L1BcPg0KXDxQXD7qt7jrn7wsIOyViOyghOuqqOuTnCDsi6TtlonrsKnrspXsnYQg7JWI64K07ZW065Oc66as6rKg7Iq164uI64ukLlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPjEuIFBD66W8IOyerOu2gO2MhSjri6Tsi5zsi5zsnpEpIO2VqeuLiOuLpC4gXDxCUlw+Mi4g67aA7YyFIOyLnCDqsoDsnYAg67CU7YOV7JeQIOKAnFdpbmRvd3Mg7Iuk7ZaJIOykkeyeheuLiOuLpOKWt+KWt+KWt+KAneudvOuKlCDtmZTrqbTsnbQg7ZGc7Iuc65Cp64uI64ukLiBcPEJSXD4mbmJzcFw7Jm5ic3BcOyZuYnNwXDsg7J20IOuVjCBGOO2CpOulvCDquLjqsowg64iE66W066m0IOyViOyghOuqqOuTnOulvCDshKDtg53tlaAg7IiYIOyeiOuKlCDrqZTribTqsIAg64KY7Ji164uI64ukLiBcPC9QXD4NClw8UFw+Jm5ic3BcOyZuYnNwXDsmbmJzcFw7Jm5ic3BcOyAo7ZmU66m07J20IOu5qOumrCDsoITtmZjrkJjri4gsIOyLoOyGje2eiCDriIzrn6wg7KO87IS47JqUKVw8QlJcPjMuIOqygOydgOyDiSDrsJTtg5Xsl5Ag7JWI7KCE66qo65Oc66W8IOyEoO2Dne2VmOuKlCDrrLjqtazrk6TsnbQg64KY7Je065Cp64uI64ukLlw8QlJcPiZuYnNwXDsmbmJzcFw7IOq3uCDspJHsl5DshJwg7JWI7KCE66qo65OcKOuEpO2KuOybjO2BrCDrk5zrnbzsnbTrsoQg7IKs7JqpKeydhCDslYTrnpjrsKntlqXtgqTroZwg7ISg7YOd7ZWY7JesIOu2gO2MheydhCDsmYTro4wg7ZWp64uI64ukLiBcPC9QXD4NClw8UFw+Jm5ic3BcOyZuYnNwXDsgKOyciOuPhOyasDk47J2AIOyViOyghOuqqOuTnCDshKDtg53sgqztla0g7JeG7J2MKSBcPC9QXD4NClw8UFw+4pa27JWI7KCE66qo65OcIOyDge2DnOyXkOyEnOuKlCDrs7TthrUg65WMIOuztOuLpCDslYTsnbTsvZjsnbQg7YGs6rKMIO2RnOyLnOuQmOupsCDtmZTrqbQg6rCBIOuqqOyEnOumrOyXkCDigJjslYjsoITrqqjrk5zigJnrnbzqs6Ag7ZGc7Iuc65Cp64uI64ukLlw8L1BcPg0KXDxQXD40LiDrtoDtjIXsnbQg7JmE66OMIOuQmOyXiOycvOuptCBcPEEgaHJlZj0iaHR0cDovL2NsaW5pYy5haG5sYWIuY29tL2NsaW5pYy9zcHl6ZXJvLmpzcCJcPmh0dHA6Ly9jbGluaWMuYWhubGFiLmNvbS9jbGluaWMvc3B5emVyby5qc3BcPC9BXD4g66GcIOygkeyGje2VqeuLiOuLpC5cPEJSXD7sl6zquLDshJwg7Iqk7YyM7J207KCc66Gc66GcIOqygOyDie2VqeuLiOuLpC5cPC9QXD4NClw8UFw+Jm5ic3BcOyDilrYg7LmY66OM66W8IOuIjOufrOuPhCDtjJ3sl4XssL3snbQg65yo7KeAIOyViuqzoCDslYTrrLTrn7Ag7KeE7ZaJ7J20IOuQmOyngCDslYrripQg6rK97Jqw7JeUIO2ZlOuptCDtlZjri6hcPC9QXD4NClw8UFw+J0FjdGl2ZVgg7Luo7Yq466Gk7J2EIOyEpOy5mO2VmOyLnOqyoOyKteuLiOq5jD8gJ+udvOuKlCDssL3sl5DshJwgJ+yYiCjshKTsuZgpJyDshKDtg51cPC9QXD4NClw8UFw+NS4g6rKA7IOJIOuQnCDrsJTsnbTrn6zsiqTrpbwg7LmY66OMKOycoOujjCntlanri4jri6QuICjroZzqt7jsnbgg7ZWE7JqUKSBcPC9QXD4NClw8UFw+Ni4g7LmY66OM6rCAIOyZhOujjOuQmOuptCBQQ+ulvCDsnqzrtoDtjIXtlZjsl6wg7J2867CY66qo65Oc7JeQ7IScIOuNsOydtO2EsOunpOuLiOyggOulvCDsi6Ttlontlanri4jri6QuXDwvUFw+DQpcPFBcPiZuYnNwXDso6re4656Y64+EIOyXsOqysOuQmOyngCDslYrripQg6rK97Jqw7JeUIFVTQiDrk5zrnbzsnbTrsoTrpbwg7J6s7ISk7LmY7ZWcIO2bhCDsi6TtlokpXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+64+E7JuA7J20IOuQmOyFqOq4sOulvCDrsJTrnbzsmKTrqbAsIOuNlCDtlYTsmpTtlZwg7IKs7ZWt7J20IOyeiOqyjCDrkJjrqbQg7J6s6rO17KeA7ZWY64+E66GdIO2VmOqyoOyKteuLiOuLpC5cPC9QXD4NClw8UFw+6rCQ7IKs7ZWp64uI64ukLiBcPEJSXD5cPC9QXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">데이터 매니저 바이러스 체크방법</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent"><P>안녕하세요 iSKY입니다.</P>
+<P>바이러스(Spyware "iGuard") 치료를 했는데도 되지 않는다고 하시는 분들이 많이 계셔서</P>
+<P>치료가 제대로 되었는지 확인하는 방법을 공지하여 드리오니,</P>
+<P>PC를 확인해 보시기 바랍니다. </P>
+<P>1. 윈도우 화면 왼쪽 화단에 있는 시작 버튼을 눌러 실행 메뉴를 선택합니다.</P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_1/184/2652[20050422143151].gif" align=baseline border=0></P>
+<P>2. 실행 창에 'regedit'라고 입력하고 '확인'버튼을 누르면 '레지스트리 편집기' 가 실행됩니다.</P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_1/184/25394[20050422143151].gif" align=baseline border=0></P>
+<P>3. 레지스트리 편집기의 왼쪽 항목에<BR>&nbsp;HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Enum/Root/LEGACY_XPRTECT 라는 폴더가 있는지 확인합니다</P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_1/184/05042204[20050422143151].gif" align=baseline border=0></P>
+<P>&nbsp;이 LEGACY_XPRTECT 라는 폴더가 있으면 바이러스 치료가 제대로 안 된 경우이며,<BR>위의 폴더가 없어야 USB 포트를 제대로 인식할 수 있습니다.<BR>(위 그림에는 LEGACY_XPRTECT 라는 폴더가 없지요)</P>
+<P>바이러스(Spyware "iGuard") 감염이 의심되는 경우<BR>우선 PC 백신 관련 사이트에서 iGuard 감염여부를 체크해 봅니다.<BR>만일 감염되었다면, 본인의&nbsp; PC 환경이 안전모드에서 인터넷 접속을 지원하는지 확인하시고,<BR>이후, 치료백신(유료)을 사용하셔야 합니다.<BR>(iGuard 의 파일보호기능으로 인해 안전모드를 통해서만 치료가 가능하기 때문입니다)</P>
+<P>편의를 위해 당사가 발견한 치료백신과 해당 사이트를 안내하오나,<BR>iGuard를 치료할 수 있는 다른 백신이 있다면 어떤 백신이든지 사용가능합니다.<BR>&nbsp; - 치료백신 : SpyZero<BR>&nbsp; - 사이트 :&nbsp; <A href="http://clinic.ahnlab.com/clinic/spyzero.jsp">http://clinic.ahnlab.com/clinic/spyzero.jsp</A></P>
+<P>그럼, 안전모드 실행방법을 안내해드리겠습니다.</P>
+<P>&nbsp;</P>
+<P>1. PC를 재부팅(다시시작) 합니다. <BR>2. 부팅 시 검은 바탕에 “Windows 실행 중입니다▷▷▷”라는 화면이 표시됩니다. <BR>&nbsp;&nbsp;&nbsp; 이 때 F8키를 길게 누르면 안전모드를 선택할 수 있는 메뉴가 나옵니다. </P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp; (화면이 빨리 전환되니, 신속히 눌러 주세요)<BR>3. 검은색 바탕에 안전모드를 선택하는 문구들이 나열됩니다.<BR>&nbsp;&nbsp; 그 중에서 안전모드(네트워크 드라이버 사용)을 아래방향키로 선택하여 부팅을 완료 합니다. </P>
+<P>&nbsp;&nbsp; (윈도우98은 안전모드 선택사항 없음) </P>
+<P>▶안전모드 상태에서는 보통 때 보다 아이콘이 크게 표시되며 화면 각 모서리에 ‘안전모드’라고 표시됩니다.</P>
+<P>4. 부팅이 완료 되었으면 <A href="http://clinic.ahnlab.com/clinic/spyzero.jsp">http://clinic.ahnlab.com/clinic/spyzero.jsp</A> 로 접속합니다.<BR>여기서 스파이제로로 검색합니다.</P>
+<P>&nbsp; ▶ 치료를 눌러도 팝업창이 뜨지 않고 아무런 진행이 되지 않는 경우엔 화면 하단</P>
+<P>'ActiveX 컨트롤을 설치하시겠습니까? '라는 창에서 '예(설치)' 선택</P>
+<P>5. 검색 된 바이러스를 치료(유료)합니다. (로그인 필요) </P>
+<P>6. 치료가 완료되면 PC를 재부팅하여 일반모드에서 데이터매니저를 실행합니다.</P>
+<P>&nbsp;(그래도 연결되지 않는 경우엔 USB 드라이버를 재설치한 후 실행)</P>
+<P>&nbsp;</P>
+<P>도움이 되셨기를 바라오며, 더 필요한 사항이 있게 되면 재공지하도록 하겠습니다.</P>
+<P>감사합니다. <BR></P></span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

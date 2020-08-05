@@ -1,0 +1,2506 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/musthave/ad/tv_view.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+<!-- AceCounter(Pro)Version 6.55 START -->
+<!-- This script is for AceCounter Professional members only. -->
+<!-- Do not modify this script code for any purpose. -->
+<!-- Copyright (C)2001-2007 AmazingSoft.com All Rights Reserved. -->
+<script language='javascript'>
+function _IX(s,t){return s.indexOf(t);};
+var PU_rl='http://'+'gtp8.acecounter.com';var PU_pt='8080';var PCHKIMG=new Image();var PL_bn=navigator.appName;var PL_CODE='AM6A33295931127';
+if(document.URL.substring(0,7)=='http://'){if(PL_bn.indexOf("Netscape")> -1 || PL_bn=="Mozilla"){setTimeout("PCHKIMG.src=PU_rl+':8080/?cookie';",1);}else{PCHKIMG.src=PU_rl+':8080/?cookie';};};
+var _UD='undefined';var _UN='unknown'; if(typeof PU_rl==_UD) var PU_rl ='';
+var PL_d='',PL_tz=20,PL_ja=_UN,PL_bv='',PL_sc=_UN,PL_sv=10,PL_rf='',PL_arg='',PL_av='',PL_je='n',PL_ck='0',PL_ul=_UN,PL_ua=_UN,PL_UA=_UN,PL_rl='',PL_os=_UN,PL_vs=_UN,PL_ak='',PL_xrl='',PL_cd='',PL_cu='',PL_bz='';if( typeof PL_CODE==_UD ) PL_CODE = '' ;PL_tz = Math.floor((new Date()).getTimezoneOffset()/60) + 29 ;if( PL_tz > 24 ) PL_tz = PL_tz - 24 ;
+PL_je = (navigator.javaEnabled()==true)?'1':'0'; PL_ck = (navigator.cookieEnabled==true)?'1':'0'; PL_bn=navigator.appName;if(PL_bn.substring(0,9)=="Microsoft") PL_bn="MSIE";PL_bz=navigator.appName;  PL_pf=navigator.platform;  PL_av=navigator.appVersion;  PL_bv=parseFloat(PL_av) ;if(PL_bn=='MSIE'){PL_cu=navigator.cpuClass;}else{PL_cu=navigator.oscpu;};if((PL_bn=="MSIE")&&(parseInt(PL_bv)==2)) PL_bv=3.01;PL_rf=document.referrer;var PL_prl='';var PL_frm=false;
+if( typeof top.frames.length=='number' && top.frames.length > 0 ){eval("try{PL_rl = top.document.URL;}catch(_e){PL_rl='';};");if( PL_rl != document.URL ) PL_frm = true;};
+if(PL_frm){ eval("try{PL_prl = top.document.URL;}catch(_e){PL_prl='blockedReferrer';};"); if(PL_prl == '') eval("try{PL_prl=parent.document.URL;}catch(_e){PL_prl='';};"); if( _IX(PL_prl,'#') > 0 ) PL_prl=PL_prl.substring(0,_IX(PL_prl,'#')); if( _IX(PL_rf,'#') > 0 ) PL_rf=PL_rf.substring(0,_IX(PL_rf,'#')); if( PL_prl.charAt(PL_prl.length-1)=='/') PL_prl = PL_prl.substring(0,PL_prl.length-1); if( PL_rf.charAt(PL_rf.length-1)=='/') PL_rf = PL_rf.substring(0,PL_rf.length-1); if( PL_rf == '' ) eval("try{PL_rf=parent.document.URL;}catch(_e){PL_rf='blockedReferrer';}"); if( PL_rf=='blockedReferrer' || PL_prl == 'blockedReferrer'){ PL_rf='',PL_prl='';}; if( PL_rf == PL_prl ){ eval("try{PL_rf=top.document.referrer;}catch(_e){PL_rf='';}"); if( PL_rf == ''){ PL_rf = 'bookmark';};if( _IX(document.cookie,'ACE_CK='+escape(PL_rf)) > -1 ){ PL_rf = PL_prl;} else{ if(_IX(PL_prl,'?') > 0) PL_ak = PL_prl.substring(_IX(PL_prl,'?')+1,PL_prl.length); if( _IX(PL_prl,'OVRAW=') > 0 ){ PL_ak = 'src=overture&kw='+PL_prl.substring(PL_prl.indexOf('OVKEY=')+6,PL_prl.indexOf('&',PL_prl.indexOf('OVKEY=')+6)); }; if(_IX(PL_prl,'gclid=') > 0 ){ PL_ak='src=adwords'; };if( _IX(PL_prl,'DWIT=') > 0 ){PL_ak='src=dnet_cb';}; if( _IX(PL_prl,'rcsite=') > 0 ){PL_ak=PL_prl.substring(PL_prl.indexOf('rcsite='),PL_prl.length);};  document.cookie='ACE_CK='+escape(PL_rf)+';path=/;'; }; if(document.URL.indexOf('?')>0 && PL_ak == '' ) PL_ak =document.URL.substring(document.URL.indexOf('?')+1,document.URL.length); }; }else{ if( _IX(PL_rf,'#') > 0 ) PL_rf=PL_rf.substring(0,_IX(PL_rf,'#')); if(_IX(document.URL,'?') > 0) PL_ak = document.URL.substring(_IX(document.URL,'?')+1,document.URL.length); };
+if( _IX(PL_ak,"rcsite=") > 0 &&  _IX(PL_ak,"rctype=") > 0){
+    PL_ak += '&';
+    PL_ak = PL_ak.substring(_IX(PL_ak,'rcsite='),PL_ak.indexOf('&',_IX(PL_ak,'rcsite=')+7))+'-'+PL_ak.substring(_IX(PL_ak,'rctype=')+7,PL_ak.indexOf('&',_IX(PL_ak,'rctype=')+7))+'&';
+}
+if(document.URL.substring(0,8)=='https://'){PU_rl='https://gtp8.acecounter.com/sslp1';}; PL_rl=document.URL;
+if( PL_rf.indexOf('googlesyndication.com') > 0 ){ var PL_rf_idx = PL_rf.indexOf('&url=');  if( PL_rf_idx > 0 ){ var PL_rf_t = unescape(PL_rf.substring(PL_rf_idx+5,PL_rf.indexOf('&',PL_rf_idx+5)));  if( PL_rf_t.length > 0 ){ PL_rf = PL_rf_t ;};  };  };
+if(_IX(PL_rl,'#')>0) PL_rl=PL_rl.substring(0,_IX(PL_rl,'#'));if(PL_rl.charAt(PL_rl.length)=='/') PL_rl=PL_rl.substring(0,PL_rl.length-1);if(_IX(PL_rl,'://')>0) PL_rl=PL_rl.substring(_IX(PL_rl,'://')+3,PL_rl.length);if(PL_rf.charAt(PL_rf.length)=='/') PL_rf=PL_rf.substring(0,PL_rf.length-1);if(_IX(PL_rf,'://')>0) PL_rf=PL_rf.substring(_IX(PL_rf,'://')+3,PL_rf.length);if( typeof PL_rf==_UD||( PL_rf == '' )) PL_rf = 'bookmark' ;PL_cd=(PL_bn=="MSIE")?screen.colorDepth:screen.pixelDepth;PL_UA = navigator.userAgent;PL_ua = navigator.userAgent.toLowerCase();if (navigator.language) {  PL_ul = navigator.language.toLowerCase();} else if (navigator.userLanguage) {  PL_ul = navigator.userLanguage.toLowerCase();}PL_st = _IX(PL_UA,'(') + 1;PL_end = _IX(PL_UA,')');PL_str = PL_UA.substring(PL_st, PL_end);PL_if = PL_str.split('; ');PL_cmp = 'UNKNOWN' ;if (_IX(PL_ua,'msie') != -1) {  PL_cmp = navigator.appName;  PL_str = PL_if[1].substring(5, PL_if[1].length);  PL_vs = parseFloat(PL_str);} else if ( _IX(PL_ua,'opera') != -1 ){  PL_cmp = "Opera" ;} else if ((PL_st = _IX(PL_ua,"firefox")) > 0) {  PL_cmp = "Firefox";  PL_vs = PL_ua.substring(PL_st+8, PL_ua.indexOf('.',PL_st+8));  } else if ((PL_st = _IX(PL_ua,"netscape6")) > 0) {  PL_cmp = "Netscape";  PL_vs = PL_ua.substring(PL_st+10, PL_ua.length);  if ((PL_st = _IX(PL_vs,"b")) > 0 ) {    PL_str = PL_vs.substring(0,_IX(PL_vs,"b"));    PL_vs = PL_str ;  };} else if ((PL_st = _IX(PL_ua,"netscape/7")) > 0) {  PL_cmp = "Netscape";  PL_vs = PL_ua.substring(PL_st+9, PL_ua.length);  if ((PL_st = _IX(PL_vs,"b")) > 0 ){ PL_str = PL_vs.substring(0,_IX(PL_vs,"b")); PL_vs = PL_str;};}else{ if (_IX(PL_ua,"gecko") > 0){ PL_cmp = navigator.vendor;  } else if (_IX(PL_ua,"nav") > 0){ PL_cmp = "Netscape Navigator";}else{ PL_cmp = navigator.appName;}; PL_av = PL_UA ;};if (parseInt(PL_vs) == parseFloat(PL_vs)) {  PL_vs = PL_vs + ".0";};PL_bz = PL_cmp; if( _IX(PL_pf,_UD) >= 0 || PL_pf ==  '' ){ PL_os = 'UNKNOWN' ;}else{ PL_os = PL_pf ; };if( _IX(PL_os,'Win32') >= 0 ){if( _IX(PL_av,'98')>=0){ PL_os = 'Windows 98';}else if( _IX(PL_av,'95')>=0 ){ PL_os = 'Windows 95';}else if( _IX(PL_av,'Me')>=0 ){ PL_os = 'Windows Me';}else if( _IX(PL_av,'NT')>=0 ){ PL_os = 'Windows NT';}else{ PL_os = 'Windows';};if( _IX(PL_av,'NT 5.0')>=0){ PL_os = 'Windows 2000';};if( _IX(PL_av,'NT 5.1')>=0){PL_os = 'Windows XP';if( _IX(PL_av,'SV1') > 0 ){PL_os = 'Windows XP SP2';};};if( _IX(PL_av,'NT 5.2')>=0){PL_os ='Windows Server 2003';};if( _IX(PL_av,'NT 6.0')>=0){PL_os ='Windows Vista';};};PL_pf_s = PL_pf.substring(0,4);if( PL_pf_s == 'Wind'){if( PL_pf_s == 'Win1'){PL_os = 'Windows 3.1';}else if( PL_pf_s == 'Mac6' ){ PL_os = 'Mac';}else if( PL_pf_s == 'MacO' ){ PL_os ='Mac';}else if( PL_pf_s == 'MacP' ){PL_os='Mac';}else if(PL_pf_s == 'Linu'){PL_os='Linux';}else if( PL_pf_s == 'WebT' ){ PL_os='WebTV';}else if(  PL_pf_s =='OSF1' ){ PL_os ='Compaq Open VMS';}else if(PL_pf_s == 'HP-U' ){ PL_os='HP Unix';}else if(  PL_pf_s == 'OS/2' ){ PL_os = 'OS/2' ;}else if( PL_pf_s == 'AIX4' ){ PL_os = 'AIX';}else if( PL_pf_s == 'Free' ){ PL_os = 'FreeBSD';}else if( PL_pf_s == 'SunO' ){ PL_os = 'SunO';}else if( PL_pf_s == 'Drea' ){ PL_os = 'Drea'; }else if( PL_pf_s == 'Plan' ){ PL_os = 'Plan'; }else{ PL_os = 'UNKNOWN'; };};if( PL_cu == 'x86' ){ PL_cu = 'Intel x86';}else if( PL_cu == 'PPC' ){ PL_cu = 'Power PC';}else if( PL_cu == '68k' ){ PL_cu = 'Motorola 680x';}else if( PL_cu == 'Alpha' ){ PL_cu = 'Compaq Alpa';}else if( PL_cu == 'Arm' ){ PL_cu = 'ARM';}else{ PL_cu = 'UNKNOWN';};if( PL_d == '' || typeof PL_d==_UD ){ PL_d = '0*0';}
+</script>
+<script language='javascript1.1' id='_PL_hdc'> PL_sv=11;</script>
+<script language='javascript1.1'>
+if(typeof _PL_hdki == 'undefined'){ var _PL_hdki = new Image() ; if( typeof window.screen == 'object'){PL_sv=12;PL_d=window.screen.width+'*'+window.screen.height;};if(PL_bn=="MSIE"){if(PL_bv>=4){ PL_sv=12;};if( PL_bv >= 5){ PL_sv = 13;};};if(_IX(PL_bn,"Netscape") > -1 ||PL_bn=="Mozilla"||PL_bn=="Opera"){if(PL_bv>=3){ PL_sv = 11 ;};if(PL_bv>=4){ PL_sv = 12 ;};if(PL_bv>=4.06){ PL_sv=13 ; };if(PL_d==_UD){ PL_d='UNKNOWN'; };}; if(document.URL.substring(0,8)=='https://'){PL_arg=PU_rl;}else{PL_arg=PU_rl+':'+PU_pt+'/';}; if( typeof PL_ERR !=_UD && PL_ERR == 'err'){PL_arg += "?euid="+PL_CODE;}else{PL_arg += "?uid="+PL_CODE;}; PL_arg += "&cpu="+PL_cu+"&bz="+PL_bz+"&bv="+PL_vs+"&os="+PL_os;PL_arg += "&dim="+PL_d+"&cd="+PL_cd+"&je="+PL_je+"&ck="+PL_ck+"&ref="+escape(PL_rf)+"&url="+escape(PL_rl);PL_arg += "&jv="+PL_sv+"&tz="+PL_tz+"&ul="+PL_ul+"&ad_key="+escape(PL_ak)+"&" ; if( _IX(PL_bn,"Netscape") > -1 ||PL_bn=="Mozilla"){ setTimeout("_PL_hdki.src = PL_arg;",1);}else{   _PL_hdki.src = PL_arg;};};
+</script>
+<script language='javascript'>
+if(PL_sv==10){ if(typeof PL_rf == _UD ||PL_rf=='')PL_rf='bookmark';PL_arg = "<img src='" + PU_rl + ":"+PU_pt+"/?uid=" + PL_CODE;PL_arg += "&cpu="+PL_cu+"&bz="+PL_bz+"&bv=4.0&os="+PL_os;PL_arg += "&dim=640*480&cd=8&je=0&ck="+PL_ck+"&ref="+escape(PL_rf)+"&url="+escape(PL_rl);PL_arg += "&jv=10&tz="+PL_tz+"&ul="+PL_ul+"&ad_key="+escape(PL_ak)+"&' border=0>" ;document.write(PL_arg);};
+</script>
+<noscript><img src='http://gtp8.acecounter.com:8080/?uid=AM6A33295931127&cpu=unknown&bz=unknown&bv=&os=unknown&dim=unknown&cd=0&je=0&ck=1&ref=bookmark&url=www.isky.co.kr/&jv=0&tz=0&ul=unknown&' border=0 width=1 height=1></noscript>
+<!-- AceCounter(Pro)Version 6.55 END -->
+
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>
+	function goScrapSource(){
+		var str_embed_script = "<iframe src='http://www.isky.co.kr/source/fla/brand/player.swf?videoURL=http://dmfile.isky.co.kr/upload/musthave/tv/s240k_tv_cf.flv' name='MovieFla' width=270 height=202 ></iframe>";
+		window.clipboardData.setData('Text', str_embed_script);
+
+		alert("소스가 복사 되었습니다. \n\nCtrl + V 를 눌러 주세요.");
+	}
+
+	function goView(form, idx){
+		form.idx.value = idx;
+		form.tv_state.value = "VOD";
+		form.target = "_self";
+		form.action = "tv_view.jsp";
+		form.submit();
+	}
+
+	function goMakingView(form, idx){
+		form.idx.value = idx;
+		form.tv_state.value = "MAK";
+		form.target = "_self";
+		form.action = "tv_view.jsp";
+		form.submit();
+	}
+
+	// comment list 
+	function goCommentPage(form, goUrl, goPage){
+		form.action = goUrl;
+		form.comment_p.value = goPage;
+		form.submit();
+
+	}	
+
+	// comment insert
+	function goCommentAdd(){
+
+		// 로그인 체크...해야함
+		alert('로그인 하셔야 등록 가능합니다.');
+		return;
+
+
+		var form = document.comment_form;
+		if(form.comment_content.value == ""){alert("댓글 내용을 입력해주세요."); return;}
+		form.comment_pro.value = "ins";
+		form.target = "innerComment";
+		form.action = "inner_comment_proc.jsp";
+		form.submit();
+	}
+
+	function goCommentDelete(form, idx){
+		if(confirm("삭제하시면 되돌릴 수 없습니다. \n\n삭제 하시 겠습니까?")){
+			form.comment_pro.value = "del";
+			form.comment_idx.value = idx;
+			form.target = "innerComment";
+			form.action = "inner_comment_proc.jsp";
+			form.submit();
+		}else return;
+	}
+
+	function commentChkLen(form){
+		
+			//alert("로그인이 필요합니다.");
+		
+	}
+
+	function tview(t){
+		var _x = document.getElementsByName(t);
+		for(var i=0; i<_x.length; i++){
+			if(i == 0) visibleOption = _x[i].style.display == "none" ? "" : "none";
+			_x[i].style.display = visibleOption;
+		}
+	}
+</script>
+<script>var dispNum="010201"</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color:#bed3ea ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color:#bed3ea ; text-decoration: none;}
+
+.location_here {color:#bed3ea;}
+
+A.a_paging { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+
+.subLeft {border-right:solid 10px #FFFFFF;background:#679bd2 url('/static/images/common/contBg_01.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+.PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}
+.PsubRight { padding:0 0 0 20px;background:#679bd2;}
+
+.twoDepth {border-bottom:solid 1px #bdd3ea;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_01.gif') right bottom no-repeat;}
+.Location {color:#bed3ea;border-bottom:solid 1px #bdd3ea;text-align:right;}
+.pthreeDepth {color:#bed3ea;border-bottom:solid 1px #bdd3ea;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/musthave/010201_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/musthave/0102_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board01 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board01 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+</style>
+</head>
+<body scroll="no">
+<form name="iForm" method="post">
+	<input type="hidden" name="idx" value="">
+	<input type="hidden" name="page" value="1">
+	<input type="hidden" name="tv_state" value="">
+</form>
+
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td class="subLeft"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+			<table width="760" cellpadding="0" cellspacing="0" border="0">
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right">
+					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><a href="javascript:menuLink('0102');"><img src="/static/images/musthave/01_snavi_02_.gif"></a></td>
+							<td><a href="javascript:menuLink('0103');"><img src="/static/images/musthave/01_snavi_03.gif"></a></td>
+							<td><a href="javascript:menuLink('0101');"><img src="/static/images/musthave/01_snavi_01.gif"></a></td>
+							<td><a href="javascript:menuLink('0104');"><img src="/static/images/musthave/01_snavi_04.gif"></a></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+
+				<!-- [s] 2Depth & location -->
+				<tr valign="top">
+					<td class="p20l" colspan="2"><table width="740" cellpadding="0" cellspacing="0" border="0">
+					
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><a href="javascript:menuLink('0102');"><img src="/static/images/musthave/0102.gif" border="0" /></a></div></td>
+							<td class="Location"><img src="/static/images/common/_blank.gif"></td>
+							<!-- td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td -->
+						</tr>
+					
+					</table></td>
+				</tr>
+				<!-- [e] 2Depth & location -->
+
+				<tr valign="top">
+					<!-- [s] 3Depth flash navi -->
+					
+					<td width="150" class="subNavi"><script>swftrans('/static/flash/subNavi_0102.swf?PageCode=010201', '135', '130');</script><!-- <img src="/static/flash/subNavi_01.gif"> --></td>
+					
+
+					<!-- [e] 3Depth flash navi -->
+					<!-- [s] contents Area -->
+					<td width="610" class="contentsArea"><table width="610" cellpadding="0" cellspacing="0" border="0">
+						<!-- [s] Ptitle -->
+						<tr valign="top">
+							<td height="49"><img src="/static/images/musthave/010201_ptitle.gif"></td>
+						</tr>
+
+						<!-- [e] Ptitle -->
+						<tr valign="top">
+							<td height="24" align="right"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td class="p3r"><a href="javascript:goScrapSource()"><img src="/static/images/musthave/btn_source.gif" border="0"></a></td>
+									<td><a href="tv.jsp?page=1"><img src="/static/images/musthave/btn_list.gif" border="0"></a></td>
+								</tr>
+							</table></td>
+						</tr>
+					</table>
+
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_tvadView" style="border-top:solid 1px #92b3d9;border-bottom:solid 1px #77a5d7;">
+						<tr>
+							<td width="410" height="49" class="adTit"><table width="410" cellpadding="0" cellspacing="0" border="0" class="tbl_tvadView_tit">
+								<tr>
+									<th width="71"><img src="/static/images/musthave/010201_tit_01.gif"></th>
+									<td width="355" class="txt">IM-S240K</td>
+								</tr>
+								<tr>
+									<th><img src="/static/images/musthave/010201_tit_02.gif"></th>
+									<td class="img">
+									<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>
+							</table></td>
+							<!-- <td width="200" class="typeBtn">
+								<table width="200" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td width="97" align="right" class="p10r"><a href="javascript:goView(iForm,'');"><img src="/static/images//" border="0"></a></td>
+									<td width="93" class="p5r"><a href="javascript:goMakingView(iForm,'');"><img src="/static/images//" border="0"></a></td>
+								</tr>
+								</table>
+							</td> -->
+						</tr>
+					</table>
+
+					
+
+					<!-- [s] 광고 영상 & 말풍선 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td height="246" style="background:url('/static/images/musthave/010201_vodBg.gif') no-repeat;"><div id="vodDiv" style="position:relative; width:610px; height:245px; left:;top:;z-index:100; visibility: visible;">
+								<!-- vod -->
+								<div id="vodPlayDiv" style="position:absolute;left:165px;top:15px;width:279px;height:209px;z-index:101;"><script>swftrans('http://www.isky.co.kr/source/fla/brand/player.swf?videoURL=http://dmfile.isky.co.kr/upload/musthave/tv/s240k_tv_cf.flv', '279', '209');</script></div>
+								<!-- 좌상 -->
+								<div id="vodbloon1" style="position:absolute;left:10px;top:40px;width:115px;height:50px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">일정관리가 100개밖에 안됨..   요즘 핸드...</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">groove11</span></div>
+								<!-- 우상 -->
+								<div id="vodbloon2" style="position:absolute;left:476px;top:35px;width:125px;height:55px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">100433님 DMB 지상파거든요? 알고 하시...</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">hanmansu</span></div>
+								<!-- 좌하 -->
+								<div id="vodbloon3" style="position:absolute;left:75px;top:120px;width:80px;height:80px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">전 카메라플래쉬가 없다는거랑 DMB가 위성파라...</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">100433</span></div>
+								<!-- 우하 -->
+								<div id="vodbloon4" style="position:absolute;left:465px;top:110px;width:100px;height:70px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">나우리와이프형 이렇게 셋이디자인보구 &amp;#448...</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">ljy830628</span></div>
+							</div></td>
+						</tr>
+					</table>
+					<!-- [s] 광고 영상 & 말풍선 -->
+
+<iframe name="innerComment" src="" width="0" height="0"></iframe>
+
+<form name="comment_form" method="post">
+	<input type='hidden' name='page' value='1'>
+	<input type='hidden' name='idx' value='638'>
+	<input type="hidden" name="comment_tname" value="ISKY_ADVERTISING">
+	<input type="hidden" name="comment_p_idx" value="638">
+	<input type="hidden" name="comment_idx" value="">
+	<input type="hidden" name="comment_pro" value="">
+
+	<input type="hidden" name="comment_bePoint" value="true">
+	<input type="hidden" name="comment_pidx_column" value="idx">
+	<input type="hidden" name="comment_point_column" value="point">
+	<input type="hidden" name="comment_beComment_cnt" value="true">
+	<input type="hidden" name="comment_cnt_column" value="comment_cnt">
+
+
+					<!-- [s] 한줄평 남기기 입력 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><img src="/static/images/musthave/box_comment_01.gif"></td>
+						</tr>
+						<tr valign="top">
+							<td align="center" style="background:url('/static/images/musthave/box_comment_02.gif') repeat-y;padding:5px 0 5px 0;"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td height="22"><img src="/static/images/musthave/010201_comment_tit_01.gif"></td>
+									<td width="422"><input type="text" name="comment_content" id="" class="input_text" style="width:420px;height:19px;" maxlength="300" onkeyup="commentChkLen(comment_form)" readonly onClick="alert('로그인 하셔야 등록 가능합니다.');"></td>
+									<td><A HREF="javascript:goCommentAdd();"><img src="/static/images/musthave/btn_write.gif"></A></td>
+								</tr>
+								<tr>
+									<td height="22"><img src="/static/images/musthave/010201_comment_tit_02.gif"></td>
+									<td><table width="420" cellpadding="0" cellspacing="0" border="0">
+										<tr valign="top" colspan="2">
+											<td><input type="radio" name="comment_point" value="1" id="" /><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="2" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="3" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="4" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="5" id="" checked="check" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+										</tr>
+									</table></td>
+									<!-- <td><A HREF="javascript:tview('comment');"><img src="/static/images/musthave/btn_commentViewall.gif"></A></td> -->
+								</tr>
+							</table></td>
+						</tr>
+						<tr valign="top">
+							<td><img src="/static/images/musthave/box_comment_03.gif"></td>
+						</tr>
+					</table>
+					<!-- [e] 한줄평 남기기 입력 -->
+
+					<!-- [s] 한줄평 남기기 리스트 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_comment01">
+						<tr valign="top">
+							<td align="center"><table width="" cellpadding="0" cellspacing="0" border="0" class="tbl_comment01list">
+							
+								<tr valign="top" >
+									<td width="56" class="id">groove11</td>
+									<td width="427" class="comment">일정관리가 100개밖에 안됨..   요즘 핸드폰치고 일정관리 기능이 약함
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hanmansu</td>
+									<td width="427" class="comment">100433님 DMB 지상파거든요? 알고 하시는 소린지..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">100433</td>
+									<td width="427" class="comment">전 카메라플래쉬가 없다는거랑 DMB가 위성파라는거빼고는 다 좋네요~ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ljy830628</td>
+									<td width="427" class="comment">나우리와이프형 이렇게 셋이디자인보구 &#44851;혀서 바루샀져 정말 ^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hanmansu</td>
+									<td width="427" class="comment">2일전에 이폰 샀는데요 디자인도 괜찮고 DMB잘 터져요 ^^ 전 부가서비스없이 13만원 주고 샀답니다.
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">blue1240</td>
+									<td width="427" class="comment">디자인은 괜찮은데 기능은 영~ 가뜩이나 핸폰이 하얀데 키패드 숫자의 불까지 연보라 색깔이라 어쩔땐 문자보낼때 글씨가 잘 안보인다는;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">fleur0605</td>
+									<td width="427" class="comment">저도 이폰쓰고있어요ㅋ광고에 나오는 최신폰이라 기분이 좋네여ㅋ근데 스카첨써서 기능에 적응하기 힘드네요ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">xchlzzangx</td>
+									<td width="427" class="comment">친구 어머님이 갖고 계신데 디자인 이쁘던데 ㅎ 기능은 어떤지 잘 몰라서 ;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kindorchid</td>
+									<td width="427" class="comment">기능은 아쉽지만.. 디자인은 좋네요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tjdgh120</td>
+									<td width="427" class="comment">난이폰 샀다 우하하하하하하하하 기능존나꾸죠
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">lololol</td>
+									<td width="427" class="comment">우와이폰이뿌당
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">2lian</td>
+									<td width="427" class="comment">쿠쿠 레인폰 구입했어요~~아직 기능은 잘모르지만 이뻐요 ^^ 오늘 개통준비중
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">janguy</td>
+									<td width="427" class="comment">스카이는 진짜 핸펀들이 안싸보이고 좋은것같아요ㅋㅋㅋ 언니랑 저랑 스카이만써요~ 제폰은 이거구용  제 개인적인취향이지만 애니콜중에서 이쁜거 몇개못&#48419;...; 스카이광고도 나올때마다 마음에들고 스카이쨩
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">y2i1204</td>
+									<td width="427" class="comment">이 광고에 나오는 꽃 이름이 뭔지 아시는 분 계세요? 너무 예뻐서요... 알려주세요~~~!!!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">focju1004</td>
+									<td width="427" class="comment">내마음속 한구석 묻은 먼지를 씻어주는 雨
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jawoong86</td>
+									<td width="427" class="comment">내마음속에 빗줄기....쩔어!!!폰도 이쁘고 정말좋은거같아요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ojung0312</td>
+									<td width="427" class="comment">어쩌죠 이폰사고 "잘가라 나쁜자식"를 해버렸어요. 이폰볼때마다. 마음에  눈물이 내려요ㅜㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rkdrlqhd2028</td>
+									<td width="427" class="comment">오늘 폰삿는데 넘좋네염~ [하지만 너무 어렵다는 ㅠㅠ]그래도 디자인이맘에들고 첫폰이니깐넘좋네염~ ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jhn02342</td>
+									<td width="427" class="comment">엄청 이뻐염 ♥댓글보면 커버를 껴야할까..고민중..히히 뒤에 빗줄기라니깐 어머니가 긁엇냐고 모라모라하셔여..ㅠㅠ ㅠㅠ이게 장점인데.. 긁엇다니 ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">slizard</td>
+									<td width="427" class="comment">디자인은 정말 최고! 하지만 다소 불편한 잡기능등...그래도 내 폰이니까 좋다^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">suysui</td>
+									<td width="427" class="comment">디자인만이쁨
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ids234</td>
+									<td width="427" class="comment">디자인 맘에들고 그리구 광고 보고  바로 망설임 없이 구입..ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ht3669</td>
+									<td width="427" class="comment">디엠비가잘안돼 ㅠㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">511sh</td>
+									<td width="427" class="comment">작고 이쁘고 디엠비도 깔끔하고 작은 키패드와 이어폰 안테나에 적응하면 상당히 좋을꺼 같아요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">100433</td>
+									<td width="427" class="comment">이거디자인넘맘에들어ㅋ근데왠지 핸드폰고리 달면 촌스러운것같애여ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">lick9518</td>
+									<td width="427" class="comment">모양 이면모양 모든게다좋긴한데 ,., 외장매모리가없다는단점 때문에 .. 별4개 ㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">psy9504</td>
+									<td width="427" class="comment">완전 만능 폰이에요.. 디자인도 이쁘고 기능들도 거의 다 완벽하게 되어있구...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">floyd0410</td>
+									<td width="427" class="comment">빛깔좋은 개살구...모양만 좋고.정말 후회하는폰..암튼 지랄같은폰...태클 거심 받음 01072449117
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">loveseven12</td>
+									<td width="427" class="comment">젠더분실.....핸드폰고리식으로 하나 내시면안되나여 ㅠㅠ?
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rudals1988</td>
+									<td width="427" class="comment">완전 대박좋아요~이쁘구 기능좋고 화질좋고 최고최고!!!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">parreld</td>
+									<td width="427" class="comment">디자인은 좋은데ㄲㄲ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ds95kim</td>
+									<td width="427" class="comment">저도 오타가 좀 잘나여 아흑
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">led77</td>
+									<td width="427" class="comment">디자인은 좋은데.. 기능 부족....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ten1098</td>
+									<td width="427" class="comment">역시 레인폰이야 슬림하고 이어폰만&#48820;면 ㄷㄷ ㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">skylee2957</td>
+									<td width="427" class="comment">아흑 레인폰 오타가 잘납니다..OTL
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rmsgkr6956</td>
+									<td width="427" class="comment">레인폰이랑 돌핀폰이랑 한참을 고민하다 레인폰을 샀다는.........ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kwestcome</td>
+									<td width="427" class="comment">전에 쓰든거에 넘 무 익숙해져서 .. 문자 쓰기 힘들ㅜㅜ 불빛땜시 키패드도 잘안보이구 ㅜㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">york99</td>
+									<td width="427" class="comment">정말 마음에 든답니다!!! 디자인 때문에 한눈에 끌렸어요.
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">krgmpwg</td>
+									<td width="427" class="comment">굿입니다
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">vngnfh</td>
+									<td width="427" class="comment">전 210k 샀는대 ㅎㅎㅎㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gktmdtn123</td>
+									<td width="427" class="comment">이폰짱이에요 저있는데
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">show240</td>
+									<td width="427" class="comment">오늘 구매했어요!^^ 정말 좋은 제품이에요... 우왕 굿!!^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">playon1001</td>
+									<td width="427" class="comment">우왕ㅋ굳ㅋ내꺼다
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">loveonlyya</td>
+									<td width="427" class="comment">skt에서 ktf로 왔습니다. 우선 디자인 이쁜데 건전지 끼울때 진짜 넘 약한거 같구, 진동이 너무 약합니다. 키패드 불빛두 약하구,,, 그래두 디자인은 깔끔 그 자체내용~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sigunijr</td>
+									<td width="427" class="comment">레인폰.. IM-S20L 지금 단가 67500원.. LGT로..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">mintl4u</td>
+									<td width="427" class="comment">레인폰 정말 맘에드는게~! 킹!왕!짱이예용 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">runbird</td>
+									<td width="427" class="comment">레인폰...KTF,LGT용으로만 나와서 섭섭합니다 어서 SKT용도 출시되기를 바랍니다 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">afhkl22</td>
+									<td width="427" class="comment">역시 레인.. 난 9만원 주고 샀는디 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hyunsang71</td>
+									<td width="427" class="comment">제발 레인도 SKT전용 만들어주세여~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hyunsang71</td>
+									<td width="427" class="comment">제발 레인도 SKT전용 만들어주세여~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hyunsang71</td>
+									<td width="427" class="comment">제발 레인도 SKT전용 만들어주세여~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">krksciens</td>
+									<td width="427" class="comment">레인블랙으로 어제 2만원에 샀어요. 환경폐기물 문제 때문에 충전기나 pc케이블은 별도로 사야합니당.  졸라서 공짜로 받을순 있겠지만요^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">preexe</td>
+									<td width="427" class="comment">레인 너무 이뻐요 ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">munsu7942</td>
+									<td width="427" class="comment">레인 정말 사고 싶어요 SKT전용 레인두 만들어주세요 제발~나오면 바로 살꺼에요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">munsu7942</td>
+									<td width="427" class="comment">레인 정말 사고 싶어요 SKT전용 레인두 만들어주세요 제발~나오면 바로 살꺼에요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">munsu7942</td>
+									<td width="427" class="comment">레인 정말 사고 싶어요 SKT전용 레인두 만들어주세요 제발~나오면 바로 살꺼에요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gkdud4440</td>
+									<td width="427" class="comment">이펀 샀는데..ㅋㅋ 무쟈게 이뽀여,ㅋㅋㅋ 그리고 기능도 좋구여.ㅋ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">woogong9</td>
+									<td width="427" class="comment">정말 보면 볼수록 맘에 들어요 ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sks9214</td>
+									<td width="427" class="comment">기능도 좋구 디자인두좋구 넘 조아여~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sunny14628</td>
+									<td width="427" class="comment">어제 구입 했는데 넘 맘에 드네요. 기분 최고예요.*^.^*
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pcj3439</td>
+									<td width="427" class="comment">여자폰 치곤...남자한테도 잘 어울림..ㅋㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tmshdnquf</td>
+									<td width="427" class="comment">화이트 갖고 싶었는데 없어서 블랙으로 샀어요~ 이뿌고 좋아요 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ywlee2104</td>
+									<td width="427" class="comment">너무이쁘네요^^ㅋㅋ정말 커버 뺄때 폰 부서질거 같아요...아쉬운점은 키톤소리조절이 옆에 없다는거..ㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">namilovely</td>
+									<td width="427" class="comment">어제샀어요^^ 근데 진짜 커버뺄때나 낄때 부셔질거같아요ㅠㅠㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">puredemon</td>
+									<td width="427" class="comment">디자인이 너무 맘에 들어요^^ 갖고 싶던 것을 드뎌 가지게 되었다는~^^*
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">bmw100san</td>
+									<td width="427" class="comment">광고..ㄷㄷ 넘 좋네영
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">podo6857</td>
+									<td width="427" class="comment">진짜 사고 싶은데...쩝..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">wndrnjs2</td>
+									<td width="427" class="comment">진짜 괜찮네요~오늘 구입했는데 정말 마음에 듭니다~~근데 진짜 커버뺄때 부숴질거 같다는 느낌이 들긴 듭니다~ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pyj0922</td>
+									<td width="427" class="comment">zzz
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jn4948</td>
+									<td width="427" class="comment">저이거샀는데요짱짱좋아요!!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kmsun7777</td>
+									<td width="427" class="comment">레인사고싶었는데 비싸서돌핀샀어요ㅜㅜㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">webdna</td>
+									<td width="427" class="comment">난 IM-U200계열 샀는데 '감싸안아줄수 있다면 그걸로-스카이'이거 ㅜㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ykkh777</td>
+									<td width="427" class="comment">나도 블랙 사고 싶었는데.... kt만 된다고 해서 어쩔수 없이 화이트 샀어염
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pretty8531</td>
+									<td width="427" class="comment">배터리 빨리단다고 하셔서들 얼매나 빨리달까 했는데 이건뭐..그리고 용량문제
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sumi0358</td>
+									<td width="427" class="comment">블랙 이쁘심^ ^배터리가 빨리 달지만, 그레도 완전 마음에 듬♡
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">mini153</td>
+									<td width="427" class="comment">배터리가 쫌 빨리 달지만... 그래도 다른 게 넘 만족스러워서 100점^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dewant</td>
+									<td width="427" class="comment">디자인이 슬림해서 이뻐요 ~단, ,배터리가 빨리단다는 단점이..ㅋ;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jinh0823</td>
+									<td width="427" class="comment">이폰샀어요 넘 좋아 ㅎㅎㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">souey</td>
+									<td width="427" class="comment">ㅋㅋㅋㅋㅋㅋ샀는데........진짜이뿌네용오호호호호
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gggg2222</td>
+									<td width="427" class="comment">한가지만더요  벨소리가 작나요?
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gggg2222</td>
+									<td width="427" class="comment">오늘 주문할라고합니다  실제로 본적이없어서 색깔 추천좀 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">vntlzpt</td>
+									<td width="427" class="comment">나쁜점 하나 dmb볼때 안테나가 이어폰에 내장되서 참불편하구 이어폰&핸드폰스피커 동시듣기하면 스피커소리가 너무작더군여 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">vntlzpt</td>
+									<td width="427" class="comment">저는 블랙쓰고잇는데 핸폰 투명커버 벗기고 베터리교환이나 먼지좀 딱는다고 벗기면 좀힘들죠 두개쪼개질까봐 커버벗길때 뒤쪽2개를 먼저 벗기고 손톱으로 그라인을 그으면서 앞쪽하나딴후 앞쪽따진 뒤쪽잡고 벗김니다. 쩝,..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">apdlzj321</td>
+									<td width="427" class="comment">우앙 미치겠음 너무이쁨 완전 후회없음
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kodlullus</td>
+									<td width="427" class="comment">외부메모리가 없다는거... 블루투스가 안된다는거... 빼고는 100점
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ls7gy</td>
+									<td width="427" class="comment">블랙으로샀습니다. 정말 좋은데 약이 빨리다는거같아요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">wjddudwns21</td>
+									<td width="427" class="comment">와우~! 핸드폰 좋은데 영화 다운 못받나..../???..ㅜ.ㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">4275bb</td>
+									<td width="427" class="comment">저 이거 블랙으로 샀는데 너무 이뻐요 ^^ 강추~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pagsja</td>
+									<td width="427" class="comment">화이트로샀는데, 베터리 분리할때 폰이 부셔질까봐 무서워요ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jinspell</td>
+									<td width="427" class="comment">보면볼수록 이쁘다는 ㅋㅋ 커버를 못씌우겠어요..ㅎㅎ;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kwon62</td>
+									<td width="427" class="comment">배터리.....ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">alwlsl486</td>
+									<td width="427" class="comment">화이트도 괜찮은데, 난 블랙이 좋아서 블랙으로 구압해서 쓰고 있지요^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">damean03</td>
+									<td width="427" class="comment">커버 버낄때~톤분리될거같아서~무서움.ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">silphir</td>
+									<td width="427" class="comment">skt 용으로도 제발 나왔으면...ㅠ_ㅠb
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">yhj3116</td>
+									<td width="427" class="comment">skt용으로 나왔으면 좋겠어요 +ㅁ+
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ekzm1777</td>
+									<td width="427" class="comment">이폰 디자인 진짜 강추임 ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">chenzigang</td>
+									<td width="427" class="comment">dddddddddddddddd
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">juliaseol</td>
+									<td width="427" class="comment">마이 펀~~~ 님들두 구입강추^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">minong1213</td>
+									<td width="427" class="comment">뒷테가너무탐나
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">loveyoung0</td>
+									<td width="427" class="comment">신비감과 호기심이 생기게 하네용. 가지고 싶어용. 광고만큼이나 신비와 재미?
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">qnsghdrnlfus</td>
+									<td width="427" class="comment">나이거 사고싶어!!ㅠㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">qnsghdrnlfus</td>
+									<td width="427" class="comment">나이거 사고싶어!!ㅠㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">lfuslfus</td>
+									<td width="427" class="comment">나이거 사고싶어!!ㅠㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">xodudktyi</td>
+									<td width="427" class="comment">난 이폰블랙 ㅋㅋ... 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">mkkohcm</td>
+									<td width="427" class="comment">이 광고보고 샀어요~~ㅋ 넘 조아여~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">whgusrb0672</td>
+									<td width="427" class="comment">되게 좋아보여요 ㅎ~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jinseal2006</td>
+									<td width="427" class="comment">언니 폰 ㅋ 화상, 촬영 할때 화질★★★★★게임★★★★☆화면 밝기★★★★★부럽다!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">park7057</td>
+									<td width="427" class="comment">디자인★★★★★스펙★★★★☆배터리★★☆☆☆
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">yuyungsun</td>
+									<td width="427" class="comment">사고싶다~~~~~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kmh9316</td>
+									<td width="427" class="comment">ㅠㅠ 이거 대신에 200k 로 사서 위안을 해요 ㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">teletoby</td>
+									<td width="427" class="comment">왜 sk용은 안나오는지;;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">spwind</td>
+									<td width="427" class="comment">넘 이뻐요.. 완전사고싶었으나.. 제얼굴에비해.. 넘작어서.. 돌핀으로.. ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kimsln2</td>
+									<td width="427" class="comment">메모리 대박-0- 사고서 조금후회한, 메모리만많으면좋을탠데 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hecate9my</td>
+									<td width="427" class="comment">너므 맘에드는 핸드폰..^^ s240k 사면 절대 후회 안해요..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">qkffpsxkdls</td>
+									<td width="427" class="comment">나도 240K 모델이 너무 마음에 들던데 ㅋ 예뻐요 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">nicotiana</td>
+									<td width="427" class="comment">주변에서 다들 가지고 다니는데...넘 갖고싶음..(><)
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ccpj0310</td>
+									<td width="427" class="comment">외장도 안되고 메모리 매우 좇만함 쓰레기 사지마셈;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ccpj0310</td>
+									<td width="427" class="comment">외장도 안되고 메모리 매우 좇만함 쓰레기 사지마셈;;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">bokyoung94</td>
+									<td width="427" class="comment">이건 뒷부분만 이쁜듯 앞부분은 별로...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">choi2183</td>
+									<td width="427" class="comment">진짜 좋음^_^~~디자인두 예쁘고 기능도 좋음..내장메모리긴 하지만^_^ㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">inspire99</td>
+									<td width="427" class="comment">손봐야할것이 넘많다 야심찬대 업그레이드나 기능이 부족해 쩝..그래도 쓸만해염 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">judiest</td>
+									<td width="427" class="comment">나도바꿨음
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">007lulu</td>
+									<td width="427" class="comment">sk꺼만 쓰다가 이폰보구 한번에 뻑 가버려서 결국 ktf로 바꿔버림...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">nayaerica</td>
+									<td width="427" class="comment">SKT없나 봤는데 없길래..많이 고민했지만 ㅠㅠ 너무 이뻐서 결국 질러버렸는데 나름 만족해요 ㅎㅎ 아 배터리가 좀 빨리달고 카메라 플래시랑 거울 없고..앞카메라(30만화소)는 화질 진짜 안좋고; 뒷카메라도 그냥그렇지만...암튼 디자인보고 산거라서 ㅎㅎ 넘이뻐요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tngus85</td>
+									<td width="427" class="comment">넘이뻐서 ktf루 바껏음....넘 이쁘구 다 따라사서...슬픔...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">koreanida</td>
+									<td width="427" class="comment">SK꺼만없어서 사기가 다소 꺼려진다...KTF로 가기싫은데....T T 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kanasee</td>
+									<td width="427" class="comment">진짜 와.. 슬림하고 디자인 짱 ㅋㅋ 이뿌다 >_<
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">idb1</td>
+									<td width="427" class="comment"> 신형이라 역시 다 좋은데...화소가 낮고..야간에 사진이 절대 안나온다 후레쉬가 없으므로..떨림이 심하다..등등..이 쫌 많이 아쉽다고 해야하나 게다가 배터리가 넘빨리 없어진다는? 슝슝?빠지네.ㅡㅡ;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jkone</td>
+									<td width="427" class="comment">속상하게 몇번 떨어 뜨렸어요 ㅠ ㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jkone</td>
+									<td width="427" class="comment">감성적이네요....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ykggg12</td>
+									<td width="427" class="comment">카메라200만화소 이상 이였으면 더 좋았을 텐데..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">yar1004</td>
+									<td width="427" class="comment">제발 sk에도좀..ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">white820018</td>
+									<td width="427" class="comment">최고조아요 ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">soskdl23tkf</td>
+									<td width="427" class="comment">머 대충좋아엽 ㅎㅎㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gns213</td>
+									<td width="427" class="comment">첨샀는데 ㅈㄴ 만족이네 ㅋㅋㅋ 디자인 우왕ㅋ굳ㅋ 스카이는 기능이 좀 ,, 근데 디자인좋고 영상통화 디엠비도 대서 ㅈㄴ 좋음
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gns213</td>
+									<td width="427" class="comment">첨샀는데 ㅈㄴ 만족이네 ㅋㅋㅋ 디자인 우왕ㅋ굳ㅋ 스카이는 기능이 좀 ,, 근데 디자인좋고 영상통화 디엠비도 대서 ㅈㄴ 좋음
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">gns213</td>
+									<td width="427" class="comment">첨샀는데 ㅈㄴ 만족이네 ㅋㅋㅋ 디자인 우왕ㅋ굳ㅋ 스카이는 기능이 좀 ,, 근데 디자인좋고 영상통화 디엠비도 대서 ㅈㄴ 좋음
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">whdgud269</td>
+									<td width="427" class="comment">...ㅇㄱ,  ㅉ  ㅇㄴㄷ  ㅂㄹㄷ.  ㅂㄸ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hjhj0322</td>
+									<td width="427" class="comment">2번째 폰인데 둘다 스카이꺼ㅋㅋIM-8500L 쓰다가 이걸로 바&#45031;는데 너무 예쁨ㅠ_ㅠ♡
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kikl12</td>
+									<td width="427" class="comment">게임하는데 손가락 뿌러질 지경...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kbhksk</td>
+									<td width="427" class="comment">오오~ 역시 SKY야~ SKT에서 KTF로 넘어왔어요~ ㅋㅋ~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">keroro77</td>
+									<td width="427" class="comment">sk도 꼭 나왔으면 합니다!! 그럼 바로 구매 할텐데...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">alexdotcom</td>
+									<td width="427" class="comment">스카이는 처음 써보는건데 심플하고 정말 좋은거 같아요~^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">oddin</td>
+									<td width="427" class="comment">이별의 느낌이 너무 아련해서... 이 폰 가지면 이별하지 않을 것 같네요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jei0720</td>
+									<td width="427" class="comment">비싸도일단샀는데나름괜찮고~후회없어요~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">lemonjw311</td>
+									<td width="427" class="comment">심플한듯 이쁘게 신경 쓴 디자인. 감성적CF. Best choice - SKY 레인폰
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tlgksdl</td>
+									<td width="427" class="comment">왜 SK텔레콤용으로는 안나오는건가요 ㅡㅡ; 빨리 나오삼~ 레인폰~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dlghrb2528</td>
+									<td width="427" class="comment">역시 스카이 광고는 감성적이야 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">egea</td>
+									<td width="427" class="comment">이거 좋아요~ 지금 쓰고 있는데 너무 예뻐서 매일 처다보고 있습니다..ㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kida07</td>
+									<td width="427" class="comment">sk에서 나오면 언넝 사야겠어용..  광고도 좋은거 같음..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tkd3457</td>
+									<td width="427" class="comment">디자인이무지이뻐요 ㅋㅋㅋ 엄청좋습니다
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dlguswn7809</td>
+									<td width="427" class="comment">역시 sky ! 고민 하지 않고 , 가자마자 바로 샀는데 ,정말 ! 후회 않습니다 ! 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">bluesea3708</td>
+									<td width="427" class="comment">SKT 많이 관심 가져 주세요~ SKT에서 안나오니깐. 기기변경이 힘들어요 ㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">mi10524</td>
+									<td width="427" class="comment">SK에서 나왔으면 조게타~~ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">click4724</td>
+									<td width="427" class="comment">첨쓰는 sky - ! 심플하니 맘에 꼭드네요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ktg79jjang</td>
+									<td width="427" class="comment">말이 필요없는것 같아요~ 짱입니다^^*
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ballet902</td>
+									<td width="427" class="comment">원래핸드폰이 고장도 안났는데,, 이폰 첨보고 너무 사고싶어서 엄마한테 겨우겨우 졸라서 사달라했어요 ktf에서 show로 ㅎㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">cukbc</td>
+									<td width="427" class="comment">10년 삼성에서 처음으로 SKY..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">miok1215</td>
+									<td width="427" class="comment">핸드폰 너무 예뻐 좋아♥ SK에서 KTF로 이동했지만....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">e39204</td>
+									<td width="427" class="comment">헨드폰은 너무 맘에 드나.ktf 가 너무 별로~ㅠ.ㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">e39204</td>
+									<td width="427" class="comment">10년동안 sk였는데 이제품 갖고 싶어서 ktf로 옮김.너무 너무 후회해.통화품질.상당원 별로야..ㅠ.ㅠ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hitplus</td>
+									<td width="427" class="comment">SKT 모델 언제 나오나?-ㅁ- S300은 기능이 너무 후져//
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">myggbb</td>
+									<td width="427" class="comment">웅왕굳
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">zzim</td>
+									<td width="427" class="comment">SKT 에도 만들어 달라 ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dikispace</td>
+									<td width="427" class="comment">모델 윤은혜인줄 알았는데 아니구나 ㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">binggunisi</td>
+									<td width="427" class="comment">u170쓰고있지만....너무쓰고싶은데ktf..................ㅜ_ㅜ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rongyi</td>
+									<td width="427" class="comment">sky만 썼는데..ktf는 웬말인가..skt도 만들어줘요~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">eve0960</td>
+									<td width="427" class="comment">아 스카이만 쓰는데 왠 ktf??skt는 어짜라구요~!ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">namgippeum</td>
+									<td width="427" class="comment">너무이쁜핸드폰
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hander21</td>
+									<td width="427" class="comment">하지만 후회는 없다는 good!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hander21</td>
+									<td width="427" class="comment">SK에 남아있던 마일리지 어쩔겨 ㅠㅠㅠㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hander21</td>
+									<td width="427" class="comment">난 원래 SK 였는데 이거 살려구 KTF로 옮겼다는.................-_-
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hander21</td>
+									<td width="427" class="comment">내폰이지만 너무 이쁘다 ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">vivaring</td>
+									<td width="427" class="comment">오 이뻐....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sss1001</td>
+									<td width="427" class="comment">SK만 없어 .. SK도 만들어줘요 ~ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">saracuna</td>
+									<td width="427" class="comment">아 스카이 넘 이쁜거 많이 나와 ㅠㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">yoonmgr12</td>
+									<td width="427" class="comment">넘흐넘흐 예뻐용 이폰으로 바꾸고 시퍼용
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">youjinkkk</td>
+									<td width="427" class="comment">디자인은완전이쁨ㅋㅋ근데..원래이런걸잘못만져서그런지..밧데리그거다시끼울때..곤란곤란ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">skyletter416</td>
+									<td width="427" class="comment">sk도 만들어주세요 레인폰이 가지고싶은데 KTF전용이더라구요 -_-..제발 만들어주세요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">suk772</td>
+									<td width="427" class="comment">너무 이뻐요~ 스카이 팬이랍니다 ^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">subi218</td>
+									<td width="427" class="comment">저도 며칠전..이걸로 바꿨습니다..그 전에쓴 110도 좋았는데..이거..와방~죠아요~~ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kennyho</td>
+									<td width="427" class="comment">sk 전용으로 제발 만들어줘요... 너무 사고싶어요~~~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kjh0311</td>
+									<td width="427" class="comment">왜 240은 안나오는거야...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">bromi</td>
+									<td width="427" class="comment">오늘 S240K샀는데 핸폰 넘 맘에 들어 ㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">l2352748</td>
+									<td width="427" class="comment">저두 s240k쓰는데, 이 광고 무척 마음에 듭니다 광고를 보고 내폰을 보니깐 폰이 너무 슬퍼보이네요 ㅠㅠ ㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">snoopy978</td>
+									<td width="427" class="comment">곰인형 나도 갖고 싶오
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rheeys</td>
+									<td width="427" class="comment">빗소리가 내마음을 적시는구료
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jiigi</td>
+									<td width="427" class="comment">빨랫줄의 금붕어 불쌍 ㅠㅠ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">0012</td>
+									<td width="427" class="comment">빗소리가 좋아 좋아 ^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rn1126</td>
+									<td width="427" class="comment">한 줄기 비소리 마음의 소리
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">culet82</td>
+									<td width="427" class="comment">제가 240k선물받고 쓰고있는데, 이렇게 감성적인 광고가 나와서 너므 죠아효♥
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">qoonim</td>
+									<td width="427" class="comment">감성광고!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">thisismymail</td>
+									<td width="427" class="comment">멋있네
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">snoopy978</td>
+									<td width="427" class="comment">빗소리가 좋아요 ^^ 꺄르르~
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">rnjswhdgus</td>
+									<td width="427" class="comment">우울한 날에 광고를 보았는데.. 공감이 되요. 여자모델도 이쁘네요.
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">lemoncandy</td>
+									<td width="427" class="comment">오늘 광고 처음봤는데 광고중간부터 3초&#48419;을&#46468; 딱 240k 광고일거같았음!!  멋짐!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">s2080</td>
+									<td width="427" class="comment">감성적인 광고네요 빗소리 이뻐요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">leotem</td>
+									<td width="427" class="comment">아름답다는 생각이 드는...
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">jsmloveljj</td>
+									<td width="427" class="comment">기대 이상의 광고네요^.^제폰이 더 이뻐보인다는~~ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">hsakieo</td>
+									<td width="427" class="comment">빗소리 좋아요, 제가 비를 되게 좋아하거든요 ^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">taehyong</td>
+									<td width="427" class="comment">빗소리 하나로도 많은 생각을 하게 되는 광고인것 같습니다.
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">earth212</td>
+									<td width="427" class="comment">오~감성적이고 부드러운 느낌의 광고네요~ 재밌는 스카이 광고도 좋지만 이런 감성적 광고도 너무 좋아요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">oath36</td>
+									<td width="427" class="comment">화면이 너무 이쁘네요. 사진 찍어도 될만큼 이쁜 화면^-^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">h20kjh</td>
+									<td width="427" class="comment">빗소리가 너무 좋아요. 감성적인 광고... 맘에 드네요. 공감 백배!!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+										
+							</table></td>
+						</tr>
+					</table>
+					<!-- [e] 한줄평 남기기 리스트 -->
+</form>
+					<!-- [s] 광고정보 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_adsumm">
+						<tr valign="top">
+							<th height="21" colspan="2" class="stit"><img src="/static/images/musthave/010201_stit_adSum.gif"></th>
+						</tr>
+						<tr valign="top">
+							<td class="txt"><HTML><HEAD></HEAD>
+<BODY style="FONT-SIZE: 9pt; ; LINE-HEIGHT: 14pt; FONT-FAMILY: 굴림; BACKGROUND-COLOR: #ffffff">
+<DIV><STRONG>1. 광고컨셉</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>‘IM-S240K’의 앞뒷면의 세련된 디자인을 ‘빗줄기’ 디자인으로 해석하여,<BR>비에 대한 애잔한 감성을 이별 이야기로 표현. <STRONG>‘마음에 내리는 빗줄기, 그걸로 스카이’</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>2. 줄거리</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>예쁜 곰인형이 비를 맞고 있다. 풍차 장난감도, 개구리 인형도. 심지어 책들도 바깥에서 비를 맞고 있다. 누가 이렇게 소중한 물건들을 비 오는 날 내다 놓은 것일까? <BR>남자친구와 함께 찍은 폴라로이드 사진들이 다른 물건들과 함께 마당에 버려져 비를 맞고 있다. 사진 밑에 썼던 그 날의 소중한 기억들이 빗물과 함께 사라진다. 사라지는 글씨처럼 헤어진 남자친구를 마음 속에서 떠나 보내려는 여자 주인공의 속내가 자막으로 사진 밑에 뜬다. ‘잘가라, 나쁜 자식!’<BR>마루 앞에 앉아 자기가 내다버린 소품들을 보면서 ‘피식’ 후련한 듯 가볍게 웃어 보이는 여자 주인공의 모습 위로 하늘에서 내리는 빗줄기가 굵어진다. 굵어지는 빗줄기 모습이 그대로 IM-S240K의 뒷모습으로 들어온다. 비 오는 날이면 깊어지는 우리들의 감성을 담고 있는 IM-S240K의 모습과 함께 여자 주인공의 멘트. <BR><BR>‘마음에 내리는 빗줄기, 그걸로 스카이’</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>3. 감독 : 김수 / 촬영감독 : 김이명(일본) </STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>4. 모델 : 김별</STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG>5. 촬영장소 : 경기도 성남 </STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV><STRONG>6. BGM : 제작곡</STRONG></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>.</DIV></BODY></HTML></td>
+						</tr>
+					</table>
+					<!-- [e] 광고정보 -->
+
+					</td>
+					<!-- [s] contents Area -->
+				</tr>
+
+			</table>
+			</div></div></td>
+		<td width="140" valign="middle" class="subRight"><script>swftrans('/static/flash/leftBanner.swf', '140', '100%');</script></td>
+	</tr>
+</table>
+<!--
+<div style="display:block;width:100%;height:100%;">
+	<div class="subLeft" style="float:left;width:149px;"><img src="images/product/left.gif" /></div>
+	<div id='content'>
+		<div id='mycustomscroll' class='flexcroll'><img src="images/product/right.gif" width="750" height="2000"/></div>
+	</div>
+</div> -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/*
+function LeftFlashHeight(){
+	document.getElementById("flashelement").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+//	alert(document.getElementById("bodyTable").style.height);
+*/
+
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/musthave/ad/tv_view.jsp";
+refurl_param = "";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 010201;
+	parent.callExternalInterface(0);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

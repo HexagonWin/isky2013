@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1256" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOupnOuhoOuPhCBVU0LsvIDsnbTruJTroZwg7Jew6rKw7ZWY64qU642wIOyZnCDrqZzroaDsnYAg7Jew6rKw65CY6rOgIOuNsOydtO2EsCDrp6Tri4jsoIAg7ZSE66Gc6re4656o7J2AIOyXsOqysOydtCDrkJjsp4Ag7JWK7Iq164uI6rmMPzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87ZSE66Gc6re4656o66eI64ukIO2PrO2KuOulvCDssL7ripQg67Cp7Iud7J2AIOuLpOulvCDsiJgg7J6I7Iq164uI64ukLiDrqZzroaDqs7wg642w7J207YSwIOunpOuLiOyggOuKlCBVU0Ig7Y+s7Yq4IOygkeq3vCDrsKnsi53snbQg64uk66W066mwIOupnOuhoOydgCDrqqjrjoDtj6ztirjrpbwg7J207Jqp7ZWp64uI64ukLiBpR3VhcmQg652864qUIOyKpO2MjOydtOybqOyWtOuKlCDrqqjrjoDtj6ztirjrpbwg7LC+64qU642wIOuwqe2VtOulvCDtlZjsp4Ag7JWK7Jy864KYIOuqqOuOgO2PrO2KuCDtlZjri6jrtoDsnZggVVNCIO2PrO2KuCDqsoDsg4nsnYAg67aI6rCA64ql7ZWY6rKMIO2VqeuLiOuLpC47Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">멜론도 USB케이블로 연결하는데 왜 멜론은 연결되고 데이터 매니저 프로그램은 연결이 되지 않습니까?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">프로그램마다 포트를 찾는 방식은 다를 수 있습니다. 멜론과 데이터 매니저는 USB 포트 접근 방식이 다르며 멜론은 모뎀포트를 이용합니다. iGuard 라는 스파이웨어는 모뎀포트를 찾는데 방해를 하지 않으나 모뎀포트 하단부의 USB 포트 검색은 불가능하게 합니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

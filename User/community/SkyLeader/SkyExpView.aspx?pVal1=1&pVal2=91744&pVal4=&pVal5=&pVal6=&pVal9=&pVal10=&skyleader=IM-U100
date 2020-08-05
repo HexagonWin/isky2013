@@ -1,0 +1,1650 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>
+			It's different, SKY
+		</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/BbsUtil.js"></SCRIPT>
+		<script language="javascript">
+	<!--		
+		//목록 페이지로 이동
+		function goList()
+		{
+			location.href = "SkyExpList.aspx?pVal1=1"
+								+ "&pVal4=&pVal5=&pVal9=&pVal10=&skyleader=IM-U100";
+		}
+		
+		//답변 가능 여부 체크 및 답변 등록 페이지로 이동
+		function goReply()
+		{
+			var TopFg = "N";
+			var StateFg = "N";
+			
+			if(TopFg == "Y")
+			{
+				alert("공지글에는 답변글을 등록하실 수 없습니다.");				
+			}
+			else if(StateFg == "M")
+			{
+				alert("다른 게시판으로 이동된 글에는\n답변글을 등록하실 수 없습니다.");
+			}
+			else
+			{
+				location.href = "SkyAzitExpWrite.aspx?pVal1=1"
+									+ "&pVal3=91744&pVal4=&pVal9=&pVal10=&skyleader=IM-U100";
+			}
+		}
+		
+		//게시물 수정 페이지로 이동
+		function goEdit()	
+		{
+			location.href = "SkyAzitExpWrite.aspx?pVal1=1"
+								+ "&pVal2=91744&pVal4=&pVal9=&pVal10=&skyleader=IM-U100";
+		}
+		
+		//리더체험기 수정 경고
+		function EditCancel()
+		{
+			alert('SKY 리더체험기로 승인된 글은 수정하실 수 없습니다.')
+			return false;
+		}
+		
+		//공지 추천일 경우 경고창 표시
+		function RecdConfirm()
+		{
+			var TopFg = "N";
+			if(TopFg == "Y")
+			{
+				alert("공지글에는 추천을 하실 수 없습니다.");	
+				return false;		
+			}
+		}
+		
+		var PopupWin = null;
+		
+		//게시물 인쇄 팝업 출력
+		function goPrint()
+		{
+			if(PopupWin != null && !PopupWin.closed) PopupWin.close();
+			var src='../WUC/Print.aspx?MsgID=91744';
+			PopupWin = window.open(src,'','toolbar=no,location=no,status=no,scrollbars=yes,width=600,height=100,resizable=no');
+			PopupWin.window.focus();
+		}		
+		//-->
+		</script>
+	</HEAD>
+	<body leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<Meta_Title value="커뮤니티 SKY리더 SKY리더아지트 체험기 내용" /><Meta_From value="isky" /><Meta_Path value="커뮤니티:SKY리더:SKY리더체험기" />
+		<form name="Form1" method="post" action="SkyExpView.aspx?pVal1=1&amp;pVal2=91744&amp;pVal4=&amp;pVal5=&amp;pVal6=&amp;pVal9=&amp;pVal10=&amp;skyleader=IM-U100" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTE1NjQ5NzU4NTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwyPjtpPDM+O2k8ND47aTw1PjtpPDY+O2k8Nz47aTw4PjtpPDEwPjtpPDExPjtpPDEyPjtpPDE4PjtpPDE5PjtpPDIwPjtpPDIxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxQTVA/IO2VuOuTnO2PsD8gUE1Q7Y+wISEgSU0tVTEwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTM0MDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8cHVtcDA5ODA7Pj47Pjs7Pjt0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy9jb21tdW5pdHkvYmJzX2J1dHRvbl9yZWNvbS5naWY7Pj47cDxsPG9uY2xpY2s7PjtsPGphdmFzY3JpcHQ6anNQb3BVcExvZ2luKCcvdXNlci9jb21tdW5pdHkvU2t5TGVhZGVyL1NreUV4cFZpZXcuYXNweD9wVmFsMSUzZDElMjZwVmFsMiUzZDkxNzQ0JTI2cFZhbDQlM2QlMjZwVmFsNSUzZCUyNnBWYWw2JTNkJTI2cFZhbDklM2QlMjZwVmFsMTAlM2QlMjZza3lsZWFkZXIlM2RJTS1VMTAwJylcOyByZXR1cm4gZmFsc2VcOzs+Pj47Oz47dDxwPHA8bDxUZXh0Oz47bDwzODs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNC8yNCAyMzoyMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NjMwMTs+Pjs+Ozs+O3Q8cDxsPHN0eWxlO1Zpc2libGU7PjtsPHBhZGRpbmc6NHB4XDs7bzx0Pjs+PjtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+Oz47bDx0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDtWaXNpYmxlOz47bDxcPGltZyBzcmM9aHR0cDovL2ZpbGUuaXNreS5jby5rci9BVFQwMS8yMDA2L0JCU18xMC80MjAvcHJvZmlsZV9maW5hbDVbMjAwNjA0MjQyMzE5MTBdLmpwZyBib3JkZXI9MCB3aWR0aD0xMjYgaGVpZ2h0PTEwMFw+O288dD47Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDtWaXNpYmxlOz47bDxJTS1VMTAw7J2YIOyghOuwmOyggeyduCDrqqjrk6Ag6rKD7J2EIOuLpOujqOqzoCDsnojsirXri4jri6QuDQrsoITssrQg66as67ew65286rOgIOuztOyLnOuptCDrkKAg6rKDIOqwmeq1rOyalC4NCuyerOuvuOyeiOqyjCDsnb3slrTso7zshLjsmpQgXl5cOztvPHQ+Oz4+Oz47Oz47Pj47Pj47Pj47dDxwPHA8bDxUZXh0Oz47bDxcPElNRyBhbHQ9IiIgaHNwYWNlPTAgc3JjPSJodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDYvQkJTXzEwLzM5NC9maW5hbDNfMDAxWzIwMDYwNDI0MjMzMjU2XS5qcGciIGFsaWduPWJhc2VsaW5lIGJvcmRlcj0wXD5cPElNRyBhbHQ9IiIgaHNwYWNlPTAgc3JjPSJodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDYvQkJTXzEwLzM5NC9maW5hbDNfMDAyWzIwMDYwNDI0MjMzMjU2XS5qcGciIGFsaWduPWJhc2VsaW5lIGJvcmRlcj0wXD4mbmJzcFw7IDs+Pjs+Ozs+O3Q8cDxsPF8hSXRlbUNvdW50Oz47bDxpPDI5Pjs+PjtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5PjtpPDExPjtpPDEzPjtpPDE1PjtpPDE3PjtpPDE5PjtpPDIxPjtpPDIzPjtpPDI1PjtpPDI3PjtpPDI5PjtpPDMxPjtpPDMzPjtpPDM1PjtpPDM3PjtpPDM5PjtpPDQxPjtpPDQzPjtpPDQ1PjtpPDQ3PjtpPDQ5PjtpPDUxPjtpPDUzPjtpPDU1PjtpPDU3Pjs+O2w8dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQzMDAxOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDx2aXN1YWxkbzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87J6YIOuztOqzoCDrsLDsm6DslrTsmpQgXl47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDgvMjkgMTQ6NDI7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDIwMjM7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHNheXJpbmc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyVl35+7KCAIOuPmeyYgeyDgeydgCDri6TruIzrpbTsnKDsnZgg66+47Iqk65+s67iM64uo7YWMIOOFoOOFoCB+fn47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDgvMDQgMTI6MjU7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDE0MzM7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHljczk5OTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w864SY7KKL7J2AIOyauOycoOuwseydtCwg7Jik64qYIOyCsOyngCAy7YuA65Cr64u164uI64ukIF5eKjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNy8yNSAxMDowNzs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MTMzMjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8bWFzYTMwMjk7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyqvOyVhOyXrH5+ICDjhYs7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDcvMjIgMTY6NDQ7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAyLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA5ODI7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPG1pc29sdXZqOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzrpqzrt7Ag7KCV7ZmV7ZWY6rKMIOyemCDsk7DshajrhKTsmpQuOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA2LzA3LzExIDE2OjE5Oz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQwOTM5Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxkYWp1bmczNDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87JmA7JqwLCDrpqzrt7Ag7KCc64yA66Gc7JiI7JqULiA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDcvMDkgMDA6MTc7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA4Nzg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHJpdmVyczA0MTk7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyYpO2YuC4u7KCc64yA66Gc65CcIOumrOu3sC4u7JWM7LCsIOumrOu3sC4uLlw8QlJcPuyemCDrtKTsirXri4jri6QuLjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNy8wNiAxMjoxOTs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDc2Mjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8ZnVud3I7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHUxMDDrhIjrrLQg7KKL7JWE7JqUfjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8zMCAxMDoyMDs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDc2MDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8a3NpazcxOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsnYzslYXrk6TsnLzrqbDrrLjsnpDrs7TrgrzroKTrqbQgIOydvOuLqOyXheq3uOuemOydtOuTnO2VtOyVvOuQmOq1rOyalCDrrLjsnpDtmZXslYjrkZDsmpQuIFw8QlJcPjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8yOSAyMzowOTs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDcyMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8Q2xhcmlvbmV0Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxVMTAw7J2EIOyTsOq4sOuKlCDtlZjsp4Drp4jriIguLi4u44WhLC7jhaEg66qo6rCA66qsIOyngCDrqrDrpbTqsqDsp4Drp4wg7YGwIOyVoeygleunjOydgCDrhJgg7KC47JWE7Je8fn5+fjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8yNyAxNjozNzs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDcxMTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8amp1bmc4ODs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KCEIOqygOydgOyDiSDsg4DripTrjbAsIOy0iOy9nOumv+uztOuLpCDsspzrsLDrp4zrsLAg7J207IGY6rOgIOuzvOyImOuhnSDrv4zrk6/tlanri4jri6TjhY4g6riw64ql64+EIOyii+qzoOyalCAhISBeXiDstpTsspztlbTsmpQgIDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8yNiAxOToyOTs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDY4Njs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8bHBiemtpdDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w866y47J6QIOupgO2LsO2DnOyKpO2CueydgCDshYDtlITsl4Xqt7jroIjsnbTrk5ztlbTslbzrp4wg65CY7Jesfjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8yNSAxMjozMjs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDY0Nzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8anVuaHVuc2U3OTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87J2M7JWF7J2EIOuTpOydtOupsCDrrLjsnpDrpbwg7Ja065a76rKMIOuztOuCvOyImCDsnojripTsp4Ag64u167OA67aA7YOB65Oc66a964uI64ukIFw8QlJcPuygnOqwgCDsnpgg66qw65287ISc7JqUIFw8QlJcPl5eIOygnOqwgCDsk7Dqs6DsnojripTrjbAg7KKL7J2A6rKDIOqwmeydgOuNsCBcPEJSXD7qt7jrn7wg6rytIOuLteuzgCDrtoDtg4Hrk5zrpr3ri4jri6QgXDxCUlw+Xl4qKiDsiJjqs6DtlZjshLjsl7w7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMjIgMTQ6NTA7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA2Mjg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHNraDExMjA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyZhOyghCDrlJTsnpDsnbgg7ZWY64qUIOyCrOuejOqwmeq1sOyalCDsoJzrjIDroZwg65CcIOumrOu3sOyeheuLiOuLpCA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMjEgMTc6MTA7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA2MDg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGppam9uamluc2ltOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzrqYDti7DthYzsiqTtgrnsnYAg7IWA7ZSE7JeF6re466CI7J2065Oc66W8IO2VmOuptCDrqZTribTsl5Ag7ZGc7Iuc6rCAIOuQmOyalCDjhYsg67Cp6riIIOyEseqzte2WiOuLpOuKlCDjhYs7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMjEgMTM6MTc7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA1OTI7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGFydGJveDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KCAIFUtIDEwMCDsgr/ripTrjbAg66mA7Yuw7YWM7Iqk7YK5IOydtCDslYjrj7zsmpQg44Wc44WcIFw7XDs7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMTggMjM6NDA7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA1NjI7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGx1aWphOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsoIDriqUg64SY7Z2QIOyhsOyVhO2YgH7jhYvjhYvjhYtcPEJSXD7tlZzrp4jrlJTroZwg7KCV66eQIOu9gOuMgOuCqeuJmOuLuX7jhYvjhYvjhYs7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMTYgMDY6MDU7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzA3LmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA1MjU7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGV6cG9yc2NoZTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87JWEfiDslYTsib3ri6Q7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMTMgMDI6MTM7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDA0ODE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHQ4MHV0YW5rOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzqs6Drr7wg64Gd7JeQIHMxMDDsnYQg7Ja07KCcIOq1rOyehe2WiOuKlOuNsC4uLiDsnbTqsbAg7J297Ja067O064uI6rmMIO2bhO2ajCDrp4nquIkg44Wg44WgXDxCUlw+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA2LzA2LzA5IDA5OjE4Oz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQwMzU1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxkYW5jaW5nZXVuOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsnKDrsLHsnbQg7JO07KeAIOuRkOuLrOynuCDsoJHslrTrk5zripTrjbAg7JWE7KeB64+EIDEwMCXtmZzsmqntlZjsp4Ag66q77ZWY6rOgIOyeiOuKlOqxsCDqsJnslYTsmpQg7Jes6riw7IScIOuPhOybgOyigCDrsJvslYTslbwg6rKg64qU642w7JqUIF4tXiA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMDIgMjM6NDE7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDAzMjk7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHdpbmRnaXJsMDQxODs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KKA66eM6riw64uk66C464uk6rCAIOyCtOq7hCDqt7jrnqzslrTsmpTjhaA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDYvMDEgMDg6NDk7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDAzMjg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPElENDQ7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyemOyTsOyFqOuEpOyalC4g7J6Y67Sk7Iq164uI64ukLjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNi8wMSAwMTo1MTs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0MDMwNzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U3ByaW5nMjQ7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHUxMDDqt7jrnpjrj4Qg7JO466eM7ZWc7Y+w7J6F64uI64ukOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA2LzA1LzMxIDA2OjM5Oz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQwMzA2Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxTcHJpbmcyNDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8dTEwMOq3uOuemOuPhCDsk7jrp4ztlZztj7DsnoXri4jri6Q7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDUvMzEgMDY6Mzg7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDAyMTc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGxvdmVqaW4wNzA3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsl4csLOOFoeOFoVw7IOyggOuKlCDsmZwg64W4656YIOuTo+uLpOqwgCDrrLjsnpDrs7TquLDqsIAg7JWI65CY64qUIOqxtOyngCws44Wh44WhXDtcO1w766mU64m07JeQ64+EIOyVhOyYiCDsl4XrhKTsmpQsLOOFoeOFoVw7XDtcO+ygnOq6vOunjCDsnbTsg4HtlZwg6rG06rCALCw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDUvMjUgMjI6NTI7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDAxMjg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPHlhaHN1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsoJztkogg6rWs7J6F7ZWc7KeAIOydtOygnCDtlZjro6jqsIAg7KeA64Ks64qU642wLi7rqZTribTslrzsnYQg7J297Ja064+EIOyemCDrqqjrpbTqsqDrjZTrnbzqtazsmpQuLuq4sOyhtOyXkCDsk7DrjZgg7KCc7ZKI6rO864qUIOuLrOudvOyEnC4uLuydvOuLqCDrlJTsnpDsnbjrs7Tqtawg7IKs6ri07ZaI64qU642wLi4u642V67aE7JeQIOygnO2SiOyXkCDrjIDtlbTshJwg7KKA642UIOyekOyEuO2eiCDslYzqsozrkJjshJwg6riw67aE7J20IOyii+yKteuLiOuLpC7sjKnsnKB+Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA2LzA1LzIyIDAxOjEzOz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQwMTExOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxyYmdqczAwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KCc6rCAIOyNqOuztOuLiOq5jCDsoJXrp5Ag6rSc7LCu7J2AIO2PsOyeheuLiOuLpC4u44WLXDxCUlw+6rCV7LiEfiF+IVw8QlJcPuyVveqwhCDtgazquLTtlZjsp4Drp4wg7Jyg67Cx66eM7J2YIOyVoeygle2BrOq4sC4uLiDsi5zsm5Dtlanri4jri6Qu44WLOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA2LzA1LzIwIDE1OjExOz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Mz47aTw1PjtpPDc+O2k8OT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19lbW90aWNvbl8wMS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQwMDY0Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDx0a2ZrZGRsdmhzOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsl6zsnpDqsIAg7JOw66m0IOyigCDtgazrhKTsl6wgIOq3uOumrOqzoCDsubTrqZTrnbzqsIAgIOyVnuyXkCDsnofsnYwgIOyii+ydgOuNsFw8QlJcPuyigCDqt7jroIfri6QgIOuEiOustCDsu6Tsl6wgIOygnOqwgOyXrCDsiqTsubTsnbTrpbwgIOyTsOqzoOyeh+qxsOuToOyXrCAgNzQwMCDsnbTqsbAg7JOw6rOg7J6H7Ja07JesXDxCUlw+7J2864WEIOynuF5eXDxCUlw+7Iqk7Lm07J20IOustOyngOyii+yVhO2VmOuKlOuNsOyXrOunjOuTpOuVjCDsooAg7J6R6rKMIOunjOuTpOyXh+ydjCDsoovqsqDsnYw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDYvMDUvMTcgMTU6MDI7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAxLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDAwMjg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPGxvdmVhdW1qaTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w866as67ew6rCAIOygleunkCDsoJzrjIDroZzrhKTsmpR+ISEhIOunjuydgCDsoJDsnYQg7JWM7JWY7Iq164uI64ukLi5e44WhXjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNi8wNS8xNCAxOTo0MDs+Pjs+Ozs+Oz4+Oz4+O3Q8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19idXR0b25fbW9kaWZ5LmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL2NvbW11bml0eS9iYnNfYnV0dG9uX2RlbGV0ZS5naWY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7PjtsPFw8aW1nIHNyYz0naHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvY29tL2Jic19idWxsZXRfbmV4dC5naWYnIGFsaWduPSdhYnNtaWRkbGUnIGJvcmRlcj0nMCcvXD4jIyDsi5zsm5DshK3shK3tlZwgVTEwMCDssrTtl5jquLDrpbwg66eI7LmY66mwLi4uIFs3XTtTa3lFeHBWaWV3LmFzcHg/cFZhbDE9MSZwVmFsMj05MTc1MCZwVmFsOT0mcFZhbDEwPSZza3lsZWFkZXI9SU0tVTEwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDtOYXZpZ2F0ZVVybDs+O2w8XDxpbWcgc3JjPSdodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy9jb20vYmJzX2J1bGxldF9wcmV2LmdpZicgYWxpZ249J2Fic21pZGRsZScgYm9yZGVyPScwJy9cPlUxMDDqs7wg7ZWo6ruY7ZaI642YIO2VnOuLrOydhCDsoJXrpqztlZjrqbAuLi4gWzJdO1NreUV4cFZpZXcuYXNweD9wVmFsMT0xJnBWYWwyPTkxNzI0JnBWYWw5PSZwVmFsMTA9JnNreWxlYWRlcj1JTS1VMTAwOz4+Oz47Oz47Pj47Pj47bDxidG5SZWNkO2J0bkNtdDs+Pg==" />
+
+			<div 
+style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%">
+				<table 
+style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_left.gif); WIDTH: 950px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%" 
+cellSpacing=0 cellPadding=0 width="100%" border=0>
+					<TBODY>
+						<tr>
+							<td vAlign="top" align="right" width="222">
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<textarea id=leftflashid style="display:none;" rows="0" cols="0">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" height="512" width="222" VIEWASTEXT>
+			  <param name="movie" value="http://file.isky.co.kr/flash/left/isky_community.swf?code=B11" />
+			  <param name="quality" value="high" />
+			  <embed src="http://file.isky.co.kr/flash/left/isky_community.swf?code=B11" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="512" width="222"></embed>
+			</object>
+			</textarea>
+			<script language="javascript" src="/embedjs.asp?classid=leftflashid"></script>
+
+		</td>
+	</tr>
+	<!--tr>
+		<td>
+			<IMG SRC="http://file.isky.co.kr/images/com/left_mypage_title.jpg" WIDTH="222" HEIGHT="19" border="0"></a><BR>
+		</td>
+	</tr-->
+</table>
+
+<iframe name="leftlogin" src="/WUC/leftLogin.aspx?wbSurl=%2fUser%2fcommunity%2fSkyLeader%2fSkyExpView.aspx%3fpVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100&amp;wbExt=" width="222" height="110" border="0" NORESIZE SCROLLING=no FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+</iframe>
+
+<table width="100%" cellpadding="0" cellspacing="0" >
+  <tr>
+		<td>
+			<IMG SRC="http://file.isky.co.kr/images/com/left_deco_bottom1.jpg"><BR>
+		</td>
+	</tr>
+</table>
+<script>
+	
+	function goUrl(code){
+		goURL(code);
+	}
+	
+	function goURL(code){
+	//	alert(code);
+		if(code == "UA"){//Home
+			document.location.href ="/";
+			return;
+		}
+		if(code == "UB" || code == "U2"){//로그인
+			loginurl();
+			return;
+		}
+		if(code == "U6"){//로그아웃
+			document.location.href = "/WUC/authAction.aspx?method=logout&wbExt=";
+			return;
+		}
+		if(code == "UC"	){//MemberShip
+			document.location.href = "/User/member/memberGuid.aspx";
+			return;
+		}
+		if(code == "UD"	){//통합검색
+			document.location.href = "/search/total.asp";
+			return;
+		}
+		if(code == "UF"	){//SiteMap
+			document.location.href = "/User/utillity/siteMap.aspx";
+			return;
+		}
+		if(code == "UG"	){//Contactus
+			document.location.href = "/User/utillity/contactUs.aspx";
+			return;
+		}
+		if(code == "UE"){//FAQ
+			document.location.href = "/svc/counsel/CunsFAQTop10List.aspx"
+			return;
+		}
+		if(code == "E23"){//FAQ
+			document.location.href = "/svc/counsel/CunsFAQTop10List.aspx"
+			return;
+		}
+
+		if(code == "A"){//마이페이지
+			document.location.href = "/User/Mypage/MypageMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "B"){//커뮤니티
+			document.location.href = "/User/Community/CommunityMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "C"){//모바일
+			document.location.href = "/mobile/Main.asp";
+			return;
+		}
+
+		if(code == "D"){//제품지원
+			document.location.href = "/User/product/ProductMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "E"){//고객지원
+			document.location.href = "/Main.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "K1"){//Event-진행이벤트
+			document.location.href = "/User/userevent/EventIng.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "K2"){//Event-지난이벤트
+			document.location.href = "/User/userevent/EventLast.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "K5"){//Event-모바일이벤트
+			document.location.href = "/mobile/event/event_list.asp?menuCode="+code;
+			return;
+		}
+
+		//경매 관련
+		//-----------------------------------------------------------
+		//
+		//-----------------------------------------------------------
+		if(code == "K6"){//스타경매 메인
+			document.location.href = "/auction/main.asp?menuCode="+code;
+			return;
+		}
+		if(code == "K61"){//스타경매 공지사항
+			document.location.href = "/User/UserEvent/Auction/AuctNoticeList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K62"){//스타경매 상품목록
+			document.location.href = "/auction/list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "K63"){//스타경매 상품문의
+			document.location.href = "/User/UserEvent/Auction/AuctFreeList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K64" || code == "A8"){//스타경매 나의경매
+			document.location.href = "/auction/my_auction.asp?menuCode="+code;
+			return;
+		}
+		
+		//It's Different
+		//-----------------------------------------------------------
+		//
+		//-----------------------------------------------------------
+		if(code == "J1"){//Different - 사이버홍보실
+			document.location.href = "/User/prroom/cyber.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J11"){//보도자료
+			document.location.href = "/User/prroom/press_list.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J12"){//TV광고
+			document.location.href = "/User/prroom/tvcf_concept.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J13"){//인쇄광고
+			document.location.href = "/User/prroom/print.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J14"){//월페이퍼
+			document.location.href = "/User/prroom/wallpaper.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J15"){//스크린세이버
+			document.location.href = "/User/prroom/screen.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J16"){//제품사진
+			document.location.href = "/User/prroom/product.aspx?menuCode="+code;
+			return;
+		}
+		//-----------------------------------------------------------
+		//PRROOM
+		//-----------------------------------------------------------
+		//if(code == "J2"){//Different --인디
+			//document.location.href = "/User/userevent/SkyIndi.aspx?menuCode="+code;
+			//return;
+		//}
+		
+		if(code == "J2"){//Different --인디
+			document.location.href = "/User/userevent/IndiSKY/introduction05.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J21"){//Different --인디그라운드
+			document.location.href = "/User/userevent/IndiSKY/introduction01.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J22"){//Different --이전공연
+			document.location.href = "/User/userevent/IndiSKY/beforeplay.aspx?menuCode="+code;			
+			return;
+		}
+		if(code == "J23"){//Different --인디게시판
+			document.location.href = "/User/userevent/IndiSKY/IndiBBSFreeList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J24"){//Different --아티스트 참가방법
+			document.location.href = "/User/userevent/IndiSKY/IndiUserApplMethod.aspx?menuCode="+code;
+			//alert("서비스 준비중입니다.");
+			return;
+		}
+		if(code == "J3"){//Different --ImDifferent
+			document.location.href = "/User/userevent/different/Imdifferent.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J4"){//Different --스타리그
+			document.location.href = "/User/userevent/skyleague/sky_league.aspx?menuCode="+code;
+			return;
+		}
+
+		
+		if(code == "A1"){//마이페이지- 제품사용기
+			document.location.href = "/User/mypage/MPMemberEdit.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "A2"){//마이페이지- 지수포인트도비라
+			document.location.href = "/User/mypage/MypagePNTExponent.aspx";
+			return;
+		}
+		if(code == "A21"){//마이페이지- 지수조회
+			document.location.href = "/User/mypage/MypageExponentList.aspx";
+			return;
+		}
+		if(code == "A22"){//마이페이지- 포인트 조회
+			document.location.href = "/User/mypage/MypagePNTList.aspx";
+			return;
+		}
+		if(code == "A23"){//마이페이지- 쿠폰 조회
+			document.location.href = "/mobile/mypage/coupon/coupon_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A31"){//마이페이지- 모바일벨소리
+			document.location.href = "/mobile/mypage/content/bell_send.asp?gubun=send&menuCode="+code;
+			return;
+		}
+		if(code == "A32"){//마이페이지- 모바일/캐릭터포토
+			document.location.href = "/mobile/mypage/content/char_photo_result.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A33"){//마이페이지- 모바일/문자
+			document.location.href = "/mobile/mypage/content/sms_result.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A35"){//마이페이지- 모바일/휴대폰 주소록
+			document.location.href = "/mobile/mypage/address/address.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA"){//마이페이지- 포토앨범
+			document.location.href = "/mobile/mypage/album/album_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA1"){//마이페이지- 포토앨범
+			document.location.href = "/mobile/mypage/album/album_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA2"){//마이페이지- 스코피
+			document.location.href = "http://skopi.isky.co.kr/isky/main.asp";
+			return;
+		}
+		if(code == "A41"){//마이페이지- 포토영상
+			document.location.href = "/User/mypage/community/Gallery/PhotoTitleList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A42"){//마이페이지-	토크토크
+			document.location.href = "/User/mypage/community/TalkTalk/TalkUseList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A43"){//마이페이지- sky아지트
+			document.location.href = "/User/mypage/community/SkyLeader/SkyAzitExpList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A44"){//마이페이지- 스크랩
+			document.location.href = "/User/mypage/MypageScrapList.aspx?menuCode="+code;
+			return;
+		}
+/*		
+		if(code == "A45"){//마이페이지- 나의 스크랩
+			document.location.href = ""+code;
+			return;
+		}
+*/
+		if(code == "A71"){//마이페이지- 상담내역
+			document.location.href = "/user/mypage/MypageConsultList.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "A72"){//마이페이지- 수리내역
+			document.location.href = "/user/mypage/MypageRepairList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "A73"){//마이페이지- 가까운 수리센터
+			document.location.href = "/SVC/svccenter/SVCCENTERDetail.aspx?idx=&usedMypage=Y&menuCode="+code;
+			return;
+		}
+
+		if(code == "A74"){//마이페이지- 장바구니
+			document.location.href = "/shop/order/shop_cart_list.asp?menuCode="+code;
+			return;
+		}
+
+		if(code == "A75"){//마이페이지- 주문배송조회
+			document.location.href = "/shop/order/orderDeliveryList.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A8" || code == "K64"){//마이페이지 - 나의경매
+			document.location.href = "/auction/my_auction.asp?menuCode="+code;
+			return;
+		}
+
+		
+		//B
+		if(code == "B11"){//커뮤니티 - 스카이 리더 체험기
+			document.location.href = "/User/Community/SkyLeader/SkyExpList.aspx";
+			return;
+		}
+		if(code == "B12"){//커뮤니티 - 스카이 리더 소개
+			document.location.href = "/User/community/SkyLeader/SkyLeaderInfo.aspx";
+			return;
+		}
+		if(code == "B13"){//커뮤니티 - 스카이 리더 아지트
+			
+			loginurl();
+			
+			return;
+		}
+		if(code == "B14"){//커뮤니티 - 스카이 리더 송년의밤
+			document.location.href = "/User/community/SkyLeader/SkyLeaderAdieu.aspx";
+			return;
+		}
+			
+		if(code == "B21"){//커뮤니티 - 포토갤러리
+			document.location.href = "/User/Community/Gallery/PhotoTitleList.aspx";			
+			//document.location.href = "/User/Community/Gallery/PhotoTitleList.aspx";
+			return;
+		}
+		if(code == "B22"){//커뮤니티 - 동영상
+			document.location.href = "/User/Community/Gallery/MovieTitleList.aspx";			
+			//document.location.href = "/User/Community/Gallery/MovieTitleList.aspx";
+			return;
+		}
+		
+		if(code == "B23"){//커뮤니티 - 사진인화
+			
+			loginurl();
+			
+
+			//document.location.href = "/User/Community/Gallery/PhotoAlbum/album_list.asp";
+			return;
+		}
+		
+	/*	if(code == "B23"){//커뮤니티 - 자유게시판
+			document.location.href = "/User/Community/TalkTalk/TalkFreeList.aspx";
+			return;
+		}
+		
+	*/	
+		if(code == "B31" || code == "B5"){//커뮤니티 - 강좌리스트
+			document.location.href = "/User/Community/Academy/AcademyList.aspx";
+			return;
+		}
+		
+		if(code == "B32"){//커뮤니티 - 강좌소개
+			document.location.href = "/User/Community/Academy/AcademyInfo.aspx";
+			return;
+		}
+		if(code == "B41"){//커뮤니티 - 회원끼리 Q&A
+			document.location.href = "/User/Community/TalkTalk/TalkQaList.aspx";
+			return;
+		}
+		if(code == "B42"){//커뮤니티 - 제품사용기
+			document.location.href = "/User/Community/TalkTalk/TalkUseList.aspx";
+			return;
+		}
+
+		if(code == "B43"){//커뮤니티 - 중고장터
+			document.location.href = "/User/Community/TalkTalk/TalkOldList.aspx";
+			return;
+		}
+		
+		//if(code == "B31"){//커뮤니티 - 매니아 포럼
+		//	document.location.href = "/User/Community/Mania/ManiaForumList.aspx";1
+		//	return;
+		//}
+		//if(code == "B32"){//커뮤니티 - 매니아 소개
+		//	document.location.href = "/User/Community/Mania/ManiaInfo.aspx";
+		//	return;
+		//}
+			
+		
+		//C
+		if(code == "C"){//mobile home
+			document.location.href ="http://www.isky.co.kr/mobile/main.asp";
+		}
+		if(code == "C1"){//벨소리 메인
+			document.location.href = "http://www.isky.co.kr/mobile/bell/main.asp";
+		}
+		if(code == "C11"){//오늘의 신곡
+			document.location.href = "http://www.isky.co.kr/mobile/bell/bell_new.asp";
+		}
+		if(code == "C12"){//베스트
+			document.location.href = "http://www.isky.co.kr/mobile/bell/bell_best.asp";
+		}
+		if(code == "C13"){//3D벨
+			document.location.href = "http://www.isky.co.kr/mobile/bell/bell_list.asp?original=2&category=201&poly=64";
+		}
+		if(code == "C14"){//원음벨
+			document.location.href = "http://www.isky.co.kr/mobile/bell/bell_list.asp?original=1&category=201&poly=64";
+		}
+		if(code == "C15"){//미디벨
+			document.location.href = "http://www.isky.co.kr/mobile/bell/bell_list.asp?original=0&category=201&poly=64";
+		}
+
+		if(code == "C2"){//통화연결음 메인
+			document.location.href ="http://www.isky.co.kr/mobile/ring/main.asp";
+		}
+		if(code == "C21"){//SKT
+			document.location.href = "http://www.isky.co.kr/mobile/ring/main.asp?cp=skt";
+		}
+		if(code == "C22"){//KTF
+			document.location.href = "http://www.isky.co.kr/mobile/ring/main.asp?cp=ktf";
+		}
+		if(code == "C23"){//LGT
+			document.location.href = "http://www.isky.co.kr/mobile/ring/main.asp?cp=lgt";
+		}
+	
+		if(code == "C3"){//캐릭터 메인
+			document.location.href = "http://www.isky.co.kr/mobile/character/main.asp";
+		}
+		if(code == "C31"){//캐릭터 신곡
+			document.location.href = "http://www.isky.co.kr/mobile/character/char_new.asp";
+		}
+		if(code == "C32"){//베스트
+			document.location.href = "http://www.isky.co.kr/mobile/character/char_best.asp";
+		}
+		if(code == "C33"){//장르
+			document.location.href = "http://www.isky.co.kr/mobile/character/char_list.asp";
+		}
+		if(code == "C4"){//포토 메인
+			document.location.href = "http://www.isky.co.kr/mobile/photo/main.asp";
+		}
+		if(code == "C41"){//오늘의 포토
+			document.location.href = "http://www.isky.co.kr/mobile/photo/photo_new.asp";
+//			document.location.href = "http://www.isky.co.kr/mobile/photo/photo_list.asp?category_code=402";
+		}
+		if(code == "C42"){//베스트
+			document.location.href = "http://www.isky.co.kr/mobile/photo/photo_best.asp";
+		}
+		if(code == "C43"){//스타포토
+			document.location.href = "http://www.isky.co.kr/mobile/photo/photo_list.asp?category_code=402";
+		}
+		if(code == "C44"){//테마포토
+			document.location.href = "http://www.isky.co.kr/mobile/photo/photo_list.asp?category_code=401&theme=1&size=m";
+		}
+		
+		if(code == "C5"){//문자메세지
+			document.location.href = "http://www.isky.co.kr/mobile/sms/main.asp";
+		}
+		if(code == "C51"){//문자메세지
+			document.location.href = "http://www.isky.co.kr/mobile/sms/main.asp";
+		}
+		if(code == "C52"){//이모티콘
+			document.location.href = "http://www.isky.co.kr/mobile/sms/sms_new.asp";
+		}
+		if(code == "C53"){//그룹 메세지
+			document.location.href = "http://www.isky.co.kr/mobile/sms/sms_group.asp";
+		}
+		if(code == "C54"){//1000자
+			document.location.href = "http://www.isky.co.kr/mobile/sms/sms_multi.asp";
+		}
+		if(code == "C6" || code == "J17"){//광고 모바일 컨텐츠
+			document.location.href = "http://www.isky.co.kr/mobile/sky_content.asp?menuCode="+code;			
+		}
+		if(code == "D00"){//제품- 최신 계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-R100";
+			return;
+		}
+		if(code == "D1F"){//제품-IM-H100계열
+			document.location.href = "/User/Product/ProductHSDPA.aspx";
+			return;
+		}
+		if(code == "D1E"){//제품-IM-R100계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-R100";
+			return;
+		}
+		if(code == "D1D"){//제품-IM-S100계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-S110";
+			return;
+		}
+		if(code == "D1C"){//제품-IM-U100계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-U110";
+			return;
+		}
+		if(code == "D1B"){//제품-IMB1000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IMB-1000";
+			return;
+		}
+		if(code == "D1A"){//제품-IM8000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-8000";
+			return;
+		}
+		if(code == "D11"){//제품-IM7000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-7000";
+			return;
+		}
+		if(code == "D12"){//제품-IM6000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-6000";
+			return;
+		}
+		if(code == "D13"){//제품-IM5000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-5000";
+			return;
+		}
+		if(code == "D14"){//제품-IM3000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-3000";
+			return;
+		}
+		if(code == "D15"){//제품-IM2000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-2000";
+			return;
+		}
+		if(code == "D16"){//제품-IM1000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-1000";
+			return;
+		}
+		if(code == "D17"){//제품-IM700계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-700";
+			return;
+		}
+		if(code == "D2"){//제품-제품검색
+			document.location.href = "/User/product/ProductSearch0.aspx";
+			return;
+		}
+		if(code == "D3"){//제품-제품비교
+			document.location.href = "/User/product/ProductCompare.aspx";
+			return;
+		}
+		if(code == "D4"){//제품-다운로드
+			document.location.href = "/Svc/download/DlMain.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "D5"){//악세서리 - 메인
+			document.location.href = "/shop/accessoryMain.asp?menuCode="+code;
+			return;
+		}
+		if(code == "D51"){//악세서리 - 모델별로 보기
+			document.location.href = "/shop/product/modelView.asp?menuCode="+code;
+			return;
+		}
+		if(code == "D52"){//악세서리 - 액세서리별로 보기
+			document.location.href = "/shop/product/accessoryView.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E1"){//고객지원-공지
+			document.location.href = "/SVC/svcnotice/SvcNoticeList.aspx";
+			return;
+		}
+		
+		if(code == "E21"){//고객상담-상담메인
+			document.location.href = "/Svc/counsel/CunsMain.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "E22" || code == "E2"){//고객상담-이메일상담
+			
+			loginurl();
+			
+			return;
+		}
+		if(code == "E23"){//고객상담-FAQ
+			document.location.href = "/Svc/counsel/CunsFaqTop10List.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "E24"){//고객상담-자가진단
+			document.location.href = "/Svc/counsel/CunsSelfView.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E3"){//다운로드
+			document.location.href = "/Svc/download/DlMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E31" || code == "D41" ){//다운로드-사용설명서
+			document.location.href = "/Svc/download/DlManual.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E32" || code == "D42" ){//다운로드-데이터 매니저
+			document.location.href = "/Svc/download/DlDataManager.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E33" || code == "D43" ){//다운로드-USB 드라이버
+			document.location.href = "/Svc/download/DlUsbDrive.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E34" || code == "D44" ){//다운로드-동영상플레이어
+			document.location.href = "/Svc/download/DlPlayer.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E35" || code == "D45" ){//다운로드-멜론
+			document.location.href = "/Svc/download/DlMelon.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "E36" ){//다운로드-멜론
+			document.location.href = "/Svc/download/DlSWList.aspx?menuCode="+code;
+			return;
+		}
+	/*	
+		if(code == "E34" || code == "D44" ){//다운로드-동영상플레이어
+			document.location.href = "/Svc/download/DlPlayer.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E35" || code == "D45" ){//다운로드-멜론
+			document.location.href = "/Svc/download/DlMelon.aspx?menuCode="+code;
+			return;
+		}
+	*/	
+		
+		if(code == "E4"){//고객의 소리
+			document.location.href = "/Svc/voc/VocMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E41"){//고객의 소리-고객감동스토리
+			document.location.href = "/Svc/voc/VocThankList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E42"){//고객의 소리-고객제안마당
+			document.location.href = "/Svc/voc/VocProposalList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "E43"){//고객의 소리-고객불만접수
+			
+			loginurl();
+			
+			return;
+		}
+		if(code == "E44"){//고객의 소리-고객게시판
+			document.location.href = "/User/Community/TalkTalk/SVCFreeList.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "E5"){//서비스 센터
+			document.location.href = "/Svc/svccenter/SvcCenterMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E51"){//서비스 센터-서비스센터 안내
+			document.location.href = "/Svc/svccenter/SvcCenterInfo.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E52"){//서비스 센터-서비스제도 안내
+
+			document.location.href = "/Svc/svccenter/SysExchange.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E6"){//악세서리 - 메인
+			document.location.href = "/shop/accessoryMain.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E61"){//악세서리 - 모델별로 보기
+			document.location.href = "/shop/product/modelView.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E62"){//악세서리 - 액세서리별로 보기
+			document.location.href = "/shop/product/accessoryView.asp?menuCode="+code;
+			return;
+		}
+	
+				
+		if(code == "U1"){//MemberShip - 회원혜택안내
+			document.location.href = "/User/member/memberGuid.aspx";
+			return;
+		}
+		
+		if(code == "U3"){//MemberShip - ID/PW찾기
+			document.location.href = "/User/member/memberLost.aspx";
+			return;
+		}
+		
+		if(code == "U4"){//MemberShip - 회원가입
+			document.location.href = "/User/member/membernameCheck.aspx";
+			return;
+		}
+		
+		if(code == "U7"){//MemberShip - 정보수정
+			document.location.href = "/User/mypage/MPMemberEdit.aspx";
+			return;
+		}
+		
+		if(code == "U8"){//MemberShip - 회원탈퇴
+			document.location.href = "/User/member/membersecede.aspx";
+			return;
+		}
+		
+		//Footer
+		if(code == "UI"){//공지사항
+			document.location.href = "/User/utillity/noticeList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "UM"){//이용약관
+			document.location.href = "/User/utillity/contract01.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "UL"){//개인보호정책
+			document.location.href = "/User/utillity/Memberprivacy.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "UE"){//FAQ
+			document.location.href = "/svc/counsel/CunsFAQTop10List.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "L"){//사이버홍보실
+			document.location.href = "/User/prroom/cyber.aspx?menuCode="+code;
+			return;
+		}
+/*
+		if(code == "UI"){//공지사항
+			document.location.href = "/User/utillity/noticeList.aspx";
+			return;
+		}
+		if(code == "UM"){//이용약관
+			document.location.href = "/User/utillity/contract01.aspx";
+			return;
+		}
+		if(code == "UL"){//개인보호정책
+			document.location.href = "/User/utillity/Memberprivacy.aspx";
+			return;
+		}
+		if(code == "J"){//사이버홍보실
+			document.location.href = "/User/prroom/cyber.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "J3"){//I'm different
+			document.location.href = "/User/userevent/different/Imdifferent.aspx?menuCode="+code;
+			return;
+		}
+*/
+		
+		if(code == "Z"){//즐겨찾기
+			
+			loginurl();
+			
+			return;
+		}
+		
+		
+	}
+
+	//푸터의 family site
+	function click(v){
+		if (v=="1") url="http://www.sktelecom.com";
+		else if (v=="2") url="http://www.e-station.com";
+		else if (v=="3") url="http://june.nate.com";
+		else if (v=="4") url="http://www.nate.com";
+		else if (v=="5") url="http://www.cara.co.kr";
+		else if (v=="6") url="http://www.011010leadersclub.co.kr";
+		else if (v=="7") url="http://www.nate.com";
+		else if (v=="8") url="http://www.011010ting.com";
+		else if (v=="9") url="http://www.011010leadersclub.co.kr";
+		else if (v=="10") url="http://www.cara.co.kr";
+		else if (v=="11") url="http://www.myuto.com";
+		else if (v=="12") url="http://www.tu4u.com";
+		window.open(url,"","");
+	}
+
+	function loginurl()
+	{
+		window.open("/WUC/Login.aspx?wbExt=&wbSurl=%2fUser%2fcommunity%2fSkyLeader%2fSkyExpView.aspx%3fpVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100","login","width=500,height=220,top=10,left=10,toolbar=0,menubar=0,scrollbars=no,resizable=no");
+	}
+</script>
+</td>
+							<td vAlign="top" align="left" width="*">
+								<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+									<tr>
+										<td 
+          style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); BACKGROUND-REPEAT: repeat-x" 
+          >
+<textarea id=topflashid style="display:none;" rows="0" cols="0">
+<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+	height="169" width="728" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/top_flash_final.swf">
+	<embed src="http://file.isky.co.kr/flash/top_flash_final.swf" width=728 height=169 />
+</OBJECT>
+</textarea>
+<script language="javascript" src="/embedjs.asp?classid=topflashid"></script>
+
+<!-- 임시 맵 -->
+<map name="_temp_topmenu">
+	<area SHAPE="rect" COORDS="364,9,398,21" HREF="javascript:goURL('UA')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="403,9,432,21" HREF="javascript:goURL('UB')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="441,9,496,21" HREF="javascript:goURL('UC')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="506,9,525,21" HREF="javascript:goURL('E23')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="535,9,568,21" HREF="javascript:goURL('UD')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="578,9,615,21" HREF="javascript:goURL('UF')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="624,9,674,21" HREF="javascript:goURL('UG')" onfocus="this.blur()">
+	
+	<area SHAPE="rect" COORDS="48,35,119,75" HREF="javascript:goURL('B')" onfocus="this.blur()"> <!-- 커뮤니티 -->
+	<area SHAPE="rect" COORDS="186,35,276,75" HREF="javascript:goURL('C')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="346,35,412,75" HREF="javascript:goURL('D')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="486,35,552,75" HREF="javascript:goURL('E')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="624,35,678,75" HREF="javascript:goURL('K1')" onfocus="this.blur()">
+</map>
+
+<map name="_temp_footer">
+	<area SHAPE="rect" COORDS="20,20,60,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="66,20,136,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="144,20,200,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="208,20,248,36" HREF="#" onfocus="this.blur()">
+</map>
+
+</td>
+									</tr>
+								</table>
+								<!--본문내용 들어가는 곳//-->
+								<DIV class="CONTENTS">
+									<DIV class="LINEMAP"><A href="/">Home</A> &gt; <A href="/user/community/CommunityMain.aspx">
+											커뮤니티</A> &gt; <A href="/user/community/SkyLeader/SkyExpList.aspx">SKY 리더</A>
+										&gt; SKY 리더 체험기</DIV>
+									<IMG 
+      src="http://file.isky.co.kr/images/community/leader_experience_title.gif" 
+      ><BR>
+									<TABLE class="BD2" cellSpacing="0" cellPadding="0" width="100%">
+										<TR>
+											<TD><IMG 
+            src="http://file.isky.co.kr/images/community/leader_experience_title_txt.gif" 
+            ></TD>
+											<TD align="right"><IMG 
+            src="http://file.isky.co.kr/images/user/community/leader_experience_title_illust.gif" 
+            ></TD>
+										</TR>
+									</TABLE>
+									<DIV class="CONTENTS_SUB" style="PADDING-TOP: 20px">
+										<!-- 게시판 읽기 -->
+										<TABLE cellSpacing="0" cellPadding="0" width="100%">
+											<TR>
+												<TD class="BBS_READ_TT" colSpan="6"><span id="lblTitle">PMP? 핸드폰? PMP폰!! IM-U100</span></TD>
+											</TR>
+											<TR style="PADDING-TOP: 4px" height="28">
+												<TD class="BBS_READ_TAB2" width="108">번호</TD>
+												<TD class="BBS_READ_TAB" width="171"><span id="lblListNo">1340</span></TD>
+												<TD class="BBS_READ_TAB2" width="108">작성자</TD>
+												<TD class="BBS_READ_TAB" width="134"><span id="lblName">pump0980</span></TD>
+												<TD class="BBS_READ_TAB2" width="58">추천</TD>
+												<TD class="BBS_READ_TAB" width="91"><input type="image" name="btnRecd" id="btnRecd" onclick="javascript:jsPopUpLogin('/user/community/SkyLeader/SkyExpView.aspx?pVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100'); return false;" src="http://file.isky.co.kr/images/community/bbs_button_recom.gif" alt="" align="Right" /><span id="lblRecCnt">38</span></TD>
+											</TR>
+											<TR>
+												<TD bgColor="#e7d2d2" colSpan="6"></TD>
+											</TR>
+											<TR style="PADDING-TOP: 4px" height="28">
+												<TD class="BBS_READ_TAB2">작성일</TD>
+												<TD class="BBS_READ_TAB" colSpan="3"><span id="lblRegDate">2006/04/24 23:20</span></TD>
+												<TD class="BBS_READ_TAB2">조회</TD>
+												<TD class="BBS_READ_TAB"><span id="lblHitCnt">6301</span></TD>
+											</TR>
+											<TR>
+												<TD bgColor="#e7d2d2" colSpan="6"></TD>
+											</TR>
+											<tr style="PADDING-TOP: 4px" height="28">
+												<td class="BBS_READ_TAB2">첨부파일</td>
+												<TD class="BBS_READ_TAB" colSpan="5"><table id="pnlFile" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+
+</td></tr></table></TD>
+											</tr>
+											<TR>
+												<TD bgColor="#e7d2d2" colSpan="6"></TD>
+											</TR>
+											<tr>
+												<td colSpan="6">
+													<table id="sumtable" cellspacing="0" cellpadding="0" width="100%" border="0" style="padding:4px;">
+	<tr>
+		<td width="128">
+																<span id="lbl_sumleader"><img src=http://file.isky.co.kr/ATT01/2006/BBS_10/420/profile_final5[20060424231910].jpg border=0 width=126 height=100></span></td>
+		<td>
+																<span id="lbl_sumtxt">IM-U100의 전반적인 모든 것을 다루고 있습니다.
+전체 리뷰라고 보시면 될 것 같구요.
+재미있게 읽어주세요 ^^;</span></td>
+	</tr>
+	<tr>
+		<TD bgcolor="#e7d2d2" colspan="2"></TD>
+	</tr>
+</table>
+
+												</td>
+											</tr>
+										</TABLE>
+										<DIV class="BBS_READ_CON"><span id="lblContent"><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2006/BBS_10/394/final3_001[20060424233256].jpg" align=baseline border=0><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2006/BBS_10/394/final3_002[20060424233256].jpg" align=baseline border=0>&nbsp; </span></DIV>
+										<!-- 덧글 보기 -->
+												<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:10PX;">
+													<TR>
+														<TD COLSPAN="3" HEIGHT="4" BGCOLOR="#E7D2D2"></TD>
+													</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl1_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl1_CmtName">visualdo</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl1_CmtContent">잘 보고 배웠어요 ^^</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl1_CmtRegDate">2006/08/29 14:42</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl3_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl3_CmtName">sayring</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl3_CmtContent">앗~~저 동영상은 다브르유의 미스러브단테 ㅠㅠ ~~~</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl3_CmtRegDate">2006/08/04 12:25</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl5_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl5_CmtName">ycs999</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl5_CmtContent">넘좋은 울유백이, 오늘 산지 2틀됫답니다 ^^*</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl5_CmtRegDate">2006/07/25 10:07</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl7_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl7_CmtName">masa3029</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl7_CmtContent">쪼아여~~  ㅋ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl7_CmtRegDate">2006/07/22 16:44</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl9_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_02.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl9_CmtName">misoluvj</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl9_CmtContent">리뷰 정확하게 잘 쓰셨네요.</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl9_CmtRegDate">2006/07/11 16:19</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl11_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl11_CmtName">dajung34</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl11_CmtContent">와우, 리뷰 제대로예요. </span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl11_CmtRegDate">2006/07/09 00:17</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl13_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl13_CmtName">rivers0419</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl13_CmtContent">오호..제대로된 리뷰..알찬 리뷰...<BR>잘 봤습니다..</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl13_CmtRegDate">2006/07/06 12:19</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl15_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl15_CmtName">funwr</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl15_CmtContent">u100너무 좋아요~</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl15_CmtRegDate">2006/06/30 10:20</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl17_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl17_CmtName">ksik71</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl17_CmtContent">음악들으며문자보낼려면  일단업그래이드해야되구요 문자확안두요. <BR></span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl17_CmtRegDate">2006/06/29 23:09</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl19_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl19_CmtName">Clarionet</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl19_CmtContent">U100을 쓰기는 하지마눈....ㅡ,.ㅡ 모가몬 지 몰르겠지만 큰 액정만은 넘 져아염~~~~</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl19_CmtRegDate">2006/06/27 16:37</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl21_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl21_CmtName">jjung88</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl21_CmtContent">전 검은색 샀는데, 초콜릿보다 천배만배 이쁘고 볼수록 뿌듯합니다ㅎ 기능도 좋고요 !! ^^ 추천해요  </span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl21_CmtRegDate">2006/06/26 19:29</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl23_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl23_CmtName">lpbzkit</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl23_CmtContent">문자 멀티태스킹은 셀프업그레이드해야만 되여~</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl23_CmtRegDate">2006/06/25 12:32</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl25_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl25_CmtName">junhunse79</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl25_CmtContent">음악을 들이며 문자를 어떻게 보낼수 있는지 답변부탁드립니다 <BR>제가 잘 몰라서요 <BR>^^ 제가 쓰고있는데 좋은것 같은데 <BR>그럼 꼭 답변 부탁드립니다 <BR>^^** 수고하세염</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl25_CmtRegDate">2006/06/22 14:50</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl27_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl27_CmtName">skh1120</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl27_CmtContent">완전 디자인 하는 사람같군요 제대로 된 리뷰입니다 </span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl27_CmtRegDate">2006/06/21 17:10</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl29_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl29_CmtName">jijonjinsim</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl29_CmtContent">멀티테스킹은 셀프업그레이드를 하면 메뉴에 표시가 되요 ㅋ 방금 성공했다는 ㅋ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl29_CmtRegDate">2006/06/21 13:17</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl31_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl31_CmtName">artbox</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl31_CmtContent">저 U- 100 삿는데 멀티테스킹 이 안돼요 ㅜㅜ ;;</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl31_CmtRegDate">2006/06/18 23:40</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl33_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl33_CmtName">luija</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl33_CmtContent">저능 넘흐 조아혀~ㅋㅋㅋ<BR>한마디로 정말 뽀대납뉘당~ㅋㅋㅋ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl33_CmtRegDate">2006/06/16 06:05</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl35_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_07.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl35_CmtName">ezporsche</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl35_CmtContent">아~ 아쉽다</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl35_CmtRegDate">2006/06/13 02:13</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl37_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl37_CmtName">t80utank</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl37_CmtContent">고민 끝에 s100을 어제 구입했는데... 이거 읽어보니까 후회 막급 ㅠㅠ<BR></span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl37_CmtRegDate">2006/06/09 09:18</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl39_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl39_CmtName">dancingeun</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl39_CmtContent">유백이 쓴지 두달째 접어드는데 아직도 100%활용하지 못하고 있는거 같아요 여기서 도움좀 받아야 겠는데요 ^-^ </span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl39_CmtRegDate">2006/06/02 23:41</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl41_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl41_CmtName">windgirl0418</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl41_CmtContent">좀만기다렸다가 살껄 그랬어요ㅠ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl41_CmtRegDate">2006/06/01 08:49</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl43_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl43_CmtName">ID44</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl43_CmtContent">잘쓰셨네요. 잘봤습니다.</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl43_CmtRegDate">2006/06/01 01:51</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl45_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl45_CmtName">Spring24</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl45_CmtContent">u100그래도 쓸만한폰입니다</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl45_CmtRegDate">2006/05/31 06:39</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl47_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl47_CmtName">Spring24</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl47_CmtContent">u100그래도 쓸만한폰입니다</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl47_CmtRegDate">2006/05/31 06:38</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl49_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl49_CmtName">lovejin0707</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl49_CmtContent">엇,,ㅡㅡ; 저는 왜 노래 듣다가 문자보기가 안되는 건지,,ㅡㅡ;;;메뉴에도 아예 업네요,,ㅡㅡ;;;제꺼만 이상한 건가,,</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl49_CmtRegDate">2006/05/25 22:52</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl51_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl51_CmtName">yahsu</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl51_CmtContent">제품 구입한지 이제 하루가 지났는데..메뉴얼을 읽어도 잘 모르겠더라구요..기존에 쓰던 제품과는 달라서...일단 디자인보구 사긴했는데...덕분에 제품에 대해서 좀더 자세히 알게되서 기분이 좋습니다.쌩유~</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl51_CmtRegDate">2006/05/22 01:13</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl53_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl53_CmtName">rbgjs000</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl53_CmtContent">제가 써보니까 정말 괜찮은 폰입니다..ㅋ<BR>강츄~!~!<BR>약간 크긴하지만 유백만의 액정크기... 시원합니다.ㅋ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl53_CmtRegDate">2006/05/20 15:11</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl55_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl55_CmtName">tkfkddlvhs</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl55_CmtContent">여자가 쓰면 좀 크네여  그리고 카메라가  앞에 잇음  좋은데<BR>좀 그렇다  너무 커여  제가여 스카이를  쓰고잇거든여  7400 이거 쓰고잇어여<BR>일년 째^^<BR>스카이 무지좋아하는데여만들때 좀 작게 만들엇음 좋겠음</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl55_CmtRegDate">2006/05/17 15:02</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl57_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl57_CmtName">loveaumji</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl57_CmtContent">리뷰가 정말 제대로네요~!!! 많은 점을 알았습니다..^ㅡ^</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl57_CmtRegDate">2006/05/14 19:40</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+				</table>
+				 
+				<!-- 덧글 쓰기 -->
+				<TABLE class="BD" cellSpacing="0" cellPadding="0" width="100%" bgColor="#f6f6f6">
+					<TR>
+						<TD colSpan="3"><IMG 
+            src="http://file.isky.co.kr/images/community/bbs_comment_title.gif" 
+            ></TD>
+					</TR>
+					<TR vAlign="top" height="65">
+						<TD style="PADDING-LEFT: 10px" width="84"><input name="txtName" type="text" maxlength="20" readonly="readonly" id="txtName" onclick="javascript:jsPopUpLogin('/user/community/SkyLeader/SkyExpView.aspx?pVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100'); return false;" /><BR>
+							<A onclick="LAYER('EMOTIOCON',1);" href="Javascript:;"><IMG 
+            src="http://file.isky.co.kr/images/com/bbs_button_choice_emoticon.gif" 
+            vspace=5></A><BR>
+							<DIV id="EMOTIOCON" style="DISPLAY: none"></DIV>
+							<DIV id="EMOTIOCON" style="MARGIN-TOP: -29px; DISPLAY: none; LEFT: 332px; POSITION: absolute"><input name="EmoticonImg" id="EmoticonImg" type="hidden" value="01" />
+								<TABLE cellSpacing="1" cellPadding="0" bgColor="#e7d2d2">
+									<TR>
+										<TD><A href="javascript:setEmoticon('01');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_01.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('02');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_02.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('03');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_03.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('04');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_04.gif" 
+                  ></A></TD>
+									</TR>
+									<TR>
+										<TD><A href="javascript:setEmoticon('05');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_05.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('06');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_06.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('07');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_07.gif" 
+                  ></A></TD>
+										<TD><A href="javascript:setEmoticon('08');"><IMG 
+                  src="http://file.isky.co.kr/images/com/bbs_emoticon_08.gif" 
+                  ></A></TD>
+									</TR>
+								</TABLE>
+							</DIV>
+						</TD>
+						<TD width="501"><textarea name="txtCmt" id="txtCmt" onkeydown="return CheckByte(this, 200)" onclick="javascript:jsPopUpLogin('/user/community/SkyLeader/SkyExpView.aspx?pVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100'); return false;"></textarea></TD>
+						<TD width="75"><input type="image" name="btnCmt" onclick="javascript:jsPopUpLogin('/user/community/SkyLeader/SkyExpView.aspx?pVal1%3d1%26pVal2%3d91744%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d%26skyleader%3dIM-U100'); return false;if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(); " language="javascript" id="btnCmt" src="http://file.isky.co.kr/images/community/bbs_button_comment.gif" alt="" /></TD>
+					</TR>
+				</TABLE>
+				<!-- 버튼들 -->
+				<TABLE style="MARGIN-BOTTOM: 7px" cellSpacing="0" cellPadding="0" width="100%">
+					<TR>
+						<TD style="PADDING-TOP: 6px" align="right" height="43"><A href="javascript:goList();"><IMG 
+            src="http://file.isky.co.kr/images/user/community/bbs_button_list.gif" 
+            ></A>
+						</TD>
+					</TR>
+					<TR>
+						<TD bgColor="#e7d2d2" height="1"></TD>
+					</TR>
+				</TABLE>
+				<TABLE cellSpacing="0" cellPadding="0">
+					<TR>
+						<TD><a id="lnkNext" class="BROWN_DARK2" href="SkyExpView.aspx?pVal1=1&amp;pVal2=91750&amp;pVal9=&amp;pVal10=&amp;skyleader=IM-U100"><img src='http://file.isky.co.kr/images/com/bbs_bullet_next.gif' align='absmiddle' border='0'/>## 시원섭섭한 U100 체험기를 마치며... [7]</a><BR>
+							<a id="lnkPrev" class="BROWN_DARK2" href="SkyExpView.aspx?pVal1=1&amp;pVal2=91724&amp;pVal9=&amp;pVal10=&amp;skyleader=IM-U100"><img src='http://file.isky.co.kr/images/com/bbs_bullet_prev.gif' align='absmiddle' border='0'/>U100과 함께했던 한달을 정리하며... [2]</a></TD>
+					</TR>
+				</TABLE>
+			</div>
+			<!--본문내용 들어가는 곳//-->
+			<table cellSpacing="0" cellPadding="0" width="100%">
+				<tr>
+					<td>
+<!-- 하단 --><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT>
+<br>
+<br>
+<textarea id=footflashid style="display:none;" rows="0" cols="0">
+<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+	height="85" width="690" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="Src" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="WMode" VALUE="transparent">
+	<embed src="http://file.isky.co.kr/flash/footer/footer.swf" width=85 height=690 />
+</OBJECT>
+</textarea>
+<script language="javascript" src="/embedjs.asp?classid=footflashid"></script>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT></td>
+				</tr>
+			</table>
+			</DIV></TD></TR></TBODY></TABLE></DIV><input name="Poster1:PostValue1" id="Poster1_PostValue1" type="hidden" value="1" /><input name="Poster1:PostValue2" id="Poster1_PostValue2" type="hidden" value="91744" /><input name="Poster1:PostValue3" id="Poster1_PostValue3" type="hidden" /><input name="Poster1:PostValue4" id="Poster1_PostValue4" type="hidden" /><input name="Poster1:PostValue5" id="Poster1_PostValue5" type="hidden" /><input name="Poster1:PostValue6" id="Poster1_PostValue6" type="hidden" /><input name="Poster1:PostValue7" id="Poster1_PostValue7" type="hidden" /><input name="Poster1:PostValue8" id="Poster1_PostValue8" type="hidden" /><input name="Poster1:PostValue9" id="Poster1_PostValue9" type="hidden" /><input name="Poster1:PostValue10" id="Poster1_PostValue10" type="hidden" />
+
+			<P></P>
+			</form>
+	</body>
+</HTML>

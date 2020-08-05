@@ -1,0 +1,258 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+<s:if test="session.loggedIn.equalsIgnoreCase('true')">
+	<s:set name="loginStatus" value="'true'"/>
+	<s:set name="iSkyUserId" value="session.iSkyUserid"/>
+	<s:set name="iSkyUserIp" value="session.iSkyIp"/>
+	<s:set name="iSkyUserName" value="session.iSkyName"/>
+	<s:set name="LogSess" value="'Y'"/>
+	<s:set name="badUser" value="session.badUser"/>
+	<s:set name="EventPollYN" value="session.EventPollYN"/>  
+</s:if>
+<s:else>
+	<s:set name="loginStatus" value="'false'"/>
+	<s:set name="iSkyUserId" value=""/>
+	<s:set name="iSkyUserIp" value=""/>
+	<s:set name="iSkyUserName" value=""/>
+	<s:set name="LogSess" value="'N'"/>
+	<s:set name="badUser" value=""/>
+	<s:set name="EventPollYN" value="N"/>  
+</s:else>
+
+<!-- iSkyUserId : <s:property value='#iSkyUserId' escape="false"/><br/>
+session.loggedIn : <s:property value='session.loggedIn' escape="false"/> -->
+<!-- <br/><br/><br/><br/><br/>
+dddd:<s:property value='#session.EventPollYN' escape="false"/> -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/okcashbag.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/okcashbag.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/okcashbag.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120423");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="05030202"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=05030202&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_CS.swf?PageCode=05030202','222','680','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=05030202','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle"><ul
+				><li><img src="/static/images/cs/d3title_provision.gif" border="0" alt="서비스규정 안내" title="서비스규정 안내" /></li
+				><li class="last"><img src="/static/images/cs/ptitle_okcashbag.gif" border="0" alt="OK캐쉬백 사용안내" title="OK캐쉬백 사용안내" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="okcashbag_cont01"><img src="/static/images/cs/okcashbag_txt_01.gif" alt="고객님의 미소를 소중히" title="고객님의 미소를 소중히" /></div>
+			
+			<div class="okcashbag_cont02"><h5><img src="/static/images/cs/okcashbag_tit_01.gif" alt="OK캐쉬백 사용안내" title="OK캐쉬백 사용안내" /></h5>
+			<ul
+				><li>SKY 서비스센터에서 OK캐쉬백 서비스를 실시하고 있습니다. </li
+				><li>더욱 편리하고 다양한 서비스로 고객 여러분의 사랑에 보답하겠습니다.</li
+			></ul>
+			</div>
+
+			<div class="okcashbag_cont03"><h5><img src="/static/images/cs/okcashbag_tit_02.gif" alt="OK캐쉬백 포인트 적립" title="OK캐쉬백 포인트 적립" /></h5>
+			<dl
+				><dt><img src="/static/images/cs/okcashbag_img_01.gif" /></dt
+				><dd>SKY 서비스센터에서 소모품 구입 또는 휴대폰 수리 시 <span>해당 비용의 1%를<br />
+				OK캐쉬백 포인트로 적립</span>할 수 있습니다.</dd
+				><dd>일부 서비스센터의 경우 적립되지 않는 곳도 있습니다. (직영점은 모두 적립, 결제 가능함)</dd
+				><dd class="img"><a href="javascript:menuLink('050301');"><img src="/static/images/common/btn/1_goCenter.gif" border="0" alt="서비스센터 안내" title="서비스센터 안내" /></a></dd
+			></dl>
+			<div class="blank10"></div>
+			<h5><img src="/static/images/cs/okcashbag_tit_03.gif" alt="OK캐쉬백 포인트 결제" title="OK캐쉬백 포인트 결제" /></h5>
+			<dl
+				><dt><img src="/static/images/cs/okcashbag_img_02.gif" /></dt
+				><dd>SKY 서비스센터에서 유상 수리/구매하시는 비용을 OK캐쉬백으로 결제하실 수 있습니다.<br />
+				(단, OK캐쉬백 포인트 5,000점 이상 보유 고객만 가능. 1점=1원)</dd
+			></dl>
+			</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+<s:if test="isFlag.equalsIgnoreCase('false')">
+
+
+
+
+
+
+
+</s:if>
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://cloudlive.vegalive.co.kr" target="_blank">CLOUD LIVE</a></li>
+				<li><a href="http://medialive.vegalive.co.kr" target="_blank">MEDIA LIVE</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+</body>
+</html>

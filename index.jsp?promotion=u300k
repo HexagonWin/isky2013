@@ -1,0 +1,276 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/index.jsp">
+
+	<input type="hidden" name="promotion" value="u300k">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="00"</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color: ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color: ; text-decoration: none;}
+
+.location_here {color:;}
+
+A.a_paging { font: 11px/14px "돋움"; color: ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color: ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background: url('/static/images/common/contBg_00.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background: url('/static/images/common/contBg_00.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:;}
+
+.twoDepth {border-bottom:solid 1px ;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_00.gif') right bottom no-repeat;}
+.Location {color:;border-bottom:solid 1px ;text-align:right;}
+.pthreeDepth {color:;border-bottom:solid 1px ;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images//_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images//_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board00 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board00 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+</style>
+<script language="javascript">
+function event() {
+	var screen_width;
+	var screen_height;
+	
+	screen_width=  window.screen.width;
+	screen_height= window.screen.height;
+
+	var wl = (window.screen.width/2) - ((screen_width/2) + 10);
+	var wt = (window.screen.height/2) - ((screen_height/2) + 50);
+	var win = window.open("http://event.isky.co.kr/sky/html/u300k/main.asp",'u300k','width=400,height=300,scrollbars=0,left='+wl+',top='+wt);
+	//win.moveTo(wl,wt);
+}
+</script>
+</head>
+
+</head>
+<body class="body_main" scroll="no"  onLoad="contCover();iframeOnLoad();event();" onResize="contCover();iframeOnLoad();">
+
+<form name="targetForm" method="POST" action="/index.jsp">
+<input type="hidden" name="refurl" value="/">
+<input type="hidden" name="PageCode" value="00">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function loginRefresh(){
+		document.targetForm.submit();
+}
+//-->
+</SCRIPT>
+<div align="center">
+<table width="960" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<!-- [s] top navi -->
+	<tr valign="top">
+		<td height="50" id="ffDiv">
+		<div style="position:absolute;width:960px;height:50px;visibility:visible;z-index:1;" onmouseover="javascript:topNavion();" id="topNaviDiv_1" name="topNaviDiv_1">
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+				swfTN('/static/flash/topNavi.swf?PageCode=00&SessLogin=false','','');
+		//-->
+		</SCRIPT>
+		</div>
+		<div style="position:absolute;width:960px;height:85px;visibility:hidden;z-index:2;" onmouseout="javascript:topNavioff();" id="topNaviDiv_2" name="topNaviDiv_2">
+		</div>
+		<img src="/static/images/common/_blank.gif" width="1" height="50" /></td>
+	</tr>
+	<!-- [s] Contents Iframe -->
+	<tr valign="top">
+		<td class="IframeArea8px"><iframe id="contentsIframe" name="contentsIframe" src="main.jsp" width="100%" height="100%" frameborder="0" scrolling="no"></iframe></td>
+	</tr>
+	<!-- [e] Contents Iframe -->
+
+	<!-- [s] copyright -->
+	<tr valign="bottom">
+		<td height="40"><img src="/static/images/common/copyright.gif" height="40" usemap="#copyrightMap" /></td>
+	</tr>
+	<!-- [s] copyright -->
+</table>
+<map name="copyrightMap">
+	<area shape="rect" coords="605,7,642,17" href="javascript:menuLinkIframe('10');" onfocus="javascript:this.blur();">
+	<area shape="rect" coords="652,7,721,17" href="javascript:menuLinkIframe('09');" onfocus="javascript:this.blur();">
+	<area shape="rect" coords="731,7,769,17" href="javascript:menuLinkIframe('0606');" onfocus="javascript:this.blur();">
+	<area shape="rect" coords="778,7,815,17" href="javascript:menuLinkIframe('11');" onfocus="javascript:this.blur();">
+</map>
+</div>
+
+
+<!-- [s] 좌측 배너 //-->
+<div id="adBase" style="position: absolute;width: 100%;left:0px;top:0px;z-index:1000;" align="center"><div id="adBase_center" style="position:relative;width:960px;" align="left">
+<div id="adBanner" style="position:absolute;left:-50px;top:145px;"></div>
+<div id="RBanner" style="position:absolute;left:952px;top:90px;"><script>swftrans('/static/flash/rightTab.swf', '40', '190');</script></div></div></div>
+<!-- [e] 좌측 배너 -->
+
+
+
+<!-- [s] Cover Layer -->
+<script defer="true"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+var iskyFrm_width;
+var iskyFrm_height;
+
+function iframeOnLoad(){
+	iskyFrm_width= document.getElementById("contentsIframe").scrollWidth;
+	iskyFrm_height= document.getElementById("contentsIframe").scrollHeight;
+}
+
+function contCover(){
+	document.getElementById("_fakeDiv_").style.width = document.getElementById("contentsIframe").scrollWidth;
+	document.getElementById("_fakeDiv_").style.height = document.getElementById("contentsIframe").scrollHeight;
+}
+
+// show cover
+function showCover(returl,rightorleft,time){
+//	alert(returl+","+rightorleft+","+time);
+
+	if(navigator.appName!="Microsoft Internet Explorer" ) {
+		document.getElementById("_fakeDiv_").style.left="0"
+		document.getElementById("_fakeDiv_").style.top="58px"
+	}
+
+	document.getElementById("_fake_").style.visibility = "visible";
+	if(rightorleft=="right"){
+		swfSlider('/static/flash/isky_flash.swf',iskyFrm_width,iskyFrm_height);
+	}else if(rightorleft=="left"){
+		swfSlider('/static/flash/isky_flash_left.swf',iskyFrm_width,iskyFrm_height);
+	}
+	document.targetForm.refurl.value = returl;
+	setTimeout(gourlIframe, time);
+}
+
+function gourlIframe(){
+	contentsIframe.location.href= document.targetForm.refurl.value;
+}
+// hide cover
+function hideCover(){
+	document.getElementById("_fake_").style.visibility = "hidden";
+}
+
+
+/************************************************************
+* topNavi flash layer height 조절
+************************************************************/
+
+function topNavion() {
+	document.getElementById("topNaviFlash").style.height = 85 +"px";
+	document.getElementById("topNaviFlash").style.width = 960 +"px";
+}
+
+function topNavioff() {
+	document.getElementById("topNaviFlash").style.height = 50 +"px";
+	document.getElementById("topNaviFlash").style.width = 960 +"px";
+}
+
+//-->
+</SCRIPT>
+<div id="_fake_" name="_fake_" align="center" style="position:absolute;left:0;top:0;width:100%;visibility:hidden;z-index:10000;">
+<div align="left"  id="_fakeDivP_" name="_fakeDivP_" style="position:relative;width:944px;height:100%;z-index:10001;">
+<div id="_fakeDiv_" name="_fakeDiv_" style="position:absolute;left:0;top:58px;height:100%;z-index:10002;">
+</div></div></div>
+<!-- [e] Cover Layer -->
+<script language="JavaScript">
+
+function callExternalInterface(Pn) {
+	//alert(Pn);
+	getMovieName("topNaviFlash").callChangeNaviPos(Pn); 
+}
+
+</script>
+<script>
+
+var szBrowser = navigator.userAgent;
+
+if ( szBrowser.indexOf("Firefox") != -1 ) {
+ // Firefox
+ 
+document.getElementById("ffDiv").innerHTML = "<div style='position:absolute;width:960px;height:50px;' id='ffDiv'><iframe src='ff_if.jsp' width='100%' height='100%' frameborder='0' scrolling='no' margin='0'></iframe></div>";
+
+}
+else if ( szBrowser.indexOf("Opera") != -1 ) {
+ // Opera 
+ document.getElementById("ffDiv").innerHTML = "<div style='position:absolute;width:960px;height:50px;' id='ffDiv'><iframe src='ff_if.jsp' width='100%' height='100%' frameborder='0' scrolling='no' margin='0'></iframe></div>";
+}
+else {
+}
+
+</script>
+
+<script language="JavaScript">
+    //쿠키 가져오기
+    function getCookie(name) { 
+		var nameOfCookie = name + "="; 
+		var x = 0; 
+
+		while ( x <= document.cookie.length ) { 
+			var y = (x+nameOfCookie.length); 
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) { 
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length; 
+			return unescape( document.cookie.substring( y, endOfCookie ) ); 
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1; 
+			if ( x == 0 ) break; 
+		}
+		
+		return ""; 
+
+    } 
+/*2007.12.28 활동지수 이월신청안내*/
+/*	if(getCookie("popup20071228") != "done") {
+		var popwin = window.open("/popup/20071228/popup.jsp","popup20071228","width=340,height=420,left=0,top=0");
+	}*/
+</script>
+
+<body>
+<body>
+</html>

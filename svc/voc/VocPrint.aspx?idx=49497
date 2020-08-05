@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=49497" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOuNsOydtO2EsOunpOuLiOyggC4uOTgg67aI6rCAPzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ6riw64qlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzrsJXspIDsi507Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDY7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQ5NDk3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA0LTA1IDE3OjA4Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyNDU7Pj47Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8XGU7Pj47Pjs7Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPFw8UFw+7KeR7JeQIOy7tO2TqO2EsCDsgqzslpHsnbQg6re466asIOyii+yngCDrqrvtlbTshJwg7JWE7KeB6rmM7KeAIOyciDk47J2EIOyTsOqzoCDsnojripTrjbAuLi5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuyVhOustOumrCDsmpTsppggeHDqsIAg67O07Y647ZmUIOuQmOqzoCDsnojri6Tqs6Ag7ZWY642U652864+EIDk4IOyTsOuKlCDsgqzrnozrk6TsnYQg7JyE7ZW0XDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD45OOyghOyaqeydtOudvOuNmOqwgC4uLuyVhOuLiOuptCDthrXtlansgqzsmqnqsIDriqXtlZwg642w7J207YSw66ek64uI7KCA66W8IO2VmOuCmCDrp4zrk6TslrQg7KO87Iuc64qU6rKMIOyWtOuWqOufsOyngC4uXDwvUFw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">데이터매니저..98 불가?</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">박준식</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">6</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">49497</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-05 17:08</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">245</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>집에 컴퓨터 사양이 그리 좋지 못해서 아직까지 윈98을 쓰고 있는데...</P><BR><P>&nbsp;</P><BR><P>아무리 요즘 xp가 보편화 되고 있다고 하더라도 98 쓰는 사람들을 위해</P><BR><P>&nbsp;</P><BR><P>98전용이라던가...아니면 통합사용가능한 데이터매니저를 하나 만들어 주시는게 어떨런지..</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

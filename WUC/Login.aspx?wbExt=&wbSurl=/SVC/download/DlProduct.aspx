@@ -1,0 +1,101 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>
+			It's different, SKY
+		</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK title=SKTT href="http://file.isky.co.kr/js/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<script language="javascript">
+			
+			function jsInit()
+			{
+				window.resizeTo("409","270");
+				document.all.wbUserid.focus();
+			}
+			
+			function SubmitCtrl()
+			{
+				var UserID = document.all.wbUserid;
+
+				if(UserID.value == '')
+				{
+					alert('ID를 입력해 주십시오.');
+					document.all.wbUserid.focus();
+					return false;
+				}
+
+				var Passwd = document.all.wbPasswd;
+				if(Passwd.value == '')
+				{
+					alert('비밀번호를 입력해 주십시오.');
+					document.all.wbPasswd.focus();
+					return false;
+				}
+
+				return true;
+			}
+
+			function memberReg(){//회원가입으로 이동
+				opener.document.location.href = "/User/member/memberNameCheck.aspx";
+				window.close();
+			}
+			
+			function findUserIDPW(){//아이디/비밀번호 찾기
+				opener.document.location.href = "/User/member/memberLost.aspx";
+				window.close();
+			}
+			
+			function checkLogin(){
+				alert("test")
+			}
+			
+		</script>
+	</HEAD>
+	<BODY leftMargin="0" topMargin="0" onload="jsInit();">
+		<IMG height=52 
+src="http://file.isky.co.kr/images/user/utility/popup_login_title.gif" width=400 
+useMap=#Map border=0><BR>
+		<DIV class="POPUP">
+			<form name="frmLogin" method="post" action="Login.aspx?wbExt=&amp;wbSurl=%2fSvc%2fdownload%2fDlProduct.aspx" id="frmLogin">
+<input type="hidden" name="__VIEWSTATE" value="dDw1OTAyNTM5ODA7dDw7bDxpPDA+Oz47bDx0PDtsPGk8MT47PjtsPHQ8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3V0aWxpdHkvYnV0dG9uX2xvZ2luLmdpZjs+PjtwPGw8b25DbGljazs+O2w8cmV0dXJuIFN1Ym1pdEN0cmwoKVw7Oz4+Pjs7Pjs+Pjs+PjtsPGJ0bkxvZ2luOz4+" />
+
+				<BR>
+				<TABLE cellSpacing="0" cellPadding="0">
+					<TR>
+						<TD style="PADDING-RIGHT: 5px" align="right" width="95"><IMG 
+      src="http://file.isky.co.kr/images/user/utility/tab_id.gif" align=absMiddle 
+      border=0></TD>
+						<TD><input name="wbUserid" type="text" maxlength="12" id="wbUserid" tabindex="1" /></TD>
+						<TD style="PADDING-RIGHT: 5px" align="center" width="150" rowSpan="3"><input type="image" name="btnLogin" id="btnLogin" onClick="return SubmitCtrl();" src="http://file.isky.co.kr/images/utility/button_login.gif" alt="" border="0" /></TD>
+					</TR>
+					<TR>
+						<TD colSpan="2" height="8"></TD>
+					</TR>
+					<TR>
+						<TD style="PADDING-RIGHT: 5px" align="right"><IMG 
+      src="http://file.isky.co.kr/images/user/utility/tab_pw.gif" align=absMiddle 
+      border=0></TD>
+						<TD tabIndex="12"><input name="wbPasswd" type="password" maxlength="12" id="wbPasswd" tabindex="2" /></TD>
+					</TR>
+				</TABLE>
+				<BR>
+				<BR>
+				<DIV 
+style="FONT-SIZE: 0px; BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/utility/popup_line.gif); WIDTH: 100%; HEIGHT: 1px"></DIV>
+				<DIV style="MARGIN-TOP: 15px; TEXT-ALIGN: center"><A href="javascript:memberReg();"><IMG 
+src="http://file.isky.co.kr/images/user/utility/button_reg.gif" border=0></A> <A href="javascript:findUserIDPW();">
+						<IMG 
+src="http://file.isky.co.kr/images/user/utility/button_idpw_sch.gif" border=0></A>
+				</DIV>
+			</form>
+		</DIV>
+		<MAP name="Map">
+			<AREA shape="RECT" coords="340,20,393,44" href="javascript:window.self.close();">
+		</MAP>
+	</BODY>
+</HTML>

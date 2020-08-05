@@ -1,0 +1,430 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event/event_vegano5.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/event/event_vegano5.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event/event_vegano5.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20110817");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="http://www.isky.co.kr/static/css/Etc.css" />
+<script>var dispNum="0901"; var firstDepth ="09";</script>
+<script language="JavaScript" src="http://www.isky.co.kr/static/js/Menu.js"></script>
+<script language="JavaScript" src="http://www.isky.co.kr/static/js/script.js"></script>
+<script language="JavaScript" src="http://www.isky.co.kr/static/js/prototype.js"></script>
+
+<style type="text/css">
+html, body{padding:0px; margin:0px; font-family:dotum; font-size:12px;}
+h2,ul,li,dl,dt,dd,tr, td {
+        margin:0;
+        padding:0;
+        list-style:none;
+        font-size:12px; 
+        font-family:돋움, sans-serif; 
+        font-weight:normal;
+}
+fieldset {padding:0; margin:0; border:0;}
+table {border-collapse: collapse; border-spacing: 0; }
+
+img {border:0px;}
+
+#eventWrap {background:url('http://www.isky.co.kr/static/images/event/20110706/vegaN5Bg.jpg') no-repeat; position:relative; width:725px; height:1415px;}
+#eventWrap .eventField {}
+.eventSubmit { position:absolute; left:234px; top:1192px;}
+
+#eventWrap .cnt01  { position:absolute; left:98px; top:1053px;}
+#eventWrap .cnt01  input{border:0px; padding:3px 5px; width:577px; height:18px;}
+#eventWrap .cnt02  { position:absolute; left:98px; top:1082px;}
+#eventWrap .cnt02  input{border:0px; padding:3px 5px; width:577px; height:18px;}
+#eventWrap .cnt03  { position:absolute; left:98px; top:1111px;}
+#eventWrap .cnt03  textarea{border:0px; padding:3px 5px; width:577px; height:57px; overflow:auto;}
+</style>
+
+<script type="text/javascript">
+
+	/*tab*/
+	function initTabMenu(tabContainerID) {
+		var tabContainer = document.getElementById(tabContainerID);
+		var tabAnchor = tabContainer.getElementsByTagName("a");
+		var i = 0;
+	
+		for(i=0; i<tabAnchor.length; i++) {
+			if (tabAnchor.item(i).className == "tab")
+				thismenu = tabAnchor.item(i);
+			else
+				continue;
+	
+			thismenu.container = tabContainer;
+			thismenu.targetEl = document.getElementById(tabAnchor.item(i).href.split("#")[1]);
+			thismenu.targetEl.style.display = "none";
+			thismenu.imgEl = thismenu.getElementsByTagName("img").item(0);
+			thismenu.onclick = function tabMenuClick() {
+				currentmenu = this.container.current;
+				if (currentmenu == this)
+					return false;
+	
+				if (currentmenu) {
+					currentmenu.targetEl.style.display = "none";
+					if (currentmenu.imgEl) {
+						currentmenu.imgEl.src = currentmenu.imgEl.src.replace("_on.jpg", ".jpg");
+					} else {
+						currentmenu.className = currentmenu.className.replace("_on", "");
+					}
+				}
+				this.targetEl.style.display = "";
+				if (this.imgEl) {
+					this.imgEl.src = this.imgEl.src.replace(".jpg", "_on.jpg");
+				} else {
+					this.className += " on";
+				}
+				this.container.current = this;
+	
+				return false;
+			};
+	
+			if (!thismenu.container.first)
+				thismenu.container.first = thismenu;
+		}
+		if (tabContainer.first)
+			tabContainer.first.onclick();
+	}
+
+	/*png24*/
+	function setPng24(obj) {
+	    obj.width=obj.height=1;
+	    obj.className=obj.className.replace(/\bpng24\b/i,'');
+	    obj.style.filter =
+	    "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');"
+	    obj.src=''; 
+	    return '';
+	}
+
+	// 이벤트 댓글 페이징 이동
+	function goList(targetPage, targetGroup) {
+	
+		var obj = $('event');
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/event/event_vegano5.sky";
+		obj.submit();
+	}
+
+	// 이벤트 메인으로 이동
+	function List() {
+		location.href = "/etc/event.sky?dispNum=";
+	}
+
+	function goInputReplay() {
+		var form1 = $('event');
+	    
+		var strTxt = "blog:" + form1.strCommentTxt1.value + "|VegaNo:" + form1.strCommentTxt2.value + "|text:" + form1.strCommentTxt3.value;
+	    var loginCheck = form1.logsess.value;
+	    
+	    if(loginCheck == "N"){
+	    	LoginConfirm('http://www.isky.co.kr/etc/event/event_vegano5.sky?');
+	    	return;
+	    }
+	    
+		if(form1.strCommentTxt1.value == "" || form1.strCommentTxt1.value== "http://") {
+			alert("블로그 주소를 입력해주세요");
+			return;
+		} else {
+			if(form1.strCommentTxt1.value.indexOf("http://", "0") != 0) {
+				alert("잘못된 입력 형식입니다.");
+				return;
+			}
+			
+			if(form1.strCommentTxt2.value == "") {
+                alert("본인의 Vega No.를 선택 해 주세요.");
+                return;
+            }
+			
+			if(form1.strCommentTxt3.value == "" || form1.strCommentTxt3.value == "체험단에 임하는포부를 250자 이내로 작성해 주세요.") {
+                alert("체험단에 임하는포부를 250자 이내로 작성해 주세요.");
+                return;
+            }
+			
+			
+			if(form1.strCommentTxt3.value.length > "250"){
+				alert("체험단에 임하는포부를 250자 이내로 작성해 주세요.");
+				form1.strCommentTxt3.value = form1.strCommentTxt3.value.substring(0, 250);
+                return;
+			}
+
+
+			var strResult = "";
+	
+			strResult = strTxt;
+			
+			form1.strComment.value = strTxt;
+			form1.strResult.value = strResult;
+			
+			form1.action = "event_vegano5_insert.sky";
+			form1.target = "dataProcess";
+			form1.method = "post";
+			form1.submit();
+		}
+	
+	}
+
+	
+	// 로그인 체크 로직
+	function LoginChk() {
+		var errorMsg = $('alertMsg').value;
+	    
+		if(errorMsg == "NotLogin")
+			LoginConfirm('http://www.isky.co.kr/etc/event/event_vegano5.sky?');
+    }
+ 
+
+	function copyClip() {
+
+	} 
+	
+	function clearDefaultValue(obj){
+		if(obj.name == "strCommentTxt2"){
+            if(obj.value=="본인의 Vega No.를 선택 해 주세요.")
+            obj.value = "";
+            return;
+        }
+		
+		if(obj.name == "strCommentTxt3"){
+            if(obj.value=="체험단에 임하는포부를 250자 이내로 작성해 주세요.")
+            obj.value = "";
+            return;
+        }
+	}
+	
+	
+</script>
+
+</head>
+<body>
+
+<form name="event" id="event" method="post" action="">
+<input type="hidden" name="intEventSeq" value='1223'/> <!-- 여기에 이벤트 시퀀스 입력 -->
+<input type="hidden" name="strGubun" value='10'/> <!-- 결과 출력 파일에서 event_result_new_insert.jsp 구분값 -->
+<input type="hidden" name="strAnswer"/>
+<input type="hidden" name="strComment"/>
+<input type="hidden" name="strResult"/>
+<input type="hidden" name="targetPage" id="targetPage" value="1"/>
+<input type="hidden" name="targetGroup" id="targetGroup" value="1"/>
+<input type="hidden" name="dispNum" id="dispNum" value=""/>
+<input type="hidden" name="alertMsg" value="NotLogin"/> <!-- 로그인 확인 값 -->
+<input type="hidden" name="logsess" id="logsess" value="N"/>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0901&LogSess=N','100%','60','','','transparent','')</script></div> 
+<div id="Container">
+			<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0901','222','500','','','transparent','')</script></div>
+		</div>
+		
+	<div id="Content">
+				<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0901&LogSess=N','740','81','','','transparent','')</script></div>
+		
+		<!-- [s] page title 2 -->
+		<div class="ptitle2">
+			<ul>
+				<li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li>
+			</ul>
+		</div>
+		<!-- [e] page title 2 -->
+		<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_eventV">
+		<colgroup>
+			<col width="54" />
+			<col width="516" />
+			<col width="160" />
+		</colgroup>
+			<tr valign="top">
+				<th>번호</th>
+				<th>제목</th>
+				<th>이벤트기간</th>
+			</tr>
+
+			<tr valign="top">
+				<td class="num">1</td>
+				<td class="title">Vega No.5 체험단 이벤트</td>
+				<td class="num">2011.07.06 ~ 2011.07.13</td>
+			</tr>
+		</table>
+		<!-- [s] event contents -->
+			<div id="eventWrap">
+			    <div class="eventField">
+			    <fieldset>
+			        <label class="cnt01"><input type="text" name="strCommentTxt1" value="http://" title="블로그 주소" /></label>
+			        <label class="cnt02">
+				        <select name="strCommentTxt2">
+				            <option value="">선택</option>
+				            <option value="No1">VegaNo1</option>
+				            <option value="No2">VegaNo2</option>
+				            <option value="No3">VegaNo3</option>
+				            <option value="No4">VegaNo4</option>
+				            <option value="No5">VegaNo5</option>
+				        </select>
+			        </label>
+			        <label class="cnt03"><textarea name="strCommentTxt3" rows="" cols="" title="포부" onclick="clearDefaultValue(this)">체험단에 임하는포부를 250자 이내로 작성해 주세요.</textarea></label>
+			        <img src="http://www.isky.co.kr/static/images/event/20110706/eventBtn.jpg" class="eventSubmit" title="체험단 지원하기" onclick="javascript:goInputReplay();"/>
+			    </fieldset>
+			    </div>
+			</div>
+			
+			<br/>
+			<br/>
+			<br/>
+
+			<!-- 하단 목록 페이징 시작 -->
+
+			<div class="btnArea01"><a href="javascript:List()"><img src="/static/images/common/btn/1_list.gif" border="0" alt="목록보기" title="목록보기" /></a></div>
+				<iframe name='listFrame' 
+					src="/etc/event_view_list.sky?dispNum=&targetPage=1&targetGroup=1" 
+					frameborder=0 width="100%" height="400"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	
+				<!-- 하단 목록 페이징 끝 -->
+	
+			</div>
+
+		<!-- [e] event contents -->
+		</div>
+	</div>
+	
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.pantech.com/" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

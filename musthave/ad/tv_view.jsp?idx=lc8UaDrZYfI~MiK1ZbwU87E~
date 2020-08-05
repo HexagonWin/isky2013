@@ -1,0 +1,679 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/musthave/ad/tv_view.jsp">
+
+	<input type="hidden" name="idx" value="lc8UaDrZYfI~MiK1ZbwU87E~">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>
+	function goScrapSource(){
+		var str_embed_script = "<iframe src='http://www.isky.co.kr/source/fla/brand/player.swf?videoURL=http://dmfile.isky.co.kr/upload/musthave/tv/SKY WHOOO_20_0303.flv' name='MovieFla' width=270 height=202 ></iframe>";
+		window.clipboardData.setData('Text', str_embed_script);
+
+		alert("소스가 복사 되었습니다. \n\nCtrl + V 를 눌러 주세요.");
+	}
+
+	function goView(form, idx){
+		form.idx.value = idx;
+		form.tv_state.value = "VOD";
+		form.target = "_self";
+		form.action = "tv_view.jsp";
+		form.submit();
+	}
+
+	function goMakingView(form, idx){
+		form.idx.value = idx;
+		form.tv_state.value = "MAK";
+		form.target = "_self";
+		form.action = "tv_view.jsp";
+		form.submit();
+	}
+
+	// comment list 
+	function goCommentPage(form, goUrl, goPage){
+		form.action = goUrl;
+		form.comment_p.value = goPage;
+		form.submit();
+
+	}	
+
+	// comment insert
+	function goCommentAdd(){
+
+		// 로그인 체크...해야함
+		if(confirm("로그인 하셔야 등록 가능합니다.") == false) return;
+		window.open("/member/loginPopup.jsp?gotype=7&p_url=/musthave/ad/tv_view.jsp?page=1&idx=938", "loginPopup", "width=340, height=280, left=0, top=0");
+		return;
+
+
+		var form = document.comment_form;
+		if(form.comment_content.value == ""){alert("댓글 내용을 입력해주세요."); return;}
+		form.comment_pro.value = "ins";
+		form.target = "innerComment";
+		form.action = "inner_comment_proc.jsp";
+		form.submit();
+	}
+
+	function goCommentDelete(form, idx){
+		if(confirm("삭제하시면 되돌릴 수 없습니다. \n\n삭제 하시 겠습니까?")){
+			form.comment_pro.value = "del";
+			form.comment_idx.value = idx;
+			form.target = "innerComment";
+			form.action = "inner_comment_proc.jsp";
+			form.submit();
+		}else return;
+	}
+
+	function commentChkLen(form){
+		
+			//alert("로그인이 필요합니다.");
+		
+	}
+
+	function tview(t){
+		var _x = document.getElementsByName(t);
+		for(var i=0; i<_x.length; i++){
+			if(i == 0) visibleOption = _x[i].style.display == "none" ? "" : "none";
+			_x[i].style.display = visibleOption;
+		}
+	}
+
+	function loginchk() {
+		if(confirm("로그인 하셔야 등록 가능합니다.") == false) return;
+		window.open("/member/loginPopup.jsp?gotype=7&p_url=/musthave/ad/tv_view.jsp?page=1&idx=938", "loginPopup", "width=340, height=280, left=0, top=0");
+		return;
+	}
+</script>
+<script>var dispNum="010201"</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color:#bed3ea ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color:#bed3ea ; text-decoration: none;}
+
+.location_here {color:#bed3ea;}
+
+A.a_paging { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background:#679bd2 url('/static/images/common/contBg_01.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background:#679bd2 url('/static/images/common/contBg_01.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:#679bd2;}
+
+.twoDepth {border-bottom:solid 1px #bdd3ea;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_01.gif') right bottom no-repeat;}
+.Location {color:#bed3ea;border-bottom:solid 1px #bdd3ea;text-align:right;}
+.pthreeDepth {color:#bed3ea;border-bottom:solid 1px #bdd3ea;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/musthave/010201_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/musthave/0102_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board01 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board01 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+
+.tbl_paging td a { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+.tbl_paging td a:hover { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+.tbl_paging td b {font:bold 11px/14px "돋움"; color:#FFFFFF; padding:0 3px 0 3px;}
+
+</style>
+</head>
+<body scroll="no">
+<form name="iForm" method="post">
+	<input type="hidden" name="idx" value="">
+	<input type="hidden" name="page" value="1">
+	<input type="hidden" name="tv_state" value="">
+</form>
+
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td class="subLeft"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+			<table width="760" cellpadding="0" cellspacing="0" border="0">
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right">
+					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><a href="javascript:menuLink('0102');"><img src="/static/images/musthave/01_snavi_02_.gif"></a></td>
+							<td><a href="javascript:menuLink('0103');"><img src="/static/images/musthave/01_snavi_03.gif"></a></td>
+							<td><a href="javascript:menuLink('0101');"><img src="/static/images/musthave/01_snavi_01.gif"></a></td>
+							<td><a href="javascript:menuLink('0104');"><img src="/static/images/musthave/01_snavi_04.gif"></a></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+
+				<!-- [s] 2Depth & location -->
+				<tr valign="top">
+					<td class="p20l" colspan="2"><table width="740" cellpadding="0" cellspacing="0" border="0">
+					
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><a href="javascript:menuLink('0102');"><img src="/static/images/musthave/0102.gif" border="0" /></a></div></td>
+							<td class="Location"><img src="/static/images/common/_blank.gif"></td>
+							<!-- td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td -->
+						</tr>
+					
+					</table></td>
+				</tr>
+				<!-- [e] 2Depth & location -->
+
+				<tr valign="top">
+					<!-- [s] 3Depth flash navi -->
+					
+					<td width="150" class="subNavi"><script>swftrans('/static/flash/subNavi_0102.swf?PageCode=010201', '135', '130');</script><!-- <img src="/static/flash/subNavi_01.gif"> --></td>
+					
+
+					<!-- [e] 3Depth flash navi -->
+					<!-- [s] contents Area -->
+					<td width="610" class="contentsArea"><table width="610" cellpadding="0" cellspacing="0" border="0">
+						<!-- [s] Ptitle -->
+						<tr valign="top">
+							<td height="49"><img src="/static/images/musthave/010201_ptitle.gif"></td>
+						</tr>
+
+						<!-- [e] Ptitle -->
+						<tr valign="top">
+							<td height="24" align="right"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td class="p3r"><a href="javascript:goScrapSource()"><img src="/static/images/musthave/btn_source.gif" border="0"></a></td>
+									<td><a href="tv.jsp?page=1"><img src="/static/images/musthave/btn_list.gif" border="0"></a></td>
+								</tr>
+							</table></td>
+						</tr>
+					</table>
+
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_tvadView" style="border-top:solid 1px #92b3d9;border-bottom:solid 1px #77a5d7;">
+						<tr>
+							<td width="410" height="49" class="adTit"><table width="410" cellpadding="0" cellspacing="0" border="0" class="tbl_tvadView_tit">
+								<tr>
+									<th width="71"><img src="/static/images/musthave/010201_tit_01.gif"></th>
+									<td width="355" class="txt">"SKY WHOOO"편</td>
+								</tr>
+								<tr>
+									<th><img src="/static/images/musthave/010201_tit_02.gif"></th>
+									<td class="img">
+									<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>
+							</table></td>
+							<!-- <td width="200" class="typeBtn">
+								<table width="200" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td width="97" align="right" class="p10r"><a href="javascript:goView(iForm,'');"><img src="/static/images//" border="0"></a></td>
+									<td width="93" class="p5r"><a href="javascript:goMakingView(iForm,'');"><img src="/static/images//" border="0"></a></td>
+								</tr>
+								</table>
+							</td> -->
+						</tr>
+					</table>
+
+					
+
+					<!-- [s] 광고 영상 & 말풍선 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td height="246" style="background:url('/static/images/musthave/010201_vodBg.gif') no-repeat;"><div id="vodDiv" style="position:relative; width:610px; height:245px; left:;top:;z-index:100; visibility: visible;">
+								<!-- vod -->
+								<div id="vodPlayDiv" style="position:absolute;left:165px;top:15px;width:279px;height:209px;z-index:101;"><script>swftrans('http://www.isky.co.kr/source/fla/brand/player.swf?videoURL=http://dmfile.isky.co.kr/upload/musthave/tv/SKY WHOOO_20_0303.flv', '279', '209');</script></div>
+								<!-- 좌상 -->
+								<div id="vodbloon1" style="position:absolute;left:10px;top:40px;width:115px;height:50px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">오늘 삿는데 흠.. 더써보고 ^^</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">uzie9179</span></div>
+								<!-- 우상 -->
+								<div id="vodbloon2" style="position:absolute;left:476px;top:35px;width:125px;height:55px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">아래잇는세끼들 다 이빨까지마</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">dshadowb</span></div>
+								<!-- 좌하 -->
+								<div id="vodbloon3" style="position:absolute;left:75px;top:120px;width:80px;height:80px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">심플한 디자인*^^*</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">ymh3507</span></div>
+								<!-- 우하 -->
+								<div id="vodbloon4" style="position:absolute;left:465px;top:110px;width:100px;height:70px;z-index:101;"><p style="font:11px/13px 돋움;color:#FFFFFF;padding:0 0 3px 0;">디자인 너무 깔끔하고 예뻐요^^</p>
+								<span style="font:11px/13px 돋움; color:#666666;">ID : </span><span style="font:11px/13px 돋움; color:#333333;">onlyjbm1019</span></div>
+							</div></td>
+						</tr>
+					</table>
+					<!-- [s] 광고 영상 & 말풍선 -->
+
+<iframe name="innerComment" src="" width="0" height="0"></iframe>
+
+<form name="comment_form" method="post">
+	<input type='hidden' name='page' value='1'>
+	<input type='hidden' name='idx' value='938'>
+	<input type="hidden" name="comment_tname" value="ISKY_ADVERTISING">
+	<input type="hidden" name="comment_p_idx" value="938">
+	<input type="hidden" name="comment_idx" value="">
+	<input type="hidden" name="comment_pro" value="">
+
+	<input type="hidden" name="comment_bePoint" value="true">
+	<input type="hidden" name="comment_pidx_column" value="idx">
+	<input type="hidden" name="comment_point_column" value="point">
+	<input type="hidden" name="comment_beComment_cnt" value="true">
+	<input type="hidden" name="comment_cnt_column" value="comment_cnt">
+
+
+					<!-- [s] 한줄평 남기기 입력 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><img src="/static/images/musthave/box_comment_01.gif"></td>
+						</tr>
+						<tr valign="top">
+							<td align="center" style="background:url('/static/images/musthave/box_comment_02.gif') repeat-y;padding:5px 0 5px 0;"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td height="22"><img src="/static/images/musthave/010201_comment_tit_01.gif"></td>
+									<td width="422"><input type="text" name="comment_content" id="" class="input_text" style="width:420px;height:19px;" maxlength="300" onkeyup="commentChkLen(comment_form)" readonly onClick="loginchk();"></td>
+									<td><A HREF="javascript:goCommentAdd();"><img src="/static/images/musthave/btn_write.gif"></A></td>
+								</tr>
+								<tr>
+									<td height="22"><img src="/static/images/musthave/010201_comment_tit_02.gif"></td>
+									<td><table width="420" cellpadding="0" cellspacing="0" border="0">
+										<tr valign="top" colspan="2">
+											<td><input type="radio" name="comment_point" value="1" id="" /><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="2" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="3" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="4" id="" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+											<td><input type="radio" name="comment_point" value="5" id="" checked="check" /><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"></td>
+										</tr>
+									</table></td>
+									<!-- <td><A HREF="javascript:tview('comment');"><img src="/static/images/musthave/btn_commentViewall.gif"></A></td> -->
+								</tr>
+							</table></td>
+						</tr>
+						<tr valign="top">
+							<td><img src="/static/images/musthave/box_comment_03.gif"></td>
+						</tr>
+					</table>
+					<!-- [e] 한줄평 남기기 입력 -->
+
+					<!-- [s] 한줄평 남기기 리스트 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_comment01">
+						<tr valign="top">
+							<td align="center"><table width="" cellpadding="0" cellspacing="0" border="0" class="tbl_comment01list">
+							
+								<tr valign="top" >
+									<td width="56" class="id">uzie9179</td>
+									<td width="427" class="comment">오늘 삿는데 흠.. 더써보고 ^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dshadowb</td>
+									<td width="427" class="comment">아래잇는세끼들 다 이빨까지마
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ymh3507</td>
+									<td width="427" class="comment">심플한 디자인*^^*
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">onlyjbm1019</td>
+									<td width="427" class="comment">디자인 너무 깔끔하고 예뻐요^^
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">mhk4896</td>
+									<td width="427" class="comment">2009년3월12날  핸드폰 사서요  스카이 후 좋아요
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pinklove0902</td>
+									<td width="427" class="comment">갖고싶어염 폰쓴지 4년 않바꿔 주는데 이폰으로 바꿔달라고 해야지.....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">kow511</td>
+									<td width="427" class="comment">갖고싶다.... 근데 5월달인가 6월달까지 써야&#46080;다는 문제점이 ㅜㅡㅜ..
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sexykwj</td>
+									<td width="427" class="comment">바람불다 어지럽겠어요ㅎ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">tnal1207</td>
+									<td width="427" class="comment">기발하다.  근데 왜 심의에 안걸렸지
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">name1101</td>
+									<td width="427" class="comment">구입한지 4일~ㅋㅋ넘이뻐용♥
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">moonbear80</td>
+									<td width="427" class="comment">ㅋㅋ 구입한지 2일 ㅋㅋ 맘에 들어여 ㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">yunluy</td>
+									<td width="427" class="comment">오늘 샀어요 ㅋㅋ 넘 예뻐용 ♥
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">pillseon</td>
+									<td width="427" class="comment">대박이야!!!!!!!!!!!!!!!!!폰너무이뻐♥
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">syh4209</td>
+									<td width="427" class="comment">뭐야이냔은 ㅋㅋㅋㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">bebeshow</td>
+									<td width="427" class="comment">난 저번달에 샀지 요 ㅋㅋ 하하 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">2pm88092</td>
+									<td width="427" class="comment">젊음이 너무 좋다....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">sunbih1004</td>
+									<td width="427" class="comment">ㅋㅋㅋ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">glad2001</td>
+									<td width="427" class="comment">후~후~손쓰기도아깝다~오랜만에 스카이 획가적개발품 탄생~대박날듯~^^ 
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">ppaon328</td>
+									<td width="427" class="comment">대놓고 자극이네 ㅍㅍ
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">opera1011</td>
+									<td width="427" class="comment">이것도 011번은 안돼나여???  011은 고를게없어....
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">dpepsk</td>
+									<td width="427" class="comment">자극적이네요 바람부는 폰이라니
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">auel88</td>
+									<td width="427" class="comment">눈을뗄수없는느낌의 광고~ 자극적이다-!
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+							
+								<tr valign="top" >
+									<td width="56" class="id">solyyam</td>
+									<td width="427" class="comment">너무 자극적인거 같은데요; 손쓰기도 아깝다면서 후 날려버린 장면은 좋지만 손쓰기 아까운 이유가 그닥 기분좋게 보이지 않습니다. 좀 더 기분 상쾌하고 행복해지는 내용이었으면 좋겠어요 ^^;
+									
+									</td>
+									<td width="80" class="star">
+										<img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif"><img src="/static/images/musthave/star_0.gif">
+									</td>
+								</tr>						
+										
+							</table></td>
+						</tr>
+					</table>
+					<!-- [e] 한줄평 남기기 리스트 -->
+</form>
+					<!-- [s] 광고정보 -->
+					<table width="610" cellpadding="0" cellspacing="0" border="0" class="tbl_adsumm">
+						<tr valign="top">
+							<th height="21" colspan="2" class="stit"><img src="/static/images/musthave/010201_stit_adSum.gif"></th>
+						</tr>
+						<tr valign="top">
+							<td class="txt"><HTML><HEAD></HEAD>
+<BODY style="FONT-SIZE: 9pt; ; LINE-HEIGHT: 14pt; FONT-FAMILY: 굴림; BACKGROUND-COLOR: #ffffff">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">1. </SPAN></B><B><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">광고컨셉</SPAN></B></FONT><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"> <SPAN lang=EN-US><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></SPAN></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-INDENT: 10pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan; mso-char-indent-count: 1.0"><FONT size=2><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">WHOOO(IM-S410/S410K)</SPAN><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">의 '바람인식기능'이라는<SPAN lang=EN-US> USP</SPAN>를 연인간에 있을 수 있지만 쉽게 얘기하지 못 하는 혼전성관계라는 화두를 통해 보여주고자 함<SPAN lang=EN-US>.<o:p></o:p></SPAN></SPAN></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p><FONT size=2>&nbsp;</FONT></o:p></SPAN></B></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">2. </SPAN></B><B><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">줄거리</SPAN></B></FONT><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"> <SPAN lang=EN-US><o:p></o:p></SPAN></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-INDENT: 10pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan; mso-char-indent-count: 1.0"><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><FONT size=2>야릇한 음악이 흐르는 어느 클럽 안<SPAN lang=EN-US>, </SPAN>한 커플이 소파에 앉아있고 긴 머리를 한 여자친구의 얼굴 쪽에 남자친구가 바람을 후 불어주고 있다<SPAN lang=EN-US>. </SPAN>한참 행복해 하는 표정을 짓고 있던 여자친구는 아무렇지 않게 남자친구에게 '나 임신했대'라는 말을 한다<SPAN lang=EN-US>. </SPAN>이 말을 듣고 당황한 기색이 역력한 남자친구는 아기울음 소리를 연상하는 사운드와 함께 어찌할 바를 모르는 표정을 짓는다<SPAN lang=EN-US>.<o:p></o:p></SPAN></FONT></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-INDENT: 10pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan; mso-char-indent-count: 1.0"><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><FONT size=2>이런 남자친구를 보고 여자친구는 '아니거든'<SPAN lang=EN-US> </SPAN>이라는 말을 하고<SPAN lang=EN-US>, </SPAN>남자친구는 불행 중 다행이라는 표정으로 혓바닥을 살짝 내밀며 웃는다<SPAN lang=EN-US>. </SPAN>이 모습에 더 화가 난 여자친구는 핸드폰을 확 집어 드는데<SPAN lang=EN-US>, </SPAN>자신을 때리는 것이라 착각한 남자친구는 몸을 뒤로 젖히며 놀랜다<SPAN lang=EN-US>. </SPAN>그때 여자친구가 던지는 한마디<SPAN lang=EN-US>.<o:p></o:p></SPAN></FONT></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-INDENT: 10pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan; mso-char-indent-count: 1.0"><FONT size=2><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">'손 쓰기도 아깝다'</SPAN></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-INDENT: 10pt; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan; mso-char-indent-count: 1.0"><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><FONT size=2>여자친구는 가소롭다는 듯이 스카이<SPAN lang=EN-US> WHOOO(IM-S410/S410K)</SPAN>폰을 꺼내 함께 찍었던 사진을 '후<SPAN lang=EN-US>~~' </SPAN>하고 불어버려 그 사진을 불태워버린다<SPAN lang=EN-US>. </SPAN>여자친구가 뒤도 안 돌아보고 나가면서<SPAN lang=EN-US>, </SPAN>다시 한번 스카이 후<SPAN lang=EN-US>(IM-S410/410K) </SPAN>폰이 구동되는 것을 보여주며 광고는 끝난다<SPAN lang=EN-US>.<o:p></o:p></SPAN></FONT></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p>&nbsp;</o:p></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">3. </SPAN></B><B><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">감독<SPAN lang=EN-US> : </SPAN>황범선<SPAN lang=EN-US><o:p></o:p></SPAN></SPAN></B></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></SPAN></B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt; mso-bidi-font-weight: bold">* </SPAN><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt; mso-bidi-font-weight: bold">스카이 로봇편<SPAN lang=EN-US>, </SPAN>생각대로<SPAN lang=EN-US> T </SPAN>연상녀 편<SPAN lang=EN-US>, </SPAN>현대캐피탈 세가지 금융 편 등</SPAN><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt; mso-bidi-font-weight: bold"><o:p></o:p></SPAN></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p>&nbsp;</o:p></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">4. </SPAN></B><B><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">모델 </SPAN></B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">: </SPAN><?xml:namespace prefix = st1 ns = "urn:schemas-microsoft-com:office:smarttags" /><st1:PersonName w:st="on"><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">김미정</SPAN></st1:PersonName><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">, </SPAN><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">마르코 </SPAN><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p></o:p></SPAN></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p>&nbsp;</o:p></SPAN></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><FONT size=2><B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">5. </SPAN></B><B><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">촬영장소</SPAN></B><SPAN lang=EN-US style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"> : </SPAN><SPAN style="FONT-FAMILY: 돋움; mso-bidi-font-size: 10.0pt; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt">청담동 카페드유라 </SPAN><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p></o:p></SPAN></FONT></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; WORD-BREAK: keep-all; TEXT-AUTOSPACE: ideograph-numeric; mso-pagination: widow-orphan"><SPAN lang=EN-US style="FONT-SIZE: 12pt; FONT-FAMILY: 굴림; mso-bidi-font-family: 굴림; mso-font-kerning: 0pt"><o:p>&nbsp;</o:p></SPAN></DIV><B><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: 돋움; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 굴림; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA">6. BGM</SPAN></B><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA"> : Alesha Dixon</SPAN><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: 돋움; mso-bidi-font-family: 굴림; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA">의 "</SPAN><SPAN lang=EN-US style="FONT-SIZE: 10pt; FONT-FAMILY: 돋움; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: 'Times New Roman'; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: KO; mso-bidi-language: AR-SA">Knock Down"</SPAN></BODY></HTML></td>
+						</tr>
+					</table>
+					<!-- [e] 광고정보 -->
+
+					</td>
+					<!-- [s] contents Area -->
+				</tr>
+
+			</table>
+			</div></div></td>
+		<td width="140" valign="middle" class="subRight"><script>swftrans('/static/flash/leftBanner.swf', '140', '100%');</script></td>
+	</tr>
+</table>
+<!--
+<div style="display:block;width:100%;height:100%;">
+	<div class="subLeft" style="float:left;width:149px;"><img src="images/product/left.gif" /></div>
+	<div id='content'>
+		<div id='mycustomscroll' class='flexcroll'><img src="images/product/right.gif" width="750" height="2000"/></div>
+	</div>
+</div> -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/*
+function LeftFlashHeight(){
+	document.getElementById("flashelement").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+//	alert(document.getElementById("bodyTable").style.height);
+*/
+
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/musthave/ad/tv_view.jsp";
+refurl_param = "&idx=lc8UaDrZYfI~MiK1ZbwU87E~";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 010201;
+	parent.callExternalInterface(0);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,209 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+		<script language="javascript">
+		
+		function ZipcodeReturn(value1,value2,value3,value4){
+			
+			lblNewAddr.innerHTML = value1+" "+value2+" "+value3+" "+value4;
+			document.all["txtNewZip"].value = value1;
+			document.all["txtNewAddr"].value = value2+" "+value3+" "+value4;
+			document.all["txtNewAddr2"].focus();
+			
+		}
+		</script>
+		<script language="javascript">
+					
+			function SearchValidCheck()
+			{
+				var SearchVal = document.all['txtNewZip'].value;
+			
+				if(("" == SearchVal) || ("변경할 주소를 검색후 선택해 주세요" == SearchVal))
+				{
+					alert("변경할 주소를 검색후 선택해 주세요.");
+					return false;
+				}
+				
+				SearchVal = document.all['txtNewAddr2'].value;
+			
+				if(("" == SearchVal) || ("상세주소를 입력해 주세요." == SearchVal))
+				{
+					alert("상세주소를 입력해 주세요");
+					document.all['txtNewAddr2'].focus();
+					return false;
+				}
+				
+				return true;
+			}
+			
+		</script>
+		<script language="javascript">
+					
+			function SearchValidCheck_Dong()
+			{
+				var SearchVal = document.all['txt_SearchDong'].value;
+			
+				if(("" == SearchVal) || ("읍/면/동 이름을 입력하세요." == SearchVal))
+				{
+					alert("읍/면/동 이름을 입력하세요.");
+					document.all['txt_SearchDong'].focus();
+					return false;
+				}
+				
+				return true;
+			}
+			
+		</script>
+		<STYLE TYPE="TEXT/CSS">
+	A:link { COLOR: #56373a; TEXT-DECORATION: none }
+	A:visited { COLOR: #56373a; TEXT-DECORATION: none }
+	A:active { COLOR: #56373a; TEXT-DECORATION: none }
+	A:hover { COLOR: #8d3501; TEXT-DECORATION: underline }
+	.zipcodetd { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 72px; PADDING-TOP: 10px; BORDER-BOTTOM: #e7d2d2 1px solid; TEXT-ALIGN: center }
+	.addrtd { PADDING-RIGHT: 0px; PADDING-LEFT: 27px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 279px; PADDING-TOP: 10px; BORDER-BOTTOM: #e7d2d2 1px solid }
+		</STYLE>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="SvcCenterPopup_AddressModify.aspx?svcid=20" id="Form1">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDw1NDE3NzQwMjc7dDw7bDxpPDA+Oz47bDx0PDtsPGk8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOyEnOyauCDsmIHrk7Htj6zqtawg7JiB65Ox7Y+s64+ZNeqwgDs+Pjs+Ozs+O3Q8cDw7cDxsPG9ua2V5cHJlc3M7PjtsPGlmKGV2ZW50LmtleUNvZGUgPT0gMTMpIHsgaWYoIVNlYXJjaFZhbGlkQ2hlY2soKSkgcmV0dXJuIGZhbHNlXDsgX19kb1Bvc3RCYWNrKCdsYnRuQ2hhbmdlJywnJylcOyByZXR1cm4gdHJ1ZVw7fTs+Pj47Oz47dDxwPDtwPGw8b25DbGljazs+O2w8cmV0dXJuIFNlYXJjaFZhbGlkQ2hlY2soKVw7Oz4+Pjs7Pjt0PHA8O3A8bDxvbmtleXByZXNzOz47bDxpZihldmVudC5rZXlDb2RlID09IDEzKSB7IGlmKCFTZWFyY2hWYWxpZENoZWNrX0RvbmcoKSkgcmV0dXJuIGZhbHNlXDsgX19kb1Bvc3RCYWNrKCdpYnRuX2NvbmZpcm0nLCcnKVw7IHJldHVybiB0cnVlXDt9Oz4+Pjs7Pjt0PHA8O3A8bDxvbkNsaWNrOz47bDxyZXR1cm4gU2VhcmNoVmFsaWRDaGVja19Eb25nKClcOzs+Pj47Oz47dDxAMDw7Ozs7Ozs7Ozs7Pjs7Pjs+Pjs+Pjs+" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<center>
+				<table width="380" cellpadding="0" cellspacing="0">
+					<tr>
+						<td><IMG SRC="http://file.isky.co.kr/images/mobile/pop_img_top_left.gif" WIDTH="4" HEIGHT="40"></td>
+						<td width="372" bgcolor="#691c1c">
+							<table cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td style="PADDING-LEFT:7px"><IMG SRC="http://file.isky.co.kr/images/svc/popup_address_modify_title.gif"></td>
+									<td align="right" style="PADDING-RIGHT:7px"><a href="javascript:self.close()"><IMG SRC="http://file.isky.co.kr/images/mobile/pop_btn_close.gif" WIDTH="38" HEIGHT="11"></a></td>
+								</tr>
+							</table>
+						</td>
+						<td><IMG SRC="http://file.isky.co.kr/images/mobile/pop_img_top_right.gif" WIDTH="4" HEIGHT="40"></td>
+					</tr>
+				</table>
+				<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="20"><BR>
+				<table width="360" cellpadding="0" cellspacing="3" align="center">
+					<TR>
+						<TD width="7" valign="top"><IMG SRC="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=6></TD>
+						<Td>회원님의 주소를 아래 주소로 변경하시려면 변경 주소 뒤에<br>
+							이어서 상세 주소를 입력하고 변경을 눌러 주세요</Td>
+					</TR>
+				</table>
+				<table width="360" cellpadding="0" cellspacing="0">
+					<COLGROUP>
+						<col width="82" align="center" style="BACKGROUND-COLOR:#f5f0f1">
+						</col>
+						<col width="278" style="PADDING-LEFT:7px">
+						</col>
+						<tr height="1" bgcolor="#e7d2d2">
+							<td colspan="2"></td>
+						</tr>
+						<tr height="56">
+							<td width="92" class="BROWN_DARK2"><b>현재주소</b></td>
+							<td width="265" class="BROWN_DARK2"><span id="lblAddr"></span></td>
+						</tr>
+						<tr height="1" bgcolor="#e7d2d2">
+							<td colspan="2"></td>
+						</tr>
+						<tr height="56">
+							<td class="BROWN_DARK2" style="PADDING-TOP:8px"><b>변경주소</b></td>
+							<td class="BROWN_DARK2">
+								<div id="lblNewAddr"></div>
+								<input name="txtNewZip" type="text" value="150-035" id="txtNewZip" /><input name="txtNewAddr" type="text" value="서울 영등포구 영등포동5가" id="txtNewAddr" />
+								<span id="lbl_SVCAddr">서울 영등포구 영등포동5가</span><br>
+								<input name="txtNewAddr2" type="text" id="txtNewAddr2" onkeypress="if(event.keyCode == 13) { if(!SearchValidCheck()) return false; __doPostBack('lbtnChange',''); return true;}" /></td>
+						</tr>
+						<tr height="1" bgcolor="#e7d2d2">
+							<td colspan="2"></td>
+						</tr>
+						<tr>
+							<td colspan="2" align="right" style="PADDING-RIGHT:0px; PADDING-LEFT:0px; PADDING-BOTTOM:20px; PADDING-TOP:10px"
+								bgcolor="#ffffff">
+								<a id="lbtnChange" onClick="return SearchValidCheck();" href="javascript:__doPostBack('lbtnChange','')">
+									<img id="imgChange" align="absmiddle"></a>
+								<SCRIPT LANGUAGE="JavaScript">
+					<!-- 
+					// LinkButton 이미지 세팅
+						document.all["imgChange"].src="http://file.isky.co.kr/images/svc/popup_btn_modify.gif";
+					//-->
+								</SCRIPT>
+							</td>
+						</tr>
+				</table>
+				<table width="380" cellpadding="0" cellspacing="0">
+					<tr>
+						<td background="http://file.isky.co.kr/images/mobile/pop_dot.gif" HEIGHT="1"></td>
+					</tr>
+					<tr>
+						<td>
+							<table width="360" cellpadding="0" cellspacing="3" align="center">
+								<TR style="PADDING-RIGHT:0px; PADDING-LEFT:0px; PADDING-BOTTOM:10px; PADDING-TOP:15px">
+									<TD width="7" valign="top"><IMG SRC="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=6></TD>
+									<Td>다른 곳으로 주소를 변경하시려면<br>
+										아래 주소창에 읍/면/동 이름을 입력하세요.
+									</Td>
+								</TR>
+								<TR style="PADDING-RIGHT:0px; PADDING-LEFT:0px; PADDING-BOTTOM:17px; PADDING-TOP:0px">
+									<TD colspan="2" align="center"><IMG SRC="http://file.isky.co.kr/images/svc/centerinfo_txt03.gif">
+										<!-- 동입력 --><input name="txt_SearchDong" type="text" id="txt_SearchDong" onkeypress="if(event.keyCode == 13) { if(!SearchValidCheck_Dong()) return false; __doPostBack('ibtn_confirm',''); return true;}" />&nbsp;
+										<a id="ibtn_confirm" onClick="return SearchValidCheck_Dong();" href="javascript:__doPostBack('ibtn_confirm','')">
+											<img id="imgConfirm" align="absmiddle" border="0"></a>
+										<SCRIPT LANGUAGE="JavaScript">
+								<!-- 
+								// LinkButton 이미지 세팅
+									document.all["imgConfirm"].src="http://file.isky.co.kr/images/user/member/button_confirm.gif";
+								//-->
+										</SCRIPT>
+									</TD>
+								</TR>
+								<TR style="PADDING-RIGHT:0px; PADDING-LEFT:0px; PADDING-BOTTOM:10px; PADDING-TOP:15px">
+									<TD width="7" valign="top"><IMG SRC="http://file.isky.co.kr/images/com/bullet_dot_gray2.gif" vspace=6></TD>
+									<Td>[해당되는 주소를 누르면 변경 주소에 자동입력 됩니다.]</Td>
+								</TR>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table ID="BBS_LIST" width="380" cellpadding="0" cellspacing="0">
+					<TR BGCOLOR="#8d6164" HEIGHT="27">
+						<TD WIDTH="78" ALIGN="center" CLASS="BBS_TAB"><IMG SRC="http://file.isky.co.kr/images/svc/tab_zipcode.gif"></TD>
+						<TD WIDTH="300" ALIGN="center"><IMG SRC="http://file.isky.co.kr/images/svc/tab_address.gif"></TD>
+					</TR>
+				</table>
+				<div style="OVERFLOW:auto; WIDTH:100%; HEIGHT:145px" align="left">
+					
+				</div>
+			</center>
+		</form>
+	</body>
+</HTML>

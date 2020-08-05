@@ -1,0 +1,254 @@
+<!-- Last MSD 조형빈 070730 OLD  -->
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/notice.jsp">
+
+	<input type="hidden" name="page" value="2">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<!-- m4th MSD 070730 *조형빈* 하절기 휴대폰 안전수칙 팝업 을 위한 팝업관련 소스추가 / 74~101줄 -->
+<script language="JavaScript">
+
+//쿠키 가져오기
+	function getCookie(name) { 
+		var nameOfCookie = name + "="; 
+		var x = 0;
+
+		while ( x <= document.cookie.length ) { 
+			var y = (x+nameOfCookie.length); 
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length; 
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 ) break; 
+		}
+		
+		return "";
+	}
+
+	/* m4th MSD 070730 *조형빈* 하절기 휴대폰 안전수칙 팝업 (index.jsp, selfupgrade.jsp , download.jsp, onlinecs.jsp, cscenter.jsp, notice.jsp mall/index.jsp) 총 7곳 적용 122~124줄 */
+	if(getCookie("popup20070730") != "done") {
+		var popwin = window.open("/html/cs/pop_notice21.jsp","notice21","width=412,height=435,left=200,top=200");
+	}
+
+</script>
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script language="javascript">
+<!--
+	function goView(form, idx)
+	{
+		form.action = "notice_view.jsp";
+		form.msgid.value = idx;
+		form.submit();
+	}
+//-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,6);var gocn=4;</script><script language="javascript"  src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('4_6')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/cs/notice_img01.gif" width="570" height="73"></div>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="2">
+	<input type="hidden" name="msgid" value="">
+</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04 m_t20">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_date.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+					<!-- 반복 * 10 , 마지막 라인은 class="dot" 제외 //-->
+	
+					<tr height="26" class="dot">
+						<td>119</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'YsQZVq2LdQY~FxZGeyUBX0Y~')">수퍼프리뷰 [해리포터와 불사조기사단]에 초대합니다.</a>
+						</td>
+						<td>2007/07/02</td>
+						<td>1569</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>118</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '1Yr2VW1RsaM~8CHDNE5NOj0~')">IM-U140 셀프업그레이드 다운로드 중단 안내</a>
+						</td>
+						<td>2007/06/20</td>
+						<td>3756</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>117</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'Du7kVUw0T3I~2URIbHNIajU~')">강릉 서비스센터 이전 안내</a>
+						</td>
+						<td>2007/06/19</td>
+						<td>1119</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>116</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '_8zqVazoby0~dpRZy8CDNAs~')">용산 서비스 센터 임시휴무 안내 - 6월 18일(월)</a>
+						</td>
+						<td>2007/06/16</td>
+						<td>999</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>115</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 't6LqWnWCSYc~s_UvWDQa6aI~')">IM-U140의 S/W 개선 안내</a>
+						</td>
+						<td>2007/06/25</td>
+						<td>6088</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>114</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '8AXZWlVl51U~butVMWX1tUg~')">셀프업그레이드 5월 당첨자 발표</a>
+						</td>
+						<td>2007/06/07</td>
+						<td>3352</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>113</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '3eTeWrUZCBE~qkD8JkQys4Y~')">IM-U160K 최신 S/W 버전(1.33) 공지</a>
+						</td>
+						<td>2007/06/05</td>
+						<td>5993</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>112</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'UKu7WnXfQ64~jRQ1kjRo9H8~')">수퍼프리뷰 오션스 13 당첨자 발표</a>
+						</td>
+						<td>2007/06/13</td>
+						<td>6077</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>111</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'iQ6qWlXC4Xw~00JPUJPn6e0~')">FUN칵테일 서비스 중단 안내</a>
+						</td>
+						<td>2007/05/29</td>
+						<td>1254</td>
+					</tr>
+	
+					<tr height="26" class="">
+						<td>110</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'Y8y1WhUrI/M~6xCdl/pAe_s~')">SKY 수퍼프리뷰 오션스13 에 초대합니다.</a>
+						</td>
+						<td>2007/05/28</td>
+						<td>1319</td>
+					</tr>
+
+					<!--// 반복 * 10 -->
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'><a href=notice.jsp?page=1&>1</a>&nbsp;|&nbsp;&nbsp;<b>2</b>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=3&>3</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=4&>4</a>&nbsp;<a href=notice.jsp?page=5&><img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'></a>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+<!-- m4th MSD 070820 *조형빈 Ing -->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<!-- m4th MSD 070813 *조형빈 / 배너 이미지, 파일명 교체 7~9줄 // 070820 최상위 배너만 원상복구 -->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_prize_view.jsp?eventid=VbEbbM3lMek~yG0lpLZisZ0~&flag=prize&flag1=2"><img src="http://www.isky.co.kr/source/img/global/right_cs_selfupgrade.gif" width="128" height="67" class="wborder m_b8"></a>
+							<!--a href="http://www.isky.co.kr/html/withsky/event/skyevent_view.jsp?eventid=1WJ0G/XOMoc~av5MgY8H_6s~&flag=ing&flag1=1"><img src="http://www.isky.co.kr/source/img/global/right_cs_skyreader_u200.gif" width="128" height="67" class="wborder m_b8"></a--><br>
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?&eventid=rAreLq95hAw~HIeMCEDf2ro~"><img src="http://www.isky.co.kr/source/img/global/right_cs_skyday.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="http://www.isky.co.kr/html/brandstory/sponsor/superpreview_end.jsp"><img src="http://www.isky.co.kr/source/img/global/right_cs_super_pre.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+</body>
+</html>

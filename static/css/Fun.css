@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import "/static/css/Layout.css";
+@import "/static/css/Table.css";
+@import "/static/css/common.css";
+/************************************************************
+*
+*  Cascading Style Sheets  (Product)
+*
+************************************************************/
+/*<![CDATA[*/
+
+
+#Wrap {background:url('/static/images/product/bg_top.gif') 0 0 repeat-x;}
+
+body {font-size:12px;font-family:돋움,Dotum,AppleGothic,sans-serif;line-height:1.3;}
+
+/* 상단 2depth Navi */
+#d2Navi {position:relative;width:740px;height:81px;float:right;}
+#d2Navi #iskyLogo {position:absolute;right:10px;top:0;z-index:100;}
+#d2Navi ul.d2Navi li {float:left;background:url('/static/images/product/d2navi_line.gif') 100% 50% no-repeat;}
+#d2Navi ul.d2Navi li a {display:inline-block;padding:6px 20px;}
+#d2Navi ul.d2Navi li a.first {padding-left:0;}
+#d2Navi ul.d2Navi li.last {background:none;}
+
+.btnArea01 {width:724px;margin-top:10px;text-align:right;}
+
+.visual {margin:0 auto;width:724px;height:165px;padding-top:50px;}
+.heros_cont01 {margin:0 auto;width:724px;clear:both;}
+.heros_cont01 .leftCont {float:left;width:483px;}
+.heros_cont01 .leftCont h5 {position:relative;width:480px;height:24px;}
+.heros_cont01 .leftCont h5 div.more {position:absolute;right:0;top:0;}
+.heros_cont01 .leftCont .monthBest {width:483px;height:139px;background:url('/static/images/fun/heros/herosL_MonthBest_bg.gif') no-repeat;padding:10px 0 0 12px;}
+.heros_cont01 .leftCont .monthBest li {float:left;}
+.heros_cont01 .leftCont .monthBest li.title {width:313px;}
+.heros_cont01 .leftCont .monthBest li.name {width:142px;height:23px;text-align:center;font-size:11px;background:url('/static/images/fun/heros/herosL_MonthBest_02.gif') no-repeat;color:#fde4c0;padding:5px 0 0 0;}
+.heros_cont01 .leftCont .monthBest li.name span.id {font-size:11px;color:#fff;}
+.heros_cont01 .leftCont .monthBest li.name span.date {font-size:0.85em;font-family:tahoma;color:#fff;}
+.heros_cont01 .leftCont .monthBest li.contents {clear:both;width:439px;height:50px;font-size:11px;color:#9c9c9c;background:url('/static/images/fun/heros/herosL_MonthBest_03.gif') no-repeat;padding:5px 8px 0 8px;margin-top:8px;}
+.heros_cont01 .leftCont .monthBest li.more {clear:both;width:455px;text-align:right;padding:10px 0 0 0;font-weight:bold;color:#898989;}
+.heros_cont01 .leftCont .monthBest li.more img {vertical-align:middle;}
+
+.heros_cont01 .rightCont {float:right;width:225px;}
+.heros_cont01 .rightCont h5 {height:24px;}
+.heros_cont01 .rightCont h5.st2 {margin-top:20px;}
+.heros_cont01 .rightCont .box {background:url('/static/images/fun/heros/box_1_02.gif') left bottom no-repeat;padding:0 0 22px 0;}
+.heros_cont01 .rightCont .box dl.accident {width:197px;margin:0 auto;padding:10px 0 0 0;}
+.heros_cont01 .rightCont .box dl.accident dd {height:120px;}
+.heros_cont01 .rightCont .box .bstory {margin:0 auto;width:189px;font-weight:bold;color:#8e8d8d;background:url('/static/images/common/ico_dot01.gif') 0 5px no-repeat;padding:0 0 0 8px;}
+.heros_cont01 .rightCont .box .chart {margin:0 auto;width:196px;}
+.heros_cont01 .rightCont .box .chart li {width:194px;height:24px;border-left:solid 1px #dadada;border-right:solid 1px #dadada;*margin-top:-2px;}
+.heros_cont01 .rightCont .box .chart li.first {border-top:solid 1px #dadada;*margin-top:0px;}
+.heros_cont01 .rightCont .box2 {height:80px;background:url('/static/images/fun/heros/box_1_02.gif') left bottom no-repeat;padding:0 0 17px 0;}
+.heros_cont01 .rightCont .box2 h5.title {margin:0 auto;width:198px;text-align:center;padding:10px 0 0 0;border-bottom:solid 1px #cfcfcf;}
+.heros_cont01 .rightCont .box2 dl.txt {width:198px;margin:0 auto;padding:10px 0 0 0;}
+.heros_cont01 .rightCont .box2 dl.txt dt {float:right;width:78px;}
+.heros_cont01 .rightCont .box2 dl.txt dd {float:left;width:119px;font-size:11px;color:#9c9c9c;letter-spacing:-.05em;}
+.heros_cont01 .rightCont .box3 {height:134px;background:url('/static/images/fun/heros/box_1_02.gif') left bottom no-repeat;padding:0 0 5px 0;}
+.heros_cont01 .rightCont .box3 h5.title {margin:0 auto;width:198px;text-align:center;padding:10px 0 0 0;border-bottom:solid 1px #cfcfcf;}
+.heros_cont01 .rightCont .box3 dl.txt {width:198px;margin:0 auto;padding:10px 0 0 0;}
+.heros_cont01 .rightCont .box3 dl.txt dl {width:196px;}
+.heros_cont01 .rightCont .box3 dl.txt dd {font-size:11px;color:#9c9c9c;letter-spacing:-.05em;}
+.heros_cont01 .rightCont .box3 dl.txt dt {margin-top:10px;text-align:center;}
+
+.heros_cont01 h5 {position:relative;height:24px;}
+
+.heros_cont02 {margin:0 auto;width:724px;clear:both;padding:20px 0 0 0;}
+.heros_cont02 h5 {position:relative;height:24px;}
+
+.debut_cont01 {margin:0 auto;width:724px;clear:both;}
+.debut_cont01 h5 {position:relative;height:24px;}
+.debut_cont01 h5 div.more {position:absolute;right:5px;top:0;font-weight:normal;font-size:11px;}
+.debut_cont01 div.mission {position:relative;width:724px;height:233px;background:url('/static/images/fun/debut/debut_txt_01.gif') 0 0 no-repeat;}
+.debut_cont01 div.mission div.txt {position:absolute;left:25px;bottom:30px;font-weight:bold;font-size:11px;color:#9c9c9c;}
+.debut_cont01 div.mission div.txt span.acc {color:#20acd5;}
+.debut_cont01 div.mission div.btn {position:absolute;right:20px;bottom:15px;}
+
+.debut_cont01 div.debut_img {clear:both; margin-top:10px;}
+
+.debut_cont02 {margin:0 auto;width:724px;clear:both;padding:20px 0 0 0;}
+.debut_cont02 h5 {position:relative;height:24px;}
+
+.visualCartoon {position:relative;margin:0 auto;width:720px;height:386px;}
+.visualCartoon div.summ {position:absolute;left:450px;top:140px;overflow:hidden;width:230px;height:140px;}
+.visualCartoon div.summ ul {width:200px;margin:15px 15px;}
+.visualCartoon div.summ ul li.title {text-align:center;font-weight:bold;color:#828282;margin-bottom:8px;}
+.visualCartoon div.summ ul li.title span.acc {color:#74aa00;}
+.visualCartoon div.summ ul li.txt {text-align:left;font-size:11px;letter-spacing:-0.05em;color:#828282;margin-bottom:8px;}
+.visualCartoon div.summ ul li.btn {text-align:center;}
+.visualCartoon div.focus_btn {position:absolute;left:615px;top:320px;}
+
+.cartoon_cont01 {margin:0 auto;width:724px;clear:both; overflow:hidden; zoom:1; margin-bottom:60px;}
+.cartoon_cont01 dl {margin:0 auto;width:631px;}
+.cartoon_cont01 dd {float:left;width:218px;}
+.cartoon_cont01 dd.last {float:left;width:194px;}
+.cartoon_cont01 dd li {width:194px;}
+.cartoon_cont01 dd li.stit {height:28px;}
+.cartoon_cont01 dd li.thumbBox {position:relative;background:url('/static/images/fun/cartoon/thumbBg.gif') no-repeat;width:194px;height:187px;}
+.cartoon_cont01 dd li.thumbBox img.thumb {margin:10px 0 0 9px;}
+.cartoon_cont01 dd li.thumbBox div.update {position:absolute;left:0;top:0;width:45px;height:45px;}
+.cartoon_cont01 dd li.title {margin-top:8px;font-weight:bold;color:#828282;text-align:center;}
+.cartoon_cont01 dd li.title span.vline {font-weight:normal;color:#828282;font-size:11px;}
+.cartoon_cont01 dd li.txt {font-size:11px;letter-spacing:-0.05em;color:#828282;text-align:center;}
+.cartoon_cont01 dd li.date {text-align:center;font-size:9px;font-family:tahoma;margin-bottom:10px;}
+.cartoon_cont01 dd li.date span.txt {color:#ff4800;margin-right:5px;}
+.cartoon_cont01 dd li.btn {text-align:center;}
+
+.cartoon_cont01_past {margin:0 auto;width:724px;clear:both;}
+
+.cartoon_cont01_past div.pWrap {margin:0 auto;width:724px;height:285px;background:url('/static/images/fun/cartoon/past_cartoon_middle_bg.gif');}
+.cartoon_cont01_past dl {margin:0 auto;width:631px;padding-top:20px;padding-bottom:20px;}
+.cartoon_cont01_past dd {float:left;width:218px;margin-left:70px;display:inline;}
+.cartoon_cont01_past dd.last {float:left;width:194px;}
+.cartoon_cont01_past dd li {width:194px;}
+.cartoon_cont01_past dd li.stit {height:28px;text-align:center;}
+.cartoon_cont01_past dd li.thumbBox {margin:0;position:relative;background:url('/static/images/fun/cartoon/thumbBg.gif') no-repeat;width:194px;height:187px;}
+.cartoon_cont01_past dd li.thumbBox img.thumb {margin:10px 0 0 9px;}
+.cartoon_cont01_past dd li.thumbBox div.update {position:absolute;left:0;top:0;width:45px;height:45px;}
+.cartoon_cont01_past dd li.title {margin-top:8px;font-weight:bold;color:#828282;text-align:center;}
+.cartoon_cont01_past dd li.title span.vline {font-weight:normal;color:#828282;font-size:11px;}
+.cartoon_cont01_past dd li.txt {font-size:11px;letter-spacing:-0.05em;color:#828282;text-align:center;}
+.cartoon_cont01_past dd li.date {text-align:center;font-size:9px;font-family:tahoma;margin-bottom:10px;}
+.cartoon_cont01_past dd li.date span.txt {color:#ff4800;margin-right:5px;}
+.cartoon_cont01_past dd li.btn {text-align:center;padding-top:10px;}
+
+.cartoon_cont01_past div.past_title {margin:0 auto;width:720px;padding-top:40px;padding-bottom:6px;}
+.cartoon_cont01_past div.top_bg {margin:0 auto;width:724px;height:5px;}
+.cartoon_cont01_past div.bottom_bg {margin:0 auto;width:724px;height:6px;}
+
+
+.cartoon_cont02 {margin:0 auto;width:724px;clear:both;}
+.cartoon_cont02 dl.list {margin:0 auto;width:724px;}
+.cartoon_cont02 dl.list dd {float:left;width:150px;margin-bottom:15px;}
+.cartoon_cont02 dl.list dd.last {width:124px;}
+.cartoon_cont02 dl.list dd li {width:123px;}
+.cartoon_cont02 dl.list dd li.thumbBox {position:relative;background:url('/static/images/fun/cartoon/listthumbBg.gif') no-repeat;width:123px;height:124px;}
+.cartoon_cont02 dl.list dd li.thumbBox img.thumb {margin:9px 0 0 9px;}
+.cartoon_cont02 dl.list dd li.thumbBox .new {position:absolute;left:0;top:0;width:45px;height:45px;}
+.cartoon_cont02 dd li.title {margin-top:8px;font-weight:bold;color:#6a6969;text-align:left;padding-left:5px;width:118px !important;}
+.cartoon_cont02 dd li.title span.vline {font-weight:normal;color:#828282;font-size:11px;}
+.cartoon_cont02 dd li.date {text-align:right;font-size:9px;font-family:tahoma;margin-bottom:10px;padding-right:5px;width:118px !important;}
+
+.visualCartoonV {position:relative;width:724px;height:154px;margin:0 auto;padding:50px 0 25px 0;}
+.visualCartoonV .btn {position:absolute;left:272px;top:168px;;}
+
+.cartoon_viewArea {position:relative;width:724px;margin:0 auto;padding:13px 0 6px 0;background:url('/static/images/fun/cartoon/cartoonV_box_02.gif') repeat-y;}
+.cartoon_viewArea div.top {position:absolute;left:0;top:0;}
+.cartoon_viewArea div.summ {position:relative;margin: 0 auto;width:679px;border-bottom:solid 1px #cfcfcf;padding:0 0 15px 0;}
+.cartoon_viewArea div.summ ul.title {width:510px;}
+.cartoon_viewArea div.summ ul.title li.cate {color:#828282;font-size:11px;margin-bottom:3px;}
+.cartoon_viewArea div.summ ul.title li.cate span.acc {color:#74aa00;}
+.cartoon_viewArea div.summ ul.title li.title {color:#828282;font-weight:bold;}
+.cartoon_viewArea div.summ ul.title li.title span.no {font-weight:normal;font-size:12px;color:#74aa00;}
+.cartoon_viewArea div.summ ul.title li.title span.vline {font-weight:normal;font-size:12px;color:#cfcfcf;}
+.cartoon_viewArea div.summ div.btn {position:absolute;right:0;bottom:9px;}
+.cartoon_viewArea div.vImg {margin: 0 auto;width:679px;padding:80px 0;text-align:center;}
+.cartoon_viewArea div.summ2 {position:relative;margin: 0 auto;width:679px;text-align:right;border-top:solid 1px #cfcfcf;padding:10px 0 10px 0;}
+.cartoon_viewArea div.summ2 div.btn {position:relative;}
+.cartoon_viewArea div.bottom {position:absolute;left:0;bottom:0;_bottom:-1px;}
+
+
+.visualGame {margin:0 auto;width:724px;height:209px;padding-top:40px;}
+
+.game_cont01 {margin:0 auto;width:724px;*zoom:1;}
+.game_cont01:after {content:" "; display:block; clear:both; height:0; visibility:hidden;}
+.game_cont01 .leftCont {float:left;width:572px;}
+.game_cont01 .leftCont h5 {position:relative;width:572px;height:24px;}
+.game_cont01 .leftCont h5 div.more {position:absolute;right:0;top:0;}
+.game_cont01 .rightCont {float:right;width:141px;}
+.game_cont01 .rightCont h5 {height:24px;}
+
+.tarotUrl {position:relative;margin:0 auto;width:720px;height:60px;clear:both;}
+.tarotUrl div.btn {position:absolute;right:0;bottom:5px;}
+.tarot_cont01 {margin:0 auto;width:910px;height:437px;clear:both; background-color:#e8e8e8;}
+
+.test_cont01 {margin:0 auto;width:742px;height:62px;text-align:center;}
+.test_cont02 {margin:0 auto;width:742px;padding-top:60px;}
+.test_cont03 {margin:0 auto;width:724px;}
+.test_cont03 h5 {height:24px;}
+.test_cont03 .cont {width:724px;height:200px;background-color:#e8e8e8;}
+.test_viewCont {margin:0 auto;width:764px;height:527px;padding:0 0 50px 0;}
+
+.commentW {position:relative;clear:both;width:724px;height:36px;margin:0 auto;padding:45px 0 0 0;}
+.commentW2 {position:relative;clear:both;width:724px;height:36px;margin:0 auto;}
+
+#copyUrlFormBase {position:relative;width:1px;height:1px;z-index:10;}
+#copyUrlForm {position:absolute;width:234px;height:175px;background:url('/static/images/common/urlCopy/bg.gif') no-repeat;padding:102px 0 0 19px;z-index:10;}
+#copyUrlForm .closeBtn {position:absolute;right:9px;top:9px;z-index:10;}
+#copyUrlForm ul li {width:214px;}
+#copyUrlForm ul li.stit {height:15px;}
+#copyUrlForm ul li.copyTxt textarea.inputTxt {width:204px;height:25px;font-family:돋움;font-size:12px;border:none;background-color:#303030;color:#d4d4d4;padding:5px;overflow:hidden;}
+#copyUrlForm ul li.copyBtn {text-align:right;padding-top:5px;height:17px;}
+#copyUrlForm ul li.copyBtn img {vertical-align:top;}
+#copyUrlForm ul li dl dt {float:left;width:85px;height:17px;padding:3px 0 0 4px;height:15px;_padding-top:5px;}
+#copyUrlForm ul li dl dd {float:left;padding:0 4px 0 0;}
+#copyUrlForm ul li dl dd img, #copyUrlForm dl dd input {vertical-align:middle;}
+
+/* 벨소리카페 */
+h2.bell img {margin-top:25px;}
+.special_bell {width:724px;height:284px;background: url(/static/images/fun/bell/bg_bellist_top.gif) 0 0 no-repeat;}
+.best_bell {width:345px;float:left;padding:30px 0 0 16px; }
+.best_bell h3 {width:345px;}
+.best_bell h3 dl {float:left;}
+.best_bell h3 dd {clear:left;font:normal 11px/13px Dotum;color:#9c9c9c;}
+.best_bell h3 span {float:right;}
+.best_bell ul {clear:both;padding-top:9px;*padding-top:7px;}
+.best_bell li {position:relative;padding:7px 18px 3px 16px;margin-bottom:9px;*margin-bottom:7px;height:86px;background:url(/static/images/fun/bell/bg_bellist_box02.gif) 0 0 no-repeat;}
+.best_bell dl {*width:204px;}
+.best_bell dt {float:left;font-weight:bold;}
+.best_bell .bell_btn {position:absolute;left:120px;top:72px;background:none;}
+.best_bell .name {float:right;font:normal 12px/14px Vernada,Dotum;color:#86aa2a;}
+.best_bell .intro {float:left;width:204px;padding:6px 0;font:normal 11px/16px Dotum;}
+.best_bell .thumnail {float:left;margin-right:20px;}
+.best_bell .thumnail img.best {position:absolute;left:-10px;top:-5px;}
+
+.top5_bell {width:334px;padding:30px 16px 0 0;float:right;}
+.top5_bell h3 {padding:6px 0 16px 0;}
+.top5_bell ol {border-top:3px solid #c8e08e;border-bottom:1px solid #c7c7c7;}
+.top5_bell li {height:31px;color:#909090;padding:8px 0 0 16px;font:normal 12px/27px Dotum;border-bottom:1px solid #e5e5e5;}
+.top5_bell li li {float:left;padding:0;margin:0;border:none;}
+.top5_bell li li.num {width:31px;}
+.top5_bell li li.title {width:144px;color:#4a4a4a;}
+.top5_bell li li.title.fst {font-weight:bold;}
+.top5_bell li li.name {width:63px;}
+.top5_bell li img {vertical-align:middle;*margin-top:3px;}
+
+.bell_list {width:720px;margin-top:20px;}
+.bell_list h3 {float:left;padding-top:10px;}
+.bell_list ul {clear:both;padding-top:5px;}
+.bell_list li {position:relative;float:left;width:198px;height:170px;*height:165px;margin-right:14px;padding:12px 16px 0;background:url(/static/images/fun/bell/bg_bellist_box.gif) 0 0 no-repeat;}
+.bell_list li.last {margin:0;}
+.bell_list span {position:absolute;}
+.bell_list li h4 {padding-left:90px;font:bold 12px/14px Dotum;color:#f6834a}
+.bell_list li .intro {clear:both;height:35px;padding-top:8px;font:normal 11px/14px Dotum;color:#5e5e5e;}
+.bell_list li .belllist_btn {position:absolute;bottom:14px;*bottom:10px;left:16px;}
+.bell_list .bell_info {width:120px;*width:108px;margin:8px 0 0 0;padding:0 0 0 90px;}
+.bell_list .bell_info li {width:120px;*width:108px;height:14px;margin:0;padding:0;font:normal 11px/14px Dotum;color:#86aa2a;background:none;}
+.bell_list .bell_info li strong {margin-right:5px;font-weight:normal;color:#5e5e5e;}
+.bell_list .bell_btn li {width:17px;margin-right:5px;padding:0;background:none;}
+
+.bell_btnR {float:right;}
+
+.ptitle2 {margin-top:20px;}
+.paging.bell a {padding-top:0;padding-bottom:0;background:transparent url(/static/images/common/paging/line.gif) no-repeat scroll 0 4px;}
+.paging.bell .img {padding-top:3px;padding-bottom:1px;*padding-top:0 !important;padding-bottom:0 !important;}
+.paging.bell .current,.paging.bell .current:hover,.paging.bell .current:visited {color:#20acd5;}
+.paging.bell2 .current,.paging.bell2 .current:hover,.paging.bell2 .current:visited {color:#20acd5;}
+
+.tbl_BellCafe_V {margin:22px 0 0 0;}
+.tbl_BellCafe_V caption {display:none;}
+.tbl_BellCafe_V li {display:block;font:normal 11px/16px Dotum;color:#777;}
+.tbl_BellCafe_V input {border: solid 1px #c8c8c8;height:16px;font:normal 11px/16px Dotum;color:#777;}
+.tbl_BellCafe_V textarea {border: solid 1px #c8c8c8;width:587px;height:141px;font:normal 11px/16px Dotum;color:#777;}
+
+ul.genre li {float:left;width:120px;height:130px;font:bold 12px/17px Dotum;color:#72a813;}
+ul.genre li img {display:block;margin:0 0 10px 3px;}
+ul.genre li input {border:none;*margin-right:-2px;*margin-bottom:3px;height:12px;}
+li.file {float:left;margin-right:4px;}
+ul.btnBell {float:right;margin:13px 6px 0 0;}
+ul.btnBell li {float:left;margin-right:2px;}
+
+/*]]>*/
+
+/* 20110802 추가 */
+.pastTit {width:724px; margin:0 auto; height:30px;}
+.pastReview {width:724px; margin:0 auto; background:#EDEDED;}
+.pastReview .pastCont { background:#FFFFFF; border:1px solid #D9D9D9; border-width:0 1px; width:718px; overflow:hidden; zoom:1; text-align:center;}
+.pastReview .toonList span {font-weight:bold; color:#828282; margin-bottom:10px; line-height:16px;}
+.pastReview .toonList {float:left; width:158px; padding:25px 0 25px 17px; }
+.pastReview .toonList strong {color:#74aa00;}
+.pastReview .toonList em {display:inline-block; background:url('/static/images/fun/cartoon/pastBg.gif') no-repeat; width:145px; height:137px; padding:5px 8px 9px 5px; margin-bottom:16px; font-style:normal;}
+.pastReview .toonList .toonImg {display:inline-block; background:url('/static/images/fun/cartoon/pastBg.gif') no-repeat; width:145px; height:137px; padding:5px 8px 9px 5px; margin-bottom:16px; font-style:normal;}
+

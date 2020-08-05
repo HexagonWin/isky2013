@@ -1,0 +1,1055 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<TITLE>
+			It's different, SKY
+		</TITLE>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<META http-equiv="Content-Type" content="text/html; charset=euc-kr">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/BbsUtil.js"></SCRIPT>
+		<script language="javascript">
+		<!--
+			//게시물 목록 이동
+			function goList()
+			{
+				location.href = "TalkUseList.aspx?pVal1=0"
+									+ "&pVal4=&pVal5=&pVal9=&pVal10=";
+			}
+			
+			//답변 등록으로 이동 및 유효성 체크,
+			function goReply()
+			{
+				var TopFg = "N";
+				var StateFg = "N";
+				
+				if(TopFg == "Y")
+				{
+					alert("공지글에는 답변글을 등록하실 수 없습니다.");				
+				}
+				else if(StateFg == "M")
+				{
+					alert("다른 게시판으로 이동된 글에는\n답변글을 등록하실 수 없습니다.");
+				}
+				else
+				{
+					location.href = "TalkUseWrite.aspx?pVal1=0"
+										+ "&pVal3=42320&pVal4=&pVal5=&pVal9=&pVal10=";
+				}
+			}
+		
+			//게시물 수정으로 이동
+			function goEdit()	
+			{
+				location.href = "TalkUseWrite.aspx?pVal1=0"
+									+ "&pVal2=42320&pVal4=&pVal5=&pVal9=&pVal10=";
+			}
+			
+			//공지게시물 추천 경고
+			function RecdConfirm()
+			{
+				var TopFg = "N";
+				if(TopFg == "Y")
+				{
+					alert("공지글에는 추천을 하실 수 없습니다.");	
+					return false;		
+				}
+			}
+			
+			var PopupWin = null;
+			
+			//게시물 인쇄 팝업
+			function goPrint()
+			{
+				if(PopupWin != null && !PopupWin.closed) PopupWin.close();
+				var src='../WUC/Print.aspx?MsgID=42320';
+				PopupWin = window.open(src,'','toolbar=no,location=no,status=no,scrollbars=yes,width=600,height=100,resizable=no');
+				PopupWin.window.focus();
+			}		
+			//-->
+		</script>
+	</HEAD>
+	<body leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<Meta_Title value="커뮤니티 토크토크 제품사용기 내용"></Meta_Title>
+		<Meta_From value="isky"></Meta_From>
+		<Meta_Path value="커뮤니티:토크토크:제품사용기"></Meta_Path>
+		<form name="Form1" method="post" action="TalkUseRead.aspx?pVal2=42320" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTIxODk4OTc2O3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDI+O2k8Mz47aTw0PjtpPDU+O2k8Nj47aTw3PjtpPDg+O2k8OT47aTwxMD47aTwxMT47aTwxNj47aTwxNz47aTwxOD47aTwxOT47aTwyMD47aTwyMT47aTwyMj47PjtsPHQ8cDxwPGw8VGV4dDs+O2w87Iqk7Lm07J20IOuLpOultOuLpOqzoD8g65iR6rCZ64ukLSAtXDs7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPElNLTc3MDA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOq5gOyjvOyYgTs+Pjs+Ozs+O3Q8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL2NvbW11bml0eS9iYnNfYnV0dG9uX3JlY29tLmdpZjs+PjtwPGw8b25jbGljazs+O2w8amF2YXNjcmlwdDpqc1BvcFVwTG9naW4oJy91c2VyL2NvbW11bml0eS9UYWxrVGFsay9UYWxrVXNlUmVhZC5hc3B4P3BWYWwxJTNkMCUyNnBWYWwyJTNkNDIzMjAlMjZwVmFsNCUzZCUyNnBWYWw1JTNkJTI2cFZhbDYlM2QlMjZwVmFsOSUzZCUyNnBWYWwxMCUzZCcpXDsgcmV0dXJuIGZhbHNlXDs7Pj4+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8Nzk5Njs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS8wNC8yMCAwMDo1NTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MzIwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxcPFBcPuyWvOuniOyghOyXkCDtlbjrk5ztj7Ag7Lap7KCE7J20IOuQmOyniOyViuyVhCDshJzruYTsiqTshLzthLDsl5Ag6rCU7Iq164uI64ukLlw8L1BcPg0KXDxQXD7stqnsoITquLDrpbwg67O0642U64uIIOy2qeyghOq4sOulvCDsnpjrqrvsgqzshajrhKTsmpR+IOydtOufrOuNlOq1sOyalC5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPFNUUk9OR1w+6re4656Y7IScIOq3uOqyjCDrrLTsiqjshozrpqzsnbjqsIDsmpQ/IOygnOqwgCDslYTripQg64yA66as7KCQ7JeQ7IScIOyCsOqxtOuNsCDrr7/snYTrp4ztlZwg6rOz7J206rOgXDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPuy2qeyghOq4sOuPhCDsoJXrtoDsoJztkojqu4TroZwg7IOA64qU642w7JqUP1w8L1NUUk9OR1w+XDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7ZWY64uI6rmQIOyDgeuLtOybkOydtCDqt7jrn6zrjZTqtbDsmpQuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPuyGkOuLmCDsnbTqsbQg7KCV7ZKI7J20IOyVhOuLmeuLiOuLpC4g7KCA7J2YIOy2qeyghOq4sCDsoJXtkojsnYAg44Sx7J6QIOuqqOyWkeycvOuhnCDrkJjslrQg7J6I7Iq164uI64ukLlw8L1NUUk9OR1w+XDwvUFw+DQpcPFBcPlw8U1RST05HXD5cPC9TVFJPTkdcPiZuYnNwXDtcPC9QXD4NClw8UFw+65286rOgIOuztOyXrOykgOqyg+ydgCDsoJXrtoAg7KCc7ZKI7J20IOyVhOuLjOqyg+ydtOyXiOyKteuLiOuLpC5cPC9QXD4NClw8UFw+c2vthZTroIjthY3sl5DshJwg64KY7Jio6rKD66eMIOyNqOyVvO2VnOuLpOuKlOqyg+ydtOyXiOyKteuLiOuLpC4g6re465+s66m0IOydtCDsoJXrtoDsl5DshJwg67Cc7IOd65Cc6rKDIOustOyXh+ydtOuDkOqzoFw8L1BcPg0KXDxQXD7rrLvsnpAsIOqwkeyekOq4sCDsg4Hri7Tsm5DsnYAg64yA66as652864qUIOyCrOuejOyXkOqyjCDsoIgg64SY6rK87Iq164uI64ukLlw8L1BcPg0KXDxQXD7rjIDrpqzrnbzripQg67aE6ruYIOusvOyWtOu0pOyKteuLiOuLpC4g7JmcIOy2qeyghOydtCDslYjrkJjripTqsbDrg5Dqs6Ag66y77J6QLFw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8U1RST05HXD7shpDri5jqu5jshJzripQg7KCV7ZKI7J2EIOyCrOyaqe2VmOyngCDslYrsnLzshZTshJwg6re465+w6rKB64uI64ukLiDsoJXtkojsnYQg7IKs7Jqp7ZWY66m0IOy2qeyghOydtCDrkKnri4jri6QuXDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPu2VmOujqOyXkOuPhCDsnbTrn7DqsbTsiJjqsIAg7ZWc65GQ6rG064SY6rKMIOuTpOyWtOyZgOyalC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuudvOqzoO2VmOuKlOqyg+ydtOyXiOyKteuLiOuLpC4g7Iic6rCEIOyWtOydtOqwgCDsl4bsl4jsirXri4jri6QuIOq3uOufvCDqt7gg64yA66as7KCQIOyngeybkOydtCDslYTripTrtoTsnbjrjbAg7KCIXDwvUFw+DQpcPFBcPuyGjeyYgOuLpOuKlCDqsoPsnoXri4jquYw/IOq3uOuemOyEnCDtmZTqsIAg64KY7IScIOygnOqwgFw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8U1RST05HXD7qt7jrn7wg6re4IOuMgOumrOygkCDsp4Hsm5DsnbQg7KCIIOyGjeyduCDqsoPsnbTqtbDsmpQuIOqwgOyEnCDrlLDsoLjslbzqsqDslrTsmpQuXDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPlw8L1NUUk9OR1w+Jm5ic3BcO1w8L1BcPg0KXDxQXD7rnbzqs6Ag66eQ7ZWY7J6QIOuMgOumrOudvOuKlCDrtoTsnbQg7KCA7JeQ6rKMIOunkO2VmOuNlOq1sOyalC4g7J206rG0IOuNlCDslrTsnbTqsIAg7JeG7JeI7Iq164uI64ukLlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8U1RST05HXD7shpDri5jqu5jshJwg7IKs7Iug6rG0IOygleu2gOygnO2SiOydtCDrp57ripTrjbDsmpQsIOyggOydmCDsiqTsubTsnbTsl5DshJwg7Lap7KCE6riw7JeQIOq8veuKlCDsoJztkojsnLzroZwg7Lap7KCE7ZWY7Iuk66Ck66m0XDwvU1RST05HXD4mbmJzcFw7XDxTVFJPTkdcPuyggOydmCDthZTroIjthY0g7KCc7ZKIIOy2qeyghOq4sOulvCDrlLDroZwg6rWs7J6F7ZWY7IWU7JW8IO2VqeuLiOuLpC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+66eM7JW97JeQIOq3uOqyjCDsi6vsnLzsi5zri6TrqbQg7Ke567aA67aE7J2YIOqzoOustCDrtoDrtoTsnYTrubzshJwg7Lap7KCE7ZWY7IWU7JW8IO2VqeuLiOuLpC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+XDwvU1RST05HXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuyInOqwhCDsoIQg64u57Zmp7ZaI7Iq164uI64ukLiDsnbTqsbQg7KCV67aAIOygnO2SiOq7mCDrp57ripTrjbAsIOyKpOy5tOydtCDstqnsoITquLDsl5Ag6ry964qUIOygnO2SiOycvOuhnCDstqnsoITtlZjroKTrqbQg7YWU66CI7YWN7Lap7KCE6riw66W8IOuUsOuhnCDqtazsnoXtlbTslbztlZjri6Tri4guLiDqt7jrn6zrqbQg662Q7ZWY65+sIOygleu2gCDsoJztkojsnYQg7IKs6rOgLCDsnbQg64yA66as7KCQIOyngeybkOydgCDsoIDtlZzthYxcPC9QXD4NClw8UFw+7JeJ65qx7ZWc6rKD7J2EIOq1rOyehe2VmOqyjCDtlZzri6TripQg6rKB64uI6rmMLi4/Jm5ic3BcOyA/7JeQIOy2qeyghO2VmOuKlCDqsr3smrDripQg7Jes7ZaJ65WMIOu5vOuGk+qzoCDsl4bripTrjbBcPC9QXD4NClw8UFw+67O07Ya17J2AIOy2qeyghOq4sOyXkCDqvL3slYTshJwg7ZWY64qU642wIOq3uOqxuOyVhOuKlOyCrOuejOydtCDsoIgg7IaN7J2064uk64uILi4g6re46rKD64+EIOyVhOuKlOyCrOuejOyduOuNsFw7IOq3uOuemOyEnCDsoIQgXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPuyVhCDslYzqsqDsirXri4jri6QuIOuMgOumrOygkOyXkCDqsIDshJwg65Sw7KC47JW8ID/lhpLlha0/XDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPlw8L1NUUk9OR1w+Jm5ic3BcO1w8L1BcPg0KXDxQXD7tlZjri4jquZAg64yA66as6rCAIOq3uOufrOuNlOq1sOyalC4uXDwvUFw+DQpcPFBcPlw8U1RST05HXD5cPC9TVFJPTkdcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPuuMgOumrOygkOyXkOyEnOuPhCDslYzrqbTshJwg7YyM64qU7IKs656M65Ok64+E7J6I6rOgIOuqqOultOuptOyEnCDtjIzripTsgqzrnozrk6Trj4Qg7J6I7Iq164uI64ukLlw8L1NUUk9OR1w+XDwvUFw+DQpcPFBcPlw8U1RST05HXD5cPC9TVFJPTkdcPiZuYnNwXDtcPC9QXD4NClw8UFw+66y07Ja46rCAIOydtOyDge2VtOyEnCDsoIQg66y87JeI7Iq164uI64ukLiZuYnNwXDsg64yA66as7KCQ7JeQ7IScIOyemCDrqrvtlZzqsoPqsJnsnYDrjbAuLuydtCDrjIDrpqzrnoDrtoTsnbQg64yA66as7KCQ7J2EIOqwkOyLuOqzoFw8L1BcPg0KXDxQXD7snojsl4jsnLzri4jquYzsmpQuLiDqt7jrnpjshJwg7Zi57Iuc64KYIO2VtOyEnCDrrLzsl4jsirXri4jri6QuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPuq3uOufrOuptCDrjIDrpqzsoJAg7IKs656M65Ok7J2AIOuqqOuluOuLpOuKlOqygeuLiOq5jD8g66qo66W06rOgIOusvO2SiOydhCDtjJTri6Tri4gg66eQ64+E7JWI64+87KOgLlw8L1NUUk9OR1w+XDwvUFw+DQpcPFBcPlw8U1RST05HXD7rs7TthrXsnYAg7Lap7KCE6riw7JeQIOq8veyVhOyEnCDsk7DripTrjbAg7KCA7ZWc7YWMIO2FlOugiO2FjeyaqSDstqnsoITquLDrpbwg7IKs65286rOgIO2VtOyVvOyjoC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+7KeA6riIIOuLueyepSDrjIDrpqzsoJAg6rCA7IScIOuUsOyguOyVvCDqsqDslrTsmpQuIOyWtOydtOqwgCDsl4brhKTsmpQuXDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPuydtCAo7YWU66CI7YWNKey2qeyghOq4sCZuYnNwXDvrjIDrpqzsoJDsl5DshJzrj4Qg7YyM64qU6rGwIOyVhOuLjOqwgOyalD8g6re465+w642wIOydtOqxuCDqtoztlbTso7zri6Tri4guXDwvU1RST05HXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD7rnbzqs6Ag66eQ7ZWY64uIIOq3uCDrjIDrpqzrnoDrtoTsnbQg642UIOyWtOydtOyXhuuKlOunkOydhCDtlZjrjZTqtbDsmpQuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPu2FlOugiO2FjSDstqnsoITquLDripQg64yA66as7KCQ7JeQ7IScIO2MlOyngCDslYrsirXri4jri6QuXDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPlw8L1NUUk9OR1w+Jm5ic3BcO1w8L1BcPg0KXDxQXD7qt7jrnpjshJwg7KCc6rCAIFw8U1RST05HXD7qt7jrn7wg7Ja065SU7IScIO2MjOuKlOqygeuLiOq5jD9cPC9TVFJPTkdcPuudvOqzoO2VmOuLiFw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8U1RST05HXD7soIDsnZgg7ISc67mE7IqkIOyOiO2EsOyXkOyEnCDrsJbsl5Ag7YyU7KeAIOyViuyKteuLiOuLpC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuudvOqzoO2VmOuKlOqyjCDslYTri5nri4jquYwtIC0/IFw8Rk9OVCBjb2xvcj0jZmY4MDgwXD7rjIDrpqzsoJDsl5DshJzripQg7ZW465Oc7Y+w7J2EIO2MlOuptOyEnCDthZTroIjthY0g7KCV7ZKIIOy2qeyghOq4sOuKlCDtjJDrp6TtlZjsp4Ag7JWK64qU64uk64qU6rKB64uI64ukLiDqsozri6TqsIAg6re46rG4IOyCrOugpOuptCDshJzruYTsiqQg7I6I7YSw7JeQIOyZgOyEnCDsgqzslbztlZzri6TripQg6rKD7J207KOgLlw8L0ZPTlRcPlw8L1BcPg0KXDxQXD5cPEZPTlQgY29sb3I9IzQwMDA0MFw+7IKs7Jqp7ISk66qF7ISc7JeQ64qUIOq3uOufsOunkOydtCDsl4bsl4jrjZgg67aE642U65+sIO2MjOuKlCDrjIDrpqzsoJDsgqzrnozrj4Qg7JWE66y064+EIOydtOqzs+yXkOuPhCDsnbTrn7Drp5DsnYBcPC9GT05UXD5cPC9QXD4NClw8UFw+XDxGT05UIGNvbG9yPSM0MDAwNDBcPuygge2YgOyeiOyngCDslYrslZjsirXri4jri6QuIOq3uOuemOyEnCDsoIQg7Ja07J206rCA7JeG7JeI7Iq164uI64ukXDwvRk9OVFw+XDwvUFw+DQpcPFBcPlw8Rk9OVCBjb2xvcj0jNDAwMDQwXD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzQwMDA0MFw+6re465+s66m0IOyEnOu5hOyKpOyEvO2EsOyXkOyEnOunjCDtlbjrk5ztj7DsnYQg7YyU7JWE7JW87KeALCDrjIDrpqzsoJDsl5DshJwg7ZW465Oc7Y+w7J2EIO2MlOuptOyEnCDstqnsoITquLDripRcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+XDxGT05UIGNvbG9yPSM0MDAwNDBcPu2MlOyngCDslYrqs6AsIOy2qeyghOuQmOyngCDslYrslYTshJwg7ISc67mE7Iqk7IS87YSw7JeQIOyYpOuptCBza+2FlOugiO2FjeyaqSDstqnsoITquLDrpbwg6raM7ZW07IScIOyCrOqyjCDtlZjqs6BcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+XDxGT05UIGNvbG9yPSM0MDAwNDBcPuydtOqxtCDquLDsl4XsoIEg7Y+t66asIOyVhOuLmeuLiOq5jD9cPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+XDxGT05UIGNvbG9yPSM0MDAwNDBcPlw8L0ZPTlRcPlw8L1NUUk9OR1w+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPEZPTlQgY29sb3I9IzQwMDA0MFw+65286rOgIOunkO2VmOyngCDrjIDrpqzrnoAg67aE7J20IOydtOufrOuNlOq1sOyalC5cPC9GT05UXD5cPC9QXD4NClw8UFw+XDxGT05UIGNvbG9yPSM0MDAwNDBcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jNDAwMDQwXD7shpDri5gsIOyggOydmCDthZTroIjthY3rp5Dqs6Drj4Qg7IK87ISxLCDrqqjthqDroaTrnbwsIOyVoOuLiOy9nCDrk7Hrj4Qg64ukIOydtOugh+qyjCDstqnsoITquLDrpbwg7YyQ66ek7ZW07JqULlw8L0ZPTlRcPlw8L1NUUk9OR1w+XDwvUFw+DQpcPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzQwMDA0MFw+7KCV67aA7JqpIOy2qeyghOq4sOuKlCDsoJXrtoAg67Cp7Lmo7JeQIOuUsOudvOyEnCDrgpjsmKTquLQg7ZaI7KeA66eMIOq4sOyXheyggSDrsKnslrTrpbwg7JyE7ZW07IScXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD4NClw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jNDAwMDQwXD7ri6TsnbTroIfqsowg7ZWc64u164uI64ukLiDshpDri5jqu5jshJwg7Lap7KCE6riw7JeQIOq8veyVhOyEnCDstqnsoITtlZjsi5zroKTrqbQg7KCA7J2Y6ruEIOq1rOyehe2VmOyLnOq1rOyalCxcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD5cPFNUUk9OR1w+7Iur7Jy87Iuc64uk66m0Jm5ic3BcO+ynueq8veuKlOqzs+yXkCDqvL3slYTshJwg7Lap7KCE7ZWY7IWU64+EIOuQqeuLiOuLpC5cPC9TVFJPTkdcPlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuyKpOy5tOydtOuKlCDri6TrpbTri6TqtazsmpQ/IOunpOydvCDshKDsoITsl5Ag64uk66W064uk6rOg7ZWY64qU642wIOuouOqwgCDri6TrpbjqsoHri4jquYw/XDwvUFw+DQpcPFBcPuygnOqwgCDqs4Tsho0g66y77J6QIOuLue2Zqe2VmOuptOyEnCDsnITsnZgg66eQ7J2EIOqzhOyGjSDrkJjtkoDsnbQg7ZWY642U6rWw7JqULiDsp4DquIjquYzsp4Ag7Lap7KCE7J20IOuQmOyniCDslYrslYQg7ISc67mE7IqkXDwvUFw+DQpcPFBcPuyEvO2EsOyXkCDqsIQg7IiY66eO7J2AIOyCrOuejOuTpOydtCDsg4HtmansnYQg66qo66W06rOgLCDsgqzrnozsnbQg66eO7Jy864uI6rmQLCDslYTrp4hcPC9QXD4NClw8UFw+7Lap7KCE6riw66W8IOq1rOyehe2WiOydhOq7jeuLiOuLpC4g7JWM7JWE7JW8IO2VoOqyg+ydgCDslYzqs6Ag7I2o7JW87ZWY64qU6rGwIOyVhOuLjOqwgOyalD9cPC9QXD4NClw8UFw+7KeA6riIIOygleu2gOyaqSDstqnsoITquLDroZwg7JOw6rOgIOqzhOyLoOu2hOuTpCDrp47snYTqu43ri4jri6QuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7YWU66CI7YWNIOy2qeyghOq4sOuKlCDshJzruYTsiqQg7IS87YSw7JeQ7IScIOuwluyXkCDtjJTsp4Ag7JWK7Jy864uI6rmQ7JqULlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuydtOqyg+ydtCDqvL3ripQg7Lap7KCE6riw64yA7JmAIO2YuO2ZmOydtCDslYjrjIDshJwg7YSw7KeA6rGw64KYIOu2iOydtOuCmOqxsOuCmCDtnZTtnogg66eQ7ZWY642YIO2VuOuTnO2PsCDsgqzqs6DroZxcPC9QXD4NClw8UFw+7J207Ja07KeI7IiYIOyeiOyKteuLiOuLpC4g7J2065+w6rKD7J2EIOyVjOuptOyEnOuPhCDsiazsiaztlZjrqbTshJwg64uk66W4IO2VuOuTnO2PsCDtmozsgqzrj4Qg65iR6rCZ7Jy864uI6rmQLFw8L1BcPg0KXDxQXD7rmJDripQg7JWE66y06rKD64+EIOuqqOuluOyytCDshozruYTsnpDrk6Tsl5Dqsowg7IKs65286rOg66eMIO2VmOuKlCDqt7jrn7DqsbAg7J6F64uI64ukLlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuyXrOufrOu2hOuTpOuPhCDsnpgg7JWM7JWE67O06rOgIOyCrOyLnOq4uCDrsJTrpr3ri4jri6QtIC1cPC9QXD4NClw8UFw+cHMg7KKL7J2A6riA7J2AIOyEoOusvOydhCDspIDri6QuLiDsoovsnYDquIAg64K07Jqp7J20IOuLpCDshJzruYTsiqTqsIAg7KKL64ukLCDrhIjrrLQg7ZW465Oc7Y+w7J20IOyii+uLpFw8L1BcPg0KXDxQXD7snbTrn7DrgrTsmqnrk6Qg67+Q7J206rWw7JqULuOFiyDrtojrp4zqsozsi5ztjJDsnYAg7JWE7JeQ7JeG6rWs7JqULuOFi1w8L1BcPjs+Pjs+Ozs+O3Q8cDxsPF8hSXRlbUNvdW50Oz47bDxpPDM+Oz4+O2w8aTwxPjtpPDM+O2k8NT47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxOTQzODs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87J207Jik7JiBOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsoIDripQg64yA66as7KCQ7JeQ7IScICYjNTM2MDVcO+ugiO2FjSDstqnsoITquLDtlZjqs6Ag7ZSM65287Iqk7Yux7LyA7J207IqkIOqzteynnOuhnCDso7zrjZjrjbA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDUvMDQvMjMgMjM6Mzk7Pj47Pjs7Pjs+Pjt0PDtsPGk8MT47aTwzPjtpPDU+O2k8Nz47aTw5Pjs+O2w8dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2Vtb3RpY29uXzAyLmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTkyMjM7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOy1nOyYgeyZhDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ65286rOgIOyKpOy5tOydtOq7j+unjCDrkJjripTqsoPslYTri4zrjbDsmpQhIOyVoOuLiOy9nOqxsCDqsIDsp4Dqtawg7KC4IOunqOuCoFw8QlJcPu2BkOumrO2FlCDsiqTsubTsnbQg64ukfuyZhOy2qe2WiOuKlOuNsFw8QlJcPuu2iOunjOqyjOyLnO2MkOydgFw8QlJcPi3quLDtg4AtXDxCUlw+7J2MLi4u64yA66as7KCQIOygle2SiO2MlOuNmOuNsC4uLi4uXDxCUlw+7IK87ISx7JeQIOyWtOuWpCDrp4jtgazrk5zrnbw/IOyeiOuKlOuNsFw8QlJcPuq3uOuniO2BrCDsnojripTqsoMg7IKs7IS47JqULiDsoJXrp5AuLuOFoDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS8wNC8yMCAyMTowMDs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+Oz47bDx0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfZW1vdGljb25fMDEuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwxOTE1OTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w86rWs7KeE7JuFOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwtIF8tXDsg7KKAIOuCnOqwkO2VmOuCtOyalFw7Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LzA0LzIwIDAxOjM3Oz4+Oz47Oz47Pj47Pj47dDxwPHA8bDxJbWFnZVVybDs+O2w8aHR0cDovL2ZpbGUuaXNreS5jby5rci9pbWFnZXMvdXNlci9jb21tdW5pdHkvYmJzX2J1dHRvbl9wcmludC5naWY7Pj47Pjs7Pjt0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy9jb21tdW5pdHkvYmJzX2J1dHRvbl9zY3JhcC5naWY7Pj47Pjs7Pjt0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy91c2VyL2NvbW11bml0eS9iYnNfYnV0dG9uX3JlcGx5LmdpZjs+Pjs+Ozs+O3Q8cDxwPGw8SW1hZ2VVcmw7PjtsPGh0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL3VzZXIvY29tbXVuaXR5L2Jic19idXR0b25fbW9kaWZ5LmdpZjs+PjtwPGw8T25DbGljazs+O2w8amF2YXNjcmlwdDpnb0VkaXQoKVw7IHJldHVybiBmYWxzZVw7Oz4+Pjs7Pjt0PHA8cDxsPEltYWdlVXJsOz47bDxodHRwOi8vZmlsZS5pc2t5LmNvLmtyL2ltYWdlcy9jb21tdW5pdHkvYmJzX2J1dHRvbl9kZWxldGUuZ2lmOz4+Oz47Oz47dDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxcPGltZyBzcmM9J2h0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL2NvbS9iYnNfYnVsbGV0X25leHQuZ2lmJyBhbGlnbj0nYWJzbWlkZGxlJyBib3JkZXI9JzAnXD7subTrqZTrnbzqsIAg7J207IOB7ZW07ISc7JqU44WgIFs2XSBb64u167OAOjFdO1RhbGtVc2VSZWFkLmFzcHg/cFZhbDE9MCZwVmFsMj00MjM0MyZwVmFsND0mcFZhbDU9JnBWYWw5PSZwVmFsMTA9Oz4+Oz47Oz47dDxwPHA8bDxUZXh0O05hdmlnYXRlVXJsOz47bDxcPGltZyBzcmM9J2h0dHA6Ly9maWxlLmlza3kuY28ua3IvaW1hZ2VzL2NvbS9iYnNfYnVsbGV0X3ByZXYuZ2lmJyBhbGlnbj0nYWJzbWlkZGxlJyBib3JkZXI9JzAnXD7sgqzsp4Tsl5Ag6rSA7ZWcIOyniOusuOydtOyalH5+IFsxXSBb64u167OAOjFdO1RhbGtVc2VSZWFkLmFzcHg/cFZhbDE9MCZwVmFsMj00MjI5NSZwVmFsND0mcFZhbDU9JnBWYWw5PSZwVmFsMTA9Oz4+Oz47Oz47Pj47Pj47bDxidG5SZWNkO2J0bkNtdDs+Pg==" />
+
+			<div 
+	style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%">
+				<table 
+	style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_left.gif); WIDTH: 950px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%" 
+	cellSpacing=0 cellPadding=0 width="100%" border=0>
+					<TBODY>
+						<tr>
+							<td vAlign="top" align="right" width="222">
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+				height="475" width="222" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+				<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/left/isky_community.swf?code=B11">
+				<embed src="http://file.isky.co.kr/flash/left/isky_community.swf?code=B11" width=222 height=475 />
+			</OBJECT>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<IMG SRC="http://file.isky.co.kr/images/com/left_mypage_title.jpg" WIDTH="222" HEIGHT="19" border="0"></a><BR>
+		</td>
+	</tr>
+</table>
+
+<iframe name="leftlogin" src="/WUC/leftLogin.aspx?wbSurl=%2fUser%2fCommunity%2fTalkTalk%2fTalkUseRead.aspx%3fpVal2%3d42320&amp;wbExt=" width="222" height="138" border="0" NORESIZE SCROLLING=no FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0>
+</iframe>
+
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<IMG SRC="http://file.isky.co.kr/images/com/left_deco_bottom.jpg"><BR>
+		</td>
+	</tr>
+</table>
+<script>
+	
+	function goUrl(code){
+		goURL(code);
+	}
+	
+	function goURL(code){
+		//alert(code);
+		if(code == "UA"){//Home
+			document.location.href ="/";
+			return;
+		}
+		if(code == "UB" || code == "U2"){//로그인
+			loginurl();
+			return;
+		}
+		if(code == "U6"){//로그아웃
+			document.location.href = "/WUC/authAction.aspx?method=logout&wbExt=";
+			return;
+		}
+		if(code == "UC"	){//MemberShip
+			document.location.href = "/User/member/memberGuid.aspx";
+			return;
+		}
+		if(code == "UD"	){//통합검색
+			document.location.href = "/search/total.asp";
+			return;
+		}
+		if(code == "UF"	){//SiteMap
+			document.location.href = "/User/utillity/siteMap.aspx";
+			return;
+		}
+		if(code == "UG"	){//Contactus
+			document.location.href = "/User/utillity/contactUs.aspx";
+			return;
+		}
+		if(code == "UE"){//FAQ
+			document.location.href = "/svc/counsel/CunsFAQTop10List.aspx"
+			return;
+		}
+		if(code == "E23"){//FAQ
+			document.location.href = "/svc/counsel/CunsFAQTop10List.aspx"
+			return;
+		}
+
+		if(code == "A"){//마이페이지
+			document.location.href = "/User/Mypage/MypageMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "B"){//커뮤니티
+			document.location.href = "/User/Community/CommunityMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "C"){//모바일
+			document.location.href = "/mobile/Main.asp";
+			return;
+		}
+
+		if(code == "D"){//제품지원
+			document.location.href = "/User/product/ProductMain.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "E"){//고객지원
+			document.location.href = "/Main.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "K1"){//Event-진행이벤트
+			document.location.href = "/User/userevent/EventIng.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "K2"){//Event-지난이벤트
+			document.location.href = "/User/userevent/EventLast.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K3"){//Event-인디
+			document.location.href = "/User/userevent/SkyIndi.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K31"){//Event-인디그라운드
+			document.location.href = "/User/userevent/IndiSKY/introduction01.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K32"){//Event-이전공연
+			document.location.href = "/User/userevent/IndiSKY/beforeplay.aspx?menuCode="+code;			
+			return;
+		}
+		if(code == "K33"){//Event-인디게시판
+			document.location.href = "/User/userevent/IndiSKY/IndiBBSFreeList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "K34"){//Event-아티스트 참가방법
+			document.location.href = "/User/userevent/IndiSKY/IndiUserApplMethod.aspx?menuCode="+code;
+			//alert("서비스 준비중입니다.");
+			return;
+		}
+		if(code == "K4"){//Event-스타리그
+			document.location.href = "/User/userevent/skyleague/sky_league.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "K5"){//Event-모바일이벤트
+			document.location.href = "/mobile/event/event_list.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A1"){//마이페이지- 제품사용기
+			document.location.href = "/User/mypage/MPMemberEdit.aspx";
+			return;
+		}
+		if(code == "A2"){//마이페이지- 지수포인트도비라
+			document.location.href = "/User/mypage/MypagePNTExponent.aspx";
+			return;
+		}
+		if(code == "A21"){//마이페이지- 지수조회
+			document.location.href = "/User/mypage/MypageExponentList.aspx";
+			return;
+		}
+		if(code == "A22"){//마이페이지- 포인트 조회
+			document.location.href = "/User/mypage/MypagePNTList.aspx";
+			return;
+		}
+		if(code == "A23"){//마이페이지- 쿠폰 조회
+			document.location.href = "/mobile/mypage/coupon/coupon_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A31"){//마이페이지- 모바일벨소리
+			document.location.href = "/mobile/mypage/content/bell_result.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A32"){//마이페이지- 모바일/캐릭터포토
+			document.location.href = "/mobile/mypage/content/char_photo_result.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A33"){//마이페이지- 모바일/문자
+			document.location.href = "/mobile/mypage/content/sms_result.asp?menuCode="+code;
+			return;
+		}
+		if(code == "A35"){//마이페이지- 모바일/휴대폰 주소록
+			document.location.href = "/mobile/mypage/address/address.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA"){//마이페이지- 포토앨범
+			document.location.href = "/mobile/mypage/album/album_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA1"){//마이페이지- 포토앨범
+			document.location.href = "/mobile/mypage/album/album_list.asp?menuCode="+code;
+			return;
+		}
+		if(code == "AA2"){//마이페이지- 스코피
+			document.location.href = "http://skopi.isky.co.kr/isky/main.asp";
+			return;
+		}
+		if(code == "A41"){//마이페이지- 토크토크
+			document.location.href = "/User/mypage/community/TalkTalk/TalkUseList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A42"){//마이페이지-	포토영상
+			document.location.href = "/User/mypage/community/Gallery/PhotoTitleList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A43"){//마이페이지- 매니아 클럽
+			document.location.href = "/User/mypage/community/Mania/ManiaForumList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A44"){//마이페이지- SKY 아지트
+			document.location.href = "/User/mypage/community/SkyLeader/SkyAzitExpList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "A45"){//마이페이지- 나의 스크랩
+			document.location.href = "/User/mypage/MypageScrapList.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "A71"){//마이페이지- 상담내역
+			document.location.href = "/user/mypage/MypageConsultList.aspx?menuCode="+code;
+			return;
+		}
+
+		if(code == "A72"){//마이페이지- 수리내역
+			document.location.href = "/user/mypage/MypageRepairList.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "A73"){//마이페이지- 가까운 수리센터
+			document.location.href = "/SVC/svccenter/SVCCENTERDetail.aspx?idx=&usedMypage=Y&menuCode="+code;
+			return;
+		}
+
+		if(code == "A74"){//마이페이지- 장바구니
+			document.location.href = "/shop/order/shop_cart_list.asp?menuCode="+code;
+			return;
+		}
+
+		if(code == "A75"){//마이페이지- 주문배송조회
+			document.location.href = "/shop/order/orderDeliveryList.asp?menuCode="+code;
+			return;
+		}
+
+		if(code == "B11"){//커뮤니티 - 제품사용기
+			document.location.href = "/User/Community/TalkTalk/TalkUseList.aspx";
+			return;
+		}
+
+		if(code == "B12"){//커뮤니티 - 회원끼리 Q&A
+			document.location.href = "/User/Community/TalkTalk/TalkQaList.aspx";
+			return;
+		}
+		if(code == "B13"){//커뮤니티 - 자유게시판
+			document.location.href = "/User/Community/TalkTalk/TalkFreeList.aspx";
+			return;
+		}
+		if(code == "B14"){//커뮤니티 - 중고장터
+			document.location.href = "/User/Community/TalkTalk/TalkOldList.aspx";
+			return;
+		}
+		if(code == "B21"){//커뮤니티 - 포토갤러리
+			document.location.href = "/User/Community/Gallery/PhotoTitleList.aspx";
+			return;
+		}
+		if(code == "B22"){//커뮤니티 - 동영상
+			document.location.href = "/User/Community/Gallery/MovieTitleList.aspx";
+			return;
+		}
+		
+		if(code == "B23"){//커뮤니티 - 사진인화
+			document.location.href = "/User/Community/Gallery/PhotoAlbum/album_list.asp";
+			return;
+		}
+		
+		if(code == "B31"){//커뮤니티 - 매니아 포럼
+			document.location.href = "/User/Community/Mania/ManiaForumList.aspx";1
+			return;
+		}
+		if(code == "B32"){//커뮤니티 - 매니아 소개
+			document.location.href = "/User/Community/Mania/ManiaInfo.aspx";
+			return;
+		}
+		if(code == "B41"){//커뮤니티 - 스카이 리더 체험기
+			document.location.href = "/User/Community/SkyLeader/SkyExperienceList.aspx";
+			return;
+		}
+		if(code == "B42"){//커뮤니티 - 스카이 리더 소개
+			document.location.href = "/User/community/SkyLeader/SkyLeaderInfo.aspx";
+			return;
+		}
+		if(code == "B43"){//커뮤니티 - 스카이 리더 아지트
+			
+			loginurl();
+			
+			return;
+		}
+		if(code == "B51" || code == "B5"){//커뮤니티 - 강좌리스트
+			document.location.href = "/User/Community/Academy/AcademyList.aspx";
+			return;
+		}
+		if(code == "B52"){//커뮤니티 - 강좌소개
+			document.location.href = "/User/Community/Academy/AcademyInfo.aspx";
+			return;
+		}
+
+		//C
+		if(code == "C"){//mobile home
+			document.location.href ="/mobile/main.asp";
+		}
+		if(code == "C1"){//벨소리 메인
+			document.location.href = "/mobile/bell/main.asp";
+		}
+		if(code == "C11"){//벨소리 이달의 챠트
+			document.location.href = "/mobile/bell/bell_chart.asp";
+		}
+		if(code == "C12"){//오늘의 신곡
+			document.location.href = "/mobile/bell/bell_new.asp";
+		}
+		if(code == "C13"){//베스트
+			document.location.href = "/mobile/bell/bell_best.asp";
+		}
+		if(code == "C14"){//장르
+			document.location.href = "/mobile/bell/bell_list.asp";
+		}
+		if(code == "C2"){//캐릭터 메인
+			document.location.href = "/mobile/character/main.asp";
+		}
+		if(code == "C21"){//캐릭터 신곡
+			document.location.href = "/mobile/character/char_new.asp";
+		}
+		if(code == "C22"){//베스트
+			document.location.href = "/mobile/character/char_best.asp";
+		}
+		if(code == "C23"){//장르
+			document.location.href = "/mobile/character/char_list.asp";
+		}
+		if(code == "C3"){//포토 메인
+			document.location.href = "/mobile/photo/main.asp";
+		}
+		if(code == "C31"){//스타포토
+			document.location.href = "/mobile/photo/photo_list.asp?category_code=402";
+		}
+		if(code == "C32"){//배경포토
+			document.location.href = "/mobile/photo/photo_list.asp?category_code=401";
+		}
+		if(code == "C33"){//테마포토
+			document.location.href = "/mobile/photo/photo_list.asp?category_code=408";
+		}
+		if(code == "C41"){//문자메세지
+			document.location.href = "/mobile/sms/main.asp";
+		}
+		if(code == "C42"){//이모티콘
+			document.location.href = "/mobile/sms/sms_list.asp";
+		}
+		if(code == "C43"){//그룹 메세지
+			document.location.href = "/mobile/sms/sms_group.asp";
+		}
+		if(code == "C44"){//1000자
+			document.location.href = "/mobile/sms/sms_multi.asp";
+		}
+		if(code == "D00"){//제품- 최신 계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-8000";
+			return;
+		}
+		if(code == "D1B"){//제품-IMB1000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IMB-1000";
+			return;
+		}
+		if(code == "D1A"){//제품-IM8000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-8000";
+			return;
+		}
+		if(code == "D11"){//제품-IM7000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-7000";
+			return;
+		}
+		if(code == "D12"){//제품-IM6000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-6000";
+			return;
+		}
+		if(code == "D13"){//제품-IM5000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-5000";
+			return;
+		}
+		if(code == "D14"){//제품-IM3000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-3000";
+			return;
+		}
+		if(code == "D15"){//제품-IM2000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-2000";
+			return;
+		}
+		if(code == "D16"){//제품-IM1000계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-1000";
+			return;
+		}
+		if(code == "D17"){//제품-IM700계열
+			document.location.href = "/User/Product/ProductMerit.aspx?GroupID=IM-700";
+			return;
+		}
+		if(code == "D2"){//제품-제품검색
+			document.location.href = "/User/product/ProductSearch0.aspx";
+			return;
+		}
+		if(code == "D3"){//제품-제품비교
+			document.location.href = "/User/product/ProductCompare.aspx";
+			return;
+		}
+		if(code == "D4"){//제품-다운로드
+			document.location.href = "/Svc/download/DlMain.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "D5"){//악세서리 - 메인
+			document.location.href = "/shop/accessoryMain.asp?menuCode="+code;
+			return;
+		}
+		if(code == "D51"){//악세서리 - 모델별로 보기
+			document.location.href = "/shop/product/modelView.asp?menuCode="+code;
+			return;
+		}
+		if(code == "D52"){//악세서리 - 액세서리별로 보기
+			document.location.href = "/shop/product/accessoryView.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E1"){//고객지원-공지
+			document.location.href = "/SVC/svcnotice/SvcNoticeList.aspx";
+			return;
+		}
+		
+		if(code == "E21"){//고객상담-상담메인
+			document.location.href = "/Svc/counsel/CunsMain.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "E22" || code == "E2"){//고객상담-이메일상담
+			
+			loginurl();
+			
+			return;
+		}
+		if(code == "E23"){//고객상담-FAQ
+			document.location.href = "/Svc/counsel/CunsFaqTop10List.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "E24"){//고객상담-자가진단
+			document.location.href = "/Svc/counsel/CunsSelfView.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E3"){//다운로드
+			document.location.href = "/Svc/download/DlMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E31" || code == "D41" ){//다운로드-사용설명서
+			document.location.href = "/Svc/download/DlManual.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E32" || code == "D42" ){//다운로드-데이터 매니저
+			document.location.href = "/Svc/download/DlDataManager.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E33" || code == "D43" ){//다운로드-USB 드라이버
+			document.location.href = "/Svc/download/DlUsbDrive.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E34" || code == "D44" ){//다운로드-동영상플레이어
+			document.location.href = "/Svc/download/DlPlayer.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E35" || code == "D45" ){//다운로드-멜론
+			document.location.href = "/Svc/download/DlMelon.aspx?menuCode="+code;
+			return;
+		}
+		
+		
+		if(code == "E4"){//고객의 소리
+			document.location.href = "/Svc/voc/VocMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E41"){//고객의 소리-고객감동스토리
+			document.location.href = "/Svc/voc/VocThankList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E42"){//고객의 소리-고객제안마당
+			document.location.href = "/Svc/voc/VocProposalList.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E43"){//고객의 소리-고객불만접수
+			
+			loginurl();
+			
+			return;
+		}
+		
+		if(code == "E5"){//서비스 센터
+			document.location.href = "/Svc/svccenter/SvcCenterMain.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E51"){//서비스 센터-서비스센터 안내
+			document.location.href = "/Svc/svccenter/SvcCenterInfo.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E52"){//서비스 센터-서비스제도 안내
+
+			document.location.href = "/Svc/svccenter/SysExchange.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E6"){//악세서리 - 메인
+			document.location.href = "/shop/accessoryMain.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E61"){//악세서리 - 모델별로 보기
+			document.location.href = "/shop/product/modelView.asp?menuCode="+code;
+			return;
+		}
+		
+		if(code == "E62"){//악세서리 - 액세서리별로 보기
+			document.location.href = "/shop/product/accessoryView.asp?menuCode="+code;
+			return;
+		}
+
+		//-----------------------------------------------------------
+		//PRROOM
+		//-----------------------------------------------------------
+		if(code == "M"){//사이버홍보실-도비라
+			document.location.href = "/User/prroom/cyber.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M1"){//보도자료
+			document.location.href = "/User/prroom/press_list.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M2"){//TV광고
+			document.location.href = "/User/prroom/tvcf_concept.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M3"){//인쇄광고
+			document.location.href = "/User/prroom/print.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M4"){//월페이퍼
+			document.location.href = "/User/prroom/wallpaper.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M5"){//스크린세이버
+			document.location.href = "/User/prroom/screen.aspx?menuCode="+code;
+			return;
+		}
+		if(code == "M6"){//제품사진
+			document.location.href = "/User/prroom/product.aspx?menuCode="+code;
+			return;
+		}
+		//-----------------------------------------------------------
+		//PRROOM
+		//-----------------------------------------------------------
+				
+		if(code == "U1"){//MemberShip - 회원혜택안내
+			document.location.href = "/User/member/memberGuid.aspx";
+			return;
+		}
+		
+		if(code == "U3"){//MemberShip - ID/PW찾기
+			document.location.href = "/User/member/memberLost.aspx";
+			return;
+		}
+		
+		if(code == "U4"){//MemberShip - 회원가입
+			document.location.href = "/User/member/membernameCheck.aspx";
+			return;
+		}
+		
+		if(code == "U7"){//MemberShip - 정보수정
+			document.location.href = "/User/mypage/MPMemberEdit.aspx";
+			return;
+		}
+		
+		if(code == "U8"){//MemberShip - 회원탈퇴
+			document.location.href = "/User/member/membersecede.aspx";
+			return;
+		}
+		
+		//Footer
+		if(code == "UI"){//공지사항
+			document.location.href = "/User/utillity/noticeList.aspx";
+			return;
+		}
+		if(code == "UM"){//이용약관
+			document.location.href = "/User/utillity/contract01.aspx";
+			return;
+		}
+		if(code == "UL"){//개인보호정책
+			document.location.href = "/User/utillity/Memberprivacy.aspx";
+			return;
+		}
+		if(code == "L"){//사이버홍보실
+			document.location.href = "/User/prroom/cyber.aspx?menuCode="+code;
+			return;
+		}
+		
+		if(code == "Z"){//즐겨찾기
+			
+			loginurl();
+			
+			return;
+		}
+		
+		
+	}
+
+	//푸터의 family site
+	function click(v){
+		if (v=="1") url="http://www.sktelecom.com";
+		else if (v=="2") url="http://www.e-station.com";
+		else if (v=="3") url="http://june.nate.com";
+		else if (v=="4") url="http://www.nate.com";
+		else if (v=="5") url="http://www.cara.co.kr";
+		else if (v=="6") url="http://www.011010leadersclub.co.kr";
+		else if (v=="7") url="http://www.nate.com";
+		else if (v=="8") url="http://www.011010ting.com";
+		else if (v=="9") url="http://www.011010leadersclub.co.kr";
+		else if (v=="10") url="http://www.cara.co.kr";
+		else if (v=="11") url="http://www.myuto.com";
+		else if (v=="12") url="http://www.tu4u.com";
+		window.open(url,"","");
+	}
+
+	function loginurl()
+	{
+		window.open("/WUC/Login.aspx?wbExt=&wbSurl=%2fUser%2fCommunity%2fTalkTalk%2fTalkUseRead.aspx%3fpVal2%3d42320","login","width=500,height=220,top=10,left=10,toolbar=0,menubar=0,scrollbars=no,resizable=no");
+	}
+</script>
+</td>
+							<td vAlign="top" align="left" width="*">
+								<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+									<tr>
+										<td 
+			style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); BACKGROUND-REPEAT: repeat-x" 
+			>
+<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+	height="169" width="728" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/top_flash_final.swf">
+	<embed src="http://file.isky.co.kr/flash/top_flash_final.swf" width=728 height=169 />
+</OBJECT>
+<!-- 임시 맵 -->
+<map name="_temp_topmenu">
+	<area SHAPE="rect" COORDS="364,9,398,21" HREF="javascript:goURL('UA')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="403,9,432,21" HREF="javascript:goURL('UB')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="441,9,496,21" HREF="javascript:goURL('UC')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="506,9,525,21" HREF="javascript:goURL('E23')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="535,9,568,21" HREF="javascript:goURL('UD')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="578,9,615,21" HREF="javascript:goURL('UF')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="624,9,674,21" HREF="javascript:goURL('UG')" onfocus="this.blur()">
+	
+	<area SHAPE="rect" COORDS="48,35,119,75" HREF="javascript:goURL('B')" onfocus="this.blur()"> <!-- 커뮤니티 -->
+	<area SHAPE="rect" COORDS="186,35,276,75" HREF="javascript:goURL('C')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="346,35,412,75" HREF="javascript:goURL('D')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="486,35,552,75" HREF="javascript:goURL('E')" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="624,35,678,75" HREF="javascript:goURL('K1')" onfocus="this.blur()">
+</map>
+
+<map name="_temp_footer">
+	<area SHAPE="rect" COORDS="20,20,60,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="66,20,136,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="144,20,200,36" HREF="#" onfocus="this.blur()">
+	<area SHAPE="rect" COORDS="208,20,248,36" HREF="#" onfocus="this.blur()">
+</map>
+
+</td>
+									</tr>
+								</table>
+								<!--본문내용 들어가는 곳//-->
+								<DIV class="CONTENTS">
+									<DIV CLASS="LINEMAP"><a href='/'>Home</a> &gt; <a href='/user/community/CommunityMain.aspx'>
+											커뮤니티</a> &gt; <a href='/user/community/TalkTalk/TalkUseList.aspx'>토크토크</a> &gt; 
+										제품사용기</DIV>
+									<IMG src="http://file.isky.co.kr/images/community/talk_use_title.gif" 
+		><BR>
+									<TABLE class="BD2" cellSpacing="0" cellPadding="0" width="100%">
+										<TR>
+											<TD><IMG 
+				src="http://file.isky.co.kr/images/community/talk_use_title_txt.gif" 
+				></TD>
+											<TD align="right"><IMG 
+				src="http://file.isky.co.kr/images/community/talk_use_title_illust.gif" 
+				></TD>
+										</TR>
+									</TABLE>
+									<DIV class="CONTENTS_SUB" style="PADDING-TOP: 20px">
+										<!-- 게시판 읽기 -->
+										<TABLE cellSpacing="0" cellPadding="0" width="100%">
+											<TR>
+												<TD class="BBS_READ_TT" colSpan="6"><span id="lblTitle">스카이 다르다고? 똑같다- -;</span></TD>
+											</TR>
+											<TR style="PADDING-TOP: 4px" height="28">
+												<TD class="BBS_READ_TAB2" width="108">모델명</TD>
+												<TD class="BBS_READ_TAB" width="171"><span id="lblModel">IM-7700</span></TD>
+												<TD class="BBS_READ_TAB2" width="108">작성자</TD>
+												<TD class="BBS_READ_TAB" width="134"><span id="lblName">김주영</span></TD>
+												<TD class="BBS_READ_TAB2" width="58">추천</TD>
+												<TD class="BBS_READ_TAB" width="91"><input type="image" name="btnRecd" id="btnRecd" onclick="javascript:jsPopUpLogin('/user/community/TalkTalk/TalkUseRead.aspx?pVal1%3d0%26pVal2%3d42320%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d'); return false;" src="http://file.isky.co.kr/images/community/bbs_button_recom.gif" alt="" align="Right" /><span id="lblRecCnt">1</span></TD>
+											</TR>
+											<TR>
+												<TD bgColor="#e7d2d2" colSpan="6"></TD>
+											</TR>
+											<TR style="PADDING-TOP: 4px" height="28">
+												<TD class="BBS_READ_TAB2">번호</TD>
+												<TD class="BBS_READ_TAB"><span id="lblListNo">7996</span></TD>
+												<TD class="BBS_READ_TAB2">작성일</TD>
+												<TD class="BBS_READ_TAB"><span id="lblRegDate">2005/04/20 00:55</span></TD>
+												<TD class="BBS_READ_TAB2">조회</TD>
+												<TD class="BBS_READ_TAB"><span id="lblHitCnt">320</span></TD>
+											</TR>
+											<TR>
+												<TD bgColor="#e7d2d2" colSpan="6"></TD>
+											</TR>
+										</TABLE>
+										<DIV class="BBS_READ_CON"><span id="lblContent"><P>얼마전에 핸드폰 충전이 되질않아 서비스센터에 갔습니다.</P>
+<P>충전기를 보더니 충전기를 잘못사셨네요~ 이러더군요.</P>
+<P>&nbsp;</P>
+<P><STRONG>그래서 그게 무슨소리인가요? 제가 아는 대리점에서 산건데 믿을만한 곳이고</STRONG></P>
+<P><STRONG>충전기도 정부제품껄로 샀는데요?</STRONG></P>
+<P>&nbsp;</P>
+<P>하니깐 상담원이 그러더군요.</P>
+<P>&nbsp;</P>
+<P><STRONG>손님 이건 정품이 아닙니다. 저의 충전기 정품은 ㄱ자 모양으로 되어 있습니다.</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>라고 보여준것은 정부 제품이 아닌것이었습니다.</P>
+<P>sk텔레텍에서 나온것만 써야한다는것이었습니다. 그러면 이 정부에서 발생된것 무엇이냐고</P>
+<P>묻자, 갑자기 상담원은 대리라는 사람에게 절 넘겼습니다.</P>
+<P>대리라는 분께 물어봤습니다. 왜 충전이 안되는거냐고 묻자,</P>
+<P>&nbsp;</P>
+<P><STRONG>손님께서는 정품을 사용하지 않으셔서 그런겁니다. 정품을 사용하면 충전이 됩니다.</STRONG></P>
+<P><STRONG>하루에도 이런건수가 한두건넘게 들어와요.</STRONG></P>
+<P>&nbsp;</P>
+<P>라고하는것이었습니다. 순간 어이가 없었습니다. 그럼 그 대리점 직원이 아는분인데 절</P>
+<P>속였다는 것입니까? 그래서 화가 나서 제가</P>
+<P>&nbsp;</P>
+<P><STRONG>그럼 그 대리점 직원이 절 속인 것이군요. 가서 따져야겠어요.</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>라고 말하자 대리라는 분이 저에게 말하더군요. 이건 더 어이가 없었습니다.</P>
+<P>&nbsp;</P>
+<P><STRONG>손님께서 사신건 정부제품이 맞는데요, 저의 스카이에서 충전기에 꼽는 제품으로 충전하실려면</STRONG>&nbsp;<STRONG>저의 텔레텍 제품 충전기를 따로 구입하셔야 합니다.</STRONG></P>
+<P><STRONG>만약에 그게 싫으시다면 짹부분의 고무 부분을빼서 충전하셔야 합니다.</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>순간 전 당황했습니다. 이건 정부 제품께 맞는데, 스카이 충전기에 꼽는 제품으로 충전하려면 텔레텍충전기를 따로 구입해야하다니.. 그러면 뭐하러 정부 제품을 사고, 이 대리점 직원은 저한테</P>
+<P>엉뚱한것을 구입하게 한다는 겁니까..?&nbsp; ?에 충전하는 경우는 여행때 빼놓고 없는데</P>
+<P>보통은 충전기에 꼽아서 하는데 그걸아는사람이 절 속이다니.. 그것도 아는사람인데; 그래서 전 </P>
+<P>&nbsp;</P>
+<P><STRONG>아 알겠습니다. 대리점에 가서 따져야 ?冒六?</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>하니깐 대리가 그러더군요..</P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P><STRONG>대리점에서도 알면서 파는사람들도있고 모르면서 파는사람들도 있습니다.</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>무언가 이상해서 전 물었습니다.&nbsp; 대리점에서 잘 못한것같은데..이 대리란분이 대리점을 감싸고</P>
+<P>있었으니까요.. 그래서 혹시나 해서 물었습니다.</P>
+<P>&nbsp;</P>
+<P><STRONG>그러면 대리점 사람들은 모른다는겁니까? 모르고 물품을 팔다니 말도안돼죠.</STRONG></P>
+<P><STRONG>보통은 충전기에 꼽아서 쓰는데 저한테 텔레텍용 충전기를 사라고 해야죠.</STRONG></P>
+<P><STRONG>지금 당장 대리점 가서 따져야 겠어요. 어이가 없네요.</STRONG></P>
+<P><STRONG>이 (텔레텍)충전기&nbsp;대리점에서도 파는거 아닌가요? 그런데 이걸 권해주다니.</STRONG></P>
+<P>&nbsp;</P>
+<P>라고 말하니 그 대리란분이 더 어이없는말을 하더군요.</P>
+<P>&nbsp;</P>
+<P><STRONG>텔레텍 충전기는 대리점에서 팔지 않습니다.</STRONG></P>
+<P><STRONG></STRONG>&nbsp;</P>
+<P>그래서 제가 <STRONG>그럼 어디서 파는겁니까?</STRONG>라고하니</P>
+<P>&nbsp;</P>
+<P><STRONG>저의 서비스 쎈터에서 밖에 팔지 않습니다.</STRONG></P>
+<P>&nbsp;</P>
+<P>라고하는게 아닙니까- -? <FONT color=#ff8080>대리점에서는 핸드폰을 팔면서 텔레텍 정품 충전기는 판매하지 않는다는겁니다. 게다가 그걸 사려면 서비스 쎈터에 와서 사야한다는 것이죠.</FONT></P>
+<P><FONT color=#400040>사용설명서에는 그런말이 없었던 분더러 파는 대리점사람도 아무도 이곳에도 이런말은</FONT></P>
+<P><FONT color=#400040>적혀있지 않았습니다. 그래서 전 어이가없었습니다</FONT></P>
+<P><FONT color=#400040></FONT>&nbsp;</P>
+<P><STRONG><FONT color=#400040>그러면 서비스센터에서만 핸드폰을 팔아야지, 대리점에서 핸드폰을 팔면서 충전기는</FONT></STRONG></P>
+<P><STRONG><FONT color=#400040>팔지 않고, 충전되지 않아서 서비스센터에 오면 sk텔레텍용 충전기를 권해서 사게 하고</FONT></STRONG></P>
+<P><STRONG><FONT color=#400040>이건 기업적 폭리 아닙니까?</FONT></STRONG></P>
+<P><STRONG><FONT color=#400040></FONT></STRONG>&nbsp;</P>
+<P><FONT color=#400040>라고 말하지 대리란 분이 이러더군요.</FONT></P>
+<P><FONT color=#400040></FONT>&nbsp;</P>
+<P><STRONG><FONT color=#400040>손님, 저의 텔레텍말고도 삼성, 모토롤라, 애니콜 등도 다 이렇게 충전기를 판매해요.</FONT></STRONG></P>
+<P><STRONG><FONT color=#400040>정부용 충전기는 정부 방침에 따라서 나오긴 했지만 기업적 방어를 위해서</FONT></STRONG></P>
+<P><STRONG><FONT color=#400040>다이렇게 한답니다. 손님께서 충전기에 꼽아서 충전하시려면 저의껄 구입하시구요,</FONT></STRONG></P>
+<P><STRONG>싫으시다면&nbsp;짹꼽는곳에 꼽아서 충전하셔도 됩니다.</STRONG></P>
+<P>&nbsp;</P>
+<P>스카이는 다르다구요? 매일 선전에 다르다고하는데 머가 다른겁니까?</P>
+<P>제가 계속 묻자 당황하면서 위의 말을 계속 되풀이 하더군요. 지금까지 충전이 되질 않아 서비스</P>
+<P>센터에 간 수많은 사람들이 상황을 모르고, 사람이 많으니깐, 아마</P>
+<P>충전기를 구입했을껍니다. 알아야 할것은 알고 써야하는거 아닌가요?</P>
+<P>지금 정부용 충전기로 쓰고 계신분들 많을껍니다.</P>
+<P>&nbsp;</P>
+<P>텔레텍 충전기는 서비스 센터에서 밖에 팔지 않으니깐요.</P>
+<P>&nbsp;</P>
+<P>이것이 꼽는 충전기대와 호환이 안대서 터지거나 불이나거나 흔히 말하던 핸드폰 사고로</P>
+<P>이어질수 있습니다. 이런것을 알면서도 쉬쉬하면서 다른 핸드폰 회사도 똑같으니깐,</P>
+<P>또는 아무것도 모른체 소비자들에게 사라고만 하는 그런거 입니다.</P>
+<P>&nbsp;</P>
+<P>여러분들도 잘 알아보고 사시길 바립니다- -</P>
+<P>ps 좋은글은 선물을 준다.. 좋은글 내용이 다 서비스가 좋다, 너무 핸드폰이 좋다</P>
+<P>이런내용들 뿐이군요.ㅋ 불만게시판은 아에없구요.ㅋ</P></span></DIV>
+										<!-- 덧글 보기 -->
+										
+												<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:10PX;">
+													<TR>
+														<TD COLSPAN="3" HEIGHT="4" BGCOLOR="#E7D2D2"></TD>
+													</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl1_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl1_CmtName">이오영</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl1_CmtContent">저는 대리점에서 &#53605;레텍 충전기하고 플라스틱케이스 공짜로 주던데</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl1_CmtRegDate">2005/04/23 23:39</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl3_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_02.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl3_CmtName">최영완</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl3_CmtContent">SKY라고 스카이껏만 되는것아닌데요! 애니콜거 가지구 져 맨날<BR>큐리텔 스카이 다~완충했는데<BR>불만게시판은<BR>-기타-<BR>음...대리점 정품팔던데.....<BR>삼성에 어떤 마크드라? 있는데<BR>그마크 있는것 사세요. 정말..ㅠ</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl3_CmtRegDate">2005/04/20 21:00</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+											
+												<TR STYLE="PADDING:8PX 0PX 8PX 6PX; ">
+													<TD CLASS="BROWN_DARK2" width="15%">
+														<img id="Repeater1__ctl5_EmoticonID" class="BLT" src="http://file.isky.co.kr/images/user/community/bbs_emoticon_01.gif" alt="" align="AbsMiddle" border="0" />
+														
+														<span id="Repeater1__ctl5_CmtName">구진웅</span>
+													</TD>
+													<TD class="BROWN_DARK2" align="left" width="65%">
+														<span id="Repeater1__ctl5_CmtContent">- _-; 좀 난감하내요;</span>
+													</TD>
+													<TD ALIGN="RIGHT" width="20%">
+														<span id="Repeater1__ctl5_CmtRegDate">2005/04/20 01:37</span>
+														
+													</TD>
+												</TR>
+											
+												<TR>
+													<TD COLSPAN="3" HEIGHT="1" BGCOLOR="#E6E6E6"></TD>
+												</TR>
+				</table>
+				 
+				<!-- 덧글 쓰기 -->
+				<TABLE class="BD" cellSpacing="0" cellPadding="0" width="100%" bgColor="#f6f6f6">
+					<TR>
+						<TD colSpan="3"><IMG 
+				src="http://file.isky.co.kr/images/community/bbs_comment_title.gif" 
+				></TD>
+					</TR>
+					<TR vAlign="top" height="65">
+						<TD style="PADDING-LEFT: 10px" width="84"><input name="txtName" type="text" maxlength="20" readonly="readonly" id="txtName" onclick="javascript:jsPopUpLogin('/user/community/TalkTalk/TalkUseRead.aspx?pVal1%3d0%26pVal2%3d42320%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d'); return false;" /><BR>
+							<A onclick="LAYER('EMOTIOCON',1);" href="Javascript:;"><IMG 
+				src="http://file.isky.co.kr/images/com/bbs_button_choice_emoticon.gif" 
+				vspace=5></A><BR>
+							<DIV id="EMOTIOCON" style="DISPLAY: none"></DIV>
+							<DIV id="EMOTIOCON" style="MARGIN-TOP: -29px; DISPLAY: none; LEFT: 332px; POSITION: absolute"><input name="EmoticonImg" id="EmoticonImg" type="hidden" value="01" />
+								<TABLE cellSpacing="1" cellPadding="0" bgColor="#e7d2d2">
+									<TR>
+										<TD><A href="javascript:setEmoticon('01');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_01.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('02');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_02.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('03');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_03.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('04');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_04.gif" 
+					></A></TD>
+									</TR>
+									<TR>
+										<TD><A href="javascript:setEmoticon('05');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_05.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('06');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_06.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('07');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_07.gif" 
+					></A></TD>
+										<TD><A href="javascript:setEmoticon('08');"><IMG 
+					src="http://file.isky.co.kr/images/com/bbs_emoticon_08.gif" 
+					></A></TD>
+									</TR>
+								</TABLE>
+							</DIV>
+						</TD>
+						<TD width="501"><textarea name="txtCmt" id="txtCmt" onkeydown="return CheckByte(this, 200)" onclick="javascript:jsPopUpLogin('/user/community/TalkTalk/TalkUseRead.aspx?pVal1%3d0%26pVal2%3d42320%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d'); return false;"></textarea></TD>
+						<TD width="75"><input type="image" name="btnCmt" id="btnCmt" onclick="javascript:jsPopUpLogin('/user/community/TalkTalk/TalkUseRead.aspx?pVal1%3d0%26pVal2%3d42320%26pVal4%3d%26pVal5%3d%26pVal6%3d%26pVal9%3d%26pVal10%3d'); return false;" src="http://file.isky.co.kr/images/community/bbs_button_comment.gif" alt="" /></TD>
+					</TR>
+				</TABLE>
+				<!-- 버튼들 -->
+				<TABLE style="MARGIN-BOTTOM: 7px" cellSpacing="0" cellPadding="0" width="100%">
+					<TR>
+						<TD style="PADDING-TOP: 6px" align="right" height="43">
+							<a id="btnPrint" href="javascript:goPrint();"><img src="http://file.isky.co.kr/images/user/community/bbs_button_print.gif" alt="" border="0" /></a>
+							
+							
+							
+							
+							<A href="javascript:goList();"><IMG src="http://file.isky.co.kr/images/user/community/bbs_button_list.gif"></A>
+						</TD>
+					</TR>
+					<TR>
+						<TD bgColor="#e7d2d2" height="1"></TD>
+					</TR>
+				</TABLE>
+				<!-- 버튼들 -->
+				<TABLE cellSpacing="0" cellPadding="0">
+					<TR>
+						<TD><a id="lnkNext" class="BROWN_DARK2" href="TalkUseRead.aspx?pVal1=0&amp;pVal2=42343&amp;pVal4=&amp;pVal5=&amp;pVal9=&amp;pVal10="><img src='http://file.isky.co.kr/images/com/bbs_bullet_next.gif' align='absmiddle' border='0'>카메라가 이상해서요ㅠ [6] [답변:1]</a><BR>
+							<a id="lnkPrev" class="BROWN_DARK2" href="TalkUseRead.aspx?pVal1=0&amp;pVal2=42295&amp;pVal4=&amp;pVal5=&amp;pVal9=&amp;pVal10="><img src='http://file.isky.co.kr/images/com/bbs_bullet_prev.gif' align='absmiddle' border='0'>사진에 관한 질문이요~~ [1] [답변:1]</a></TD>
+					</TR>
+				</TABLE>
+			</div>
+			<!--본문내용 들어가는 곳//-->
+			<table cellSpacing="0" cellPadding="0" width="100%">
+				<tr>
+					<td>
+<!-- 하단 --><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT><FONT face="굴림"></FONT>
+<br>
+<br>
+<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+	height="85" width="690" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="Src" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="WMode" VALUE="transparent">
+	<embed src="http://file.isky.co.kr/flash/footer/footer.swf" width=85 height=690 />
+</OBJECT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT></td>
+				</tr>
+			</table>
+			</DIV></TD></TR></TBODY></TABLE></DIV><input name="Poster1:PostValue1" id="Poster1_PostValue1" type="hidden" /><input name="Poster1:PostValue2" id="Poster1_PostValue2" type="hidden" value="42320" /><input name="Poster1:PostValue3" id="Poster1_PostValue3" type="hidden" /><input name="Poster1:PostValue4" id="Poster1_PostValue4" type="hidden" /><input name="Poster1:PostValue5" id="Poster1_PostValue5" type="hidden" /><input name="Poster1:PostValue6" id="Poster1_PostValue6" type="hidden" /><input name="Poster1:PostValue7" id="Poster1_PostValue7" type="hidden" /><input name="Poster1:PostValue8" id="Poster1_PostValue8" type="hidden" /><input name="Poster1:PostValue9" id="Poster1_PostValue9" type="hidden" /><input name="Poster1:PostValue10" id="Poster1_PostValue10" type="hidden" />
+</form>
+	</body>
+</HTML>

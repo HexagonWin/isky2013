@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1257" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOuwlOydtOufrOyKpCDssrTtgawg7ZSE66Gc6re4656o7J2064KYIOyKpO2MjOydtOybqOyWtCDsoJzqsbAg7ZSE66Gc6re4656o7J2EIO2Gte2VtCDtlbTqsrAg6rCA64ql7ZWY64uk6rOgIO2WiOuKlOuNsCDqtazssrTsoIHsnbgg7ZW06rKwIOuwqeuyleydtCDslrTrlrvqsowg65CY64qU7KeA7JqUPzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87Jqw7ISgIFtodHRwOi8vY2xpbmljLmFobmxhYi5jb20vY2xpbmljL3NweXplcm8uanNwXSDsgqzsnbTtirjsl5DshJwg67CU7J2065+s7Iqk7JeQIOqwkOyXvOuQmOyXiOuKlOyngCDrrLTro4zroZwg7ZmV7J247ZWgIOyImCDsnojsirXri4jri6QuIOuLqCwg7LmY66OM64qUIOycoOujjOuhnCDtmozsm5DqsIDsnoXtlZjsl6wg7J207Jqp7J20IOqwgOuKpe2VqeuLiOuLpC4g7JWF7ISxIOuwlOydtOufrOyKpOydtOuvgOuhnCDsnIjrj4TsmrAg7JWI7KCE66qo65Oc66GcIOuTpOyWtOqwgOyEnCDsuZjro4ztlZjshZTslbwg7ZWp64uI64ukLjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">바이러스 체크 프로그램이나 스파이웨어 제거 프로그램을 통해 해결 가능하다고 했는데 구체적인 해결 방법이 어떻게 되는지요?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">우선 [http://clinic.ahnlab.com/clinic/spyzero.jsp] 사이트에서 바이러스에 감염되었는지 무료로 확인할 수 있습니다. 단, 치료는 유료로 회원가입하여 이용이 가능합니다. 악성 바이러스이므로 윈도우 안전모드로 들어가서 치료하셔야 합니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,79 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/member/pop_findidpw.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/popup_style.css">
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<Script Language='JavaScript'>
+
+	function OnConfirm()
+	{
+		opener.parent.location.href='/member/login.jsp'; 
+		self.close();
+	}
+
+</Script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="326" border="0" cellspacing="0" cellpadding="0" style="border:7px solid #cfd0d2; background-color:#ffffff;">
+	<tr>
+		<td valign="top" style="padding:15px 9px 0 9px;">
+			<table width="308" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="top"><img src="/static/images/member/popup/title_search_idpw.gif"></td>
+				</tr>
+				<tr>
+					<td valign="top" class="p20t">
+
+
+
+
+
+					</td>
+				</tr>
+				<tr>
+					<td class="p5t" align="center"><a href="javascript:OnConfirm()" target="_parent" onFocus="this.blur();"><img src="/static/images/member/btn_confirm.gif" hspace="4"></a></td>
+				</tr>
+				<!-- 닫기 버튼 -->			
+				<tr>
+					<td valign="top" align="right" style="padding-top:20px;"><a href="javascript:window.close();"><img src="/static/images/member/popup/close.gif" border="0"></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

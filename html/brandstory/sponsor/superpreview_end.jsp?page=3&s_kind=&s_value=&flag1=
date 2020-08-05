@@ -1,0 +1,320 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/brandstory/sponsor/superpreview_end.jsp">
+
+	<input type="hidden" name="page" value="3">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="s_value" value="">
+
+	<input type="hidden" name="flag1" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function goView(form, eventid,flag1){
+		form.action = "superpreview_view.jsp";
+		form.eventid.value = eventid;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+	function goPrize(form, eventid,flag1){
+		form.action = "superpreview_prize_view.jsp";
+		form.eventid.value = eventid;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+	function goPrizelist(form){
+		form.action = "superpreview_prize.jsp";
+		form.page.value = 1;
+		form.submit();
+	}
+	function goList(form){
+		form.action = "superpreview.jsp"
+		form.page.value = 1;
+		form.submit();
+	}
+	function goList1(form){
+		form.action = "superpreview_end.jsp";
+		form.page.value = 1;
+		form.submit();
+	}
+//-->
+</SCRIPT>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+</head>
+<body>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="3">
+	<input type="hidden" name="s_kind" value="">
+	<input type="hidden" name="s_value" value="">
+	<input type="hidden" name="flag1">
+	<input type="hidden" name="eventid">
+</form>
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,1,3);var gocn=2;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(1);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/brand/t_superpreview.gif" height="52"></div>
+				<div id="Path"><script>path('2_1_3')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+                   <div class="p_b15"><img src="http://www.isky.co.kr/source/img/brand/pr/sky_superpreview_t.gif" ></div>
+					<div class="tab m_b20"><a href="javascript:goList(iForm)"><img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_tab01.gif" height="32"></a><a href="javascript:goList1(iForm)"><img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_tab02_.gif" height="32"></a><a href="javascript:goPrizelist(iForm)"><img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_tab03.gif" height="32"></a></div>
+					
+
+					<!-- 이벤트 리스트 -->
+					<!-- 반복 //-->
+<div>
+
+				<div class='box8 m_b10 L'>
+					<div><img src="http://www.isky.co.kr/source/img/global/box8_top.gif" height="10"></div>
+						<div style="padding:5 9 0 9;height:290;">
+							<div class="L">
+								<div class="photo_out" style="width:258">
+									<div class="photo_in">
+								<img src='http://file.isky.co.kr/upload/event/가문의부활.jpg' align=center>
+
+									</div>
+								</div>
+							</div>
+							<div class="R" style="width:260;">
+								<div style="height:30" class="w_dot1">
+									<div class="L p_t8 p_l5">
+										
+										<div class="m_t8 b 9">SKY 수퍼프리뷰Ⅵ &#8211; 가문의 부활</div>
+									</div>
+									<div class="R">
+										
+										
+									</div><span class="clear"></span>
+								</div>
+								<div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th01.gif" align="absmiddle" class="m_b2"> 09월 01일(금) ~ 09월 13일(수)
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th02.gif" align="absmiddle" class="m_b2"> 
+								09월 13일(금)  iSKY홈페이지 공지 
+
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th03.gif" align="absmiddle" class="m_b2"> 50명(1인 2매)
+									</div>
+									<div align="right" style="padding:10PX 3px 0 0;">
+									
+									</div>
+								</div>
+							</div><span class="clear"></span>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box8_btm.gif" height="10"></div>
+				</div>
+
+				<div class='box8 m_b10 L m_l10'>
+					<div><img src="http://www.isky.co.kr/source/img/global/box8_top.gif" height="10"></div>
+						<div style="padding:5 9 0 9;height:290;">
+							<div class="L">
+								<div class="photo_out" style="width:258">
+									<div class="photo_in">
+								<img src='http://file.isky.co.kr/upload/event/뚝방전설.jpg' align=center>
+
+									</div>
+								</div>
+							</div>
+							<div class="R" style="width:260;">
+								<div style="height:30" class="w_dot1">
+									<div class="L p_t8 p_l5">
+										
+										<div class="m_t8 b 9">SKY 수퍼프리뷰Ⅴ - 뚝방전설</div>
+									</div>
+									<div class="R">
+										
+										
+									</div><span class="clear"></span>
+								</div>
+								<div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th01.gif" align="absmiddle" class="m_b2"> 08월 17일(목) ~ 08월 17일(목)
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th02.gif" align="absmiddle" class="m_b2"> 
+								08월 29일(목)  iSKY홈페이지 공지 
+
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th03.gif" align="absmiddle" class="m_b2"> 50명(1인 2매)
+									</div>
+									<div align="right" style="padding:10PX 3px 0 0;">
+									
+									</div>
+								</div>
+							</div><span class="clear"></span>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box8_btm.gif" height="10"></div>
+				</div>
+</div>
+<div>
+
+				<div class='box8 m_b10 L'>
+					<div><img src="http://www.isky.co.kr/source/img/global/box8_top.gif" height="10"></div>
+						<div style="padding:5 9 0 9;height:290;">
+							<div class="L">
+								<div class="photo_out" style="width:258">
+									<div class="photo_in">
+								<img src='http://file.isky.co.kr/upload/event/괴물.jpg' align=center>
+
+									</div>
+								</div>
+							</div>
+							<div class="R" style="width:260;">
+								<div style="height:30" class="w_dot1">
+									<div class="L p_t8 p_l5">
+										
+										<div class="m_t8 b 9">SKY 수퍼프리뷰Ⅳ - 괴물</div>
+									</div>
+									<div class="R">
+										
+										
+									</div><span class="clear"></span>
+								</div>
+								<div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th01.gif" align="absmiddle" class="m_b2"> 07월 06일(목) ~ 07월 13일(목)
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th02.gif" align="absmiddle" class="m_b2"> 
+								07월 13일(목)  iSKY홈페이지 공지 
+
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th03.gif" align="absmiddle" class="m_b2"> 50명(1인 2매)
+									</div>
+									<div align="right" style="padding:10PX 3px 0 0;">
+									
+									</div>
+								</div>
+							</div><span class="clear"></span>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box8_btm.gif" height="10"></div>
+				</div>
+
+				<div class='box8 m_b10 L m_l10'>
+					<div><img src="http://www.isky.co.kr/source/img/global/box8_top.gif" height="10"></div>
+						<div style="padding:5 9 0 9;height:290;">
+							<div class="L">
+								<div class="photo_out" style="width:258">
+									<div class="photo_in">
+								<img src='http://file.isky.co.kr/upload/event/수퍼맨리턴.jpg' align=center>
+
+									</div>
+								</div>
+							</div>
+							<div class="R" style="width:260;">
+								<div style="height:30" class="w_dot1">
+									<div class="L p_t8 p_l5">
+										
+										<div class="m_t8 b 9">SKY 수퍼프리뷰Ⅲ - 슈퍼맨 리턴즈</div>
+									</div>
+									<div class="R">
+										
+										
+									</div><span class="clear"></span>
+								</div>
+								<div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th01.gif" align="absmiddle" class="m_b2"> 06월 14일(수) ~ 06월 23일(금)
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th02.gif" align="absmiddle" class="m_b2"> 
+								06월 26일(수)  iSKY홈페이지 공지 
+
+									</div>
+									<div class="m_t5">
+										<img src="http://www.isky.co.kr/source/img/brand/pr/superpreview_th03.gif" align="absmiddle" class="m_b2"> 60명(1인 2매)
+									</div>
+									<div align="right" style="padding:10PX 3px 0 0;">
+									
+									</div>
+								</div>
+							</div><span class="clear"></span>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box8_btm.gif" height="10"></div>
+				</div>
+</div>
+
+					<!--// 반복 -->
+
+					<!-- page //-->
+					<div class="page clear">
+						<img src='http://www.isky.co.kr/source/img/bbs/page_prev.gif' width='36' height='10' class='aT'><a href=superpreview_end.jsp?page=1&s_kind=&s_value=&flag1=>1</a>&nbsp;|&nbsp;&nbsp;<a href=superpreview_end.jsp?page=2&s_kind=&s_value=&flag1=>2</a>&nbsp;|&nbsp;&nbsp;<b>3</b>&nbsp;|&nbsp;&nbsp;<a href=superpreview_end.jsp?page=4&s_kind=&s_value=&flag1=>4</a>&nbsp;<img src='http://www.isky.co.kr/source/img/bbs/page_next.gif' width='36' height='10' class='aT'>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+			<div id="ContR">
+					<!--div class="m_t10"><img src="http://www.isky.co.kr/source/img/global/right_musthave_t.gif" width="150" height="36"></div-->
+					
+
+		</div>
+
+					<!--div class="m_t10"><img src="http://www.isky.co.kr/source/img/global/right_adevent_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img01.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img02.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img03.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div-->
+				
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

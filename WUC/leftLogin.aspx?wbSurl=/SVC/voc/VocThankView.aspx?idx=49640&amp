@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+  <HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<script>
+			//로그인 처리
+			function jsLogin(){
+				form = document.formleftlogin;
+				if(form.wbUserID.value == ""){
+					alert("아이디를 확인하세요.");
+					form.wbUserID.focus();
+					return;
+				}
+				if(form.wbPasswd.value == ""){
+					alert("비밀번호를 확인하세요.");
+					form.wbPasswd.focus();
+					return;
+				}
+				form.action = "http://www.isky.co.kr/WUC/authAction.aspx?method=leftlogin";
+				form.submit();
+			}
+			
+			//회원가입
+			function jsJoin(){
+				top.document.location.href = "http://www.isky.co.kr/User/member/membernameCheck.aspx";
+			}
+
+			//아이디/비밀번호 찾기
+			function jsLost(){
+				top.document.location.href = "http://www.isky.co.kr/User/member/memberLost.aspx";
+			}
+
+		</script>
+</HEAD>
+	<body>
+		<form name="formleftlogin" action="" method="post" onsubmit="return false;">
+		<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="222" HEIGHT="138">
+		<!-- 로그인 폼 -->
+		<TR VALIGN="top" HEIGHT=79>
+			<TD BACKGROUND="http://file.isky.co.kr/images/com/left_mypage_login_1.jpg">
+				<DIV STYLE="MARGIN-LEFT:18px; LINE-HEIGHT:16px; HEIGHT:20px" CLASS="SMALL BROWN_DARK">
+					SKY를 방문해주셔서 감사합니다.
+				</DIV>
+      <TABLE cellSpacing=0 cellPadding=0 ?>
+        <TR vAlign=top>
+          <TD width=38></TD>
+          <TD width=94>
+				<INPUT class="NO" 
+            STYLE="BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; MARGIN-TOP: 3px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 88px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px" 
+            type=text maxLength=12 name=wbUserID><br>
+						<INPUT TYPE="password" name="wbPasswd" maxlength="12" class="NO" STYLE="BORDER-RIGHT:0px; PADDING-RIGHT:0px; BORDER-TOP:0px; MARGIN-TOP:5px; PADDING-LEFT:0px; PADDING-BOTTOM:0px; BORDER-LEFT:0px; WIDTH:88px; PADDING-TOP:0px; BORDER-BOTTOM:0px" ><br></TD>
+					<TD WIDTH=61><INPUT TYPE="image" class="NO" onclick="jsLogin();" SRC="http://file.isky.co.kr/images/com/left_mypage_login_btn_login.gif" align=absMiddle STYLE="WIDTH:61px;HEIGHT:51px"></TD></TR></TABLE>
+					</TD>
+				</TR>
+		<TR HEIGHT=16>
+			<TD BACKGROUND="http://file.isky.co.kr/images/com/left_mypage_login_2.jpg">
+				<DIV STYLE="MARGIN-LEFT:37px">
+					<a href="javascript:jsJoin();"><IMG SRC="http://file.isky.co.kr/images/com/left_mypage_login_btn_join.gif" align=absMiddle></a>&nbsp;
+					<a href="javascript:jsLost();"><IMG SRC="http://file.isky.co.kr/images/com/left_mypage_login_btn_find.gif" align=absMiddle></a>
+				</DIV>
+			</TD>
+		</TR>
+		<TR HEIGHT=43><TD><IMG SRC="http://file.isky.co.kr/images/com/left_mypage_login_3.jpg"></TD></TR>
+				</TABLE>
+		<input type="hidden" name="wbSurl" value="/Svc/voc/VocThankView.aspx?idx=49640">
+		<input type="hidden" name="wbFurl" value="">
+		<input type="hidden" name="wbExt" value="">
+		</form>
+	</body>
+</HTML>

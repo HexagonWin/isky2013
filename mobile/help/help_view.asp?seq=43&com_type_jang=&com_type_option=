@@ -1,0 +1,178 @@
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=ks_c_5601-1987">
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+
+<!-- 공통 js -css 영역 -->
+<script language="JavaScript">
+ function GetXmlHttpHtml(Param)
+{	//alert(Param);
+	var PageName = "http://www.isky.co.kr/mobile/include/method/help.asp?param="+Param;
+	var html = "";
+	
+	 var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+         xmlhttp.open("POST", PageName, "false");
+	 xmlhttp.send();
+	 var strv = xmlhttp.responseText;
+	 Html = strv;
+	 return Html;
+	 
+	 
+	 
+	 
+	 
+}
+function OnSearch()
+{
+	var form = document.form_send; 
+	form.submit();	 
+}
+</script>
+</head>
+<body onload="SelectScriptSelect('');">
+<!-- 400*500 -->
+<center>
+<form name="form_send" method="post" action="help.asp" >
+<table width="380" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<tr>
+	<td>
+		<table width="380" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+		<tr>
+			<td><IMG SRC="http://file.isky.co.kr/images/mobile/pop_img_top_left1.gif" WIDTH="4" HEIGHT="40"></td>
+			<td width="372" bgcolor="691C1C">
+				<table cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td style="padding-left:7px"><IMG SRC="http://file.isky.co.kr/images/mobile/pop_tle07.gif"></td>
+					<td align="right" style="padding-right:7px"><a href="javascript:self.close()"><IMG SRC="http://file.isky.co.kr/images/mobile/pop_btn_close1.gif" WIDTH="38" HEIGHT="11"></a></td>
+				</tr>
+				</table>
+			</td>
+			<td><IMG SRC="http://file.isky.co.kr/images/mobile/pop_img_top_right1.gif" WIDTH="4" HEIGHT="40"></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td style="padding:18 0 12 12"><IMG SRC="http://file.isky.co.kr/images/mobile/pop_bullet.gif" WIDTH="3" HEIGHT="3" vspace="5"> 이용하실 서비스를 선택한 후 검색 버튼을 눌러주세요.</td>
+</tr>
+<tr>
+	<td style="padding:0 0 10 0" align="center">
+		<table width="380" cellpadding="0" cellspacing="0">
+		<TR>
+			<TD><img src="http://file.isky.co.kr/images/mobile/pop_box_top01.gif" width="380" height="4"></TD>
+		</TR>
+		<TR>
+			<TD background="http://file.isky.co.kr/images/mobile/pop_box_bg01.gif" width="380" style="padding:7 0 7 7">
+			<table width="360" cellpadding="0" cellspacing="0">
+			<tr>
+			  <td><img src="http://file.isky.co.kr/images/mobile/pop_txt_choiceservice.gif" align="absmiddle"></td>
+			  <td>
+			    
+			  	<SCRIPT LANGUAGE="Javascript">
+			  	function SelectScriptSelect(CtrlID)
+				{
+					var SelObj = CtrlID;
+					var i=0;
+					var SSObj = SSOBJ_2; 
+					
+					SelFlag2 = false;
+					for(i=SSObj.options.length-1; 0 < i; i--)
+					{
+					SSObj.deleteOption(i);
+					}
+				
+					
+					var OptsArryStr = GetXmlHttpHtml(SelObj);
+					if("" == OptsArryStr) return;
+					var OptsArry = OptsArryStr.split('|');
+					
+					var OptsHtml = "";
+					
+					for(i=0; i < OptsArry.length-1; i=i+2)
+					{
+						SSObj.insertOption(OptsArry[i], OptsArry[i+1]);
+						OptsHtml += "<OPTION VALUE='"+OptsArry[i]+"'>"+OptsArry[i+1]+"</OPTION>"
+												
+					}
+					document.getElementById('ScripSelect2_TxtOptsHtml').value = OptsHtml;
+					SelFlag2 = true;
+					var SSOBJ_1 = document.getElementById('SS_2');
+					if(CtrlID == ""){
+						SSOBJ_1.value = "";
+						var SelIndex = SSOBJ_1.selectedIndex;
+					}
+				}
+				SELECT("<SELECT NAME='com_type_jang' STYLE='WIDTH:90PX;' onchange=SelectScriptSelect(this.value)>\n"
+				+"  <OPTION VALUE=''>전체</OPTION>\n"
+				
+		                +"  <OPTION VALUE='002' >모바일정책</OPTION>\n"
+				
+		                +"  <OPTION VALUE='003' >벨소리</OPTION>\n"
+				
+		                +"  <OPTION VALUE='004' >캐릭터/포토</OPTION>\n"
+				
+		                +"  <OPTION VALUE='005' >SMS</OPTION>\n"
+				
+		                +"  <OPTION VALUE='006' >휴대폰주소록</OPTION>\n"
+				
+		                +"  <OPTION VALUE='007' >포토앨범</OPTION>\n"
+				
+				+"</SELECT>");
+				</SCRIPT>
+			  </td>
+			  <td><img src="http://file.isky.co.kr/images/mobile/pop_txt_choicemenu.gif" align="absmiddle"></td>
+			  <td>
+<SCRIPT language="Javascript">
+var SSOBJ_2 = SELECT("<SELECT ID='SS_2' NAME='com_type_option' STYLE='WIDTH:120PX;'><OPTION VALUE=''>전체</OPTION></SELECT>", 'SS_2', '10');
+</SCRIPT>
+<input name="TxtOptsHtml" id="ScripSelect2_TxtOptsHtml" type="hidden" />
+			  </td>
+			  <td><a href="javascript:OnSearch();"><img src="http://file.isky.co.kr/images/mobile/pop_btn_search.gif" align="absmiddle"></a></td>
+			</tr>
+			</table>
+			</td>
+		</TR>
+		<TR>
+			<TD><img src="http://file.isky.co.kr/images/mobile/pop_box_btm01.gif" width="380" height="4" border="0"></TD>
+		</TR>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td background="http://file.isky.co.kr/images/mobile/pop_dot.gif" HEIGHT="1"></td>
+</tr>
+<tr>
+	<td style="padding:10 0 0 0">
+		<div style="width:378px; height:300px;; overflow-y:scroll">
+		  
+		<table width="364" cellpadding="0" cellspacing="0">
+		<tr>
+		  <td onmouseover="this.style.background='#f7f7f7'" onmouseout="this.style.background='#ffffff'"><b>[제목]</b>그룹전송을 하려면 어떻게 하는 건가요.</td>
+		</tr>
+		<tr>
+		  <td><IMG SRC="http://file.isky.co.kr/images/mobile/pop_box_btm.gif" WIDTH="364" HEIGHT="5"></td>
+		</tr>
+		<tr>
+		  <td><br>일반 문자 메시지의 경우 한번에 최대 50명에게 전송 가능하며,<BR>그룹 메시지의 경우 최대 100명에게 전송하실 수 있습니다.<BR>단, 그룹 메시지를 이용하실 경우에는<BR>받는 사람 번호가 주소록에 등록이 되어 있어야 합니다.</td>
+		</tr>
+		</table>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td><a href="help.asp?com_type_jang=&com_type_option="><img src="http://file.isky.co.kr/images/com/bbs_button_list.gif" border="0"></a></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

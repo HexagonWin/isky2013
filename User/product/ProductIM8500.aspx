@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>ProductIM8500</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT>
+		<script language="javascript">
+function url() {
+	//window.open ("http://www.isky.co.kr/User/product/ProductMerit.aspx?PrdID=IM-8500");
+	window.location.href="http://www.isky.co.kr/User/product/ProductMerit.aspx?PrdID=IM-8500";
+}
+
+</script>
+	</HEAD>
+	<body bgcolor="#000000">
+		<form name="Form1" method="post" action="ProductIM8500.aspx" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDw1OTUwMzM2Mzc7Oz4=" />
+
+		<center>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="670" height="620" id="pop" align="middle" VIEWASTEXT>
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="pop.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<embed src="pop.swf" quality="high" bgcolor="#ffffff" width="670" height="620" name="pop" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</center>
+
+		</form>
+	</body>
+</HTML>

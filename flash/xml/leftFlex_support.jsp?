@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="euc-kr"?>
+<Support>
+	<Manager>
+		<row>
+			<PhoneName><![CDATA[[IM-R300]]]></PhoneName>
+			<Ver><![CDATA[2.22]]></Ver>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=346]]></Link>
+		</row>
+		<row>
+			<PhoneName><![CDATA[[IM-U300K]]]></PhoneName>
+			<Ver><![CDATA[1.35]]></Ver>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=345]]></Link>
+		</row>
+		<row>
+			<PhoneName><![CDATA[[IM-S330]]]></PhoneName>
+			<Ver><![CDATA[1.22c]]></Ver>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=340]]></Link>
+		</row>
+	</Manager>
+	<USBDrv>
+		<row>
+			<Title><![CDATA[[1.0] IM-S310L ]]></Title>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=309]]></Link>
+		</row>
+		<row>
+			<Title><![CDATA[[1.0] IM-S320K/IM-S33..]]></Title>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=308]]></Link>
+		</row>
+		<row>
+			<Title><![CDATA[[1.0] IM-S320/IM-S330..]]></Title>
+			<Link><![CDATA[/cs/self/sw_download.jsp?idx=307]]></Link>
+		</row>
+	</USBDrv>
+</Support>

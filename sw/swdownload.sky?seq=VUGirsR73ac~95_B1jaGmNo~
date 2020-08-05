@@ -1,0 +1,259 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/software/softwareinfo.sky?seq=VUGirsR73ac~95_B1jaGmNo~[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/software/softwareinfo.sky?seq=VUGirsR73ac~95_B1jaGmNo~[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/software/softwareinfo.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120318");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/sw/sw.js"></script>
+<script>var dispNum="050301"; var firstDepth ="05";</script>
+<script>
+//로그인 여부 
+var loginCheck = "";
+var userId = "";
+var dn_url = "http://file.isky.co.kr/uploadCode/download.asp";
+var global_d = "http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp";
+var userHp = "";
+
+var LogTotal = "106";
+
+function goDown(url,fileName,modelName,intSeq,strSwVer, type){
+    // 로그인 상태 일시 바로 다운 로드 
+    
+    //var dn_path = dn_url+"?folder="+url+"&filename="+fileName;
+    var dn_path = "";
+
+    // 셀프업그레이드 간소화 URL 변경(2011-06-01)
+    if(fileName != null && fileName != "") {
+    	if(fileName == "IM_A780L_edictionary.zip"){
+    		dn_path = "http://csrfile.skyservice.co.kr/file/EDIC/" + fileName;
+        }else if(fileName == "IM_A780L_UserManual[2].zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USM/" + fileName;
+        }else if(fileName == "IMA760S_edictionary.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/EDIC/" + fileName;
+        }else if(fileName == "IMA760S_PHOTO.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/PTP/" + fileName;
+        }else if(fileName == "IMA760S_UserManual03.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USM/" + fileName;
+        }else if(fileName == "IMA770K_edictionary[1].zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/EDIC/" + fileName;
+        }else if(fileName == "IMA770K_PHOTO.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/PTP/" + fileName;
+        }else if(fileName == "IMA770K_UserManual03.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USM/" + fileName;
+        }else if(fileName == "IMA780L_PHOTO.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/PTP/" + fileName;
+        }else if(fileName == "DataManagerPlus4_v40379.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "DataManagerPlus4_v40360.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "DataManagerPlus4_IMT100K.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "DataManagerPlus4_IMA800S_v40404.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "IMA760S_UniUSBDriver.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "IMA800S_USBDriver.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "UniUSBDriver_IMA725L.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "UniUSBDriver_v355[2].zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "USBDriver_V3550.zip"){
+            dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "DataManagerPlus4_IMA810S_v40416.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "IMA810S_USBDriver.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "DataManagerPlus4_IMA800K_v40417.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "IMA810K_USBDriver.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "DataManagerPlus4_Setup_v40424.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "IMA775C_USBDriver.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else if(fileName == "DataManagerPlus4_IMA820L_v40426.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/DMP/" + fileName;
+        }else if(fileName == "IMA820L_USBDriver.zip"){
+        	dn_path = "http://csrfile.skyservice.co.kr/file/USB/" + fileName;
+        }else{
+        	dn_path = dn_url+"?folder="+url+"&filename="+encodeURI(fileName);
+        }
+    } else {
+        dn_path = url;
+        global_d = url;
+    }
+    if(loginCheck=='true'){
+        var nameLen = fileName.length;
+        if(type == 'UMF' && (nameLen < 0 || fileName.substring(nameLen - 3, nameLen) != 'zip')){
+            
+            if(LogTotal >= maxConnect){
+                downError();
+        
+            }else{
+                //window.open(global_d+"?userid="+userId+"&hpno="+userHp, '',"width=720,height=480,toolbar=no,status=no,scrollbars=no");  
+                window.open(global_d, '',"width=800,height=540,toolbar=no,status=no,scrollbars=no");  
+                saveSelfDownloadLogMember(userId,modelName);
+                //return false;
+            }
+        }else{
+            //filedownload.location.href = dn_path;
+            
+            if(type == "APM"){
+                popCwin('/sw/app_manual.sky','appManual','615','524','no');
+            }else if (type == 'SKYME'){
+            	popCwin('/sw/app_skyme.sky','appSkyme','440','470','no');
+            }else if (type == 'EMANUAL'){
+                popCwin('/product/popup/popEmanual.jsp','emanual','654','606','no');
+            }
+            else{
+                DownloadWin(dn_path);
+            }
+            
+            //다운로드 로그 저장 
+            //saveUsbDownloadLogMember(userId,intSeq);
+            fileLog.location.href = "/cs/saveUsbDownloadLog.sky?strUserId="+userId+"&intSwSeq="+intSeq;
+        }
+    }else{
+
+        if(type == 'UMF' && (nameLen < 0 || fileName.substring(nameLen - 3, nameLen) != 'zip')){
+            softFileDown(url,fileName,modelName,intSeq,strSwVer, '20006');
+        }else{
+
+            if(type == "APM"){
+                popCwin('/sw/app_manual.sky','appManual','615','524','no');
+            }else if (type == 'SKYME'){
+                popCwin('/sw/app_skyme.sky','appSkyme','440','470','no');
+            }else if (type == 'EMANUAL'){
+                popCwin('/product/popup/popEmanual.jsp','emanual','654','606','no');
+            }else{
+                softFileDown(url,fileName,modelName,intSeq,strSwVer, type);
+            }
+
+        }
+    }
+}
+
+function DownloadWin(url){
+    var height = screen.height;
+    var width = screen.width;
+    var leftpos = width / 2 - 150;
+    var toppos = height / 2 - 100;
+    
+    window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+            
+}
+</script>
+</head>
+<body>
+    <form name="fileDownload" method="post">
+        <input type="hidden" name="strUserId"/>
+        <input type="hidden" name="strUserHpNo"/>
+        <input type="hidden" name="strModelName"/>
+        <input type="hidden" name="strFwVer"/>
+        <input type="hidden" name="strSerialNo"/>
+        <input type="hidden" name="strGuestIp"/>
+        <input type="hidden" name="usbDownloadUrl"/>
+        <input type="hidden" name="searchPrdCode"/>
+            <div class="product_view_cont01">
+            <table width="" cellpadding="0" cellspacing="1" border="0" bgcolor="#aaaaaa">
+            <colgroup>
+                <col width="183"/>
+                <col width="183"/>
+                <col width="183"/>
+                <col width="183"/>
+            </colgroup>
+                
+                <tr valign="top"><td><a href="javascript:goDown('http://dmfile.isky.co.kr/NewSelfUpgrade/index.html','','IM-A600S','4407','2.21','UMF')"><img src="/static/images/software/swdownload_umf.gif" /></a></td><td><a href="javascript:goDown('software/EDIC','IM600S_edictionary.zip','IM-A600S','4098','1','EDIC')"><img src="/static/images/software/swdownload_edic.gif" /></a></td><td><a href="javascript:goDown('software/FUM','IMA600S_FroyoUserManual.zip','IM-A600S','4050','1','FUM')"><img src="/static/images/software/swdownload_usmp.gif" /></a></td><td><a href="javascript:goDown('software/DMP','DataManagerPlus4_Setup_v4.03.41.zip','IM-A600S','4033','4.03.41','DMP')"><img src="/static/images/software/swdownload_dmp.gif" /></a></td></tr><tr valign="top"><td><a href="javascript:goDown('software/USB','UniUSBDriver_v3.1.1.zip','IM-A600S','4032','1.0','USB')"><img src="/static/images/software/swdownload_usb.gif" /></a></td><td><a href="javascript:goDown('software/DMP','MessageBackup.zip','IM-A600S','4028','1.0','BAK')"><img src="/static/images/software/data-backup.jpg" /></a></td><td><a href="javascript:goDown('software/APM','swdownload_apm.gif','IM-A600S','3771','1.0','APM')"><img src="/static/images/software/swdownload_apm.gif" /></a></td><td><a href="javascript:goDown('software/PBM','IMA600S_PBM.zip','IM-A600S','3641','1','PBM')"><img src="/static/images/software/swdownload_pbm.gif" /></a></td></tr><tr valign="top"><td><a href="javascript:goDown('software/ADB','IMA600S_ADB.zip','IM-A600S','3640','1','ADB')"><img src="/static/images/software/swdownload_adb.gif" /></a></td><td><a href="javascript:goDown('software/USM','IMA600S_UserManual[1].zip','IM-A600S','3617','0507','USM')"><img src="/static/images/software/swdownload_usm.gif" /></a></td><td><a href="javascript:goDown('software/PTP','IMA600S_PHOTO[1].zip','IM-A600S','3616','1','PTP')"><img src="/static/images/software/swdownload_ptp.gif" /></a></td><td><a href="javascript:goDown('software/MOV','IMA600S_SKYPlayer.zip','IM-A600S','3584','1','MOV')"><img src="/static/images/software/swdownload_mov.gif" /></a></td></tr>
+            </table>
+            </div>  
+    </form>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+<iframe id="fileLog" name="fileLog" width="0" height="0"></iframe>
+</body>
+</html>

@@ -1,0 +1,294 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event/event_snow.sky";
+
+	function go_login(){
+		//var url = "https://member.isky.co.kr:444/login.sky";
+		var url = "http://www.isky.co.kr/login.sky";
+			
+		url += "?p_url=http://www.isky.co.kr:80/etc/event/event_snow.sky";
+		
+		
+		location.href = url;	
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event/event_snow.jsp");
+	}
+	
+//-->
+</script>
+
+
+
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0906"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+
+
+<style type="text/css">
+<!--
+div.evsnow h1,div.evsnow p,div.evsnow ul,div.evsnow li,div.evsnow fieldset,evsnow form,div.evsnow form,div.evsnow dl,div.evsnow dt,div.evsnow dd {padding:0;margin:0;border:none;}
+div.evsnow {width:710px;}
+div.evsnow h1 {height:135px;margin:0;padding:0;}
+div.evsnow .product {position:relative;width:710px;height:495px;background:url('/static/images/etc/event/snow/snow_top05.jpg') left top no-repeat;}
+div.evsnow .product img {position:absolute;top:358px;left:465px;}
+div.evsnow .quiz {width:710px;height:215px;background:url('/static/images/etc/event/snow/snow_top06.jpg') left top no-repeat;}
+div.evsnow .quiz dl {width:478px;margin:0 auto;}
+div.evsnow .quiz dt {padding-top:23px;}
+div.evsnow .quiz dd {padding:10px 0 0 30px;}
+div.evsnow .quiz dd strong {display:block;float:left;width:45px;height:29px;}
+div.evsnow .quiz dd strong img {margin-top:6px;}
+div.evsnow .quiz dd div.text {float:left;width:117px;height:29px;background:url('/static/images/etc/event/snow/snow_quiz05.jpg') left top no-repeat;padding:8px 0 0 5px;}
+div.evsnow .quiz dd div.text input {border:0px;width:105px;font:12px 돋움;color:#cac9ca;}
+div.evsnow .quiz dd.btn {clear:both;text-align:center;*margin-top:-8px;}
+div.evsnow .gift {width:710px;height:188px;text-align:center;background:url('/static/images/etc/event/snow/snow_top07.jpg') left top no-repeat;}
+div.evsnow .gift ul {width:561px;margin:0 auto;}
+div.evsnow .gift ul li {float:left;width:187px;padding-top:30px;background:url('/static/images/etc/event/snow/snow_giftbg.jpg') left 35px no-repeat;}
+div.evsnow .gift ul li.first {background:none;}
+-->
+</style>
+<script language="javascript">
+
+	
+	
+		var isLogin = false;
+	
+	
+	var isEmpty = false;
+
+	function Event_Chk(){
+		var form = $('event');
+		var answer = "";
+
+		if(isLogin == false){
+			LoginConfirm('http://www.isky.co.kr/etc/event/event_snow.sky');
+			return;
+		}
+
+		if($('strResult').value == ""){
+			alert('정답을 입력해 주세요');
+			$('strResult').focus();
+			return;
+		}
+
+		answer = $('strResult').value;
+		
+		answer = answer.trim();
+
+		answer = answer.split(' ').join("");
+
+		if(answer == "듀퐁스노우"){
+			//정답!
+		}else{
+			alert('정답이 아닙니다. 다시 확인후 응모해 주세요');
+			$('strResult').focus();
+			return;
+		}
+
+		var ans = confirm('응모 하시겠습니까?');
+
+		if(ans == true){
+
+			form.action = "event_result_insert.sky";
+			form.target = "dataProcess";
+			form.method = "post";
+			form.submit();
+		}else{
+			return;
+		}
+	}
+
+	function LoginChk(){
+		if(isLogin == false){
+			LoginConfirm('http://www.isky.co.kr/etc/event/event_snow.sky');
+			return;
+		}else{
+			if(isEmpty == false){
+				$('strResult').value = "";
+				isEmpty = true;
+			}
+		}
+	}
+
+	String.prototype.trim = function(){ 
+        return this.replace(/(^\s*|\s*$|\n)/g,""); 
+	}
+
+	function PreventSubmitOnEnter()
+       {
+            if(event.keyCode==13)
+            {
+					
+				Event_Chk();
+                return false;
+            }
+        }
+        
+        function Load()
+        {
+            var inputs = document.getElementsByTagName("INPUT")         
+            for(var i = 0; i < inputs.length ; i++)
+            {               
+                if(inputs[i].type == "text")
+                {           
+                    inputs[i].attachEvent("onkeypress", PreventSubmitOnEnter);      
+                }
+            }
+        }
+
+</script>
+</head>
+<body onload="Load()">
+<form name="event" id="event">
+<input type="hidden" name="intEventSeq" value='368'>
+<input type="hidden" name="strGubun" value='1'>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0906&LogSess=N','740','26','','','transparent','')</script></div>
+<div id="Container">
+			<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0906','222','500','','','transparent','')</script></div>
+		</div>
+		
+	<div id="Content">
+				<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0906&LogSess=N','740','81','','','transparent','')</script></div>
+		
+		<!-- [s] page title 2 -->
+		<div class="ptitle2">
+			<ul>
+				<li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li>
+			</ul>
+		</div>
+		<!-- [e] page title 2 -->
+
+		<!-- [s] event contents -->
+		<div class="evsnow">
+			<h1><img src="/static/images/etc/event/snow/snow_top01.jpg" alt="im-u510s snow출시quiz이벤트" /></h1
+			><p><img src="/static/images/etc/event/snow/snow_top02.jpg" alt="Unique 홀드커버 디자인과 기존번호 유지를 위한 2G 전용 FULL터치폰, 소비자가 선호하는 기능을 모두 갖춘 IM-U510S의 스노우 컬러 출시! IM-U510S 스노우 컬러의 시크한 매력에 빠져 보세요." /><br
+			/><img src="/static/images/etc/event/snow/snow_top03.jpg" alt="퀴즈의 정답을 맞추시는 분들 중 추첨을 통해 푸짐한 경품을 드립니다." /><br
+			/><img src="/static/images/etc/event/snow/snow_top04.jpg" alt="응모 기간 : 10/29~11/12   당첨자 발표 : 11/19" /></p>
+			<div class="product"><a href="http://www.isky.co.kr/product/feature.sky?dispNum=0101&seq=TsO0kPsEfvo~ARvL7gVhzYU~" target="_blank"><img src="/static/images/etc/event/snow/snow_btn01.jpg" alt="IM-U510S 자세히 보기" /></a></div>
+			<div class="quiz"
+			><fieldset><dl
+				><dt><img src="/static/images/etc/event/snow/snow_quiz01.jpg" alt="빈 칸에 단어를 채워 주세요." /></dt
+				><dd><strong><img src="/static/images/etc/event/snow/snow_quiz02.jpg" alt="퀴즈" /></strong><img src="/static/images/etc/event/snow/snow_quiz04.jpg" alt="ㅇㅇ라이터의 클링사운드를 담은 ㅇㅇㅇ출시" /></dd
+				><dd><strong><img src="/static/images/etc/event/snow/snow_quiz03.jpg" alt="정답" /></strong><div class="text"
+				><input type="text" value="정답은 총 5글자" id="strResult" name="strResult" onfocus="LoginChk()"
+				/></dd
+				><dd class="btn"><a href="javascript:Event_Chk()"><img src="/static/images/etc/event/snow/snow_btn02.jpg" alt="응모하기" /></a></dd
+			></dl></fieldset
+			></div>
+			<div class="gift"><ul
+				><li class="first"><img src="/static/images/etc/event/snow/snow_gift01.jpg" alt="IM-U510S 스노우1대(2명)"/></li
+				><li><img src="/static/images/etc/event/snow/snow_gift02.jpg" alt="파스쿠찌 커피교환권(150명)"/></li
+				><li><img src="/static/images/etc/event/snow/snow_gift03.jpg" alt="스카이 10주년 기념 에코백(300명)"/></li
+			></ul></div>
+		</div>
+		<!-- [e] event contents -->
+
+	</div>
+	</div>
+	
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

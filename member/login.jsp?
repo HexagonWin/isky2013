@@ -1,0 +1,302 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/member/login.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script type="text/javascript" src="/static/js/member/member.js"></script>
+<script>var dispNum="1202"</script>
+<script language="javascript">
+/*
+function window.onload(){
+	document.form_login.userid.focus();
+}
+*/
+
+function go(){
+	form_login.userid.focus();
+}
+
+function go_View(form,idx)
+{
+	form.msgid.value = idx;
+	form.target = "_self";
+	form.action = "../cs/notice/notice_view.jsp";
+	form.submit();
+}
+
+</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color: ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color: ; text-decoration: none;}
+
+.location_here {color:;}
+
+A.a_paging { font: 11px/14px "돋움"; color: ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color: ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background: url('/static/images/common/contBg_12.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background: url('/static/images/common/contBg_12.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:;}
+
+.twoDepth {border-bottom:solid 1px ;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_12.gif') right bottom no-repeat;}
+.Location {color:;border-bottom:solid 1px ;text-align:right;}
+.pthreeDepth {color:;border-bottom:solid 1px ;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/member/_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/member/1202_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board12 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board12 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+</style>
+</head>
+<body scroll="no">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td class="subLeft"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+
+
+
+
+
+			<table width="760" cellpadding="0" cellspacing="0" border="0">
+			<form name="form_login" method="post" action="https://www.isky.co.kr/common/login.jsp" autocomplete="off" onsubmit="return go_login();">
+			<input type="hidden" name="gourl" value="">
+
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right"></td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+
+				<!-- [s] 2Depth & location -->
+				<tr valign="top">
+					<td class="p20l" colspan="2"><table width="740" cellpadding="0" cellspacing="0" border="0">
+					
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><a href="javascript:menuLink('12');"><img src="/static/images/member/12.gif" border="0" /></a></div></td>
+							<td class="Location"><img src="/static/images/common/_blank.gif"></td>
+							<!-- td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td -->
+						</tr>
+					
+					</table></td>
+				</tr>
+				<!-- [e] 2Depth & location -->
+
+				<tr valign="top">
+					<!-- [s] 3Depth flash navi -->
+					
+					<td width="150" class="subNavi"><script>swftrans('/static/flash/subNavi_12.swf?PageCode=1202', '135', '300');</script></td>
+					
+
+					<!-- [e] 3Depth flash navi -->
+					<!-- [s] contents Area -->
+					<td width="610" class="contentsArea"><table width="610" cellpadding="0" cellspacing="0" border="0">
+						<!-- [s] Ptitle -->
+						<tr valign="top">
+							<td height="49"><img src="/static/images/member/1202_ptitle.gif"></td>
+						</tr>
+						<!-- [e] Ptitle -->
+					</table>
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td class="p10b"><img src="/static/images/member/1202_stit_01.gif"></td>
+						</tr>
+					</table>
+
+
+
+
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+					
+
+
+
+						<tr valign="top">
+							<td><img src="/static/images/member/_tbl_top.gif"></td>
+						</tr>
+						<tr valign="top">
+							<td style="background:url('/static/images/member/_tbl_bg.gif') repeat-y;" align="right"><table width="597" cellpadding="0" cellspacing="0" border="0" class="tbl_member">
+								<tr valign="top">
+									<th width="122" class="top"><img src="/static/images/member/tit_id.gif"></th>
+									<td class="formt"><input type="text" name="userid" tabindex="1" maxlength="15" class="input_text" style="width:150px;height:20px;"></td>
+								</tr>
+								<tr valign="top">
+									<th class="bottom"><img src="/static/images/member/tit_pass.gif"></th>
+									<td class="formb"><input type="password" name="passwd" style="width:150px;height:20px;" tabindex="2" maxlength="15" class="input_text"></td>
+								</tr>
+							</table></td>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td><img src="/static/images/member/_tbl_bottom.gif"></td>
+						</tr>
+						<tr valign="top">
+							<td style="border-bottom:solid 4px #8ac5ce;"><img src="/static/images/common/_blank.gif" height="2"></td>
+						</tr>
+					</table>
+					<table width="610" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td align="right"><table width="" cellpadding="0" cellspacing="0" border="0" class="tbl_btn">
+								<tr valign="top">
+									<td class="btnTd"><input type='image' src="/static/images/member/btn_login.gif" border="0"></td>
+									<td><a href="/member/findidpw.jsp"><img src="/static/images/member/btn_idpass.gif" border="0"></a></td>
+								</tr>
+							</table></td>
+						</tr>
+					</table>
+					<table width="610" cellpadding="0" cellspacing="0" border="0" style="margin-top:30px;">
+						<tr valign="top">
+							<td class="p10b"><img src="/static/images/member/1202_stit_02.gif"></td>
+						</tr>
+
+
+
+
+
+	
+						<tr valign="top">
+							<td class="p8l">- <a href="javascript:go_View(sForm,'SHexPd_8tKs~LZOeNQAKWlQ~');">IM-S240K 최신 S/W 버전 공지(Ver 1.54)</a></td>
+						</tr>
+
+	
+						<tr valign="top">
+							<td class="p8l">- <a href="javascript:go_View(sForm,'gdqfPb_fUno~pa4ctVPglus~');">[2월이벤트 ]스타일짱! 스카이를 찾아라~</a></td>
+						</tr>
+
+
+						<tr valign="top">
+							<td class="p8l">- <a href="javascript:go_View(sForm,'GuNwPb/8TKE~VMQR7HulU_Q~');">셀프업그레이드 하고~ 영화도 보고~</a></td>
+						</tr>
+
+
+					</table>
+					</td>
+					<!-- [e] contents Area -->
+				</tr>
+			</form>
+			<form method="post" name="sForm">
+				<input type="hidden" name="msgid" value="">
+			</form>
+			</table>
+
+
+
+
+			</div></div></td>
+		<td width="140" valign="middle" class="subRight"><script>swftrans('/static/flash/leftBanner.swf', '140', '100%');</script></td>
+	</tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/*
+function LeftFlashHeight(){
+	document.getElementById("flashelement").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+//	alert(document.getElementById("bodyTable").style.height);
+*/
+
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/member/login.jsp";
+refurl_param = "";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 1202;
+	parent.callExternalInterface(6);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

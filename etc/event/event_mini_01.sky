@@ -1,0 +1,170 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+<script language="javaScript">
+<!--
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event/event_mini_01.jsp");
+	}
+//-->
+</script>
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Popup.css" />
+<script>var dispNum="05"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="JavaScript">
+    // 쿠키 할당
+    function setCookie( name, value, expiredays ) {
+		var todayDate = new Date();
+		todayDate.setDate( todayDate.getDate() + expiredays );
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+    }
+
+    function popup_closeWin()  {
+		setCookie( "event_mini_01", "done" , 1); //하룻동안 열지 않음
+		self.close();
+    }
+
+    function formChk(objName){
+
+		var chk = false;
+		var ele = document.getElementsByName(objName);
+		for(var i=0; i < ele.length; i++){
+			if(ele[i].checked == true){
+				chk = true;
+				break;
+			}
+		}
+
+		return chk;
+	}
+	
+	function InputChk(){
+		
+		var form = $('poll');
+
+		if(formChk('strAnswer1_1') == false){
+			alert('1번항의 답변을 선택해 주세요');
+			return;
+		}
+
+		var rb = document.getElementsByName('strAnswer1_1');
+		for(var i=0; i < rb.length; i++){
+			
+			if(rb[i].checked == true){
+
+				if(rb[i].value == '7' && $('strAnswer1_1_etc').value == ""){
+					alert('기타 답변을 등록해 주세요');
+					$('strAnswer1_1_etc').focus();
+					return;
+				}
+
+			}
+		}
+		
+		form.method = "post";
+		form.action = "/etc/event/event_mini_insert.sky";
+		form.submit();
+		
+		
+	}
+
+</script>
+</head>
+<!-- popup size : 450*420 -->
+<body>
+
+	<script>
+		LoginPop("/etc/event/event_mini_01.sky");
+		self.close();
+	</script>
+
+
+<form name='poll' id="poll">
+<input type='hidden' name='intEventSeq' id='intEventSeq' value='336'>
+<input type='hidden' name='strGubun' id='strGubun' value='1'>
+<input type='hidden' name='strAnswer2_1' id='strAnswer2_1'>
+<input type='hidden' name='strAnswer2_1_etc' id='strAnswer2_1_etc'>
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td align="center">
+			<table width="380" cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td class="mini_poll_cont01"><img src="http://www.isky.co.kr/static/images/poll/20090901/poll_top01.jpg" border="0" alt="SKY 초간단 Mini Poll" title="SKY 초간단 Mini Poll" /></td>
+				</tr>
+				<tr>
+					<td class="mini_poll_tit01"><img src="http://www.isky.co.kr/static/images/poll/20090901/poll_tit01.gif" border="0" alt="내가 iSKY에 가입한 첫번째 이유는?" title="내가 iSKY에 가입한 첫번째 이유는?" /></td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='1' /> s/w다운로드를 위해서(셀프업그레이드, 데이터 매니저 등)</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='2' /> 모바일 컨텐츠 구매를 위해(벨소리, 폰배경화면 등)</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='3' /> 이벤트에 참여하기 위해</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='4' /> 제품 액세서리 구매를 위해(배터리, 충전젠더 등)</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='5' /> 스페셜샵 상품 구매를 위해(가방, 머그컵 등)</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='6' /> live message 서비스(스타다이어리, 투데이메시지 등)를 사용하기 위해서</td>
+				</tr>
+				<tr>
+					<td class="mini_poll_txt01"><input type="radio" name="strAnswer1_1" value='7' /> 기타&nbsp;&nbsp; <input type="text" id="strAnswer1_1_etc" name='strAnswer1_1_etc' class="input_text" style="width:320px;height:16px;font-size:11px;padding-top:1px;" /></td>
+				</tr>
+				<tr>
+					<td class="mini_poll_btn01"><a href="javascript:InputChk()"><img src="http://www.isky.co.kr/static/images/poll/20090901/poll_btn01.gif" border="0" alt="설문완료" title="설문완료" /></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr valign="bottom">
+		<td><img src="http://www.isky.co.kr/static/images/poll/20090901/poll_bottom01.gif" border="0" alt="닫기" title="닫기" usemap="#popmap2" /></td>
+	</tr>
+</table>
+<map name="popmap2">
+	<area shape="rect" coords="10,6,154,30" href="javascript:popup_closeWin();" alt="오늘 하루 이창을 열지 않음" onFocus="this.blur();" />
+	<area shape="rect" coords="394,6,443,30" href="javascript:self.close();" alt="닫기" onFocus="this.blur();" />
+</map>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

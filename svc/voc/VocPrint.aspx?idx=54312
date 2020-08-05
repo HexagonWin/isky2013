@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=54312" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOuplOyEuOyngOq0gOumrOq4sOuKpTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ6riw64qlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzshJztlZzrgpg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU0MzEyOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA0LTI3Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzNTs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD4mbmJzcFw7IOyXoO2UvOyTsOumrCDtj7Ag64uk66W46rKD65OkIOuLpCDsjajrs7jqsoPsnYAg7JWE64uI7KeA66eMXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7snbzri6gg7KO867OA7J2YIG3sgqzsnZgg66+464uIIOuqqO2GoCDrnbzripQg7ZW465Oc7Y+w7J2EIOu0pOuKlOuNsC5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuuFuOuemOulvCDrk6Pri6TqsIDrj4Qg66mU7IS47KeA66W8IOuztOuCvOyImCDsnojqs6Ag6rSA66asIO2VoOyImCDsnojrjZTqtbDsmpQuXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7siqTsubTsnbTripQg64W4656Y66W8IOuTo+uLpOqwgCDrrLjsnpDqsIAg7Jik66m0IOq2geq4iO2VtOyEnCDrr7jsuaDqsoMg6rCZ7JWEIOuTo+uNmCDsnYzslYXsnZggXDwvUFw+XDxCUlw+XDxQXD7tnZDrpoTsnYQgXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD4iIOuanSEhISEhIlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+64GK7Ja067KE66Ck7JW8IO2VnOuLteuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuyXoO2UvOyTsOumrCDsnqzsg53tlZjripQg64+E7KSR7JeQIOuplOyEuOyngCDqtIDrpqztlZjripQg6riw64ql7J20IOyeiOyXiOycvOuptCDtlanri4jri6QuIFw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">메세지관리기능</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">서한나</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">54312</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-27</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">35</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; 엠피쓰리 폰 다른것들 다 써본것은 아니지만</P><BR><P>&nbsp;</P><BR><P>일단 주변의 m사의 미니 모토 라는 핸드폰을 봤는데.</P><BR><P>&nbsp;</P><BR><P>노래를 듣다가도 메세지를 보낼수 있고 관리 할수 있더군요.</P><BR><P>&nbsp;</P><BR><P>스카이는 노래를 듣다가 문자가 오면 궁금해서 미칠것 같아 듣던 음악의 </P><BR><P>흐름을 </P><BR><P>&nbsp;</P><BR><P>" 뚝!!!!!"</P><BR><P>&nbsp;</P><BR><P>&nbsp;</P><BR><P>끊어버려야 한답니다.</P><BR><P>&nbsp;</P><BR><P>&nbsp;</P><BR><P>엠피쓰리 재생하는 도중에 메세지 관리하는 기능이 있었으면 합니다. </P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

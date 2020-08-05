@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>
+			It's different, SKY
+		</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<script language="javascript">
+<!--
+		function autoBlur()
+		{ 
+			if(event.srcElement.tagName=="A"||event.srcElement.tagName=="IMG") 
+				document.body.focus(); 
+		} 
+		window.status["none"];
+		window.resizeTo(366,300);
+	
+//-->
+		</script>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT>
+	</HEAD>
+	<body bgcolor="#ffffff" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="indiplay_popup.aspx?pfid=321" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTQyMTAwMzE5MTs7Pg==" />
+
+			<table width="355" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td height="357" width="355" background="http://file.isky.co.kr/images/indi/indi_m_bg2.gif" valign="top">
+						<table cellspacing="0" cellpadding="0" width="355" height="358">
+							<script language="JavaScript">
+												<!--
+		var volposition=316; // 볼륨의 최대크기위치
+		var volminposition=272; //볼륨의 최소크기 위치
+		var vollength=50; //볼륨의 이동거리
+												//-->
+							</script>
+							<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/player.js"></SCRIPT>
+							<tbody>
+								<tr height="42">
+									<td background="http://file.isky.co.kr/images/indi/main_player_top.gif" colspan="3" height="42">
+										<table width="350" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td width="264"><img src="http://file.isky.co.kr/images/indi/indi_m_tit.gif"></td>
+												<td width="86" align="right"><img src="http://file.isky.co.kr/images/indi/indi_popclose.gif" border="0" style="CURSOR:hand" onclick="window.self.close();"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr height="190">
+									<td width="52"><img src="http://file.isky.co.kr/images/indi/main_player_left.gif"></td>
+									<td width="252">
+										<OBJECT id="SKY_PLAYER" codeBase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+											type="application/x-oleobject" height="190" width="252" classid="clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6"
+											VIEWASTEXT>
+											<PARAM NAME="URL" VALUE="http://file.isky.co.kr/blood/Skyleague_321.wmv">
+											<PARAM NAME="rate" VALUE="1">
+											<PARAM NAME="balance" VALUE="0">
+											<PARAM NAME="currentPosition" VALUE="0">
+											<PARAM NAME="defaultFrame" VALUE="">
+											<PARAM NAME="playCount" VALUE="1">
+											<PARAM NAME="autoStart" VALUE="-1">
+											<PARAM NAME="currentMarker" VALUE="0">
+											<PARAM NAME="invokeURLs" VALUE="-1">
+											<PARAM NAME="baseURL" VALUE="">
+											<PARAM NAME="volume" VALUE="100">
+											<PARAM NAME="mute" VALUE="0">
+											<PARAM NAME="uiMode" VALUE="none">
+											<PARAM NAME="stretchToFit" VALUE="0">
+											<PARAM NAME="windowlessVideo" VALUE="0">
+											<PARAM NAME="enabled" VALUE="-1">
+											<PARAM NAME="enableContextMenu" VALUE="0">
+											<PARAM NAME="fullScreen" VALUE="0">
+											<PARAM NAME="SAMIStyle" VALUE="">
+											<PARAM NAME="SAMILang" VALUE="">
+											<PARAM NAME="SAMIFilename" VALUE="">
+											<PARAM NAME="captioningID" VALUE="">
+											<PARAM NAME="enableErrorDialogs" VALUE="0">
+											<PARAM NAME="_cx" VALUE="6668">
+											<PARAM NAME="_cy" VALUE="5027">
+										</OBJECT>
+									</td>
+									<td width="52"><img src="http://file.isky.co.kr/images/indi/main_player_right.gif"></td>
+								</tr>
+								<tr height="38">
+									<td background="http://file.isky.co.kr/images/indi/main_player_middle2.gif" colspan="3">
+										<table height="37" cellspacing="0" cellpadding="0" width="355">
+											<tbody>
+												<tr valign="middle">
+													<td width="21"></td>
+													<td width="252"><a onFocus="this.blur();" href="Javascript:PLAYER_PLAY();"><img src="http://file.isky.co.kr/images/indi/main_player_btn_play.gif" align="absMiddle" border="0"></a>
+														<a onFocus="this.blur();" href="Javascript:PLAYER_STOP();"><img src="http://file.isky.co.kr/images/indi/main_player_btn_stop.gif" align="absMiddle" border="0"></a>
+														<a onFocus="this.blur();" href="Javascript:PLAYER_REVERSE();"><img src="http://file.isky.co.kr/images/indi/main_player_btn_tostart.gif" align="absMiddle" border="0"></a>
+														<a onFocus="this.blur();" href="Javascript:PLAYER_FORWARD();"><img src="http://file.isky.co.kr/images/indi/main_player_btn_toend.gif" align="absMiddle" border="0"></a>
+														<div id="volcontrol" style="MARGIN-TOP: 4px; Z-INDEX: 5; LEFT: 273px; VISIBILITY: visible; POSITION: absolute; TOP: 240px">
+															<img onMouseDown=initializedragie() style="CURSOR: hand" alt=볼륨조절 src="http://file.isky.co.kr/images/indi/movie_player_vol.gif" name=vol valign="ABSMIDDLE">
+														</div>
+													</td>
+													<td width="57">
+														<a href="#"><img src="http://file.isky.co.kr/images/presscenter/main_player_btn_volume.gif" align="absMiddle"></a>
+													</td>
+													<td width="25"></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr valign="top">
+									<td background="http://file.isky.co.kr/images/indi/main_player_bottom2.gif" colspan="3" height="88">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

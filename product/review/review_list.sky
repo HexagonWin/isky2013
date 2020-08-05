@@ -1,0 +1,274 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/review/review_list.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/review/review_list.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/review/review_list.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20111031");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="0104"; var firstDepth="01"</script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	
+	var badUser = "";
+	
+	function Write(){
+		
+		var isBadVal = badUserChk(badUser);
+		
+		if(isBadVal == false){
+			parent.location.href = "/product/review/review_write.sky?dispNum=0104";
+		}
+	}
+
+	function goList(targetPage, targetGroup) {
+
+		var obj = document.reviewPage;
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/product/review/review_list.sky";
+		obj.submit();
+	}
+
+	function detail(intReviewSeq){
+		
+		var targetPage = $('targetPage');
+		var targetGroup = $('targetGroup');
+		var strTelecomCode = $('strTelecomCode');
+		var intSeriesSeq = $('intSeriesSeq');
+		var intPrdSeq = $('intPrdSeq');
+		var keyword = $('keyword');
+		
+		var url = "/product/review/review_view.sky?intReviewSeq=" + intReviewSeq + "&dispNum=&targetPage=" + targetPage.value + "&targetGroup=" + targetGroup.value + "&strTelecomCode=" + strTelecomCode.value + "&intSeriesSeq=" + intSeriesSeq.value + "&intPrdSeq=" + intPrdSeq.value + "&keyword=" + keyword.value;
+		
+		parent.location.href = url;
+	}
+
+	function List(){
+		var form = $('reviewPage');
+		form.action = "/product/review/review_list.sky";
+		form.method = "post";
+		form.submit();
+	}
+</script>
+</head>
+
+<body>
+<form name="reviewPage">
+<input type="hidden" name="targetPage" id="targetPage" value="1">
+<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+<input type="hidden" name="dispNum" id="dispNum" value="">
+<input type="hidden" name="strTelecomCode" id="strTelecomCode" value="">
+<input type="hidden" name="intSeriesSeq" id="intSeriesSeq" value="0">
+<input type="hidden" name="intPrdSeq" id="intPrdSeq" value="0">
+<input type="hidden" name="keyword" id="keyword" value="">
+</form>
+			
+<!-- [s] List -->
+<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_review_L">
+<colgroup>
+	<col width="98" />
+	<col width="402" />
+	<col width="80" />
+	<col width="80" />
+	<col width="80" />
+</colgroup>
+	<tr valign="top">
+		<th>종류</th>
+		<th>제목</th>
+		<th>작성자</th>
+		<th>등록일</th>
+		<th>조회</th>
+	</tr>
+	
+	
+
+	<tr align="center">
+		<td class="phone" valign="bottom"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA800S_list.gif" width="43" height="102" border="0" /></td>
+		<td class="title"><a href="javascript:detail('_qs6Gz0n79k~GyDZKn1wAeI~')"><dl>
+			<dt><span class="model">Vega LTE <span class="eng">IM-A800S</span></span></dt>
+			<dd class="subject">배터리가 금방 달아요</dd>
+			<dd class="text">10월 25일에 베가 LTE개통 했습니다. 사실 베가 제품에 신뢰 ...</dd>
+		</dl></a>
+		<td class="name">armanimoon</td>
+		<td class="tit">2011-10-30</td>
+		<td class="tit">30</td>
+	</tr>
+
+	
+
+	<tr align="center">
+		<td class="phone" valign="bottom"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA800S_list.gif" width="43" height="102" border="0" /></td>
+		<td class="title"><a href="javascript:detail('f1z3tMtx4Tk~BdEN789x0VU~')"><dl>
+			<dt><span class="model">Vega LTE <span class="eng">IM-A800S</span></span></dt>
+			<dd class="subject">2틀전에 구매했어요.</dd>
+			<dd class="text">몇일을 기다려서 겨우 받았는데, 아직까지 제대로 출시가 되 ...</dd>
+		</dl></a>
+		<td class="name">dkfmdnps</td>
+		<td class="tit">2011-10-29</td>
+		<td class="tit">20</td>
+	</tr>
+
+	
+
+	<tr align="center">
+		<td class="phone" valign="bottom"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA800S_list.gif" width="43" height="102" border="0" /></td>
+		<td class="title"><a href="javascript:detail('OXGtYU3YE_s~Utknsv4QD38~')"><dl>
+			<dt><span class="model">Vega LTE <span class="eng">IM-A800S</span></span></dt>
+			<dd class="subject">제가 26일날 용산에서 개통 했는데요.</dd>
+			<dd class="text">저도 이제 안드로이드 스마트폰 유저가 되었고
+것도 안써봤 ...</dd>
+		</dl></a>
+		<td class="name">roehddl58</td>
+		<td class="tit">2011-10-28</td>
+		<td class="tit">16</td>
+	</tr>
+
+	
+
+	<tr align="center">
+		<td class="phone" valign="bottom"><img src="http://file.isky.co.kr/upload/product/imageAflash/u440list[3].gif" width="43" height="102" border="0" /></td>
+		<td class="title"><a href="javascript:detail('xQyryUftSIY~wmSi7FkU64o~')"><dl>
+			<dt><span class="model">SKY Hommage  <span class="eng">IM-U440S</span></span></dt>
+			<dd class="subject">동작인식 및 기타기능에 대해서...</dd>
+			<dd class="text">안녕하세요.
+올해 1월부터 오마주슬라이드폰을 이용하고 있 ...</dd>
+		</dl></a>
+		<td class="name">fs75113553</td>
+		<td class="tit">2011-10-28</td>
+		<td class="tit">68</td>
+	</tr>
+
+	
+
+	<tr align="center">
+		<td class="phone" valign="bottom"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA650S_list[1].gif" width="43" height="102" border="0" /></td>
+		<td class="title"><a href="javascript:detail('CfD20hZpBc8~tc/8dTAD_Ds~')"><dl>
+			<dt><span class="model">SKY Vega <span class="eng">IM-A650S</span></span></dt>
+			<dd class="subject">유저로서 충고드립니다</dd>
+			<dd class="text">안녕하세요
+중학생 베가 사용유저입니다
+제가 휴대폰을 교 ...</dd>
+		</dl></a>
+		<td class="name">dlsgur3187</td>
+		<td class="tit">2011-10-27</td>
+		<td class="tit">280</td>
+	</tr>
+
+	
+
+	
+
+</table>
+<!-- [e] List -->
+
+<!-- [s] button -->
+<div id="bd_btnVLB"><table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_btnB">
+	<tr valign="top">
+		<td align="right"><span>
+		<a href="javascript:LoginConfirm(parent.current_url)"><img src="/static/images/common/btn/bd_writeReview.gif" border="0" alt="리뷰쓰기" title="리뷰쓰기" /></a></span></td>
+	</tr>
+</table></div>
+<!-- [e] button -->
+<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('1791','180')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+</body>
+</html>

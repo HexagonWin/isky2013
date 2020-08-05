@@ -1,0 +1,136 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+<script language="javaScript">
+<!--
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/index.jsp");
+	}
+//-->
+</script>
+<title>iSKY</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script type="text/javascript">
+function init() {
+	if(opener) opener = null;
+
+	
+			var cnjWin = null;
+			cnjWin = window.open('http://event.isky.co.kr/sky/html/r470s/main.asp','full','fullscreen=yes,scrollbars=0');	
+			// 풀스크린 지정
+
+			if(!cnjWin){
+				alert("팝업차단을 해제해주세요.");
+				return false;
+			} else {
+				location.href="http://www.isky.co.kr/etc/event.sky";
+			}
+	
+
+	/*
+	var date = new Date();
+	var year = date.getYear().toString();
+	var month = date.getMonth() + 1;
+	var day = date.getDate();
+
+	var today = parseInt(year + month + day);
+
+	
+	*/
+}
+
+function setCookie( name, value, expiredays ) 
+{ 
+       var todayDate = new Date(); 
+       todayDate.setDate( todayDate.getDate() + expiredays ); 
+       document.cookie = name +"=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";" 
+} 
+
+function getCookie( name ) 
+{ 
+       var nameOfCookie = name + "=";    
+       var x = 0;      
+       while ( x <= document.cookie.length ) 
+       { 
+               var y = (x+nameOfCookie.length); 
+               if ( document.cookie.substring( x, y ) == nameOfCookie ) { 
+                       if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) 
+                               endOfCookie = document.cookie.length; 
+                       return unescape( document.cookie.substring( y, endOfCookie ) ); 
+               } 
+               x = document.cookie.indexOf( " ", x ) + 1; 
+               if ( x == 0 ) 
+                       break; 
+       } 
+       return ""; 
+}
+</script>
+
+<script language="javascript">
+
+    function getCookie(name) {
+		var nameOfCookie = name + "=";
+		var x = 0;
+
+		while ( x <= document.cookie.length ) {
+			var y = (x+nameOfCookie.length);
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 ) break;
+		}
+
+		return "";
+
+    }
+
+/* 2009.06.26 센터관련 팝업 */
+//		if(getCookie("popup20090626") != "done") {
+//			var popwin = window.open("/cs/popup/20090626.jsp","popup20090626","width=400,height=567,left=0,top=0");
+//		}
+
+</script>
+
+</head>
+
+<body onload="init()">
+<div id="WrapFull"><script>swf_include('/static/flash/main/skyMain.swf?LogSess=N','100%','100%','','','opaque','')</script></div>
+</body>
+</html>

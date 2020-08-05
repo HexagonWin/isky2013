@@ -1,0 +1,781 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/searchResult.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/searchResult.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/searchResult.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100215");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script>var dispNum="01"; var firstDepth="01"</script>
+<script language="javascript">
+	function CheckCode(obj,strName1){
+		var searchList = $('searchList');
+		var html = "";
+		var id = obj.id + "_1";
+		
+		if(obj.checked == true){
+
+			var el = document.createElement('span');
+			el.setAttribute('id',id);
+			searchList.appendChild(el);
+			
+			html = "<li><div class=\"delIco\"><a href=\"javascript:EntryDel('"+obj.id+"','"+id+"')\"><img src=\"/static/images/product/ico_del.gif\" border=\"0\" alt=\"삭제\" title=\"삭제\" /></a></div>"+strName1+"</li>";
+			
+			$(id).innerHTML = html;
+						
+		}else{
+			$(id).remove();
+		}
+	}
+
+	function EntryDel(pid, id){
+				
+		$(id).remove();
+		$(pid).checked = false;
+
+	}
+
+	function SearchAllDel(){
+		var form = $('search');
+		
+		//$('searchList').remove();
+
+		$('searchList').innerHTML = "";
+
+		//$('search').reset();
+
+		var inputs = form.getInputs('checkbox');
+
+		for(var i=0; i < inputs.length; i++){
+			if(inputs[i].checked == true){
+				inputs[i].checked = false;
+			}
+		}
+		
+	}
+
+	function Search(){
+		var form = $('search');
+		var searchWord = $('searchWord');
+
+		var keyword1 = "";
+		var keyword2 = "";
+		var keyword3 = "";
+		var keyword4 = "";
+		var keyword5 = "";
+		var keyword6 = "";
+		
+		var inputs = form.getInputs('checkbox');
+
+		var cnt1 = 0;
+		var cnt2 = 0;
+		var cnt3 = 0;
+		var cnt4 = 0;
+		var cnt5 = 0;
+		var cnt6 = 0;
+		
+		for(var i=0; i < inputs.length; i++){
+			if(inputs[i].checked == true){
+				
+				if(inputs[i].value.substring(0,2) == "11"){
+
+					if( cnt1 == 0){
+						keyword1 = keyword1 + "'" + inputs[i].value + "'";
+					}else{
+						keyword1 = keyword1 + ",'" + inputs[i].value + "'";
+					}
+
+					cnt1 = cnt1 + 1;
+
+				}
+
+				if(inputs[i].value.substring(0,2) == "12"){ 
+				
+					if( cnt2 == 0){
+						keyword2 = keyword2 + "'" + inputs[i].value + "'";
+					}else{
+						keyword2 = keyword2 + ",'" + inputs[i].value + "'";
+					}
+	
+					cnt2 = cnt2 + 1;
+				}
+
+				if(inputs[i].value.substring(0,2) == "13"){ 
+					
+					if( cnt3 == 0){
+						keyword3 = keyword3 + "'" + inputs[i].value + "'";
+					}else{
+						keyword3 = keyword3 + ",'" + inputs[i].value + "'";
+					}
+	
+					cnt3 = cnt3 + 1;
+				}
+
+				if(inputs[i].value.substring(0,2) == "14"){ 
+					
+					if( cnt4 == 0){
+						keyword4 = keyword4 + "'" + inputs[i].value + "'";
+					}else{
+						keyword4 = keyword4 + ",'" + inputs[i].value + "'";
+					}
+	
+					cnt4 = cnt4 + 1;
+				}
+
+				if(inputs[i].value.substring(0,2) == "15"){ 
+					
+					if( cnt5 == 0){
+						keyword5 = keyword5 + "'" + inputs[i].value + "'";
+					}else{
+						keyword5 = keyword5 + ",'" + inputs[i].value + "'";
+					}
+	
+					cnt5 = cnt5 + 1;
+				}
+
+				if(inputs[i].value.substring(0,2) == "16"){ 
+					
+					if( cnt6 == 0){
+						keyword6 = keyword6 + "'" + inputs[i].value + "'";
+					}else{
+						keyword6 = keyword6 + ",'" + inputs[i].value + "'";
+					}
+	
+					cnt6 = cnt6 + 1;
+				}
+			}
+		}
+
+		if(cnt1 > 0){
+			keyword1 = "(" + keyword1 + ")";
+		}
+
+		if(cnt2 > 0){
+			keyword2 = "(" + keyword2 + ")";
+		}
+
+		if(cnt3 > 0){
+			keyword3 = "(" + keyword3 + ")";
+		}
+
+		if(cnt4 > 0){
+			keyword4 = "(" + keyword4 + ")";
+		}
+
+		if(cnt5 > 0){
+			keyword5 = "(" + keyword5 + ")";
+		}
+
+		if(cnt6 > 0){
+			keyword6 = "(" + keyword6 + ")";
+		}
+
+		var url = "&keyword1=" + keyword1 + "&keyword2=" + keyword2 + "&keyword3=" + keyword3 + "&keyword4=" + keyword4 + "&keyword5=" + keyword5 + "&keyword6=" + keyword6;	
+		
+		form.action = "/product/searchResultList.sky?dispNum=01" + url;
+
+		form.method = "post";
+		form.target = "listFrame";
+		form.submit();
+		
+		
+	}
+</script>
+</head>
+
+<body onload="Search()">
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=01&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=01','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=01','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_searchResult.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="searchCondition"><h5><img src="/static/images/product/searchResult_box_01.gif" /></h5>
+				<div class="searchCondition_c1"><div class="gradientBox33"><div class="rt33"><img src="/static/images/common/gradient/33_rt.gif" /></div><div class="lb33"><img src="/static/images/common/gradient/33_lb.gif" /></div>
+				<form name="search" id="search">
+				<input type="hidden" name="searchWord" id="searchWord" value=''>
+				<table width="710" cellpadding="0" cellspacing="0" border="0" class="tbl_searchResultCon">
+				<colgroup>
+					<col width="74"></col>
+					<col width="605"></col>
+				</colgroup>
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">통신사</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='11001' id="11001" onclick="javascript:CheckCode(this,'SKT')"  />SKT</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='11002' id="11002" onclick="javascript:CheckCode(this,'KT')"  />KT</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='11003' id="11003" onclick="javascript:CheckCode(this,'LGT')"  />LGT</li
+							>
+					
+					
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">휴대폰형태</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='12001' id="12001" onclick="javascript:CheckCode(this,'슬라이드')"  />슬라이드</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='12002' id="12002" onclick="javascript:CheckCode(this,'폴더')"  />폴더</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='12003' id="12003" onclick="javascript:CheckCode(this,'플립')"  />플립</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='12004' id="12004" onclick="javascript:CheckCode(this,'바')"  />바</li
+							>
+					
+					
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">디스플레이</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='13001' id="13001" onclick="javascript:CheckCode(this,'26만 이상')"  />26만 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='13002' id="13002" onclick="javascript:CheckCode(this,'6만5천 이상')"  />6만5천 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='13003' id="13003" onclick="javascript:CheckCode(this,'6만5천 이하')"  />6만5천 이하</li
+							>
+					
+					
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">화음</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='14001' id="14001" onclick="javascript:CheckCode(this,'128화음')"  />128화음</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='14002' id="14002" onclick="javascript:CheckCode(this,'64화음')"  />64화음</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='14003' id="14003" onclick="javascript:CheckCode(this,'40화음')"  />40화음</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='14004' id="14004" onclick="javascript:CheckCode(this,'40화음미만')"  />40화음미만</li
+							>
+					
+					
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">카메라</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15001' id="15001" onclick="javascript:CheckCode(this,'500만 이상')"  />500만 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15002' id="15002" onclick="javascript:CheckCode(this,'300만 이상')"  />300만 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15003' id="15003" onclick="javascript:CheckCode(this,'200만 이상')"  />200만 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15004' id="15004" onclick="javascript:CheckCode(this,'100만 이상')"  />100만 이상</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15005' id="15005" onclick="javascript:CheckCode(this,'100만 이하')"  />100만 이하</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='15006' id="15006" onclick="javascript:CheckCode(this,'없음')"  />없음</li
+							>
+					
+					
+					
+					
+						
+					
+					
+						<tr valign="top">
+							<th width="74">세부기능</th>
+							<td width="605"><ul
+								>
+					
+					
+					
+						
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16001' id="16001" onclick="javascript:CheckCode(this,'지상파DMB')"  />지상파DMB</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16002' id="16002" onclick="javascript:CheckCode(this,'위성DMB')"  />위성DMB</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16003' id="16003" onclick="javascript:CheckCode(this,'영상통화')"  />영상통화</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16004' id="16004" onclick="javascript:CheckCode(this,'MP3플레이어')"  />MP3플레이어</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16005' id="16005" onclick="javascript:CheckCode(this,'인테나')"  />인테나</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16006' id="16006" onclick="javascript:CheckCode(this,'PictBridge')"  />PictBridge</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16007' id="16007" onclick="javascript:CheckCode(this,'블루투스')"  />블루투스</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16008' id="16008" onclick="javascript:CheckCode(this,'3D사운드')"  />3D사운드</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16009' id="16009" onclick="javascript:CheckCode(this,'이퀼라이저')"  />이퀼라이저</li
+							>
+					
+					
+					
+					
+					
+					
+						<li><input type="checkbox" value='16014' id="16014" onclick="javascript:CheckCode(this,'터치스크린')"  />터치스크린</li
+							>
+					
+					
+					
+				</table>
+				</form>
+				</div>
+
+				<div class="searchCondition_c2">
+				<div class="gradientBox33" style="width:627px;"><div class="rt33"><img src="/static/images/common/gradient/33_rt.gif" /></div><div class="lb33"><img src="/static/images/common/gradient/33_lb.gif" /></div>
+				<table width="624" cellpadding="0" cellspacing="0" border="0" class="tbl_searchResultCon2">
+				<colgroup>
+					<col width="105"></col>
+					<col width="443"></col>
+					<col width="76"></col>
+				</colgroup>
+					<tr>
+						<th width="105">검색조건</th>
+						<td width="443"><ul
+							><div id="searchList">
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+								
+							
+							</div></ul></td>
+						<td width="76"><a href="javascript:SearchAllDel()"><img src="/static/images/product/btn_allDel.gif" border="0" alt="전체삭제" title="전체삭제" /></a></td>
+					</tr>
+				</table></div>
+				<span class="btn"><a href="javascript:Search()"><img src="/static/images/product/btn_search.gif" border="0" alt="검색하기" title="검색하기" /></a></span></div>
+
+				</div>
+
+			</div>
+
+			<div class="blank20"></div>
+			<iframe name='listFrame' src="" frameborder=0 width="100%" height="650"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+			
+			
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</body>
+</html>

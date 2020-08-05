@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1158" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFvtj6zthqDslajrspRd7Y+w7JeQIOyeiOuKlCDsgqzsp4TsnYQg7Y+s7Yag7JWo67KU7Jy866GcIOyghOyGoe2VmOqzoCDsi7bslrTsmpQ7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPO2PrO2GoOyVqOuylOydmCDqsr3smrAgU0tZ7JeQ7IScIOygnOqzte2VnCDrsojtmLgoKjc4MDAp66W8IOydtOyaqe2VmOyXrCBcPEJSXD7tlbjrk5ztj7Dsl5Ag7KCA7J6l65CcIO2PrO2GoOulvCBcPEJSXD7tj6zthqDslajrspTsnLzroZwg7KCE7Iah7J20IOqwgOuKpe2VqeuLiOuLpC5cPEJSXD7tj7Drp4jri6Qg7JW96rCE7J2YIOywqOydtOqwgCDsnojsp4Drp4wgXDxCUlw+7J2867CY7KCB7Jy866GcIOy5tOuplOudvCDtj7DsnLzroZwg7LCN7J2AIO2PrO2GoOulvCDshKDtg50g7ZuEIFw8QlJcPuuplOuJtOuyhO2KvOydhCDriITrpbTrqbQg7Y+s7Yag7JWo67KUIOuztOuCtOq4sOulvCDshKDtg53tlZjqs6AgXDxCUlw+7KCc66qpL+uCtOyaqeydhCDsnoXroKUg7ZuEIFw8QlJcPuuwm+uKlCDsgqzrnowg7KCE7ZmU67KI7Zi47JeQICo3ODAwIOyeheugpSDtm4QgXDxCUlw+7J6Q7Iug7J2YIO2VuOuTnO2PsOuyiO2YuOulvCDsnoXroKUg7ZuEIOyghOyGoe2VmOyLnOuptCDrkKnri4jri6QuXDxCUlw+67O064K8IOuVjCDsgqzsnbTtirjsl5Ag65Ox66Gd7ZWcIFw8QlJcPuyekOyLoOydmCDtlbjrk5ztj7DrsojtmLjroZwg7J6F66Cl7J2EIO2VmOyngCDslYrsnLzrqbQgXDxCUlw+66eI7J207Y6Y7J207KeA7J2YIO2PrO2GoOyVqOuylOyXkOyEnCDtmZXsnbjsnbQg67aI6rCA64ql7ZWp64uI64ukLlw8QlJcPlw8QlJcPio3ODAw7J2EIOyghOyGoe2VmOyLnOuptCBcPEJSXD7sgqzsmqnsnpDsnZgg7ZW465Oc7Y+w7JeQIOygleuztOydtOyaqeujjOuKlCDrtoDqs7zrkJjsp4Ag7JWK7Iq164uI64ukLlw8QlJcPlw8QlJcPuuNsOydtO2DgCDsnbTsmqnro4zrp4wg67aA64u07ZWY6rKMIOuQqeuLiOuLpC5cPEJSXD5cPEJSXD4o7ZW465Oc7Y+wIOyalOq4iOqzoOyngOyEnOyXkOyEnCDtmZXsnbjqsIDriqUpXDxCUlw+642w7J207YOAIOydtOyaqeujjOuKlCBodHRwOi8vY29sb3IubmF0ZS5jb20g7JeQ7IScIO2ZleyduOydtCDqsIDriqXtlanri4jri6QuXDxCUlw+7JiIKeyghOyGoeyCrOynhO2BrOq4sDogNTBLQiDrr7jrp4zsnbzrlYwo7IKs7KeEMeyepSkgLSAyMDDsm5A7Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">[포토앨범]폰에 있는 사진을 포토앨범으로 전송하고 싶어요</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">포토앨범의 경우 SKY에서 제공한 번호(*7800)를 이용하여 <BR>핸드폰에 저장된 포토를 <BR>포토앨범으로 전송이 가능합니다.<BR>폰마다 약간의 차이가 있지만 <BR>일반적으로 카메라 폰으로 찍은 포토를 선택 후 <BR>메뉴버튼을 누르면 포토앨범 보내기를 선택하고 <BR>제목/내용을 입력 후 <BR>받는 사람 전화번호에 *7800 입력 후 <BR>자신의 핸드폰번호를 입력 후 전송하시면 됩니다.<BR>보낼 때 사이트에 등록한 <BR>자신의 핸드폰번호로 입력을 하지 않으면 <BR>마이페이지의 포토앨범에서 확인이 불가능합니다.<BR><BR>*7800을 전송하시면 <BR>사용자의 핸드폰에 정보이용료는 부과되지 않습니다.<BR><BR>데이타 이용료만 부담하게 됩니다.<BR><BR>(핸드폰 요금고지서에서 확인가능)<BR>데이타 이용료는 http://color.nate.com 에서 확인이 가능합니다.<BR>예)전송사진크기: 50KB 미만일때(사진1장) - 200원</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

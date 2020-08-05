@@ -1,0 +1,308 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/fun/cartoon/cartoon.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/fun/cartoon/cartoon.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/fun/cartoon/cartoon.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120402");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Fun.css" />
+<script>var dispNum="0303"; var firstDepth ="03";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	var max = 3;
+	function view_focus(focusnum)
+	{
+		for(var i = 1; i <= max; i++)
+		{
+			if(document.getElementById('focus_rolling_'+i) != null)
+			{
+				if(focusnum == i)
+				{
+					if(document.getElementById('btn_img_'+i) != null)
+						//document.getElementById('btn_img_'+i).className = 'btn_on_'+ i;
+						document.getElementById('focus_rolling_'+i).style.display = 'block';
+				}
+				else
+				{
+					if(document.getElementById('btn_img_'+i) != null)
+						//document.getElementById('btn_img_'+i).className = 'btn_off_'+ i;
+						document.getElementById('focus_rolling_'+i).style.display = 'none';
+				}
+			}
+		}
+	}
+
+	function CartoonView(strCode, intSeq){
+		location.href = "/fun/cartoon/cartoon_view.sky?dispNum=&strCode=" + strCode + "&intSeq=" + intSeq;
+	}
+
+	function CartoonList(strCode){
+		location.href = "/fun/cartoon/cartoon_list.sky?dispNum=&strCode=" + strCode;
+	}
+</script>
+</head>
+
+<body>
+
+<div id="Wrap" class="fun">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0303&LogSess=N','100%','60','','','transparent','')</script></div> 
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Fun.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"></div>
+		</div>
+		
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Contents.swf?PageCode=0303','740','81','','','transparent','')</script></div>
+		
+		<div id="Content">
+			<div id="focus_rolling_1" class="visualCartoon">
+				<script>swf_include('/static/flash/cartoon_banner.swf','720','386','always','','transparent','')</script>
+			</div>
+
+			<div class="cartoon_cont01">
+				<dl
+					><dd><ul
+						><li class="stit"><img src="/static/images/fun/cartoon/cartoon_stit_01.gif" alt="월요툰" title="월요툰" /></li
+						><li class="thumbBox"><a href="javascript:CartoonList('37008')"><img src="/static/images/fun/cartoon/_cartoon_thumb1.gif" border="0" class="thumb" /></a></li
+						><li class="title"><a href="javascript:CartoonView('37008','ZdxUvGBViQ8~6L7EMKx/_E4~')">[33화] 근황 입니다</a></li
+						>
+						<li class="date"><span class="txt">UPDATE</span>2012.03.26</li
+						><li class="btn"><a href="javascript:CartoonList('37008')"><img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" /></a></li
+					></ul></dd
+					><dd><ul
+						><li class="stit"><img src="/static/images/fun/cartoon/cartoon_stit_02.gif" alt="수요툰" title="수요툰" /></li
+						><li class="thumbBox"><a href="javascript:CartoonList('37009')"><img src="/static/images/fun/cartoon/_cartoon_thumb2.jpg" border="0" class="thumb" /></a></li
+						><li class="title"><a href="javascript:CartoonView('37009','C5HOXw3g9ZU~a7pNqugVU4M~')">[8화] SKY9 together</a></li
+						><li class="date"><span class="txt">UPDATE</span>2012.03.28</li
+						><li class="btn"><a href="javascript:CartoonList('37009')"><img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" /></a></li
+					></ul></dd
+					><dd class="last"><ul
+						><li class="stit"><img src="/static/images/fun/cartoon/cartoon_stit_03.gif" alt="금요툰" title="금요툰" /></li
+						><li class="thumbBox"><a href="javascript:CartoonList('37006')"><img src="/static/images/fun/cartoon/_cartoon_thumb3.gif" border="0" class="thumb" /></a></li
+						><li class="title"><a href="javascript:CartoonView('37006','/gcUwm08860~pyYTIc1Wejk~')">[100화] 시간 짱 빨라</a></li
+						><li class="date"><span class="txt">UPDATE</span>2012.03.30</li
+						><li class="btn"><a href="javascript:CartoonList('37006')"><img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" /></a></li
+					></ul></dd
+				></dl>
+			</div>
+
+			<!-- 지난 웹툰 보기 -->
+            <h2 class="pastTit"><img src="/static/images/fun/cartoon/tit_past_cartoon.gif" alt="past_cartoon_title" /></h2>
+            <div class="pastReview">
+                <div><img src="/static/images/fun/cartoon/pastTop.gif" alt="" /></div>
+                <div class="pastCont">
+	                <a href="/fun/cartoon/cartoon_list.sky?strCode=37007" class="toonList">
+                        <span><strong>신샘의 조신한 부부</strong><br />신의철</span>
+                        <em><img src="/static/images/fun/cartoon/toonImg05.jpg" alt="신샘의 조신한 부부" /></em>
+                        <img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" />
+                    </a>
+	                <a href="/fun/cartoon/cartoon_list.sky?strCode=37004" class="toonList">
+	                    <span><strong>하얀늑대 야생 육아편</strong><br />하얀늑대</span>
+	                    <em><img src="/static/images/fun/cartoon/toonImg01.gif" alt="하얀늑대 야생육아편" /></em>
+	                    <img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" />
+	                </a>
+
+	                <a href="/fun/cartoon/cartoon_list.sky?strCode=37005" class="toonList">
+	                    <span><strong>러브레터</strong><br />신의철</span>
+	                    <em><img src="/static/images/fun/cartoon/toonImg02.gif" alt="하얀늑대 야생육아편" /></em>
+	                    <img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" />
+	                </a>
+	           
+	                <a href="/fun/cartoon/cartoon_list.sky?strCode=37002" class="toonList">
+	                    <span><strong>나이스진의 나이스데이</strong><br />김진</span>
+	                    <em><img src="/static/images/fun/cartoon/toonImg03.gif" alt="하얀늑대 야생육아편" /></em>
+	                    <img src="/static/images/fun/cartoon/btn_list.gif" border="0" alt="목록보기" title="목록보기" />
+	                </a>
+
+                </div>
+                <div><img src="/static/images/fun/cartoon/pastFoot.gif" alt="" /></div>
+            </div>
+            <!-- //지난 웹툰 보기 -->
+
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #aac087;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://www.cloudlive.co.kr" target="_blank">CLOUD LIVE</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+
+</body>
+</html>

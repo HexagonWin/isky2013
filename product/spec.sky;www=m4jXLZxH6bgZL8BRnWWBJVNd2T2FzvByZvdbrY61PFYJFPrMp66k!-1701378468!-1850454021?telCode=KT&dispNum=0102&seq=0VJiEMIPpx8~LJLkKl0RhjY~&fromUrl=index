@@ -1,0 +1,623 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/spec.sky?fromUrl=index[AND]seq=0VJiEMIPpx8~LJLkKl0RhjY~[AND]telCode=KT[AND]dispNum=0102[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/spec.sky?fromUrl=index[AND]seq=0VJiEMIPpx8~LJLkKl0RhjY~[AND]telCode=KT[AND]dispNum=0102[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/spec.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100504");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="0102";</script>
+<script language="javascript">
+function ProductList(){
+	var telCode = "";
+
+	
+
+	
+		telCode = "KT";
+	
+
+	
+
+	var url = "/product/product.sky?telCode=" + telCode;
+
+	location.href = url;
+}
+
+function elecPopwin(prdName, elecVal) {
+
+	var popPath = "popup/electromagnetic.sky?prd=" + encodeURI(prdName) + "&elec=" + encodeURI(elecVal);
+	popCwin(popPath, "elecPopup", 720, 600, "yes");
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0102&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0102','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0102','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0102.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_view_visual"><script>swf_include("http://file.isky.co.kr/upload/product/imageAflash/099_IMU610k[2].swf?intTvSeq=&strTeYN=N","740","424","always","","","")</script></div>
+			<div class="product_view_tab">
+				<ul>
+					
+					
+					<li>
+						
+							
+							
+						
+						<a href="/product/feature.sky;www=G1gnLfGW3kvj4MJNXygjvZLncW9tbQYXqSmmFK16GppRvD252VK9!-1701378468!-1850454021?telCode=KT&amp;dispNum=0102&amp;seq=0VJiEMIPpx8%7ELJLkKl0RhjY%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_01.gif" border="0" alt="FEATURE" title="FEATURE" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/spec.sky;www=G1gnLfGW3kvj4MJNXygjvZLncW9tbQYXqSmmFK16GppRvD252VK9!-1701378468!-1850454021?telCode=KT&amp;dispNum=0102&amp;seq=0VJiEMIPpx8%7ELJLkKl0RhjY%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_02_.gif" border="0" alt="SPEC" title="SPEC" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/review.sky;www=G1gnLfGW3kvj4MJNXygjvZLncW9tbQYXqSmmFK16GppRvD252VK9!-1701378468!-1850454021?telCode=KT&amp;dispNum=0102&amp;seq=0VJiEMIPpx8%7ELJLkKl0RhjY%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_03.gif" border="0" alt="REVIEW" title="REVIEW" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/swdownload.sky;www=G1gnLfGW3kvj4MJNXygjvZLncW9tbQYXqSmmFK16GppRvD252VK9!-1701378468!-1850454021?telCode=KT&amp;dispNum=0102&amp;seq=0VJiEMIPpx8%7ELJLkKl0RhjY%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_04.gif" border="0" alt="S/W DOWNLOAD" title="S/W DOWNLOAD" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/accessory.sky;www=G1gnLfGW3kvj4MJNXygjvZLncW9tbQYXqSmmFK16GppRvD252VK9!-1701378468!-1850454021?telCode=KT&amp;dispNum=0102&amp;seq=0VJiEMIPpx8%7ELJLkKl0RhjY%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_05.gif" border="0" alt="ACCESSORY" title="ACCESSORY" />
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			
+				<div class="product_view_cont01">
+					<h5><img src="/static/images/product/product_spec_stit_01.gif" alt="주요기능" title="주요기능" /></h5>
+					<ul class="spec">
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/01[1].jpg" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/01_.jpg" /></dt>
+								<dd>면 분할의 모던한 스타일로 컬러와 재질감을 다르게 사용하여, 대칭적인 배치를 강조하는 디자인으로 IM-S610K만의 유니크한 매력을 느낄 수 있습니다.</dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/02[1].jpg" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/02_.jpg" /></dt>
+								<dd>수신한 문자의 단어를 인식하여 관련된 애니메이션을 넓은 외부 LCD에 표시하는 감성기능을 제공합니다.</dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/03.jpg" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/03_.jpg" /></dt>
+								<dd>스마트아이콘 외에도 외부 LCD에서 바이오리듬 아이콘을 제공하여 생년월일에 따른 바이오 리듬을 체력, 지성, 감성으로 구분하여 아이콘으로 정보를 제공합니다. 또한 특정 번호에 따라 아이콘을 설정할 수 있습니다.</dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/05.jpg" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/05_.jpg" /></dt>
+								<dd>하루하루 체중 정보로 건강변화를 알 수 있는 건강메모, 다양한 금융정보를 알뜰하게 메모할 수 있는 금융메모, 웰빙 트렌드에 맞춘 웰빙푸드 정보, 금연을 도와주는 금연 도우미 등 실생활에 유용한 정보와 편리한 메모 기능을 제공합니다.</dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/06.jpg" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/06_.jpg" /></dt>
+								<dd>일체형 키패드의 불편함을 해소하기 위해 클릭감이 좋은 분리형 키패드를 제공하여 문자를 자주 보낼 경우 편리하게 사용할 수 있습니다.</dd>
+							</dl>
+						</li>
+						
+					</ul>
+				</div>
+			
+
+			<div class="product_view_cont01">
+				<h5><img src="/static/images/product/product_spec_stit_02.gif" alt="상세 SPEC" title="상세 SPEC" /></h5>
+				<table width="" cellpadding="0" cellspacing="0" border="0">
+					<tr valign="top">
+						<td><img src="/static/images/product/product_spec_box_01.gif" /></td>
+					</tr>
+					<tr valign="top">
+						<td style="background:url('/static/images/product/product_spec_box_02.gif') repeat-y;">
+							<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_productSpec">
+							<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="first">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_34(0).gif" alt="product_spec_tit_34(0).gif" title="product_spec_tit_34(0).gif"/>
+										
+									</th>										
+									<td width="607" class="first">
+										<b><font color=8e9513>슬림형 / 표준형</b></font><br/>103x 51.5x15.6 (mm)<br/>108.5g/112g
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_35(0).gif" alt="product_spec_tit_35(0).gif" title="product_spec_tit_35(0).gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										White, Titan, Red , Gold
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_36.gif" alt="product_spec_tit_36.gif" title="product_spec_tit_36.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>Folder</b></font><br/><br/><b><font color=8e9513>Unique 모던 디자인</b></font><br/>면 분할의 모던한 스타일로 컬러와 재질감을 다르게 사용하여, 대칭적인 배치를 강조하는 디자인으로 IM-S610K만의 유니크한 매력을 느낄 수 있습니다.<br/><br/><b><font color=8e9513>분리형 키패드 적용</b></font><br/>클릭감이 좋은 분리형 키패드를 제공하여 문자를 자주 보내는 소비자들이 편리하게 이용하실 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_02.gif" alt="product_spec_tit_02.gif" title="product_spec_tit_02.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>2.6" QVGA (240x320) </b></font>  <br/>2.6" QVGA 대화면 LCD를 채용하여 멀티미디어 동영상과 카메라를 더욱 고영상으로 즐길 수 있습니다.<br/><br/><b><font color=8e9513>26만 컬러 TFT LCD</b></font><br/><br/><b><font color=8e9513>15 Line  x 11자(한글기준)</b></font>
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/led.gif" alt="led.gif" title="led.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>애니메이션 감성기능 제공</b></font><br/>수신한 문자의 단어를 인식하여 관련된 애니메이션을 표시하는 감성기능을 제공하여 즐거운 내용의 문자가 오면 웃는 아이콘을, 우울한 내용의 문자가 오면 우는 아이콘등을 제공하여 문자를 보기 전에 어떤내용인지 짐작할 수 있는 재밌는 기능입니다. (그외 일정, 사랑, 축하, 부정 등 총 12가지의 감성 아이콘을 제공함)<br/><br/><b><font color=8e9513>나만의 바이오 리듬</b></font><br/>사용자가 입력한 생년월일에 따른 바이오리듬을 체력, 지성, 감성을 구분하여 정보를 제공함으로써 매일 나만의 바이오 리듬을 파악 할 수 있는 유용한 기능입니다.<br/><br/><b><font color=8e9513>내맘대로 문자 아이콘</b></font><br/>SKY 아이콘과 내맘대로 문자 아이콘을 제공하여  콜아이디로 자유롭게 설정을 할 수 있습니다. 전화 올때 마다 다양한 모양의 아이콘들이 눈을 즐겁게 합니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_05.gif" alt="product_spec_tit_05.gif" title="product_spec_tit_05.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										플래쉬 애니메이션으로 메뉴의 화려함은 기본, 다양한 대기화면 Style로 나만의 개성을 살릴 수 있습니다. 향상된 효과음으로 더욱 실감나게 기능을 찾을 수 있으며, 인체공학적 메뉴 구조로 User의 편리성을 증가시켜, 쉽게 원하는 기능을 찾을 수 있으며 SKY의 다양한 기능을 100% 활용할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_03.gif" alt="product_spec_tit_03.gif" title="product_spec_tit_03.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>2M CMOS + VGA CMOS</b></font> <br/>내장된 카메라로 나만의 사진첩을 만들 수 있으며, 동영상 촬영으로 남기고 싶은 추억을 담을 수 있습니다. 더욱 향상된 성능으로 다양한 기능과 고화질의 이미지를 제공합니다. 사진/동영상 전송과 사진인화신청을 할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_37.gif" alt="product_spec_tit_37.gif" title="product_spec_tit_37.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>건강메모</b></font><br/>다이어트에 민감한 요즘 트렌드에 맞춰 하루 하루 체중 정보를 저장하고 그 변화를 그래프로 한눈에 볼수 있는 기능을 제공합니다.  체중, 신장 입력시 비만도도 체크 가능합니다.<br/><br/><b><font color=8e9513>금융메모</b></font><br/>카드 번호와 유효 기간등을 쉽게 저장 가능하며 포인트 적립과 할인정보 까지 함께 알뜰하게 메모 할 수있습니다. <br/><br/><b><font color=8e9513>웰빙푸드</b></font><br/>지루한 이동시간 중에 볼만한 실생활에 유용한 웰빙푸드 정보들을 두루두루 담았습니다. <br/><br/><b><font color=8e9513>금연 도우미</b></font><br/>늘 다짐하지만 실천하기 어려운 금연을 도와주는 기능으로 볼때마다 다른 금연 다짐 문구와 금연을 한 날이 쌓일 수록 담뱃값을 얼마나 아낄 수있는지를 보여주는 웰빙 기능입니다. <br/><br/><b><font color=8e9513>단체 문자 도우미</b></font><br/>발신 지정한 각 번호에 저장된 이름이 자동으로 입력되어 문자가 전송되는 기능으로 단체 문자 보낼 때 일일이 문자를 따로 보내지 않아도  단체 문자 티가 안나는 인맥관리용 기능입니다. <br/><br/><b><font color=8e9513>문자 자동 연동</b></font><br/>따로 저장할 필요없이 문자로 온 카드 지출 내역을 바로 머니 다이어리에 저장이 가능 하고 약속도 바로 일정에 연동 가능한 원스텝의 편리한 기능을 제공합니다.<br/><br/><b><font color=8e9513>SKY 스튜디오</b></font> <br/>포토에디터, 포토스토리, 무비에디터, 무비스토리 기능으로 사진과 동영상을 다양하게 활용할 수 있습니다. <br/><br/><b><font color=8e9513>SKY 뷰어</b></font> <br/>문서뷰어는 데이터매니저 프로그램을 통해 CSD파일로 자동변환된 PC의 문서파일을 전송하여 휴대폰에서 확인할 수 있습니다. 또한 텍스트 뷰어가 있어 e-book 기능으로 활용할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_27[3].gif" alt="product_spec_tit_27[3].gif" title="product_spec_tit_27[3].gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										지상파 DMB를 탑재하여 언제 어디서나 실감나는 TV와 음악을 즐길 수 있습니다. 함께 제공되는 이어마이크를 꽂으면 안테나 역할을 하여 보다 편리하게 이용할 수 있습니다. 
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_20.gif" alt="product_spec_tit_20.gif" title="product_spec_tit_20.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>게임</b></font><br/>그림팡팡, 생활의 달인 게임을 내장 탑재하였습니다. <br/><br/><b><font color=8e9513>컨텐츠 보관함</b></font><br/>멀티미디어 및 다운 받은 자료를 보관 관리 할 수 있으며, 폴더 생성을 편리하게 하고 사용자가 생성한 폴더를 컬러 별로 관리할 수 있습니다.<br/><br/><b><font color=8e9513>이어폰마이크 기능</b></font><br/><br/><b><font color=8e9513>Font</b></font><br/>벡터폰트를 지원하여 10가지의 폰트를 (무소체, 광수체, 고딕체, 명조체, 스카이블루체, 비상체, 별헤는 밤체, 뽀리체, 잠수함체,바둑이체) 지원하며, 4가지 폰트 사이즈를 지원하여(작은폰트, 중간폰트, 조금 큰 폰트, 큰 폰트) 고객의 특성에 맞는 폰트 및 사이즈를 설정 할 수 있습니다.<br/><br/><b><font color=8e9513>USIM 부가서비스/ 뱅킹서비스</b></font><br/>Battery에 내장된 안테나를 이용하여 교통카드 기능을 사용하실 수 있으며, 은행 프로그램을 다운로드 받아 폰 뱅킹을 하실 수 있습니다.<br/><br/><b><font color=8e9513>SHOW 인터넷/비디오</b></font><br/>동영상 등의 다채로운 멀티미디어 컨텐츠를 SKY에 다운로드하여 언제 어디서나 실감나는 무선 인터넷을 백배로 즐길 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_17_2.gif" alt="product_spec_tit_17_2.gif" title="product_spec_tit_17_2.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>상황별 모드</b></font><br/>상황별로 사용자가 다양한 상황에서 편리하게 사용할 수 있도록 사운드/LCD밝기/진동을 설정할 수 있습니다.<br/><br/><b><font color=8e9513>자동응답</b></font><br/>자동응답 기능을 원터치 버튼으로 빠르게 활용할 수 있습니다.<br/><br/><b><font color=8e9513>에티켓</b></font><br/>에티켓을 지켜야 할 공공장소, 강연장 등에서 유용하게 사용하실 수 있으며, 통화중에는 속삭임 모드를 이용하여 작은 소리로 통화하실 수 있습니다. 특히 모닝콜과 같이 월~금, 월~토, 매일 원하는 시간대에 에티켓 기능을 미리 설정할 수 있어 편리함을 제공합니다.<br/><br/><b><font color=8e9513>녹음 기능</b></font><br/>최대 60분, 녹음건수 20건까지 녹음되며, 통화중 원터치 버튼을 이용하여 통화내용을 녹음할 수 있습니다. 
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/skyme.gif" alt="skyme.gif" title="skyme.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>컨셉</b></font><br/>다양한 어플리케이션들을 Widget단위로 제공함으로써 사용자 성향에 따라 자유롭게 구성할 수 있는 공간입니다. 사용자가 필요에 따라 자유롭게 꾸미고 배치할 수 있는 메뉴 구조로 Bookmark를 제공하여 자주 사용하는 기능을 바로가기로  등록하고, 빠르게 접근할 수 있는 경로 제공합니다.<br/>(기존 포켓북/다이어리 메뉴에 포함되어 있던 일정, 알람 메모장 등의 PIMS 기능의 어플리케이션과 전자사전, 지하철 노선도 등의 생활 편의 기능들이 Widget의 형태로 제공됩니다)<br/><br/><b><font color=8e9513>플레너</b></font><br/>기존의 일정/다이어리/기념일을 통합하여 편리하게 관리할 수 있습니다.<br/><br/><b><font color=8e9513>메모</b></font><br/>등록한 메모를 메시지로 전송하거나  등록한 메모를 썸네일 보기하여 간편하게 확인할 수 있습니다. 또한 메모에 다양한 컬러를 설정할 수 있습니다.<br/><br/><b><font color=8e9513>단위 환산</b></font><br/>변환할 숫자를 입력하여 나라별 단위변환 값을 알 수 있습니다.<br/><br/><b><font color=8e9513>지하철 노선도</b></font><br/>최단 경로 및 환승 방법, 첫차/막차 정보 등 전국의 지하철 노선 정보가 단말에 쏙~<br/><br/><b><font color=8e9513>룰렛</b></font><br/>여러 개의 아이템 중 하나를 고르거나 역할을 정하고자 할 때 사용하는 위젯입니다.<br/><br/><b><font color=8e9513>세계시간</b></font><br/>세계 시간을 확인 할 수 있습니다.<br/><br/><b><font color=8e9513>시간표</b></font><br/>일주일의 일과를 등록하여 관리할 수 있습니다.<br/><br/><b><font color=8e9513>전자사전</b></font><br/>33만 단어의 영한/한영사전을 제공하며, 내가 찾은 단어를 단어장에 저장하고 대기화면에 설정하여 학습 효과를 배가할 수 있습니다.<br/><br/><b><font color=8e9513>푸드다이어리</b></font><br/>일식,한식,중식,양식등 맛집을 등록하여 관리할 수 있습니다.<br/><br/><b><font color=8e9513>데일리스케줄러</b></font><br/>하루의 일과를 등록하여 관리할 수 있습니다.<br/><br/><b><font color=8e9513>위시리스트</b></font><br/>사용자가 구매하고 싶은 아이템 등록하고 관리할 수 있습니다. <br/><br/><b><font color=8e9513>건강메모</b></font><br/>체중을 포함한 다른 건강 관련 수치들을 저장하고 그래프로 확인 가능합니다. <br/><br/><b><font color=8e9513>웰빙푸드</b></font><br/>실생활에 유용한 웰빙 푸드 정보를 제공합니다. <br/><br/><b><font color=8e9513>금융메모</b></font><br/>카드의 정보를 쉽게 저장가능합니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_16.gif" alt="product_spec_tit_16.gif" title="product_spec_tit_16.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>개인정보관리(PIM) 전화번호부</b></font><br/>최대 10,000개의 전화번호가 저장되는 다이어리식 전화번호부는 이름 기준으로 2000명까지 전화부를 저장할 수 있으며, 전자메일계정, 기념일, 메모 등을 함께 저장할 수 있습니다.<br/><br/>전화부 2,000명/10,000개 저장<br/>단축다이얼 99개/그룹저장개수 42개/그룹당 번호 저장 개수 : 제한없음<br/>착발신 이력 300개 저장<br/><br/><b><font color=8e9513>Call Manager</b></font><br/>기존의 전화부가 Call manager로 통합되면서 통화환경 및 전화부 기능을 call manager에서 관리할 수 있습니다.<br/>기존의 단축번호 입력에 대한 불편요소를 개선하여 시각적으로 편리하게 입력할 수 있도록 하였으며, 콜 셋팅을 콜 매니저에서 일괄적으로 관리할 수 있습니다.<br/><br/>메시지 수신,콜 착신,발신 등의 연락 이력을 통해 이미지 썸네일 영역의 나무가 자라는 것을 확인 할 수 있으며, 네임카드로 착신 화면을 네임카드로 설정하여 구성할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_30.gif" alt="product_spec_tit_30.gif" title="product_spec_tit_30.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										수신문자메시지 : 300개, <br/>발신메시지함: 100개,<br/> 영구 보관함: 200개,<br/>임시저장함: 100개, 스팸메시지 : 20개
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_15.gif" alt="product_spec_tit_15.gif" title="product_spec_tit_15.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										33만 단어의 영한/한영사전을 제공하며, 내가 찾은 단어를 단어장에 저장하고 대기화면에 설정하여 학습 효과를 배가할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_11[1].gif" alt="product_spec_tit_11[1].gif" title="product_spec_tit_11[1].gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>무선적외선통신(IrDA)</b></font><br/>적외선포트를 장착한 SKY휴대폰끼리 사진, 나만의 벨, 나만의 그림, 전화부, 스케줄러, 메모, 시간표등을 교환할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_33.gif" alt="product_spec_tit_33.gif" title="product_spec_tit_33.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										PC에 데이터매니저 프로그램을 설치하여, 가정에서도 인터넷을 통하여 최신 버전의 S/W로 업그레이드 할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_22.gif" alt="product_spec_tit_22.gif" title="product_spec_tit_22.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>표준형(930mAh)</b></font><br/>WCDMA 연속통화 : 약 230분<br/>WCDMA 영상통화 : 약 123분<br/>WCDMA 연속대기 : 약 240시간<br/>TDMB 사용 시 : 약 220분<br/>VOD 재생 시 : 약 290분<br/>Game 사용 시 : 약 310분<br/>카메라 사용 시 : 약 230분<br/><br/>*각 사용시간은 당사 실험실에서 계측기로 측정한 값입니다.<br/>*VOD재생 시간은 스테레오이어마이크 사용 기준입니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_23.gif" alt="product_spec_tit_23.gif" title="product_spec_tit_23.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										<b><font color=8e9513>사용자 공간 내장</b></font><br/>36MB<br/><br/><b><font color=8e9513>외장메모리 지원</b></font><br/>microSD 메모리(별도 구매) 를 지원하여 대용량의 다양한 멀티미디어 컨텐츠를 재생할 수 있습니다.
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_24.gif" alt="product_spec_tit_24.gif" title="product_spec_tit_24.gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										표준형 배터리 (BAT-6000S/M)<br/>배터리 커버<br/>스테레오 이어마이크 (EM-1200)<br/>사용자 설명서 (ML-S610K)
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_25(0).gif" alt="product_spec_tit_25(0).gif" title="product_spec_tit_25(0).gif"/>
+										
+									</th>										
+									<td width="607" class="">
+										여행용 충전기(TC-820)<br/>원형 젠더(TRP-210)<br/>멀티젠더(TRP-300C)<br/>데이터케이블(IMCBL-1410)<br/>배터리 충전 거치대(BTH-2500)
+									</td>										
+																
+								</tr>
+							
+								
+								<tr valign="top">
+								
+								
+									<th width="106" class="lastelec">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_42.gif" alt="product_spec_tit_42.gif" title="product_spec_tit_42.gif"/>
+										<a href="#" onclick="elecPopwin('IM-S610K','mW/g');return false;"><img src="/static/images/product/ico_question.gif" width="20" height="21" style="vertical-align:middle;margin-bottom:3px;" alt="전자파흡수율이란?" /></a>
+									</th>										
+									<td width="607" class="last">
+										mW/g
+									</td>										
+																
+								</tr>
+							
+							</table>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td><img src="/static/images/product/product_spec_box_03.gif" /></td>
+					</tr>
+				</table>
+					
+			</div>
+			
+			<div class="tar p15t"><a href="javascript:ProductList()"><img src="/static/images/common/btn/bd_list.gif" border="0" alt="목록보기" /></a></div>
+			
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</body>
+</html>

@@ -1,0 +1,4280 @@
+
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook/com/2008/fbml" lang="ko" xml:lang="ko">
+<head>
+<title>iVEGA</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="베가,vega,im-a650s"/><meta name="keywords" content="베가,vega,im-a650s"/><meta name="sitecode" content="iVEGA" /><meta property="fb:app_id"		content="302278966514238"/><meta property="og:title" content="iVEGA Vega (IM-A650S)"/><meta property="og:description"	content="베가,vega,im-a650s"/><meta property="og:image" content="http://file.ivega.co.kr/upload/product/feature/1340093516968_18hzto3.jpg"/><meta property="og:site_name"	content="iVEGA"/><meta property="og:type"		content="product"/><meta property="og:country-name"	content="iVEGA"/>
+
+
+
+<link href="/inc/css/smart.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/ui.all.css"/>
+<link rel="stylesheet" type="text/css" href="/css/jquery.autocomplete.css" />
+<link rel="stylesheet" type="text/css" href="/js/cluetip/jquery.cluetip.css" />
+ 
+<script type="text/javascript" src="/dwr/engine.js"></script>
+<script type="text/javascript" src="/dwr/util.js"></script>
+
+<script type="text/javascript" src="/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/js/external/bgiframe/jquery.bgiframe.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.livequery.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.wslide.js"></script>
+<script type="text/javascript" src="/js/cluetip/jquery.cluetip.js"></script>
+<script type="text/javascript" src="/js/ui/jquery.ui.all.js"></script>
+
+<!-- <script type="text/javascript" src="/js/ui/jquery-ui-1.8.12.custom.min.js"></script> -->
+<script type="text/javascript">
+var userId="";
+var userHp="";
+var iskyurl="http://www.ivega.co.kr";
+</script>
+<script type="text/javascript" src="/js/ui/ui.datepicker.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.alphanumeric.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery.corner.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.charcounter.js"></script>
+<script type="text/javascript" src="/inc/js/design.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/inc/js/mobile_swipe.js"></script>
+<script type="text/javascript" src="/js/makePCookie.js"></script>
+<script type="text/javascript" src="/search/js/search.js"></script>
+<script type="text/javascript" src="/js/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="/dwr/interface/prtSmartSearchFrontService.js"></script>
+<!-- 검색 -->
+<link rel="stylesheet" type="text/css" href="/search/ark/css/ark.css" media="screen" />
+<script language="javascript" src="/search/ark/js/ark_custom.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	// Gnb Menu On
+	jQuery(function(){
+
+		var pathnameSplit = window.location.pathname.split("/");
+		var oneDepthMenu = (pathnameSplit.length > 0 ? pathnameSplit[1] : "");
+		
+		// Gnb Menu 활성화
+		jQuery("#header .inner ul.gnb li").each(function(i){
+			jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_on", "_off");
+		});
+		
+		var gnbMenuIndex = -1;
+		
+		if("prt" == oneDepthMenu){
+			
+			if(pathnameSplit[2] != "productNormalInfoList.do" && pathnameSplit[2] != "productNormalInfoView.do"){
+				gnbMenuIndex = 0;
+			}
+		}else if("svc" == oneDepthMenu){
+			gnbMenuIndex = 1;
+		}else if("cam" == oneDepthMenu){
+			gnbMenuIndex = 2;
+		}else if("evt" == oneDepthMenu){
+			gnbMenuIndex = 3;
+		}
+		
+		var gnbMenuImg = jQuery("#header .inner ul.gnb li:eq(" + gnbMenuIndex + ") img");
+		// 서브 메뉴 display
+		//jQuery("#header .inner .snb ul:eq(" + gnbMenuIndex + ")").show();
+		
+		if(gnbMenuIndex > -1){
+			jQuery(gnbMenuImg).get(0).src = jQuery(gnbMenuImg).get(0).src.replace("_off", "_on"); 
+		}
+		if(window.location.pathname == "/main.do"){
+			jQuery("#header .inner .snb").hide();
+		}
+		
+		
+		// Sub Menu 활성화
+		/*
+		var requestParams = new reqParam();
+		jQuery("#header .inner .snb ul:visible a").each(function(i){
+			var aLinkHref = jQuery(this).attr("href");
+			var aLinkLastIndexOf = aLinkHref.lastIndexOf("?");
+			var aLinkPathName = aLinkHref.substring(0, (aLinkLastIndexOf > -1 ? aLinkLastIndexOf : aLinkHref.length));
+			var aLinkParams = new reqParam(aLinkHref.substring(aLinkLastIndexOf + 1));
+			
+			jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_on", "_off");
+			if(window.location.pathname == aLinkPathName){
+				var bParamCheck = true;
+				
+				for(var i = 0; i < aLinkParams.size(); i++){
+					
+					if(requestParams.get(aLinkParams.getKeyName(i)) == aLinkParams.get(aLinkParams.getKeyName(i))){
+						bParamCheck = true;
+					}else{
+						bParamCheck = false;
+						break;
+					}
+				}
+				if(bParamCheck){
+					jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_off", "_on");
+					return false;
+				}
+			}
+		});
+		*/
+		
+		// 상단 검색어
+		var topSearchTextBg = $(".topSearch input[type='text']").css("background-image");
+		$(".topSearch input[type='text']").focus(function(){
+			if($(this).val().length == 0){
+				$(this).val('');
+				$(this).css({"background-image" : "none"});
+			}
+		}).blur(function(){
+			if($(this).val().length == 0){
+				$(this).css({"background-image" : topSearchTextBg});
+			}
+		});
+	});
+});
+
+jQuery(function() {
+    jQuery(".dtm").datepicker({ 
+        dateFormat: 'yy-mm-dd', 
+        changeMonth: true, 
+        changeYear: true,
+        buttonImage: "/img/common/ico_calendar.gif",
+        buttonImageOnly: true,
+        showOn: 'both'
+     });
+    jQuery(".dtm").css({"cursor":"pointer", "margin-right":"5px"});
+    jQuery(".dtm").attr("readonly", true);
+});
+
+function searchSubmit(){
+	var searchForm = document.search;
+	if(! $.trim(searchForm.query.value)){
+		$("form[name='search'] input[name='query']").css({"background-image" : "none"});
+		searchForm.query.value = $("form[name='search'] input[name='query']").attr("defaultVal");
+	}
+	searchForm.submit();
+}
+var smartview_flag=false;
+function smartSearch(){
+	if(!smartview_flag){
+		jQuery(".smartLayer").show();
+		smartview_flag= true;
+		doSmartSearch();	
+	}else{
+		jQuery(".smartLayer").hide();
+		smartview_flag= false;
+	}
+}
+
+//동영상 슬라이드 설정
+var bPhoneSearchMoving = false;
+var itemPhoneSearchWidth = 140;
+var slidePhoneSearch = null;
+var itemPhoneSearchLength = 0
+
+function doSmartSearch(){
+	var h_phone1 = jQuery(":radio[name='h_phone1']:checked").val();
+	var h_phone2 = jQuery(":radio[name='h_phone2']:checked").val();
+	var h_phone3 = jQuery(":radio[name='h_phone3']:checked").val();
+	var h_phone4 = jQuery(":radio[name='h_phone4']:checked").val();
+	
+	var parameterObject = {};
+	parameterObject["telecom"] = h_phone1;
+	var i=0;
+	var category =new Array();
+	if(h_phone2!=""){
+		category[i++]=h_phone2;	
+	}
+	if(h_phone3!=""){
+		category[i++]=h_phone3;	
+	}
+	if(h_phone4!=""){
+		category[i++]=h_phone4;	
+	}
+
+	parameterObject["category"] = category.join(",");
+	
+	jQuery.blockUI();
+	prtSmartSearchFrontService.getSmartSearchPrtList(parameterObject, {
+    	callback:function(data){ if(!data){
+    		//alert("data load fail ...");
+    		jQuery.unblockUI();
+    	}else{
+    		
+    		jQuery("#smart_side li").remove();
+    		var html = "";
+    		if(data.length>0){
+    			jQuery("#divPhoneNo").hide();
+    			jQuery(".phoneSlide").show();
+	    		jQuery.each(data, function(){
+	    			html = "";
+	    			html += "<li>";
+	    			html += "	<a href=\"/prt/productInfo.do?intprdseq="+this.intprdseq+"\">";
+	    			html += "		<img src=\"http://file.ivega.co.kr/upload/product/feature/"+this.strimgname+"\" width=\"103\" height=\"110\" alt=\"\" /><br />";
+	    			html += "		<span>"+this.strprdnname+"</span>";
+	    			html += "	</a>";
+	    			html += "</li>";
+	    			jQuery("#smart_side").append(html);
+	    		});
+    		}else{
+    			jQuery("#divPhoneNo").show();
+   				jQuery(".phoneSlide").hide();
+    		}
+    		jQuery.unblockUI();
+    		smartSearchInit();
+    	}}
+    });
+}
+
+function smartSearchInit(){
+	slidePhoneSearch = jQuery(".phoneSlide .slide");
+	itemPhoneSearchLength = $(slidePhoneSearch).find("li").length;
+	$(slidePhoneSearch).css({"width" : ((itemPhoneSearchLength * itemPhoneSearchWidth)) + "px"});
+	
+	if(itemPhoneSearchLength > 6){
+		//$(".phoneSlide .prev").addClass("off");
+		//$(".phoneSlide .next").addClass("off");
+		$(".phoneSlide .prev").show();
+		$(".phoneSlide .next").show();
+	}else{
+		//$(".phoneSlide .prev").addClass("on");
+		//$(".phoneSlide .next").addClass("on");
+		$(".phoneSlide .prev").hide();
+		$(".phoneSlide .next").hide();
+	}
+}
+
+jQuery(document).ready(function(){
+	jQuery(".smart_search").bind("change",function(){
+		doSmartSearch();
+	});
+	
+	$(".phoneSlide .prev",this).click(function(){
+		if(! bPhoneSearchMoving && ! $(this).hasClass("off")){
+			bPhoneSearchMoving = true;
+			$(slidePhoneSearch).find("li:last").prependTo($(slidePhoneSearch));
+			$(slidePhoneSearch).css({"left" : "-" + itemPhoneSearchWidth + "px"});
+			$(slidePhoneSearch).animate({"left" : "0px"}, function(){
+				bPhoneSearchMoving = false;
+			});
+		}
+		return false;
+	});
+	
+	$(".phoneSlide .next",this).click(function(){
+		if(! bPhoneSearchMoving && ! $(this).hasClass("off")){
+			bPhoneSearchMoving = true;
+			$(slidePhoneSearch).animate({"left" : "-" + itemPhoneSearchWidth + "px"}, function(){
+				$(slidePhoneSearch).find("li:first").appendTo($(slidePhoneSearch));
+				$(slidePhoneSearch).css({"left" : "0px"});
+				bPhoneSearchMoving = false;
+			});
+		}
+		return false;
+	});
+});
+
+
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="inner">
+			<form name='search' action='http://www.ivega.co.kr/search/search.do' method='post' onsubmit="searchSubmit(); return false;">
+			   <input type='hidden' name='startCount' value='0' />
+			   <input type='hidden' name='collection' value='ALL' />
+			   <input type='hidden' name='requery' value='' />
+			   <input type='hidden' name='mode' value='basic' />
+			   <input type='hidden' name='sort' value='RANK' />
+			   <input type='hidden' name='rt2' />			
+				<h1><a href="/main.do"><img src="/img/layout/logo_top.png" alt="VEGA" /></a></h1>
+				<div class="topNav">
+					<ul>
+					
+					
+						<li><a href="https://member.ivega.co.kr/mem/login.do">로그인</a></li>
+						<li><a href="https://member.ivega.co.kr/mem/memType.do">회원가입</a></li>
+					
+						<li><a href="https://member.ivega.co.kr/myp/mypMain.do">마이베가</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/prt/productNormalInfoList.do" class="icoA">일반폰</a></li>
+						<li class="line"><a href="http://www.vegaservice.co.kr" target="_blank" title="VEGA Cyber Pluszone" class="icoB">고객센터</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/notice/noticeList.do" class="icoC">공지사항</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/news/newsList.do" class="icoD">최신뉴스</a></li>
+					</ul>
+				</div>
+				<ul class="gnb">
+					<li><a href="http://www.ivega.co.kr/prt/productInfoList.do"><img src="/img/layout/nav/gnb01_off.gif" alt="스마트폰" /></a></li>
+					<li><a href="http://www.ivega.co.kr/svc/svcMain.do"><img src="/img/layout/nav/gnb02_off.gif" alt="베가 라이프" /></a></li>
+					<li><a href="http://www.ivega.co.kr/cam/culList.do"><img src="/img/layout/nav/gnb03_off.gif" alt="베가 캠페인" /></a></li>
+					<li><a href="http://www.ivega.co.kr/evt/evtList.do"><img src="/img/layout/nav/gnb04_off.gif" alt="이벤트" /></a></li>
+				</ul>
+				
+				<div class="snb">
+					
+
+ 
+
+
+
+
+<ul>
+	<li><a href="/prt/productInfoList.do"><img alt="ï¿½ï¿½Ã¼" src="/img/layout/nav/snb_smart00_off.gif" /></a></li>
+	<li><a href="/prt/productInfoList.do?telecom=SKT"><img alt="SKT" src="/img/layout/nav/snb_smart01_on.gif"  /></a></li>
+	<li><a href="/prt/productInfoList.do?telecom=KT"><img alt="KT" src="/img/layout/nav/snb_smart02_off.gif" /></a></li>
+	<li><a href="/prt/productInfoList.do?telecom=LGU"><img alt="LG U+" src="/img/layout/nav/snb_smart03_off.gif" /></a></li>
+</ul>
+
+				</div>
+				
+				<fieldset class="topSearch">
+					<legend>검색</legend>
+					
+					<input type="text" name="query" id="query" class="txt" defaultVal="vega_R3" value="" style="background:url(http://file.ivega.co.kr/upload/banner/image/1348449063697_1q06s1vo.jpg) no-repeat 0 top;" />
+					
+					<!--
+					<input type="text" name="query" id="query" class="txt" defaultVal="vega_R3" value="" style="background:url(http://file.ivega.co.kr/upload/banner/image/1348449063697_1q06s1vo.jpg) no-repeat 0 top;" />
+					-->
+					<input type="image" src="/img/layout/btn_search.png" alt="검색" class="btn"/>
+					<a href="javascript:smartSearch();" class="smart"><img src="/img/layout/btn_smart_search.png" alt="스마트검색" /></a>
+					<div id="autoList" class="autoList" style="display:block;"></div>
+				</fieldset>
+				</form>
+				
+				<!-- // start -->
+				<div class="smartLayer" style="display:none;">
+					
+					<form name="header_smartform">
+					
+					<div class="clfix">
+						<h2><img src="/img/layout/tit_smart_search.png" alt="스마트폰 검색" /></h2>
+						<div class="selectAear">
+							<dl>
+								<dt><img src="/img/layout/th_smart_search01.png" alt="통신사" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone1" id="phone1_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone1_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_44" class="option smart_search" type="radio" value="SKT"/><label for="phone1_44">SKT</label></li>
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_45" class="option smart_search" type="radio" value="KT"/><label for="phone1_45">KT</label></li>
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_46" class="option smart_search" type="radio" value="LGU+"/><label for="phone1_46">LG U+</label></li>
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search02.png" alt="통신방식" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone2" id="phone2_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone2_0">전체</label></li>
+											
+											
+											
+											
+											<li><input name="h_phone2" id="phone2_2" class="option smart_search" type="radio" value="76002"/><label for="phone2_2">3G</label></li>
+											
+											
+											
+											<li><input name="h_phone2" id="phone2_3" class="option smart_search" type="radio" value="76003"/><label for="phone2_3">LTE</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search03.png" alt="화면크기" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone3" id="phone3_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone3_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_5" class="option smart_search" type="radio" value="77001"/><label for="phone3_5">3" 형</label></li>
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_6" class="option smart_search" type="radio" value="77002"/><label for="phone3_6">4" 형</label></li>
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_7" class="option smart_search" type="radio" value="77003"/><label for="phone3_7">5" 형</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search04.png" alt="CPU" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone4" id="phone4_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone4_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_9" class="option smart_search" type="radio" value="78001"/><label for="phone4_9">싱글코어</label></li>
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_10" class="option smart_search" type="radio" value="78002"/><label for="phone4_10">듀얼코어</label></li>
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_11" class="option smart_search" type="radio" value="78003"/><label for="phone4_11">쿼드코어</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="phoneSlide">
+						<a href="#" class="prev ctr">이전</a>
+						<a href="#" class="next ctr">다음</a>
+						<div class="mask">
+							<ul class="slide" id="smart_side">
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:smartSearch();" class="closeBtn"></a>
+					</form>
+					
+					<p class="none" id="divPhoneNo" style="display:none;">
+						<span>검색 결과가 없습니다.</span>
+					</p>
+				
+				</div>
+				<!--  end -->
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		<!-- //header -->
+
+
+ 
+
+
+
+
+<script type="text/javascript" src="/js/BBMCPlayer/js/swfobject.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/inc/js/jquery_tform.min.js"></script>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+ //window.onerror=function error_kill() {return true;}
+ window.fbAsyncInit = function(){
+	FB.init({
+		appId  : '302278966514238',
+		status : true, // check login status
+		cookie : true, // enable cookies to allow the server to access the session
+		xfbml  : true // parse XFBML
+		//oauth  : true // enable OAuth 2.0
+	});
+	// 좋아요
+	FB.Event.subscribe('edge.create', function(href){
+		fblike(href);
+	});
+ };
+ (function(){
+		var e = document.createElement('script');
+		e.async = true;
+		e.src = document.location.protocol + '//connect.facebook.net/ko_KR/all.js#appid=302278966514238&xfbml=1';
+		document.getElementById('fb-root').appendChild(e);
+	}());
+ 
+ function fblike(likeUrl) {
+	FB.api('/me', function(response) {
+		FB.api({
+			method: 'fql.query', 
+			query: 'SELECT total_count FROM link_stat WHERE url="'+likeUrl+'"'
+		   }, function(response) {});
+	});
+};
+
+//페이스북 메타 호출
+function fbMeta(){
+	var prdnames = 'IM-A650S, ';
+	prdnames = prdnames.substring(0, prdnames.lastIndexOf(","));
+	/*var html = '';
+	html += '<meta name="description" content="베가,vega,im-a650s"/>';
+	html += '<meta name="keywords" content="베가,vega,im-a650s"/>';
+	html += '<meta name="sitecode" content="iVEGA" />';
+	html += '<meta property="fb:app_id"		content="302278966514238"/>';
+	html += '<meta property="og:title" content="iVEGA Vega (' +prdnames +')"/>';
+	html += '<meta property="og:description"	content="베가,vega,im-a650s"/>';
+	html += '<meta property="og:image"content="http://file.ivega.co.kr/upload/product/feature/1340093516968_18hzto3.jpg"/>';
+	html += '<meta property="og:site_name"	content="iVEGA"/>';
+	html += '<meta property="og:type"		content="product"/>';
+	html += '<meta property="og:country-name"	content="iVEGA"/>';
+	$("head").append(html);*/
+	//document.getElementsByTagName('head')[0].appendChild();
+	
+	document.title = 'iVEGA Vega (' + prdnames +')';
+}
+
+function appsPlayList(cate, model){
+	jQuery("#sTab6 .appTabB li").each(function(){	jQuery(this).attr("class",""); });
+	jQuery("#"+cate).attr("class","on");
+	$.ajax({
+		type: "GET",
+		url: "/prt/getApps.do",
+		timeout: 5000,
+		data: {
+			"category" : cate
+			, "model" : model
+			, "menu" : "IskyPopular"
+		},
+		async: false,
+		dataType:"json",
+		success: function(data){
+			var html = "";
+			switch(cate){
+				case "10000000":
+					catename = "game"
+					break;
+				case "30000000":
+					catename = "movie"
+					break;
+				case "40000000":
+					catename = "tv"
+					break;
+				case "50000000":
+					catename = "music"
+					break;
+			}
+			
+			if(catename == "movie" || catename == "tv"){
+				$("#sTab6 #prdAppsPlay").attr("class","prdAppsPlay tpB");
+			}else{
+				$("#sTab6 #prdAppsPlay").attr("class","prdAppsPlay");
+			}
+			
+			if(data.result.code == 200)
+			{
+				for(var i=0; i<data.result.resultList.length;i++){
+					var row =  data.result.resultList[i];
+					if((i+1)%8 == 1){
+						html += "<ul class='box'>";
+					}
+					var appTitleMaxLength = 20;
+					var appTitle = (row.TITLE.length > appTitleMaxLength ? row.TITLE.substring(0, appTitleMaxLength) + "..." : row.TITLE); 
+					html += '<li>'
+					+'<a href="http://appsplay.vegalive.co.kr/'+catename+'/'+catename+'_view.sky?cid='+row.CID+'" target="_blank">'
+					+'<span class="ico"><img src="'+row.IMAGE_ICON+'" alt="'+row.TITLE+'" /></span>'
+					+'<span class="tit">'+appTitle+'</span>'
+					+'</a>'
+					+'<span class="star"><span style="width:'+(parseInt(row.RATE)*2)+'0%;"></span></span>'
+					+'</li>';
+					if((i+1)%8 == 0 || i == data.result.resultList.length-1){
+						html += '</ul>';
+					}
+				}
+				
+				if(data.result.resultList.length == 0){
+					html = "<ul class='box'><img src='/img/contents/smart/no_prd_image2.gif' alt='해당 데이터가 없습니다.' /></ul>";
+				}
+			}else{
+				html = "<ul class='box'><img src='/img/contents/smart/no_prd_image2.gif' alt='해당 데이터가 없습니다.' /></ul>";
+			}
+			
+			jQuery("#sTab6 #appslist").hide();
+			jQuery("#sTab6 #appslist").html(html);
+			//jQuery("#sTab6 #appslist ul li .ico").corner('cc:#fff round 15px');
+			jQuery("#sTab6 #appslist").show();
+			
+			//슬라이드를 위한 설정
+			$("#sTab6 #prdAppsPlay .sPaging .page em").text("1");
+			$("#sTab6 #prdAppsPlay .sPaging span.aPage").text((parseInt(Math.ceil(data.result.resultList.length / 7), 10)));
+			$("#sTab6 .slideInner").css("width", $("#sTab6 .slideInner").find(".box").length * 960);
+		},
+		error: function(e){
+			var html = "<ul class='box'><img src='/img/contents/smart/no_prd_image2.gif' alt='해당 데이터가 없습니다.' /></ul>";
+			jQuery("#appslist").html(html);
+		}
+	});
+}
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" defer="defer">
+var frontMaxWidth = 450;
+var sideMaxWidth = 200;
+var imageItemFrontWidth = 540;
+var imageItemWidth = 360;
+var prdVideoIndex = 0;
+jQuery(document).ready(function(){
+	
+	// 페이스북 메타 테그 설정
+	fbMeta();
+	
+	//앱스플레이
+	var strmodelList = "IM-A650S";
+	appsPlayList("30000000", strmodelList);
+	
+	
+	// 특징 이미지    
+        var new_fCnt = null;
+        var new_fWidth = 960;
+        var html = "";
+        if ("522"  == '902') {//IM-A840 모델
+            new_fCnt = jQuery("#new_fView ul.new_slide_ul li.new_slide_li").length;
+	        
+	        jQuery("#new_fView ul.new_slide_ul").css({ "width": (new_fCnt * new_fWidth) });
+	        for (var i = 0; i < new_fCnt; i++) {
+	            var href = jQuery("#new_fView >ul >li:eq(" + i + ")").attr("id");
+	            html += '<a href="#' + href + '" class="' + (i == 0 ? 'on' : '') + '"><span>' + (i + 1) + '</span></a>';
+	        }
+        } else {//IM-A840 이외 모델
+            new_fCnt = jQuery("#featureView ul li").length;
+	        jQuery("#featureView ul").css({"width" : (new_fCnt * new_fWidth)});
+	        
+	        for(var i = 0; i < new_fCnt; i++){
+	            var href = jQuery("#featureView ul li:eq(" + i + ")").attr("id");
+	            html += '<a href="#' + href + '" class="' + (i == 0 ? 'on' : '') + '"><span>' + (i + 1) + '</span></a>';
+	        }
+        }
+	    jQuery("#featureViewPaging").html(html);
+
+
+        // 특징 수정 2012-07-26     
+        jQuery('#new_fView.new_slide ul li .fv_box4 div').css('display', 'block');
+        vfb_click = 0;
+        vfb_click0 = 0;
+        vfb_click1 = 1;
+        vfb_click2 = 2;
+        vfb_click3 = 3;
+        vfb_click4 = 4;
+        vfb_click5 = 5;
+        vfb_click6 = 6;
+        vfb_click7 = 7;
+
+        jQuery("#featureViewPaging a").live("click", function () {
+            // 13m 해상도 (돋보기)
+            function fvb_play2_set() {
+                jQuery('.fv_box2 .izoom_rg').css({ top: '70px', left: '220px' })
+                jQuery('.fv_box2 .izoom .p1').css({ top: '213px', left: '270px' })
+            }
+            function fvb_play2() {
+                var iz_p = jQuery('.fv_box2 .izoom .p2')
+                var iz_p1 = jQuery('.fv_box2 .izoom .p1')
+
+                function izoom_p() {
+                    iz_p.animate({ opacity: '1' }, 1, function () {
+                        iz_p.fadeOut(500, function () { iz_p.fadeIn(500); })
+                    })
+                }
+                function izoom_p1() {
+                    iz_p1.hide(1).css({ top: '213px', left: '270px' })
+                    iz_p1.show(1).animate({ top: '-=87px', left: '-=16px' }, 1000, null, function () {
+                        iz_p1.delay(1000).hide(1)
+                    });
+                }
+
+
+                if (iz_p.is(':animated')) {
+                    return;
+                } else {
+                    iz_p.attr("timer", setInterval(function () { izoom_p() }, 500));
+                    izoom_p1();
+
+                }
+
+                $(".fv_box2 .izoom").mousemove(
+                function (e) {
+                    var dimensions = $(".fv_box2 .zoom_s5").attr("rel").split(/\//),
+                        offset = $(this).offset();
+                    dimensions[0] = dimensions[0].split(/x/);
+                    dimensions[1] = dimensions[1].split(/x/);
+                    var ratio = {
+                        width: parseInt(dimensions[0][1], 10) / parseInt(dimensions[1][1], 10),
+                        height: parseInt(dimensions[0][0], 10) / parseInt(dimensions[1][0], 10)
+                    },
+                        x = e.pageX - offset.left,
+                        y = e.pageY - offset.top,
+
+                    x = x - $(this).width() / ratio["width"] / 2;
+                    x1 = x - $(this).width() / 3 + 125;
+                    y = y - $(this).height() / ratio["height"] / 2 - 15;
+
+                    if (x1 < 0)
+                        x1 = 0;
+                    if (x1 > $(this).width() - $(this).width() / 3)
+                        x1 = $(this).width() - $(this).width() / 3;
+
+                    if (y < 0)
+                        y = 0;
+                    if (y > $(this).height() - $(this).height() / ratio["height"])
+                        y = $(this).height() - $(this).height() / ratio["height"];
+
+                    x1 = Math.round(x1);
+                    x2 = Math.round(x1 - 60);
+                    x3 = Math.round(x1 - 55);
+                    y1 = Math.round(y);
+                    y2 = Math.round(y - $(this).height());
+                    y3 = Math.round(y - $(this).height() - 26);
+                    $(this).find(".izoom_rg").css({
+                        backgroundPosition: (x1 > 0 ? "-" + x1 + "px" : 0) + " " + (y1 > 0 - $(this).height() ? '-' + (y1 + $(this).height()) + "px" : 0), left: x1 + "px", top: y1 + "px"
+                    });
+                    $("div.zoom_s5").css("background-position", (x2 > 0 ? "-" + (x2 * ratio["width"] - 1) + "px" : 0) + " " + (y3 > 0 - $(this).height() ? '-' + ((y3 + $(this).height()) * ratio["width"] - 1) + "px" : 0));
+                    $("div.zoom_b").css("background-position", (x3 > 0 ? "-" + (x3 * ratio["width"] - 1) + "px" : 0) + " " + (y3 > 0 - $(this).height() ? '-' + ((y3 + $(this).height()) * ratio["width"] - 1) + "px" : 0));
+                    iz_p.stop().fadeOut(1)
+                    iz_p1.stop().hide(1)
+                    clearInterval(iz_p.attr("timer"));
+                }
+            );
+            }
+            // 제로 셔터 랙 // 트레킹 포커스
+            // 제로 셔터 랙
+            var zs1_dd = jQuery(".zs_photo1 .photo dd")
+            var zs2_dd = jQuery(".zs_photo2 .photo dd")
+            zs_click = 1;
+
+            function zs_set() {
+                if (zs_click == 1) {
+                    zs1_dd.fadeOut()
+                    jQuery('.zs_photo1 p3').fadeOut()
+                    zs2_dd.animate({ rotate: '0deg', translate: ['0', '0px'], opacity: '0' }, 1)
+                }
+            }
+            function z_shutter() {
+                if (zs_click == 1 && navigator.appVersion.indexOf("MSIE 9") <= -1) {
+                    zs_click = 0;
+                    zs1_dd.eq(0).fadeIn(500);
+                    zs2_dd.eq(0).animate({ rotate: '-30deg', opacity: '1' }, 500, function () {
+                        zs1_dd.eq(1).fadeIn(500)
+                        zs2_dd.eq(1).animate({ rotate: '-12deg', translate: ['-10px', '-38px'], opacity: '1' }, 500, function () {
+                            zs1_dd.eq(2).fadeIn(500)
+                            zs2_dd.eq(2).animate({ rotate: '10deg', translate: ['-3px', '-76px'], opacity: '1' }, 500, function () {
+                                zs1_dd.eq(3).fadeIn(500)
+                                zs2_dd.eq(3).animate({ rotate: '20deg', translate: ['30px', '-116px'], opacity: '1' }, 500, function () {
+                                    zs1_dd.eq(4).fadeIn(500)
+                                    zs2_dd.eq(4).animate({ rotate: '30deg', translate: ['60px', '-153px'], opacity: '1' }, 500, function () {
+                                        zs1_dd.eq(5).fadeIn(500)
+                                        zs2_dd.eq(5).animate({ rotate: '40deg', translate: ['70px', '-183px'], opacity: '1' }, 500, function () {
+                                            zs_click = 1;
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                } else if (zs_click == 1 && navigator.appVersion.indexOf("MSIE 9") > -1) {
+                    zs2_dd.css({ filter: 'alpha(opacity=100)', opacity: '1', display: 'none' })
+                    if (zs_click == 1) {
+                        zs_click = 0;
+                        zs1_dd.eq(0).fadeIn(1000);
+                        zs2_dd.eq(0).delay(700).show(1).animate({ rotate: '-30deg' }, 700, function () {
+                            zs1_dd.eq(1).fadeIn(1000)
+                            zs2_dd.eq(1).delay(200).show(1).animate({ rotate: '-12deg', translate: ['-10px', '-38px'] }, 1000, function () {
+                                zs1_dd.eq(2).fadeIn(1000)
+                                zs2_dd.eq(2).delay(200).show(1).animate({ rotate: '10deg', translate: ['-3px', '-76px'] }, 1000, function () {
+                                    zs1_dd.eq(3).fadeIn(1000)
+                                    zs2_dd.eq(3).delay(200).show(1).animate({ rotate: '20deg', translate: ['30px', '-116px'] }, 1000, function () {
+                                        zs1_dd.eq(4).fadeIn(1000)
+                                        zs2_dd.eq(4).delay(200).show(1).animate({ rotate: '30deg', translate: ['60px', '-153px'] }, 1000, function () {
+                                            zs1_dd.eq(5).fadeIn(1000)
+                                            zs2_dd.eq(5).delay(200).show(1).animate({ rotate: '40deg', translate: ['70px', '-183px'] }, 1000, function () {
+                                                zs_click = 1;
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    }
+                }
+            }
+            // 트레킹 포커스
+            ts_click = 1;
+            var tf_p = jQuery('.t_focus >p')
+            function tf_set() {
+                if (ts_click == 1) {
+                    tf_p.fadeOut(1);
+                    tf_p.eq(3).animate({ top: '-=12', left: '+=110' }, 300).animate({ left: '561px', top: '185px' }, 1)
+                }
+            }
+            function t_focus() {
+                if (ts_click == 1) {
+                    ts_click = 0;
+                    function tf_img() {
+                        tf_p.eq(3).show().find('>img').animate({ width: '50px', top: '+=15', left: '+=15' }, 300, function () {
+                            tf_p.eq(3).find('>img').animate({ width: '79px', top: '-=15', left: '-=15' }, 100)
+                        });
+                    }
+                    tf_p.eq(0).delay(800).fadeIn(1000, function () {
+                        tf_img();
+                        tf_p.eq(0).delay(700).fadeOut(1500);
+                        tf_p.eq(1).delay(700).fadeIn(1000);
+                        tf_p.eq(3).delay(1300).animate({ top: '-=12', left: '+=110' }, 300).animate({ left: '-=13' }, 200, function () {
+                            tf_img();
+                            tf_p.eq(1).delay(700).fadeOut(1500);
+                            tf_p.eq(2).delay(700).fadeIn(1000);
+                            tf_p.eq(3).delay(1300).animate({ top: '+=19', left: '+=104' }, 300).animate({ left: '-=13' }, 200, function () {
+                                tf_img();
+                                ts_click = 1;
+                            });
+                        });
+
+                    });
+                }
+            }
+            // fvb_play3
+            function fvb_play3() {
+                function fv_box3_set() {
+                    if (jQuery(this).hasClass('zs_a') == true && jQuery('.z_shutter').is(':visible') == false) {
+                        jQuery('.z_shutter').fadeIn(800)
+                        jQuery('.zs_photo1 p3').fadeIn(800)
+                        jQuery('.t_focus').fadeOut(200)
+                        tf_set();
+                        if (zs_click == 1 && jQuery('.z_shutter dd').is(':animated') == false) {
+                            zs_set();
+                            z_shutter();
+                        };
+                    } else if (jQuery(this).hasClass('zs_a') == true && jQuery('.z_shutter').is(':visible') == true) {
+                        if (zs_click == 1 && jQuery('.z_shutter dd').is(':animated') == false) {
+                            zs_set();
+                            z_shutter();
+                        };
+                    } else if (jQuery(this).hasClass('tf_a') == true && jQuery('.t_focus').is(':visible') == false) {
+                        jQuery('.z_shutter').fadeOut(200)
+                        jQuery('.zs_photo1 p3').fadeOut(200)
+                        jQuery('.t_focus').fadeIn(800)
+
+                        zs_set();
+                        if (ts_click == 1 && jQuery('.t_focus p').is(':animated') == false) {
+                            tf_set();
+                            t_focus();
+                        }
+                    } else if (jQuery(this).hasClass('tf_a') == true && jQuery('.t_focus').is(':visible') == true) {
+                        if (ts_click == 1 && jQuery('.t_focus p').is(':animated') == false) {
+                            tf_set();
+                            t_focus();
+                        };
+                    }
+                };
+
+                // 선택 버튼
+                jQuery('.fv_box3 .btn_ch a').click(fv_box3_set);
+            }
+            function fvb_play4() {
+                function img_wifi() {
+                    jQuery('.fv_box4 p.p1').fadeOut(200, function () {
+                        jQuery('.fv_box4 p.p1').fadeIn(200);
+                    });
+                }
+
+                function fv4_in() {
+                    var fv4_w = jQuery('.fv4_white .fv4_w')
+                    var fv4_b = jQuery('.fv4_black .fv4_w')
+                    var fv4_p = (fv4_w.find('>p').width() * -1);
+
+                    fv4_w.find('>p:first').clone().appendTo(fv4_w);
+                    fv4_b.find('>p:first').clone().appendTo(fv4_b);
+
+                    jQuery('.fv4_white .fv4_w').delay(500).animate({ left: fv4_p + 'px' }, 600, function () {
+                        fv4_w.find('>p:first').remove();
+                        fv4_w.css("left", "0");
+                        img_wifi();
+
+                        jQuery('.fv4_black .fv4_w').delay(300).animate({ left: fv4_p + 'px' }, 600, function () {
+                            fv4_b.find('>p:first').remove();
+                            fv4_b.css("left", "0");
+                        });
+                    });
+                }
+
+                function fv4_in_play() {
+                    jQuery('.fv4_wbox').attr("timer", setInterval(function () { fv4_in() }, 2500));
+                    setTimeout(function () {
+                        clearInterval(jQuery('.fv4_wbox').attr("timer"));
+                        vfb_click = 3;
+                        vfb_click3 = 3;
+                        return false;
+                    }, 10000);
+                    return false;
+                }
+                fv4_in();
+                fv4_in_play();
+            };
+
+            // 스마트 보이스
+            function fvb_play6() {
+                var fvb6_p = jQuery('.fv_box6').find('p')
+                fvb6_p.eq(0).fadeIn(300, function () {
+                    fvb6_p.eq(1).fadeIn(300, function () {
+                        fvb6_p.eq(2).fadeIn(300, function () {
+                            fvb6_p.eq(3).fadeIn(300, function () {
+                                fvb6_p.eq(4).fadeIn(300, function () {
+                                    fvb6_p.eq(5).fadeIn(300, function () {
+                                        vfb_click = 5;
+                                        vfb_click5 = 5;
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            };
+
+            // 스마트 빔
+            function fvb_play7() {
+                var phone_f = jQuery('.fv_box7 .phone_ft1')
+                var phone_b = jQuery('.fv_box7 .phone_bk1')
+
+                //phone_f.find('.sp1').show()
+                phone_f.show(800, function () {
+                    phone_f.find('>img').attr('src', phone_f.find('>img').attr('src').replace('front1.jpg', 'front1.png'))
+                    phone_f.delay(400).animate({ left: '+=190px' }, 500).animate({ left: '-=10px' }, 300, function () {
+                        phone_f.animate({ left: '-=30px', top: '+=15px' }, 300, function () {
+                            phone_f.find('.view2').fadeIn(800, function () {
+                                phone_f.find('.view3').delay(200).fadeIn(800, function () {
+                                    jQuery('.t_icon').delay(200).fadeIn(300, function () {
+                                        jQuery('.t_icon .p1').fadeIn(100);
+                                        jQuery('.t_icon .p2').delay(300).fadeIn(100);
+                                        jQuery('.t_icon .p3').delay(600).fadeIn(100, function () {
+                                            phone_f.delay(600).fadeOut(500);
+                                            jQuery('.phone_ft1 p').delay(600).fadeOut(500);
+                                            phone_f.find('.view2').fadeOut(1)
+                                            phone_f.find('.view3').fadeOut(1)
+                                            jQuery('.t_icon .p1, .t_icon .p2,.t_icon .p3').delay(499).fadeOut(500);
+                                            jQuery('.t_icon').delay(500).fadeOut(500);
+                                        });
+                                    });
+                                });
+
+                            });
+                        });
+                    });
+                });
+
+                phone_b.show(800, function () {
+                    phone_b.delay(400).animate({ right: '+=150px' }, 500).animate({ right: '-=10px' }, 300, function () {
+                        phone_b.animate({ right: '-=25px', top: '-=10px', width: '183px' }, 300, function () {
+                            phone_b.find('p').delay(3300).animate({ reflectY: true }, 300, function () {
+                                phone_b.find('>p >img').attr('src', phone_b.find('>p >img').attr('src').replace('back1', 'back3'))
+                                phone_f.delay().find('>img').attr('src', phone_f.find('>img').attr('src').replace('front1.png', 'front2.jpg'))
+                                phone_b.find('>p >img').css('width', '183px')
+                                phone_b.delay(500).animate({ width: '213px', height: '418px', top: '75px', right: '31px' }, 1000)
+                                phone_b.find('>p >img').delay(500).animate({ width: '213px', height: '418px' }, 1000, function () {
+                                    jQuery('.t_icon2').fadeIn(1000);
+                                    jQuery('.t_icon3').delay(500).fadeIn(1000, function () {
+                                        vfb_click = 6;
+                                        vfb_click6 = 6;
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            }
+            // 스마트 빔 set
+            function fvb_play7_bs() {
+                var phone_f = jQuery('.fv_box7 .phone_ft1')
+                var phone_b = jQuery('.fv_box7 .phone_bk1')
+                phone_f.find('>img').attr('src', phone_f.find('>img').attr('src').replace('front2.jpg', 'front1.jpg'))
+                phone_f.css('display', 'none');
+                phone_f.find('p').fadeOut(1);
+                phone_f.find('p.view1').fadeIn(1);
+                phone_f.css({ left: '480px', top: '100px' })
+                phone_b.css('display', 'none');
+                phone_b.css({ right: '0', top: '90px', width: '162px', height: '364px' })
+                phone_b.find('p img').css({ width: '162px', height: '364px' })
+                phone_b.find('p').animate({ reflectY: false }, 1)
+                phone_b.find('>p >img').attr('src', phone_b.find('>p >img').attr('src').replace('back3', 'back1'))
+                jQuery('.t_icon2,.t_icon3 ,.t_icon , .t_icon .p1, .t_icon .p2, .t_icon .p3').css('display', 'none');
+            };
+
+            
+            if ("522"  == '902') {//IM-A840 모델
+                if (new_fCnt > 0) {
+                
+	                var featurePosition = jQuery(this).index();                                     
+	                var leftP =  new_fWidth * featurePosition
+	
+	                if (featurePosition == 0) {
+	                    $('.new_slide_ul').animate({ left: '0px' }, 500);
+	                } else if (featurePosition > 0) {
+	                    $('.new_slide_ul').animate({ left: '-' + leftP + 'px' }, 500, newf_cont);
+	                }
+	
+	                jQuery("#featureViewPaging a").removeClass("on");
+	
+	                jQuery(this).addClass("on");
+	
+	                function newf_cont() {
+	                    if (featurePosition == 0) {
+	                        vfb_click = 10;
+	                    } else if (featurePosition == 1) {
+	                        if (vfb_click != 1 && vfb_click1 == 1) {
+	                            fvb_play2_set();
+	                            if (jQuery('.fv_box2 .izoom .p2').is(":not(:animated)")) {
+	                                vfb_click = 10;
+	                                fvb_play2();
+	                            }
+	                        }
+	                    } else if (featurePosition == 2) {
+	                        if (vfb_click != 2 && vfb_click2 == 2) {
+	                            if (jQuery('.fv_box3').is(":not(:animated)")) {
+	                                fvb_play3();
+	                                vfb_click = 10;
+	                                if (zs_click == 1 && jQuery('.z_shutter dd').is(':animated') == false && jQuery('.z_shutter').is(':visible') == true) {
+	                                    zs_set();
+	                                    z_shutter();
+	                                } else if (ts_click == 1 && jQuery('.t_focus p').is(':animated') == false && jQuery('.t_focus').is(':visible') == true) {
+	                                    tf_set();
+	                                    t_focus();
+	                                }
+	                            }
+	                        }
+	                    } else if (featurePosition == 3) {
+	                        if (vfb_click != 3 && vfb_click3 == 3) {
+	                            if (jQuery('.fv_box4').is(":not(:animated)")) {
+	                                vfb_click = 30;
+	                                vfb_click3 = 30;
+	                                fvb_play4();
+	                            }
+	                        }
+	                    } else if (featurePosition == 4) {
+	                        vfb_click = 10;
+	                    } else if (featurePosition == 5) {
+	                        if (vfb_click != 5 && vfb_click5 == 5) {
+	                            if (jQuery('.fv_box6').is(":not(:animated)")) {
+	                                vfb_click = 50;
+	                                vfb_click5 = 50;
+	                                jQuery('.fv_box6 p').css('display', 'none');
+	                                fvb_play6();
+	                            }
+	                        }
+	                    } else if (featurePosition == 6) {
+	                        if (vfb_click != 6 && vfb_click6 == 6) {
+	                            fvb_play7_bs();
+	                            if (jQuery('.fv_box7').is(":not(:animated)")) {
+	                                vfb_click = 60;
+	                                vfb_click6 = 60;
+	                                fvb_play7();
+	                            }
+	                        }
+	                    } else if (featurePosition == 7) {
+	                        vfb_click = 10;
+	                    };
+	
+	                }
+	
+	
+	            }
+	                
+	        } else {//IM-A840 이외 모델
+                var featurePosition = jQuery(this).index();
+	            var currentFeaturetPosition = jQuery("#featureViewPaging a.on").index();
+	            var positionDiff = currentFeaturetPosition - featurePosition;
+	            var positionLeft = new_fWidth * positionDiff;
+	
+	            jQuery("#featureView ul li:last").css({
+	                "left": new_fWidth * (new_fCnt - 1) + "px"
+	            });
+	            jQuery("#featureViewPaging a").removeClass("on");
+	            jQuery(this).addClass("on");
+	
+	            jQuery("#featureView ul").animate({ 'left': "+=" + positionLeft + 'px' }, function ()
+	            {
+	                if (featurePosition == 0) {
+	                    vfb_click = 10;
+	                } else if (featurePosition == 1) {
+	                    if (vfb_click != 1 && vfb_click1 == 1) {
+	                        fvb_play2_set();
+	                        if (jQuery('.fv_box2 .izoom .p2').is(":not(:animated)")) {
+	                            vfb_click = 10;
+	                            fvb_play2();
+	                        }
+	                    }
+	                } else if (featurePosition == 2) {
+	                    if (vfb_click != 2 && vfb_click2 == 2) {
+	                        if (jQuery('.fv_box3').is(":not(:animated)")) {
+	                            fvb_play3();
+	                            vfb_click = 10;
+	                            if (zs_click == 1 && jQuery('.z_shutter dd').is(':animated') == false && jQuery('.z_shutter').is(':visible') == true) {
+	                                zs_set();
+	                                z_shutter();
+	                            } else if (ts_click == 1 && jQuery('.t_focus p').is(':animated') == false && jQuery('.t_focus').is(':visible') == true) {
+	                                tf_set();
+	                                t_focus();
+	                            }
+	                        }
+	                    }
+	                } else if (featurePosition == 3) {
+	                    if (vfb_click != 3 && vfb_click3 == 3) {
+	                        if (jQuery('.fv_box4').is(":not(:animated)")) {
+	                            vfb_click = 30;
+	                            vfb_click3 = 30;
+	                            fvb_play4();
+	                        }
+	                    }
+	                } else if (featurePosition == 4) {
+	                    vfb_click = 10;
+	                } else if (featurePosition == 5) {
+	                    if (vfb_click != 5 && vfb_click5 == 5) {
+	                        if (jQuery('.fv_box6').is(":not(:animated)")) {
+	                            vfb_click = 50;
+	                            vfb_click5 = 50;
+	                            jQuery('.fv_box6 p').css('display', 'none');
+	                            fvb_play6();
+	                        }
+	                    }
+	                } else if (featurePosition == 6) {
+	                    if (vfb_click != 6 && vfb_click6 == 6) {
+	                        //fvb_play7_bs();
+	                        if (jQuery('.fv_box7').is(":not(:animated)")) {
+	                            vfb_click = 60;
+	                            vfb_click6 = 60;
+	                            fvb_play7();
+	                        }                       
+	                    }
+	                } else if (featurePosition == 7) {
+	                    vfb_click = 10;
+	                };
+	
+	            });
+	                
+            }
+            
+            return false;
+        });
+	
+	
+	// 따라다니는 제품 탭
+	var smartTab = jQuery("#smartTab");
+	//var fixedTop = 86; // 브라우저 스크롤이 minTop 이상일때 제품탭이 고정될 top 위치
+	var fixedTop = 0; // 브라우저 스크롤이 minTop 이상일때 제품탭이 고정될 top 위치
+	var headerTabTop = fixedTop + 110;
+	var clickNum = -1;
+
+	// 탭 이동
+	jQuery("#smartTab li a").click(function(){
+		var target = jQuery(jQuery(this).attr("href"));
+		clickNum = parseInt(jQuery(this).attr("href").replace("#sTab", ""), 10);
+		
+		jQuery(smartTab).find("li").removeClass("on");
+		jQuery(smartTab).find("li:eq(" + (clickNum - 1) + ")").addClass("on");
+		
+		jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop : (jQuery(target).position().top - (jQuery(this).attr("href") == "#sTab2" ? 65 : 90))}, function(){
+			clickNum = -1;
+		});
+		return false;
+	});
+	
+	jQuery(window).scroll(function(){
+		var minTop = jQuery("#sTab1").position().top - 104; // 브라우저의 scroll top 위치의 범위 설정
+		var scrollTop = jQuery(window).scrollTop(); // 브라우저의 scroll top 위치
+		var sTab1PositionTop = jQuery("#sTab1").position().top;
+		var sTab2PositionTop = jQuery("#sTab2").position().top;
+		var sTab3PositionTop = jQuery("#sTab3").position().top;
+		var sTab4PositionTop = jQuery("#sTab4").position().top;
+		var sTab5PositionTop = jQuery("#sTab5").position().top;
+		var sTab6PositionTop = jQuery("#sTab6").position().top;		
+		
+		
+		/* debug("(scrollTop + headerTabTop)  : " + (scrollTop + headerTabTop));
+		debugA("특징 : " + sTab1PositionTop + ", " + (sTab1PositionTop));
+		debugA("스펙 : " + sTab2PositionTop + ", " + (sTab2PositionTop));
+		debugA("이미지/동영상 : " + sTab3PositionTop + ", " + (sTab3PositionTop));
+		debugA("리뷰 : " + sTab4PositionTop + ", " + (sTab4PositionTop));
+		debugA("다운로드 : " + sTab5PositionTop + ", " + (sTab5PositionTop));
+		debugA("앱&액세서리 : " + sTab6PositionTop + ", " + (sTab6PositionTop)); */
+		
+		if(scrollTop > minTop){
+			jQuery(smartTab).css({'position' : 'fixed', 'top' : fixedTop + 'px', 'margin-top' : '0px'});
+			
+			var tabNo = 1;
+			if((scrollTop + headerTabTop) < sTab2PositionTop){
+				tabNo = 1;
+			}else if((scrollTop + headerTabTop) < sTab3PositionTop){
+				tabNo = 2;
+			}else if((scrollTop + headerTabTop) < sTab4PositionTop){
+				tabNo = 3;
+			}else if((scrollTop + headerTabTop) < sTab5PositionTop){
+				tabNo = 4;
+			}else if((scrollTop + headerTabTop) < sTab6PositionTop){
+				tabNo = 5;
+			}else if((scrollTop + headerTabTop) < sTab6PositionTop){
+				tabNo = 6;
+			}else if((scrollTop + headerTabTop) < sTab6PositionTop){
+				tabNo = 7;
+			}else if($(window).scrollTop() == ($(document).height() - $(window).height())){
+				tabNo = 8;
+			}else{
+				tabNo = 8;
+			}
+			
+			if(clickNum > 0){
+				tabNo = clickNum;
+			}
+			
+			
+			jQuery(smartTab).find("li").removeClass("on");
+			jQuery(smartTab).find("li:eq(" + (tabNo - 1) + ")").addClass("on");
+			
+		}else{
+			jQuery(smartTab).css({'position' : '', 'top' : '', 'margin-top' : ''});
+		}
+	});
+	
+	// 이미지 영역 리사이즈
+	var imgListWidth = ($(".imgArea .imgList li").length *  imageItemWidth) + (imageItemFrontWidth - imageItemWidth) + 10;
+	$(".imgArea .imgList").css({"width" : imgListWidth});
+	
+	$(".imgArea .imgList li img").each(function(i){
+		$(this).load(function(){
+			if(i == 0){
+				resizeImage($(this), frontMaxWidth, false);
+			}else{
+				resizeImage($(this), sideMaxWidth, false);
+			}			
+		});
+		if(i == 0){
+			resizeImage($(this), frontMaxWidth, false);
+		}else{
+			resizeImage($(this), sideMaxWidth, false);
+		}
+	});
+});
+
+// 이미지 리사이즈
+function resizeImage(imgObj, maxwidth, bAnimate){
+	var maxWidth = maxwidth;
+	var pImg = new Image();
+	pImg.src = imgObj.attr("src");
+	var imgWidth = pImg.width;
+	var imgHeight = pImg.height;
+	
+	var newWidth = maxWidth;
+	var ratio = imgWidth/maxWidth;
+	var newHeight = imgHeight/ratio;
+	
+	if(bAnimate){
+		imgObj.animate({
+		    'height': newHeight + 'px',
+		    'width': newWidth + 'px'
+		});
+	}else{
+		imgObj.css({
+			'height': newHeight + 'px',
+		    'width': newWidth + 'px'
+		});
+	}
+}
+var imgdownload_page = 0;
+var bImageMoving = false;
+function imageSelect(imagePosition){
+	var currentImagePosition = $(".imgArea .dotPaging a.on").index();
+	
+	if(! bImageMoving && currentImagePosition != imagePosition){
+		bImageMoving = true;
+		
+		imgdownload_page = imagePosition;
+		
+		
+		var selectItem = $(".imgArea .imgList li:eq("+ imagePosition +")");
+		var currentItem = $(".imgArea .imgList li:eq("+ currentImagePosition +")");
+		var positionDiff = currentImagePosition - imagePosition;
+
+		$(selectItem).animate({
+			'height' : '500px',
+			'width' : '540px',
+			'opacity' : '1',
+			'margin-top' : 0
+		});
+		
+		$(currentItem).animate({
+			'height' : '400px',
+			'width' : '360px',
+			'opacity' : '0.5',
+			'margin-top' : '100px'
+		});
+		
+		positionLeft = imageItemWidth * (positionDiff);
+		//proxied("positionLeft : " + positionLeft);
+		$(".imgArea .imgList").animate({'left' : "+=" + positionLeft + 'px'}, function(){
+			bImageMoving = false;
+		});
+		resizeImage(selectItem.find("img"), frontMaxWidth, true);
+		resizeImage(currentItem.find("img"), sideMaxWidth, true);
+		
+		/* if(positionLeft < 0){
+			resizeImage(selectItem.find("img"), frontMaxWidth, true);
+			resizeImage(currentItem.find("img"), sideMaxWidth, true);
+		}else{
+			resizeImage(selectItem.find("img"), frontMaxWidth, true);
+			resizeImage(currentItem.find("img"), sideMaxWidth, true);
+		} */
+		 $(".imgArea .dotPaging a").removeClass("on");
+		 $(".imgArea .dotPaging a:eq(" +imagePosition + ")").addClass("on");
+	}
+}
+jQuery(document).ready(function($){
+	
+	// 동영상 슬라이드 설정
+	var bSlideMoving = false;
+	var itemHeight = 154;
+	
+	function slideOuterHeight(selector){
+		var sHeight = $(selector).find("li").length * itemHeight;
+		$(selector).css("height",sHeight);
+		return $(selector).outerHeight();
+	}
+	
+	// 동영상 슬라이드
+	$(".vList .slide ul").each(function(){
+		slideOuterHeight($(this));
+	});
+	
+	// 동영상 위/아래 버튼 숨김/표시
+	if($(".vList .slide ul li").length > 2){
+		$(".videoY .prev").show();
+		$(".videoY .next").show();
+	}else{
+		$(".videoY .prev").addClass("off").find("img").attr({"src" : $(".videoY .prev").find("img").attr("src").replace("_on", "_off")});
+		$(".videoY .next").addClass("off").find("img").attr({"src" : $(".videoY .next").find("img").attr("src").replace("_on", "_off")});
+	}
+	
+	// 동영상 슬라이드 위로
+	$(".videoY .prev").click(function(){
+		var itemCnt = $(".vList .slide ul li").length;
+		if (! bSlideMoving && itemCnt > 1 && ! $(this).hasClass("off")){
+			$(".vList .slide ul li:last").prependTo($(".vList .slide ul"));
+			$(".vList .slide ul").css({'top' : '-' + itemHeight + 'px'});
+			
+			bSlideMoving = true;
+			$(".vList .slide ul").animate({'top' : '0px'}, function(){
+				bSlideMoving = false;
+			});
+		}
+		return false;
+	});
+	
+	// 동영상 슬라이드 아래로
+	$(".videoY .next").click(function(){
+		var itemCnt = $(".vList .slide ul li").length;
+		if (! bSlideMoving && itemCnt > 1 && ! $(this).hasClass("off")){
+			bSlideMoving = true;
+			
+			$(".vList .slide ul").animate({'top' : '-' + itemHeight + 'px'}, function(){
+				$(".vList .slide ul li:first").appendTo($(".vList .slide ul"));
+				$(".vList .slide ul").css({'top' : '0px'});
+				bSlideMoving = false;
+			});
+			
+		}
+		return false;
+	});
+	
+	// 앱, 액세서리 슬라이드 설정
+	var itemWidth = 960;
+	
+	function getPageText(pageNo){
+		//return (pageNo < 10) ?  "0" + pageNo : pageNo;
+		return pageNo
+	}
+	
+	function slideOuterWidth(selector){
+		var sWidth = $(selector).find(".box").length * itemWidth;
+		$(selector).css("width",sWidth);
+		return $(selector).outerWidth();
+	}
+
+	// 다운로드 슬라이드 width 설정
+	$(".downWrap .sSlide").each(function(){
+		var sWidth = $(this).find(".downArea").length * itemWidth;
+		$(this).css("width",sWidth);
+	})
+	
+	// 앱, 액세서리 슬라이드 width 설정
+	$(".slideInner").each(function(){
+		slideOuterWidth($(this));
+	});
+	
+	// 액세서리 좌/우 버튼 숨김/표시
+	if($(".acceArea .slide .slideInner li").length > 8){
+		$(".acceArea .sPaging").show();
+	}else{
+		$(".acceArea .sPaging").hide();
+	}
+	
+	
+	// 다운로드, 앱, 액세서리 슬라이드
+	$(".sPaging").each(function(){
+		var slide = $(this).parent().find(".slide").find(".slideInner")
+		var page = $(this).find(".page>em");
+		var aPage = $(this).find(".page>span.aPage");
+		var itemCnt = $(slide).find(".box").length;
+		if($(this).parents(".downWrap")){
+			itemCnt = $(".downWrap .downArea").length;
+		}
+		
+		$(aPage).text(getPageText(itemCnt));
+		
+		if(itemCnt === 0){
+			page.text('0');
+		}
+		
+		//페이징 넘버값 설정
+		$("#sTab5 .downWrap .sPaging .page em").text("1");
+		$("#sTab5 .downWrap .sPaging span.aPage").text($(".downWrap .downArea").length);
+		
+		$("#sTab6 .prdAppsPlay .sPaging .page em").text("1");
+		$("#sTab6 .prdAppsPlay .sPaging span.aPage").text($("#appslist ul").length);
+		
+		$("#sTab6 .acceArea .sPaging .page em").text("1");
+		$("#sTab6 .acceArea .sPaging span.aPage").text($(".acceArea .slideInner ul").length);
+		
+		// 다운로드, 앱, 액세서리 슬라이드 이전
+		$(".prev",this).click(function(){
+			var pageNo = parseInt($(page).text(), 10);
+			
+			if($(this).parent().parent().is(".downWrap")){
+				var slideDown = $(".downWrap .sSlide");
+				// 다운로드 슬라이드
+				var itemCnt2 = $(slideDown).find(".downArea").length;
+				if (! bSlideMoving && itemCnt2 > 1){
+					$(slideDown).find(".downArea:last").prependTo($(slideDown));
+					$(slideDown).css({"left" : "-960px"});
+					
+					bSlideMoving = true;
+					$(slideDown).animate({"left" : "0px"}, function(){
+						bSlideMoving = false;
+					});
+					
+					$(page).text(getPageText(--pageNo));
+					
+					if(pageNo < 1){
+						pageNo = itemCnt2;
+						$(page).text(getPageText(pageNo));
+					}
+				}
+			}else{
+				//앱, 액세서리 슬라이드
+				var itemCnt2 = $(slide).find(".box").length;
+				if (! bSlideMoving && itemCnt2 > 1){
+					$(slide).find(".box:last").prependTo($(slide));
+					$(slide).css({"left" : "-" + itemWidth + "px"});
+					
+					bSlideMoving = true;
+					$(slide).animate({"left" : "0px"}, function(){
+						bSlideMoving = false;
+					});
+					
+					$(page).text(getPageText(--pageNo));
+					
+					if(pageNo < 1){
+						pageNo = itemCnt2;
+						$(page).text(getPageText(pageNo));
+					}
+				}
+			}
+			
+			return false;
+		});
+		
+		// 다운로드, 앱, 액세서리 슬라이드 다음
+		$(".next",this).click(function(){
+			var pageNo = parseInt($(page).text(), 10);
+			
+			if($(this).parent().parent().is(".downWrap")){
+				var slideDown = $(".downWrap .sSlide");
+				// 다운로드 슬라이드
+				var itemCnt2 = $(slideDown).find(".downArea").length;
+				if (! bSlideMoving && itemCnt2 > 1){
+					bSlideMoving = true;
+	
+					$(slideDown).animate({"left" : "-960px"}, function(){
+						$(slideDown).find(".downArea:first").appendTo($(slideDown));
+						$(slideDown).css({"left" : "0px"});
+						bSlideMoving = false; 
+					});
+					
+					$(page).text(getPageText(++pageNo));
+					
+					if(pageNo > itemCnt2){
+						pageNo = 1;
+						$(page).text(getPageText(pageNo));
+					}
+				}
+			}else{
+				//앱, 액세서리 슬라이드
+				var itemCnt2 = $(slide).find(".box").length;
+				if (! bSlideMoving && itemCnt2 > 1){
+					bSlideMoving = true;
+	
+					$(slide).animate({"left" : "-" + itemWidth + "px"}, function(){
+						$(slide).find(".box:first").appendTo($(slide));
+						$(slide).css({"left" : "0px"});
+						bSlideMoving = false; 
+					});
+					
+					$(page).text(getPageText(++pageNo));
+					
+					if(pageNo > itemCnt2){
+						pageNo = 1;
+						$(page).text(getPageText(pageNo));
+					}
+				}
+			}
+			return false;
+		});
+	});
+	
+	
+	// 동영상 썸네일 클릭시
+	$(".videoY .vList .slide ul li a").live("click", function(){
+		var that = $(this);
+		$(".topVideo .image").fadeOut(function(){
+			$(".topVideo .video").hide();
+			var thumbnail = $(that).find("img").attr("src");
+			var videourl = $(that).attr("href");
+			
+			var videoPlayerArea = $('<div id="BBMCPlayer_video"/>');
+			var videoImg = $("<img />");
+			$(videoImg).attr({"src" : thumbnail});
+			$(videoImg).css({"width" : "720px", "height" : "405px"});
+			
+			var playButton = $("<a></a>");
+			$(playButton).addClass("play");
+			$(playButton).append('<img src="/img/btn/btn_play02.png" alt="PLAY" />');
+			$(playButton).attr({"href" : "javascript:viewMovie('" + videourl + "', '" + thumbnail + "')"});
+
+			var closeButton = $("<a></a>");
+			$(closeButton).addClass("close");
+			$(closeButton).append('<img src="/img/btn/btn_close.png" alt="CLOSE" />');
+			$(closeButton).attr({"href" : "javascript:videoClose()"});
+			
+			videoPlayerArea.append(videoImg);
+			videoPlayerArea.append(playButton);
+			videoPlayerArea.append(closeButton);
+			
+			$(".topVideo .video").html('');
+			$(".topVideo .video").append(videoPlayerArea);
+			$(".topVideo .video").append('<a href="javascript:videoClose();" class="close"><img src="/img/btn/btn_close.png" alt="Close" /></a>');
+			
+			var btnHtml = '';
+			btnHtml += '<div class="btn">';
+			btnHtml += "<a href=\"javascript:viewMovie('" + videourl + "', '" + thumbnail + "', 'HD')\">";
+			btnHtml += '<img src="/img/layout/btn_video_hd_off.gif" alt="HD" />';
+			btnHtml += '</a>';
+			btnHtml += '<a href="javascript:fn_share();">';
+			btnHtml += '<img src="/img/layout/btn_video_share_off.gif" alt="Share" />';
+			btnHtml += '</a>';
+			btnHtml += '</div>';
+			$(".topVideo .video").append(btnHtml);
+			
+			$(".topVideo .video").fadeIn();
+		});
+		prdVideoIndex = $(".videoY .vList .slide ul li a").index(that);
+		return false;
+	});
+});
+
+jQuery(function($){
+	var on = function(){this.src = this.src.replace("_off","_on");}
+	var off = function(){this.src = this.src.replace("_on","_off");}
+
+	$(".specWrap .specBtn").click(function(){
+		var normal = $(this).siblings(".normal")
+		var detail = $(this).siblings(".detail")
+		var easingOutType  = 'easeOutCirc';
+		var easingInType  = 'easeInCirc';
+		var durationSpeed = 500;
+		
+		if($(this).hasClass("on")){
+			$(this).removeClass("on").find("img").each(off);
+			jQuery.blockUI();
+			$(detail).hide();
+			$(normal).hide();
+			$(normal).slideDown({
+				duration : durationSpeed,
+				easing : easingOutType,
+				complete : function(){
+					jQuery.unblockUI();
+				}
+			});
+			
+			/* $(detail).slideUp({
+				duration : durationSpeed,
+				easing : easingOutType,
+				complete : function(){
+					$(normal).slideDown(durationSpeed, easingInType);
+				}
+			}); */
+			
+			//$(detail).slideUp(durationSpeed);
+			//setTimeout(function(){$(normal).slideDown(durationSpeed)},durationSpeed);
+		} else {
+			$(this).addClass("on").find("img").each(on)
+			jQuery.blockUI();
+			$(normal).hide();
+			$(detail).hide();
+			$(detail).slideDown({
+				duration : durationSpeed,
+				easing : easingOutType,
+				complete : function(){
+					jQuery.unblockUI();
+				}
+			});
+			/* $(normal).slideUp({
+				duration : durationSpeed,
+				easing : easingOutType,
+				complete : function(){
+					$(detail).slideDown(durationSpeed, easingInType);
+				}
+			}); */
+			//$(normal).slideUp(durationSpeed);
+			//setTimeout(function(){$(detail).slideDown(durationSpeed)},durationSpeed);
+		}
+		return false;
+	})
+	
+	$(".downWrap").each(function(){
+		var leng = $(".downArea",this).length;
+		$(".sSlide",this).width(leng* 100 + "%");
+	})
+});
+
+//파일다운로드
+function fileDownload(){
+	var src = jQuery(".viewImg"+imgdownload_page).attr("src");
+	var srcSplit = src.split("/");
+	var filename = srcSplit[srcSplit.length-1];
+	location.href="/filedownload/download.do?fileName="+filename+"&flag=imv";
+}
+
+function viewContent(link){
+	window.open(link);
+}
+
+function popAccView(lotsUrl){
+	window.open(lotsUrl, "lots");
+}
+
+function viewMovie(url, thumb, qlt){
+	if(_bMobile){
+		location.href = getMovMobileUrl(url, qlt);
+	}else{
+		var width = "720";
+		var height = "405";
+		var auto = "true";
+		$(".topVideo .video").html('<a href="javascript:videoClose();" class="close"><img src="/img/btn/btn_close.png" alt="Close" /></a><div id="BBMCPlayer_video"></div>');
+		url = (qlt == 'HD' ? getMovHD(url) : url);
+		getMovie(url, auto, width, height, thumb, "BBMCPlayer_video");
+	}
+}
+
+// 배너 숨김
+function bannerHide(){
+	jQuery(".topVideo .bnr").hide();
+}
+
+//동영상 영역 닫기
+function videoClose(){
+	jQuery(".topVideo .video").fadeOut(function(){
+		jQuery(".topVideo .image").fadeIn();
+		jQuery(".topVideo .video").html('<div id="BBMCPlayer_video"></div>');
+	});
+}
+
+//영상 완료시 호출하는 함수
+function fn_movieComplete() {
+	$(".videoY .vList .slide ul li a").eq(prdVideoIndex).trigger("click");
+}
+
+function clipboard(){
+	
+	var cp = $("xmp").html();
+	
+	var IE=(document.all)?true:false;
+    if (IE) {
+           window.clipboardData.setData("Text", cp);
+        alert("주소가 복사 되었습니다.");
+    } else {
+        temp = prompt("Ctrl+C를 눌러 클립보드로 복사하세요", cp);
+    }
+}
+
+//share 버튼 클릭시 호출하는 함수
+function fn_share( url ) {
+	fnShowLayerPop('vodShare');
+}
+</script>
+
+<!-- container -->
+		<div id="container">
+			<div class="location">
+				<a href="#">HOME</a><em>스마트폰</em>
+			</div>
+
+			<div class="smartTop">
+				<h2 class="pName">
+				<img src="http://file.ivega.co.kr/upload/product/feature/_A630K[5].jpg" alt="Vega" onerror="this.style.display='none'; jQuery('.pName').text('Vega');"/>
+				<!-- img src="/img/temp/img_vega.gif" alt="VEGA LTE M" /--></h2>
+				<ul class="telecom">
+					
+					<li><strong>SKT</strong><span>IM-A650S</span></li>
+					
+				</ul>
+			</div>
+
+			<div class="topVideo">
+				<div class="image">
+					
+						
+					
+						
+					
+						
+					
+						
+						<img src="http://file.ivega.co.kr/upload/product/feature/1340996628916_1brbyvd2.jpg" alt="상세보기 상단" />
+						
+					
+						
+					
+						
+					
+						
+					
+				</div>
+				<div class="video" style="display:block">
+					<div id="BBMCPlayer_video">
+					
+						
+						
+						
+							<img src="http://file.ivega.co.kr/upload/vod/image/vega_01_thum.jpg" alt="VOD" class="thum" width="720" height="405"/><!-- 동영상 width:720px; height:405px;  -->
+							<a href="javascript:viewMovie('rtmp://vod.isky.co.kr/cnivod/_definst_/isky/vega_01_sd.mp4', 'http://file.ivega.co.kr/upload/vod/image/vega_01_thum.jpg');" class="play"><img src="/img/btn/btn_play02.png" alt="Play" /></a>
+							<a href="javascript:videoClose();" class="close"><img src="/img/btn/btn_close.png" alt="Close" /></a>
+						
+					
+						
+					
+						
+					
+						
+					
+					</div>
+					<a href="javascript:videoClose();" class="close"><img src="/img/btn/btn_close.png" alt="Close" /></a>
+					
+				</div>
+				
+				<div class="videoY">
+					<div class="vList">
+						<div class="slide">
+							<ul>
+								
+								
+								<li>
+									<a href="rtmp://vod.isky.co.kr/cnivod/_definst_/isky/vega_01_sd.mp4">
+										<img src="http://file.ivega.co.kr/upload/vod/image/vega_01_thum.jpg" alt="VOD" class="thum" width="220" height="124"/><!-- 동영상 목록  width:220px; height:124px; -->
+										<img src="/img/btn/btn_play02.png" alt="Play" class="play" />
+										<!-- <span class="txt">LTE 영상광고 LTE 영상광고 LTE 영상광고 LTE 영상광고</span> -->
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="rtmp://vod.isky.co.kr/cnivod/_definst_/isky/vega_03_sd.mp4">
+										<img src="http://file.ivega.co.kr/upload/vod/image/vega_03_thum.jpg" alt="VOD" class="thum" width="220" height="124"/><!-- 동영상 목록  width:220px; height:124px; -->
+										<img src="/img/btn/btn_play02.png" alt="Play" class="play" />
+										<!-- <span class="txt">LTE 영상광고 LTE 영상광고 LTE 영상광고 LTE 영상광고</span> -->
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="rtmp://vod.isky.co.kr/cnivod/_definst_/isky/vega_02_sd.mp4">
+										<img src="http://file.ivega.co.kr/upload/vod/image/vega_02_thum.jpg" alt="VOD" class="thum" width="220" height="124"/><!-- 동영상 목록  width:220px; height:124px; -->
+										<img src="/img/btn/btn_play02.png" alt="Play" class="play" />
+										<!-- <span class="txt">LTE 영상광고 LTE 영상광고 LTE 영상광고 LTE 영상광고</span> -->
+									</a>
+								</li>
+								
+								
+								<li>
+									<a href="rtmp://vod.isky.co.kr/cnivod/_definst_/isky/vega_04_sd.mp4">
+										<img src="http://file.ivega.co.kr/upload/vod/image/vega_04_thum.jpg" alt="VOD" class="thum" width="220" height="124"/><!-- 동영상 목록  width:220px; height:124px; -->
+										<img src="/img/btn/btn_play02.png" alt="Play" class="play" />
+										<!-- <span class="txt">LTE 영상광고 LTE 영상광고 LTE 영상광고 LTE 영상광고</span> -->
+									</a>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="prev"><img src="/img/btn/btn_prev05_on.gif" alt="이전" /></a>
+					<a href="#" class="next"><img src="/img/btn/btn_next05_on.gif" alt="다음" /></a>
+				</div>
+				
+				
+				
+
+
+
+ 
+
+
+
+
+
+
+			</div>
+			
+			<div class="tabWrap">
+				<div class="smartTab" id="smartTab">
+					<ul>
+						<li class="on"><a href="#sTab1"><span>특징</span></a></li>
+						<li><a href="#sTab2"><span>스펙</span></a></li>
+						<li><a href="#sTab3"><span>이미지</span></a></li>
+						<li><a href="#sTab4"><span>리뷰</span></a></li>
+						<li><a href="#sTab5"><span>다운로드</span></a></li>
+						<li><a href="#sTab6"><span>앱 & 액세서리</span></a></li>
+						<li class="sns">
+							<div><fb:like send="false" layout="button_count" show_faces="false" auto_resize="true"></fb:like></div>
+							<div class="tw"><a href="https://twitter.com/share" class="twitter-share-button" data-via="skyandroian" data-lang="ko">트윗</a></div>
+						</li>
+						<li class="top"><a href="#header"><img src="/img/btn/btn_top.png" alt="TOP" /></a></li>
+					</ul>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div id="sTab1">
+				<h2 class="mgt40"><img src="/img/contents/smart/tit_feature.gif" alt="특징" /></h2>
+				
+				
+				
+				<div class="feature">
+                    
+                    <div class="slide" id="featureView">
+                        <ul>
+                                <li id="img1"><img src="/upload/product/feature/IM_A650S/01.jpg" alt="" /></li>
+<li id="img2"><img src="/upload/product/feature/IM_A650S/02.jpg" alt="" /></li>
+<li id="img3"><img src="/upload/product/feature/IM_A650S/03.jpg" alt="" /></li>
+<li id="img4"><img src="/upload/product/feature/IM_A650S/04.jpg" alt="" /></li>
+<li id="img5"><img src="/upload/product/feature/IM_A650S/05.jpg" alt="" /></li>
+<li id="img6"><img src="/upload/product/feature/IM_A650S/06.jpg" alt="" /></li>
+                        </ul>
+                    </div>
+                    <div class="dotPaging" id="featureViewPaging"></div>
+                    
+                    
+                </div>
+				
+			</div>
+
+			<div id="sTab2" class="specWrap">
+				<h2><img src="/img/contents/smart/tit_spec.gif" alt="스펙" /></h2>
+				<a href="#" class="specBtn"><img src="/img/btn/btn_spec_off.png" alt="상세 스펙보기" /></a>
+				<div class="spec normal">
+					<div class="inner">
+						<h3 class="mgt0"><img src="/img/contents/smart/stit_spec01.gif" alt="외관사양" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>크키</th>
+								<td>115.95 x 59.4x 10.95 (mm)</td>
+							</tr>
+							<tr>
+								<th>무게</th>
+								<td>114.3g</td>
+							</tr>
+							<tr>
+								<th>컬러</th>
+								<td>Black, White, Pink, Gold Brown</td>
+							</tr>
+							<tr>
+								<th>디스플레이</th>
+								<td>3.7형(9.3cm) W-VGA </td>
+							</tr>
+							</tbody>
+						</table>
+
+						<h3><img src="/img/contents/smart/stit_spec02.gif" alt="기본사양" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>CPU</th>
+								<td>1GHz </td>
+							</tr>
+							<tr>
+								<th>OS</th>
+								<td>Android v2.1</td>
+							</tr>
+							<tr>
+								<th>통신규격</th>
+								<td>3G</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<h3><img src="/img/contents/smart/stit_spec03.gif" alt="메모리" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>메모리</th>
+								<td>1GB ROM, 512MB RAM</td>
+							</tr>
+							<tr>
+								<th>내장메모리</th>
+								<td>500MB</td>
+							</tr>
+							<tr>
+								<th>외장메모리</th>
+								<td>microSD Card 8GB 기본 제공</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="inner">
+						<h3 class="mgt0"><img src="/img/contents/smart/stit_spec04.gif" alt="멀티미디어" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>동영상</th>
+								<td>지원</td>
+							</tr>
+							<tr>
+								<th>DMB</th>
+								<td>지원</td>
+							</tr>
+							<tr>
+								<th>USB(OTG)</th>
+								<td>미지원</td>
+							</tr>
+							<tr>
+								<th>블루투스</th>
+								<td>지원</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<h3><img src="/img/contents/smart/stit_spec05.gif" alt="카메라" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>후면카메라</th>
+								<td>5M AF</td>
+							</tr>
+							<tr>
+								<th>전면카메라</th>
+								<td>미지원</td>
+							</tr>
+							<tr>
+								<th>Flash</th>
+								<td>지원</td>
+							</tr>
+							</tbody>
+						</table>
+
+						<h3><img src="/img/contents/smart/stit_spec06.gif" alt="배터리" /></h3>
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+							<tr>
+								<th>용량</th>
+								<td>표준형(1350mAh)</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br>
+				<font  style="font-size:11px;padding:10px 0.5em;solid:#dadada;color:#8c8c8c;">
+				※ 탑재된 어플리케이션이나 서비스들이 제공사업자 사정에 의하여 변경/중단될 수 있습니다.</font>
+				<div class="spec detail" style="display:none;">
+					
+					
+						
+						
+						
+						<h3>외관상세</h3>
+						<table>
+						<colgroup>
+							<col width="105" />
+							<col width="*" />
+						</colgroup>
+						<tbody>
+						
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>크기</th>
+							<td>115.95 x 59.4x 10.95 (mm)<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>무게</th>
+							<td>114.3g<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>컬러</th>
+							<td>Black, White, Pink, Gold Brown<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>디스플레이</th>
+							<td>LCD 크기 : 3.7형<br />WVGA<br />AMOLED<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>배터리</th>
+							<td>표준형(1350mAh)<br />연속통화 : 약 426분<br />연속대기 : 약 208시간<br />※ 각 사용시간은 당사 실험실에서 계측기로 측정한 값입니다.<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+								</tbody>
+							</table>
+						
+						<h3>기능 및 서비스 상세</h3>
+						<table>
+						<colgroup>
+							<col width="105" />
+							<col width="*" />
+						</colgroup>
+						<tbody>
+						
+						
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">부가기능</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>GPS</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>가속도센서</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>자이로센서</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>지자기센서</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>NFC</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">입출력 및 호환성</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Bluetooth</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Wi-Fi</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>스크린 링크</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Wi-Fi Direct</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>TV 출력</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>USB(OTG)</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">멀티미디어</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>카메라</th>
+							<td>사진/동영상 전송, 사진인화신청 지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>갤러리</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>동영상</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>뮤직</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>게임</th>
+							<td>그림팡팡2 / 토이카 로얄럼블<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>T-DMB</th>
+							<td>지상파<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>포토프레임</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>동영상 스튜디오</th>
+							<td>비디오 에디터 지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Media live</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Cloud live</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>AppsPlay</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">커뮤니케이션</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>소셜온</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>소셜갤러리</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>인터넷</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>이메일</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">전화/메시지</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>전화</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>전화부</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>통화기록</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>메시지</th>
+							<td>대화 메시지함(수, 발신메세지): 무제한<br />메시지 보관함: 200개<br />USIM 저장함 : 20개 <br />스팸메세지; 40개</td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">편리기능</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>알람/시계</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>편의시계</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>날씨</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>캘린더</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>계산기</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>노트패드</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>녹음기</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>전자사전</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>캠노트</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Smart Voice</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>데이터 매니저</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>Polaris Office</th>
+							<td>문서뷰어 지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>미디어링크</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>바이로봇 백신설치</th>
+							<td>AhnLab 백신 <br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>사용설명서</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>SKY 스테이션</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>SKY9</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>SKY Air link</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>App Like</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>SKY 백업</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">설정</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>작업관리자</th>
+							<td>지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>심플모드</th>
+							<td>미지원<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						<tr>
+							<th colspan="2" class="tit">기타</th>
+						</tr>
+						
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>기본악세사리</th>
+							<td>표준형 배터리(BAT-6620M)<br />배터리 커버 (유광/무광)<br />배터리 충전 거치대(BTH-3000)<br />스테레오 이어마이크 (EM-1450)<br />젠더 Type TDMB Ant. (TAT-160)<br />데이터매니지 케이블(IMCBL-1410)<br />Micro SD Card 8GB<br />사용자 설명서 (ML-A650S)</td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>옵션악세사리</th>
+							<td>여행용 충전기(TC-820)<br />정전용량 터치펜 (TID-600)<br />원형 젠더(TRP-220)<br />멀티젠더(TRP-300)<br /></td>
+						</tr>
+						
+						
+						
+					
+						
+						
+						
+						<tr>
+							<th>전파흡수율</th>
+							<td>1.3w/kg<br /></td>
+						</tr>
+						
+						
+								</tbody>
+							</table>
+						
+						
+					
+					
+					
+					
+					
+						<table>
+							<colgroup>
+								<col width="105" />
+								<col width="*" />
+							</colgroup>
+							<tbody>
+						
+							
+							<tr>
+								<th colspan="2" class="tit">통신사서비스 (SKT)</th>
+							</tr>
+							
+							<tr>
+								<th>Tmap</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>T Store client</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>June Player/June Downloader</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>iTopping Widget Player</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>T-Store</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th> T-Store Dounloader</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>Sync Manager</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>DCD Client</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>날씨/뉴스 위젯</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							
+							<tr>
+								<th>SIS 위젯</th>
+								<td>지원</td>
+							</tr>	
+							
+						
+							</tbody>
+						</table>
+					
+						
+				</div>
+			</div>
+
+			<div id="sTab3" style="position:relative;">
+				<h2 class="mgt40"><img src="/img/contents/smart/tit_image.gif" alt="이미지" /></h2>
+				<div class="imgArea" style="overflow:hidden;">
+					<ul class="imgList" style="height:500px;">
+						
+						
+						
+						
+						
+							<li style="height:500px; width:540px; opacity:1; margin-top:0px;"><img src="http://file.ivega.co.kr/upload/product/imv//1340696293118_1iayzwf2.jpg" class="viewImg0" alt="01"/></li>
+							
+							
+							
+							
+						
+							<li style="height:400px; width:360px; opacity:0.5; margin-top:100px;"><img src="http://file.ivega.co.kr/upload/product/imv//1340696293118_2yan4bb.jpg" class="viewImg1" alt="02"/></li>
+							
+							
+							
+							
+						
+							<li style="height:400px; width:360px; opacity:0.5; margin-top:100px;"><img src="http://file.ivega.co.kr/upload/product/imv//1340696293165_341tj9gv.jpg" class="viewImg2" alt="03"/></li>
+							
+							
+							
+							
+						
+							<li style="height:400px; width:360px; opacity:0.5; margin-top:100px;"><img src="http://file.ivega.co.kr/upload/product/imv//1340696293165_40oq59c.jpg" class="viewImg3" alt="04"/></li>
+							
+							
+							
+							
+						
+					</ul>
+					<div class="dotPaging">
+						
+						<a href="javascript:imageSelect(0)" class="on"><span>1</span></a>
+						
+						<a href="javascript:imageSelect(1)" class=""><span>2</span></a>
+						
+						<a href="javascript:imageSelect(2)" class=""><span>3</span></a>
+						
+						<a href="javascript:imageSelect(3)" class=""><span>4</span></a>
+						
+					</div>
+				</div>
+				<!-- <a href="javascript:fileDownload();" class="btn" style="position:absolute; top:-10px; right:0;"><img src="/img/btn/btn_img_down.png" alt="제품이미지 다운로드" /></a> -->
+			</div>
+
+			<div id="sTab4">
+				<h2 class="mgt30"><img src="/img/contents/smart/tit_review.gif" alt="리뷰" /></h2>
+				<ul class="reviewArea">
+					
+					
+					<img src="/img/contents/smart/no_prd_image.jpg" />
+					
+				</ul>
+			</div>
+
+			<div id="sTab5">
+				<h2 class="mgt30"><img src="/img/contents/smart/tit_down.gif" alt="다운로드" /></h2>
+				<div class="downWrap">
+					<div class="sMask">
+						<div class="sSlide">
+							
+								
+								
+									
+									
+										
+										<ul class="downArea">
+									
+									
+									<li class="first" style="cursor:pointer;" onclick="goDown('http://dmfile.isky.co.kr/NewSelfUpgrade/index.html', '', 'IM-A650S', '4194', '2.13', 'UMF' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1339835380421_1u7hp1wi.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													셀프업그레이드 2.13
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/DMP', 'DataManagerPlus4_Setup_v4.03.41.zip', 'IM-A650S', '4033', '4.03.41', 'DMP' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1339835453828_128mw3.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													데이터매니저 PLUS 4 (v.4.03.41)
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/USB', 'UniUSBDriver_v3.1.1.zip', 'IM-A650S', '4032', '1.0', 'USB' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1339835433359_1eg7hv.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													USB드라이버 1.0
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/MOV', 'IMA650S_SKYPlayer.zip', 'IM-A650S', '3799', '1', 'MOV' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1340526188243_1j8nz5.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													동영상플레이어
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li class="first" style="cursor:pointer;" onclick="goDown('software/USM', 'IMA650S_UserManual.zip', 'IM-A650S', '3827', '1', 'USM' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1339835464109_1q5wlav.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													사용설명서
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/EDIC', 'IMA650S_edictionary.zip', 'IM-A650S', '4542', '1.0', 'EDIC' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1339835424218_1svmlhp.jpg" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+													전자사전 - ※설치방법 : micro SD카드에 edictionary폴더를 생성한 후, 전..
+												
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/PBM', 'IMA650S_PBM.zip', 'IM-A650S', '3829', '1', 'PBM' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1340526259025_1xng5h.gif" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													스카이스마트폰 전화번호이동설명서
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/APM', 'swdownload_apm.gif', 'IM-A650S', '3771', '1.0', 'APM' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1340526294321_1ydwf6.gif" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													안드로이안 메뉴얼
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+										
+											</ul>
+										
+										<ul class="downArea">
+									
+									
+									<li class="first" style="cursor:pointer;" onclick="goDown('software/DMP', 'MessageBackup.zip', 'IM-A650S', '4028', '1.0', 'BAK' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1340526157321_11crzn0c.gif" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													데이터백업 - ※반드시 공지사항을 확인하시고, 진행하시기 바랍니다.
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+											
+								
+									
+									
+									
+									<li  style="cursor:pointer;" onclick="goDown('software/FUM', 'IMA650S_FroyoUserManual.pdf', 'IM-A650S', '4051', '1.0', 'FUM' );">
+										<dl>
+											<dt><img src="http://file.ivega.co.kr/upload/product/title/1340526405321_1w9nrd2i.gif" class="ico" alt=" 다운로드"/></dt>
+											<dd>
+												<p><strong>IM-A650S</strong>
+												
+												
+													프로요 사용자메뉴얼
+												
+												</p>
+											</dd>
+										</dl>
+									</li>
+									
+									
+										</ul>
+									
+											
+								
+								
+								
+								
+							
+						</div>
+					</div>
+					<div class="sPaging">
+						<a href="#" class="prev"><img src="/img/btn/btn_prev.gif" alt="이전" /></a>
+						<span class="page"><em>1</em><span>/</span><span class="aPage">15</span></span>
+						<a href="#" class="next"><img src="/img/btn/btn_next.gif" alt="다음" /></a>
+					</div>
+				</div>
+			</div>
+			
+			<div id="sTab6" class="rela">
+				<h2 class="mgt30"><img src="/img/contents/smart/tit_apps_play.gif" alt="Apps Play" /></h2>
+				<ul class="appTabB">
+					<li id="30000000"><a href="javascript:appsPlayList('30000000', 'IM-A650S');">영화</a></li>
+					<li id="50000000"><a href="javascript:appsPlayList('50000000', 'IM-A650S');">음악</a></li>
+					<li id="40000000"><a href="javascript:appsPlayList('40000000', 'IM-A650S');">TV</a></li>
+					<li id="10000000"><a href="javascript:appsPlayList('10000000', 'IM-A650S');">게임</a></li>
+				</ul>
+				<div class="prdAppsPlay" id="prdAppsPlay" style="width:; height:; padding:; float:; margin-top:20px;">
+					<div class="slide">
+						<div class="slideInner" id="appslist">
+								<!-- 앱스플레이 목록 -->
+						</div>
+					</div>
+					<div class="sPaging">
+						<a href="#" class="prev"><img src="/img/btn/btn_prev.gif" alt="이전" /></a>
+						<span class="page"><em>1</em><span>/</span><span class="aPage">15</span></span>
+						<a href="#" class="next"><img src="/img/btn/btn_next.gif" alt="다음" /></a>
+					</div>
+				</div>
+
+				<h2 class="mgt30"><img src="/img/contents/smart/tit_accessorie.gif" alt="추천액세서리" /></h2>
+				<div class="acceArea">
+					
+					<div class="slide">
+						<div class="slideInner">
+							
+							
+								
+									
+									<ul class="box">
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000132&shop_id=111121113111000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/17.jpg" alt="20PIN EAR MIC (WHITE) EM-1450
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN EAR MIC (WHITE) EM..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000133&shop_id=111116119112000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/16.jpg" alt="20PIN EAR MIC (BLACK) EM-1450
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN EAR MIC (BLACK) EM..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000150&shop_id=111121117111000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/em-1400W.3.jpg" alt="20PIN 스마트폰 Ear Mic(WHITE)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											20PIN 스마트폰 Ear Mic(WHITE)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000155&shop_id=111116119116000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/em-1400.3.jpg" alt="20PIN 스마트폰 Ear Mic(BLACK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											20PIN 스마트폰 Ear Mic(BLACK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121201000109&shop_id=111121115111000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/480(38).jpg" alt="TTA 20PIN 차량용 충전기 CLC-110
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											TTA 20PIN 차량용 충전기 CLC-110
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121181000015&shop_id=111121115111000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/01_420(1).jpg" alt="TTA 20PIN 표준형 충전기
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											TTA 20PIN 표준형 충전기
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+									
+										</ul>
+									
+									<ul class="box">
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991002462&shop_id=111121117112000&partnership=1093104');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/1350459142470_1i7g4o48.jpg" alt="공통사용 5핀 차량용 충전기 CLA-200
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											공통사용 5핀 차량용 충전기 CLA-200
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121201000868&shop_id=111116122112000&partnership=1093104');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/1350458930595_1sd6wy.jpg" alt="멀티 파워스테이션 IGLOO PUC-100WH
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											멀티 파워스테이션 IGLOO PUC-100WH
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000588&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/IM-A650S.jpg" alt="VEGA 배터리커버(유광) (PINK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(유광) (PINK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000148&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/gl01.jpg" alt="VEGA 배터리커버(유광) (BROWN)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(유광) (BROWN)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000159&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/gl01.jpg" alt="VEGA 배터리커버(유광) (WHITE)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(유광) (WHITE)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000167&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/ve1.jpg" alt="VEGA 배터리커버(무광) (BROWN)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(무광) (BROWN)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+									
+										</ul>
+									
+									<ul class="box">
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000179&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/ve1.jpg" alt="VEGA 배터리커버(무광) (PINK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(무광) (PINK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000187&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/ve1.jpg" alt="VEGA 배터리커버(무광) (WHITE)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(무광) (WHITE)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991001683&shop_id=111121114112000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/bat-66203.jpg" alt="VEGA 배터리(표준형) / BAT-6620M
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리(표준형) / BAT-6620M
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000142&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/gl01.jpg" alt="VEGA 배터리커버(유광) (BLACK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(유광) (BLACK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000143&shop_id=111121114113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/ve1.jpg" alt="VEGA 배터리커버(무광) (BLACK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리커버(무광) (BLACK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000084&shop_id=111116119113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/bat-30001.jpg" alt="IM-A650S VEGA 배터리거치대 (WHITE)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											IM-A650S VEGA 배터리거치대 (WH..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+									
+										</ul>
+									
+									<ul class="box">
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991000140&shop_id=111121115112000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/bat-30001.jpg" alt="VEGA 배터리거치대 (BLACK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											VEGA 배터리거치대 (BLACK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004695&shop_id=111121118112000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/IM-R300_TRP-300_280.jpg" alt="20PIN MULTI충전용젠더 (WHITE) TRP-300
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN MULTI충전용젠더 (WHITE)..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004674&shop_id=111121118111000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/07_480(6).jpg" alt="스마트폰 20극/4극(2.5P) 핸즈프리 변환젠더(차량용)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											스마트폰 20극/4극(2.5P) 핸즈프리 변..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004680&shop_id=111121117113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/IM-R300_TRP-300_280.jpg" alt="20PIN MULTI충전용젠더 (BLACK) TRP-300
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN MULTI충전용젠더 (BLACK)..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004690&shop_id=111116129116000&isky_gbn=Y');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/dc(IMCBL-1400)_U310(0)(0).jpg" alt="20PIN 데이터케이블 (WHITE)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											20PIN 데이터케이블 (WHITE)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121991001300&shop_id=111116119113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/dc(IMCBL-1400)_U310(0).jpg" alt="20PIN 데이터케이블 (BLACK)
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											20PIN 데이터케이블 (BLACK)
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+									
+										</ul>
+									
+									<ul class="box">
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004692&shop_id=111116119112000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/tat-160.2.jpg" alt="20PIN DMB Ant & Gender (WHITE) TAT- 160
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN DMB Ant & Gender (..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121191002667&shop_id=111116122113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/15.jpg" alt="Vega 전용 정전식 터치펜
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+										
+											Vega 전용 정전식 터치펜
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+								
+							
+								
+								
+								
+								<li>
+									<a href="javascript:popAccView('http://www.lotsshop.com/item/itemInfoD.do?organ_cd=211211111120002&prod_id=1121141004673&shop_id=111116119113000');">
+										<span class="ico"><img onerror="this.src='/img/contents/smart/bg_video_thumb.gif';"src="http://file.ivega.co.kr/upload/product/accessory/tat-160.2.jpg" alt="20PIN DMB Ant & Gender (BLACK) TAT- 160
+" width="113" height="113"/></span>
+										<span class="tit">
+										
+											20PIN DMB Ant & Gender (..
+										
+										
+										</span>
+									</a>
+									<strong class="price">&nbsp;</strong>
+								</li>
+									
+									</ul>
+								
+							
+						</div>
+					</div>
+					<div class="sPaging">
+						<a href="#" class="prev"><img src="/img/btn/btn_prev.gif" alt="이전" /></a>
+						<span class="page"><em>1</em><span>/</span><span class="aPage">15</span></span>
+						<a href="#" class="next"><img src="/img/btn/btn_next.gif" alt="다음" /></a>
+					</div>
+					
+					
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- //container -->
+<!-- layer popup 공유하기 -->
+<div class="lPop" id="vodShare" style="width:353px;">
+	<h2><img src="/img/common/ptit_share.gif" alt="공유하기" /></h2>
+	<div class="cWrap">
+		<div class="share">
+			<div class="inner">
+				<h3>아래 동영상 페이지 주소를 복사 할 수 있습니다.</h3>
+				<xmp><a href="http://www.ivega.co.kr/prt/productInfo.do?intprdseq=522">iVEGA Vega</a></xmp>
+				<p class="btnArea">
+					<a href="javascript:clipboard();" class="btnA bBlue"><span>URL 복사하기</span></a>
+				</p>
+			</div>
+			
+			<div class="sns">
+				<div><fb:like send="false" layout="button_count" show_faces="false" auto_resize="true"></fb:like></div>
+				<div><a href="https://twitter.com/share" class="twitter-share-button" data-via="skyandroian" data-lang="ko">Tweet</a></div>
+			</div>
+		</div>
+	</div>
+	<a href="javascript:fnHideLayerPop();" class="closeBtn"><img src="/img/btn/btn_popup_close.png" alt="닫기" /></a>
+</div>
+<!-- //layer popup 공유하기 -->			
+
+
+ 
+
+
+
+
+<style type="text/css">
+#footer .familySite .mask li {float:left; width:34px; margin-left:0px; margin-right:10px;}
+#footer .familySite .mask li:first-child {margin-left:0;}
+</style>
+		<!-- footer -->
+		<div id="footer">
+			<div class="footBbs">
+				<strong class="tit"><img src="/img/layout/tit_notice.gif" alt="공지사항" /></strong>
+				<div class="mask">
+					<ul id="footerNotice">
+					
+						<li><a href="http://www.ivega.co.kr/notice/noticeView.do?intseq=1640">SKT 휴대폰 인증 서비스 일시 중단 안내</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/notice/noticeView.do?intseq=1638">2012년 12월 1일 포인트 소멸에 대한 안내</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/notice/noticeView.do?intseq=1629">VEGA R3 제품등록 일시 중단 안내</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/notice/noticeView.do?intseq=1627">2012년 11월 1일 포인트 소멸에 대한 안내</a></li>
+					
+					</ul>
+				</div>
+				<strong class="tit"><img src="/img/layout/tit_update.gif" alt="최신뉴스" /></strong>
+				<div class="mask">
+					<ul id="footerSw">
+					
+						<li><a href="http://www.ivega.co.kr/news/newsView.do?intseq=5013">팬택, 일본 첫 LTE 스마트폰 ‘베가(VEGA) PTL21’ 출시</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/news/newsView.do?intseq=5012">팬택 ‘베가 R3’, 사진작가 김중만의 23번째 카메라가 되다</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/news/newsView.do?intseq=5011">‘베가 R3’ 탄생 기념 ‘타운 세일즈’ 신개념 마케팅활동 펼쳐</a></li>
+					
+						<li><a href="http://www.ivega.co.kr/news/newsView.do?intseq=5010">베가 R3 런칭쇼, ‘V(VEGA)의 역습’ 열광의 도가니</a></li>
+					
+					</ul>
+				</div>
+			</div>
+			<div class="footBox">
+				<dl class="familySite">
+					<dt><img src="/img/layout/tit_sky_family.gif" alt="VEGA FAMILY" /></dt>
+					<dd>
+						<div class="mask">
+							<ul style="width:230">
+								
+									<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73002" target="_blank" title="VEGA 고객지원"><img src="http://file.ivega.co.kr/upload/outlink/image/1347556275606_1rhu4j.png" alt="VEGA 고객지원" /></a></li>
+								
+									<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73004" target="_blank" title="Appsplay"><img src="http://file.ivega.co.kr/upload/outlink/image/1339835135609_1d0n5jq.png" alt="Appsplay" /></a></li>
+								
+									<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73005" target="_blank" title="CLUDE LIVE"><img src="http://file.ivega.co.kr/upload/outlink/image/1339835152203_1f94bqf.png" alt="CLUDE LIVE" /></a></li>
+								
+									<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73007" target="_blank" title="MEDIA LIVE"><img src="http://file.ivega.co.kr/upload/outlink/image/1339835160624_1tqgd8s.png" alt="MEDIA LIVE" /></a></li>
+								
+									<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73001" target="_blank" title="Pantech"><img src="http://file.ivega.co.kr/upload/outlink/image/1339056398257_1jfvhpml.png" alt="Pantech" /></a></li>
+								
+							</ul>
+						</div>
+						<a href="javascript:familysitePrev();" class="prev"><img src="/img/btn/btn_prev04.gif" alt="이전" /></a>
+						<a href="javascript:familysiteNext();" class="next"><img src="/img/btn/btn_next04.gif" alt="다음" /></a>
+					</dd>
+				</dl>
+				<dl class="skySns">
+					<dt><img src="/img/layout/tit_sky_sns.gif" alt="VEGA 소셜" /></dt>
+					<dd>
+						<ul>
+							
+								<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73008" target="_blank" title="트위터"><img src="http://file.ivega.co.kr/upload/outlink/image/1339916536531_1oe6zv.gif" alt="트위터" /></a></li>
+							
+								<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73009" target="_blank" title="페이스북"><img src="http://file.ivega.co.kr/upload/outlink/image/1339916565609_1nh4kz.gif" alt="페이스북" /></a></li>
+							
+								<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73010" target="_blank" title="블로그"><img src="http://file.ivega.co.kr/upload/outlink/image/1339916587124_1acf30i9.gif" alt="블로그" /></a></li>
+							
+								<li><a href="http://www.ivega.co.kr/site/outlink.do?sitecode=73011" target="_blank" title="유튜브"><img src="http://file.ivega.co.kr/upload/outlink/image/1339916604765_10vscvgp.gif" alt="유튜브" /></a></li>
+							
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="footNav">
+				<div class="clfix">
+					<ul>
+						<li><a href="http://www.ivega.co.kr/site/service.do">이용약관</a></li>
+						<li><a href="http://www.ivega.co.kr/site/privacy.do"><span class="fcPurple"><strong>개인정보취급방침</strong></a></li>
+						<li><a href="http://www.ivega.co.kr/site/sitemap.do">사이트맵</a></li>
+					</ul>
+					<div class="fr">
+						<p>- 본 사이트의 콘텐츠는 저작권법의 보호를 받는바, 무단 전재, 복사, 배포 등을 금합니다.</p>
+					</div>
+				</div>
+				<div class="address">
+					<address>서울시 마포구 상암동 1623번지 팬택 R&D 센터 ㅣ 대표 박병엽 ㅣ사업자등록번호 109-81-29846 | (주) 팬택<br />제품/서비스 문의/개인정보/웹사이트 문의 1588-9111 팩스 02-2030–2514</address>
+					<p class="copy">All Contents Copyright ©VEGA 2012</p>
+				</div>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+	<div class="grayBg"></div>
+	<!-- alert Layer pop -->
+	<div id="alertLayerPop" class="lPop" style="width:360px; display:none;">
+		<h2><span style="color:#fff; font-size:14px;"></span></h2>
+		<div class="cWrap">
+			<p class="txt"></p>
+			<div class="btnArea">
+				<a href="javascript:fnHideLayerPop('alertLayerPop');" class="btnA bBlue"><span style="cursor:pointer">확인</span></a>
+			</div>
+		</div>
+		<a href="javascript:fnHideLayerPop('alertLayerPop');" class="closeBtn"><img src="/img/btn/btn_popup_close.png" alt="닫기" /></a>
+	</div>
+	<!-- //alert Layer pop -->	
+<script type="text/javascript">
+var footerNoticeMoving = false;
+function footerNoticeRolling(selector){
+	if(! footerNoticeMoving){
+		footerNoticeMoving = true;
+		jQuery(selector).animate({"top" : "-18px"}, function(){
+			jQuery(selector).find("li:first").appendTo(jQuery(selector));
+			jQuery(selector).css({'top' : '0px'});
+			footerNoticeMoving = false;
+		});	
+	}
+}
+setInterval("footerNoticeRolling(jQuery('#footerNotice'))", 1901);
+setInterval("footerNoticeRolling(jQuery('#footerSw'))", 2201);
+</script>
+<div id="imageFileViewer" style="display:none"></div>
+<textarea style="display:none; position:fixed; top:0; left:0; width:100%;; height:100px; background-color:yellow; z-index:10000; border:1px solid #ccc; overflow-y:auto; -moz-opacity:0.5; filter:alpha(opacity=50); opacity:0.5;" id="debug"></textarea>	
+
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+<iframe id="fileLog" name="fileLog" width="0" height="0"></iframe>
+</body>
+</html>

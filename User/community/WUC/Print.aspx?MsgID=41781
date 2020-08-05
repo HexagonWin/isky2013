@@ -1,0 +1,88 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+	<TITLE>:: isky.co.kr :: </TITLE>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<script language="javascript">
+				<!--
+					//프리트 실행
+					function Print()
+					{
+						window.print();
+					}
+					
+					//윈도우 화면 크기 리사이즈
+					function SelfResize()
+					{
+						var conSize = document.all.ContDiv.scrollHeight;
+
+						self.resizeTo(610 , conSize + 220);
+					}
+				
+				//-->
+		</script>
+</HEAD>
+<body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onload="javascript:SelfResize();">
+<form name="Form1" method="post" action="Print.aspx?MsgID=41781" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTcxMjk5NzU1Mzt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w867Ko7IaM66as7JqU7JikIOOFoOOFoOOFoOOFoOOFoOOFoOOFoOOFoOOFoOOFoOOFoOOFoDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS8wNC8xNjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w867CV64KY66asOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxJTS03MjAwUDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87ZqM7JuQ64G866asIFEmQTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD4mbmJzcFw7IOuyqOyGjOumrCDsmqnrn4nsnbQg66eO7JWE7IScIOyrjCDsp4DsmrDqs6Ag7Iu27J2A642wXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+Jm5ic3BcO+2VnOqwnOyUqeydgCDrqrvsp4DsmrDrgpjsmpQgP1w8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPiZuYnNwXDsg6re465+8IOydtOqxsCDstIjquLDtmZQg7Iuc7Lyc7JW8IOuQmOuCmOyalCDjhaDjhaDjhaBcPC9QXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+<!-- width:600 -->
+<center>
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="BORDER-RIGHT:#e7d2d2 1px solid; BORDER-TOP:#e7d2d2 1px solid; BORDER-LEFT:#e7d2d2 1px solid; BORDER-BOTTOM:#e7d2d2 1px solid; BACKGROUND-COLOR:#f5f0f1">
+<tr>
+	<td width="80%" style="PADDING-RIGHT:0px; PADDING-LEFT:12px; PADDING-BOTTOM:0px; PADDING-TOP:2px"><span class="brown_search">
+		<b><span id="lblTitle">벨소리요오 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ</span></b></span>
+	</td>
+	<td width="20%" align=right style="PADDING-RIGHT:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+<table width="580" height=26 cellpadding="0" cellspacing="0">
+  <tr height=3>
+    <td></td>
+  </tr>
+  <tr>
+    <td><div align="right">작성일 :
+          <span id="lblRegDate">2005/04/16</span>        
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;작성자 :
+          <span id="lblName">박나리</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;모델명 : 
+          <span id="lblHPModel">IM-7200P</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;출처 :
+          <span id="lblBbsName">회원끼리 Q&A</span>
+    </div></td>
+    </tr>
+  <tr height=1>
+    <td background="http://file.isky.co.kr/images/user/community/popup_line_bg.gif"><FONT face="굴림"></FONT></td>
+  </tr>
+</table>
+<table width="580" cellpadding="0" cellspacing="0">
+<Tr>
+	<td style="PADDING-RIGHT:10px; PADDING-LEFT:10px; PADDING-BOTTOM:30px; PADDING-TOP:20px">
+	<div id="ContDiv">
+	<span id="lblContent"><P>&nbsp; 벨소리 용량이 많아서 쫌 지우고 싶은데</P>
+<P>&nbsp;</P>
+<P>&nbsp;한개씩은 못지우나요 ?</P>
+<P>&nbsp;</P>
+<P>&nbsp; 그럼 이거 초기화 시켜야 되나요 ㅠㅠㅠ</P></span>
+	</div>
+	</td>
+</Tr>
+
+<tr height=1 bgcolor="#e1e1e1"><td></td></tr>
+<tr height=15><td></td></tr>
+
+<tr><td align=center><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+</table>
+</center>
+</form>
+</BODY>
+</HTML>

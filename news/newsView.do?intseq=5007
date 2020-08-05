@@ -1,0 +1,994 @@
+
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook/com/2008/fbml" lang="ko" xml:lang="ko">
+<head>
+<title>iVEGA</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+
+<meta name="description" content="  "/>
+<meta name="keywords" content="  "/>
+<meta name="sitecode" content="iVEGA" />
+<meta property="fb:app_id"		content="302278966514238"/>
+<meta property="og:title" content="iVEGA" />
+<meta property="og:description"	content="  "/>
+<meta property="og:image"content="http://www.ivega.co.kr/img/common/face_scrap.jpg"/>
+<meta property="og:site_name"	content="iVEGA"/>
+<meta property="og:type"		content="website"/>
+<meta property="og:country-name"	content="iVEGA"/>
+
+
+<link href="/inc/css/notice.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" type="text/css" href="/css/ui.all.css"/>
+<link rel="stylesheet" type="text/css" href="/css/jquery.autocomplete.css" />
+<link rel="stylesheet" type="text/css" href="/js/cluetip/jquery.cluetip.css" />
+ 
+<script type="text/javascript" src="/dwr/engine.js"></script>
+<script type="text/javascript" src="/dwr/util.js"></script>
+
+<script type="text/javascript" src="/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/js/external/bgiframe/jquery.bgiframe.js"></script>
+<script type="text/javascript" src="/js/jquery.form.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.livequery.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.wslide.js"></script>
+<script type="text/javascript" src="/js/cluetip/jquery.cluetip.js"></script>
+<script type="text/javascript" src="/js/ui/jquery.ui.all.js"></script>
+
+<!-- <script type="text/javascript" src="/js/ui/jquery-ui-1.8.12.custom.min.js"></script> -->
+<script type="text/javascript">
+var userId="";
+var userHp="";
+var iskyurl="http://www.ivega.co.kr";
+</script>
+<script type="text/javascript" src="/js/ui/ui.datepicker.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.alphanumeric.js"></script>
+<script type="text/javascript" src="/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/js/jquery.corner.js"></script>
+<script type="text/javascript" src="/js/plugins/jquery.charcounter.js"></script>
+<script type="text/javascript" src="/inc/js/design.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/inc/js/mobile_swipe.js"></script>
+<script type="text/javascript" src="/js/makePCookie.js"></script>
+<script type="text/javascript" src="/search/js/search.js"></script>
+<script type="text/javascript" src="/js/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="/dwr/interface/prtSmartSearchFrontService.js"></script>
+<!-- 검색 -->
+<link rel="stylesheet" type="text/css" href="/search/ark/css/ark.css" media="screen" />
+<script language="javascript" src="/search/ark/js/ark_custom.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	// Gnb Menu On
+	jQuery(function(){
+
+		var pathnameSplit = window.location.pathname.split("/");
+		var oneDepthMenu = (pathnameSplit.length > 0 ? pathnameSplit[1] : "");
+		
+		// Gnb Menu 활성화
+		jQuery("#header .inner ul.gnb li").each(function(i){
+			jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_on", "_off");
+		});
+		
+		var gnbMenuIndex = -1;
+		
+		if("prt" == oneDepthMenu){
+			
+			if(pathnameSplit[2] != "productNormalInfoList.do" && pathnameSplit[2] != "productNormalInfoView.do"){
+				gnbMenuIndex = 0;
+			}
+		}else if("svc" == oneDepthMenu){
+			gnbMenuIndex = 1;
+		}else if("cam" == oneDepthMenu){
+			gnbMenuIndex = 2;
+		}else if("evt" == oneDepthMenu){
+			gnbMenuIndex = 3;
+		}
+		
+		var gnbMenuImg = jQuery("#header .inner ul.gnb li:eq(" + gnbMenuIndex + ") img");
+		// 서브 메뉴 display
+		//jQuery("#header .inner .snb ul:eq(" + gnbMenuIndex + ")").show();
+		
+		if(gnbMenuIndex > -1){
+			jQuery(gnbMenuImg).get(0).src = jQuery(gnbMenuImg).get(0).src.replace("_off", "_on"); 
+		}
+		if(window.location.pathname == "/main.do"){
+			jQuery("#header .inner .snb").hide();
+		}
+		
+		
+		// Sub Menu 활성화
+		/*
+		var requestParams = new reqParam();
+		jQuery("#header .inner .snb ul:visible a").each(function(i){
+			var aLinkHref = jQuery(this).attr("href");
+			var aLinkLastIndexOf = aLinkHref.lastIndexOf("?");
+			var aLinkPathName = aLinkHref.substring(0, (aLinkLastIndexOf > -1 ? aLinkLastIndexOf : aLinkHref.length));
+			var aLinkParams = new reqParam(aLinkHref.substring(aLinkLastIndexOf + 1));
+			
+			jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_on", "_off");
+			if(window.location.pathname == aLinkPathName){
+				var bParamCheck = true;
+				
+				for(var i = 0; i < aLinkParams.size(); i++){
+					
+					if(requestParams.get(aLinkParams.getKeyName(i)) == aLinkParams.get(aLinkParams.getKeyName(i))){
+						bParamCheck = true;
+					}else{
+						bParamCheck = false;
+						break;
+					}
+				}
+				if(bParamCheck){
+					jQuery(this).find("img").get(0).src = jQuery(this).find("img").get(0).src.replace("_off", "_on");
+					return false;
+				}
+			}
+		});
+		*/
+		
+		// 상단 검색어
+		var topSearchTextBg = $(".topSearch input[type='text']").css("background-image");
+		$(".topSearch input[type='text']").focus(function(){
+			if($(this).val().length == 0){
+				$(this).val('');
+				$(this).css({"background-image" : "none"});
+			}
+		}).blur(function(){
+			if($(this).val().length == 0){
+				$(this).css({"background-image" : topSearchTextBg});
+			}
+		});
+	});
+});
+
+jQuery(function() {
+    jQuery(".dtm").datepicker({ 
+        dateFormat: 'yy-mm-dd', 
+        changeMonth: true, 
+        changeYear: true,
+        buttonImage: "/img/common/ico_calendar.gif",
+        buttonImageOnly: true,
+        showOn: 'both'
+     });
+    jQuery(".dtm").css({"cursor":"pointer", "margin-right":"5px"});
+    jQuery(".dtm").attr("readonly", true);
+});
+
+function searchSubmit(){
+	var searchForm = document.search;
+	if(! $.trim(searchForm.query.value)){
+		$("form[name='search'] input[name='query']").css({"background-image" : "none"});
+		searchForm.query.value = $("form[name='search'] input[name='query']").attr("defaultVal");
+	}
+	searchForm.submit();
+}
+var smartview_flag=false;
+function smartSearch(){
+	if(!smartview_flag){
+		jQuery(".smartLayer").show();
+		smartview_flag= true;
+		doSmartSearch();	
+	}else{
+		jQuery(".smartLayer").hide();
+		smartview_flag= false;
+	}
+}
+
+//동영상 슬라이드 설정
+var bPhoneSearchMoving = false;
+var itemPhoneSearchWidth = 140;
+var slidePhoneSearch = null;
+var itemPhoneSearchLength = 0
+
+function doSmartSearch(){
+	var h_phone1 = jQuery(":radio[name='h_phone1']:checked").val();
+	var h_phone2 = jQuery(":radio[name='h_phone2']:checked").val();
+	var h_phone3 = jQuery(":radio[name='h_phone3']:checked").val();
+	var h_phone4 = jQuery(":radio[name='h_phone4']:checked").val();
+	
+	var parameterObject = {};
+	parameterObject["telecom"] = h_phone1;
+	var i=0;
+	var category =new Array();
+	if(h_phone2!=""){
+		category[i++]=h_phone2;	
+	}
+	if(h_phone3!=""){
+		category[i++]=h_phone3;	
+	}
+	if(h_phone4!=""){
+		category[i++]=h_phone4;	
+	}
+
+	parameterObject["category"] = category.join(",");
+	
+	jQuery.blockUI();
+	prtSmartSearchFrontService.getSmartSearchPrtList(parameterObject, {
+    	callback:function(data){ if(!data){
+    		//alert("data load fail ...");
+    		jQuery.unblockUI();
+    	}else{
+    		
+    		jQuery("#smart_side li").remove();
+    		var html = "";
+    		if(data.length>0){
+    			jQuery("#divPhoneNo").hide();
+    			jQuery(".phoneSlide").show();
+	    		jQuery.each(data, function(){
+	    			html = "";
+	    			html += "<li>";
+	    			html += "	<a href=\"/prt/productInfo.do?intprdseq="+this.intprdseq+"\">";
+	    			html += "		<img src=\"http://file.ivega.co.kr/upload/product/feature/"+this.strimgname+"\" width=\"103\" height=\"110\" alt=\"\" /><br />";
+	    			html += "		<span>"+this.strprdnname+"</span>";
+	    			html += "	</a>";
+	    			html += "</li>";
+	    			jQuery("#smart_side").append(html);
+	    		});
+    		}else{
+    			jQuery("#divPhoneNo").show();
+   				jQuery(".phoneSlide").hide();
+    		}
+    		jQuery.unblockUI();
+    		smartSearchInit();
+    	}}
+    });
+}
+
+function smartSearchInit(){
+	slidePhoneSearch = jQuery(".phoneSlide .slide");
+	itemPhoneSearchLength = $(slidePhoneSearch).find("li").length;
+	$(slidePhoneSearch).css({"width" : ((itemPhoneSearchLength * itemPhoneSearchWidth)) + "px"});
+	
+	if(itemPhoneSearchLength > 6){
+		//$(".phoneSlide .prev").addClass("off");
+		//$(".phoneSlide .next").addClass("off");
+		$(".phoneSlide .prev").show();
+		$(".phoneSlide .next").show();
+	}else{
+		//$(".phoneSlide .prev").addClass("on");
+		//$(".phoneSlide .next").addClass("on");
+		$(".phoneSlide .prev").hide();
+		$(".phoneSlide .next").hide();
+	}
+}
+
+jQuery(document).ready(function(){
+	jQuery(".smart_search").bind("change",function(){
+		doSmartSearch();
+	});
+	
+	$(".phoneSlide .prev",this).click(function(){
+		if(! bPhoneSearchMoving && ! $(this).hasClass("off")){
+			bPhoneSearchMoving = true;
+			$(slidePhoneSearch).find("li:last").prependTo($(slidePhoneSearch));
+			$(slidePhoneSearch).css({"left" : "-" + itemPhoneSearchWidth + "px"});
+			$(slidePhoneSearch).animate({"left" : "0px"}, function(){
+				bPhoneSearchMoving = false;
+			});
+		}
+		return false;
+	});
+	
+	$(".phoneSlide .next",this).click(function(){
+		if(! bPhoneSearchMoving && ! $(this).hasClass("off")){
+			bPhoneSearchMoving = true;
+			$(slidePhoneSearch).animate({"left" : "-" + itemPhoneSearchWidth + "px"}, function(){
+				$(slidePhoneSearch).find("li:first").appendTo($(slidePhoneSearch));
+				$(slidePhoneSearch).css({"left" : "0px"});
+				bPhoneSearchMoving = false;
+			});
+		}
+		return false;
+	});
+});
+
+
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="inner">
+			<form name='search' action='http://www.ivega.co.kr/search/search.do' method='post' onsubmit="searchSubmit(); return false;">
+			   <input type='hidden' name='startCount' value='0' />
+			   <input type='hidden' name='collection' value='ALL' />
+			   <input type='hidden' name='requery' value='' />
+			   <input type='hidden' name='mode' value='basic' />
+			   <input type='hidden' name='sort' value='RANK' />
+			   <input type='hidden' name='rt2' />			
+				<h1><a href="/main.do"><img src="/img/layout/logo_top.png" alt="VEGA" /></a></h1>
+				<div class="topNav">
+					<ul>
+					
+					
+						<li><a href="https://member.ivega.co.kr/mem/login.do">로그인</a></li>
+						<li><a href="https://member.ivega.co.kr/mem/memType.do">회원가입</a></li>
+					
+						<li><a href="https://member.ivega.co.kr/myp/mypMain.do">마이베가</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/prt/productNormalInfoList.do" class="icoA">일반폰</a></li>
+						<li class="line"><a href="http://www.vegaservice.co.kr" target="_blank" title="VEGA Cyber Pluszone" class="icoB">고객센터</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/notice/noticeList.do" class="icoC">공지사항</a></li>
+						<li class="line"><a href="http://www.ivega.co.kr/news/newsList.do" class="icoD">최신뉴스</a></li>
+					</ul>
+				</div>
+				<ul class="gnb">
+					<li><a href="http://www.ivega.co.kr/prt/productInfoList.do"><img src="/img/layout/nav/gnb01_off.gif" alt="스마트폰" /></a></li>
+					<li><a href="http://www.ivega.co.kr/svc/svcMain.do"><img src="/img/layout/nav/gnb02_off.gif" alt="베가 라이프" /></a></li>
+					<li><a href="http://www.ivega.co.kr/cam/culList.do"><img src="/img/layout/nav/gnb03_off.gif" alt="베가 캠페인" /></a></li>
+					<li><a href="http://www.ivega.co.kr/evt/evtList.do"><img src="/img/layout/nav/gnb04_off.gif" alt="이벤트" /></a></li>
+				</ul>
+				
+				<div class="snb">
+					
+
+ 
+
+
+
+
+
+				</div>
+				
+				<fieldset class="topSearch">
+					<legend>검색</legend>
+					<input type="text" name="query" id="query" class="txt" defaultVal="Vega S5" value="" style="background:url(http://file.ivega.co.kr/upload/banner/image/1342411423210_17m7438.jpg) no-repeat 0 top;" />
+					<input type="image" src="/img/layout/btn_search.png" alt="검색" class="btn"/>
+					<a href="javascript:smartSearch();" class="smart"><img src="/img/layout/btn_smart_search.png" alt="스마트검색" /></a>
+					<div id="autoList" class="autoList" style="display:block;"></div>
+				</fieldset>
+				</form>
+				
+				<!-- // start -->
+				<div class="smartLayer" style="display:none;">
+					
+					<form name="header_smartform">
+					
+					<div class="clfix">
+						<h2><img src="/img/layout/tit_smart_search.png" alt="스마트폰 검색" /></h2>
+						<div class="selectAear">
+							<dl>
+								<dt><img src="/img/layout/th_smart_search01.png" alt="통신사" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone1" id="phone1_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone1_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_44" class="option smart_search" type="radio" value="SKT"/><label for="phone1_44">SKT</label></li>
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_45" class="option smart_search" type="radio" value="KT"/><label for="phone1_45">KT</label></li>
+											
+											
+											
+											<li><input name="h_phone1" id="phone1_46" class="option smart_search" type="radio" value="LGU+"/><label for="phone1_46">LG U+</label></li>
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search02.png" alt="통신방식" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone2" id="phone2_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone2_0">전체</label></li>
+											
+											
+											
+											
+											<li><input name="h_phone2" id="phone2_2" class="option smart_search" type="radio" value="76002"/><label for="phone2_2">3G</label></li>
+											
+											
+											
+											<li><input name="h_phone2" id="phone2_3" class="option smart_search" type="radio" value="76003"/><label for="phone2_3">LTE</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search03.png" alt="화면크기" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone3" id="phone3_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone3_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_5" class="option smart_search" type="radio" value="77001"/><label for="phone3_5">3" 형</label></li>
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_6" class="option smart_search" type="radio" value="77002"/><label for="phone3_6">4" 형</label></li>
+											
+											
+											
+											<li><input name="h_phone3" id="phone3_7" class="option smart_search" type="radio" value="77003"/><label for="phone3_7">5" 형</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt><img src="/img/layout/th_smart_search04.png" alt="CPU" /></dt>
+								<dd>
+									<div class="select" style="width:275px;">
+										<span class="arrow"></span>
+										<div class="myValue"></div>
+										<ul class="iList">
+											<li><input name="h_phone4" id="phone4_0" class="option smart_search" type="radio" value="" checked="checked" /><label for="phone4_0">전체</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_9" class="option smart_search" type="radio" value="78001"/><label for="phone4_9">싱글코어</label></li>
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_10" class="option smart_search" type="radio" value="78002"/><label for="phone4_10">듀얼코어</label></li>
+											
+											
+											
+											<li><input name="h_phone4" id="phone4_11" class="option smart_search" type="radio" value="78003"/><label for="phone4_11">쿼드코어</label></li>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										</ul>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="phoneSlide">
+						<a href="#" class="prev ctr">이전</a>
+						<a href="#" class="next ctr">다음</a>
+						<div class="mask">
+							<ul class="slide" id="smart_side">
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:smartSearch();" class="closeBtn"></a>
+					</form>
+					
+					<p class="none" id="divPhoneNo" style="display:none;">
+						<span>검색 결과가 없습니다.</span>
+					</p>
+				
+				</div>
+				<!--  end -->
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		<!-- //header -->
+
+
+ 
+
+
+
+
+
+
+<script type="text/javascript">
+
+//최신뉴스 사용
+function goList(page){
+	var parameter = jQuery("form[name='frm1']").serialize()+"&page="+page;
+	jQuery("#bbsList").block();
+	$.ajax({
+		type: "POST",
+		url: "ajaxViewList.do",
+		data: parameter , 
+		async: false,
+		success: function(txt){
+			
+			jQuery.unblockUI();
+			jQuery("#bbsList").html(txt);
+		}
+	});
+}
+
+function check_search(gb){
+	goList(1);
+	if(gb!="btn"){
+		return false;
+	}
+}
+
+jQuery(function(){
+	goList("");
+});
+</script>
+<form name="frm1" Method="POST">
+	<input type="hidden" name="intseq" value="5007">
+	<input type="hidden" name="listkind" value="">
+</form>
+<!-- container -->
+		<div id="container">
+			<div class="location">
+				<a href="#">HOME</a><em>최신 뉴스</em>
+			</div>
+
+			<h2 class="pageTitA"><img src="../../img/contents/notice/tit_news.gif" alt="최신뉴스" /></h2>
+			<p class="descA">
+				혁신을 만들어가는 VEGA의 <strong class="fcPurple">새로운 소식</strong>을 전합니다.
+			</p>
+
+			<p class="listCtr">
+				<a href="#bbsList">목록열기</a>
+			</p>
+
+			<div id="bbsList" style="display:none;"></div>
+
+			<table class="bbsView mgt20">
+				<caption>최신뉴스</caption>
+				<colgroup>
+					<col width="870" />
+					<col width="90" />
+				</colgroup>
+				<thead>
+				<tr>
+					<th>팬택, 독특한 디자인의 초슬림 LTE 스마트폰 ‘플렉스(Flex)’ 미국 출시</th>
+					<td>2012.09.06</td>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td colspan="8" class="bbsCont">
+						<div>
+							<P align=center>﻿<IMG title=588.jpg src="http://www.pantech.co.kr/cmm/fms/getImage.do?atchFileId=FILE_000000000002302"></P><br><br>
+
+팬택이 성능과 디자인을 모두 잡은 LTE 스마트폰으로 미국 시장 공략에 나선다.<br><br>
+ 
+ 
+ 
+팬택(www.pantech.co.kr, 대표이사 박병엽 부회장)은 16일(현지시각) 미국시장에 이동통신사업자 AT&T를 통해 독특한 디자인의 초슬림 LTE 스마트폰 ‘플렉스(Flex, 모델명: P8010)’를 출시한다고 밝혔다.<br><br>
+ 
+ 
+ 
+‘플렉스’는 두께 7.95mm의 초슬림 LTE 스마트폰으로, 팬택인 선보인 LTE 스마트폰 중 가장 얇다.얇은 두께만큼 무게가 가벼워 휴대하기 편리하며, 한 손에 들어오는 컴팩트한 사이즈로 그립감이 우수하다.<br><br>
+ 
+ 
+ 
+‘플렉스’의 독특한 디자인은 일반적인 바(bar)타입의 스마트폰과 확연히 구별된다. 7.95mm라는 얇은 두께를 구현하기 위해 뒷면에 부분적으로 SUS(Steel Use Stainless) 소재를 적용하고, 이를 플라스틱 소재와 독특한 면분할 방식으로 매칭시켜 입체감 있는 스타일을 완성했다. 플라스틱과 SUS(Steel Use Stainless) 소재의 조화, 입체감 있는 디자인으로 심플하지만 독특하고 매력적인 조형미를 느낄 수 있다. <br><br>
+
+ 
+ 
+‘플렉스’는 이러한 독특한 디자인으로 올해 ‘레드닷 디자인 어워드(Reddot Design Award)’에서 본상을 수상했다. ‘레드닷 디자인 어워드’는 독일의 iF, 미국의 IDEA와 함께 세계 3대 디자인상으로 불리는 국제적인 권위의 공모전으로, 팬택은 작년에도 다양한 디자인의 스마트폰을 출품하여 우수한 성적을 받은 바 있다. 올해 ‘플렉스’를 통해 본상을 수상함으로써, 팬택이 지닌 디자인 경쟁력을 다시 한번 입증하게 됐다.<br><br>
+ 
+ 
+ 
+이외에도 사용자환경(UI) 측면에서 Easy Experience 모드를 제공해 스마트폰 사용이 익숙하지 않은 사용자들을 배려했다. Easy Experience 모드는 팬택이 제공하는 쉽고 직관적인 사용자환경으로, 하나의 홈 스크린에서 시간, 날짜, 날씨 등을 확인할 수 있는 것은 물론 전화 걸기, 메시지 보내기, 웹 검색, 카메라 등 기본적인 기능들을 한번에 실행할 수 있어 편리하다. 여기에 Easy Experience 모드 사용방법을 담은 동영상도 제공해 사용자들이 쉽고 빠르게 이해할 수 있도록 했다. <br><br>
+
+ 
+ 
+또한, ‘플렉스’는 800만 화소 카메라, 안드로이드 최신 운영체제 아이스크림샌드위치, 퀄컴 원칩 프로세서 MSM8960을 탑재하고 LTE를 지원하는 등 우수한 성능을 갖췄다.<br><br>
+ 
+ 
+ 
+팬택 해외마케팅본부장 신학현 상무는 “플렉스는 얇은 두께에 우수한 성능과 독특한 디자인을 모두 갖춰 소비자들에게 차별화된 가치를 제공해줄 것으로 기대한다”며 “앞으로도 팬택이 지닌 기술력과 디자인 경쟁력을 바탕으로 기술적인 부분과 감성적인 부분 모두를 선도해 나갈 것”이라고 밝혔다.<br><br>
+ 
+ 
+ 
+한편, 팬택은 지난해 첫번째 북미향 LTE 스마트폰 ‘브레이크아웃(Breakout)’을 시작으로 올해 초 두번째 LTE 스마트폰 ‘버스트(Burst)’를 출시, 지난 8월에는 북미향 제품에 처음으로 퀄컴 원칩 프로세서 MSM8960 및 안드로이드 최신 운영체제 아이스크림 샌드위치를 탑재한 LTE 스마트폰 ‘머로더(Marauder)’를 출시하는 등 탄탄한 기술력을 바탕으로 빠른 기술변화에 즉각적으로 대응하며 북미 시장 내 입지를 강화해 나가고 있다.
+
+						</div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<table class="bbsPaging">
+				<caption>글목록</caption>
+				<colgroup>
+					<col width="90" />
+					<col width="120" />
+					<col width="620" />
+					<col width="75" />
+					<col width="55" />
+				</colgroup>
+				<tbody>
+				<tr>
+					<th><span class="prev">이전글</span></th>
+					
+					
+						<td></td>
+						<td>
+							<a href="newsView.do?intseq=5006" class="txt">정형돈, 하하 등 출연 ‘VEGA TV 어랍쑈!’ 방송</a>
+						</td>
+						<td class="agc">2012.08.09</td>
+						<td class="hit">1719</td>
+					
+				</tr>
+				<tr>
+					<th><span class="next">다음글</span></th>
+					
+						<td></td>
+						<td>
+							<span class="txt">다음 글이 없습니다.</span>
+						</td>
+						<td></td>
+						<td></td>
+					
+					
+				</tr>
+				</tbody>
+			</table>
+
+
+		</div>
+		<!-- //container -->	

@@ -1,0 +1,332 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/selfupgrade.jsp">
+
+	<input type="hidden" name="stype" value="im-u">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+<script language="javascript" src="/inc/js/common_web.js"></script>
+
+
+<script language="JavaScript">
+
+//쿠키 가져오기
+	function getCookie(name) { 
+		var nameOfCookie = name + "="; 
+		var x = 0;
+
+		while ( x <= document.cookie.length ) { 
+			var y = (x+nameOfCookie.length); 
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length; 
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 ) break; 
+		}
+		
+		return "";
+	}
+
+	/* 
+	if(getCookie("popup20070917") != "done") {
+		var popwin = window.open("/html/cs/pop_notice26.jsp","notice26","width=412,height=235,left=200,top=200");
+	}*/
+
+</script>
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script>
+    /** 출력메시지용 **/
+    function MM_popupMsg(msg) 
+    { //v1.0
+          alert(msg);
+    }
+    /** 다운로드 **/
+    function fdown(form,d_name,down_dr,d_type,idx,m_name,gubun,userid)
+    {
+		
+        download_log(d_name,down_dr,d_type,idx,m_name,userid);
+        form.target = "inner_recom_log";
+        form.action = "/common/include_log.jsp?log_p_name="+m_name+"&log_p_idx="+idx+"&log_gubun="+gubun+"&log_s_value="+d_type;
+        form.submit();
+    }
+
+	function fdown_beforecheck(form,d_name,down_dr,d_type,idx,m_name,gubun, version) {
+		//function download_log(fname, folder, d_type, idx, prdid,userid){
+		//if (d_type == "MEL" || d_type == "UMF") {
+			window.open("/html/cs/pop_notice31.jsp?d_name=" + d_name + "&down_dr=" + down_dr + "&d_type=" + d_type + "&idx=" + idx + "&m_name=" + m_name + "&gubun=" + gubun + "&version=" + version, "filedown", "scrollbars=no,resizable=no,status=yes,width=410,height=420,left=0,top=0");
+		//} else if (d_type == "USB") {
+		//	window.open("/common/download_log31.jsp?file=" + d_name + "&folder=" + down_dr + "&d_type=" + d_type + "&idx=" + idx + "&prdid=" + m_name, "filedown", "scrollbars=no, resizable=no, status=yes, width=410, height=220, left=0, top=0");
+		//} else {
+		//	if(confirm("로그인 후 다운로드를 받을 수 있습니다.\n로그인 하시겠습니까?")){
+		//		goLogin();
+		//	}
+		//}
+	}
+
+    /** 제품 미등록자 **/
+    function phone_regi(model_n) { 
+        if(confirm(model_n+" 소지자만 다운로드 받으실수 있습니다. 제품등록 페이지로 이동하시겠습니까?"))
+        {
+           location.href = "/html/mysky/modify_product.jsp";
+        }else{
+           return;
+        }
+    }
+    /** 미로그인 **/
+    function go_login()
+    {
+        
+            if(confirm("로그인 후 다운로드를 받을 수 있습니다.\n로그인 하시겠습니까?"))
+            {
+                goLogin();
+            }
+        
+    }
+	function go_imb1000()
+    {
+		alert("셀프 업그레이드가 지원되지 않습니다. CS 센터에서 업그레이드 받으세요.");
+	}
+</script>
+</head>
+<body>
+<iframe name="inner_recom_log" method="post" width=600 height=0></iframe>
+<form name="logForm" method="post">
+	<input type="hidden" name="log_gubun" value="CC07">
+	<input type="hidden" name="log_s_value" value="SELF">
+	<input type="hidden" name="log_tname" value="ISKY_P_PHONE_DRIVER">
+</form>
+<form name="logForm2" method="post">
+	<input type="hidden" name="log_gubun" value="CC03">
+	<input type="hidden" name="log_s_value" value="USB">
+	<input type="hidden" name="log_tname" value="ISKY_P_PHONE_DRIVER">
+</form>
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,1);var gocn=4;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_selfupgrade.gif" height="52"></div>
+				<div id="Path"><script>path('4_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+						<div class="tab"><a href="selfupgrade.jsp"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab01.gif"></a><a href="selfupgrade.jsp?stype=im-r"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab02.gif" ></a><a href="selfupgrade.jsp?stype=im-s"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab03.gif"></a><a href="selfupgrade.jsp?stype=im-u"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab04_.gif"></a><a href="selfupgrade.jsp?stype=imb"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab05.gif"></a><a href="selfupgrade.jsp?stype=im-8000"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_tab06.gif"></a></div>
+
+					<h2><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_ts01.gif"></h2>
+
+					<!-- 리스트 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04">
+					<col width="160" align="center" class="p_t2"/>
+					<col width="166" align="center" class="p_t2"/>
+					<col width="147" align="center" class="p_t2"/>
+					<col width="96" align="center"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_model.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_versioninfo.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_etc.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_download.gif"></th>
+					</tr>
+					<tr height="5"><td colspan="4"><!-- space --></td></tr>
+
+	
+					<tr height="24" class="dot">
+						<td>IM-U150L</td>
+						<td>1.43a</td>
+						<td>LGT</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> -->
+							<a href="#" onClick="javascript:fdown_beforecheck(logForm, 'http://dmfile.isky.co.kr/upload/product/umf/UpgradeManager_IM-U150L_ver143a.zip ', 'download_driver', 'UMF', 'dcsgH1HS57o~fil/rwE/m6g~', 'IM-U150L', 'CC10', '', '')">
+							<img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot">
+						<td>IM-U210K</td>
+						<td>1.27</td>
+						<td>KTF</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> -->
+							<a href="#" onClick="javascript:fdown_beforecheck(logForm, 'http://dmfile.isky.co.kr/PDS01/PRDDN/S110/Step1.asp', 'download_driver', 'UMF', 'ry4PHzG1hYk~Z_kjCBBQRhc~', 'IM-U210K', 'CC10', '', '')">
+							<img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot">
+						<td>IM-U160L</td>
+						<td>1.25d</td>
+						<td>LGT</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> -->
+							<a href="#" onClick="javascript:fdown_beforecheck(logForm, 'http://dmfile.isky.co.kr/PDS01/PRDDN/S110/Step1.asp', 'download_driver', 'UMF', 'IfXrHvF6wSY~YXGzaR9c6dA~', 'IM-U160L', 'CC10', '', '')">
+							<img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot">
+						<td>IM-U210</td>
+						<td>1.52</td>
+						<td>SKT</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> -->
+							<a href="#" onClick="javascript:fdown_beforecheck(logForm, 'http://dmfile.isky.co.kr/PDS01/PRDDN/S110/Step1.asp', 'download_driver', 'UMF', 'DtTxHlEv4uE~S6Mf3k0NzZM~', 'IM-U210', 'CC10', '', '')">
+							<img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18"></a></td>
+					</tr>
+	
+					<tr height="24">
+						<td>IM-U160</td>
+						<td>1.33a</td>
+						<td>SKT</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> -->
+							<a href="#" onClick="javascript:fdown_beforecheck(logForm, 'http://dmfile.isky.co.kr/PDS01/PRDDN/S110/Step1.asp', 'download_driver', 'UMF', 'gZrOHhH1HX8~sgW2kQ0gIYc~', 'IM-U160', 'CC10', '', '')">
+							<img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18"></a></td>
+					</tr>
+
+
+					<!--// last -->
+
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+					<!--// list -->
+
+					<!-- page //-->
+					<div class="page">
+
+						<img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'><b>1</b>&nbsp;|&nbsp;&nbsp;<a href=selfupgrade.jsp?page=2&stype=im-u>2</a>&nbsp;|&nbsp;&nbsp;<a href=selfupgrade.jsp?page=3&stype=im-u>3</a>&nbsp;<img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'>
+						
+
+					</div>
+					<!--// page -->
+
+
+					<h2><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_ts02.gif"></h2>
+					<ul class="li_gray m_l15">
+						<li>셀프 업그레이드를 이용하려면 각 제품에 해당 하는 USB 드라이버가 설치되어야 합니다.</li>
+						<li>USB 드라이버를 설치하지 않으셨다면 아래 파일을 다운로드하여 설치하시기 바랍니다.</li>
+					</ul>
+					<!-- 리스트 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04 m_t10">
+					<col width="160" align="center" class="p_t5 p_b3 l18"/>
+					<col width="313" class="p_l10 p_t5 p_b3 l18"/>
+					<col width="96" align="center" class="p_t3"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_version.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_productmodel.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_download.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+	
+					<tr height="24" class="dot" valign="middle">
+						<td>1.30</td>
+						<td>IM-U210K / U220 / U220K용</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> --><a href="#" onClick="javascript:fdown_beforecheck(logForm2,'http://dmfile.isky.co.kr/upload/product/usb/UNI_USB_v130.zip','download_driver','USB','aqTpHW96Iv0~gP5LlB3VQHQ~','IM-U210K / U220 / U220K용','CC03', '1.30')"><img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18" align="absmiddle"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot" valign="middle">
+						<td>1.39</td>
+						<td>IM-U210 용</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> --><a href="#" onClick="javascript:fdown_beforecheck(logForm2,'http://dmfile.isky.co.kr/upload/product/usb/UNI_USB_v139.zip','download_driver','USB','V4PvHc8uQ7g~54hmMG/3dGw~','IM-U210 용','CC03', '1.39')"><img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18" align="absmiddle"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot" valign="middle">
+						<td>1.22</td>
+						<td>IM-U150 /U160/U170, IM-R110/R200, IM-S230, IM-U200 용</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> --><a href="#" onClick="javascript:fdown_beforecheck(logForm2,'http://dmfile.isky.co.kr/upload/product/usb/UNI_USB_v122.zip','download_driver','USB','yUnMHY/0flU~ntxsVA5HKLY~','IM-U150 /U160/U170, IM-R110/R200, IM-S230, IM-U200 용','CC03', '1.22')"><img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18" align="absmiddle"></a></td>
+					</tr>
+	
+					<tr height="24" class="dot" valign="middle">
+						<td>4.36</td>
+						<td>IM-U110 용</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> --><a href="#" onClick="javascript:fdown_beforecheck(logForm2,'http://dmfile.isky.co.kr/upload/product/usb/SKY_USB_v436.zip','download_driver','USB','Aq26HW/XHCQ~wvYO3Yhes4A~','IM-U110 용','CC03', '4.36')"><img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18" align="absmiddle"></a></td>
+					</tr>
+	
+					<tr height="24">
+						<td>1.16</td>
+						<td>IM-U100 /U130/U140, IM-S110/S150, IM-R100 용</td>
+						<td>
+					<!-- <a href="#" onClick="go_login()"> --><a href="#" onClick="javascript:fdown_beforecheck(logForm2,'http://dmfile.isky.co.kr/upload/product/usb/UNI_USB_v116.zip','download_driver','USB','3GrGHS9AXpo~Mit4jo/FTD0~','IM-U100 /U130/U140, IM-S110/S150, IM-R100 용','CC03', '1.16')"><img src="http://www.isky.co.kr/source/img/bbs/btn5_download.gif" height="18" align="absmiddle"></a></td>
+					</tr>
+
+
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+					<!--// list -->
+
+					<div class="m_t10 m_l20"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_txt01.gif"></div>
+
+
+					<h2><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_ts03.gif"></h2>
+					<div class="m_t10"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_txt03.gif"></div>
+					<ul class="li_gray m_l15">
+						<li class="m_t10">셀프 업그레이드를 위해 핸드폰과 USB Cable을 준비하시고 업그레이드 중에 단말기의 배터리가 방전되지 
+않도록 충분한 충전상태를 확인해 주세요. </li>
+						<div class="m_t5"><img src="http://www.isky.co.kr/source/img/cs/selfupgrade_txt02.gif"></div>
+					</ul>
+					
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+                <!-- m4th MSD 071015 박홍식 -->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_prize_view.jsp?eventid=Ur_nobjgGAI~WyupiH0ja2k~&flag=prize&flag1=2"><img src="http://www.isky.co.kr/source/img/global/leader_10th_e.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?eventid=PEhXD1TI6dg~RxFBG9hmiEU~&flag=prize&flag1=2"><img src="http://www.isky.co.kr/source/img/global/right_cs_skyday.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="http://www.isky.co.kr/html/brandstory/sponsor/superpreview_end.jsp"><img src="http://www.isky.co.kr/source/img/global/right_cs_super_pre.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

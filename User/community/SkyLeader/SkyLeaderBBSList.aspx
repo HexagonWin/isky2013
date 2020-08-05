@@ -1,0 +1,1 @@
+<script>alert('스카이리더회원 이상만 가능합니다.');document.location.href='/';</script>

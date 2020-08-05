@@ -1,0 +1,736 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/lounge/review/product.jsp">
+
+	<input type="hidden" name="SearchSerialNo" value="">
+
+	<input type="hidden" name="page" value="3">
+
+	<input type="hidden" name="SearchSeriesNo" value="">
+
+	<input type="hidden" name="SearchMaker" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<!-- <script language="JavaScript" src="/static/js/select.js"></script> -->
+<script>var dispNum="0401"</script>
+<script Language="javascript">
+<!--
+	var flag;
+
+	String.prototype.strip_tags = function()
+	{
+		tags = this;
+		stripped = tags.replace(/[&lt(.*?)&gt]/gi, "");
+		return stripped;
+	}
+
+
+
+	function fnPageSearch(){
+		var form =document.searchForm;
+		form.submit();
+	}
+	
+	function fnPageMove(mode){
+	
+		var form = document.searchForm;
+		form.mode.value=mode;
+	
+		if(confirm("로그인 후 이용하시기 바랍니다.") == false) return;
+		window.open("/member/loginPopup.jsp?gotype=7&p_url=/lounge/review/product_write.jsp", "loginPopup", "width=340, height=280, left=0, top=0");
+		return;
+		
+	}
+	
+	function fnPageView(num){
+		var form= document.searchForm;
+		form.num.value=num;
+		form.action="product_view.jsp";
+		form.submit();
+	
+	}
+	
+	function fnTelecomCode(telecom){
+		
+		this.flag="parent";
+		
+		//초기화
+		var sel2=eval("document.searchForm.SearchSeriesNo;");
+		sel2.length = 1;
+
+		var strResponseURL="/product/search_mall_list.jsp?name=parent&val="+telecom;
+		this.ajaxRequest(strResponseURL);
+		
+	}
+
+	
+	function fnProductSerise(serisenum){
+		this.flag="node";
+
+		var sel2=eval("document.searchForm.SearchSerialNo;");
+		sel2.length = 1;
+
+		var strResponseURL="/product/search_mall_list.jsp?name=node&val="+serisenum;
+		this.ajaxRequest(strResponseURL);	
+	}	
+
+
+	function ajaxRequest(strResponseURL){//ajax GET(form)방식 전송
+	    
+	    var httpObj = new Ajax.Request
+	    (
+	        strResponseURL, 
+	        {               
+	             onSuccess:displayTextHtml, 	// 성공했을 경우 함수 호출
+	             onFailure:displayError  		// 실패했을 경우 함수 호출
+	        }
+	    )
+	}		
+	
+	function displayTextHtml(responseHttpObj)
+	{
+	    var returnData 		= responseHttpObj.responseText;
+	    var trimData		= returnData.trim();
+		var pArrayData 		= trimData.split(",");
+		
+	   if(flag=="parent"){   
+			var pElement = document.searchForm.SearchSeriesNo;
+			var szSearchNo = "";
+		}else if(flag=="node"){
+			var pElement = document.searchForm.SearchSerialNo;
+			var szSearchNo = "";
+		} 
+		
+	    for (nIndex = 0; nIndex < pArrayData.length; nIndex=nIndex+2)
+	    {
+	    	var pOption 		= document.createElement("option");
+	    	pOption.value 	 	= pArrayData[nIndex];
+	    	pOption.innerHTML 	= pArrayData[nIndex+1];
+	    	pElement.appendChild(pOption);
+
+			/*
+			if (pArrayData[nindex] == szSearchNo)
+				pElement.selectedIndex = pElement.length - 1;
+			*/
+	    }
+		pElement.reInitializeSelectBox();
+	}
+
+	function displayError(){
+	   document.write("[AJAX FAILED]");    
+	}
+	
+	String.prototype.trim = function()
+	{//공백 제거 
+	    return this.replace(/(^[ \f\n\r\t]*)|([ \f\n\r\t]*$)/g, "");
+	}
+
+//-->
+</script>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color:#c8cdea ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color:#c8cdea ; text-decoration: none;}
+
+.location_here {color:#c8cdea;}
+
+A.a_paging { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background:#7f8dd3 url('/static/images/common/contBg_04.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background:#7f8dd3 url('/static/images/common/contBg_04.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:#7f8dd3;}
+
+.twoDepth {border-bottom:solid 1px #8497e0;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_04.gif') right bottom no-repeat;}
+.Location {color:#c8cdea;border-bottom:solid 1px #8497e0;text-align:right;}
+.pthreeDepth {color:#c8cdea;border-bottom:solid 1px #8497e0;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/lounge/_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/lounge/0401_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board04 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board04 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+</style>
+</head>
+<body scroll="no">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td class="subLeft"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+			<table width="760" cellpadding="0" cellspacing="0" border="0">
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right">
+					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><a href="javascript:menuLink('0401');"><img src="/static/images/lounge/04_snavi_01_.gif"></a></td>
+							<td><a href="javascript:menuLink('0402');"><img src="/static/images/lounge/04_snavi_02.gif"></a></td>
+							<td><a href="javascript:menuLink('0403');"><img src="/static/images/lounge/04_snavi_03.gif"></a></td>
+							<td><a href="javascript:menuLink('0404');"><img src="/static/images/lounge/04_snavi_04.gif"></a></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+				<!-- [s] 2Depth & location -->
+				<tr valign="top">
+					<td class="p20l" colspan="2"><table width="740" cellpadding="0" cellspacing="0" border="0">
+					
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><a href="javascript:menuLink('0401');"><img src="/static/images/lounge/0401.gif" border="0" /></a></div></td>
+							<td class="Location"><img src="/static/images/common/_blank.gif"></td>
+							<!-- td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td -->
+						</tr>
+					
+					</table></td>
+				</tr>
+				<!-- [e] 2Depth & location -->
+				<tr valign="top">
+					<!-- [s] contents Area -->
+					<td colspan="2" class="contentsAreaL"><table width="650" cellpadding="0" cellspacing="0" border="0">
+						<!-- [s] Ptitle -->
+<!--						<tr valign="top">
+							<td height="49"><img src="/static/images/lounge/0401_ptitle.gif"></td>
+						</tr>
+-->
+						<!-- [e] Ptitle -->
+					</table>
+					
+					<!-- [s] 스카이데이즈배너 -->
+<!--					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td class="p30b"><img src="/static/images/event/skyday/200803/banner_01.jpg" border="0" usemap="#bannerMap"></td>
+						</tr>
+					</table>
+					<map name="bannerMap">
+						<area shape="rect" coords="512,161,630,203" href="javascript:menuLink('0302');" onfocus="this.blur();" />
+					</map> -->
+					<!-- [e] 스카이데이즈배너 -->
+					<!-- [s] 베스트UCC -->
+
+					<table width="650" cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td class="p10b"><img src="/static/images/lounge/0401_stit_01.gif"></td>
+						</tr>
+					</table>
+					<table width="650" cellpadding="0" cellspacing="0" border="0" class="uccBox1">
+						<tr>
+							<td class="cell"><table width="648" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="middle">
+
+									<!-- [s] 전문가리뷰 -->
+									<td width="324" class="review">									
+									<table width="306" height='70' cellpadding="0" cellspacing="0" border="0">
+										<tr valign="middle">
+											<!--<td class="sum">-->
+
+	
+												<!--<dl>
+													<dt class="uccListThumb"><a href="product_view.jsp?num=2651&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><img src='http://file.isky.co.kr/upload/leader_exp/thumb(0).jpg' border='0' onClick="javascript:fnPageView('2651');" width='123' height='80'></a></dt>
+													<dd class="title"><a href="product_view.jsp?num=2651&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge">심플&센스, 두마리 토끼를 잡은 M폰 IM-S330K</a></dd>
+													<dd class="txt">
+														&nbsp;
+자, 그럼 이제 여러분...
+													</dd>
+												</dl>-->
+												<td class="uccListThumb" height="80" width="123" align="center"><a href="product_view.jsp?num=2651&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><img src='http://file.isky.co.kr/upload/leader_exp/thumb(0).jpg' border='0' onClick="javascript:fnPageView('2651');" width='123' height='80'></a></td>
+												<td style='padding-left:10;padding-right:15'><a href="product_view.jsp?num=2651&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge"><b>심플&센스, 두마리 토끼를 잡은 M폰 IM-S330K</b></a><br>
+												&nbsp;
+자, 그럼 이제 여러분...</td>
+
+											<!--</td>-->
+										</tr>
+									</table>
+								
+									</td>
+									<!-- [e] 전문가리뷰 -->
+
+									<td><img src="/static/images/lounge/vbar.gif"></td>
+									<!-- [s] 사용자ucc -->
+									<td width="324" class="review"><table width="306" cellpadding="0" cellspacing="0" border="0">
+										<tr valign="middle">
+											<td class="sum2">
+												
+												<td class="uccListThumb" height="80" width="123" align="center"><a href="product_view.jsp?num=2149&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><img src='http://file.isky.co.kr/upload/isky_phone/04_IM-S330_m(0).gif' border='0' onClick="javascript:fnPageView('2149');"></a></td>
+												<td style='padding-left:10;padding-right:25'><a href="product_view.jsp?num=2149&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge"><b>듀크폰~^^</b></a><br>
+												
+ㅋㅋㅋ
+폰산지 20여일이다되는데...</td>
+												<!--<dl>
+												<dt class="uccListThumb" style="text-align:center; height:80;"></dt>
+												<dd class="title"></dd>
+												<dd class="txt"></dd>
+												</dl>-->
+
+
+
+
+											<!--</td>-->
+										</tr>
+									</table></td>
+									<!-- [e] 사용자ucc -->
+								</tr>
+							</table></td>
+						</tr>
+					</table>
+					<!-- [e] 베스트UCC -->
+
+					<!-- [s] 제품별UCC검색 -->
+					<table width="650" cellpadding="0" cellspacing="0" border="0">					
+
+					<form name="searchForm" method="get">
+					<input type="hidden" name="mode">
+					<input type="hidden" name="num">
+						<tr valign="top">
+							<td><img src="/static/images/lounge/0401_searchBox_01.gif"></td>
+						</tr>
+						<tr valign="top">
+							<td style="background:url('/static/images/lounge/0401_searchBox_02.gif') repeat-y;padding:3px 0;"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td width="116" height="28" align="center" style="border-right:solid 1px #5f6db8;"><img src="/static/images/lounge/0401_tit_01.gif"></td>
+									<td style="padding:0 5px 0 20px;">
+									
+										<select name="SearchMaker"  onChange="javascript:fnTelecomCode(this.value);" style="behavior:url('/static/css/selectbox.htc');width:150px;">
+											<option value="0">통신사 선택</option>
+											<option value="SKT">SKT</option>
+											<option value="KTF">KTF</option>
+											<option value="LGT">LGT</option>
+										</select>
+
+
+									</td>
+									<td style="padding:0 5px 0 0;">
+									
+										<select name="SearchSeriesNo" onChange="javascript:fnProductSerise(this.value);" style="behavior:url('/static/css/selectbox.htc');width:150px;">
+											<option value="">제품 계열 선택</option>
+										</select>
+
+
+									</td>
+									<td style="padding:0 5px 0 0;">
+									
+										<select name="SearchSerialNo" onChange="javascript:fnPageSearch();" style="behavior:url('/static/css/selectbox.htc');width:150px;">
+											<option value="">모델명 선택</option>
+										</select>
+
+									</td>
+								</tr>
+							</table></td>
+						</tr>
+						<tr valign="top">
+							<td><img src="/static/images/lounge/0401_searchBox_03.gif"></td>
+						</tr>
+					</form>
+					</table>
+					<!-- [e] 제품별UCC검색 -->
+
+					<!-- [s] SKYUCC목록 -->
+					<table width="650" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;">
+						<tr valign="top">
+
+							<td class="button" align="right">
+								<a href="#"><img src="/static/images/lounge/btn_write4.gif" border="0" onClick="javascript:fnPageMove('NEW')"></a>
+							</td>
+						</tr>
+					</table>
+
+					<table width="650" cellpadding="0" cellspacing="0" border="0" class="tbl_boardList0401">
+						<col width="96">
+						<col width="284" align="center">
+						<col width="85" align="center">
+						<col width="85" align="center">
+						<col width="50" align="center">
+						<col width="50" align="center">
+						<tr>
+							<th height="26" class="left"><img src="/static/images/lounge/boardTh_model.gif"></th>
+							<th><img src="/static/images/lounge/boardTh_title.gif"></th>
+							<th><img src="/static/images/lounge/boardTh_name.gif"></th>
+							<th><img src="/static/images/lounge/boardTh_date2.gif"></th>
+							<th><img src="/static/images/lounge/boardTh_hit.gif"></th>
+							<th class="right"><img src="/static/images/lounge/boardTh_recommend.gif"></th>
+						</tr>
+						<!-- test -->
+						<!--<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="#">이미지<br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="#" class="a_lounge0401"><b>ㄴㄴ [0]</b><br/>
+										내용이다</a></td>
+							<td class="name">abcdefghijklmnop</td>
+							<td class="date">0000.00.00</td>
+							<td class="hit">0000</td>
+							<td class="recommend"><b>0000</b></td>
+						</tr>-->
+
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2585&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2585&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/62_IM-U220_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U220</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2585&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>SKY폰이 최고 </b><br/>
+										애니콜폰을 쓰다가 스카이 폰으로 바꿨는데
+&nbsp;
+기능도 훨씬 좋...</a></td>
+							<td class="name">seonha</td>
+							<td class="date">2008.06.06</td>
+							<td class="hit">36</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2584&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2584&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/04_IM-S330_m(0).gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-S330</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2584&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>듀크폰! 정말 잘쓰고 잇어요 </b><br/>
+										약 한달째 쓰고있는 듀크폰!
+제 첫번째 핸드폰인데요!
+디자인만 보고 ...</a></td>
+							<td class="name">eunsi1380</td>
+							<td class="date">2008.06.06</td>
+							<td class="hit">138</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2582&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2582&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/35_IM-U110_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U110</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2582&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>멋진 핸드폰 </b><br/>
+										얼마전 까지 7200p을 사용했는데 지금은 110을사용하고 있읍니다(단종...</a></td>
+							<td class="name">ace0529</td>
+							<td class="date">2008.06.06</td>
+							<td class="hit">23</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2569&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2569&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/06_IM-U300K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U300K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2569&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>제발 SK도 나오게해주세요 </b><br/>
+										제발제발제발제발...
+KTF라서 싫어요.....................</a></td>
+							<td class="name">deepred501</td>
+							<td class="date">2008.06.05</td>
+							<td class="hit">58</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2567&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2567&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/06_IM-U300K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U300K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2567&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>갖기 위해서~♥ </b><br/>
+										&nbsp;
+제가 이핸드폰을 사기위해서 
+일부로 지금쓰고 있는걸 물에...</a></td>
+							<td class="name">choiyuri4484</td>
+							<td class="date">2008.06.05</td>
+							<td class="hit">65</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2566&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2566&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/63_IM-240K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-S240K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2566&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>맘에 들어요 너무! </b><br/>
+										&nbsp;
+한번도 스카이폰을 구매해본적이 없어서 
+살때 조금은 망설...</a></td>
+							<td class="name">chreey7</td>
+							<td class="date">2008.06.05</td>
+							<td class="hit">40</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2555&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2555&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/63_IM-240K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-S240K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2555&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>레인폰 너무 맘에 들어요 </b><br/>
+										5월 말경에 구입해서 쓰고 있는데 쓸수록 좋네요
+디자인은 직사각형 으로...</a></td>
+							<td class="name">van8949</td>
+							<td class="date">2008.06.04</td>
+							<td class="hit">9</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2554&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2554&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/06_IM-U300K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U300K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2554&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>SKT용 네온사인니여~ </b><br/>
+										SKT용 네온사인이 나&#50744;으면 좋겟어요ㅠ
+너무너무 갖고 싶지...</a></td>
+							<td class="name">ksajh</td>
+							<td class="date">2008.06.04</td>
+							<td class="hit">34</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2553&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2553&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/04_IM-S330_m(0).gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-S330</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2553&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>일장 일단이 있는 폰인거 같네요. </b><br/>
+										검정색 샀는데요 일단 디자인은 맘에 쏙 듭니다.
+&nbsp;
+인터넷에...</a></td>
+							<td class="name">jin800915</td>
+							<td class="date">2008.06.04</td>
+							<td class="hit">163</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+						<tr align="center" valign="middle">
+							<td align="center" class="model">
+								<table width="92" height="112" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="middle">
+										<td class="uccListThumb2" align="center">
+											<a href="product_view.jsp?num=2550&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo="><a href='product_view.jsp?num=2550&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=' class='a_lounge'><img src='http://file.isky.co.kr/upload/isky_phone/06_IM-U300K_m.gif' border='0'></a><br>
+											<img src="/static/images/common/_blank.gif width="1" height="5"><br>
+											<font color=#FFFFFF><b>IM-U300K</b></font></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="title" align="left">
+									<a href="product_view.jsp?num=2550&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=" class="a_lounge0401"><b>또 스카이 </b><br/>
+										6년째 스카이 제품만 쓰고 있어요
+이번에 U300k는 케이티에프 전용으...</a></td>
+							<td class="name">prismx</td>
+							<td class="date">2008.06.04</td>
+							<td class="hit">74</td>
+							<td class="recommend"><b>0</b></td>
+						</tr>
+
+					</table>
+					<!-- [e] SKYUCC목록 -->
+
+					<table width="650" cellpadding="0" cellspacing="0" border="0" class="tbl_paging">
+						<tr valign="top">
+							<td align="center" class="a_paging" width="610">
+<img src='/static/images/lounge/btn_paging_prev.gif' border='0' align="absmiddle"><a class='a_paging' href=product.jsp?page=1&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>1</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=2&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>2</a>&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=4&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>4</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=5&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>5</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=6&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>6</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=7&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>7</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=8&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>8</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=9&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>9</a>&nbsp;&nbsp;&nbsp;<a class='a_paging' href=product.jsp?page=10&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=>10</a>&nbsp;<a class='a_paging' href=product.jsp?page=11&page=3&SearchMaker=&SearchSeriesNo=&SearchSerialNo=><img src="/static/images/lounge/btn_paging_next.gif" border="0" align="absmiddle"></a>
+	
+							</td><td align="right">
+									<a href="#"><img src="/static/images/lounge/btn_write4.gif" border="0" onClick="javascript:fnPageMove('NEW')"></a>
+							</td>
+						</tr>
+					</table>
+
+
+
+					
+					</td>
+					<!-- [s] contents Area -->
+				</tr>
+
+			</table>
+			</div></div></td>
+		<td width="140" valign="middle" class="subRight"><script>swftrans('/static/flash/leftBanner.swf', '140', '100%');</script></td>
+	</tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/*
+function LeftFlashHeight(){
+	document.getElementById("flashelement").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+//	alert(document.getElementById("bodyTable").style.height);
+*/
+
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/lounge/review/product.jsp";
+refurl_param = "&SearchSerialNo=&page=3&SearchSeriesNo=&SearchMaker=";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 0401;
+	parent.callExternalInterface(3);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" > 
+
+<html>
+  <head>
+    <title>It's different, SKY</title>
+    <meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+    <meta name="CODE_LANGUAGE" Content="C#">
+    <meta name=vs_defaultClientScript content="JavaScript">
+    <meta name=vs_targetSchema content="http://schemas.microsoft.com/intellisense/ie5">
+    <LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+  </head>
+  <body MS_POSITIONING="GridLayout">
+	
+    <form name="Form1" method="post" action="SvcCenterPopup_Center.aspx?idx=20" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtNDEwNTQ5MzAzO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDzsmIHrk7Htj6wg7ISc67mE7IqkIOyEvO2EsDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxJTUcgU1JDPSdodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDUvU1ZDLzkv7JiB65Ox7Y+sWzIwMDUwMzE4MDk1ODI3XS5naWYnXD47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDAyLTI2MzItNDExOTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjYzMi00MTE1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzshJzsmrgg7JiB65Ox7Y+s6rWsIOyYgeuTse2PrOuPmTXqsIAgNDItMiDsmIHshLHruYzrlKkgM+y4tTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87JiB65Ox7Y+sIOyLnOyepeyXrSg17Zi47ISgKSAz67KI7Lac6rWs7JeQ7IScIOyVvSAyNU0sIOyUqO2LsOydgO2WiSAz7Li1XDxCUlw+7JiB65Ox7Y+s7Iuc7J6lIOyCrOqxsOumrOyXkOyEnCDslb0gMjBN7KeA7KCQXDxCUlw+67KE7IqkKOyLnOuCtCkg64W47ISgIDogMjYxLCAzNjAsIDM2MywgNjA1LCA3NjAsIDY2MTksIDU3MTQsIDY1MTRcPEJSXD7si5zsmbgo6rSR7JetKSDrhbjshKAgOiA4MiwgODMsIDg3LCA4Ny0xLCA5NzA3KOydvOyCsCksIDcwLTIsIDcwLTMo67aA7LKcKVw8QlJcPiAgICAgICAgICAgICAgICAgIDY2LCAzMDAuIDMwMSjqsJXtmZQsIOq5gO2PrCksIDYwOCjqs7Xtla0g66as66y07KeEIOuyhOyKpDs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+
+
+<center>
+
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="border:#E7D2D2 solid 1; background-color:#F5F0F1">
+<tr>
+	<td width=20%></td>
+	<td width=60% align=center><span class="brown_search"><b><span id="lblName"><b>영등포 서비스 센터</b></span></b></span></td>
+	<td width=20% align=right style="padding-right:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+
+
+
+<table width="600" cellpadding="0" cellspacing="0">
+<Tr>
+	<Td align=center><span id="lblMapImgName"><IMG SRC='http://file.isky.co.kr/ATT01/2005/SVC/9/영등포[20050318095827].gif'></span></td>
+</tr>
+</table>
+
+
+<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="550" align=center>
+<col width=90></col><col width=460 style="padding-top:3px"></col>
+
+<tr height=28>
+	<td><img src="http://file.isky.co.kr/images/svc/center_table_st_1.gif"></td>
+	<td>
+		<span id="lblTelNo">02-2632-4119</span>
+		<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="50" HEIGHT="1" align=absmiddle>
+		<IMG SRC="http://file.isky.co.kr/images/svc/center_table_st_2.gif" align=absmiddle> <span id="lblFaxNo">2632-4115</span>
+	</td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+
+<tr height=28>
+	<td><img src="http://file.isky.co.kr/images/svc/center_table_st_4.gif"></td>
+	<td><span id="lblAddr">서울 영등포구 영등포동5가 42-2 영성빌딩 3층</span></td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+
+<tr valign=top>
+	<td style="padding-top:7px"><img src="http://file.isky.co.kr/images/svc/center_table_st_5.gif"></td>
+	<td style="padding-top:7px;padding-bottom:7px">
+		<span id="lblTrafficInfo">영등포 시장역(5호선) 3번출구에서 약 25M, 씨티은행 3층<BR>영등포시장 사거리에서 약 20M지점<BR>버스(시내) 노선 : 261, 360, 363, 605, 760, 6619, 5714, 6514<BR>시외(광역) 노선 : 82, 83, 87, 87-1, 9707(일산), 70-2, 70-3(부천)<BR>                  66, 300. 301(강화, 김포), 608(공항 리무진 버스</span>
+	</td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+<tr height=20><td colspan=2></td></tr>
+
+<tr><td align=center colspan=2><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+
+</table>
+
+
+
+</center>
+
+
+     </form>
+	
+  </body>
+</html>

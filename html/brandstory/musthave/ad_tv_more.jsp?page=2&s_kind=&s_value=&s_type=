@@ -1,0 +1,362 @@
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/brandstory/musthave/ad_tv_more.jsp">
+
+	<input type="hidden" name="page" value="2">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="s_type" value="">
+
+	<input type="hidden" name="s_value" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script>
+	// go detail advertising page
+	function goView(form, idx){
+		form.idx.value = idx;
+		form.action = "ad_tv.jsp";
+		form.submit();
+	}
+	
+	// go product page
+	function goProduct(form, s_no){
+		alert("제품 상세 페이지 링크를 걸어 주세요.");
+		//location.href = "";
+	}
+
+	function goSearch(form){
+		form.action = "ad_tv_more.jsp";
+		form.target = "_self";
+		form.submit();
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="/inc/css/brand.css">
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(1,3,1);var gocn=1;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(1);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/brand/t_tv.gif" height="52"></div>
+				<div id="Path"><script>path('1_3_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+					<form name="sForm" method="post">
+					<!-- ▼ m4th snowbin 070424 : 광고갤러리 > TV광고 셀렉트 박스 추가 -->
+					<div class="box2">
+						<div><img src="http://www.isky.co.kr/source/img/global/box2_top.gif" height="10"></div>
+						<div style="padding:0 10;">
+							<div class="L p_t4"><img src="http://www.isky.co.kr/source/img/brand/showing/ad_gallery_txt02.gif"></div>
+							<div class="R">
+							<!--
+								<select class="sel01" name="">
+									<option>광고종류</option>
+								</select>
+							-->
+								<input type="hidden" name="s_kind" value="t1.serial_no">
+								<select name="s_type" class="sel01" size="1" onchange="goSearch(sForm)" style="width:100px;">
+									<option value="" selected>전체보기</option>
+									<option value="A" >제품</option>
+									<option value="B" >키워드</option>
+								</select>
+							</div>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box2_btm.gif" height="10"></div>
+					</div>
+					<!--div class="p_t20 p_l15 p_b10"><img src="http://www.isky.co.kr/source/img/brand/showing/kstory_txt02.gif"></div-->
+					<!--// ▲ m4th snowbin 070424 : 광고갤러리 > TV광고 셀렉트 박스 추가 -->
+					</form>
+
+					<!-- <div class="box2 clear">
+						<div><img src="http://www.isky.co.kr/source/img/global/box2_top.gif" height="10"></div>
+						<div style="padding:0 10;">
+							<div class="L p_t4"><img src="http://www.isky.co.kr/source/img/brand/showing/ad_tv_more_txt01.gif"></div>
+							<div class="R">
+							<!--
+							<form name="sForm" method="post">
+								<input type="hidden" name="s_kind" value="t1.serial_no">
+								<select class="sel01" name="s_value">
+									<option value="">제품명</option>
+									
+								</select>
+								<a href="javascript:goSearch(sForm)"><img src="http://www.isky.co.kr/source/img/bbs/b1_search.gif" height="17" align="absmiddle"></a>
+							</form>
+							 
+							</div>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box2_btm.gif" height="10"></div>
+					</div> -->
+
+					<form name=iForm method=post>
+						<input type="hidden" name="page" value="2">
+						<input type="hidden" name="s_kind" value="">
+						<input type="hidden" name="s_value" value="">
+
+						<input type="hidden" name="idx" value="">
+					</form>
+
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="m_t20 list01">
+					<col width="200">
+					<col width="200">
+					<col width="169">
+					<tr>
+
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/개성(1).jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">7</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">개성</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, '7jjKdgdGbbM~yN_/k0EfdMk~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('2xfQdmf6jW4~h1LVRdA0V2s~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/openmind_s.jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">6</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">열린생각</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, 'FXu_dkfdKz0~oOsvJS_DodI~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('h0GbdgejZ9o~BJmLMxyzC1w~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/용기2_big.jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">5</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">용기</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, 'dCChdmdXiJU~8GZ6Qkna3Ts~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('95Kye1AOxCA~17rFuOeKDDE~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					</tr>
+<tr class='line3' height='20'><td colspan='3'></td></tr>
+<tr>
+
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/inter_big.jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">4</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">자신감</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, 'almPew/U/70~f4SWEbxsvs4~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('VziVe2_IIHk~z8JFhvLlubk~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/감각_big.jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">3</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">감각</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, 'kJuDe09rvkc~K5VFOR31aCE~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('AmJgew8x_uQ~0/omGuPXonI~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/run_big.jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">2</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">티져광고_조깅</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3"></td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, '7MMEfJDrjVw~GRIUqJWLFpk~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('2aIKfPCfrhc~g2fMZFQb6kk~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					</tr>
+<tr class='line3' height='20'><td colspan='3'></td></tr>
+<tr>
+
+						<td>
+						<table width="169" border="0" cellpadding="0" cellspacing="0" class="list03">
+						<tr><td colspan="2"><div class="photo_out" style="width:167"><div class="photo_in"><img src="http://file.isky.co.kr/upload/advertising_tv/cy_big(0).jpg" width="163" height="132"></div></div></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_num.gif"></th>
+							<td width="130" class="p_l10 p_t3">1</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<tr height="21">
+							<th width="39" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_title.gif"></th>
+							<td width="130" class="p_l10 p_t3">티져광고_사이클</td>
+						</tr>
+						<tr class="line"><td colspan="2"></td></tr>
+						<!--
+						<tr height="21">
+							<th width="35" class="bar"><img src="http://www.isky.co.kr/source/img/brand/showing/th_model.gif"></th>
+							<td width="134" class="p_l10 p_t3">IM-R110</td>
+						</tr>
+						-->
+						<tr class="p_t7"><td colspan="2" align=right>
+							<a href="javascript:goView(iForm, 'Egb5e9CCTOY~mdJ96Vi7CmU~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_view.gif" height="18"></a>
+							<!--
+							<a href="javascript:product_move('hMzVe5BIiIM~jcZf4E0Sk5s~')"><img src="http://www.isky.co.kr/source/img/bbs/btn6_modelview.gif" height="18"></a>-->
+						</td></tr>
+						</table>
+						</td>
+					
+					</table>
+
+					<!-- page //-->
+					<div class="page" style="margin-top:5"><img src='http://www.isky.co.kr/source/img/bbs/page_prev.gif' width='36' height='10' class='aT'><a href=ad_tv_more.jsp?page=1&s_kind=&s_value=&s_type=>1</a>&nbsp;|&nbsp;&nbsp;<b>2</b>&nbsp;<img src='http://www.isky.co.kr/source/img/bbs/page_next.gif' width='36' height='10' class='aT'></div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+			<div id="ContR">
+					<!--div class="m_t10"><img src="http://www.isky.co.kr/source/img/global/right_musthave_t.gif" width="150" height="36"></div-->
+					
+
+		</div>
+
+					<!--div class="m_t10"><img src="http://www.isky.co.kr/source/img/global/right_adevent_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img01.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img02.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_adevent_img03.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div-->
+				
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>

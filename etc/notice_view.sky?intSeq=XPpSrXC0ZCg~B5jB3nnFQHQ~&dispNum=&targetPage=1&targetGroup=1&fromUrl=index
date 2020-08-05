@@ -1,0 +1,215 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/notice_view.sky?targetPage=1[AND]targetGroup=1[AND]fromUrl=index[AND]intSeq=XPpSrXC0ZCg~B5jB3nnFQHQ~[AND]dispNum=[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/notice_view.sky?targetPage=1[AND]targetGroup=1[AND]fromUrl=index[AND]intSeq=XPpSrXC0ZCg~B5jB3nnFQHQ~[AND]dispNum=[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/notice_view.jsp");
+	}
+
+//-->
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="08"; var firstDepth ="08";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function goList(targetPage, targetGroup) {
+	
+		var obj = document.noticePage;
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/notice_view_list.sky";
+		obj.submit();
+	}
+
+	function List(){
+		location.href = "/etc/notice.sky?dispNum=";
+	}
+</script>
+</head>
+
+<body>
+<form name="noticePage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" value="">
+</form>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=08&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Blank.swf?PageCode=08','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=08&LogSess=N','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/etc/d3title_notice.gif" border="0" alt="공지사항" title="공지사항" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_noticeV">
+			<colgroup>
+				<col width="90" />
+				<col width="470" />
+				<col width="80" />
+				<col width="80" />
+			</colgroup>
+				<tr valign="top">
+					<th>분류</th>
+					<th>제목</th>
+					<th>등록일</th>
+					<th>조회수</th>
+				</tr>
+
+				<tr valign="top">
+					<td class="category">SKY 고객지원</td>
+					<td class="title">3G모델 S/W 업그레이드 안내 </td>
+					<td class="num">2010.01.07</td>
+					<td class="num">114307</td>
+				</tr>
+
+				<tr valign="top">
+					<td colspan="4" class="contents">안녕하세요, iSKY 운영자입니다.<br/><br/><b>2010년 1월 7일</b>을 기해 SKY제품 중 <b>일부 3G모델의 소프트웨어(S/W)를 업그레이드하였습니다.</b><br><U>아래 대상모델에 표기된 모델명 클릭 시, 해당 제품의 소프트웨어 업그레이드</U>를 받으실 수 있습니다.<br/><br/>셀프업그레이드로 최신 소프트웨어의 편리함을 누리시기 바랍니다.<br/><br/><strong><font color=blue>ㅇ 개선사항 </strong><br/>2010년 수신한 문자메세지를 USIM에 저장 시 내용없음이나 오류메세지가 나타나는 현상 개선 外<br/><br/><strong>ㅇ 대상모델</strong></font><br/><br/><strong><font color=red>[ SKT ]</font></strong></br><br/><A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=342&strPrdName=IM-R520S&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-R520S<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=106&strPrdName=IM-R300&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-R300<A/> /  <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=302&strPrdName=IM-R470S&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-R470S<A/> <br/><A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=321&strPrdName=IM-U490S&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index" >IM-U490S<A/>     /  <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=261&strPrdName=IM-U440S&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index" >IM-U440S<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=117&strPrdName=IM-U310&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-U310<A/>      /    <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=80&strPrdName=IM-U220&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-U220<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=78&strPrdName=IM-U210&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-U210<A/><br/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=182&strPrdName=IM-S410&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-S410<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=110&strPrdName=IM-S370&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-S370<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=109&strPrdName=IM-S350&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-S350<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=103&strPrdName=IM-S330&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-S330<A/> / <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=102&strPrdName=IM-S320&strTelecomCode=11001&strTelecomName=SKT&fromUrl=index">IM-S320<A/><br/><br/><strong><font color=red>[ KT ]</font></strong><br/><br/><A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=381&strPrdName=IM-U530K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index">IM-U530K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=282&strPrdName=IM-U460K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U460K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=262&strPrdName=IM-U440K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U440K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=116&strPrdName=IM-U310K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U310K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=105&strPrdName=IM-U300K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U300K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=81&strPrdName=IM-U220K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U220K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=79&strPrdName=IM-U210K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-U210K<A/></br> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=341&strPrdName=IM-S500K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> IM-S500K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=201&strPrdName=IM-S410K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-S410K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=114&strPrdName=IM-S380K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-S380K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=104&strPrdName=IM-S330K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-S330K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=99&strPrdName=IM-S320K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-S320K<A/> <A href="http://www.isky.co.kr/cs/software/software.sky?intPrdSeq=82&strPrdName=IM-S240K&strTelecomCode=11002&strTelecomName=KT&fromUrl=index"> / IM-S240K<A/><br/><br/>iSKY는 SKY 고객님의 편의를 위해 항상 노력하겠습니다.<br/>감사합니다.</td>
+				</tr>
+			</table>
+
+			<div class="btnArea01"><a href="javascript:List()"><img src="/static/images/common/btn/1_list.gif" border="0" alt="목록보기" title="목록보기" /></a></div>
+
+			<!-- [s] List -->
+			<iframe name='listFrame' 
+				src="/etc/notice_view_list.sky?dispNum=&targetPage=1&targetGroup=1" 
+				frameborder=0 width="100%" height="400"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+
+</body>
+</html>

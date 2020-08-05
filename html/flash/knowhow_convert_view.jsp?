@@ -1,0 +1,21 @@
+
+
+
+
+<html>
+<head>
+	<script>
+		function goKnowhow(form){
+			form.action = "/html/withsky/knowhow_view.jsp";
+			form.submit();		
+		}
+	</script>	
+</head>
+<body onload="goKnowhow(iForm)">
+<form name="iForm" method="post">
+	<input type="hidden" name="idx" value="be6BWECrLlw~w34foremNyk~">
+</form>
+</body>
+</html>
+
+	

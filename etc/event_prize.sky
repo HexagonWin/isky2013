@@ -1,0 +1,360 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event_prize.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/event_prize.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event_prize.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120423");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0903"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function goList(targetPage, targetGroup) {
+	
+		var obj = $('eventPage');
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/event_prize.sky";
+		obj.submit();
+	}
+	
+	function Detail(intSeq, rnum){
+		
+		var targetPage = $('targetPage');
+		var targetGroup = $('targetGroup');
+	
+		var url = "/etc/event_prize_view.sky?intSeq=" + intSeq + "&dispNum=&targetPage=1&targetGroup=1&rnum=" + rnum;
+				
+		location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="eventPage" id="eventPage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" value="">
+</form>
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0903&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash">
+				<script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0903','222','500','','','transparent','')</script>
+				<ul class="snsBanner">
+					<li><a href="http://www.facebook.com/vega.kr" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner01.jpg" alt="Facebook 바로가기" /></a></li>
+					<li><a href="https://twitter.com/skyandroian" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner02.jpg" alt="Twitter 바로가기" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0903&LogSess=N','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/etc/d3title_eventResult.gif" border="0" alt="당첨자발표" title="당첨자발표" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_eventOld">
+			<colgroup>
+				<col width="54" />
+				<col width="420" />
+				<col width="160" />
+				<col width="96" />
+			</colgroup>
+				<tr valign="top">
+					<th>번호</th>
+					<th>제목</th>
+					<th>이벤트기간</th>
+					<th>당첨자 발표일</th>
+				</tr>
+				
+				
+
+				
+				<tr valign="top">
+					<td class="num">192</td>
+					<td class="title"><a href="javascript:Detail('ZD2_JqfbZ30~5PgvqKUYSUk~','192')">SHINEE 네 번째 미니앨범 'Sherlock' 통화연결음 다운로드 이벤트</a></td>
+					<td class="num">2012.03.27 ~ 2012.04.09</td>
+					<td class="num">2012.04.16</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">191</td>
+					<td class="title"><a href="javascript:Detail('BCnDtRgylaQ~sJtI3ZQJSIM~','191')">2AM 두 번째 미니앨범 통화연결음 다운로드 이벤트</a></td>
+					<td class="num">2012.03.14 ~ 2012.03.28</td>
+					<td class="num">2012.04.04</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">190</td>
+					<td class="title"><a href="javascript:Detail('xLulpldnLkM~H89YgNhlr0M~','190')">BigBang &lt;ALIVE&gt; 통화연결음 다운로드 이벤트</a></td>
+					<td class="num">2012.03.02 ~ 2012.03.16</td>
+					<td class="num">2012.03.23</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">189</td>
+					<td class="title"><a href="javascript:Detail('Okh1JaIn6Cg~X64fZDlm2TA~','189')">국내 최초 Sales Manager 육성 프로그램 VEGA Sales 인턴십</a></td>
+					<td class="num">2012.02.27 ~ 2012.03.13</td>
+					<td class="num">2012.03.26</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">188</td>
+					<td class="title"><a href="javascript:Detail('SuoZqMohHfA~tIOvu4sRwSY~','188')">스타 폰 단독입수, 스타의 숨겨진 비밀이 공개된다!</a></td>
+					<td class="num">2012.02.24 ~ 2012.03.11</td>
+					<td class="num">2012.03.16</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">187</td>
+					<td class="title"><a href="javascript:Detail('UovTIab7MQQ~D_mV1GB/AUo~','187')">miss A &lt;TOUCH&gt; 통화연결음 다운로드 이벤트</a></td>
+					<td class="num">2012.02.23 ~ 2012.03.08</td>
+					<td class="num">2012.03.14</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">186</td>
+					<td class="title"><a href="javascript:Detail('6_WrRBjUPVE~QAel_P00xlY~','186')">VEGA의 LTE시리즈를 만나라!</a></td>
+					<td class="num">2012.01.19 ~ 2012.02.05</td>
+					<td class="num">2012.02.16</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">185</td>
+					<td class="title"><a href="javascript:Detail('g13WQYs9TCA~BoKF_h/zZ_A~','185')">SKY 고객 품질 만족도 조사</a></td>
+					<td class="num">2011.12.23 ~ 2012.01.08</td>
+					<td class="num">2012.01.12</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">184</td>
+					<td class="title"><a href="javascript:Detail('gqfzOoYePAY~6qTTqWJqHNw~','184')">극단적 선명함 VEGA LTE M 틀린그림찾기!</a></td>
+					<td class="num">2011.12.16 ~ 2012.01.15</td>
+					<td class="num">2012.01.19</td>
+				</tr>
+				
+				<tr valign="top">
+					<td class="num">183</td>
+					<td class="title"><a href="javascript:Detail('5j5EEF7p4Zo~brc7aTyQJz0~','183')">제 8회 SKY 스타폰 경매</a></td>
+					<td class="num">2011.12.05 ~ 2011.12.13</td>
+					<td class="num">2011.12.14</td>
+				</tr>
+				
+				
+				
+					
+			</table>
+			
+			
+				<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('20','2')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://cloudlive.vegalive.co.kr" target="_blank">CLOUD LIVE</a></li>
+				<li><a href="http://medialive.vegalive.co.kr" target="_blank">MEDIA LIVE</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/topbtn.js"></SCRIPT>
+
+<!-- 공통 js -css 영역 -->
+</HEAD>
+<BODY>
+
+<div ID="ALL" style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); WIDTH: 100%; BACKGROUND-REPEAT: repeat-x; HEIGHT: 100%">
+<table ID="LAYOUT" style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_left.gif); WIDTH: 950px; BACKGROUND-REPEAT: repeat-y; HEIGHT: 100%" cellSpacing=0 cellPadding=0 width="100%" border=0>
+	<tr>
+		<td valign="top" align="right" width="222" >
+		        <!-- 좌측-상단 메뉴 START -->
+			<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<textarea id=leftflashid style="display:none;" rows="0" cols="0">
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+				height="512" width="222" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+				<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/left/isky_mobile.swf?code=">
+				<embed src="http://file.isky.co.kr/flash/left/isky_mobile.swf?code=">
+		</OBJECT>
+		</textarea>
+		<script language="javascript" src="/embedjs.asp?classid=leftflashid"></script>
+		</td>
+	</tr>
+</table>
+			<!-- 좌측-상단 메뉴 END -->
+			<!-- 사용자 정보 영역 START -->
+			
+<iframe name="leftlogin" src="/WUC/leftLogin.aspx?wbSurl=/mobile/notice/notice_view.asp?seq=26%26keyword=%26group=%26page=1&amp;wbExt=" width="222" height="110" border="0" NORESIZE SCROLLING=no FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0></iframe>
+
+			<!-- 사용자 정보 영역 END -->
+		</td>
+
+		<td vAlign="top" align="left" width="*">
+			<!-- 우측 상단 플래쉬 메뉴 영역 START -->
+			<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+	<td style="BACKGROUND-IMAGE: url(http://file.isky.co.kr/images/com/bg_top.jpg); BACKGROUND-REPEAT: repeat-x">
+	<textarea id=topflashid style="display:none;" rows="0" cols="0">
+		<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+		height="169" width="728" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+		
+		<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N">
+		<embed src="http://file.isky.co.kr/flash/top_flash_final.swf?loginYN=N" width=728 height=169>
+		
+		</OBJECT>
+			</textarea>
+			<script language="javascript" src="/embedjs.asp?classid=topflashid"></script>
+	</td>
+	</tr>
+</table>
+
+			
+
+			<!-- 우측 상단 플래쉬 메뉴 영역 END -->
+		      <form name="form_send" method="post" action="notice_list.asp">
+		      <input type=hidden name=page value=>
+
+			<table cellSpacing="0" cellPadding="0" width="728" border="0" align=center>
+			<tr>
+			<td>
+			<!-- 컨텐츠 BODY 역역 START -->
+			<DIV class="CONTENTS">
+			<!-- path 영역 --><DIV class="LINEMAP"><a href='http://www.isky.co.kr/'>Home</a> &gt; <a href='http://www.isky.co.kr/mobile/Main.asp'>모바일</a> &gt; 공지사항</DIV><!-- path 영역 -->
+			
+			<IMG SRC="http://file.isky.co.kr/images/mobile/mobile_notice_title.gif"><BR>
+
+			<TABLE class="BD2" cellSpacing="0" cellPadding="0" width="100%">
+				<TR>
+				<TD><img src="http://file.isky.co.kr/images/mobile/notice_event_title_txt.gif"></TD>
+				<TD align="right"><IMG src="http://file.isky.co.kr/images/svc/notice_list_title_illust.gif"></TD>
+				</TR>
+			</TABLE>
+			<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="1"><BR>
+			<!-- 게시판 리스트  -->
+			<DIV class="CONTENTS_SUB" style="PADDING-TOP:5px">
+		        <!-- 게시판 리스트 -->
+			<table border="0" cellspacing="0" cellpadding="0" width="670">
+			<tr><td height="20"></td></tr>
+			</table>
+			<table border="0" cellspacing="0" cellpadding="0" width="670">
+			<col width="15%"><col width="35%"><col width="15%"><col width="35%">
+			<tr>
+				<td colspan="4" height="27" bgcolor="#8E6164"  style="padding-left:10;"><font color="#FFFFFF">[이벤트] 박혜경 싱글앨범 발매 벨소리 이벤트[종료]</a></td>
+			</tr>
+			<tr style="padding:5 0 5 0;">
+				<td align="center" class="b" bgcolor="#F5F1F2">작성일</td>
+				<td style="padding-left:10;">2006-01-12 오전 9:56:17</td>
+				<td align="center" class="b" bgcolor="#F5F1F2">조회</td>
+				<td style="padding-left:10;">287</td>
+			</tr>
+			<tr><td colspan="4" height="1" bgcolor="#E7D2D1"></td></tr>
+			<tr>
+				<td colspan="4" height="200" style="padding:20;" valign="top">  박혜경 싱글앨범 발매 기념 벨소리 이벤트<BR><BR>이벤트 기간 : 2006년 1월 11일 ~ 1월 30일 <BR>이벤트 대상 : 박혜경 싱글앨범 벨소리를 다운 받으신 고객중 추첨을 통하여 경품증정 <BR>이벤트 경품 : 박혜경 CD 10장 <BR>당첨자 발표 : 2006년 1월 31일 iSKY 모바일 이벤트란 및 개별통보</td>
+			</tr>
+			<tr><td colspan="4" height="4" bgcolor="#E7D2D1"></td></tr>
+			</table>
+			<table border="0" cellspacing="0" cellpadding="0" width="670">
+			<tr>
+				<td height="40" align="right">
+					<a href="notice_list.asp?page=1&keyword=&group="><img src="/shop/images/common/bttn_list.gif" align="absmiddle"></a>
+				</td>
+			</tr>
+			<tr><td height="1" bgcolor="#E7D2D1"></td></tr>
+			<tr><td height="5"></td></tr>
+			
+			<tr>
+				<td height="22" style="padding-left:2"><img src="/shop/images/common/bttn_up.gif" align="absmiddle"> <a href="notice_view.asp?seq=27&keyword=&group=&page=1">[이벤트] 박선주 벨소리 다운 이벤트[종료]</a></td>
+			</tr>
+			
+			<tr>
+				<td height="22" style="padding-left:2"><img src="/shop/images/common/bttn_down.gif" align="absmiddle"> <a href="notice_view.asp?seq=25&keyword=&group=&page=1">[이벤트] SKT 컬러링 &amp; 라이브벨 무료 체험단 이벤트[종료]</a></td>
+			</tr>
+			
+			</table>
+			</form>
+			</div>
+			<!-- 게시판 리스트 
+					<!-- FOOT 역역 START -->
+					<table cellSpacing="0" cellPadding="0" width="100%">
+	<tr>
+	 <td><br>
+<textarea id=footerflashid style="display:none;" rows="0" cols="0">
+	<OBJECT id="navigation" codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+	height="85" width="690" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" VIEWASTEXT>
+	<PARAM NAME="_cx" VALUE="18256">
+	<PARAM NAME="_cy" VALUE="2249">
+	<PARAM NAME="FlashVars" VALUE="">
+	<PARAM NAME="Movie" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="Src" VALUE="http://file.isky.co.kr/flash/footer/footer.swf">
+	<PARAM NAME="WMode" VALUE="Transparent">
+	<PARAM NAME="Play" VALUE="-1">
+	<PARAM NAME="Loop" VALUE="-1">
+	<PARAM NAME="Quality" VALUE="High">
+	<PARAM NAME="SAlign" VALUE="">
+	<PARAM NAME="Menu" VALUE="-1">
+	<PARAM NAME="Base" VALUE="">
+	<PARAM NAME="AllowScriptAccess" VALUE="always">
+	<PARAM NAME="Scale" VALUE="ShowAll">
+	<PARAM NAME="DeviceFont" VALUE="0">
+	<PARAM NAME="EmbedMovie" VALUE="0">
+	<PARAM NAME="BGColor" VALUE="FFFFFF">
+	<PARAM NAME="SWRemote" VALUE="">
+	<PARAM NAME="MovieData" VALUE="">
+	<PARAM NAME="SeamlessTabbing" VALUE="1">
+</OBJECT>
+			</textarea>
+			<script language="javascript" src="/embedjs.asp?classid=footerflashid"></script>
+
+		</td>
+	</tr>
+</table>       
+					<!-- FOOT 역역 END -->
+					</DIV>
+					<!-- 컨텐츠 BODY 역역 END -->
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+	</BODY>
+</HTML>

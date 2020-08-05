@@ -1,0 +1,347 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/review/review.sky?dispNum=0104[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/review/review.sky?dispNum=0104[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/review/review.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100517");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="0104"; var firstDepth="01"</script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script type="text/javascript" src="/static/js/requester.js"></script>
+<script type="text/javascript" src="/static/js/schedule.js"></script>
+<script language="javascript">
+	
+	//XMLHttpRequest 객체 생성
+	var requester = new Requester();
+
+	schedule("window", initialize);
+	
+	function initialize(){
+		
+		Get_TelecomCode_Request();
+		
+	}
+
+	function Get_TelecomCode_Request(){
+		url = '/product/review/telecomList.sky';
+		cgi = "";
+		
+		requester.setAction(Get_TelecomCode_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_TelecomCode_Response(){
+		var lists = requester.getXML().getElementsByTagName("selectTelecomList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+		
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+		
+		newOptions.push( new Option("통신사 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strName1');
+			var value = getElementContent(entries[i],'strCode');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('strTelecomCode').length = 0;
+		var optionsObj = $('strTelecomCode').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ )
+			optionsObj.add( newOptions[i] );
+	
+	}
+
+	function getElementContent(element,tagName) {
+		var childElement = element.getElementsByTagName(tagName)[0];
+		return childElement.text != undefined ? childElement.text : childElement.textContent;
+	}
+
+	function Get_Series_Request(obj){
+		//계열명, 모델명 초기화
+		$('intSeriesSeq').length = 1;
+		$('intPrdSeq').length = 1;
+
+		url = '/product/review/seriesList.sky';
+		cgi = "strTelecomCode=" + obj.value;
+		
+		requester.setAction(Get_Series_Response);
+		requester.loadDATA(url, cgi);
+
+	}
+
+	function Get_Series_Response(){
+		var lists = requester.getXML().getElementsByTagName("selectSeriesList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+		
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+		
+		newOptions.push( new Option("계열명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strSeriesName');
+			var value = getElementContent(entries[i],'intSeriesSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('intSeriesSeq').length = 0;
+		var optionsObj = $('intSeriesSeq').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ )
+			optionsObj.add( newOptions[i] );
+	}
+
+	function Get_Product_Request(obj){
+		var strTelecomCode = $('strTelecomCode');
+
+		$('intPrdSeq').length = 1;
+
+		url = '/product/review/productList.sky';
+		cgi = "intSeriesSeq=" + obj.value + "&strTelecomCode=" + strTelecomCode.value;
+		
+		requester.setAction(Get_Product_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_Product_Response(){
+		var lists = requester.getXML().getElementsByTagName("selectProductList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+		
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+		
+		newOptions.push( new Option("모델명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strPrdName');
+			var value = getElementContent(entries[i],'intPrdSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('intPrdSeq').length = 0;
+		var optionsObj = $('intPrdSeq').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ )
+			optionsObj.add( newOptions[i] );
+	}
+	
+	function Search(){
+		var strTelecomCode = $('strTelecomCode').value;
+		var intSeriesSeq = $('intSeriesSeq').value;
+		var intPrdSeq = $('intPrdSeq').value;
+		var keyword = $('keyword').value;
+
+		if(strTelecomCode == "" && intSeriesSeq == "" && intPrdSeq == "" && keyword == ""){
+			alert("검색조건을 선택해 주세요");
+			return;
+		}
+
+		var form = $('search');
+		form.action = "/product/review/review_list.sky";
+		form.target = "listFrame";
+		form.method = "post";
+		form.submit();
+
+	}
+	
+</script>
+</head>
+
+<body>
+
+<form name="search" id="search">
+<input type="hidden" name="dispNum" value="0104">
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0104&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0104','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0104','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_review.gif" border="0" alt="PC ACCESSORY" title="PC ACCESSORY" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			
+			<!-- [s] review calendar -->
+			<div id="roundbox">
+				<div class="reviewCalendar"><script>swf_include('/static/flash/product_Review.swf?startDate=20100509&endDate=20100515','740','308','','','transparent','')</script></div>
+				
+				<div class="searchBox"><ul
+					><li class="tit"><img src="/static/images/product/review_tit_search.gif" /></li
+					><li class="select">
+					<select name="strTelecomCode" id="strTelecomCode" style="width:123px;" onChange="Get_Series_Request(this)">
+						<option value="">통신사 선택</option>
+					</select></li
+					><li class="select"><select name="intSeriesSeq" id="intSeriesSeq" style="width:123px;" onChange="Get_Product_Request(this)">
+						<option value="">계열명 선택</option>
+						</select></li
+					><li class="select"><select name="intPrdSeq" id="intPrdSeq" style="width:123px;">
+						<option value="">모델명 선택</option>
+						</select></li
+					><li class="inputText"><input type="text" id="keyword" name="keyword" class="input_text" style="width:195px;height:14px;"/></li
+					><li><a href="javascript:Search()"><img src="/static/images/common/btn/1_search.gif" border="0" alt="검색" title="검색" /></a></li
+				></ul>
+				<!--<script type="text/javascript" src="/static/js/selector.basic.js"></script>
+				<script type="text/javascript" src="/static/js/selector.html.js"></script>
+				<script type="text/javascript">
+					var s1;
+					var s2;
+					function loadSelecBox(){
+						new Selectbox('strTelecomCode', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+						new Selectbox('intSeriesSeq', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+						new Selectbox('intPrdSeq', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+					}
+					if ( window.attachEvent )
+						window.attachEvent('onload', loadSelecBox);
+					else
+						window.addEventListener('load', loadSelecBox, false);
+				</script>-->
+				</div>
+				<div class="roundbox_03"><img src="/static/images/product/roundbox_03.gif" /></div>
+			</div>
+			<!-- [e] review calendar -->
+
+			<div class="blank50"></div>
+			
+			<iframe name='listFrame' src="/product/review/review_list.sky" frameborder=0 width="100%" height="700"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+						
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+<iframe name="filedownload" width="0" height="0"></iframe>
+</form>
+</body>
+</html>

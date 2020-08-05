@@ -1,0 +1,418 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/center.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/center.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/center.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100303");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="050301"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/cs/center/center.js"></script>
+<script language="javascript">
+
+    function getCookie(name) {
+		var nameOfCookie = name + "=";
+		var x = 0;
+
+		while ( x <= document.cookie.length ) {
+			var y = (x+nameOfCookie.length);
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 ) break;
+		}
+
+		return "";
+
+    }
+
+/* 2009.06.22 휴무안내 */
+//		if(getCookie("popup20090618") != "done") {
+//			var popwin = window.open("/cs/popup/20090622.jsp","popup20090622","width=400,height=377,left=0,top=0");
+//		}
+
+/* 2009.11.16 바이싹 구매안내 팝업 */
+//		if(getCookie("popup20091116") != "done") {
+//			var popwin = window.open("/popup/20091116.jsp","popup20091116","width=400,height=394,left=0,top=0");
+//		}
+
+/* 20100225 종로/노원 센터 임시중단 팝업 */
+		if(getCookie("popup20100225") != "done") {
+			var popwin = window.open("/popup/20100225.jsp","popup20100225","width=400,height=396,left=0,top=0");
+		}
+
+</script>
+</head>
+<body>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=050301&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+			<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_CS.swf?PageCode=050301','222','680','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+				<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=050301','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle"><ul
+				><li><img src="/static/images/cs/d3title_center.gif" border="0" alt="서비스센터 안내" title="서비스센터 안내" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="center_cont01"><img src="/static/images/cs/center_txt_01.gif" alt="언제나 빠르고 기분좋은~" title="언제나 빠르고 기분좋은~" /></div>
+
+			<div class="center_cont02">
+				<script>
+					swf_include('/static/flash/cs/CS_Center.swf','740','435','','','','')
+				</script>
+
+			<!-- CenterList iFrame
+			<iframe name="list" src="/cs/centerList.sky" style="border:0px" width="750" height="530" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+			-->
+			</div>
+
+			<form name="centerForm" method="post">
+			<input type="hidden" name="searchSiDo">
+			<input type="hidden" name="searchGuGun">
+			<input type="hidden" name="searchCenterName">
+			<input type="hidden" name="secCenterIdx">
+			<input type="hidden" name="dispNum">
+			<input type="hidden" name="targetPage">
+			<input type="hidden" name="pagePerArticleCnt">
+			<input type="hidden" name="targetGroup">
+			</form>
+
+			<div id="search" class="center_cont03"><h5><img src="/static/images/cs/center_tit_02.gif" alt="검색결과" title="검색결과" /></h5>
+			(<span>
+				시/도
+				
+			    구/군
+			    
+				센터명
+			    
+			    </span> 검색결과 <span>총 75개</span> 서비스센터가 검색되었습니다.)
+			</div>
+
+			<div id="centerList">
+			<table width="740" id="centerTable" cellpadding="0" cellspacing="0" border="0" class="tbl_centerList">
+				<colgroup>
+					<col width="102"></col>
+					<col width="134"></col>
+					<col width="94"></col>
+					<col width="400"></col>
+				</colgroup>
+
+				<tr valign="top">
+					<th>지역</th>
+					<th>서비스센터명</th>
+					<th>전화번호</th>
+					<th>주소</th>
+				</tr>
+
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">강원도</td>
+					<td class="name"><a href="#" onclick="goView('Z9RdM3WCgBw~BEStVvS9OeI~');return false;">동해 서비스센터</a></td>
+					<td class="tel">033)533-9997</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('Z9RdM3WCgBw~BEStVvS9OeI~');return false;">
+							강원 동해시 천곡동 1079-6번지 2층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">강원도</td>
+					<td class="name"><a href="#" onclick="goView('XOML/muWpEQ~KLzFYpmHEXQ~');return false;">속초 서비스센터</a></td>
+					<td class="tel">033)637-3272</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('XOML/muWpEQ~KLzFYpmHEXQ~');return false;">
+							강원 속초시 교동 932-4 한남빌딩 1층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">강원도</td>
+					<td class="name"><a href="#" onclick="goView('f1q5n_J4AX4~NcK3xiApAgY~');return false;">강릉 서비스센터</a></td>
+					<td class="tel">033)646-9873</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('f1q5n_J4AX4~NcK3xiApAgY~');return false;">
+							강원 강릉시 성내동 8-2
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">강원도</td>
+					<td class="name"><a href="#" onclick="goView('F1FNd4MdLHk~DotUqUFDGk8~');return false;">원주 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('F1FNd4MdLHk~DotUqUFDGk8~');return false;">
+							강원 원주시 단계동 865-6번지 더파크메디칼센터 1층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">강원도</td>
+					<td class="name"><a href="#" onclick="goView('F8NMFP3vbhs~ZonbUWeFajQ~');return false;">춘천 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('F8NMFP3vbhs~ZonbUWeFajQ~');return false;">
+							강원 춘천시 효자동 654-9번지 메가씨티 1층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">경기도</td>
+					<td class="name"><a href="#" onclick="goView('Sp8fH3S2o5w~RV7tMuAtY10~');return false;">안산 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('Sp8fH3S2o5w~RV7tMuAtY10~');return false;">
+							경기 안산시 단원구 고잔동 706-3번지 장은타워1층 121호
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">경기도</td>
+					<td class="name"><a href="#" onclick="goView('exywfAUOWl0~vHCORHERYvw~');return false;">의정부 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('exywfAUOWl0~vHCORHERYvw~');return false;">
+							경기 의정부시 의정부2동 567-1 솔벗빌딩 1층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">경기도</td>
+					<td class="name"><a href="#" onclick="goView('DbPwDygVOIs~fckyVy95Wl0~');return false;">수원 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('DbPwDygVOIs~fckyVy95Wl0~');return false;">
+							경기 수원시 팔달구 인계동 1046-1 남경빌딩 1층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">경기도</td>
+					<td class="name"><a href="#" onclick="goView('sKG4LHg1W5o~k8nHmrxKrcc~');return false;">평택 서비스센터</a></td>
+					<td class="tel">1588-9111</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('sKG4LHg1W5o~k8nHmrxKrcc~');return false;">
+							경기 평택시 평택동 52-2 2층
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+				<tr align="center" valign="top">
+					<td class="local">경기도</td>
+					<td class="name"><a href="#" onclick="goView('b5BuCfzmOlI~ADtE6_uHa/U~');return false;">동두천 서비스센터</a></td>
+					<td class="tel">031)866-4424</td>
+					<td class="address" align="left">
+						<a href="#" onclick="goView('b5BuCfzmOlI~ADtE6_uHa/U~');return false;">
+							경기 동두천시 지행동 721-4 송내메가타운 201호
+						</a>
+					</td>
+				</tr>
+				<!--
+				 -->
+
+			</table>
+			</div>
+			<!--
+			<div class="paging">
+				<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			</div>
+			 -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_centerList">
+				<tr><td id="pagingTd"><div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+</td></tr>
+			</table>
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+
+</body>
+</html>

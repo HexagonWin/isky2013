@@ -1,0 +1,81 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>
+			It's different, SKY
+		</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta http-equiv="Expires" content="Sat, 5 Jan 1980 15:20:00 -0000">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT>
+		<script language="javascript">
+		window.focus();
+		function ReSearch(){
+			opener.document.Form1.txt_PrdSerial.value = "";
+			opener.document.Form1.txt_PrdSerial.focus();
+			window.self.close()
+		}
+		function okConfirm(){
+			id = opener.document.Form1.UID.value;
+			name = opener.document.Form1.name.value;
+			
+			window.creator.location="MemberSuccess.aspx?kind=1&id="+id+"&name="+name;
+			
+			window.self.close();
+		}
+		function rephoneauth(){
+			id = opener.document.Form1.UID.value;
+			name = opener.document.Form1.name.value;
+//			window.location.href="MemberPhoneContact.aspx";
+			
+			window.location.href="MemberPhoneContact.aspx?kind=1&id="+id+"&name="+name;
+			
+		}
+		</script>
+	</HEAD>
+	<body>
+		<Meta_Title Value="제품등록 확인창" />
+		<Meta_From Value="isky" />
+		<Meta_Path Value="Home:멤버십:제품등록 확인창" />
+		<form name="member" method="post" action="MemberPhoneAuth.aspx" id="member">
+<input type="hidden" name="__VIEWSTATE" value="dDwxODM4OTYzNDU5O3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47PjtsPHQ8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47Oz47dDw7bDxpPDA+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDw7Pj47Pjs7Pjs+Pjs+Pjs+Pjs+Pjs+Pjs+" />
+
+			<IMG src="http://file.isky.co.kr/images/user/member/popup_product_no_title.gif" WIDTH="400" HEIGHT="52" USEMAP="#Map"><BR>
+			<map name="Map">
+				<area shape="RECT" coords="340,20,393,44" href="javascript:window.self.close();">
+			</map>
+			<DIV class="POPUP">
+				
+				<table id="phone_auth2" border="0" cellpadding="0" cellspacing="0" width="380">
+	<tr>
+		<td align="center">
+							<B CLASS="RED_DARK">
+								<span id="lbl_name2"></span></B> 님께서 등록해주신 제품에 대한 
+							제품인증이 실패 하였습니다.<BR>
+							<BR>
+							<span id="lbl_kind"></span>
+							정확한 제품 시리얼 번호와 제조년월일을 입력해 주세요.<BR>
+							<BR>
+							<BR>
+						</td>
+	</tr>
+	<tr>
+		<td>
+							<DIV class="POPUPLINE"></DIV>
+							<DIV class="POPUPBUTTON">
+								<IMG src="http://file.isky.co.kr/images/user/member/button_recertification.gif" onclick="ReSearch();" style="CURSOR:hand">
+								<IMG src="http://file.isky.co.kr/images/user/member/btn_error.gif" onclick="rephoneauth();" style="CURSOR:hand">
+							</DIV>
+						</td>
+	</tr>
+</table>
+
+			</DIV>
+		</form>
+	</body>
+</HTML>

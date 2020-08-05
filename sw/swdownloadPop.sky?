@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>iSKY</title>
+<link rel="stylesheet" type="text/css" href="/static/css/Popup.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/sw/sw.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+
+<script language="javascript">
+	window.onload = function checkLogin(){
+		var loginCheck = "";
+		
+		if(loginCheck == 'true'){
+			Login_Ok();
+		}
+	}
+
+	document.domain = "isky.co.kr";
+
+	this.focus();
+	
+	var commonPopWin = null;
+	var loginWin = null;
+	var downflag = "N";
+	var global_sv_url = "";
+	var global_dn_url = ""+"&filename="+"";
+	var fileName = "";
+	
+
+	var global_dn_type  = "";
+	var global_d       = "http://dmfile.isky.co.kr/self_upgrade/real/Step0.asp";
+	var global_d_type	= "";
+	var global_idx		= "0";
+	var global_m_name	= "";
+	var global_userid	= "";
+	var global_hpno		= "";
+	var global_swVer	= "";
+
+	var LogTotal = "12";
+		
+	//var global_return_url = "https://www.isky.co.kr/sw/swdownloadPop.sky?strSwVer="+global_swVer+"&intSwSeq="+global_idx+"&fileName="+fileName+"&strModelName="+global_m_name+"&dn_type="+global_dn_type+"&dnPath="+global_dn_url;
+
+	var global_return_url = "https://www.isky.co.kr/sw/swdownloadPop.sky?strSwVer="+global_swVer+"&intSwSeq="+global_idx+"&fileName="+fileName+"&strModelName="+global_m_name+"&dn_type="+global_dn_type+"&dnPath="+global_dn_url;
+
+	var return_url = encode(global_return_url);
+	
+ 
+	var szBrowser = navigator.userAgent;
+	
+	var WinType = "";
+	if ( szBrowser.indexOf("MSIE") != -1 ) {
+		if ( szBrowser.indexOf("MSIE 7.0;") != -1 ) {
+			
+			WinType = "IE7";
+			
+		}else{
+			
+			WinType = "IE6";
+
+		}
+
+	}else{
+
+		WinType = "FF";
+	}
+	
+	String.prototype.trim = function(){
+		return this.replace(/(^\s*)|(\s*$)/g, "");
+	}
+
+	function encode(URLString){		 
+		 return encodeURIComponent(URLString); // 결과 문자열 반환
+	}
+
+		
+	
+	//로그인 완료 또는 비회원다운
+	function Login_Ok(){
+		this.focus();
+		var nameLen = fileName.length;
+
+		if(global_userid == ""){						
+			if(global_dn_type == '20006' && (nameLen < 0 || fileName.substring(nameLen - 3, nameLen) != 'zip')) {
+				// 비회원 로그 정보 저장 
+				
+				if(LogTotal >= maxConnect){
+				
+					downError();
+				
+				}else{
+					saveSelfDownloadLogGuest(global_m_name); 
+					Global_FileDown();
+				}
+
+			}else{
+				//로그 저장
+				saveUsbDownloadLogGuest(global_idx);
+				fldown(global_dn_url);
+			}
+		}else{
+			if(global_dn_type == '20006' && (nameLen < 0 || fileName.substring(nameLen - 3, nameLen) != 'zip')) {
+				
+				if(LogTotal >= maxConnect){
+				
+					downError();
+				
+				}else{
+					saveSelfDownloadLogMember(global_userid,global_swVer); 
+					Global_FileDown();
+				}
+			}else{
+				saveUsbDownloadLogMember(global_userid,global_idx); 
+				//alert(global_dn_url);
+				fldown(global_dn_url);
+			}	
+		}
+	}
+	
+	
+	function DownloadWin(url){
+		var height = screen.height;
+		var width = screen.width;
+		var leftpos = width / 2 - 150;
+		var toppos = height / 2 - 100;
+		
+		var win = window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+				
+	}
+
+	function fldown(url){
+
+		
+		// 프로요 끝나면 이거 삭제...
+		
+		if(global_m_name == 'IM-A600S' || global_m_name == 'IM-A650S') {
+			
+			if(global_dn_type == '20007') {
+				var u = "http://dmfile.isky.co.kr/Froyo/download/DataManagerPlus4_Setup_v4.03.zip";
+				filedownload.location.href = u;
+			} else if(global_dn_type == '20009') {
+				var u = "http://dmfile.isky.co.kr/froyo/download/UniUSBDriver_v3.1.1.zip";
+				filedownload.location.href = u;
+			} else {
+				filedownload.location.href = url; 
+			}
+		} else {
+			//filedownload.location.href = url; 
+			var height = screen.height;
+		    var width = screen.width;
+		    var leftpos = width / 2 - 150;
+		    var toppos = height / 2 - 100;
+			window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+			window.close();
+		}
+		
+		
+		// 프로요 통제 - 2010-12-29 작업됨
+		//filedownload.location.href = url; 
+		
+		//window.setTimeout("window.close()",10000);
+	}
+
+	function Global_FileDown(){
+		
+		
+		if(!commonPopWin || commonPopWin.closed){
+			
+			window.open(global_d+"?userid="+global_userid+"&hpno="+global_hpno, '',"width=720,height=480,toolbar=no,status=no,scrollbars=no");					
+				
+		}else{ 
+			alert('이미 셀프업그레드가 진행중입니다.');
+			return;
+		} 
+
+	
+	}
+
+	function Move_Focus(e,obj_name){
+		
+		var keynum = "";
+
+		if(window.event){
+			keynum = e.keyCode;
+		}else if(e.which){
+			keynum = e.which;
+		}
+		
+		if (keynum == "13"){
+			obj = document.getElementById("" + obj_name + "");
+			obj.focus();
+		}else{
+			return;
+		}
+	}
+	
+	//로그인
+	function Go_Login(){
+		
+		opener.parent.LoginConfirm(opener.parent.current_url);
+		self.close();
+
+	}
+
+	
+</script>
+</head>
+<!-- popup size : 518*313 -->
+<body>
+<iframe name="Data_Process" id="Data_Process" FRAMEBORDER=0 SCROLLING=yes SRC="" width=0 height=0></iframe>
+<iframe name="filedownload" id="filedownload" FRAMEBORDER=0 SCROLLING=yes SRC="" width=0 height=0></iframe>
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td align="center"><table width="500" cellpadding="0" cellspacing="0" border="0">
+			<tr valign="bottom">
+				<td height="35" align="center"><img src="/static/images/common/popup_iskyLogo.gif" alt="iSKY" title="iSKY" /></td>
+			</tr>
+			<tr valign="top">
+				<td height="36" class="pop_title_down_sw"></td>
+			</tr>
+			<tr>
+				<td align="center" style="padding-top:20px;">
+					<table width="478" cellpadding="0" cellspacing="0" border="0">
+						<!-- s: form -->
+						<form id="form_login" name="form_login" autocomplete="off">
+						<tr>
+							<td align="left" style="background:url(/static/images/common/bbox_bg.gif) 0 0 repeat-y;">
+								<table width="448" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td colspan="2"><img src="/static/images/common/bbox_top.gif" /></td>
+									</tr>
+									<tr>
+										<!-- s:회원 -->
+										<td valign="top" style="padding-left:15px;">
+											<table width="205" cellpadding="0" cellspacing="0" border="0">
+												<tr>
+													<td colspan="2" valign="top" style="padding-bottom:10px;"><img src="/static/images/common/popup_txt_down01.gif" alt="회원" /></td>
+												</tr>
+												<tr>
+													<td><img src="/static/images/common/popup_txt_down06.gif" /></td>
+													<td style="padding-left:4px;"><a href="javascript:Go_Login()"><img src="/static/images/common/popup_btn_login02.gif" align="absmiddle" alt="로그인" /></a></td>
+												</tr>
+											</table>
+										</td>
+										<!-- e:회원 -->
+										<!-- s:비회원 -->
+										<td valign="top" style="padding-left:20px;">
+											<table width="225" cellpadding="0" cellspacing="0" border="0">
+												<tr>
+													<td colspan="2" valign="top" style="padding-bottom:10px;"><img src="/static/images/common/popup_txt_down02.gif" alt="비회원" /></td>
+												</tr>
+												<tr>
+													<td><img src="/static/images/common/popup_txt_down03.gif" /></td>
+													<td rowspan="2"><a href="javascript:Login_Ok()"><img src="/static/images/common/popup_btn_download.gif" align="absmiddle" alt="다운로드" /></a></td>
+												</tr>
+											</table>
+										</td>
+										<!-- e:비회원 -->
+									</tr>
+									<tr>
+										<td colspan="2"><img src="/static/images/common/bbox_bottom.gif" /></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						</form>
+						<!-- e: form -->
+						<tr>
+							<td valign="top" class="down_txtspace">
+								<table width="478" cellpadding="0" cellspacing="0" border="0">
+									<tr>
+										<td align="left" class="left_txt"><img src="/static/images/common/popup_txt_down04.gif" /></td>
+										<td align="right"><a href="javascript:;" onClick="parentLocation('https://www.isky.co.kr/member/agreement.sky');"><img src="/static/images/common/popup_btn_join.gif" alt="회원가입" /></a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+		</table></td>
+	</tr>
+	<!-- [s] bottom -->
+	<tr valign="bottom">
+		<td class="popupBottom"><a href="javascript:self.close();"><img src="/static/images/common/popup_btn_close.gif" border="0" alt="닫기" title="닫기" /></a></td>
+	</tr>
+	<!-- [e] bottom -->
+</table>
+
+</body>
+</html>

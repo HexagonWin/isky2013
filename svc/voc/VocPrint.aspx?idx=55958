@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=55958" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOyKpOy5tOydtOydmCDqsJDrj5l+ISEg7IOI66Gc7YOc7Ja064KcIOuCtCDsiqTsubTsnbQuLiBeXjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8QS9TOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsmKTrs5HsnYA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU1OTU4Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA1LTA0Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzMDQ7Pj47Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8XGU7Pj47Pjs7Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPFw8UFw+Jm5ic3BcOyDsmKTripgg7Y+w7J20IOqwkeyekOq4sCDrjZTsnITrpbwg66q76rKs646M7ISc7J247KeALi4g7JWE64uYIOyekOq4sOulvCDrsJTqv5Tri6zrnbzripQg7ZWt7J2Y7J2YIO2RnOyLnOyduOyngC4uIOygkOyLrOuVjOustOugteyXkCDtmZTrqbTsnbQg6rmo7KC47IScIOuCmOyYpOyniCDslYjripTqsoPsnbTri6QuLiDsoITtmZTqsIAg7JmA64+EIOuIhOq1rO2VnO2FjCDsmZTripTsp4Ag66y47J6Q64qUIOuouOudvOqzoCDsmZTripTsp4Ag64u164u17ZaI64ukLlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO+uCnCDrsJTsgZzsnbzrj4Qg7JeG6rOg7ZWY7JesIOygkOyLrOydhCDrqLnqs6Ag7Iqk7Lm07J20IOyEnOu5hOyKpCDrjIDrpqzsoJDsnYQg6rK47IKs6rK47IKsKOyYhuyXkOyeiOuKlCDsoJXruYTshozsl5DshJwg7LCo65+J7KCV6rKA64+EIO2VoOqyuCkg65Ok65+s7IScICLtlbjrk5ztj7Ag7IiY66as7KKAIOu2gO2Dge2VqeuLiOuLpH4hIu2WiOuLpC4uXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw77KCR7IiY7ZuEIOuwlOuhnCDshJzruYTsiqTquLDsgqzri5jsnbQg7JiG7JeQ7IScIOyImOumrOulvO2VtOyjvOyLnOuNlOq1sOyalC4uIOyXrOq4sOyggOq4sCDri6bqs6AuIOusuOyngOultOqzoCDslrzrp4gg7ZuEIFw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO+uCtO2PsOydtCDsg4jqsoPsnbQg65Cc6rKD7LKY65+8IOq5qOuBl+2VtOyguOyEnCDrgpjtg4DrgpjrjZTqtbDsmpQuLiBcPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDvsmIjsoITsl5DshJwg66y07IOB7Jy866GcIOyXheq3uOugiOydtOuTnCDrsJvsnLzrn6wg7Jik656Y7IScIOqwlOuLpOqwgCDsnbTqsoPsoIDqsoMg6rCI6rOgIOqyjOuLpOqwgCDqsr3tkojquYzsp4Ag67Cb7JWE7JmA7IScIOuvuOyViO2WiOuKlOuNsC4gXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw77Ja866eI7ZuE66m0IOyKrOyKrCDtj7Drj4Qg67CU6r+A65WM6rCAIOuQmOyWtOqwgOuKlCDqsoPrj4Qg6rCZ7J2A642wLi4mbmJzcFw77Jik64qY7J2YIOuKkOuCjOydhCDsgrTroKQg7JWe7Jy866Gc64+EIOyKpOy5tOydtOulvCDqtazsnoXtlaDquYwg7ZWp64uI64ukfiEhJm5ic3BcOyBeXlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">스카이의 감동~!! 새로태어난 내 스카이.. ^^</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">A/S</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">오병은</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">55958</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-05-04</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">304</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; 오늘 폰이 갑자기 더위를 못견뎌서인지.. 아님 자기를 바꿔달라는 항의의 표시인지.. 점심때무렵에 화면이 깨져서 나오질 안는것이다.. 전화가 와도 누구한테 왔는지 문자는 머라고 왔는지 답답했다.</P><BR><P>&nbsp;난 바쁜일도 없고하여 점심을 먹고 스카이 서비스 대리점을 겸사겸사(옆에있는 정비소에서 차량정검도 할겸) 들러서 "핸드폰 수리좀 부탁합니다~!"했다..</P><BR><P>&nbsp;접수후 바로 서비스기사님이 옆에서 수리를해주시더군요.. 여기저기 닦고. 문지르고 얼마 후 </P><BR><P>&nbsp;내폰이 새것이 된것처럼 깨끗해져서 나타나더군요.. </P><BR><P>&nbsp;예전에서 무상으로 업그레이드 받으러 오래서 갔다가 이것저것 갈고 게다가 경품까지 받아와서 미안했는데. </P><BR><P>&nbsp;얼마후면 슬슬 폰도 바꿀때가 되어가는 것도 같은데..&nbsp;오늘의 느낌을 살려 앞으로도 스카이를 구입할까 합니다~!!&nbsp; ^^</P><BR><P>&nbsp;</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+
+<menu name='Home' id='home' url='/html/index.jsp'>
+	<menu name='모델 1' id='m1' url='/html/product/'>
+		<menu name='Cover Page' id='m1_1' url='/html/product/index.jsp'></menu>
+		<menu name='Lab' id='m1_2' url='/html/product/lab.jsp'></menu>
+		<menu name='Studio' id='m1_3' url='/html/product/studio.jsp'>
+			<menu name='특장점' id='m1_3_1' url='/html/product/good.jsp'></menu>
+			<menu name="주요기능" id='m1_3_2' url='/html/product/function.jsp'>
+				<menu name="기능HTML" id='m1_3_2_1' url='/html/product/function_html.jsp'></menu>
+				<menu name="제품비교팝업" id='pop_compare' url='javascript:pop("/html/product/pop_compare.jsp","PopCompare",707,530)'></menu>
+			</menu>
+			<menu name='스펙/액세서리' id='m1_3_3' url='/html/product/spec.jsp'>
+				<menu name='스펙HTML' id='m1_3_3_1' url='/html/product/spec_html.jsp'></menu>
+				<menu name="전자파흡수율" id='pop_sar' url='javascript:pops("/html/product/pop_sar.jsp","PopSar",620,700)'></menu>
+			</menu>
+			<menu name='제품 리뷰' id='m1_3_4' url='/html/product/review.jsp'>
+				<menu name='제품 리뷰 View' id='m1_3_4_1' url='/html/product/review_view.jsp'></menu>
+			</menu>
+		</menu>
+		<menu name='Style' id='m1_4' url='/html/product/style.jsp'></menu>
+		<menu name='User' id='m1_5' url='/html/product/user.jsp'></menu>
+	</menu>
+	<menu name='모델 2' id='m2' url='/html/product/'></menu>
+	<menu name='모델 3' id='m3' url='/html/product/'></menu>
+	<menu name='전체보기' id='m4' url='/html/product/overview.jsp'></menu>
+	<menu name='SKYs' id='skys' url='/html/product/skys/'></menu>
+	<menu name='MUST HAVE_' id='1' url='/html/brandstory/index.jsp'>
+		<menu name='Must have' id='1_1' url='#'></menu>
+	<!--
+		<menu name='Must have' id='1_1' url=''>
+			<menu name='키워드 스토리' id='1_1_1' url='/html/brandstory/kstoty/kstory.jsp'></menu>
+			<menu name='광고 자료실' id='1_1_2' url='/html/brandstory/musthave/ad_tv.jsp'>
+				<menu name='TV 광고' id='1_1_2_1' url='/html/brandstory/musthave/ad_tv.jsp'></menu>
+				<menu name='인쇄광고' id='1_1_2_2' url='/html/brandstory/musthave/ad_offline.jsp'></menu>
+				<menu name='다운로드' id='1_1_2_3' url='/html/brandstory/musthave/'>
+					<menu name='스크린세이버' id='1_1_2_3_1' url='/html/brandstory/musthave/screensaver.jsp'></menu>
+					<menu name='월페이퍼' id='1_1_2_3_2' url='/html/brandstory/musthave/wallpaper.jsp'></menu>
+					<menu name='스카이이모티콘' id='1_1_2_3_3' url='/html/brandstory/musthave/skyemoticon.jsp'></menu>
+				</menu>
+			</menu>
+			<menu name='Fun 칵테일' id='1_1_3' url='/html/brandstory/musthave/cf.jsp'></menu>
+			<menu name='이벤트' id='' url=''></menu>	
+		</menu>
+		-->
+		<menu name='키워드 스토리' id='1_2' url='/html/brandstory/kstory/kstory.jsp'></menu>
+		<menu name='광고 갤러리' id='1_3' url='/html/brandstory/musthave/ad_tv_more.jsp'>
+			<menu name='TV 광고' id='1_3_1' url='/html/brandstory/musthave/ad_tv_more.jsp'></menu>
+			<menu name='케이블 광고' id='1_3_2' url='/html/brandstory/museum/ad_cable.jsp'></menu>
+			<menu name='인쇄광고' id='1_3_3' url='/html/brandstory/musthave/ad_offline.jsp'></menu>
+			<menu name='라디오 광고' id='1_3_4' url='/html/brandstory/museum/ad_radio.jsp'></menu>
+			<menu name='월페이퍼/스크린세이버' id='1_3_5' url='/html/brandstory/musthave/wallpaper.jsp'></menu>
+			<menu name='메신저 아이템' id='1_3_6' url='/html/brandstory/musthave/skyemoticon.jsp'>
+				<menu name='이모티콘' id='1_3_6_1' url='/html/brandstory/musthave/skyemoticon.jsp'></menu>
+				<menu name='공개사진' id='1_3_6_2' url='/html/brandstory/musthave/publicphoto.jsp'></menu>
+			</menu>
+			<menu name='이전 광고 보기' id='1_3_7' url='/html/brandstory/museum/ad_tv_more.jsp'></menu>
+		</menu>
+		<menu name='SKY VI' id='1_4' url='/html/brandstory/vi/skyvi.jsp'></menu>
+		<menu name='이전 광고 보기' id='1_7' url='/html/brandstory/museum/ad_tv.jsp'>
+			<menu name='TV광고' id='1_7_1' url='/html/brandstory/museum/ad_tv.jsp'></menu>
+			<menu name='인쇄광고' id='1_7_2' url='/html/brandstory/museum/ad_offline.jsp'></menu>
+			<menu name='스크린세이버' id='1_7_3' url='/html/brandstory/museum/screensaver.jsp'></menu>
+			<menu name='웰페이퍼' id='1_7_4' url='/html/brandstory/museum/wallpaper.jsp'></menu>
+		</menu>
+	</menu>
+	<menu name='스카이 라운지' id='2' url='/html/withsky/index.jsp'>
+		<menu name='이벤트' id='2_1' url='/html/withsky/event/skyevent.jsp'>
+			<menu name='MUST HAVE_이벤트' id='2_1_1' url='/html/withsky/event/no_event.jsp'>
+				<menu name='스타경매' id='2_1_1_3' url='/html/withsky/event/star/star.jsp'>
+					<menu name='상세보기1' id='2_1_1_3_1' url='/html/withsky/event/star/star_view.jsp'></menu>
+					<menu name='상세보기2' id='2_1_1_3_2' url='/html/withsky/event/star/star_view2.jsp'></menu>
+					<menu name='전체보기' id='2_1_1_3_2' url='/html/withsky/event/star/star_allview.jsp'></menu>
+					<menu name='응모결과' id='pop_entryresult' url='javascript:pop("/html/withsky/event/star/pop_entryresult.jsp","",400,390)'></menu>
+					<menu name='입찰내역보기' id='pop_tender' url='javascript:pop("/html/withsky/event/star/pop_tender.jsp","pop_tender",500,350)'></menu>
+					<menu name='입찰하기' id='pop_tendertotal' url='javascript:pop("/html/withsky/event/star/pop_tendertotal.jsp","pop_tendertotal",500,350)'></menu>
+				</menu>
+			</menu>
+			<menu name='스카이데이' id='2_1_2' url='/html/withsky/event/skyday.jsp'>
+				<menu name='스카이데이' id='2_1_2_0' url='/html/withsky/event/skyday.jsp'></menu>
+				<menu name='참여하기' id='2_1_2_1' url='/html/withsky/event/skyday_mission.jsp'></menu>
+				<menu name='나의응모내역' id='2_1_2_2' url='/html/withsky/event/skyday_prmgoods.jsp'></menu>
+				<menu name='당첨자 보기' id='2_1_2_3' url='/html/withsky/event/skyday_prize_prmgoods.jsp'>
+					<menu name='경품 당첨자 발표' id='2_1_2_3_1' url='/html/withsky/event/skyday_prize_prmgoods.jsp'></menu>
+					<menu name='즉석 스크래치 복권 당첨자 발표' id='2_1_2_3_2' url='/html/withsky/event/skyday_prize_scratch.jsp'></menu>
+				</menu>
+				<menu name='경품응모하기팝업' id='pop_prmgoods' url='javascript:pop("/html/withsky/event/pop_prmgoods.jsp","",400,447)'></menu>
+			</menu>
+			<menu name='수퍼 프리뷰' id='2_1_3' url='/html/brandstory/sponsor/superpreview_end.jsp'></menu>
+		</menu>
+		<menu name='스카이 리더' id='2_2' url='/html/withsky/leader/experience_pre_list.jsp'>
+			<menu name='휴대폰체험기' id='2_2_1' url='/html/withsky/leader/experience_pre_list.jsp'>
+				<menu name='휴대폰체험기(list)' id='2_2_1_1' url='/html/withsky/leader/experience_list.jsp'></menu>
+				<menu name='휴대폰체험기(view)' id='2_2_1_2' url='/html/withsky/leader/experience_view.jsp'></menu>
+				<menu name='휴대폰체험기(write)' id='2_2_1_3' url='/html/withsky/leader/experience_write.jsp'></menu>
+				<menu name='휴대폰체험기(이전기수 검색화면)' id='2_2_1_4' url='/html/withsky/leader/experience_pre_list.jsp'></menu>
+				<menu name='휴대폰체험기(이전기수 view)' id='2_2_1_6' url='/html/withsky/leader/experience_pre_view.jsp'></menu>
+			</menu>
+			<menu name='명예의 전당' id='2_2_2' url='/html/withsky/leader/glory.jsp'></menu>
+			<menu name='리더아지트' id='2_2_3' url='/html/withsky/leader/notice.jsp'>
+				<menu name='공지사항' id='2_2_3_1' url='/html/withsky/leader/notice.jsp'></menu>
+				<menu name='기수별게시판' id='2_2_3_2' url='/html/withsky/leader/ensign.jsp'></menu>
+				<menu name='자유게시판' id='2_2_3_3' url='/html/withsky/leader/free.jsp'></menu>
+			</menu>
+			<menu name='스카이리더란?' id='2_2_4' url='/html/withsky/leader/skyleader.jsp'></menu>
+			<menu name='스카이리더지원' id='2_2_5' url='/html/withsky/leader/volunteer.jsp'>
+				<menu name='지원서작성 기본정보입력' id='2_2_5_1' url='/html/withsky/leader/voluntee_write1.jsp'></menu>
+				<menu name='지원서작성 활동분야선택' id='2_2_5_2' url='/html/withsky/leader/voluntee_write2.jsp'></menu>
+				<menu name='스카이리더 신청 공통항목' id='2_2_5_3' url='/html/withsky/leader/voluntee_write3.jsp'></menu>
+			</menu>
+		</menu>
+		<menu name='스카이 프로리그' id='2_3' url='/html/withsky/pro/proleague.jsp'></menu>
+		<menu name='스카이 노하우' id='2_4' url='/html/withsky/knowhow_list.jsp'><!-- {113/미디어포스 운영사업부 CE팀 조형빈/2007.06.13/ inc/js/menu.xml / 스카이노하우 경로변경 / /html/withsky/knowhow.jsp > /html/withsky/knowhow_list.jsp } -->
+			<menu name='제품' id='2_4_1' url='/html/withsky/knowhow_list.jsp?s_cate=CA01'></menu>
+			<menu name='프로그램' id='2_4_2' url='/html/withsky/knowhow_list.jsp?s_cate=CA02'></menu>
+			<menu name='액세서리' id='2_4_3' url='/html/withsky/knowhow_list.jsp?s_cate=CA03'></menu>
+			<menu name='생활 속 활용팁' id='2_4_4' url='/html/withsky/knowhow_list.jsp?s_cate=CA06'></menu>
+			<menu name='기타' id='2_4_5' url='/html/withsky/knowhow_list.jsp?s_cate=CA07'></menu>
+		</menu>
+	</menu>
+	<menu name='모바일 콘텐츠' id='3' url='http://mobile.isky.co.kr/mobile_main.asp'>
+		<menu name='뮤직' id='3_1' url='http://mobile.isky.co.kr/index.asp'></menu>
+		<menu name='스크린' id='3_2' url='http://mobile.isky.co.kr/livescreen/screen.asp'></menu>
+		<menu name='메시지' id='3_3' url='http://mobile.isky.co.kr/mms/mms_theme.asp'></menu>
+		<menu name='스카이 광고' id='3_4' url='http://mobile.isky.co.kr/user/user.asp'></menu>
+		<menu name='모바일 이벤트' id='3_5' url='http://mobile.isky.co.kr/event/event_main_i.asp'></menu>
+		<menu name='공지 사항' id='3_6' url='http://mobile.isky.co.kr/bbs/bbs_list.asp'></menu>
+	</menu>
+	<menu name='고객 지원' id='4' url='/html/cs/index.jsp'>
+		<menu name='셀프 업그레이드' id='4_1' url='/html/cs/selfupgrade.jsp'></menu>
+		<menu name='S/W 다운로드' id='4_2' url='/html/cs/download.jsp'>
+			<menu name='상세보기' id='4_2_1' url='/html/cs/download_detail.jsp'>
+				<menu name='멜론활용방법' id='pop_melon' url='javascript:pop("/html/cs/pop_melon.jsp","",560,540)'></menu>
+				<menu name='usb활용방법' id='pop_usb' url='javascript:pop("/html/cs/pop_usb.jsp","",550,410)'></menu>
+			</menu>
+		</menu>
+		<menu name='자가진단' id='4_3' url='/html/cs/diagnosis.jsp'></menu>
+		<menu name='온라인상담' id='4_4' url='/html/cs/onlinecs.jsp'></menu>
+		<menu name='서비스센터' id='4_5' url='/html/cs/cscenter.jsp'>
+			<menu name='위치 안내' id='4_5_1' url='/html/cs/cscenter.jsp'></menu>
+			<menu name='제도 안내' id='4_5_2' url='/html/cs/cscenter_system1.jsp'>
+				<menu name='교환/환불' id='4_5_2_1' url='/html/cs/cscenter_system1.jsp'></menu>
+				<menu name='부품단가' id='4_5_2_2' url='/html/cs/cscenter_system2.jsp'></menu>
+				<menu name='OK캐쉬백사용안내' id='4_5_2_3' url='/html/cs/cscenter_system3.jsp'></menu>
+			</menu>
+		</menu>
+		<menu name='공지사항' id='4_6' url='/html/cs/notice.jsp'></menu>
+		<menu name='엑세서리몰' id='4_7' url='/html/cs/mall/index.jsp'></menu>
+	</menu>
+	<menu name='스카이회원' id='5' url=''>
+		<menu name='회원가입' id='5_1' url='/html/member/join.jsp'>
+			<menu name='회원가입용 실명확인' id='5_1_1' url='/html/member/realname.jsp'></menu>
+			<menu name='14세 미만 보호자 동의' id='5_1_2' url='/html/member/protector.jsp'></menu>
+			<menu name='해외거주자/국내거주외국인 5_1_3 절차' id='foreigner' url='/html/member/foreigner.jsp'></menu>
+			<menu name='이용약관/개인보호정책' id='5_1_4' url='/html/member/agree.jsp'></menu>
+			<menu name='개인정보입력' id='5_1_5' url='/html/member/join_input.jsp'></menu>
+			<menu name='회원 제품등록' id='5_1_6' url='/html/member/join_product.jsp'></menu>
+			<menu name='회원 추가정보' id='5_1_7' url='/html/member/join_addinfo.jsp'></menu>
+			<menu name='회원가입완료' id='5_1_8' url='/html/member/join_done.jsp'></menu>
+			<menu name='제품 등록 재인증' id='5_1_9' url='/html/member/recertify.jsp'></menu>
+			<menu name='우편번호 검색' id='pop_zipcode' url='javascript:pop("/html/member/pop_zipcode.jsp","",400,375)'></menu>
+			<menu name='ID/PW 찾기' id='pop_findidpw' url='javascript:pop("/html/member/pop_findidpw.jsp","",400,265)'></menu>
+			<menu name='14세미만 보호자동의' id='pop_joindone' url='javascript:pop("/html/member/pop_protector.jsp","",500,390)'></menu>
+			<menu name='회원가입완료' id='pop_joindone' url='javascript:pop("/html/member/pop_joindone.jsp","",400,257)'></menu>
+			<menu name='멤버쉽가입' id='pop_memshipjoin' url='javascript:pop("/html/member/pop_memshipjoin.jsp","",405,235)'></menu>
+			<menu name='멤버쉽가입확인' id='pop_skymemshipjoin' url='javascript:pop("/html/member/pop_skymemshipjoin.jsp","",405,275)'></menu>
+			<menu name='회원탈퇴' id='pop_secede' url='javascript:pop("/html/member/pop_secede.jsp","",400,245)'></menu>
+			<menu name='회원탈퇴완료' id='pop_secededone' url='javascript:pop("/html/member/pop_secededone.jsp","",400,240)'></menu>
+			<menu name='제품등록' id='pop_productregdone' url='javascript:pop("/html/member/pop_productreg.jsp","",400,270)'></menu>
+			<menu name='제품등록완료' id='pop_productreg' url='javascript:pop("/html/member/pop_productregdone.jsp","",400,275)'></menu>
+			<menu name='제품인증실패팝업' id='pop_productconfirm' url='javascript:pop("/html/member/pop_productconfirm.jsp","",400,225)'></menu>
+			<menu name='제품인증실패팝업2' id='pop_productreg_fail' url='javascript:pop("/html/member/pop_productreg_fail.jsp","",400,295)'></menu>
+			<menu name='제품등록실패문의' id='pop_productreg_failq' url='javascript:pop("/html/member/pop_productreg_failq.jsp","",532,395)'></menu>
+			<menu name='추가정보등록' id='pop_addinforeg' url='javascript:pop("/html/member/pop_addinforeg.jsp","",400,270)'></menu>
+			<menu name='제품TAG번호확인방법' id='pop_tagnum' url='javascript:pop("/html/member/pop_tagnum.jsp","",400,375)'></menu>
+			<menu name='시리얼번호확인방법' id='pop_sn' url='javascript:pop("/html/member/pop_sn.jsp","",400,375)'></menu>
+			<menu name='IM-2000계열이하모델제조년월일확인방법' id='pop_im2000' url='javascript:pop("/html/member/pop_im2000.jsp","",400,337)'></menu>
+			<menu name='개인정보도용차단' id='pop_private' url='javascript:pop("/html/member/pop_private.jsp","",450,410)'></menu>
+			<menu name='개인정보도용차단' id='pop_notfound' url='javascript:pop("/html/member/pop_notfound.jsp","",450,430)'></menu>
+			<menu name='이전포인트/지수전환안내' id='pop_beforepoint' url='javascript:pop("/html/member/pop_beforepoint.jsp","",400,360)'></menu>
+			<menu name='파일 업로드' id='pop_upload' url='javascript:pop("/html/member/pop_upload.jsp","",400,210)'></menu>
+			<menu name='파일 다운로드' id='pop_download' url='javascript:pop("/html/member/pop_download.jsp","",400,210)'></menu>
+			<menu name='중고폰등록' id='pop_usedreg' url='javascript:pop("/html/member/pop_usedreg.jsp","",400,270)'></menu>
+		</menu>
+		<menu name='활동지수 &amp; 적립금 안내 ' id='5_2' url='/html/member/point_guide.jsp'></menu>
+		<menu name='로그인' id='5_3' url='/html/member/login.jsp'></menu>
+		<menu name='ID/PW 찾기' id='5_4' url='/html/member/findidpw.jsp'></menu>
+		<menu name='회원탈퇴' id='5_5' url='/html/mysky/modify.jsp'></menu>
+		<menu name='회원탈퇴' id='5_6' url='/html/member/secede.jsp'></menu>
+	</menu>
+
+	<menu name='마이 페이지' id='6' url='/html/mysky/index.jsp'>
+		<menu name='로그인' id='login' url='/html/mysky/login.jsp'></menu>
+		<menu name='회원정보수정' id='6_1' url='/html/mysky/modify.jsp'>
+			<menu name='기본정보 수정' id='6_1_1' url='/html/mysky/modify.jsp'></menu>
+			<menu name='휴대폰 등록' id='6_1_2' url='/html/mysky/modify_product.jsp'></menu>
+			<menu name='추가정보' id='6_1_3' url='/html/mysky/modify_addinfo.jsp'></menu>
+		</menu>
+		<menu name='나의 제품등록' id='6_2' url='/html/mysky/product_list.jsp'>
+			<menu name='휴대폰 등록하기' id='6_2_1' url='/html/mysky/product_reg.jsp'></menu>
+			<menu name='휴대폰 등록내역' id='6_2_2' url='/html/mysky/product_list.jsp'></menu>
+			<menu name='회원추가정보' id='pop_addinfo' url='javascript:pop("/html/mysky/pop_addinfo.jsp","",400,240)'></menu>
+			<menu name='셀프업그레이드알림 팝업' id='pop_selfupgrade' url='javascript:pop("/html/mysky/pop_selfupgrade.jsp","",400,240)'></menu>
+		</menu>
+		<menu name='활동지수 &amp; 적립금 내역' id='6_3' url='/html/mysky/force.jsp'>
+			<menu name='활동지수  상세내역' id='6_3_1' url='/html/mysky/force.jsp'></menu>
+			<menu name='적립금 상세 내역' id='6_3_2' url='/html/mysky/point.jsp'></menu>
+			<menu name='활동지수 &amp; 적립금 안내' id='6_3_3' url='/html/mysky/point_guide.jsp'></menu>
+			<menu name='교환센터팝업' id='pop_exchangecenter' url='javascript:pop("/html/mysky/pop_exchangecenter.jsp","PMobileCash",400,220)'></menu>
+			<menu name='교환센터팝업2' id='pop_exchangecenter2' url='javascript:pop("/html/mysky/pop_exchangecenter2.jsp","PMobileCash",400,235)'></menu>
+			<menu name='모바일캐쉬전환팝업' id='pop_mobilecash' url='javascript:pop("/html/mysky/pop_mobilecash.jsp","PMobileCash",400,250)'></menu>
+			<menu name='모바일캐쉬전환완료팝업' id='pop_mobilecash_done' url='javascript:pop("/html/mysky/pop_mobilecash_done.jsp","PMobileCash",400,245)'></menu>
+			<menu name='모바일 컨텐츠 사용법' id='pop_mobileuseway' url='javascript:pop("/html/mysky/pop_mobileuseway.jsp","PMobileUse",540,425)'></menu>
+			<menu name='영화예매권 사용법' id='pop_movieuseway' url='javascript:pop("/html/mysky/pop_movieuseway.jsp","PMovieUse",540,637)'></menu>
+			<menu name='해피머니 상품권 사용법' id='pop_happyuseway' url='javascript:pop("/html/mysky/pop_happyuseway.jsp","PHappyUse",540,464)'></menu>
+		</menu>
+		<menu name='관심폰 관리' id='6_4' url='/html/mysky/interest.jsp'></menu>
+		<menu name='온라인상담 내역' id='6_5' url='/html/mysky/counsel.jsp'></menu>
+		<menu name='모바일 콘텐츠 이용 내역' id='6_6' url='/html/mysky/mobilezone.jsp'>
+			<menu name='콘텐츠 이용 내역' id='6_6_1' url='/html/mysky/mobilezone.jsp'></menu>
+			<menu name='찜 내역' id='6_6_2' url='/html/mysky/mobilezone_zzim.jsp'></menu>
+			<menu name='서비스 결제 &amp; 충전내역' id='6_6_3' url='/html/mysky/mobile_filling.jsp'></menu>
+		</menu>
+		<menu name='액세서리몰 이용내역' id='6_7' url='/html/mysky/accessory.jsp'></menu>
+		<menu name='사이트 활동 내역' id='6_8' url='/html/mysky/skyknowhow.jsp'>
+			<menu name='수퍼프리뷰' id='6_8_1' url='/html/mysky/superpreview.jsp'></menu>
+			<menu name='노하우백과' id='6_8_2' url='/html/mysky/skyknowhow.jsp'></menu>
+			<menu name='이벤트' id='6_8_3' url='/html/mysky/skyevent.jsp'></menu>
+		</menu>
+	</menu>
+
+	<menu name='Home' id='0' url='/html/index.jsp'></menu>
+	<menu name='Join' id='join' url='/html/member/join.jsp'></menu>
+	<menu name='Logout' id='logout' url='/common/logout.jsp'></menu>
+	<menu name='통합검색' id='search' url='/html/search/search.jsp'></menu>
+	<menu name='공지사항' id='7' url='/html/common/notice.jsp'></menu>
+	<menu name='이용약관' id='8' url='/html/common/agree.jsp'></menu>
+	<menu name='개인정보보호방침' id='9' url='/html/common/privacy.jsp'></menu>
+	<menu name='Sitemap' id='11' url='/html/common/sitemap.jsp'></menu>
+	<menu name='Error' id='error' url='/html/mysky/error.jsp'></menu>
+	<menu name='family01' id='family01' url='/html/mysky/error.jsp'></menu>
+	<menu name='family02' id='family02' url='/html/mysky/error.jsp'></menu>
+	<menu name='family03' id='family03' url='/html/mysky/error.jsp'></menu>
+	<menu name='family04' id='family04' url='/html/mysky/error.jsp'></menu>
+	<menu name='family05' id='family05' url='/html/mysky/error.jsp'></menu>
+	<menu name='family06' id='family06' url='/html/mysky/error.jsp'></menu>
+
+	<!-- 작업 완료후 지워질 부분 입니다. //-->
+	<menu name='MailForm' id='MailForm' url=''>
+		<menu name='관리자메일' id='' url='/html/mailform/adminmail.jsp'></menu>
+		<menu name='관리자메일2' id='' url='/html/mailform/adminmail2.jsp'></menu>
+		<menu name='회원가입축하1' id='' url='/html/mailform/join_info1.jsp'></menu>
+		<menu name='회원가입축하2' id='' url='/html/mailform/join_info2.jsp'></menu>
+		<menu name='회원가입축하3' id='' url='/html/mailform/join_info3.jsp'></menu>
+		<menu name='회원가입축하4' id='' url='/html/mailform/join_info4.jsp'></menu>
+		<menu name='매니아회원' id='' url='/html/mailform/maniamem.jsp'></menu>
+		<menu name='제품등록1' id='' url='/html/mailform/productreg1.jsp'></menu>
+		<menu name='제품등록2' id='' url='/html/mailform/productreg2.jsp'></menu>
+		<menu name='회원정보' id='' url='/html/mailform/meminfo.jsp'></menu>
+		<menu name='아이디요청' id='' url='/html/mailform/request_id.jsp'></menu>
+		<menu name='비밀번호요청' id='' url='/html/mailform/request_pw.jsp'></menu>
+		<menu name='아이디비밀번호요청' id='' url='/html/mailform/request_pw2.jsp'></menu>
+		<menu name='스카이리더안내' id='' url='/html/mailform/skyleader1.jsp'></menu>
+		<menu name='스카이리더발표' id='' url='/html/mailform/skyleader2.jsp'></menu>
+		<menu name='베스트노하우로선정' id='' url='/html/mailform/bestknowhow.jsp'></menu>
+		<menu name='리뷰등록완료' id='' url='/html/mailform/review.jsp'></menu>
+		<menu name='게시판이용안내1' id='' url='/html/mailform/board_useinfo1.jsp'></menu>
+		<menu name='게시판이용안내2' id='' url='/html/mailform/board_useinfo2.jsp'></menu>
+		<menu name='게시판이용안내3' id='' url='/html/mailform/board_useinfo3.jsp'></menu>
+		<menu name='온라인상담안내' id='' url='/html/mailform/online.jsp'></menu>
+		<menu name='온라인상담안내2' id='' url='/html/mailform/online2.jsp'></menu>
+		<menu name='주문접수' id='' url='/html/mailform/accessory1.jsp'></menu>
+		<menu name='상품발송' id='' url='/html/mailform/accessory2.jsp'></menu>
+		<menu name='주문취소' id='' url='/html/mailform/accessory3.jsp'></menu>
+		<menu name='반품완료' id='' url='/html/mailform/accessory4.jsp'></menu>
+		<menu name='환불완료' id='' url='/html/mailform/accessory5.jsp'></menu>
+		<menu name='교환완료' id='' url='/html/mailform/accessory6.jsp'></menu>
+		<menu name='결혼기념일축하' id='' url='/html/mailform/memoryday.jsp'></menu>
+		<menu name='생일축하' id='' url='/html/mailform/birthday.jsp'></menu>
+		<menu name='이벤트1' id='' url='/html/mailform/event1.jsp'></menu>
+		<menu name='이벤트4' id='' url='/html/mailform/event4.jsp'></menu>
+		<menu name='이벤트_스타후기리그' id='' url='/html/mailform/event7.jsp'></menu>
+	</menu>
+</menu>

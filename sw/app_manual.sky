@@ -1,0 +1,318 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/software/app_manual.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/software/app_manual.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/software/app_manual.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100815");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title>안드로이안 어플리케이션 설치 메뉴얼</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>var dispNum="050301"; var firstDepth ="05";</script>
+<style type="text/css">
+body {margin:0;}
+p, div {margin:0;padding:0;}
+img {border:0;margin:0;padding:0;}
+.float_l {float:left;}
+.clear {clear:both;}
+.displayN {display:none;}
+
+
+#wrapAll {width:615px;height:100%;}
+.top {position:absolute;left:0;top:0;z-index:2;}
+.contBox {width:615px;text-align:center;}
+.contBox .btnLeft {position:absolute;left:57px;top:276px;z-index:2;}
+.contBox .img01 {position:absolute;left:0px;top:0px;z-index:1;}
+.contBox .img02 {position:absolute;left:0px;top:0px;z-index:1;}
+.contBox .btnRight {position:absolute;left:532px;top:276px;z-index:2;}
+.contBox .paging {position:absolute;left:208px;top:479px;z-index:2;}
+.contBox .paging a {margin-right:24px;}
+</style>
+
+<script language="javascript">
+<!--
+
+	var sel1=3000;
+	var slide=true;
+	var cnt=0;
+	var currentImage=1;
+	var timeout=0;
+	var pic1= new Array();
+	var pic=new Array();
+	var p_title=new Array();
+	// 이미지 슬라이드는 1번([1])이 로딩시 열리는 파일이라 2([2])번부터 시작되며 0([0])번은 무시되는거 같아서 없엠
+	// 추가방법 - X : 이미지의 번호로 1번부터 +1씩 추가하면 됨
+	// pic1[X] = "이미지 경로";
+	// p_title[X] = "이미지 설명부분 - html태그 됨";
+	// 이미지 슬라이드 경로부분
+		pic1[1] = "/static/images/software/app/step_01_img.jpg";
+		p_title[1] = "app_01";
+		pic1[2] = "/static/images/software/app/step_02_img.jpg";
+		p_title[2] = "app_02";
+		pic1[3] = "/static/images/software/app/step_03_img.jpg";
+		p_title[3] = "app_03";
+		pic1[4] = "/static/images/software/app/step_04_img.jpg";
+		p_title[4] = "app_04";
+		pic1[5] = "/static/images/software/app/step_05_img.jpg";
+		p_title[5] = "app_05";
+	pic[1]=new Image();
+	pic[1].src=pic1[1];
+	isNext = false;
+	
+	function go() {
+		if (!slide) {
+			nextImage1();
+		}
+	}
+	
+	function loadImage(imgNum) {
+		if (slide && !isNext) {
+			imgsrc.filters.blendTrans.apply();
+			document.imgsrc.src= pic[imgNum].src;
+			imgsrc.filters.blendTrans.duration=1.0;
+			imgsrc.filters.blendTrans.play();
+	 	nextImage1();
+		} else {
+			document.imgsrc.src= pic[imgNum].src;
+			isNext = false;
+			
+		}
+	}
+	
+	function nextImage() {
+		
+		imgsrc.filters.blendTrans.apply();
+		imgsrc.filters.blendTrans.duration=1.0;
+		imgsrc.filters.blendTrans.play();
+				
+		if(currentImage != 5) {
+			if (currentImage < pic.length-1) {
+				currentImage++;
+			} else {
+				currentImage=1;
+			}
+		 	isNext = true;
+		 	loadImage(currentImage);		
+		}
+		
+		if(currentImage == pic.length-1) {
+			document.getElementById("btnPrev").innerHTML = "<p class=\"btnLeft\"><img src=\"/static/images/software/app/btn_left.gif\" id=\"imgPrev\" onclick=\"prevImage()\" alt=\"이전\"></p>";
+			document.getElementById("btnNext").innerHTML = "";
+			for(var i=1; i<=5; i++) {
+				if(i == 5) {
+					document.getElementById("appStep0"+currentImage).src = "/static/images/software/app/paging_circle_.gif";
+				} else {
+					document.getElementById("appStep0"+i).src = "/static/images/software/app/paging_circle.gif";
+				}					
+			}
+			
+		} else {
+			document.getElementById("btnPrev").innerHTML = "<p class=\"btnLeft\"><img src=\"/static/images/software/app/btn_left.gif\" id=\"imgPrev\" onclick=\"prevImage()\" alt=\"이전\"></p>";
+			document.getElementById("btnNext").innerHTML = "<p class=\"btnRight\"><img src=\"/static/images/software/app/btn_right.gif\" id=\"imgNext\" onclick=\"nextImage()\" alt=\"다음\"></p>";
+			for(var i=1; i<=5; i++) {
+				if(i == currentImage) {
+					document.getElementById("appStep0"+currentImage).src = "/static/images/software/app/paging_circle_.gif";
+				} else {
+					document.getElementById("appStep0"+i).src = "/static/images/software/app/paging_circle.gif";
+				}					
+			}
+						
+		}
+
+	}
+	
+	function nextImage1() {
+		if (currentImage < pic1.length-1) {
+			currentImage++;
+		} else {
+			currentImage = 1;
+		}
+	 slide = true;
+	 //timeout = setTimeout("loadImage(currentImage)",sel1);
+	}
+	
+	function preload() {
+		for (i = 1; i < pic1.length; i++) {
+			pic[i]=new Image();
+			pic[i].src=pic1[i];
+		}		
+	}
+	
+	function prevImage() {
+		imgsrc.filters.blendTrans.apply();
+		imgsrc.filters.blendTrans.duration=1.0;
+		imgsrc.filters.blendTrans.play();
+		
+		if(currentImage != 1) {
+			if (currentImage <= pic1.length-1) {
+				currentImage--;
+				if(currentImage < 1) {
+				 	currentImage=currentImage+pic1.length;
+			 	currentImage--;
+			 	}
+			}
+			isNext = true;
+			loadImage(currentImage)
+		}
+		
+		if(currentImage == 1) {
+			document.getElementById("btnPrev").innerHTML = "";
+			document.getElementById("btnNext").innerHTML = "<p class=\"btnRight\"><img src=\"/static/images/software/app/btn_right.gif\" id=\"imgNext\" onclick=\"nextImage()\" alt=\"다음\"></p>";
+			for(var i=1; i<=5; i++) {
+				if(i == currentImage) {
+					document.getElementById("appStep0"+currentImage).src = "/static/images/software/app/paging_circle_.gif";
+				} else {
+					document.getElementById("appStep0"+i).src = "/static/images/software/app/paging_circle.gif";
+				}					
+			}
+			
+		} else {
+			document.getElementById("btnPrev").innerHTML = "<p class=\"btnLeft\"><img src=\"/static/images/software/app/btn_left.gif\" id=\"imgPrev\" onclick=\"prevImage()\" alt=\"이전\"></p>";
+			document.getElementById("btnNext").innerHTML = "<p class=\"btnRight\"><img src=\"/static/images/software/app/btn_right.gif\" id=\"imgNext\" onclick=\"nextImage()\" alt=\"다음\"></p>";
+			for(var i=1; i<=5; i++) {
+				if(i == currentImage) {
+					document.getElementById("appStep0"+currentImage).src = "/static/images/software/app/paging_circle_.gif";
+				} else {
+					document.getElementById("appStep0"+i).src = "/static/images/software/app/paging_circle.gif";
+				}					
+			}
+		}
+
+	}
+	
+	function goImage(pNum) {	
+		imgsrc.filters.blendTrans.apply();
+		imgsrc.filters.blendTrans.duration=1.0;
+		imgsrc.filters.blendTrans.play();
+		
+		if(pNum != null) {
+			currentImage = pNum;
+		}
+		
+		isNext = true;
+		loadImage(currentImage);
+		
+		if(currentImage == 1) {
+			document.getElementById("btnPrev").innerHTML = "";
+			document.getElementById("btnNext").innerHTML = "<p class=\"btnRight\"><img src=\"/static/images/software/app/btn_right.gif\" id=\"imgNext\" onclick=\"nextImage()\" alt=\"다음\"></p>";
+		} else if (currentImage == 5){
+			document.getElementById("btnPrev").innerHTML = "<p class=\"btnLeft\"><img src=\"/static/images/software/app/btn_left.gif\" id=\"imgPrev\" onclick=\"prevImage()\" alt=\"이전\"></p>";
+			document.getElementById("btnNext").innerHTML = "";
+		} else {
+			document.getElementById("btnPrev").innerHTML = "<p class=\"btnLeft\"><img src=\"/static/images/software/app/btn_left.gif\" id=\"imgPrev\" onclick=\"prevImage()\" alt=\"이전\"></p>";
+			document.getElementById("btnNext").innerHTML = "<p class=\"btnRight\"><img src=\"/static/images/software/app/btn_right.gif\" id=\"imgNext\" onclick=\"nextImage()\" alt=\"다음\"></p>";
+		}
+		
+		for(var i=1; i<=5; i++) {
+			if(i == currentImage) {
+				document.getElementById("appStep0"+currentImage).src = "/static/images/software/app/paging_circle_.gif";
+			} else {
+				document.getElementById("appStep0"+i).src = "/static/images/software/app/paging_circle.gif";
+			}					
+		}
+		
+	}
+	
+//-->
+</script>
+
+</head>
+
+<body onload="preload();">
+<div id="wrapAll">
+	<!-- [s] topArea-->
+	<div id="topArea">
+		<div class="top"><img src="/static/images/software/app/cont_top.gif" alt="안드로이안 어플리케이션 설치 메뉴얼" usemap="#Map01"/></div>
+	</div>
+	<!-- [e] topArea-->
+	<div id="wrapper">
+
+<!-- [s] ContArea //-->
+			<div class="contBox">
+
+				<div class="step01 ">
+					<div id="btnPrev">
+					&nbsp;
+					</div>
+						<p class="img01"><img src="/static/images/software/app/step_01_img.jpg" id="bg" name="imgsrc" oncontextmenu="return false;" style="filter: blendTrans(duration=1)" alt=""/></p>
+					<div id="btnNext">
+						<p class="btnRight"><img src="/static/images/software/app/btn_right.gif" id="imgNext" onclick="nextImage()"  alt="다음"/></p>
+					</div>
+					
+					<div class="paging">
+						<a href="#" onclick="goImage(1);"><img src="/static/images/software/app/paging_circle_.gif" id="appStep01" alt="step01" /></a>
+						<a href="#" onclick="goImage(2);"><img src="/static/images/software/app/paging_circle.gif" id="appStep02" alt="step02" /></a>
+						<a href="#" onclick="goImage(3);"><img src="/static/images/software/app/paging_circle.gif" id="appStep03" alt="step03" /></a>
+						<a href="#" onclick="goImage(4);"><img src="/static/images/software/app/paging_circle.gif" id="appStep04" alt="step04" /></a>
+						<a href="#" onclick="goImage(5);"><img src="/static/images/software/app/paging_circle.gif" id="appStep05" alt="step05" /></a>
+					</div>
+				</div>
+
+			</div>
+<!-- [e] ContArea //-->
+	</div>
+
+</div>
+<map name="Map01">
+	<area shape="rect" coords="590,11,604,26" href="javascript:self.close();" alt="닫기" />
+</map>
+</body>
+</html>

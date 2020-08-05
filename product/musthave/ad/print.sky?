@@ -1,0 +1,300 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script>var dispNum="01050102"; var firstDepth ="01";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script type="text/javascript" src="/static/js/requester.js"></script>
+<script type="text/javascript" src="/static/js/schedule.js"></script>
+
+<script language="javascript">
+	
+	var imgUrl = "http://file.isky.co.kr/upload/gallary/print/";
+	var downloadServerUrl = "http://file.isky.co.kr/uploadCode/download.asp";
+	var folder = "gallary/print/";
+	var selectedIndex = -1;
+
+	var intPrintSeq = new Array();
+	var strTitle = new Array();
+	var strFileName = new Array();
+	var strImgName = new Array();
+	var strThumImgName = new Array();
+	
+	
+		intPrintSeq[0] = '4KwtM00qSAw~Rdgoei7jxdQ~';
+		strTitle[0] = ' <span class=nick>WHOOO</span> IM-S410';
+		strFileName[0] = 'IM-S410(K)_M.jpg';
+		strImgName[0] = 'IM-S410(K)_M.jpg';
+		strThumImgName[0] = 'IM-S410.jpg';
+	
+		intPrintSeq[1] = 'yNpk9C9J_5U~aWjDhomia4s~';
+		strTitle[1] = ' <span class=nick>터치패드</span> IM-S400L';
+		strFileName[1] = 'IM-S400L_M.jpg';
+		strImgName[1] = 'IM-S400L_M.jpg';
+		strThumImgName[1] = 'IM-S400L.jpg';
+	
+		intPrintSeq[2] = 'YtNhprr6ios~APZltV6ggBs~';
+		strTitle[2] = ' <span class=nick>큐피드</span> IM-S390';
+		strFileName[2] = 'IM-S390_print(2).jpg';
+		strImgName[2] = 'IM-S390_print(2).jpg';
+		strThumImgName[2] = 'IM-S390.jpg';
+	
+		intPrintSeq[3] = 'oDlYOg3FrE4~yt4mO4I0Dqw~';
+		strTitle[3] = ' <span class=nick>SKY Presto</span> IM-U310';
+		strFileName[3] = 'IM-U310_print.jpg';
+		strImgName[3] = 'IM-U310_print.jpg';
+		strThumImgName[3] = 'IM-U310.jpg';
+	
+
+	schedule("window", initialize);
+	
+	function initialize(){
+
+		
+			Show_Print(0);
+		
+		
+	}
+	
+	function Show_Print(i){
+
+		selectedIndex = i;
+		
+		var divId = $('adPrintF');
+
+		var outhtml = "";
+
+		outhtml += "<ul>";
+		outhtml += "<li class='title'><img src='/static/images/product/ad_txt_01.gif' border='0' alt='모델명' title='모델명' /> " + strTitle[i] + " </li>";
+		outhtml += "<li class='photo'><div class='gradientBox794'>";
+		outhtml += "<div class='rt79'><img src='/static/images/common/gradient/79_rt.gif' /></div><div class='lb79'><img src='/static/images/common/gradient/79_lb.gif' /></div>";
+		outhtml += "<div class='imgBox369'><img src='" + imgUrl + strImgName[i] + "' width='369' height='534' class='thumb' /></div>";
+		outhtml += "</div></li>";
+		outhtml += "<li class='btn'><a href=\"javascript:go_Log('"+ intPrintSeq[i] +"');\"><img src='/static/images/common/btn/2_download.gif' border='0' alt='다운로드' title='다운로드' /></a></li>";
+		outhtml += "</ul>";
+
+		divId.innerHTML = outhtml;
+
+		selThumb(i);
+	}
+
+	function go_Log(intPrintSeq){
+
+		Download();
+
+		$('dataProcess').src = "/product/musthave/ad/print_down_hit.sky?intSeq=" + intPrintSeq;
+		
+
+	}
+
+	function Download() {
+		if(selectedIndex < 0){
+			alert("인덱스 정보가 존재하지 않습니다.");
+			return;
+		}
+		
+		var filename = strFileName[selectedIndex];		
+
+		if(filename == ""){
+			alert("다운받고자 하는 파일이 없습니다.");
+			return;
+		}else{
+
+			//document.getElementById('filedownload').src = downloadServerUrl + "?filename=" + filename + '&folder=' + folder;
+			
+			var url = downloadServerUrl + "?filename=" + filename + '&folder=' + folder;
+
+			DownloadWin(url);
+		}
+	}
+
+	function DownloadWin(url){
+		
+		var height = screen.height;
+		var width = screen.width;
+		var leftpos = width / 2 - 150;
+		var toppos = height / 2 - 100;
+		
+		var win = window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+				
+	}
+
+	function goList(targetPage, targetGroup) {
+
+		var obj = $('printPage');
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/product/musthave/ad/print.sky";
+		obj.submit();
+	}
+
+	function selThumb(slideNum){
+
+		for( var i=0; i < intPrintSeq.length; i++ ){
+			
+			if(i == slideNum){
+				document.getElementById("adPrintList_" + i).className = "adPrintList_layer_on";
+			}else{
+				document.getElementById("adPrintList_" + i).className = "";
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+<form name="printPage" id="printPage">
+	<input type="hidden" name="targetPage">
+	<input type="hidden" name="targetGroup">
+	<input type="hidden" name="dispNum" value="">
+</form>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=01050102&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product.swf?PageCode=01050102','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=01050102','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_ad.gif" border="0" alt="광고갤러리" title="광고갤러리" /></li
+				><li class="last"><img src="/static/images/product/ptitle_print.gif" border="0" alt="인쇄광고" title="인쇄광고" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<!-- [s] 광고갤러리프레임 -->
+			<div id="adFrame">
+				<div class="adFrameBlankTop"></div>
+
+				<div id="adPrintF"></div>
+				<div id="adListF">
+					<ul
+						><li><div class="gradientBox795">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox106"><div onClick="Show_Print('0');" style="cursor:pointer;"><div style="position:absolute;" id="adPrintList_0" class="adPrintList_layer_on"><img src="http://file.isky.co.kr/upload/gallary/print/IM-S410.jpg" border=0 width="84" height="79" class="thumb" />
+							</div></div></div></div><div class="desc"> <div class=nick>WHOOO</div><div class=model>IM-S410</div></div></li
+						><li><div class="gradientBox795">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox106"><div onClick="Show_Print('1');" style="cursor:pointer;"><div style="position:absolute;" id="adPrintList_1" class=""><img src="http://file.isky.co.kr/upload/gallary/print/IM-S400L.jpg" border=0 width="84" height="79" class="thumb" />
+							</div></div></div></div><div class="desc"> <div class=nick>터치패드</div><div class=model>IM-S400L</div></div></li
+						><li><div class="gradientBox795">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox106"><div onClick="Show_Print('2');" style="cursor:pointer;"><div style="position:absolute;" id="adPrintList_2" class=""><img src="http://file.isky.co.kr/upload/gallary/print/IM-S390.jpg" border=0 width="84" height="79" class="thumb" />
+							</div></div></div></div><div class="desc"> <div class=nick>큐피드</div><div class=model>IM-S390</div></div></li
+						><li><div class="gradientBox795">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox106"><div onClick="Show_Print('3');" style="cursor:pointer;"><div style="position:absolute;" id="adPrintList_3" class=""><img src="http://file.isky.co.kr/upload/gallary/print/IM-U310.jpg" border=0 width="84" height="79" class="thumb" />
+							</div></div></div></div><div class="desc"> <div class=nick>SKY Presto</div><div class=model>IM-U310</div></div></li
+						></ul>
+					<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('6','3')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+					
+				</div>
+
+				<div class="adFrameBlankBottom"></div>
+			</div>
+			<!-- [e] 광고갤러리프레임 -->
+ 
+		</div>
+	</div>
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+</div>
+<iframe id="dataProcess" name="dataProcess" width="0" height="0" class="filedownifrm"></iframe>
+<iframe id="filedownload" name="filedownload" width="0" height="0" class="filedownifrm"></iframe>
+</body>
+</html>

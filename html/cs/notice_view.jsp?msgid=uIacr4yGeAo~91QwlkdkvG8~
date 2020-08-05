@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/notice_view.jsp">
+
+	<input type="hidden" name="msgid" value="uIacr4yGeAo~91QwlkdkvG8~">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script language="javascript">
+<!--
+	function goList(form){
+		form.action = "notice.jsp";
+		form.submit();
+	}
+
+	function go_Pre(form,idx)
+	{
+		form.msgid.value = idx;
+		form.target = "_self";
+		form.action = "notice_view.jsp";
+		form.submit();
+	}
+/-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,6);var gocn=4;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('4_6')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/cs/notice_img01.gif" width="570" height="73"></div>
+
+<form name="iForm" method="post">
+	<input type="hidden" name="msgid" value="">
+	<input type="hidden" name="page" value="1">
+</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list02 m_t20">
+					<col width="79" align="center" class="l18 p_t2"/>
+					<col width="404" class="p_l10 l18 p_t2"/>
+					<col width="80" class="l18 p_t2"/>
+					<tr height="26">
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<td class="light b">설 연휴 동안의 온라인 상담 운영 </td>
+						<td class="light">2007/02/20</td>
+					</tr>
+					<tr height="1" class="dot"><td colspan="3"></td></tr>
+					<tr height="25">
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_attach.gif"></th>
+						<td class="light p_t3" colspan="2"></td>
+					</tr>
+					</table>
+
+					<div class="view">
+						<HTML><HEAD></HEAD>
+<BODY style="FONT-SIZE: 9pt; MARGIN: 5px; LINE-HEIGHT: 14pt; FONT-FAMILY: 굴림; BACKGROUND-COLOR: #ffffff">
+<DIV>SKY에 대한 고객님들의 관심과 애정에 항상 감사 드립니다.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>설 연휴 기간 (2월17일~2월19일) 중 온라인 상담이 운영되지 않습니다.</STRONG></DIV>
+<DIV><STRONG></STRONG>&nbsp;</DIV>
+<DIV>고객님들께서 문의하신 내용에 대하여 연휴기간 동안의 접수 증가로<BR>답변이 다소 지연될 수 있으니 양해 부탁 드리며, </DIV>
+<DIV>연휴기간 이후 신속한 답변을 드리도록 하겠습니다.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>새해 복 많이 받으시길 바라며, 소원하시는 모든 일이<BR>성취되는 한 해가 되시길 기원합니다. <BR></DIV></BODY></HTML>
+					</div>
+
+					<!-- 이전글/다음글 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="72" class="p_t3">
+					<col class="p_t3 p_l10">
+					<tr class="line"><td colspan="2"></td></tr>
+					<tr height="25">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_prev.gif"></th>
+						<td>
+이전글이 없습니다.
+
+						</td>
+					</tr>
+					<tr class="line"><td colspan="2"></td></tr>
+					<tr height="25">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_next.gif"></th>
+						<td>
+<a href="javascript:go_Pre(iForm,'YzVl0SxPO4A~ClQViHQ8c50~');">IM-U160K 최신 S/W 버전(1.29) 공지</a>
+
+						</td>
+					</tr>
+					<tr height="3" class="line"><td colspan="2"></td></tr>
+					</table>
+					<!--// 이전글/다음글 -->
+
+					<div class="btn2">
+						<div class="R"><a href="javascript:goList(iForm);"><img src="http://www.isky.co.kr/source/img/bbs/btn1_list.gif" height="23"></a></div>
+					</div>
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="javascript:link(4,1)"><img src="http://www.isky.co.kr/source/img/global/right_cs_selfupgrade.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,4)"><img src="http://www.isky.co.kr/source/img/global/right_cs_cscenter.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,5)"><img src="http://www.isky.co.kr/source/img/global/right_cs_diagnosis.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

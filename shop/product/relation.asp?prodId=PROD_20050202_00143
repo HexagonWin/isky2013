@@ -1,0 +1,71 @@
+
+
+
+<html>
+<head>
+	<title>It's different, SKY</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+	<link rel="stylesheet" href="http://file.isky.co.kr/css/shop/zzanggu.css">
+	<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu.js"></SCRIPT>
+	<!--<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>-->
+
+<script language="javascript">
+<!--
+	function gopage(flag){
+		var frm = document.relation_list;
+		newpage=0;
+		cpage=0;
+		stotpage=0;
+		
+		stotpage = frm.stotpage.value;
+		cpage = frm.page.value;
+		
+		if (stotpage <= 1){
+
+		}else{
+			if (flag == 1) {
+				newpage = parseInt(cpage) - 1;
+				if (newpage <= 0) {
+					return;
+				}
+			}else if (flag == 2){
+				newpage = parseInt(cpage) + 1;
+				if (newpage > stotpage) {
+					return;
+				}
+			}
+			frm.page.value = newpage;
+			frm.submit();
+		}
+	}
+//-->
+</script>
+</head>
+<body  marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" rightmargin="0">
+<form name="relation_list" method="post" action="relation.asp">
+<input type="hidden" name="page" value="1">
+<input type="hidden" name="prodId" value="PROD_20050202_00143">
+
+<table border="0" cellspacing="0" cellpadding="0" width="283">
+
+<input type="hidden" name="stotpage" value="1">
+
+<tr>
+	<td><a href="javascript:gopage('1');"><img src="http://file.isky.co.kr/images/shop/common/arrowLeft.gif"></a></td>
+
+	<td width="25%" align="center" class="gray" style="letter-spacing:-1;"><img src="http://file.isky.co.kr/ATT01/2005/PRD/274/info_pic_IM8100_s[20050214150413].jpg" align="absmiddle" vspace="5" width="50" height="50"><br>IM-8100</td>
+
+	<td width="25%" align="center" class="gray" style="letter-spacing:-1;">&nbsp;<br>&nbsp;</td>
+
+	<td width="25%" align="center" class="gray" style="letter-spacing:-1;">&nbsp;<br>&nbsp;</td>
+
+	<td width="25%" align="center" class="gray" style="letter-spacing:-1;">&nbsp;<br>&nbsp;</td>
+
+	<td><a href="javascript:gopage('2');"><img src="http://file.isky.co.kr/images/shop/common/arrowRight.gif"></a></td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

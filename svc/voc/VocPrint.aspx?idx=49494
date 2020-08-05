@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=49494" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOusuOyekOuplOyEuOyngCDsiJjsi6Am67Cc7IugIOqwr+yImDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ6riw64qlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDztmansl6ztmZg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDQ5NDk0Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA0LTA1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwzMDs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD7rrLjsnpDrqZTshLjsp4Ag7IiY7IugJmFtcFw767Cc7IugIOqwr+yImOulvCDslYzslYTrs7zsiJgg7J6I64qUIOq4sOuKpeydtCDsnojsl4jsnLzrqbQg7KKL6rKg6rWw7JqULi5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuuwnOyLoCA6ICoqKu2GtVw8L1BcPlw8QlJcPlw8UFw+7IiY7IugIDogKioq7Ya1XDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7snbTrn7Dsi53snLzroZzsmpQuLlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+64uk66W4IOygnOyhsOyCrOydmCDtlbjrk5ztj7Dsl5DripQg7J6I64qUIOuCtOyaqeyduOuNsFw7IOyKpOy5tOydtOuKlCDsl4bsnLzri4gg66y47J6Q66mU7IS47KeA66W8IOyekOyjvCDsk7DripQg7KCA66Gc7I2sIOyigCDslYTsib3sirXri4jri6QuXDwvUFw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">문자메세지 수신&발신 갯수</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">황여환</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">49494</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-05</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">30</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>문자메세지 수신&amp;발신 갯수를 알아볼수 있는 기능이 있었으면 좋겠군요..</P><BR><P>&nbsp;</P><BR><P>발신 : ***통</P><BR><P>수신 : ***통</P><BR><P>&nbsp;</P><BR><P>이런식으로요..</P><BR><P>&nbsp;</P><BR><P>다른 제조사의 핸드폰에는 있는 내용인데; 스카이는 없으니 문자메세지를 자주 쓰는 저로썬 좀 아쉽습니다.</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

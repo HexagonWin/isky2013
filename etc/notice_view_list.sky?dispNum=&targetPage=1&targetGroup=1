@@ -1,0 +1,220 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/notice_view_list.sky?targetPage=1[AND]dispNum=[AND]targetGroup=1[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/notice_view_list.sky?targetPage=1[AND]dispNum=[AND]targetGroup=1[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/notice_view_list.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120625");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="08"; var firstDepth ="08";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function goList(targetPage, targetGroup) {
+	
+		var obj = document.noticePage;
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/notice_view_list.sky";
+		obj.submit();
+	}
+
+	function Detail(intSeq){
+		
+		var targetPage = $('targetPage');
+		var targetGroup = $('targetGroup');
+
+		var url = "/etc/notice_view.sky?intSeq=" + intSeq + "&dispNum=&targetPage=1&targetGroup=1";
+		
+		parent.location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="noticePage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" value="">
+</form>
+
+<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_notice">
+<colgroup>
+	<col width="64" />
+	<col width="90" />
+	<col width="406" />
+	<col width="80" />
+	<col width="80" />
+</colgroup>
+	<tr valign="top">
+		<th>번호</th>
+		<th>분류</th>
+		<th>제목</th>
+		<th>등록일</th>
+		<th>조회수</th>
+	</tr>
+	
+	
+
+	
+	
+		<tr valign="top" class="notice">
+			<td class="notice">공지</td>
+	
+		
+		<td class="category">공통</td>
+		<td class="title"><a href="javascript:Detail('5h7wsLQRMdI~eb4lU9SNjro~')">SKY 고객님을 위한 100일 안심 서비스</a></td>
+		<td class="num">2012.06.19</td>
+		<td class="num">4182</td>
+	</tr>
+	
+	
+		<tr valign="top" class="notice">
+			<td class="notice">공지</td>
+	
+		
+		<td class="category">공통</td>
+		<td class="title"><a href="javascript:Detail('N1RVrl3gmqA~z67V63isQuU~')">2012년 7월 1일 포인트 소멸에 대한 안내</a></td>
+		<td class="num">2012.06.04</td>
+		<td class="num">658</td>
+	</tr>
+	
+	
+		<tr valign="top" class="notice">
+			<td class="notice">공지</td>
+	
+		
+		<td class="category">공통</td>
+		<td class="title"><a href="javascript:Detail('84q9ECcXFZI~t8hgnvQXLvA~')">MEDIA LIVE 서비스 오픈 안내</a></td>
+		<td class="num">2012.04.17</td>
+		<td class="num">1401</td>
+	</tr>
+	
+	
+		<tr valign="top" class="notice">
+			<td class="notice">공지</td>
+	
+		
+		<td class="category">공통</td>
+		<td class="title"><a href="javascript:Detail('dZ4lNAf0IVY~VWBOQzSng7M~')">iSKY 內 일부 서비스 종료 안내</a></td>
+		<td class="num">2012.03.29</td>
+		<td class="num">8747</td>
+	</tr>
+	
+	
+		<tr valign="top" class="notice">
+			<td class="notice">공지</td>
+	
+		
+		<td class="category">공통</td>
+		<td class="title"><a href="javascript:Detail('QESS365GjSk~6uok2OBbT78~')">CLOUD LIVE 서비스 오픈 안내</a></td>
+		<td class="num">2012.03.27</td>
+		<td class="num">1649</td>
+	</tr>
+	
+				
+</table>
+<!-- [e] List -->
+
+<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('72','8')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+
+</body>
+</html>

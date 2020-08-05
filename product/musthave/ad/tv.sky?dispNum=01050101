@@ -1,0 +1,560 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script>var dispNum="01050101"; var firstDepth ="01";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>
+	function goList(targetPage, targetGroup) {
+
+		var obj = document.tvPage;
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/product/musthave/ad/tv.sky";
+		obj.submit();
+	}
+</script>
+</head>
+
+<body>
+<form name="tvPage">
+	<input type="hidden" name="targetPage">
+	<input type="hidden" name="targetGroup">
+	<input type="hidden" name="dispNum" value="01050101">
+</form>
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=01050101&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product.swf?PageCode=01050101','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=01050101','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_ad.gif" border="0" alt="광고갤러리" title="광고갤러리" /></li
+				><li class="last"><img src="/static/images/product/ptitle_tv.gif" border="0" alt="TV CF" title="TV CF" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+ 
+			<!-- [s] List -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_TvcfList">
+				<form name="productList">
+				<input type="hidden" name="dispNum" value="01050101">
+				<input type="hidden" name="targetPage" value="1">
+				<input type="hidden" name="targetGroup" value="1">
+				<colgroup>
+					<col width="247">
+					<col width="247">
+					<col width="246">
+				</colgroup>
+				
+				
+					<tr valign="top">
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=c2zYDJMUswE~S1VvowZ2AkU~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=OUA0cu6pEPs~OQEsJnN4F00~"><img src="http://file.isky.co.kr/upload/gallary/tv/TVCF_23_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>스카이 후</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 33개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=X2gsy69fyRs~9uIxW5f1PDg~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=Edr/JskZN6c~j8TgWdaDEuU~"><img src="http://file.isky.co.kr/upload/gallary/tv/TVCF_24_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>스카이 후 (온라인)</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 53개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=2FjUDJWozAk~EFm01Ok1iEA~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=Knb4OwOou6g~piqNysTCJvY~"><img src="http://file.isky.co.kr/upload/gallary/tv/289_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>&quot;Presto&quot;편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 300개</li
+								>
+							</ul>
+						</td>
+					</tr>
+				
+					<tr valign="top">
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=TixOutR8mTw~3L4eqHRB5wM~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=9dy93GwkwuY~iOMGGQqdTmw~"><img src="http://file.isky.co.kr/upload/gallary/tv/288_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>&quot;HUSH&quot;편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 50개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=aRLWdnlG7jU~gz1oB8IjSVA~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=vcl_uCpldHQ~x9pptzMU1Ak~"><img src="http://file.isky.co.kr/upload/gallary/tv/287_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>'매직윈도우'편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 124개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=LUQeNn1OxWE~3kT4YEX_n_c~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=4XuBkw4/c/w~ExqwDAMnnT4~"><img src="http://file.isky.co.kr/upload/gallary/tv/286_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>'오므려집게'편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 185개</li
+								>
+							</ul>
+						</td>
+					
+				
+					<tr valign="top">
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=cptBey3G/gY~FUlz5De_kdw~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=oZ5v8Ivn4m8~iS8mhvng57A~"><img src="http://file.isky.co.kr/upload/gallary/tv/285_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>'보디마스크'편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 119개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=UHciyxEZ5CM~LAnMTQfz4YA~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=Gp8XYwqTFrI~Dhq_v5n7tnw~"><img src="http://file.isky.co.kr/upload/gallary/tv/270_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>'퇴근압박시계'편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 100개</li
+								>
+							</ul>
+						</td>
+					
+				
+					
+						<td>
+							<ul class="tvcfList">
+								<li>
+									<div class="gradientBox793">
+										<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div>
+										<div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+										<div class="imgBox175">
+											<div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;">
+												<div style="position:absolute;" onclick="goView('tv_view.sky?dispNum=01050101&intTvSeq=nLCjyz1M3Jg~4wppD90rGec~');"></div>
+												<a href="tv_view.sky?dispNum=01050101&intTvSeq=ygVc3JjV/wM~0_S3lwEdUUA~"><img src="http://file.isky.co.kr/upload/gallary/tv/284_L.jpg" border="0"width="121" height="90" class="thumb" /></a>
+											</div>
+										</div>
+									</div>
+								</li
+								>
+								<li class="subject">제목 : <span>'IM-S240K'편</span></li
+								>
+								<li class="rating">평가 : 
+									<span class="star">
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									<img src="/static/images/common/ico_star1.gif" border="0" />
+										
+										
+									
+									</span>
+								</li
+								><li class="comment">덧글 : 265개</li
+								>
+							</ul>
+						</td>
+					</tr>
+				
+				</form>	
+					
+
+			</table>
+			<!-- [e] List -->
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+</div>
+</body>
+</html>

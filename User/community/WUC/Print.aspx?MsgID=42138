@@ -1,0 +1,98 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+	<TITLE>:: isky.co.kr :: </TITLE>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<script language="javascript">
+				<!--
+					//프리트 실행
+					function Print()
+					{
+						window.print();
+					}
+					
+					//윈도우 화면 크기 리사이즈
+					function SelfResize()
+					{
+						var conSize = document.all.ContDiv.scrollHeight;
+
+						self.resizeTo(610 , conSize + 220);
+					}
+				
+				//-->
+		</script>
+</HEAD>
+<body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onload="javascript:SelfResize();">
+<form name="Form1" method="post" action="Print.aspx?MsgID=42138" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTcxMjk5NzU1Mzt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8SU0tNzcwMCAxLjUz7Jy866GcIOyXhe2WiOydhOuVjCDquLDquLDsnbTsg4E7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDUvMDQvMTg7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOuwleyDgeyasDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8SU0tNzcwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KCc7ZKI7IKs7Jqp6riwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxcPFBcPjEuNTDsl5DshJzripQg64GE65ah7JeG642YIOuFgOyEneydtCAxLjUz7JeF7J2EIO2VtOyjvOuLiCDqsIDrgZTslKnsnbTsp4Drp4wg7KeA7Zi87J6QIOyVoeygleydtCDsvJzsp4Dqs6BcPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD7rgpjspJHsl5DripQg7ZmU66m07J20IO2VmOyWgOyDieycvOuhnCDrs4DtlZjrjZTri4gg64uk7IucJm5ic3BcOyDqurzsp5Hri4jri6QuLV8tXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7JeF6re4656Y7J2065OcIO2VtOuztOyLoCDri6Trpbgg67aE65Ok7J2AIOyWtOuWoOyLoOyngD9cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD7rgrTsnbwgQVPshLzthLAg6rCA67O066Ck6rOgIO2VmOuKlOuNsCDspp3qsbDrpbwg64Ko6riw6riwIOychO2VtOyEnCDrlJTsubQg64+Z7JiB7IOB7Jy866GcIOy0rOyYge2VmOqzoCDsnojsirXri4jri6QuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7JeF6re4656Y7J2065OcIO2VmOq4sOyghOyXkCDqt7jrgqAgQVPshLzthLDsl5DshJwg7KCQ6rKA6rmM7KeAIOuwm+qzoCDsnbTsg4Hsl4bri6Tqs6Ag7ZaI64qU642wXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7JWE66y066asIOyDneqwge2VtOuPhCDquLDquLDsnbTsg4Hrs7Tri6TripQg7Y6M7JeQIOuyhOq3uCDqsJnsnYAg7IOd6rCB7J20IOyekOq+uOunjCDrk5zrhKTsmpQuXDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+7JWE66y07J207IOB7JeG64uk6rOgIO2VmOuptCAxLjUw7Jy866GcIOuLpOyatOq3uOuemOydtOuTnOulvCDtlbTri6zrnbzqs6Ag7ZWgIOyDneqwgeydtOuejeuLiOuLpC5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+
+<!-- width:600 -->
+<center>
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="BORDER-RIGHT:#e7d2d2 1px solid; BORDER-TOP:#e7d2d2 1px solid; BORDER-LEFT:#e7d2d2 1px solid; BORDER-BOTTOM:#e7d2d2 1px solid; BACKGROUND-COLOR:#f5f0f1">
+<tr>
+	<td width="80%" style="PADDING-RIGHT:0px; PADDING-LEFT:12px; PADDING-BOTTOM:0px; PADDING-TOP:2px"><span class="brown_search">
+		<b><span id="lblTitle">IM-7700 1.53으로 업했을때 기기이상</span></b></span>
+	</td>
+	<td width="20%" align=right style="PADDING-RIGHT:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+<table width="580" height=26 cellpadding="0" cellspacing="0">
+  <tr height=3>
+    <td></td>
+  </tr>
+  <tr>
+    <td><div align="right">작성일 :
+          <span id="lblRegDate">2005/04/18</span>        
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;작성자 :
+          <span id="lblName">박상우</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;모델명 : 
+          <span id="lblHPModel">IM-7700</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;출처 :
+          <span id="lblBbsName">제품사용기</span>
+    </div></td>
+    </tr>
+  <tr height=1>
+    <td background="http://file.isky.co.kr/images/user/community/popup_line_bg.gif"><FONT face="굴림"></FONT></td>
+  </tr>
+</table>
+<table width="580" cellpadding="0" cellspacing="0">
+<Tr>
+	<td style="PADDING-RIGHT:10px; PADDING-LEFT:10px; PADDING-BOTTOM:30px; PADDING-TOP:20px">
+	<div id="ContDiv">
+	<span id="lblContent"><P>1.50에서는 끄떡없던 녀석이 1.53업을 해주니 가끔씩이지만 지혼자 액정이 켜지고</P>
+<P>&nbsp;</P>
+<P>나중에는 화면이 하얀색으로 변하더니 다시&nbsp; 꺼집니다.-_-</P>
+<P>&nbsp;</P>
+<P>업그래이드 해보신 다른 분들은 어떠신지?</P>
+<P>&nbsp;</P>
+<P>내일 AS센터 가보려고 하는데 증거를 남기기 위해서 디카 동영상으로 촬영하고 있습니다.</P>
+<P>&nbsp;</P>
+<P>업그래이드 하기전에 그날 AS센터에서 점검까지 받고 이상없다고 했는데</P>
+<P>&nbsp;</P>
+<P>아무리 생각해도 기기이상보다는 펌에 버그 같은 생각이 자꾸만 드네요.</P>
+<P>&nbsp;</P>
+<P>아무이상없다고 하면 1.50으로 다운그래이드를 해달라고 할 생각이랍니다.</P>
+<P>&nbsp;</P>
+<P>&nbsp;</P></span>
+	</div>
+	</td>
+</Tr>
+
+<tr height=1 bgcolor="#e1e1e1"><td></td></tr>
+<tr height=15><td></td></tr>
+
+<tr><td align=center><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+</table>
+</center>
+</form>
+</BODY>
+</HTML>

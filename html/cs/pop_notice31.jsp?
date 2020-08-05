@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/pop_notice31.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/popup.css">
+<script language="JavaScript">
+    // 쿠키 할당
+    function setCookie( name, value, expiredays ) {
+		var todayDate = new Date();
+		todayDate.setDate( todayDate.getDate() + expiredays );
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+    }
+
+    function popup_closeWin()  { 
+	setCookie( "popup20071218", "done" , 1); //하룻동안 열지 않음
+	self.close(); 
+    }
+
+/*
+function detail_go() {
+
+	opener.location.href = "http://www.isky.co.kr/html/cs/notice_view.jsp?msgid=mfGk35s1O/g~It_6Ndl7eXc~";
+	self.close(); 
+	}
+*/
+</script>
+
+
+</head>
+<body topmargin="0" leftmargin="0">
+<!-- 팝업 사이즈 401 * 355 -->
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr valign="top"><td><img src="http://www.isky.co.kr/source/img/global/popup/pop_notice_20071218.jpg" border="0" usemap="#closeMap"></td></tr>
+</table>
+<map name="closeMap">
+	<area shape="rect" coords="19,337,101,349" href="javascript:popup_closeWin();">
+	<area shape="rect" coords="336,336,390,348" href="javascript:self.close();">
+</map>
+</body>
+</html>

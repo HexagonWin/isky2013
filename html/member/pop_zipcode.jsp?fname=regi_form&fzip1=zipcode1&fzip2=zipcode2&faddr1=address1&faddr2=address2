@@ -1,0 +1,119 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/member/pop_zipcode.jsp">
+
+	<input type="hidden" name="fname" value="regi_form">
+
+	<input type="hidden" name="faddr2" value="address2">
+
+	<input type="hidden" name="fzip2" value="zipcode2">
+
+	<input type="hidden" name="faddr1" value="address1">
+
+	<input type="hidden" name="fzip1" value="zipcode1">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/s_popup.css">
+<script language="javascript">
+	function searchzip(objform){
+		if(isBlank(objform.code_search, "동(읍,리)를 입력해 주세요!", "Y")) return;
+		objform.submit();
+	}
+
+	function go_data(str_zipcode,str_addr){
+		var str = str_zipcode.split('-');
+		opener.regi_form.zipcode1.value = str[0];
+		opener.regi_form.zipcode2.value = str[1];
+		opener.regi_form.address1.value = str_addr;
+		opener.regi_form.address2.focus();
+		window.close();
+	}
+</script>
+</head>
+<body>
+<!-- 팝업 사이즈 400 * 375 -->
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top" height="100%"><td style="padding:13 11">
+<!-- 팝업 내용 //-->
+	<div class="tit5"><!-- 팝업 타이틀 //--><img src="https://www.isky.co.kr/source/img/global/popup/t_zipcode.gif"></div>
+
+	<div style="margin:25 0 0 13">
+		<div><img src="https://www.isky.co.kr/source/img/global/popup/boxt.gif" width="353" height="10"></div>
+		<div class="boxm" style="padding:4 14">
+
+			<!-- 우편번호 찾기 //-->
+			<div><img src="https://www.isky.co.kr/source/img/global/popup/zipcode_txt01.gif"></div>
+			<form name="search_zipcode" method="post">
+			<div class="m_t10 p_t10 aC" style="background:url(https://www.isky.co.kr/source/img/global/popup/zipcode_bg.gif) no-repeat;width:323;height:39;">
+				<input type="text" name="code_search" style="width:200">
+				<a href="javascript:searchzip(search_zipcode);"><img src="https://www.isky.co.kr/source/img/bbs/b5_search.gif" height="17" align="absmiddle"></a>
+			</div>
+			<input type="hidden" name="fname" value="regi_form">
+			<input type="hidden" name="fzip1" value="zipcode1">
+			<input type="hidden" name="fzip2" value="zipcode2">
+			</form>
+
+			<div class="m_t10"><img src="https://www.isky.co.kr/source/img/global/popup/zipcode_txt02.gif"></div>
+			<!--// 우편번호 찾기 -->
+
+			<!-- 우편번호 검색 결과 //-->
+			<div style="width:325;height:115;overflow:auto;" class="scr m_t10">
+				<table width="309" border="0" cellpadding="0" cellspacing="0" class="list04">
+				<col width="80" align="center" class="p_t3">
+				<col width="229" class="p_l10 p_t3">
+				<tr class="line"><td colspan="2"></td></tr>
+				<tr height="22">
+					<th class="bar"><img src="https://www.isky.co.kr/source/img/bbs/th_zipcode.gif"></th>
+					<th><img src="https://www.isky.co.kr/source/img/bbs/th_address.gif"></th>
+				</tr>
+				<!-- 반복 //-->
+
+				<!--// 반복 -->
+				<tr class="dot"><td colspan="2"></td></tr>
+				<tr height="25" class="light">
+					<td colspan="2">동(읍,리)를 입력해주세요</td>
+				</tr>
+
+				</table>
+			</div>
+			<!--// 우편번호 검색 결과 -->
+
+		</div>
+		<div><img src="https://www.isky.co.kr/source/img/global/popup/boxb.gif" width="353" height="10"></div>
+
+	</div>
+<!--// 팝업 내용 -->
+</td></tr>
+<tr height="23"><td class="btm" align="right"><a href="javascript:this.close();"><img src="https://www.isky.co.kr/source/img/global/popup/close.gif"></a></td></tr>
+</table>
+</body>
+</html>

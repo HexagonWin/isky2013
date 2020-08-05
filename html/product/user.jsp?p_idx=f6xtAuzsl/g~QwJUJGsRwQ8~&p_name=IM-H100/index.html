@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/product/user.jsp">
+
+	<input type="hidden" name="p_idx" value="f6xtAuzsl/g~QwJUJGsRwQ8~">
+
+	<input type="hidden" name="p_name" value="IM-H100">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<script>
+	function log_insert(form) {
+		form.target = "inner_recom_log";
+		form.action = "/common/include_log.jsp";
+		form.submit();
+	}
+
+	function fdown(form,d_name,down_dr,d_type,idx,m_name,gubun,userid){
+		if(confirm("로그인 후 다운로드를 받을 수 있습니다.\n로그인 하시겠습니까?")){
+			goLogin();
+		}
+	}
+
+
+	function fdown_img(attchfile,d_name,idx)
+    {
+		download(attchfile,d_name);
+	}
+</script>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script language="javascript" src="/inc/js/common_web.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/product.css">
+<script type="text/javascript">
+<!-- 
+function sar_open(p_url) {
+	window.open(p_url,"","height=700,width=620,marginwidth=0, tmarginheight=0, toolbar=no,menubar=no,scrollbars=yes,status=no");
+}
+-->
+</script>
+</head>
+<body onload="log_insert(logForm);">
+<iframe name="inner_recom_log" method="post" width=0 height=0></iframe>
+<form name="logForm" method="post">
+	<input type="hidden" name="log_gubun" value="PT07">
+	<input type="hidden" name="log_p_name" value="IM-H100">
+	<input type="hidden" name="log_p_idx" value="u7C4jiiHpc4~Hxryc_iCC94~">
+	<input type="hidden" name="log_s_value" value="User">
+	<input type="hidden" name="log_tname" value="ISKY_P_PRODUCT">
+</form>
+<form name="logForm2" method="post">
+	<input type="hidden" name="log_tname" value="ISKY_P_PRODUCT">
+</form>
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td style="backgruond:url(http://www.isky.co.kr/source/img/product/blank.gif) no-repeat;height:715px;">
+	<script type="text/javascript">Flash('FunctionFla','/html/flash/user.swf?p_idx=9BOnjghqQ50~11X8pOKChw8~&hn=4','100%','100%','#000000','transparent')</script>
+	</td>
+</tr>
+</table>
+</body>
+</html>

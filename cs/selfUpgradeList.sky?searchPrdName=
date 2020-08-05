@@ -1,0 +1,474 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script language="JavaScript" src="/static/js/sw/sw.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+</head>
+<body>
+<script language="javascript">
+	// 로그인 여부
+	var loginCheck = "";
+	var userId = "";
+	var dn_url = "http://file.isky.co.kr/uploadCode/download.asp";
+	var global_d = "http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp";
+	var userHp = "";
+
+	var LogTotal = "20";
+	
+
+	//alert(LogTotal);
+
+	/**
+	 * 리스트 검색후 화면 Refresh
+	 */
+	function goFrameList(telecom,series,model,seriesCode, modelCode){
+		var obj = document.searchListForm;
+
+
+		if(telecom!=""){
+			obj.strTeleComName.value = telecom;
+		}
+		if(series!=""){
+			obj.strSeriesName.value = series;
+			obj.intSeriesSeq.value = seriesCode;
+		}
+		if(model!=""){
+			obj.strPrdName.value = model;
+			obj.intPrdSeq.value = modelCode;
+		}
+
+		document.searchListForm.submit();
+	}
+
+	function goFrameListPrd(searchPrdName){
+		var obj = document.searchListForm;
+
+			obj.strTelecomName.value = '';
+			obj.strPrdName.value = '';
+			obj.intPrdSeq.value = '';
+			obj.keyword.value = searchPrdName;
+
+			document.searchListForm.submit();
+	}
+
+	/**
+	 * 페이징
+	 */
+	 function goList(targetPage, targetGroup){
+		var obj = document.searchListForm;
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+
+		obj.submit();
+	}
+
+
+	function goDown(url,fileName,modelName,intSeq,strSwVer, type){
+		// 로그인 상태 일시 바로 다운 로드
+		
+		var dn_path = dn_url+"?folder="+url+"&filename="+fileName;
+
+		if(loginCheck=='true'){
+			var nameLen = fileName.length;
+			if(type == '20006' && (nameLen < 0 || fileName.substring(nameLen - 3, nameLen) != 'zip')) {
+				
+				if(LogTotal >= maxConnect){
+				
+					downError();
+				
+				}else{
+				
+					window.open(global_d+"?userid="+userId+"&hpno="+userHp, '',"width=720,height=480,toolbar=no,status=no,scrollbars=no");
+					saveSelfDownloadLogMember(userId,modelName);
+					return false;
+				}
+
+			}else{
+				DownloadWin(dn_path);
+				//filedownload.location.href = dn_path;
+				//다운로드 로그 저장
+				//saveUsbDownloadLogMember(userId,intSeq);
+				fileLog.location.href = "/cs/saveUsbDownloadLog.sky?strUserId="+userId+"&intSwSeq="+intSeq;
+			}
+		}else{
+			softFileDown(url,fileName,modelName,intSeq,strSwVer, type);
+		}
+		
+	}
+
+
+	function DownloadWin(url){
+			
+			var height = screen.height;
+			var width = screen.width;
+			var leftpos = width / 2 - 150;
+			var toppos = height / 2 - 100;
+			
+			window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+					
+	}
+</script>
+
+	<form name="searchListForm">
+		<input type="hidden" name="strTelecomCode" value=""/>
+		<input type="hidden" name="intPrdSeq" value="0"/>
+		<input type="hidden" name="keyword" value=""/>
+		<input type="hidden" name="targetPage" value="1"/>
+		<input type="hidden" name="targetGroup" value="1"/>
+		<input type="hidden" name="strTelecomName" value=""/>
+		<input type="hidden" name="strPrdName" value=""/>
+
+	</form>
+	<form name="fileDownload" method="post">
+		<input type="hidden" name="strUserId"/>
+		<input type="hidden" name="strUserHpNo"/>
+		<input type="hidden" name="strModelName"/>
+		<input type="hidden" name="strFwVer"/>
+		<input type="hidden" name="strSerialNo"/>
+		<input type="hidden" name="strGuestIp"/>
+		<input type="hidden" name="usbDownloadUrl"/>
+	</form>
+<div class="selfupgrade_cont01">
+		<h5>
+			
+				<img src="/static/images/cs/selfupgrade_tit_03.gif" alt="최신 셀프업그레이드" title="최신 셀프업그레이드" />
+			
+			</h5>
+		<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_selfUpgrade">
+			<colgroup>
+				<col width="219"></col>
+				<col width="270"></col>
+				<col width="249"></col>
+			</colgroup>
+				<tr valign="top">
+					<th>모델명</th>
+					<th>셀프업그레이드 버전</th>
+					<th class="nl">USB드라이버 버전</th>
+				</tr>
+				
+				
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							
+							<img src="/static/images/cs/ico_lgt.gif" alt="lgt" title="lgt" />
+							
+						</span>
+						<span class="nick">터치패드</span> IM-S400L</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-S400L','3404','1.37','20006','');return false;">
+						셀프업그레이드 1.37
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','PSKY_V3020530519_whqled.zip','IM-S400L','2999','3.0','USB')">
+							USB드라이버 3.0
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">Crystal</span> IM-S500K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-S500K','3379','1.51b','20006','');return false;">
+						셀프업그레이드 1.51
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','USBDriver_v30_S500K.zip','IM-S500K','3278','3.0','USB')">
+							USB드라이버 3.0 
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">WHOOO</span> IM-S410K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-S410K','3378','1.56','20006','');return false;">
+						셀프업그레이드 1.56
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','PSKY_V3020530519_whqled.zip','IM-S410K','2999','3.0','USB')">
+							USB드라이버 3.0
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">M</span> IM-S330K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-S330K','3377','1.40','20006','');return false;">
+						셀프업그레이드 1.40
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','USBDriver_v30[2].zip','IM-S330K','3062','3.0','USB')">
+							USB드라이버 3.0
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">SKY Hommage </span> IM-U440K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-U440K','3375','1.75','20006','');return false;">
+						셀프업그레이드 1.75
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','U440K_USBDriver_v30_new.zip','IM-U440K','3016','3.0 (new)','USB')">
+							USB드라이버 3.0
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							<img src="/static/images/cs/ico_skt.gif" alt="skt" title="skt" />
+							
+							
+							
+						</span>
+						<span class="nick">S.T.Dupont</span> IM-U510LE</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-U510LE','3331','1.23','20006','');return false;">
+						셀프업그레이드 1.23
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','UniUSBDriver_v2290[1].zip','IM-U510LE','3194','2.2.9.0','USB')">
+							USB 드라이버 2.29
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							<img src="/static/images/cs/ico_skt.gif" alt="skt" title="skt" />
+							
+							
+							
+						</span>
+						<span class="nick">IM-U510S</span> IM-U510S</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-U510S','3330','1.43','20006','');return false;">
+						셀프업그레이드 1.43
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','UniUSBDriver_v2290.zip','IM-U510S','3175','2.29','USB')">
+							USB드라이버 2.29
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							<img src="/static/images/cs/ico_skt.gif" alt="skt" title="skt" />
+							
+							
+							
+						</span>
+						<span class="nick">TILT</span> IM-S480S</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-S480S','3319','1.36','20006','');return false;">
+						셀프업그레이드 1.36
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','UniUSBDriver_v2_1.zip','IM-S480S','2997','2.1','USB')">
+							USB드라이버 2.1
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">붐붐</span> IM-U160K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-U160K','3317','1.36','20006','');return false;">
+						셀프업그레이드 1.36
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','SKY_USB_v438[1].zip','IM-U160K','2961','4.38','USB')">
+							USB드라이버 4.38
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				<tr align="center" valign="top">
+					<td class="model" align="left">
+						<span class="com">
+							
+							
+							<img src="/static/images/cs/ico_ktf.gif" alt="kt" title="kt" />
+							
+							
+						</span>
+						<span class="nick">SEXY BACK</span> IM-U530K</td>
+					<td>
+						
+						
+						<a href="#" onclick="goDown('http://dmfile.isky.co.kr/self_upgrade/real/Step1.asp','','IM-U530K','3316','1.41a','20006','');return false;">
+						셀프업그레이드 1.41
+						</a>
+						
+						
+					</td>
+					<td class="nl">
+						
+						<a href="javascript:;" onclick="goDown('software/USB','USBDriver_v30_U530K.zip','IM-U530K','3279','3.0','USB')">
+							USB드라이버 3.0
+						</a>
+						
+						
+					</td>
+				</tr>
+				
+				
+			</table>
+
+			
+			<div class="paging">
+				<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			</div>
+			
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+<iframe id="fileLog" name="fileLog" width="0" height="0"></iframe>
+</body>
+</html>

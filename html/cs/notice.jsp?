@@ -1,0 +1,239 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/notice.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script language="javascript">
+<!--
+	function goView(form, idx)
+	{
+		form.action = "notice_view.jsp";
+		form.msgid.value = idx;
+		form.submit();
+	}
+//-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,6);</script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('4_6')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/cs/notice_img01.gif" width="570" height="73"></div>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="1">
+	<input type="hidden" name="msgid" value="">
+</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04 m_t20">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_date.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+					<!-- 반복 * 10 , 마지막 라인은 class="dot" 제외 //-->
+
+				<tr height="26" class="dot">
+					<td><b>Notice</b></td>
+					<td>
+
+						<a href="javascript:goView(iForm, 'CJZnkDQKI/8~oJm8pEZicLg~')"><b>MUST HAVE_  이모티콘 및 공개사진 오픈</b></a>
+					</td>
+					<td>2006/11/20</td>
+					<td>1311</td>
+				</tr>
+
+				<tr height="26" class="dot">
+					<td><b>Notice</b></td>
+					<td>
+
+						<a href="javascript:goView(iForm, '9XRtkJS_Q7o~2IbbfIB3MwM~')"><b>로그인/ 로그아웃 관련 안내</b></a>
+					</td>
+					<td>2006/10/16</td>
+					<td>488976</td>
+				</tr>
+	
+					<tr height="26" class="dot">
+						<td>90</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'LthbkHOh4Yg~O6GLCa8CdsQ~')">IM-R100 최신 S/W 버전(1.17) 공지</a>
+						</td>
+						<td>2007/01/18</td>
+						<td>977</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>89</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'oZ44kDNnHSY~fL/mkFgxcrU~')">IM-U160 최신 S/W 버전(1.31) 공지</a>
+						</td>
+						<td>2007/01/05</td>
+						<td>5897</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>88</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'jn0_kJMbPuE~KcPyrnBReLM~')">IM-R110 최신 S/W 버전(1.27) 공지</a>
+						</td>
+						<td>2006/12/29</td>
+						<td>1558</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>87</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'nSHXkFRtkOI~RzGux2d9MpI~')">서비스센터 근무시간 단축 및 이메일 상담 서비스 일시 </a>
+						</td>
+						<td>2007/01/08</td>
+						<td>4187</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>86</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '1oTFkDRQLrE~HvisDAsr678~')">IM-S130 최신 S/W 버전(1.13) 공지</a>
+						</td>
+						<td>2006/12/21</td>
+						<td>6897</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>85</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'w2PLkJQET2w~mHMg7fiEf/8~')">SKY  매니아 스노우 페스티벌 이벤트</a>
+						</td>
+						<td>2006/12/18</td>
+						<td>1726</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>84</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'NiqokFTKigk~U0e_Bex/jkA~')">IM-S110K 최신 S/W 버전(1.14) 공지</a>
+						</td>
+						<td>2006/12/11</td>
+						<td>6367</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>83</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'b42WkDStKNg~TkKnyuwZHgI~')"><셀프업그레이드도 하고! 영화도 보고!> 이벤트 당첨자 </a>
+						</td>
+						<td>2006/12/05</td>
+						<td>1659</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>82</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'XGyckJRhSZM~2HKqyDVLIa0~')">IM-S130K 최신 S/W 버전(1.17) 공지</a>
+						</td>
+						<td>2007/01/22</td>
+						<td>3319</td>
+					</tr>
+	
+					<tr height="26" class="">
+						<td>81</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'GEKclV37Iu0~8n8_3ntXW2o~')">수퍼 프리뷰 -007카지노로얄 초대 이벤트</a>
+						</td>
+						<td>2006/12/06</td>
+						<td>1611</td>
+					</tr>
+
+					<!--// 반복 * 10 -->
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'><b>1</b>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=2&>2</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=3&>3</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=4&>4</a>&nbsp;<a href=notice.jsp?page=5&><img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'></a>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="javascript:link(4,1)"><img src="http://www.isky.co.kr/source/img/global/right_cs_selfupgrade.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,4)"><img src="http://www.isky.co.kr/source/img/global/right_cs_cscenter.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,5)"><img src="http://www.isky.co.kr/source/img/global/right_cs_diagnosis.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+<script type="text/javascript" src="/inc/js/quick.js"></script>
+</body>
+</html>

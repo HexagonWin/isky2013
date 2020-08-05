@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=54280" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPGJhcjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ6riw64qlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsoJXsl7Dsp4Q7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU0MjgwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA0LTI3IDA5OjAyOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw1Mjs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD4mbmJzcFw7IGJhcu2YlSDsoJztkojrj4Qg64KY7JmU7Jy866m0IO2VqeuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPuycoOufveyqvSDtnLTrjIDtj7DsnYQg67O066m0IGJhciDtmJUg7Zy064yA7Y+w7J20IOywuCDrp47snbQg7J6I7Iq164uI64ukLlw8L1BcPlw8QlJcPlw8UFw+6re466as6rOgIOuEiOustCDrp47snYAg6riw64ql7J20IOyeiOyWtOyEnCDqsIDqsqnrp4wg64aS7J2AIO2PsCDrs7Tri6TripRcPC9QXD5cPEJSXD5cPFBcPuyhsOq4iOuNlCDsi5zsmqnsoIHsnbgg66qH6rCA7KeAIOq4sOuKpeunjCDsnojsnLzrqbAg6rCA6rKp7J2EIOygiOy2qe2VmOyXrFw8L1BcPlw8QlJcPlw8UFw+YmFyIO2YlSDtnLTrjIDtj7DsnbQg7J6I7Jy866m0IO2VqeuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuyalOymmCDstpTshLjqsIAg7Iqs65287J2065Oc7ZiVIOydtOyngOunjCDtgbTroIjsi53tlZwgYmFyJm5ic3BcO+2YleydhCDsiqTsubTsnbTrp4zsnZhcPC9QXD5cPEJSXD5cPFBcPuupi+ynhCDrlJTsnpDsnbjsnLzroZwg64KY7Jio64uk66m0IOyii+qyoOyKteuLiOuLpC5cPC9QXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">bar</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">정연진</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">1</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">54280</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-27 09:02</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">52</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; bar형 제품도 나왔으면 합니다.</P><BR><P>유럽쪽 휴대폰을 보면 bar 형 휴대폰이 참 많이 있습니다.</P><BR><P>그리고 너무 많은 기능이 있어서 가격만 높은 폰 보다는</P><BR><P>조금더 시용적인 몇가지 기능만 있으며 가격을 절충하여</P><BR><P>bar 형 휴대폰이 있으면 합니다.</P><BR><P>&nbsp;</P><BR><P>요즘 추세가 슬라이드형 이지만 클레식한 bar&nbsp;형을 스카이만의</P><BR><P>멋진 디자인으로 나온다면 좋겠습니다.</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

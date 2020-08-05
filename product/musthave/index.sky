@@ -1,0 +1,365 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/musthave/index.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/musthave/index.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/musthave/index.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120609");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script>var dispNum="0105"; var firstDepth ="01";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function ViewPrint(i){
+		var url = "/product/musthave/ad/print.sky?dispNum=01050102&idx=" + i;
+		location.href = url;
+	}
+
+	function ViewCoupon(i){
+		var url = "/product/musthave/ad/coupon.sky?dispNum=01050103&idx=" + i;
+		location.href = url;
+	}
+
+	function ViewWallpaper(i){
+		var url = "/product/musthave/acc/wallpaper.sky?dispNum=01050201&idx=" + i;
+		location.href = url;
+	}
+
+	function ViewScreenSaver(i){
+		var url = "/product/musthave/acc/screenSaver.sky?dispNum=01050202&idx=" + i;
+		location.href = url;
+	}
+
+	var downloadServerUrl = "http://file.isky.co.kr/uploadCode/download.asp";
+	var folder = "accessory/emoticon/";
+
+	function go_log(intSeq, strFileName){
+	
+		Download(strFileName);
+		
+		$('dataProcess').src = "/product/musthave/acc/emoticon_down.sky?intSeq=" + intSeq;
+
+	}
+
+	function Download(filename) {
+		if(filename == ""){
+			alert("다운받고자 하는 파일이 없습니다.");
+			return;
+		}else{
+			//$('filedownload').src = downloadServerUrl + "?filename=" + filename + '&folder=' + folder;
+
+			var url = downloadServerUrl + "?filename=" + filename + '&folder=' + folder;
+
+			DownloadWin(url);
+		}
+
+	}
+
+	function DownloadWin(url){
+		
+		var height = screen.height;
+		var width = screen.width;
+		var leftpos = width / 2 - 150;
+		var toppos = height / 2 - 100;
+		
+		var win = window.open(url,"down", 'scrollbars=no,status=no,resizable=yes,width=10,height=10,top='+toppos+',left=' + leftpos);
+				
+	}
+</script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0105&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product.swf?PageCode=0105','222','600','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0105','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0105.gif" border="0" alt="MUST HAVE_" title="MUST HAVE_" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			
+			<!-- [s] 상단 비쥬얼 -->
+			<div id="musthaveVisual"><script>swf_include('/static/flash/product_MUSTHAVE.swf','740','324','','','','')</script></div>
+			<!-- [e] 상단 비쥬얼 -->
+			
+			<!--[s] musthave Left -->
+			<div id="musthaveLeft">
+				<h5><img src="/static/images/product/musthave_tit_01.gif" alt="인쇄광고" title="인쇄광고" /><a href="javascript:menuLink('01050102');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<ul class="musthaveList"
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewPrint('0')"><img src="http://file.isky.co.kr/upload/gallary/print/lteseries_thumb.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>Vega LTE</div><div class=model>IM-A800S</div> <div class=nick>Vega LTE M</div><div class=model>IM-A810K</div> <div class=nick>Vega LTE M</div><div class=model>IM-A810S</div> <div class=nick>Vega LTE EX</div><div class=model>IM-A820L</div></div></li
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewPrint('1')"><img src="http://file.isky.co.kr/upload/gallary/print/exthumb.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>Vega LTE EX</div><div class=model>IM-A820L</div></div></li
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewPrint('2')"><img src="http://file.isky.co.kr/upload/gallary/print/thumb[1].jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>Vega LTE EX</div><div class=model>IM-A820L</div></div></li
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewPrint('3')"><img src="http://file.isky.co.kr/upload/gallary/print/thumb.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>Vega LTE M</div><div class=model>IM-A810S</div></div></li
+					></ul>
+				
+				<div class="blank30"></div>
+
+				<div class="wallpaper"><h5><img src="/static/images/product/musthave_tit_02.gif" alt="WALLPAPER" title="WALLPAPER" /><a href="javascript:menuLink('01050201');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<ul class="musthaveList"
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewWallpaper('0')"><img src="http://file.isky.co.kr/upload/accessory/wallpaper/2_84.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>VegaXpress</div><div class=model>IM-A710K</div></div></li
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewWallpaper('1')"><img src="http://file.isky.co.kr/upload/accessory/wallpaper/84[3].jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>SKY 웹홀릭</div><div class=model>IM-U570K</div></div></li
+					></ul></div>
+				<div class="scr"><h5><img src="/static/images/product/musthave_tit_03.gif" alt="SCREENSAVER" title="SCREENSAVER" /><a href="javascript:menuLink('01050202');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<ul class="musthaveList"
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewScreenSaver('0')"><img src="http://file.isky.co.kr/upload/accessory/screenSaver/vega_87.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>SKY Vega</div><div class=model>IM-A650S</div></div></li
+					><li><div class="gradientBox795">
+						<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+						<div class="imgBox106"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" style="cursor:pointer;"><div style="position:absolute;"></div>
+						<a href="javascript:ViewScreenSaver('1')"><img src="http://file.isky.co.kr/upload/accessory/screenSaver/izar2_84_79.jpg" border="0" width="84" height="79" class="thumb" /></a></div></div>
+					</div><div class="desc"> <div class=nick>SKY 이자르</div><div class=model>IM-A630K</div></div></li
+					></ul></div>
+			</div>
+			<!--[e] musthave Left -->
+			<!--[s] musthave Right -->
+			<div id="musthaveRight"><h5><img src="/static/images/product/musthave_tit_04.gif" alt="WALLPAPER" title="WALLPAPER" /><a href="javascript:menuLink('01050103');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<div class="bell">
+					<h6><a href="#"><img src="/static/images/product/musthave_banner_01.gif" border="0" alt="벨소리를 무료로 받으세요" title="벨소리를 무료로 받으세요" /></a></h6>
+					<ul>
+						<li><a href="javascript:ViewCoupon('0')">권태기에 빠진 커플을 위한  ...</a></li><li><a href="javascript:ViewCoupon('1')">올 봄엔 다 이루어지는 마법 ...</a></li><li><a href="javascript:ViewCoupon('2')">밤길이 무서운 여성을 위한  ...</a></li><li><a href="javascript:ViewCoupon('3')">연말연시, 웃을일 없는 직장 ...</a></li>
+					</ul>
+				</div>
+				<h5><img src="/static/images/product/musthave_tit_05.gif" alt="MESSENGER 이모티콘" title="MESSENGER 이모티콘" /><a href="javascript:menuLink('01050203');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<div class="emoticon"><ul class="musthaveList2">
+					<li><ul class="list"
+						><li><div class="gradientBox797">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox50"><img src="http://file.isky.co.kr/upload/accessory/emoticon/emo-fun.gif" width="50" height="50" class="thumb" /></div>
+						</div></li
+						><li class="txt">재미</li
+						><li class="btn"><a href="javascript:go_log('Uo7cWytFLHc~8eo/jstHK0g~','emo-fun(0).zip');"><img src="/static/images/common/btn/1_download.gif" border="0" /></a></li
+					></ul></li><li><ul class="list"
+						><li><div class="gradientBox797">
+							<div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox50"><img src="http://file.isky.co.kr/upload/accessory/emoticon/emo-cute.gif" width="50" height="50" class="thumb" /></div>
+						</div></li
+						><li class="txt">귀여움</li
+						><li class="btn"><a href="javascript:go_log('RvtR51QTm2A~QFjthyVDGaQ~','emo-cute(0).zip');"><img src="/static/images/common/btn/1_download.gif" border="0" /></a></li
+					></ul></li>
+					
+				</ul></div>
+			</div>
+			<!--[e] musthave Right -->
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://cloudlive.vegalive.co.kr" target="_blank">CLOUD LIVE</a></li>
+				<li><a href="http://medialive.vegalive.co.kr" target="_blank">MEDIA LIVE</a></li>
+				<li><a href="http://appsplay.vegalive.co.kr" target="_blank">AppsPlay</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+<iframe name="filedownload" id="filedownload" width="0" height="0"></iframe>
+<iframe id="dataProcess" name="dataProcess" width="0" height="0" class="filedownifrm"></iframe>
+</body>
+</html>

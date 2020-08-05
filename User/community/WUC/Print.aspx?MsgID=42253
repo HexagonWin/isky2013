@@ -1,0 +1,115 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+	<TITLE>:: isky.co.kr :: </TITLE>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<script language="javascript">
+				<!--
+					//프리트 실행
+					function Print()
+					{
+						window.print();
+					}
+					
+					//윈도우 화면 크기 리사이즈
+					function SelfResize()
+					{
+						var conSize = document.all.ContDiv.scrollHeight;
+
+						self.resizeTo(610 , conSize + 220);
+					}
+				
+				//-->
+		</script>
+</HEAD>
+<body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onload="javascript:SelfResize();">
+<form name="Form1" method="post" action="Print.aspx?MsgID=42253" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTcxMjk5NzU1Mzt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w87Y+w7J2YIFVTQuyEpOygleydgCDtlZjshajrgpjsmpQ/Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LzA0LzE5Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsoJXrkZDsnbw7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPElNLTcyMDBQOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDztmozsm5DrgbzrpqwgUSZBOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxcPFBcPlw8Rk9OVCBjb2xvcj0jMDA4MGMwIHNpemU9M1w+XDxTVFJPTkdcPuyasOyEoCDsnbTroIfqsowg7ZWc67KIIO2VtOuztOyEuOyalC5cPC9TVFJPTkdcPlw8L0ZPTlRcPlw8L1BcPg0KXDxQXD5cPEZPTlQgY29sb3I9IzAwODBjMCBzaXplPTNcPlw8U1RST05HXD5cPC9TVFJPTkdcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxGT05UIGNvbG9yPSMwMDgwYzAgc2l6ZT0zXD5cPFNUUk9OR1w+XDwvU1RST05HXD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8Rk9OVCBjb2xvcj0jMDA4MGMwIHNpemU9M1w+XDxTVFJPTkdcPu2PsOydmCBVU0Ig7ISk7KCVXDwvU1RST05HXD5cPC9GT05UXD5cPC9QXD4NClw8UFw+XDxGT05UIHNpemU9M1w+XDxVXD5cPFNUUk9OR1w+KCoqKiDsgqzsp4TsnYAgSU0tNzIwMFAg66qo642466GcIOygnOyekeuQmOyXiOyKteuLiOuLpC4gKioqKVw8L1NUUk9OR1w+XDwvVVw+XDwvRk9OVFw+XDwvUFw+DQpcPFBcPlw8VVw+XDxGT05UIHNpemU9M1w+XDxTVFJPTkdcPu2VmOyngOunjCDri6Trpbgg6riw7KKFIOyXreyLnCDrp4jssKzqsIDsp4DsnoXri4jri6QuXDwvU1RST05HXD5cPC9GT05UXD5cPC9VXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8Rk9OVCBzaXplPTNcPlw8U1RST05HXD4xLiDsoJzslrTtjJDsnYQg65Ok7Ja06rCA7IS47JqULlw8L1NUUk9OR1w+XDwvRk9OVFw+XDwvUFw+DQpcPFBcPiZuYnNwXDsgXDxJTUcgYWx0PSIiIGhzcGFjZT0wIHNyYz0iaHR0cDovL2ZpbGUuaXNreS5jby5rci9BVFQwMS8yMDA1L0JCU182LzEzNy8xNTYwNlsyMDA1MDMyNTE0MTg0Ml0uanBnIiBhbGlnbj1iYXNlbGluZSBib3JkZXI9MFw+XDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPEZPTlQgc2l6ZT0zXD5cPFNUUk9OR1w+Mi4g7Iir7J6Q7YKkIDDsnYQg64iE66W07IS47JqULlw8L1NUUk9OR1w+XDwvRk9OVFw+XDwvUFw+DQpcPFBcPlw8SU1HIGFsdD0iIiBoc3BhY2U9MCBzcmM9Imh0dHA6Ly9maWxlLmlza3kuY28ua3IvQVRUMDEvMjAwNS9CQlNfNi8xMzcvMTU4NTlbMjAwNTAzMjUxNDE4NDJdLmpwZyIgYWxpZ249YmFzZWxpbmUgYm9yZGVyPTBcPlw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+XDxGT05UIHNpemU9M1w+XDxTVFJPTkdcPjMuIOu5hOuwgOuyiO2YuCDsnoXroKXrnoDsl5AmbmJzcFw77Iir7J6QJm5ic3BcOzDsnYQgNuuyiCZsdFw7MDAwMDAwJmd0XDsg7J6F66Cl7ZWY7IS47JqUXDwvU1RST05HXD5cPC9GT05UXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPElNRyBhbHQ9IiIgaHNwYWNlPTAgc3JjPSJodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDUvQkJTXzYvMTM3LzE1OTQzWzIwMDUwMzI1MTQxODQyXS5qcGciIGFsaWduPWJhc2VsaW5lIGJvcmRlcj0wXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPEZPTlQgc2l6ZT0zXD5cPFNUUk9OR1w+NC4mbmJzcFw77J207KCcICcy67KIJyBETeyEpOygleycvOuhnCDrk6TslrTqsIDshLjsmpQuXDwvU1RST05HXD5cPC9GT05UXD5cPC9QXD4NClw8UFw+XDxJTUcgYWx0PSIiIGhzcGFjZT0wIHNyYz0iaHR0cDovL2ZpbGUuaXNreS5jby5rci9BVFQwMS8yMDA1L0JCU182LzEzNy8xNjAyOFsyMDA1MDMyNTE0MTg0Ml0uanBnIiBhbGlnbj1iYXNlbGluZSBib3JkZXI9MFw+XDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPEZPTlQgc2l6ZT0zXD5cPFNUUk9OR1w+NS7ri6Tsi5wgMuuyiCwg7Ya17Iug7Y+s7Yq4IOyEpOygleycvOuhnCDrk6TslrTqsIDshLjsmpRcPC9TVFJPTkdcPlw8L0ZPTlRcPlw8L1BcPg0KXDxQXD5cPElNRyBhbHQ9IiIgaHNwYWNlPTAgc3JjPSJodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDUvQkJTXzYvMTM3LzE2MTEyWzIwMDUwMzI1MTQxODQyXS5qcGciIGFsaWduPWJhc2VsaW5lIGJvcmRlcj0wXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPlw8Rk9OVCBzaXplPTNcPlw8U1RST05HXD42LiDrp4jsp4Drp4khISDsl6zquLDshJwgVVNC66GcIOyEoO2Dne2VtOyjvOyEuOyalC5cPC9TVFJPTkdcPlw8L0ZPTlRcPlw8L1BcPg0KXDxQXD5cPElNRyBhbHQ9IiIgaHNwYWNlPTAgc3JjPSJodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDUvQkJTXzYvMTM3LzE2MTk2WzIwMDUwMzI1MTQxODQyXS5qcGciIGFsaWduPWJhc2VsaW5lIGJvcmRlcj0wXD5cPC9QXD4NClw8UFw+Jm5ic3BcO1w8L1BcPg0KXDxQXD5cPEZPTlQgc2l6ZT0yXD7snbTsg4HsnoXri4jri6QuIOq4sOuzuOyggeycvOuhnCDsnITsmYAg6rCZ7J20IO2PsOydhCDshKTsoJXtlbQg7KO87Ja07JW8IO2VqeuLiOuLpC5cPC9GT05UXD5cPEZPTlQgc2l6ZT0zXD4gXDwvRk9OVFw+XDwvUFw+Jm5ic3BcOyA7Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+<!-- width:600 -->
+<center>
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="BORDER-RIGHT:#e7d2d2 1px solid; BORDER-TOP:#e7d2d2 1px solid; BORDER-LEFT:#e7d2d2 1px solid; BORDER-BOTTOM:#e7d2d2 1px solid; BACKGROUND-COLOR:#f5f0f1">
+<tr>
+	<td width="80%" style="PADDING-RIGHT:0px; PADDING-LEFT:12px; PADDING-BOTTOM:0px; PADDING-TOP:2px"><span class="brown_search">
+		<b><span id="lblTitle">폰의 USB설정은 하셨나요?</span></b></span>
+	</td>
+	<td width="20%" align=right style="PADDING-RIGHT:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+<table width="580" height=26 cellpadding="0" cellspacing="0">
+  <tr height=3>
+    <td></td>
+  </tr>
+  <tr>
+    <td><div align="right">작성일 :
+          <span id="lblRegDate">2005/04/19</span>        
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;작성자 :
+          <span id="lblName">정두일</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;모델명 : 
+          <span id="lblHPModel">IM-7200P</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;출처 :
+          <span id="lblBbsName">회원끼리 Q&A</span>
+    </div></td>
+    </tr>
+  <tr height=1>
+    <td background="http://file.isky.co.kr/images/user/community/popup_line_bg.gif"><FONT face="굴림"></FONT></td>
+  </tr>
+</table>
+<table width="580" cellpadding="0" cellspacing="0">
+<Tr>
+	<td style="PADDING-RIGHT:10px; PADDING-LEFT:10px; PADDING-BOTTOM:30px; PADDING-TOP:20px">
+	<div id="ContDiv">
+	<span id="lblContent"><P><FONT color=#0080c0 size=3><STRONG>우선 이렇게 한번 해보세요.</STRONG></FONT></P>
+<P><FONT color=#0080c0 size=3><STRONG></STRONG></FONT>&nbsp;</P>
+<P><FONT color=#0080c0 size=3><STRONG></STRONG></FONT>&nbsp;</P>
+<P><FONT color=#0080c0 size=3><STRONG>폰의 USB 설정</STRONG></FONT></P>
+<P><FONT size=3><U><STRONG>(*** 사진은 IM-7200P 모델로 제작되었습니다. ***)</STRONG></U></FONT></P>
+<P><U><FONT size=3><STRONG>하지만 다른 기종 역시 마찬가지입니다.</STRONG></FONT></U></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>1. 제어판을 들어가세요.</STRONG></FONT></P>
+<P>&nbsp; <IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/15606[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>2. 숫자키 0을 누르세요.</STRONG></FONT></P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/15859[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>3. 비밀번호 입력란에&nbsp;숫자&nbsp;0을 6번&lt;000000&gt; 입력하세요</STRONG></FONT></P>
+<P>&nbsp;</P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/15943[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>4.&nbsp;이제 '2번' DM설정으로 들어가세요.</STRONG></FONT></P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/16028[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>5.다시 2번, 통신포트 설정으로 들어가세요</STRONG></FONT></P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/16112[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT size=3><STRONG>6. 마지막!! 여기서 USB로 선택해주세요.</STRONG></FONT></P>
+<P><IMG alt="" hspace=0 src="http://file.isky.co.kr/ATT01/2005/BBS_6/137/16196[20050325141842].jpg" align=baseline border=0></P>
+<P>&nbsp;</P>
+<P><FONT size=2>이상입니다. 기본적으로 위와 같이 폰을 설정해 주어야 합니다.</FONT><FONT size=3> </FONT></P>&nbsp; </span>
+	</div>
+	</td>
+</Tr>
+
+<tr height=1 bgcolor="#e1e1e1"><td></td></tr>
+<tr height=15><td></td></tr>
+
+<tr><td align=center><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+</table>
+</center>
+</form>
+</BODY>
+</HTML>

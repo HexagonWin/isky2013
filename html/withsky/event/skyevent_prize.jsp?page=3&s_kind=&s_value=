@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/event/skyevent_prize.jsp">
+
+	<input type="hidden" name="page" value="3">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="s_value" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function goView(form, top_eventid,flag,flag1){
+		form.action = "skyevent_prize_view.jsp";
+		form.eventid.value = top_eventid;
+		form.flag.value = flag;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+	function goView1(form, top_eventid,eventid,flag,flag1){
+		form.action = "skyevent_prize_view.jsp";
+		form.eventid.value = top_eventid;
+		form.eventid1.value = eventid;
+		form.flag.value = flag;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+	function goList(form,flag){
+		form.action = "skyevent.jsp"
+		form.flag.value = flag;
+		form.submit();
+	}
+	function goPrizelist(form){
+		form.action = "skyevent_prize.jsp";
+		form.submit();
+	}
+	var gocn=2;
+//-->
+</SCRIPT>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+</head>
+<body>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="3">
+	<input type="hidden" name="s_kind" value="">
+	<input type="hidden" name="s_value" value="">
+	<input type="hidden" name="flag">
+	<input type="hidden" name="flag1">
+	<input type="hidden" name="eventid">
+	<input type="hidden" name="eventid1">
+</form>
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,1);</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_skyevent.gif" height="52"></div>
+				<div id="Path"><script>path('2_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div class="tab m_b20"><a href="javascript:goList(iForm,'ing')"><img src="http://www.isky.co.kr/source/img/withsky/event/event_tab01.gif"></a><a href="javascript:goList(iForm,'past')"><img src="http://www.isky.co.kr/source/img/withsky/event/event_tab02.gif"></a><a href="javascript:goPrizelist(iForm)"><img src="http://www.isky.co.kr/source/img/withsky/event/event_tab03_.gif"></a></div>
+
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list02">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_cont.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_enddate.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+					<!-- 반복 * 10 , 마지막 라인은 class="dot" 제외 //-->
+	
+					<tr height="24" class='dot'>
+						<td>11</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'PHAKDTaqhsY~/lEL6_Yka8Q~','prize',2)">KCM 첫 싱글 앨범 발매 기념 이벤트 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'rjbnDPZvwmM~DDg_XxiMxHc~','prize',2)">KCM 첫 싱글 앨범 발매 기념 이벤트 당첨자 발표</a> -->
+						</td>
+						<td>2007/02/12</td>
+						<td>106</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>10</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'mxXtDFYk4x4~mYuci1_ZzEI~','prize',2)">Sweet Valentine's Day </a>
+												
+						<!-- <a href="javascript:goView(iForm,'qrmFDRd2NSA~K1m5ASdzyOU~','prize',2)">Sweet Valentine's Day </a> -->
+						</td>
+						<td>2007/02/08</td>
+						<td>518</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>9</td>
+						<td>
+						
+						<a href="javascript:goView1(iForm,'5Bx0DfdY0_4~sd8M5NQb2wc~','0ft5DVcN9Kk~UeTuduOjlNw~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 1월 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'Q8JWDRfTL0c~YdYqYv8k9zs~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 1월 당첨자 발표</a> -->
+						</td>
+						<td>2007/01/31</td>
+						<td>768</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>8</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'fSVFDfa1zRU~Vn1ffhlBXD0~','prize',2)">STEVE BARAKATT 다운로드 이벤트</a>
+												
+						<!-- <a href="javascript:goView(iForm,'VuNQDbceD4w~wnATJ96sEbw~','prize',2)">STEVE BARAKATT 다운로드 이벤트</a> -->
+						</td>
+						<td>2007/01/22</td>
+						<td>255</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>7</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'P_1rDBWkEwo~21JXhGiyQ/g~','prize',2)">SKY 매니아 스노우 페스티벌 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'eVBaDPWGsdg~HAA3pbEiqi4~','prize',2)">SKY 매니아 스노우 페스티벌 당첨자 발표</a> -->
+						</td>
+						<td>2007/01/20</td>
+						<td>1592</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>6</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'Ug5mDLXv8k4~aKh_2uUXhUo~','prize',2)">Must Have Love Festival 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'2PU8DBUBDjE~mgwu71iN03M~','prize',2)">Must Have Love Festival 당첨자 발표</a> -->
+						</td>
+						<td>2007/01/15</td>
+						<td>1379</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>5</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'srNIDNVpT6c~OmgdylKyjKo~','prize',2)">FUN 칵테일 크리스마스 이벤트</a>
+												
+						<!-- <a href="javascript:goView(iForm,'6xY3DLVM7XU~N7GChJQNDDU~','prize',2)">FUN 칵테일 크리스마스 이벤트</a> -->
+						</td>
+						<td>2006/12/31</td>
+						<td>387</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>4</td>
+						<td>
+						
+						<a href="javascript:goView1(iForm,'DtzJDBbqHrw~f0nUMm0wB7E~','55nVDNZSYDI~QvuY17NHkJw~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 12월 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'If3DDLY1/gA~BR5jHThwy/4~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 12월 당첨자 발표</a> -->
+						</td>
+						<td>2007/01/31</td>
+						<td>2159</td>
+					</tr>
+	
+					<tr height="24" class='dot'>
+						<td>3</td>
+						<td>
+						
+						<a href="javascript:goView1(iForm,'k8OgDHX7OZ4~0WVKwZnkogY~','gKKmDNWvWlk~8Wu7Xckbcp0~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 11월 당첨자 발표</a>
+												
+						<!-- <a href="javascript:goView(iForm,'82iDDJV1lvY~bF/rbydUDQs~','prize',2)">셀프 업그레이드 하고! 영화도 보고! - 11월 당첨자 발표</a> -->
+						</td>
+						<td>2006/11/30</td>
+						<td>2386</td>
+					</tr>
+	
+					<tr height="24" >
+						<td>2</td>
+						<td>
+						
+						<a href="javascript:goView(iForm,'ifyOER54scY~vQITlAkUPOE~','prize',2)">스카이 멤버 신고식</a>
+												
+						<!-- <a href="javascript:goView(iForm,'wl99Ef5aT5U~EqkiX_0X/h4~','prize',2)">스카이 멤버 신고식</a> -->
+						</td>
+						<td>2006/10/28</td>
+						<td>1408</td>
+					</tr>
+
+					
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'><a href=skyevent_prize.jsp?page=1&s_kind=&s_value=>1</a>&nbsp;|&nbsp;&nbsp;<a href=skyevent_prize.jsp?page=2&s_kind=&s_value=>2</a>&nbsp;|&nbsp;&nbsp;<b>3</b>&nbsp;|&nbsp;&nbsp;<a href=skyevent_prize.jsp?page=4&s_kind=&s_value=>4</a>&nbsp;<img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/brandstory/sponsor/superpreview_end.jsp"><img src="http://file.isky.co.kr/upload/r_banner/superperview.GIF" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?eventid=Sa7TdMgvRh8~2eESunOXBBI~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/sktday_result_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

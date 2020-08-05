@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/member/pop_zipcode.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/popup_style.css">
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script language="javascript">
+	function searchzip(objform){
+
+		//alert(document.search_zipcode.code_search.value);
+		if(isBlank(objform.code_search, "동(읍,리)를 입력해 주세요!", "Y")) return;
+		objform.submit();
+	}
+
+	function go_data(str_zipcode,str_addr){
+		var str = str_zipcode.split('-');
+		opener...value = str[0];
+		opener...value = str[1];
+		opener...value = str_addr;
+		opener...focus();
+		window.close();
+	}
+</script>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="326" height='100%' border="0" cellspacing="0" cellpadding="0" style="border:7px solid #cfd0d2; background-color:#ffffff;">
+	<tr>
+		<td valign="top" style="padding:15px 9px 0 9px;">
+			<table width="308" height='100%' border="0" cellspacing="0" cellpadding="0">
+				<tr height='40'>
+					<td valign="top"><img src="/static/images/member/popup/title_search_zipcode.gif"></td>
+				</tr>
+				<tr height='60'>
+					<td valign="top" class="p20t">
+
+
+
+
+
+
+						<table width="308" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #c2c2c2;"> 
+						<form name="search_zipcode" method="post">
+						<input type="hidden" name="fname" value="">
+						<input type="hidden" name="fzip1" value="">
+						<input type="hidden" name="fzip2" value="">
+							<tr>
+								<td valign="top" class="p20t p20l"><img src="/static/images/member/popup/txt_search_zipcode.gif"></td>
+							</tr>
+							<tr>
+								<td valign="top" class="p10t p20l"><input type="text" name="code_search" style="width:205px;" value=""><a href="javascript:searchzip(document.search_zipcode);" onfocus="this.blur()"><img src="/static/images/member/popup/btn_search.gif" border="0" hspace="2" align="absmiddle"></a></td>
+							</tr>
+							<tr>
+								<td valign="top" class="p5t p20l p20b"><img src="/static/images/member/popup/txt_search_zipcode01.gif"></td>
+							</tr>
+						</form>
+						</table>
+						
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div style="overflow:auto; width:100%; height:100%">
+						<br>
+
+						<div align='center'>동(읍,리)를 입력해주세요.</div>
+
+						</div>
+					</td>
+				</tr>
+				<!-- 닫기 버튼 -->			
+				<tr height='20'>
+					<td valign="top" align="right" style="padding-top:20px;"><a href="javascript:window.close();"><img src="/static/images/member/popup/close.gif" border="0"></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

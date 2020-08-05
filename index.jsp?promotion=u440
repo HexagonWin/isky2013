@@ -1,0 +1,55 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<title>iSKY</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script type="text/javascript">
+function init() {
+	if(opener) opener = null;
+
+	
+		var cnjWin = null;
+		cnjWin = window.open('http://event.isky.co.kr/sky/html/u440/main.asp','full','fullscreen=yes,scrollbars=0');	// Ǯ��ũ�� ��d
+
+		if(!cnjWin){
+			alert("�˾����; ��f���ּ���.");
+			return false;
+		} else {
+			location.href="http://www.isky.co.kr";
+		}
+	
+}
+</script>
+
+</head>
+
+<body onload="init()">
+<div id="WrapFull"><script>swf_include('/static/flash/main/skyMain.swf?LogSess=N','100%','100%','','','opaque','')</script></div>
+</body>
+</html>

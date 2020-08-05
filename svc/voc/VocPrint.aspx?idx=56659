@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=56659" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPGltLTgzMDDsgqzsp4TqtIDrpqzquLDriqXrtoDtg4HsmpQ7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFNLWeq4sOuKpTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KGw7JuQ7LKgOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw1NjY1OTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS0wNS0wNjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTQ5Oz4+Oz47Oz47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFxlOz4+Oz47Oz47Pj47dDxwPHA8bDxUZXh0Oz47bDxcPFBcPiZuYnNwXDsgXDxGT05UIHNpemU9NFw+7Iqk7Lm07J20IDgzMDAg7IKs7Jqp7J6Q7J6F64uI64ukLlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIHNpemU9NFw+7IKs7KeE7J2EIOywjeuLpOqwgOuztOuLiCDslYTsiazsmrTsoJDsnbQg7J6I7Ja07IScLi4uLuq8reyigCDrtoDtg4Hrk5zrpqzroKTqs6DsmpRcPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPuyKpOy5tOydtCA4MzAw7J2AIOqwgOuhnOuhnCDsgqzsp4TsnYQg7LCN6rKMIOuQmOyWtOyeiOyWtOyEnCDsgqzsp4TsnZgg7YGs6riw6rCAXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD7tgazrqbQg7Zy064yA7Y+wIOyVoeygleyXkCDsgqzsp4TsnbQg7Kek66Ck7IScIOyekeqyjCDrs7TsnbTripTrjbDsmpRcPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPjI0MCozMjDsnbjqsIAg7J207YGs6riw66Gc66eM7LCN7Ja07JW8Li4u7IKs7KeE7J20IOyVoeygleyXkCDqsIDrk53ssKjqsowg67O07J2064qU642w7JqUXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD7snbTqsoPsnbQg7JWE7Ims7Jq0IOygkOydtOyeheuLiOuLpC4uXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD5cPC9GT05UXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD7smpTsppjsnYAg65SU7Lm064+EIOunjuydtCDrs7TquInrkJjslrQg7Y+w7Lm064qUIO2PsOyXkOyEnOunjCDrs7TripQg6rK97Zal7J20IOqwle2VnOuNsCBcPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPjczMDDrp4wg7JiI66GcIOuTpOyWtOuPhCDsgqzsp4TsnZgg64yA67aA67aE7J2EIO2ctOuMgO2PsOyXkOyEnCDtgbAg7ZmU66m07Jy866GcIOuzvOyImCDsnojqs6Ag65iQLi4uLi4u67Cw6rK97ZmU66m07Jy866GcIOyggOyepeqwgOuKpe2VqeuLiOuLpFw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIHNpemU9NFw+XDwvRk9OVFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+XDxGT05UIHNpemU9NFw+ODMwMOydgCDqt7gg6riw64ql7J20IOu5oOyguOyeiOuKlOqygyDqsJnsnYDrjbDsmpRcPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPuunkOydtCDquLjslrTsoYzsirXri4jri6RcPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPlw8L0ZPTlRcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPuq8rSDsl4XrjbDsnbTtirgg67KE7KC87JeQ7ISc64qUIOydtCDquLDriqXsnYQg7LaU6rCA7ZW07KO87Iuc66m0IOqwkOyCrO2VmOqyoOyKteuLiOuLpC4uLi5cPC9GT05UXD5cPC9QXD5cPEJSXD5cPFBcPlw8Rk9OVCBzaXplPTRcPuq8reydtOyalFw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIHNpemU9NFw+ODMwMOyTsOyLnOuKlCDrtoTrk6QuLi4uLi4uLi4uXDwvRk9OVFw+XDwvUFw+XDxCUlw+XDxQXD5cPEZPTlQgc2l6ZT00XD7rpqztlIwg67aA7YOB65Oc66a964uI64ukLi5eXlw8L0ZPTlRcPlw8L1BcPlw8QlJcPlw8UFw+XDxGT05UIHNpemU9NFw+6re465+8Li4uLi7siJjqs6DtlZjshLjsmpRcPC9GT05UXD5cPC9QXD47Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">im-8300사진관리기능부탁요</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">조원철</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">56659</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-05-06</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">149</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; <FONT size=4>스카이 8300 사용자입니다.</FONT></P><BR><P><FONT size=4>사진을 찍다가보니 아쉬운점이 있어서....꼭좀 부탁드리려고요</FONT></P><BR><P><FONT size=4>스카이 8300은 가로로 사진을 찍게 되어있어서 사진의 크기가</FONT></P><BR><P><FONT size=4>크면 휴대폰 액정에 사진이 짤려서 작게 보이는데요</FONT></P><BR><P><FONT size=4></FONT>&nbsp;</P><BR><P><FONT size=4>240*320인가 이크기로만찍어야...사진이 액정에 가득차게 보이는데요</FONT></P><BR><P><FONT size=4></FONT>&nbsp;</P><BR><P><FONT size=4>이것이 아쉬운 점이입니다..</FONT></P><BR><P><FONT size=4></FONT>&nbsp;</P><BR><P><FONT size=4>요즘은 디카도 많이 보급되어 폰카는 폰에서만 보는 경향이 강한데 </FONT></P><BR><P><FONT size=4>7300만 예로 들어도 사진의 대부분을 휴대폰에서 큰 화면으로 볼수 있고 또......배경화면으로 저장가능합니다</FONT></P><BR><P><FONT size=4></FONT>&nbsp;</P><BR><P><FONT size=4>8300은 그 기능이 빠져있는것 같은데요</FONT></P><BR><P><FONT size=4>말이 길어졌습니다</FONT></P><BR><P><FONT size=4></FONT>&nbsp;</P><BR><P><FONT size=4>꼭 업데이트 버젼에서는 이 기능을 추가해주시면 감사하겠습니다....</FONT></P><BR><P><FONT size=4>꼭이요</FONT></P><BR><P><FONT size=4>8300쓰시는 분들..........</FONT></P><BR><P><FONT size=4>리플 부탁드립니다..^^</FONT></P><BR><P><FONT size=4>그럼.....수고하세요</FONT></P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

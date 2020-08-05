@@ -1,0 +1,441 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/review.sky?dispNum=0101[AND]telCode=SKT[AND]seq=VUGirsR73ac~95_B1jaGmNo~[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/review.sky?dispNum=0101[AND]telCode=SKT[AND]seq=VUGirsR73ac~95_B1jaGmNo~[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/review.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20110928");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script>var dispNum="0101";</script>
+<script language="javascript">
+	function Write(){
+		location.href = "/product/review/review_write.sky?dispNum=0104&strTelecomCode=11001&intSeriesSeq=241&intPrdSeq=482";
+	}
+
+	function goList(targetPage, targetGroup) {
+
+		var obj = document.reviewPage;
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/product/review.sky";
+		obj.submit();
+	}
+
+	function detail(intReviewSeq){
+		
+		var targetPage = $('targetPage');
+		var targetGroup = $('targetGroup');
+
+		var url = "/product/review/review_view.sky?intReviewSeq=" + intReviewSeq + "&dispNum=0104&targetPage=" + targetPage.value + "&targetGroup=" + targetGroup.value;
+		
+		location.href = url;
+	}
+
+	function List(){
+		var dispNum = $('dispNum');
+		var telCode = $('telCode');
+		var seq = $('seq');
+
+		var url = "/product/product.sky?seq=" + seq.value + "&dispNum=" + dispNum.value + "&telCode=" + telCode.value;
+		
+		location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="reviewPage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" id="dispNum" value="0101">
+	<input type="hidden" name="telCode" id="telCode" value="SKT">
+	<input type="hidden" name="seq" id="seq" value="VUGirsR73ac~95_B1jaGmNo~">
+</form>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0101&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0101','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0101','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0101.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_view_visual"><script>swf_include("http://file.isky.co.kr/upload/product/imageAflash/097_IMA600S[4].swf?intTvSeq=NB4jBVoWwy8~fVBSp18h0is~&strTeYN=N","740","424","always","","","")</script></div>
+			<div class="product_view_tab">
+				<ul>
+					
+					<li>
+						
+							
+							
+						
+						<a href="/product/feature.sky;www=16zdTC7crqs5LKg0XqLcjzwhpbCJTV2cv26zHH4p34T4C0hfp9Gv!1677714181!-774003435?telCode=SKT&amp;dispNum=0101&amp;seq=VUGirsR73ac%7E95_B1jaGmNo%7E">
+							<img src="/static/images/product/product_vTab_01.gif" border="0" alt="FEATURE" title="FEATURE" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/spec.sky;www=16zdTC7crqs5LKg0XqLcjzwhpbCJTV2cv26zHH4p34T4C0hfp9Gv!1677714181!-774003435?telCode=SKT&amp;dispNum=0101&amp;seq=VUGirsR73ac%7E95_B1jaGmNo%7E">
+							<img src="/static/images/product/product_vTab_02.gif" border="0" alt="SPEC" title="SPEC" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/review.sky;www=16zdTC7crqs5LKg0XqLcjzwhpbCJTV2cv26zHH4p34T4C0hfp9Gv!1677714181!-774003435?telCode=SKT&amp;dispNum=0101&amp;seq=VUGirsR73ac%7E95_B1jaGmNo%7E">
+							<img src="/static/images/product/product_vTab_03_.gif" border="0" alt="REVIEW" title="REVIEW" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/swdownload.sky;www=16zdTC7crqs5LKg0XqLcjzwhpbCJTV2cv26zHH4p34T4C0hfp9Gv!1677714181!-774003435?telCode=SKT&amp;dispNum=0101&amp;seq=VUGirsR73ac%7E95_B1jaGmNo%7E">
+							<img src="/static/images/product/product_vTab_04.gif" border="0" alt="S/W DOWNLOAD" title="S/W DOWNLOAD" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/accessory.sky;www=16zdTC7crqs5LKg0XqLcjzwhpbCJTV2cv26zHH4p34T4C0hfp9Gv!1677714181!-774003435?telCode=SKT&amp;dispNum=0101&amp;seq=VUGirsR73ac%7E95_B1jaGmNo%7E">
+							<img src="/static/images/product/product_vTab_05.gif" border="0" alt="ACCESSORY" title="ACCESSORY" />
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			<div class="product_view_cont01">
+			<!-- [s] List -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_review_L">
+			<colgroup>
+				<col width="480" />
+				<col width="80" />
+				<col width="80" />
+				<col width="80" />
+			</colgroup>
+				<tr valign="top">
+					<th>제목</th>
+					<th>작성자</th>
+					<th>등록일</th>
+					<th>조회</th>
+				</tr>
+
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('Jf0locm/08c~LRbeEaS3oq0~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스와 1년을 함께 했네요^^<span class="comment">(19)</span></dd>
+						<dd class="text">&nbsp;
+얼마전에 베터리 커버를 새거로 교체해 주었습니다....</dd>
+					</dl></a>
+					<td class="name">zewtion</td>
+					<td class="tit">2011-07-08</td>
+					<td class="tit">596</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('YnfXie6OG0g~VxmVkyv3g98~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스 쓴지 4개월~<span class="comment">(15)</span></dd>
+						<dd class="text">시리우스 폰 저에겐 첫 스마트 폰이기에 그럭저럭 잘쓰고 있 ...</dd>
+					</dl></a>
+					<td class="name">wnsrl824017</td>
+					<td class="tit">2011-05-14</td>
+					<td class="tit">884</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('LuFeeu8FZf8~597vMLE_dBE~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스<span class="comment">(32)</span></dd>
+						<dd class="text">지금 나온 스마트폰들보다는 뒤처질지모르지만
+충분히 좋은 ...</dd>
+					</dl></a>
+					<td class="name">ryu01522002</td>
+					<td class="tit">2011-05-02</td>
+					<td class="tit">824</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('NyMuybcYCFw~jqva6YC6MDs~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">3g / 와이파이 연결 후 사용시 헨펀이 열을 받으면서 그냥 꺼져요..<span class="comment">(5)</span></dd>
+						<dd class="text">ㅡㅡ 스마트 폰이 아니라 지금 그냥 디지털 폰 쓰듯이 쓰고  ...</dd>
+					</dl></a>
+					<td class="name">powerrotod</td>
+					<td class="tit">2011-04-02</td>
+					<td class="tit">643</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('m2kv2JD/YM4~/V6GCC6G1Rs~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">불평이너무많네...<span class="comment">(30)</span></dd>
+						<dd class="text">제가？을때 시리우스는 멀티터치가 안되는거빼면 솔직히 뒤처...</dd>
+					</dl></a>
+					<td class="name">zgo1111</td>
+					<td class="tit">2011-03-14</td>
+					<td class="tit">1262</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('XEGEF5DM0jw~gfMdt0kCDuI~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스 정말 좋은 폰입니다.<span class="comment">(17)</span></dd>
+						<dd class="text">시리우스 안좋은 평들이 너무 많군요 ㅋㅋㅋ;;;
+전 작년 6월...</dd>
+					</dl></a>
+					<td class="name">violet3933</td>
+					<td class="tit">2011-03-10</td>
+					<td class="tit">1188</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('L4YYmJZsAlo~r7Z_UBC4Nhg~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">별로예요<span class="comment">(20)</span></dd>
+						<dd class="text">&nbsp;
+&nbsp;
+시리우스 사고 도대체가 서비스센터를 얼마 ...</dd>
+					</dl></a>
+					<td class="name">disk3854</td>
+					<td class="tit">2011-03-09</td>
+					<td class="tit">817</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('HNoOe0RTcFc~wMGElgajuvI~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스<span class="comment">(13)</span></dd>
+						<dd class="text">쓰레기우스다</dd>
+					</dl></a>
+					<td class="name">chunsy</td>
+					<td class="tit">2011-03-01</td>
+					<td class="tit">658</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('9hnanBCdVkk~xl5Ax/QJSIw~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">시리우스 절대사지마세요..<span class="comment">(6)</span></dd>
+						<dd class="text">메세지가 자동삭제되고.(기프티콘 메세지로 선물받은내역 다 ...</dd>
+					</dl></a>
+					<td class="name">jayhkim</td>
+					<td class="tit">2011-02-25</td>
+					<td class="tit">737</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('CmEGzt3AoeU~/oDREDOrdYI~')"><dl>
+						<dt><span class="model">SKY 시리우스 <span class="eng">IM-A600S</span></span></dt>
+						<dd class="subject">스마트폰은 사용하는 사람 나름인가봐요<span class="comment">(7)</span></dd>
+						<dd class="text">시리우스에 대한 악플이 왜이렇게 많은지 모르겠어요
+시리우...</dd>
+					</dl></a>
+					<td class="name">zhofkrdl</td>
+					<td class="tit">2011-02-09</td>
+					<td class="tit">1661</td>
+				</tr>
+				
+
+				
+
+			</table>
+			<!-- [e] List -->
+
+			<!-- [s] button -->
+			<div id="bd_btnVLB"><table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_btnB">
+				<tr valign="top">
+					<td align="right"><span><a href="javascript:List()"><img src="/static/images/common/btn/bd_list.gif" border="0" alt="제품목록보기" title="제품목록보기" /></a></span>
+					
+					<span><a href="javascript:LoginConfirm(current_url)"><img src="/static/images/common/btn/bd_writeReview.gif" border="0" alt="리뷰쓰기" title="리뷰쓰기" /></a></span></td>
+				</tr>
+			</table></div>
+			<!-- [e] button -->
+			
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('15','2')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			
+			</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.pantech.com/" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</body>
+</html>

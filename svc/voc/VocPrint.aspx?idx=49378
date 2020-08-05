@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=49378" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOyYgeuTse2PrCBhL3PshLzthLAg7J207ISx7JikIOq4sOyCrOuLmCE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPEEvUzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87J6E7KCV7IiYOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwwOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw0OTM3ODs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MjAwNS0wNC0wNCAyMzoyMTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MTM4MTs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8Jm5ic3BcOyBcPEJSXD5cPFBcPiZuYnNwXDvsiqTsubTsnbQgYS9z6rCAIOu2iOy5nOygiO2VmOuLpOuKlCDshozrprQg66eO7J20IOuTpOyXiOuKlOuNsC4uLi4uXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7smKTripgg7KCc6rCAIOqyve2XmO2VnOqxtCDsoJV+IOuwmOuMgOuNlOq1sOyalC5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuynkeydtCDsmIHrk7Htj6zrnbwg7JiB65Ox7Y+sIGEvc+yEvO2EsOuhnCDqsJTripTrjbAuLi4uLiDqsbTrrLzrj4Qg7JWE7KO8IOq5lOuBlO2VmOqzoCDqsozri6TqsIAg7JW96rCEIOuvvOqwkO2VnCAtLV4g7KCc6rCAIOydtOyEseyYpCDquLDsgqzri5gg67aZ7J6h6rOgIOydtOumrCDsoIDrpqwg64qY7Ja07KC464+ELi4uLiDsp4Tsp5wg64iI66y864KY6rKMIOy5nOygiO2VmOqyjCDtlbTso7zsi5zrjZTqtbDsmpQuXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7soJzqsIAg7JuQ7ZWY64qU6rGwIOyGjSDsi5x+7JuQ7ZWY6rKMIGEvcyDsnpDsnpjtlZzqsoMg6rmM7KeAIOuLpCDrtJDso7zsi5zqs6AuLi4g7JW96rCEIOustOumrO2VnCDsmpTqtazquYzsp4Ag64Gd6rmM7KeAIOuLpCDtlbTso7zsi5zrhKTsmpQuXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7snbTrn7Ag7Lmc7KCIIOyLnOqwgOuLmOydgCDsg4HsoJAg7KCc64+EIOqwmeydgOqygyDrj4TsnoXtlbTshJwg7Iq57KeE7JeQIOycoOumrO2VmOqyjCDtlbTso7zshLjsmpQuXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7rs7TrhIjsiqTrnbzrj4Qg65Os67+NIOyjvOyLnOuNmOyngOyalC4uLi4uXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7sgrzshLEsIOyXmOylkCDri6Qg7I2o67Sk64qU642wIOusvOuhoCBhL3Prj4Qg66eI64uIIOuwm+yVhOuztOq1rOyalC4uLi5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuq3uOykkeyXkOyEnCDsiqTsubTsnbQg7JiB65Ox7Y+s7KCQIOydtOyEseyYpCDquLDsgqzri5jsnbQg7KCkIOy5nOygiO2VmOqzoCDshLHsi6zqu48g7J6Y7ZW07KO87Iuc64qUIOqygyDqsJnsirXri4jri6QuXDwvUFw+XDxCUlw+XDxQXD4mbmJzcFw7XDwvUFw+XDxCUlw+XDxQXD7qsJDsgqzrk5zroKTsmpR+Klw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">영등포 a/s센터 이성오 기사님!</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">A/S</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">임정수</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">49378</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-04 23:21</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">1381</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent">&nbsp; <BR><P>&nbsp;스카이 a/s가 불친절하다는 소릴 많이 들었는데.....</P><BR><P>&nbsp;</P><BR><P>오늘 제가 경험한건 정~ 반대더군요.</P><BR><P>&nbsp;</P><BR><P>집이 영등포라 영등포 a/s센터로 갔는데..... 건물도 아주 깔끔하고 게다가 약간 민감한 --^ 제가 이성오 기사님 붙잡고 이리 저리 늘어져도.... 진짜 눈물나게 친절하게 해주시더군요.</P><BR><P>&nbsp;</P><BR><P>제가 원하는거 속 시~원하게 a/s 자잘한것 까지 다 봐주시고... 약간 무리한 요구까지 끝까지 다 해주시네요.</P><BR><P>&nbsp;</P><BR><P>이런 친절 시가님은 상점 제도 같은것 도입해서 승진에 유리하게 해주세요.</P><BR><P>&nbsp;</P><BR><P>보너스라도 듬뿍 주시던지요.....</P><BR><P>&nbsp;</P><BR><P>삼성, 엘쥐 다 써봤는데 물론 a/s도 마니 받아보구요....</P><BR><P>&nbsp;</P><BR><P>그중에서 스카이 영등포점 이성오 기사님이 젤 친절하고 성심껏 잘해주시는 것 같습니다.</P><BR><P>&nbsp;</P><BR><P>감사드려요~*</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,841 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+<s:if test="session.loggedIn.equalsIgnoreCase('true')">
+	<s:set name="loginStatus" value="'true'"/>
+	<s:set name="iSkyUserId" value="session.iSkyUserid"/>
+	<s:set name="iSkyUserIp" value="session.iSkyIp"/>
+	<s:set name="iSkyUserName" value="session.iSkyName"/>
+	<s:set name="LogSess" value="'Y'"/>
+	<s:set name="badUser" value="session.badUser"/>
+	<s:set name="EventPollYN" value="session.EventPollYN"/>  
+</s:if>
+<s:else>
+	<s:set name="loginStatus" value="'false'"/>
+	<s:set name="iSkyUserId" value=""/>
+	<s:set name="iSkyUserIp" value=""/>
+	<s:set name="iSkyUserName" value=""/>
+	<s:set name="LogSess" value="'N'"/>
+	<s:set name="badUser" value=""/>
+	<s:set name="EventPollYN" value="N"/>  
+</s:else>
+
+<!-- iSkyUserId : <s:property value='#iSkyUserId' escape="false"/><br/>
+session.loggedIn : <s:property value='session.loggedIn' escape="false"/> -->
+<!-- <br/><br/><br/><br/><br/>
+dddd:<s:property value='#session.EventPollYN' escape="false"/> -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/agreement_contents.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/agreement_contents.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/agreement_contents.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120402");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="100102"; var firstDepth ="10";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=100102&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash">
+				<script>swf_include('/static/flash/leftNavi/leftNavi_Util_Guide.swf?PageCode=100102','222','500','','','transparent','')</script>
+				<ul class="snsBanner">
+					<li><a href="http://www.facebook.com/vega.kr" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner01.jpg" alt="Facebook 바로가기" /></a></li>
+					<li><a href="https://twitter.com/skyandroian" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner02.jpg" alt="Twitter 바로가기" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=100102&LogSess=N','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/etc/d3title_agreement.gif" border="0" alt="이용약관" title="이용약관" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="agreementTabBox"><ul class="agreementTab"
+				><li><a href="javascript:menuLink('100101');"><img src="/static/images/etc/agreement_tab_01.gif" border="0" alt="iSKY 사이트 이용약관" /></a></li
+				><li><a href="javascript:menuLink('100102');"><img src="/static/images/etc/agreement_tab_02_.gif" border="0" alt="iSKY 유료서비스 이용약관" /></a></li
+				><li><a href="javascript:menuLink('100103');"><img src="/static/images/etc/agreement_tab_03.gif" border="0" alt="iSKY 스토어 이용약관" /></a></li
+			></ul></div>
+
+
+			<div class="privacy_cont">
+				<div class="stit"><img src="/static/images/etc/agreement_stit_02.gif" alt="iSKY 유료서비스 이용약관" /></div>
+
+				<p class="cont_01">팬택계열의 iSKY 유료서비스 이용약관은 다음과 같은 내용을 담고 있습니다.</p>
+
+				<div class="listBox">
+					<ul class="listLeft">
+						<li>제 1조 <a href="#a1">목적</a></li>
+						<li>제 2조 <a href="#a2">정의</a></li>
+						<li>제 3조 <a href="#a3">약관의 승낙</a></li>
+						<li>제 4조 <a href="#a4">약관의 게시 등</a></li>
+						<li>제 5조 <a href="#a5">약관의 개정</a></li>
+						<li>제 6조 <a href="#a6">"회원"에 대한 통지</a></li>
+						<li>제 7조 <a href="#a7">유료서비스의 내용 등의 게시</a></li>
+						<li>제 8조 <a href="#a8">이용계약의 성립 등</a></li>
+						<li>제 9조 <a href="#a9">미성년자 이용계약에 관한 특칙</li>
+						<li>제 10조 <a href="#a10">유료서비스의 개요 및 이용방법</a></li>
+						<li>제 11조 <a href="#a11">유료서비스의 변경</a></li>
+						<li>제 12조 <a href="#a12">유료서비스의 중지</a></li>
+						<li>제 13조 <a href="#a13">유료서비스의 중단</a></li>
+						<li>제 14조 <a href="#a14">캐쉬 충전서비스의 이용 결제 및 결제 취소</a></li>
+					</ul>
+					<ul class="listRight">
+						<li>제 15조 <a href="#a15">캐쉬 충전서비스의 이용 제한</a></li>
+						<li>제 16조 <a href="#a16">충전된 캐쉬의 환불</a></li>
+						<li>제 17조 <a href="#a17">유료 서비스의 이용 및 환불</li>
+						<li>제 18조 <a href="#a18">회원 탈퇴 시 캐쉬, 포인트 처리 방법</li>
+						<li>제 19조 <a href="#a19">포인트의 적립과 소멸</li>
+						<li>제 20조 <a href="#a20">회원의 청약철회와 계약해제, 해지</li>
+						<li>제 21조 <a href="#a21">회원의 계약해제, 해지의 효과</li>
+						<li>제 22조 <a href="#a22">“iSKY 사이트”의 계약해제, 해지 및 이용제한</li>
+						<li>제 23조 <a href="#a23">“iSKY 사이트”의 계약해제, 해지의 효과</li>
+						<li>제 24조 <a href="#a24">과오금</li>
+						<li>제 25조 <a href="#a25">사용기간 등</li>
+						<li>제 26조 <a href="#a26">컨텐츠하자 등에 의한 회원피해보상</li>
+						<li>제 27조 <a href="#a27">책임제한</li>
+						<li>제 28조 <a href="#a28">약관의 효력</li>
+					</ul>
+				</div>
+
+
+				<div class="cont_txt">
+					<h3 class="first"><a name="a1">제 1 조 (목적)</a></h3>
+					<ol class="three">
+						<li>iSKY 유료서비스 이용약관(이하 "본 약관")은 ㈜팬택(이하 "회사")이 운영하는 사이트(이하 "iSKY 사이트")에서 제공되는 "유료서비스"의 이용과 관련하여, 이용자와 “회사”간의 권리, 의무 및 책임사항, 이용 조건 및 절차 등에 관한 사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</li>
+					</ol>
+
+
+					<h3><a name="a2">제２조 (정의)</a></h3>
+					<ol class="three">
+						<li>“본 약관”에서 사용하는 용어의 정의는 다음과 같습니다.</li>
+					</ol>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							"유료서비스"라 함은 "iSKY 사이트"에서 제공하는 서비스 중 “회원”에 한하여 유료로 이용이 가능한 서비스를 말합니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트” 내의 “유료서비스”는 LIVE 메시지 플랫폼 내의 “문자 전송(SMS) 서비스, 스타다이어리, 테마메시지” 등이 있습니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							“포인트”란 “iSKY 사이트” 내에서 회원의 자발적인 활동 및 구매활동에 의해 조건부로 적립되는 마일리지 형태로 제공되는 회원 혜택을 말합니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							"캐쉬"이라 함은 "회원"이 결제를 통해 충전하고, “iSKY 사이트”의 일부 "유료서비스"를 이용하기 위해서만 사용할 수 있는 인터넷상의 현금등가의 결제수단을 의미합니다.</li>
+						<li>
+							<span class="first_letter">5.</span>
+							"충전"이라 함은 “iSKY 사이트”이 정한 정책에 따라 결제를 통해 캐쉬를 “회원”의 아이디(ID)에 적립하는 행위입니다.</li>
+					</ol>
+
+
+					<h3><a name="a3">제 3 조 (약관의 승낙)</a></h3>
+					<ol class="three">
+						<li>"회사”가 "iSKY 사이트"에서 제공하는 "유료서비스"는 "iSKY 사이트" 내의 3개의 약관(iSKY 사이트 이용약관/iSKY 유료 서비스 이용약관 / iSKY 스토어 이용약관)에 모두 동의하고 “회원”으로 등록된 가입자에 한하여 사용할 수 있는 서비스입니다.</li>
+					</ol>
+
+
+					<h3><a name="a4">제 4 조 (약관의 게시 등)</a></h3>
+					<ol class="three">
+						<li>"iSKY 사이트"는 "본 약관"을 "회원"이 그 전부를 확인할 수 있도록 기술적 조치를 취합니다.</li>
+					</ol>
+
+
+					<h3><a name="a5">제 5 조 (약관의 개정)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							"iSKY 사이트"는 "온라인디지털컨텐츠산업발전법", "전자상거래등에서의소비자보호에관한법률","약관의규제에관한법률" 등 관련법을 위배하지 않는 범위에서 "본 약관"을 개정할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							"iSKY 사이트"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 제1항의 방식에 따라 그 개정약관의 적용일자 30일 전부터 적용일자 전일까지 공지합니다. 다만, "회원"에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스 내 전자우편, 로그인 시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							"iSKY 사이트"이 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 30일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 "회원"이 명시적으로 거부의 의사표시를 하지 아니한 경우 "회원"이 개정약관에 동의한 것으로 봅니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							"회원"이 개정약관의 적용에 동의하지 않는 경우 “iSKY 사이트”는 해당 “회원”에 대하여 개정 약관의 내용을 적용할 수 없으며, 이 경우 "회원"은 이용계약을 해지하여야 합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a6">제 6 조 ("회원"에 대한 통지)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”이 "회원"에 대한 통지를 하는 경우, "본 약관"에 별도 규정이 없는 한 전자우편주소로 통지할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 "회원" 전체에 대한 통지의 경우 7일 이상 “iSKY 사이트”의 게시판에 게시함으로써 제1항의 통지에 갈음할 수 있습니다. 다만, "회원" 본인의 거래와 관련하여 중대한 영향을 미치는 사항에 대하여는 제1항의 통지를 합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a7">제 7 조 (유료서비스의 내용 등의 게시)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”는 다음 사항을 해당 "유료서비스"의 이용초기화면이나 그 포장, FAQ 등에 "회원"이 알기 쉽게 표시합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									"유료서비스"의 명칭 또는 제호</li>
+								<li>
+									<span class="first_letter">나.</span>
+									"유료서비스" 제작자의 성명(법인인 경우에는 법인의 명칭), 주소, 전화번호</li>
+								<li>
+									<span class="first_letter">다.</span>
+									"유료서비스"의 내용, 이용방법, 이용료 기타 이용조건</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“회원”은 “iSKY 사이트”의 "유료서비스" 이용 전에 이용가능기기 및 이용에 필요한 최소한의 기술사양을 확인해야 하며, 사전 확인 미비로 인한 손해는 “회사”가 책임지지 않습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a8">제 8조 (회원에 대한 통지)</h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							"회원"은 “iSKY 사이트”이 제공하는 다음 또는 이와 유사한 절차에 의하여 이용신청을 합니다. “iSKY 사이트”는 계약 체결 전에 각 호의 사항에 관하여 "회원"이 정확하게 이해하고 실수 또는 착오 없이 거래할 수 있도록 정보를 제공합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									"유료서비스"의 확인 및 선택</li>
+								<li>
+									<span class="first_letter">나.</span>
+									결제방법의 선택 및 결제정보의 입력</li>
+								<li>
+									<span class="first_letter">다.</span>
+									"유료서비스"의 이용신청에 관한 확인 또는 “iSKY 사이트”의 확인에 대한 동의 </li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 "회원"의 이용신청이 다음 각 호에 해당하는 경우에는 승낙하지 않거나 승낙을 유보할 수 있습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									실명이 아니거나 타인의 명의를 이용한 경우</li>
+								<li>
+									<span class="first_letter">나.</span>
+									허위의 정보를 기재하거나, “iSKY 사이트”이 제시하는 내용을 기재하지 않은 경우</li>
+								<li>
+									<span class="first_letter">다.</span>
+									미성년자가 청소년보호법에 의해서 이용이 금지되는 "유료서비스"를 이용하고자 하는 경우</li>
+								<li>
+									<span class="first_letter">다.</span>
+									서비스 관련 설비의 여유가 없거나, 기술상 또는 업무상 문제가 있는 경우</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							이용계약의 성립시기는 "신청완료" 등을 신청절차 상에서 표시한 시점으로 합니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							"회원"이 "유료서비스"를 이용하기 위해서는 "본 약관"에 동의 후, 각 서비스에 따른 이용조건에 따라 이용요금을 지급하여야 합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a9">제 9 조 (미성년자 이용계약에 관한 특칙)</h3>
+					<ol class="three">
+						<li>“iSKY 사이트”는 만 14세 미만의 미성년회원이 "유료서비스"를 이용하고자 하는 경우에 부모 등 법정 대리인의 동의를 얻거나, 계약체결 후 추인을 얻지 않으면 미성년자 본인 또는 법정대리인이 그 계약을 취소할 수 있다는 내용을 계약체결 전에 고지하는 조치를 취합니다.</li>
+					</ol>
+
+
+					<h3><a name="a10">제 10 조 (유료서비스의 개요 및 이용방법)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							"유료서비스"는 "회원"이 일정 금액을 포인트나 캐쉬로 지불해야만 이용할 수 있는 서비스 또는 상품입니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							"유료서비스"의 세부내용은 각각의 서비스 또는 상품 안내 페이지에 상세히 설명되어 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							"회원"은 이용하고자 하는 "유료서비스"를 선택한 후 결제방법과 기간 또는 건수 등을 선택하여 결제를 진행하면 원하는 서비스를 신청하고 서비스를 받으실 수 있습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a11">제 11 조 (유료서비스의 변경)</a></h3>
+					<ol class="three">
+						<li>
+							"유료서비스"에 대한 변경은 "iSKY 사이트 이용약관" 제3조를 준용합니다. 다만, 변경된 내용이 중대하거나 "회원"에게 불리한 경우 “iSKY 사이트”는 해당 "유료서비스"를 제공받는 "회원"에게 동의를 구하는 내용을 통지합니다. 이때, “iSKY 사이트”는 동의를 거절한 "회원"에 대하여는 변경 전 서비스를 제공합니다. 다만, 그러한 서비스 제공이 불가능할 경우 해당 서비스의 제공을 중지하거나 계약을 해지할 수 있습니다. 이 경우 환불 등은 "본 약관" 제16조에 따라 처리됩니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a12">제 12 조 (유료서비스의 중지)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							"회원"이 서비스를 음란, 불온, 불법적 목적이나 기타 관계법령, 공공질서, 미풍양속 등에 반한다고 판단되는 목적으로 사용할 때에는 “iSKY 사이트”는 서비스 이용을 취소할 수 있으며 해당 "회원"에 대해 추후 사용을 제한할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 1주일 전의 고지 후 서비스를 중지할 수 있으며 이 기간 동안 이용자가 고지 내용을 인지하지 못한데 대하여 당사는 책임을 지지 않습니다. 불가피한 사정이 있을 경우 위 사전 고지기간은 단축되거나 생략될 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							“iSKY 사이트”의 사정으로 서비스를 영구히 중단하여야 할 경우 전 2항을 준용합니다. 다만, 이 경우 사전 고지기간은 1개월로 합니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”는 "본 약관"의 내용에 위반하는 행동을 한 "회원"에 대하여 1주일 간의 통지 기간 후 임의로 서비스 사용중지 조치를 취할 수 있습니다. 이 경우 “iSKY 사이트”는 위 이용자의 접속을 금지할 수 있으며, 위 이용자가 게시한 내용의 전부 또는 일부를 임의로 삭제할 수 있습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a13">제 13 조 (유료서비스의 중단)</a></h3>
+					<ol class="three">
+						<li>
+							사업종목의 전환, 사업의 포기, 업체 간의 통합 등의 이유로 "유료서비스"를 제공할 수 없게 되는 경우에는 “iSKY 사이트”는 "iSKY 사이트 이용약관" 제8조 (회원에 대한 통지)에 정한 방법으로 "회원"에게 통지하고 당초 “iSKY 사이트”에서 정한 조건에 따라 "회원"에게 보상합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a14">제 14 조 (게시물 및 데이터의 관리)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							캐쉬의 충전은 “iSKY 사이트”의 “회원”에 한해 가능합니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							캐쉬 충전은 “iSKY 사이트”이 정한 한도 중 회원이 선택한 금액만큼 하실 수 있습니다. (추후 회사의 정책에 따라 단위가 변경될 수 있습니다)
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							캐쉬의 충전금액은 필요한 경우 “iSKY 사이트”이 기간별 최고한도액을 설정할 수 있으며, 이와는 별도로 회원이 지정하신 결제수단에 따라 1회 결제 시 한도금액이 정해집니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							결제수단 중 신용카드 결제를 선택한 회원의 경우 결제대행사의 결제규정(약관)에도 동의한 것으로 간주하며, 그 주요 내용은 다음과 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									회원이 신용카드 결제를 통해 물품 또는 용역을 구매할 수 있는 한도는 신용카드 회사가 정한 회원 한도 관리 기준에 따릅니다.
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회원은 서비스의 이용요금을 해당 신용카드사의 요금청구/납부시스템에 의하여 납부를 하며, 서비스의 이용 요금을 정상적으로 납부하지 않은 경우 “iSKY 사이트”는 해당 회원의 서비스 이용을 제한할 수 있습니다.
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									신용카드 결제를 이용하여 결제한 금액의 결제 취소는 결제 후 45 일 이내에 결제 취소를 요청하고 “iSKY 사이트”이 이를 동의한 경우에 한하여 가능합니다. 단, 결제 금액을 사용하신 경우 에는 결제 취소를 하실 수 없습니다.
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a15">제 15 조 (캐쉬 충전서비스의 이용 제한)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							캐쉬 충전 시 이용한 결제수단을 통해 해당 캐쉬 충전요금을 지불하여야 합니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회원이 “iSKY 사이트” 약관 및 규정에 위반되는 행위를 한 경우 “iSKY 사이트”는 사전통지 없이 이용 계약을 해지하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							기타 관련법령을 위반하는 경우 회사는 사전통지 없이 이용계약을 해지하거나 또는 기간을 정하여 서비스 이용을 중지할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							법률에서 정한 미성년자에 해당하는 회원이 캐쉬 서비스를 이용하기 위해서는 부모님 등 친권자 및 보호자의 동의를 받아야 합니다. 친권자 및 보호자의 동의를 받지 아니하는 경우 캐쉬 서비스 이용에 제한을 받게 됩니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a16">제 16 조 (충전된 캐쉬의 환불)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							캐쉬의 환불을 원하는 회원은 소정의 절차를 거쳐 환불을 신청하시면, 환불 신청이 정당함을 심사한 후, 정당한 이유가 있음으로 판명된 경우에 보유하고 있는 캐쉬 잔액에서 결제 대행사에 지불한 결제수수료와 환불에 소요되는 계좌이체 비용을 제한 나머지 금액을 환불해드립니다. 단, 결제수수료는 지불수단에 따라 달라질 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							환불대상 금액이 1,000원 미만인 경우에는 환불 받으실 수 없으며 캐쉬를 포인트로 전환하실 수 있습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a17">제 17 조 (유료 서비스의 이용 및 환불)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							유료 서비스의 이용은 다음과 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									“회원”에게 적립된 마일리지인 포인트와 선불 충전식 캐쉬를 통한 컨텐츠나 서비스의 이용은 “iSKY 사이트” “회원” 본인에 한합니다.
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회원 본인의 관리 소홀로 아이디(ID) 및 비밀번호가 타인에게 유출되어, 무단 사용된 포인트나 캐쉬에 대해서 전적으로 회원 본인에게 책임이 있으며, 환불되지 아니합니다.
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									단위 건의 구매에 있어, 포인트와 캐쉬로 분할하여 결재하실 수 없으며, “iSKY 사이트”에서 정한 경우를 제외하고는 상호 전환되지 아니합니다.
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							유료 서비스의 환불 정책은 다음과 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									“iSKY 사이트”에서 제공되는 “유료서비스”의 특성에 따라 신청완료 후에는 사용자의 요청에 따른 서비스 취소 및 해지를 통한 환불이 불가능합니다.
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									단, “iSKY 사이트”의 고의 또는 과실로 정상적인 서비스 이용에 장애가 발생하여 “이용자”의 손해를 그에 준하는 수준의 캐쉬 또는 포인트로 보상합니다.
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									문자 전송(SMS) 서비스의 경우 예약전송에 한해 발송 전에 취소가 이루어지면, 신청 시 결제하신 캐쉬 또는 포인트가 자동 환급됩니다.
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a18">제 18 조 (회원 탈퇴 시 캐쉬, 포인트 처리 방법)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							캐쉬의 환불은 다음과 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									“iSKY 사이트” 회원 탈퇴 시, 회원이 캐쉬 잔액의 환불을 요청할 경우 해당 회원의 캐쉬 잔액을 대상으로 “iSKY 사이트”이 결제 대행사에 지불한 결제 수수료와 환불에 소요되는 계좌이체 비용을 제외한 나머지 금액이 1,000원 이상인 경우에 한하여 환불해드립니다. 결제수수료는 지불수단에 따라 달라질 수 있습니다.
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회원 탈퇴 시 환불대상 금액이 1,000원 미만인 경우에는 환불되지 않으며, “iSKY 사이트”의 방침에 따라, 관리 및 사용되어 집니다.
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							포인트는 회원 탈퇴 시에 전액 삭제되며, 재가입 시에도 재 적립되지 않습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a19">제 19 조 (포인트의 적립과 소멸)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”의 서비스를 이용하면서 “회원”에게 생성 또는 취득 되는 포인트에 대한 일체의 소유권은 “iSKY 사이트”에 있습니다. 따라서 포인트는 어떠한 경우에도 다른 현금성 수단으로 전환 또는 환불 되지 않습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 서비스 운영의 필요상 회원 포인트의 포인트의 적립 및 사용에 관해, 일부 또는 전부를 조정할 수 있습니다. 단, 이 경우에는 그 사유 및 내용을 사전에 회원에게 공지합니다. 상세한 적립 및 사용은 ‘포인트 안내' 등의 사이트 내의 안내를 따릅니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							포인트는 적립일 기준으로 익월부터 6개월간 유효하며, 6개월의 유효기간 내에 사용되지 않은 포인트는 자동으로 소멸됩니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a20">제 20 조 (회원의 청약철회와 계약해제, 해지)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”의 "유료서비스"는 "온라인디지털컨텐츠산업발전법" 및 "디지털컨텐츠이용자보호 지침"에서 규정하는 청약철회가 불가능한 서비스입니다. “iSKY 사이트”는 청약철회권의 제한을 위해 동법에 따라 다음 각 호 중 하나의 조치를 취하여야 합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									청약의 철회가 불가능한 "유료서비스"에 대한 사실을 표시사항에 포함한 경우
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									시용상품을 제공한 경우
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									한시적 또는 일부이용 등의 방법을 제공한 경우
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							"회원"은 다음 각 호의 사유가 있을 때 이용계약을 해지 또는 해제할 수 있습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									“회사”의 시스템 혹은 내부 사정으로 인하여 서비스 이용이 원활하게 이루어지지 않았을 경우
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									“유료서비스"의 하자를 “iSKY 사이트”가 보완, 수정할 수 없는 경우 "유료서비스"를 공급받은 날로부터 1개월 이내
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									“유료서비스"를 이용하는 중에 “iSKY 유료서비스 이용약관”이 변경된 경우 "회원"이 "본 약관"의 변경에 동의하지 않고 회원탈퇴 또는 "유료서비스" 이용계약을 해지하는 경우
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							제2항의 계약해제, 해지는 "회원"이 전화, 전자우편 등으로 “iSKY 사이트”에 그 의사를 표시한 때에 효력이 발생하며 “회사”는 “회원”의 의사에 따라 해당 서비스에 대하여 하자 발생 부분만큼 서비스를 다시 제공하거나, 결제 금액에 상응하는 포인트을 제공하여 배상에 갈음할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”는 제3항에 따라 "회원"이 표시한 계약해제, 해지의 의사표시를 수신한 후 지체 없이 이러한 사실을 "회원"에게 회신합니다.
+						</li>
+						<li>
+							<span class="first_letter">5.</span>
+							"회원"은 제2항1호의 사유로 계약해제, 해지의 의사표시를 하기 전에 상당한 기간을 정하여 서비스 이용의 하자에 대한 치유를 요구할 수 있습니다. 다만, “iSKY 사이트”이 하자의 치유가 불가능하다고 판단하는 경우에는 즉시 그 사실을 "회원"에게 통지하고 이용계약을 해제, 해지할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">6.</span>
+							“유료서비스” 이용 중 다음 각 호와 같은 사유로 인하여 서비스가 정상적으로 이루어지지 않은 경우에는 “회사”는 책임을 지지 않습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									이용자 확인 부실로 인하여, 휴대폰 기기 상의 기능에 따라 제공되지 않는 서비스를 신청하여 문자를 정상적으로 수신하지 못한 경우
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회사의 시스템 확인한 결과 문자는 정상적으로 발송되었음에도 사용자가 문자를 받지 못하였을 경우 (이용자가 장시간 휴대폰의 전원을 꺼두었거나, 문자 저장공간이 없어서 문자를 받지 못한 것으로 간주)
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									선결제가 이루어지지 않은 예약문자의 경우 발송 시점에서 사용자의 캐쉬 또는 포인트 잔액이 없어 발송되지 않은 경우
+								</li>
+								<li>
+									<span class="first_letter">라.</span>
+									사용자가 서비스 신청 시 입력한 휴대폰 수신번호가 정상적이지 않거나 잘못 입력된 경우
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a21">제 21 조 (회원의 계약해제, 해지의 효과)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”는 "회원"에게 계약해제, 해지의 의사표시에 대하여 회신한 날로부터 3영업일 이내에 대금의 결제와 동일한 방법으로 이를 환급하여야 하며, 동일한 방법으로 환불이 불가능할 때에는 이를 사전에 고지하여야 합니다. 다만, 수납확인이 필요한 결제수단의 경우에는 수납확인일로부터 3 영업일 이내에 이를 환급하도록 합니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 제1항에 따라 환급할 경우에 "회원"이 "유료서비스" 이용으로부터 얻은 이익에 해당하는 금액을 공제하고 환급할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							“iSKY 사이트”는 위 대금을 환급함에 있어서 "회원"이 신용카드 또는 전자화폐 등의 결제수단으로 재화 등의 대금을 지급한 때에는 지체 없이 당해 결제수단을 제공한 사업자로 하여금 재화 등의 대금의 청구를 정지 또는 취소하도록 요청합니다. 다만, 제1항 단서 및 제2항의 경우에는 그러하지 아니할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”, "유료서비스 등의 대금을 지급 받은 자" 또는 "회원과 유료서비스 이용계약을 체결한 자"가 동일인이 아닌 경우에 각자는 청약철회 또는 계약해제, 해지로 인한 대금환급과 관련한 의무의 이행에 있어서 연대하여 책임을 집니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a22">제 22 조 (“iSKY 사이트”의 계약해제, 해지 및 이용제한)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”는 "회원"이 "iSKY 사이트 이용약관" 제17조 (지적 소유권의 귀속 및 이용제한)에서 정한 행위를 하였을 경우 해당 조항에 따라 사전통지 없이 계약을 해제, 해지하거나 또는 기간을 정하여 서비스이용을 제한할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 제1항에 따라 환급할 경우에 "회원"이 "유료서비스" 이용으로부터 얻은 이익 및 환불수수료(10% 또는 1,000원 중 큰 금액)에 해당하는 금액을 공제하고 환급할 수 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							제1항의 해제, 해지는 “iSKY 사이트”이 자신이 정한 통지방법에 따라 "회원"에게 그 의사를 표시 한 때에 효력이 발생합니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”의 해제, 해지 및 이용제한에 대하여 "회원"은 “iSKY 사이트”이 정한 절차에 따라 이의신청을 할 수 있습니다. 이 때 이의가 정당하다고 “iSKY 사이트”이 인정하는 경우, “iSKY 사이트”는 즉시 서비스의 이용을 재개합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a23">제 23 조 (“iSKY 사이트”의 계약해제, 해지의 효과)</a></h3>
+					<ol class="three">
+						<li>
+							"회원"의 귀책사유에 따른 이용계약의 해제, 해지의 효과는 제22조를 준용합니다. 다만, "회사"는 "회원"에 대하여 계약해제, 해지의 의사표시를 한 날로부터 3영업일 이내에 대금의 결제와 동일한 방법으로 이를 환급합니다. 다만, 동일한 방법으로 환불이 불가 시에는 이를 사전에 고지합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a24">제 24 조 (과오금)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”는 과오금이 발생한 경우 이용대금의 결제와 동일한 방법으로 과오금 전액을 환불하여야 합니다. 다만, 동일한 방법으로 환불이 불가능할 때는 이를 사전에 고지합니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”의 책임 있는 사유로 과오금이 발생한 경우, “iSKY 사이트”는 계약비용, 수수료 등에 관계없이 과오금 전액을 환불합니다. 다만, "회원"의 책임 있는 사유로 과오금이 발생한 경우, “iSKY 사이트”이 과오금을 환불하는 데 소요되는 비용은 합리적인 범위 내에서 "회원"이 부담하여야 합니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							“iSKY 사이트”는 "회원"이 주장하는 과오금에 대해 환불을 거부할 경우에 정당하게 이용대금이 부과되었음을 입증할 책임을 집니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”는 과오금의 환불절차를 "디지털컨텐츠이용자보호지침"에 따라 처리합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a25">제 25 조 (사용기간 등)</a></h3>
+					<ol class="three">
+						<li>
+							"캐쉬"는 마지막 이용일로부터 5년 경과 시까지 이용하지 않을 경우, 상사소멸시효에 따라 소멸될 수 있습니다. 다만, 무상으로 제공하는 이벤트성의 "포인트"의 경우는 전단과 별도로 “iSKY 사이트”의 정책에 따라 소멸될 수 있습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a26">제 26 조 (컨텐츠하자 등에 의한 회원피해보상)</a></h3>
+					<ol class="three">
+						<li>
+							“iSKY 사이트”는 "유료서비스"의 하자 등에 의한 회원피해보상의 기준, 범위, 방법 및 절차에 관한 사항을 "디지털컨텐츠이용자보호지침"에 따라 처리합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a27">제 27 조 (책임제한)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							“iSKY 사이트”는 천재지변 또는 이에 준하는 불가항력으로 인하여 "유료서비스"를 제공할 수 없는 경우에는 "유료서비스" 제공에 관한 책임이 면제됩니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							“iSKY 사이트”는 "회원"의 귀책사유로 인한 "유료서비스" 이용의 장애에 대하여는 책임을 지지 않습니다.
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							“iSKY 사이트”는 "회원"이 "유료서비스"와 관련하여 게재한 정보, 자료, 사실의 신뢰도, 정확성 등의 내용에 관하여는 책임을 지지 않습니다.
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							“iSKY 사이트”는 "회원" 상호간 또는 "회원"과 제3자 간에 "유료서비스"를 매개로 하여 발생한 분쟁 등에 대하여 책임을 지지 않습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a28">제 28 조 (약관의 효력)</a></h3>
+					<ol class="three">
+						<li>
+							"본 약관"에서 언급되지 아니한 내용에 대해서는 "iSKY 사이트 이용약관"에 따르며, "본 약관"과 "iSKY 사이트 이용약관"의 내용에 차이가 있을 경우에는 “유료서비스”에 한하여 "본 약관"의 내용이 우선하여 적용됩니다.
+						</li>
+					</ol>
+
+
+					<div class="operationDate">부칙<br />
+					제 1조 (시행일)<br />
+					이 약관은 2009년 4월 19일부터 시행합니다.
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+<s:if test="isFlag.equalsIgnoreCase('false')">
+
+
+
+
+
+
+
+</s:if>
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://www.cloudlive.co.kr" target="_blank">CLOUD LIVE</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/event/musthave/eventResult.jsp">
+
+	<input type="hidden" name="dispNum" value="0303">
+
+	<input type="hidden" name="page" value="11">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="s_value" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+
+<meta http-equiv="page-enter" content="blendtrans(duration=0.5)"/>
+<meta http-equiv="page-exit" content="blendtrans(duration=0.5)"/>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/tutorsty.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/flexcrollstyles.css" />
+<script language="JavaScript" src="/static/js/flexcroll.js"></script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<!-- <script language="JavaScript" src="/static/js/select.js"></script> -->
+<script>var dispNum="0303"</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	function goView(form, top_eventid){
+		form.action = "eventResult_view.jsp?dispNum=0303";
+		form.eventid.value = top_eventid;
+		form.submit();
+	}
+//-->
+</SCRIPT>
+
+<style type="text/css">
+
+A.a_Location { font: 11px/14px "돋움"; color:#f1cdcc ; text-decoration: none; }
+A:hover.a_Location { font: 11px/14px "돋움" ; color:#f1cdcc ; text-decoration: none;}
+
+.location_here {color:#f1cdcc;}
+
+A.a_paging { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+A:hover.a_paging { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+
+/*.subLeft {border-right:solid 10px #FFFFFF;background:#e0908e url('/static/images/common/contBg_03.gif') 0 0 repeat-x;} // 10px */
+.subLeft {border-right:solid 8px #FFFFFF;background:#e0908e url('/static/images/common/contBg_03.gif') 0 0 repeat-x;}
+.subRight {background-color:#000000;}
+
+/* .PsubLeft {background-color:#709dd3;border-right:solid 10px #FFFFFF;}  // 라인 10px  */
+.PsubLeft {background-color:#709dd3;border-right:solid 8px #FFFFFF;} /* 8px */
+.PsubRight { padding:0 0 0 20px;background:#e0908e;}
+
+.twoDepth {border-bottom:solid 1px #e99694;padding:0 18px 6px 0;background:url('/static/images/common/twoDepthBox_03.gif') right bottom no-repeat;}
+.Location {color:#f1cdcc;border-bottom:solid 1px #e99694;text-align:right;}
+.pthreeDepth {color:#f1cdcc;border-bottom:solid 1px #e99694;padding:0 0 7px 13px;} /* product threeDepth*/
+
+.fdTab {background:url('/static/images/event/_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+.fdTab2 {background:url('/static/images/event/0303_tabBg.gif') repeat-x;padding:0 0 0 10px;}
+
+A.a_board03 { font: 12px/18px "돋움"; color:#333333 ; text-decoration: none; }
+A:hover.a_board03 { font: 12px/18px "돋움" ; color:#333333 ; text-decoration: none;}
+
+
+.tbl_paging td a { font: 11px/14px "돋움"; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+.tbl_paging td a:hover { font: 11px/14px "돋움" ; color:#000000 ; text-decoration: none; padding:0 3px 0 3px;}
+.tbl_paging td b {font:bold 11px/14px "돋움"; color:#FFFFFF; padding:0 3px 0 3px;}
+
+</style>
+</head>
+<body scroll="no">
+<form name="iForm" method="post">
+	<input type="hidden" name="page" value="11">
+	<input type="hidden" name="s_kind" value="">
+	<input type="hidden" name="s_value" value="">
+	<input type="hidden" name="flag">
+	<input type="hidden" name="eventid">
+</form>
+
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+	<tr valign="top">
+		<td class="subLeft"><div id='content'><div id='mycustomscroll' class='flexcroll'>
+			<table width="760" cellpadding="0" cellspacing="0" border="0">
+				<!-- [s] 2Depth navi -->
+				<tr valign="top">
+					<td height="75" colspan="2" align="right">
+					<table width="" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td><a href="javascript:menuLink('0301');"><img src="/static/images/event/03_snavi_01.gif"></a></td>
+							<td><a href="javascript:menuLink('0302');"><img src="/static/images/event/03_snavi_02.gif"></a></td>
+							<td><a href="javascript:menuLink('0303');"><img src="/static/images/event/03_snavi_03_.gif"></a></td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<!-- [e] 2Depth navi -->
+
+				<!-- [s] 2Depth & location -->
+				<tr valign="top">
+					<td class="p20l" colspan="2"><table width="740" cellpadding="0" cellspacing="0" border="0">
+					
+						<tr valign="top">
+							<td class="twoDepth" width="10"><div class="twoDepthBox"><a href="javascript:menuLink('0303');"><img src="/static/images/event/0303.gif" border="0" /></a></div></td>
+							<td class="Location"><img src="/static/images/common/_blank.gif"></td>
+							<!-- td valign="bottom" class="Location"><script language="JavaScript">dispLinemap(dispNum)</script></td -->
+						</tr>
+					
+					</table></td>
+				</tr>
+				<!-- [e] 2Depth & location -->
+
+				<tr valign="top">
+					<!-- [s] contents Area -->
+					<td colspan="2" class="contentsAreaL"><table width="650" cellpadding="0" cellspacing="0" border="0">
+						<!-- [s] Ptitle -->
+						<tr valign="top">
+							<td height="49"><img src="/static/images/event/0303_ptitle.gif"></td>
+						</tr>
+
+						<!-- [e] Ptitle -->
+					</table>
+					<!-- [s] 게시판리스트 -->
+					<table width="650" cellpadding="0" cellspacing="0" border="0" class="tbl_boardList03">
+						<col width="62" align="center">
+						<col width="387">
+						<col width="85" align="center">
+						<col width="96" align="center">
+						<tr>
+							<th height="26" class="left"><img src="/static/images/event/boardTh_no.gif"></th>
+							<th><img src="/static/images/event/boardTh_title.gif"></th>
+							<th><img src="/static/images/event/boardTh_date.gif"></th>
+							<th class="right"><img src="/static/images/event/boardTh_hit.gif"></th>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>34</td>
+							<td align="left"><a href="javascript:goView(iForm,'Bnnn/NZ2BYQ~J7Yn1RqLInQ~')" class="a_board04">오종혁1집 벨소리 이벤트 당첨자발표</a></td>
+							<td>2008/07/24</td>
+							<td>192</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>33</td>
+							<td align="left"><a href="javascript:goView(iForm,'eD/E/JY8QSE~2L34VdQ7O2Y~')" class="a_board04">밤이면 밤마다 벨소리 다운로드 이벤트 당첨자 발표</a></td>
+							<td>2008/07/23</td>
+							<td>414</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>32</td>
+							<td align="left"><a href="javascript:goView(iForm,'sqKy/HYf3_8~TUcwe5t/XGY~')" class="a_board04">브라운아이즈 VS 마이티마우스 통화연결음 이벤트 당첨자 발표</a></td>
+							<td>2008/07/23</td>
+							<td>334</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>31</td>
+							<td align="left"><a href="javascript:goView(iForm,'n4G4/NbT/6o~Yqz8nmdBSoA~')" class="a_board04">IM-R300러브캔버스 출시기념 이벤트 당첨자발표</a></td>
+							<td>2008/07/23</td>
+							<td>4616</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>30</td>
+							<td align="left"><a href="javascript:goView(iForm,'EUiV/JaZO0g~5tYWamVSCr0~')" class="a_board04">나몰라패밀리 벨소리 이벤트 당첨자발표</a></td>
+							<td>2008/07/22</td>
+							<td>190</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>29</td>
+							<td align="left"><a href="javascript:goView(iForm,'54g//XcI8Ho~Y3a4jNZhL5o~')" class="a_board04">다비치 1.5집 벨소리 이벤트 당첨자발표</a></td>
+							<td>2008/07/22</td>
+							<td>187</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>28</td>
+							<td align="left"><a href="javascript:goView(iForm,'wUZL/TdxMfE~c1HzZNPreYs~')" class="a_board04">브라운아이즈 벨소리 이벤트</a></td>
+							<td>2008/07/18</td>
+							<td>249</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>27</td>
+							<td align="left"><a href="javascript:goView(iForm,'Ry4i/ZeCTNM~6F0naqGWaZ8~')" class="a_board04">성시경 통화연결음 이벤트 당첨자발표</a></td>
+							<td>2008/07/14</td>
+							<td>330</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>26</td>
+							<td align="left"><a href="javascript:goView(iForm,'Iewt/VfrjUk~WmdiFnL4wAw~')" class="a_board04">7월스카이데이즈_썸머페스티벌 당첨자발표</a></td>
+							<td>2008/07/10</td>
+							<td>1582</td>
+						</tr>
+
+						<!-- [s] 공지 -->
+					<!-- <tr align="center" valign="top">
+							<td class="N">10</td>
+							<td class="N" align="left"><a href="eventResult_view.jsp" class="a_board04"><b>[공지] 반납 기변시 3개월 제한 때문에 기변 안되시는 분</b></a></td>
+							<td class="N">2007.10.31</td>
+							<td class="N">500</td>
+						</tr> -->
+						<!-- [e] 공지 -->
+
+						<tr align="center" valign="top">
+							<td>25</td>
+							<td align="left"><a href="javascript:goView(iForm,'Wk8c/TfOKxg~P5bIIWBg1xk~')" class="a_board04">식객 벨소리 이벤트 당첨자발표</a></td>
+							<td>2008/07/10</td>
+							<td>402</td>
+						</tr>
+
+					</table>
+					<!-- [e] 게시판리스트 -->
+					<table width="650" cellpadding="0" cellspacing="0" border="0" class="tbl_paging">
+						<tr valign="top">
+							<td align="center">
+								<a href=eventResult.jsp?page=10&dispNum=0303&s_kind=&s_value=><img src='/static/images/event/btn_paging_prev.gif' border='0' align='absmiddle'></a><b>11</b>&nbsp;&nbsp;&nbsp;<a href=eventResult.jsp?page=12&dispNum=0303&s_kind=&s_value=>12</a>&nbsp;&nbsp;&nbsp;<a href=eventResult.jsp?page=13&dispNum=0303&s_kind=&s_value=>13</a>&nbsp;&nbsp;&nbsp;<a href=eventResult.jsp?page=14&dispNum=0303&s_kind=&s_value=>14</a>&nbsp;<img src='/static/images/event/btn_paging_next.gif' border='0' align='absmiddle'>
+
+							</td>
+						</tr>
+					</table>
+					</td>
+					<!-- [s] contents Area -->
+				</tr>
+
+			</table>
+			</div></div></td>
+		<td width="140" valign="middle" class="subRight"><script>swftrans('/static/flash/leftBanner.swf', '140', '100%');</script></td>
+	</tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+/*
+function LeftFlashHeight(){
+	document.getElementById("flashelement").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("bodyTable").style.height = parent.document.all.contentsIframe.scrollHeight + "px";
+	document.getElementById("mycustomscroll").style.height = parent.document.all.contentsIframe.offsetHeight;
+
+//alert(document.getElementById("mycustomscroll").style.height );
+//alert(parent.document.getElementById("contentsIframe").contentWindow.document.body.scrollHeight +"px");
+//	alert(parent.document.all.contentsIframe.offsetHeight);
+}
+
+
+	if (navigator.appName.indexOf("Microsoft") != -1) {
+		window.onload = LeftFlashHeight;
+//		alert('ie');
+		onresize = LeftFlashHeight;
+	}
+	else {
+		window.onload = LeftFlashHeight;
+		onresize = LeftFlashHeight;
+	}
+
+//	alert(document.getElementById("bodyTable").style.height);
+*/
+
+//-->
+</script>
+
+
+<form name="IFform" method="post" action="http://www.isky.co.kr/index.jsp">
+	<input type="hidden" name="refurl" value="">
+</form>
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+var refurl = "";
+var iskyUrl = "";
+
+refurl_url = "/event/musthave/eventResult.jsp";
+refurl_param = "&dispNum=0303&page=11&s_kind=&s_value=";
+refurl = refurl_url+"?type=refresh"+refurl_param;
+
+var obj	= parent.document.getElementById("contentsIframe");
+if(!obj){
+	document.IFform.refurl.value = refurl;
+	document.IFform.target="_top";
+	document.IFform.submit();
+
+}else{
+
+	var parobj	= parent.document.targetForm;
+	parobj.refurl.value = refurl;
+	parobj.PageCode.value = 0303;
+	parent.callExternalInterface(2);
+	parent.document.getElementById("adBanner").innerHTML = "";
+}
+
+//-->
+</SCRIPT>
+</body>
+</html>

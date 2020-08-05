@@ -1,0 +1,337 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/fun/game/game.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/fun/game/game.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/fun/game/game.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20111127");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Fun.css" />
+<script>var dispNum="0304"; var firstDepth ="03";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+
+	var imgUrl = "http://file.isky.co.kr/upload/content/game/";
+	var badUser = "";
+
+	
+
+/*
+	function gameCopy(url){
+
+		var html = "";
+
+		html += "<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"572\" height=\"473\">";
+		html += "<param name=\"movie\" value=\"" + url + "\">";
+		html += "<param name=\"quality\" value=\"high\"></param>";
+		html += "<param name=\"menu\" value=\"false\"></param>";
+		html += "<embed src=\"" + url +"\" width=\"572\" height=\"473\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" menu=\"false\"></embed>";
+		html += "</object>";
+
+		window.clipboardData.setData("Text",html);
+
+		alert("클립보드에 복사되었습니다.");
+
+	}
+*/
+	function gameCopy(txElName){
+
+		window.clipboardData.setData("Text", document.getElementById(txElName).value);
+
+		alert("클립보드에 복사되었습니다.");
+	}
+
+	
+	function swf_include2(url,widthNum,hightNum,Access,bgColor,wMode,vars, id){
+		var codeStr = "";
+		codeStr += "<object id=\""+id+"\" classid=\"clsid:d27cdb6e-ae6d-11cf-96B8-444553540000\"";
+		codeStr += "codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9.0.47.0\" width=\""+widthNum+"\" height=\""+hightNum+"\">";
+		codeStr += "<param name=\"allowScriptAccess\" value=\""+Access+"\" />";
+		codeStr += "<param name=\"movie\" value=\""+url+"\" />";
+		codeStr += "<param name=\"flashvars\" value=\""+vars+"\" />";
+		codeStr += "<param name=\"menu\" value=\"false\" />";
+		codeStr += "<param name=\"quality\" value=\"high\" />";
+		codeStr += "<param name=\"wmode\" value=\""+wMode+"\" />";
+		codeStr += "<param name=\"bgcolor\" value=\""+bgColor+"\" />";
+		codeStr += "<embed name=\""+id+"\" id=\""+id+"\" src=\""+url+"\" flashvars=\""+vars+"\" allowScriptAccess=\""+Access+"\" menu=\"false\" quality=\"high\" wmode=\""+wMode+"\"";
+		codeStr += "devicefont=\"true\" bgcolor=\""+bgColor+"\"  width=\""+widthNum+"\" height=\""+hightNum+"\" align=\"middle\" type=\"application/x-shockwave-flash\"";
+		codeStr += "pluginspage=\"http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash\">";
+		codeStr += "</embed>";
+		codeStr += "</object>";
+		document.write(codeStr);
+	}
+
+	function showUrlCopy() {
+		document.getElementById("copyUrlFormBase").style.display = "block";
+	}
+	function hideUrlCopy() {
+		document.getElementById("copyUrlFormBase").style.display = "none";
+	}
+	function srcType(type) {
+		var html = "";
+		if(type == "OBJECT") {
+
+			html += "<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\" codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0\" width=\"572\" height=\"473\">";
+			html += "<param name=\"movie\" value=\"http://file.isky.co.kr/upload/content/game/hunting.swf\">";
+			html += "<param name=\"quality\" value=\"high\"></param>";
+			html += "<param name=\"menu\" value=\"false\"></param>";
+			html += "</object>";
+		} else if(type == "EMBED") {
+			html += "<embed src=\"http://file.isky.co.kr/upload/content/game/hunting.swf\" width=\"572\" height=\"473\" quality=\"high\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" type=\"application/x-shockwave-flash\" menu=\"false\"></embed>";
+		}
+		document.getElementById("srcTx1").value = html;
+	}
+
+	//아이 프레임 리사이즈
+	function resizeFrame(iframeObj){
+		var innerBody = iframeObj.contentWindow.document.body;
+
+		var innerHeight = innerBody.scrollHeight + (innerBody.offsetHeight - innerBody.clientHeight);
+		var innerWidth = innerBody.scrollWidth + (innerBody.offsetWidth - innerBody.clientWidth);
+
+		iframeObj.style.height = innerHeight;
+		iframeObj.style.width = innerWidth;
+	}
+	
+
+</script>
+</head>
+
+<body>
+
+<div id="Wrap" class="fun">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0304&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Fun.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"></div>
+		</div>
+		
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Contents.swf?PageCode=0304','740','81','','','transparent','')</script></div>
+		
+		<div id="Content">
+			<div class="visualGame"><img src="/static/images/fun/game/game_vis_01.gif" /></div>
+			<div class="game_cont01">
+				<div class="leftCont"><h5><img src="/static/images/fun/game/game_stit_01_1.gif" alt="이달의 게임" title="이달의 게임" /><div class="more"><!--a href="javascript:gameCopy('http://file.isky.co.kr/upload/content/game/hunting.swf')"><img src="/static/images/fun/btn_funCopy.gif" border="0" alt="퍼가기" /--><a href="javascript:showUrlCopy();"><img src="/static/images/fun/btn_funCopy.gif" border="0" alt="퍼가기" /></a>
+				<div id="copyUrlFormBase" style="display:none;">
+					<div id="copyUrlForm">
+						<ul>
+							<li><dl>
+								<dt><img src="/static/images/common/urlCopy/stit_01.gif" alt="HTML 소스" /></dt>
+								<dd><input type="radio" name="copyType" onclick="srcType('OBJECT')"/><img src="/static/images/common/urlCopy/tit_01.gif" alt="OBJECT" /></dd>
+								<dd><input type="radio" name="copyType" onclick="srcType('EMBED')"/><img src="/static/images/common/urlCopy/tit_02.gif" alt="EMBED" /></dd>
+							</dl></li>
+							<li class="copyTxt"><textarea type="text" id="srcTx1" cols="24" rows="2" wrap="virtual" class="inputTxt" readonly="readonly"></textarea></li>
+							<li class="copyBtn"><a href="javascript:gameCopy('srcTx1');"><img src="/static/images/common/urlCopy/btn_copy.gif" alt="복사하기" /></a></li>
+							<li class="stit"><img src="/static/images/common/urlCopy/stit_02.gif" alt="URL 주소" /></li>
+							<li class="copyTxt"><textarea type="text" id="srcTx2" cols="24" rows="2" wrap="virtual" class="inputTxt" readonly="readonly">http://www.isky.co.kr/fun/game/game.sky?intSeq=JcYSVQdbs5Y~Erek3m14xZ4~</textarea></li>
+							<li class="copyBtn"><a href="javascript:gameCopy('srcTx2');"><img src="/static/images/common/urlCopy/btn_copy.gif" alt="복사하기" /></a></li>
+						</ul>
+						<div class="closeBtn"><a href="javascript:hideUrlCopy();"><img src="/static/images/common/urlCopy/btn_close.gif" alt="닫기" /></a></div>
+					</div>
+					</div>
+				</div></h5>
+					<div class="" style="background-color:#e8e8e8;height:473px;"><script>swf_include2('http://file.isky.co.kr/upload/content/game/game.swf?url=http://file.isky.co.kr/upload/content/game/hunting.swf&intSeq=Fj58AUVNp1E~lRr/DTE_og0~&strRegId=','572','473','always','','transparent','','funGame')</script></div>
+				</div>
+				<div class="rightCont">
+					<h5><img src="/static/images/fun/game/game_stit_02.gif" alt="게임 랭킹" title="게임 랭킹" /></h5>
+					<div class="" style="background-color:#e8e8e8;height:473px;"><script>swf_include('http://file.isky.co.kr/upload/content/game/ranking.swf?xmlUrl=http://www.isky.co.kr/fun/game/gameRankingList.sky?intSeq=gHS2x_BZAmg~6JHTiNrTJf8~&strRegId=','141','473','always','','transparent','')</script></div>
+				</div>
+			</div>
+
+			<div class="heros_cont02"><h5><img src="/static/images/fun/game/game_stit_03.gif" alt="지난 게임존" title="지난 게임존" /></h5>
+				<div class="" style="background-color:#e8e8e8;height:198px;"><script>swf_include('/static/flash/game_list.swf?xmlUrl=http://www.isky.co.kr/fun/game/gameList.sky?intSeq=H6kIy7dy6r4~QOK1b2FTazI~','724','198','always','','','')</script></div>
+			</div>
+
+
+			<!-- [s] 덧글 -->
+			
+			<iframe name='commentFrame' src="/fun/game/game_comment.sky?dispNum=&intSeq=lv41zaTvDng~CXS7o1N3Z4w~" frameborder=0 width="100%" height="230"  marginwidth="0" marginheight="0" scrolling="no" onload="resizeFrame(this)"></iframe>
+			
+			<!-- [e] 덧글 -->
+
+			<div class="heros_cont02"><script>swf_include('/static/flash/banner/funstage.swf','722','91','always','','transparent','')</script></div>
+
+			
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #aac087;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.skyme.co.kr" target="_blank">SKYME</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+</body>
+</html>

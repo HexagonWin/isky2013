@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=56649" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOqzoOqwneyDgeuLtOyLpCDquYDrr7zsoJXri5guLuqwkOyCrO2VqeuLiOuLpDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87KCE7ZmU7IOB64u0Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsl7DsoJXtnaA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU2NjQ5Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA1LTA2Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDw3MDs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD7slrTrlrvqsowg66eQ66Gc64qU7ZGc7ZiE7ZWg7IiYIOyXhuydhOunjO2BvCZuYnNwXDvqsJDsgqztlZjri6TripQg66eQ7JSA7J2EIOuTnOumrOqzoOyLtuyKteuLiOuLpC4uXDwvUFw+XDxCUlw+XDxQXD5hL3PsmYAg67aI7Lmc7KCI65WM66y47JeQIHNreeudvOuKlCDtmozsgqzrpbwg66+/6rOg7Iu27KeA64+EIOyViuyVmOqzoCDri6Tsi5zripQg7JOw6rOg7Iu27KeA64+E7JWK7JWY64qU642wXDwvUFw+XDxCUlw+XDxQXD7qs6DqsJ3sg4Hri7Tsi6Qg6rmA66+87KCV7JSo6ruY7IScIOuEiOustOuPhCDsuZzsoIjtlZjqs6Ag7Iug66Kw6rCAIOqwgOuKlCDrp5DslIDsnYQg7ZWY7IWU7IScXDwvUFw+XDxCUlw+XDxQXD7ri6Tsi5ztlZzrsogg7IOd6rCB7J2E7ZaI6rWs7JqULi4u6rOg6rCd6rCQ64+Z7J20652864qUIOunkOydtOygleunkCDsnojripTqsbgg7JWM7JWY7Iq164uI64ukLi5cPC9QXD5cPEJSXD5cPFBcPuyVnuycvOuhnOuPhCDrqqjrk6Dqs6DqsJ3rtoTqu5gg7Lmc7KCI7ZWg6rGw6528IOyDneqwge2VqeuLiOuLpC4uXDwvUFw+XDxCUlw+XDxQXD7qt7jrn7wg7IiY6rOg7ZWY7Iuc6rWs7JesIOq5gOuvvOygleyUqCDqsJDsgqzrk5zrpr3ri4jri6ReXlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">고객상담실 김민정님..감사합니다</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">전화상담</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">연정흠</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">56649</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-05-06</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">70</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>어떻게 말로는표현할수 없을만큼&nbsp;감사하다는 말씀을 드리고싶습니다..</P><BR><P>a/s와 불친절때문에 sky라는 회사를 믿고싶지도 않았고 다시는 쓰고싶지도않았는데</P><BR><P>고객상담실 김민정씨께서 너무도 친절하고 신뢰가 가는 말씀을 하셔서</P><BR><P>다시한번 생각을했구요...고객감동이라는 말이정말 있는걸 알았습니다..</P><BR><P>앞으로도 모든고객분께 친절할거라 생각합니다..</P><BR><P>그럼 수고하시구여 김민정씨 감사드립니다^^</P><BR><P>&nbsp;</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,587 @@
+@charset "utf-8";
+
+@import url('global.css');
+@import url('layout.css');
+@import url('contents.css');
+
+@font-face{ font-family:ngwoff; src:url(../../inc/font/NanumGothicBold.woff)}
+@font-face{ font-family:ngeot; src:url(../../inc/font/NanumGothicBold.eot)}
+
+.txtResult {height:25px; margin-top:-12px; text-align:right; border-bottom:2px solid #939393;}
+.txtResult strong {color:#767bb0;}
+
+.phoneList {*zoom:1; padding-top:30px;}
+.phoneList:after {content:''; display:block; clear:both;}
+.phoneList .piece {float:left; width:454px; height:261px; margin-bottom:40px;background:#fff;}
+.phoneList dl {position:relative; height:226px; padding:35px 20px 0 157px; cursor:pointer;}
+.phoneList dt {margin-bottom:10px; font-weight:bold; color:#5e605b;}
+.phoneList dt strong {font-weight:bold; font-family:NanumGothic, ngwoff, ngeot; font-size:20px; color:#767bb0;}/* font-family:NanumGothic, ngwoff, ngeot; */
+.phoneList dt .model {margin-top:5px; line-height:16px;}
+.phoneList dt .model span {white-space:nowrap; letter-spacing:-1px;}
+.phoneList dd ul {line-height:16px; color:#5d5859;}
+.phoneList dd li {text-indent:-7px; padding-left:7px; margin-top:4px;}
+.phoneList dd li:first-child {margin-top:0;}
+.phoneList .telecom {position:absolute; top:220px; left:19px; text-align:center; width:120px;}
+.phoneList .telecom.even {left:34px; width:90px;}
+.phoneList .telecom span {display:inline-block; height:12px; min-width:34px; margin-bottom:2px; padding-top:1px; line-height:12px; color:#fff; text-align:center;}
+.phoneList .telecom span.sk {background:#f69f54;}
+.phoneList .telecom span.kt {background:#c22d33;}
+.phoneList .telecom span.lg {background:#f184b1;}
+.phoneList .thum {position:absolute; top:28px; left:30px; width:103px;}
+.phoneList .thum img {width:103px; height:auto;}
+.phoneList .view {position:absolute; top:27px; right:30px;}
+
+.smartTop {*zoom:1; margin-top:32px;}
+.smartTop:after {content:''; display:block; clear:both;}
+.smartTop .pName {float:left; font-family:NanumGothic, ngwoff, ngeot; height:35px; font-size:30px; letter-spacing:-2px; color:#000;}
+.smartTop .pName img {margin-top:4px;}
+.smartTop .telecom {float:left; padding:16px 0 0 10px;}
+.smartTop .telecom li {float:left; margin-left:15px;}
+.smartTop .telecom li strong {display:inline-block; padding:1px 5px 0 5px; margin-right:7px; height:12px; line-height:12px; font-weight:normal; color:#fff; background:#313030;}
+.smartTop .telecom li.blue {color:#767bb0;}
+.smartTop .telecom li.blue strong {background:#888dc3;}
+.smartTop .sns {float:right; padding-top:13px;}
+
+.topVideo {position:relative; *zoom:1; margin-top:25px;}
+.topVideo:after {content:''; display:block; clear:both;}
+.topVideo .image {float:left; height:405px; width:720px;}
+.topVideo .image img {height:405px; width:720px; vertical-align:top;}
+.topVideo .video { position:absolute; top:0; left:0; height:405px; width:720px; background:#333;}
+.topVideo .video .thum {height:405px; width:720px; vertical-align:top; opacity:0.8; filter:alpha(opacity=80);}
+.topVideo .video .play {position:absolute; top:50%; left:50%; margin:-44px 0 0 -44px;}
+.topVideo .video .close {position:absolute; top:14px; right:12px;}
+.topVideo .videoY {position:relative; float:right; width:220px; padding:63px 0;}
+.topVideo .vList {height:278px; width:220px; overflow:hidden;}
+.topVideo .vList .slide {position:relative; width:100%; height:278px;}
+.topVideo .vList ul {position:absolute; top:0; left:0;}
+.topVideo .vList li {width:220px; height:154px; text-align:center;}
+.topVideo .vList li a {position:relative; display:block; height:124px;}
+.topVideo .vList li .thum {height:124px; width:220px; vertical-align:top;}
+.topVideo .vList li .play {position:absolute; top:50%; left:50%; height:44px; width:44px; margin:-22px 0 0 -22px;}
+.topVideo .vList li .txt {display:inline-block; height:26px; width:100%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:11px; line-height:26px; color:#878cc3;}
+.topVideo .videoY .prev {position:absolute; top:22px; left:100px;}
+.topVideo .videoY .next {position:absolute; bottom:22px; left:100px;}
+.topVideo .bnr {position:absolute; top:0; right:0; height:405px; width:240px;}
+.topVideo .bnr img {height:405px; width:240px; vertical-align:top;}
+.topVideo .bnr .close {position:absolute; top:14px; right:12px;}
+.topVideo .bnr .close img {height:auto; width:auto;}
+.topVideo .btn {position:absolute; bottom:10px; right:10px; width:45px;}
+.topVideo .btn a {display:block; margin-top:7px;}
+.topVideo .btn img {width:45px; height:36px;}
+
+.tabWrap {height:64px; margin-top:35px;}
+.smartTab {position:relative; top:0; z-index:10; *zoom:1; height:52px; padding-bottom:10px; width:960px; border-top:1px solid #c6c6c6; background:url(../../img/common/bg_shadow05.png) no-repeat left bottom; #background:none;}
+.smartTab:after {content:''; display:block; clear:both;}
+.smartTab ul {float:left; height:45px; width:100%; padding-top:8px; background:#fff; border-bottom:1px solid #c6c6c6;}
+.smartTab li {float:left; height:45px; width:120px; text-align:center;}
+.smartTab li a {display:block; padding-top:5px; height:31px;}
+.smartTab li a span {display:block; padding-top:13px; color:#5e605b; font-weight:bold; border-right:1px solid #c6c6c6; background:url(../../img/contents/smart/ico_smart_off.gif) no-repeat center top;}
+.smartTab li.on {position:relative; width:121px; padding-right:5px; margin:0 -5px 0 -1px; background:url(../../img/contents/smart/bg_smart_tab.png) no-repeat;}
+.smartTab li.on span {color:#fff; border:0; background:url(../../img/contents/smart/ico_smart_on.gif) no-repeat center top;}
+.smartTab li.top {position:absolute; top:8px; right:0; height:auto; width:auto; border:0; background:none;}
+.smartTab li.top a {height:auto; width:auto; padding:0; background:none;}
+.smartTab .sns {position:absolute; top:9px; left:720px; width:220px; padding:9px 10px;}
+.smartTab .sns div {float:left;}
+.smartTab .sns div.tw {margin-left:10px;}
+.smartTab .sns div.tw iframe {width:100px !important;}
+
+.sPaging {margin-top:5px; height:14px; font-weight:bold; font-size:11px; line-height:14px; color:#b4b4b4; text-align:center;}
+.sPaging .page {padding:0 5px;}
+.sPaging .page em {color:#878cc3;}
+.sPaging * {vertical-align:top;}
+
+/* feature 공통 사용을 휘한 수정 2013-02-21 */
+.feature {position:relative; height:530px; margin-top:15px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.feature .slide {position:relative; height:530px; width:960px; overflow:hidden;}
+.feature ul.slide_ul {position:absolute; top:0; left:0; height:530px; width:200%;}
+.feature ul.slide_ul >li {float:left;}
+/* feature 공통 사용을 휘한 수정 2013-02-21 */
+.feature .dotPaging {position:absolute; bottom:20px; width:100%; text-align:center; font-size:0;}
+.feature .dotPaging a {display:inline-block; height:15px; width:15px; margin-left:7px; font-size:0; line-height:0; background:url(../../img/btn/bg_dot_paging02.png) no-repeat;}
+.feature .dotPaging a:first-child {margin-left:0;}
+.feature .dotPaging a span {display:inline-block; text-indent:-9000px;}
+.feature .dotPaging a.on {background-position:left bottom;}
+
+.imgArea {position:relative; width:960px; padding-bottom:70px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom; overflow:hidden;}
+.imgArea .imgList {position:relative; height:600px; width:960px; text-align:center; left:210px}
+.imgArea .imgList li {float:left; height:600px;width:360px; }
+.imgArea .imgList li.on {position:absolute; bottom:0; left:50%; height:600px;width:540px; margin-left:-270px;}
+.imgArea .imgList li img {height:100%; width:100%; vertical-align:top;}
+.imgArea .dotPaging {position:absolute; bottom:38px; width:100%; font-size:0; text-align:center;}
+.imgArea .dotPaging a {display:inline-block; height:15px; width:15px; margin-left:7px; font-size:0; line-height:0; background:url(../../img/btn/bg_dot_paging02.png) no-repeat;}
+.imgArea .dotPaging a:first-child {margin-left:0;}
+.imgArea .dotPaging a span {display:inline-block; text-indent:-9000px;}
+.imgArea .dotPaging a.on {background-position:left bottom;}
+.imgArea .btn {position:absolute; top:-23px; right:0;}
+
+.reviewWrap {position:relative; margin-top:20px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.reviewWrap .sPaging {position:absolute; top:-44px; right:0;}
+.reviewWrap .reviewMask {position:relative; overflow:hidden; height:480px; width:960px;}
+.reviewWrap .reviewSlide {position:absolute; top:0; left:0; width:200%;}
+.reviewArea {width:960px; float:left; *zoom:1; margin-top:20px; padding-bottom:45px;}
+.reviewArea:after {content:''; display:block; clear:both;}
+.reviewArea li {float:left; width:50%; top:60px; margin-top:60px;}
+.reviewArea li.top {margin-top:0;}
+.reviewArea dl {position:relative; padding:0 40px 40px 125px; cursor:pointer; min-height:145px;}
+.reviewArea dt {margin-bottom:5px; font:bold 12px/19px dotum; letter-spacing:-1px; color:#767bb0;}
+.reviewArea dd {line-height:18px; color:#5d5859;}
+.reviewArea dd .stxt {margin-bottom:10px; font-size:11px; color:#9e9fa7;}
+.reviewArea dd .thum {position:absolute; top:3px; left:0;}
+.reviewArea dd .thum img {height:190px;}
+.reviewArea dd .more {position:absolute; bottom:10px; left:125px;}
+
+.mainSpec {overflow:hidden; margin-top:15px; background:url(../../img/common/bg_shadow03.png) no-repeat left bottom;}
+.mainSpec li {position:relative; float:left; width:50%;}
+.mainSpec li .ico {position:absolute; top:2px; left:0;}
+.mainSpec li dl {padding:0 35px 40px 70px; color:#5d5859;}
+.mainSpec li dt {height:25px; font-weight:bold;}
+.mainSpec li dd {line-height:18px;}
+
+.detailSpec {overflow:hidden; margin-top:15px; background:url(../../img/common/bg_shadow03.png) no-repeat left bottom;}
+.detailSpec ul {width:100%;}
+.detailSpec li {position:relative; vertical-align:top; }
+.detailSpec li .ico {position:absolute; top:2px; left:0;}
+.detailSpec li dl {padding:0 35px 30px 70px; color:#5d5859;}
+.detailSpec li dt {height:22px; font-weight:bold; color:#888dc3}
+.detailSpec li dd {min-height:57px; line-height:18px;}
+.detailSpec li dd strong.tit {display:inline-block; margin-bottom:3px;}
+
+.slide {position:relative; width:960px; overflow:hidden;}
+.slideInner {*zoom:1; position:absolute; top:0; left:0;}
+.slideInner:after {content:''; display:block; clear:both;}
+.slideInner .box {float:left; width:960px;}
+
+/*.videoArea {margin-top:20px;}
+.videoArea .inner {position:relative; margin-bottom:30px;}
+.videoArea .inner .btn {position:absolute; top:265px; left:50%; margin-left:-45px;}
+.videoArea .slide {height:170px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.videoArea .vList {float:left; *zoom:1;}
+.videoArea .vList:after {content:''; display:block; clear:both;}
+.videoArea .vList li {position:relative; float:left; height:130px; width:230px; margin-left:13px; text-align:center; background:url(../../img/contents/smart/bg_video_thumb.gif) no-repeat;}
+.videoArea .vList li:first-child {margin-left:0;}
+.videoArea .vList li img {vertical-align:top;}
+.videoArea .vList li .tit {display:inline-block; margin-top:8px; font-size:11px; letter-spacing:-1px; color:#888dc3;}
+.videoArea .vList li .btn {position:absolute; top:50%; left:50%; margin:-27px 0 0 -27px;}*/
+
+.downWrap {position:relative; margin-top:20px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.downWrap .sPaging {position:absolute; top:-44px; right:0;}
+.downWrap .sMask {position:relative; overflow:hidden; height:350px; width:960px;}
+.downWrap .sSlide {position:absolute; top:0; left:0; width:200%;}
+.downArea {float:left; position:relative; *zoom:1; width:960px;}
+.downArea:after {content:''; display:block; clear:both;}
+.downArea li {float:left; width:227px; padding:0 0 10px 17px;}
+.downArea li.first {padding-left:0;}
+.downArea dl {position:relative; min-height:95px; width:223px; padding:2px; cursor:pointer; border-top:1px solid #b3b3b3; background:url(../../img/contents/smart/bg_down_list.png) no-repeat left bottom;}
+.downArea dt {height:77px;}
+.downArea dd {min-height:54px; padding:10px 15px 20px 15px; line-height:17px; color:#666;}
+.downArea dd strong {color:#767bb0}
+
+.prdAppsPlay {position:relative; margin-top:20px;}
+.prdAppsPlay .sPaging {position:absolute; top:-44px; right:0;}
+.prdAppsPlay .slide {height:190px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.prdAppsPlay .slide .slideInner {height:163px; overflow:hidden;}
+.prdAppsPlay .box li {float:left; width:105px; padding:0 0 5px 17px; text-align:center;}
+.prdAppsPlay .box li:first-child {padding-left:0;}
+.prdAppsPlay .box li a {display:block; height:150px;}
+.prdAppsPlay .box li .ico {display:block; width:103px; text-align:center; border:1px solid #c6c6c6; background:url(../../img/contents/smart/bg_acce_list.gif) no-repeat center center;}
+.prdAppsPlay .box li .ico img {height:auto; width:103px; vertical-align:top;}
+.prdAppsPlay .box li .tit {display:block; margin-top:8px; line-height:16px;}
+.prdAppsPlay.tpB .box li .ico {width:80px; margin:0 auto;}
+.prdAppsPlay.tpB .box li .ico img {width:80px; height:auto;}
+
+.acceArea {position:relative; margin-top:20px;}
+.acceArea .sPaging {position:absolute; top:-44px; right:0;}
+.acceArea .slide {height:195px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.acceArea .slide .slideInner {height:176px; overflow:hidden;}
+.acceArea .box li {float:left; width:115px; padding:0 0 5px 54px; text-align:center;}
+.acceArea .box li:first-child {padding-left:0;}
+.acceArea .box li a {display:block; height:160px;}
+.acceArea .box li .ico {display:block; height:93px; width:93px; padding:10px; border:1px solid #c6c6c6; background:url(../../img/contents/smart/bg_acce_list.gif) no-repeat center center;}
+.acceArea .box li .ico img {height:93px; width:93px; vertical-align:top;}
+.acceArea .box li .tit {display:block; margin-top:8px; line-height:16px;}
+.acceArea .box li .price {font-size:14px; letter-spacing:-1px; color:#767bb0;}
+
+.star {display:inline-block; height:13px; width:69px; text-align:left; background:url(../../img/common/bg_star_off.gif) repeat-x;}
+.star span {display:inline-block; height:13px; background:url(../../img/common/bg_star_on.gif) repeat-x;}
+
+.sorting {*zoom:1; margin-top:30px; padding:15px 0 15px 25px; border:4px solid #dbdded;}
+.sorting:after {content:''; display:block; clear:both;}
+.sorting h3 {float:left; width:140px; font-size:16px; color:#3d3d3d;}
+.sorting .sortTbl {float:left; width:560px; margin-top:5px;}
+.sorting .sortTbl th {text-align:left; padding-top:1px; vertical-align:top;}
+.sorting .sortTbl td {padding-bottom:7px; vertical-align:top; #white-space:nowrap;}
+.sorting .sortTbl td input {margin-bottom:3px;}
+.sorting .sortTbl td label {display:inline-block; width:68px; margin:0; margin-bottom:5px;}
+.sorting .sortTbl .select label {width:100%; margin:0;}
+.sorting .btn {float:left; height:45px; margin-top:10px; padding:25px 0 0 25px; border-left:1px dotted #c6c6c6;}
+
+.hyTxt {margin-top:5px; padding-left:18px; line-height:18px;}
+.hyTxt li {margin-bottom:4px; padding-left:10px; text-indent:-10px;}
+
+.accList {*zoom:1; padding-top:30px; border-bottom:1px solid #939393;}
+.accList:after {content:''; display:block; clear:both;}
+.accList li {float:left; width:115px; height:195px; margin:0 0 0 54px; text-align:center;}
+.accList li.first {margin-left:0;}
+.accList li a {line-height:17px; color:#757575;}
+.accList li a .thum {display:block; width:93px; height:93px; margin-bottom:10px; padding:10px; border:1px solid #c6c6c6;}
+.accList li a .thum img {width:93px; height:93px; vertical-align:top;}
+
+.phoneListB {overflow:hidden; padding:20px 0; border:solid #939393; border-width:2px 0 1px 0;}
+.phoneListB li {float:left; cursor:pointer; width:220px; height:280px; padding:15px 10px; cursor:pointer; line-height:15px; text-align:center; border-top:1px dotted #c6c6c6;}
+.phoneListB li .thum {position:relative; width:200px; height:200px; margin:0 auto 16px auto; background:#fff;}
+.phoneListB li .thum img {width:auto; height:200px; vertical-align:top;}
+.phoneListB li .thum .bd {display:none; position:absolute; top:0; left:0; width:176px; height:196px; border:2px solid #888dc3}
+.phoneListB li.on .thum .bd {display:block;}
+.phoneListB li .btnA {margin-top:2px}
+
+.videoArea {position:relative; margin-top:20px; border:1px solid #ebebeb;}
+.videoArea img {width:958px; height:538px;}
+.videoArea a {position:absolute; top:50%; left:50%; margin:-43px 0 0 -45px;}
+.videoArea a img {width:auto; height:auto;}
+.videoArea.tpB img {width:958px; height:408px;}
+
+.phoneImg {margin-top:25px;}
+
+.specWrap {position:relative; margin-top:40px; padding-bottom:35px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.specWrap .specBtn {position:absolute; top:5px; right:0;}
+.specWrap h2 {height:50px;}
+.specWrap .spec {overflow:hidden;}
+.specWrap .spec.normal .inner {float:right; width:475px;}
+.specWrap .spec.normal .inner:first-child {float:left;}
+.specWrap h3 {height:21px; margin-top:15px; font-family:NanumGothic, ngwoff, ngeot; font-size:16px; color:#333;}
+.specWrap .spec.detail h3:first-child {margin-top:0;}
+.specWrap table {line-height:20px; text-align:left; color:#757575;}
+.specWrap table th {padding:10px 0.5em; font-weight:normal; letter-spacing:-1px; border:1px solid #dadada; background:#f4f4f4;}
+.specWrap table th.tit {font-weight:bold; font-size:14px; background:#e1e1e1;}
+.specWrap table td {padding:10px 0.5em; border:1px solid #dadada; background:#fafafa;}
+
+.appTabB {position:absolute; top:4px; left:120px;}
+.appTabB li {float:left; padding-left:12px; margin-left:11px; background:url(../../img/common/ln_gy01.gif) no-repeat left 1px;}
+.appTabB li:first-child {padding-left:0; margin-left:0; background:none;}
+.appTabB li a {font-weight:bold; color:#707070;}
+.appTabB li.on a {color:#507bd6; text-decoration:underline;}
+
+.imgBox {padding-bottom:30px; text-align:center; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.imgBox img {max-width:100%; height:auto; vertical-align:top;}
+.imgBox.tpB {}
+.imgBox.tpB img {width:740px;}
+
+
+/* IM-A730S Ư¡ �����̵� (2012-07-25) */
+/* ������ ��� */
+#new_fView.new_slide ul li .fv_box2 {width:960px; height:530px; background:url(../../images/product/feature/IM_A840S/fv2_bg1.jpg) no-repeat; position:relative;}
+#new_fView.new_slide ul li .fv_box2 img {width:auto; height:auto;}
+#new_fView.new_slide ul li .fv_box2 .izoom_rg {position : absolute; height:100px; width:106px; top:70px; left:220px; z-index:999; cursor :pointer; overflow:visible;}
+#new_fView.new_slide ul li .fv_box2 .izoom_rg img {margin:0 -10px -10px -10px;}
+#new_fView.new_slide ul li .fv_box2 .izoom {width:316px; height:170px; position:absolute; left:137px; top:0; background:url(../../images/product/feature/IM_A840S/fv2_i2.jpg) no-repeat;}
+#new_fView.new_slide ul li .fv_box2 .izoom .p1 {width:31px; height:45px; position:absolute; left:270px; top:213px; z-index:1001;}
+#new_fView.new_slide ul li .fv_box2 .izoom .p2 {width:45px; height:14px; position:absolute; left:248px; top:120px; z-index:1000;}                                                  
+#new_fView.new_slide ul li .fv_box2 .zoom_s5 {position:absolute; left:641px; top:33px; width:236px; height:136px; background:url(../../images/product/feature/IM_A840S/fv2_i2_big1.jpg) no-repeat 100% 100%;}
+#new_fView.new_slide ul li .fv_box2 .zoom_b {position:absolute; left:653px; top:221px; width:220px; height:136px; background:url(../../images/product/feature/IM_A840S/fv2_i2_big2.jpg) no-repeat 100% 100%;}
+
+/* Ʈ��ŷ ��Ŀ�� / ���� ���� �� */
+.fv_box3 {width:960px; height:530px; position:relative;}
+.fv_box3 img {width:auto; height:auto;}
+.fv_box3 .btn_ch {width:200px; height:18px; position:absolute; left:44px;top:390px;}
+.fv_box3 .btn_ch img {width:auto; height:auto;}
+.fv_box3 .z_shutter {width:960px; height:530px; background:url(../../images/product/feature/IM_A840S/fv3_bg1.jpg) no-repeat; position:relative;}
+.fv_box3 .z_shutter .zs_photo1 {width:183px; height:138px; position:absolute; left:679px; top:225px; z-index:11;}
+.fv_box3 .z_shutter .zs_photo1 .photo {width:182px; height:138px; position:relative;}
+.fv_box3 .z_shutter .photo img {width:auto; height:auto;}
+.fv_box3 .z_shutter .zs_photo1 .photo dl dd {width:182px; height:138px; position:absolute; left:0; top:0; display:none;}
+.fv_box3 .z_shutter .zs_photo1 p img {width:auto; height:auto;}
+.fv_box3 .z_shutter .zs_photo1 .p1 {width:10px; height:25px; position:absolute; left:2px; top:58px; z-index:20;}
+.fv_box3 .z_shutter .zs_photo1 .p2 {width:31px; height:31px; position:absolute; left:172px; top:53px; z-index:20;}
+.fv_box3 .z_shutter .zs_photo1 .p3 {width:182px; height:7px; position:absolute; left:0; top:-7px; z-index:20;}
+.fv_box3 .z_shutter .zs_photo2 {width:383px; height:100px; position:absolute; left:510px; top:170px;z-index:10; }
+.fv_box3 .z_shutter .zs_photo2 dl dd {width:180px; height:136px; position:absolute; left:0; top:0; padding:2px 0 0 2px; opacity:0; filter:alpha(opacity=0); text-align:right;}
+.fv_box3 .z_shutter .zs_photo2 .dd1 {width:98px; z-index:2; }
+.fv_box3 .z_shutter .zs_photo2 .dd2 {width:127px; z-index:3; }
+.fv_box3 .z_shutter .zs_photo2 .dd3 {width:136px; z-index:4; }
+.fv_box3 .z_shutter .zs_photo2 .dd4 {width:152px; z-index:5; }
+.fv_box3 .z_shutter .zs_photo2 .dd5 {width:167px; z-index:6; }
+.fv_box3 .z_shutter .zs_photo2 .dd6 {width:186px; z-index:7; }
+
+.fv_box3 .t_focus {width:960px; height:530px; background:url(../../images/product/feature/IM_A840S/fv3_bg3.jpg) no-repeat; position:relative; display:none;}
+.fv_box3 .t_focus img {width:auto; height:auto;}
+.fv_box3 .t_focus .tf_people1 {width:104px; height:160px; position:absolute; left:547px; top:201px; z-index:2; display:none;}
+.fv_box3 .t_focus .tf_people2 {width:88px; height:170px; position:absolute; left:650px; top:191px; z-index:4; display:none;}
+.fv_box3 .t_focus .tf_people3 {width:82px; height:145px; position:absolute; left:730px; top:210px; z-index:3; display:none;}
+.fv_box3 .t_focus .tf_icon {width:79px; height:78px; position:absolute; left:561px; top:185px;  z-index:5; display:none;}
+.fv_box3 .t_focus .tf_icon img {display:block; position:absolute; width:79px; left:0; top:0;}
+
+/* ��ũ����ũ */
+#new_fView.new_slide ul li .fv_box4 div {display:none;}
+#new_fView.new_slide ul li .fv_box4 {width:960px; height:530px; background:url(../../images/product/feature/IM_A840S/fv4_bg1.jpg) no-repeat; position:relative;}
+#new_fView.new_slide ul li .fv_box4 img {width:auto; height:auto;}
+#new_fView.new_slide ul li .fv_box4 p.p1 {position:absolute; left:243px; top:76px; width:66px; height:57px; z-index:5;}
+
+#new_fView.new_slide ul li .fv_box4 .fv4_white {background:url(../../images/product/feature/IM_A840S/fv4_white.png) no-repeat; width:156px; height:303px; position:absolute; left:92px; top:10px; overflow:hidden;}
+#new_fView.new_slide ul li .fv_box4 .fv4_black {background:url(../../images/product/feature/IM_A840S/fv4_black.png) no-repeat; width:156px; height:303px; position:absolute; left:308px; top:11px; overflow:hidden;}
+#new_fView.new_slide ul li .fv_box4 .fv4_wbox {background:url(../../images/product/feature/IM_A840S/fv4_i5.png) no-repeat; width:142px; height:252px; position:absolute; left:7px; top:24px; overflow:hidden;}
+#new_fView.new_slide ul li .fv_box4 .fv4_w {width:568px; height:223px; position:absolute; left:0; top:10px; overflow:hidden;}
+#new_fView.new_slide ul li .fv_box4 .fv4_w:after {content:" "; display:block; clear:both;}
+#new_fView.new_slide ul li .fv_box4 p {float:left; width:142px; height:223px;}
+
+/* ����Ʈ ���̽� */
+#new_fView.new_slide ul li .fv_box6 {width:960px; height:530px; background:url(../../images/product/feature/IM_A840S/fv6_bg2.jpg) no-repeat; position:relative;}
+#new_fView.new_slide ul li .fv_box6 img {width:auto; height:auto;}
+#new_fView.new_slide ul li .fv_box6 p {display:block; position:absolute; }
+#new_fView.new_slide ul li .fv_box6 p.fv6_p1 {left:327px; top:262px; }
+#new_fView.new_slide ul li .fv_box6 p.fv6_p2 {left:338px; top:249px;}
+#new_fView.new_slide ul li .fv_box6 p.fv6_p3 {left:350px; top:235px;}
+#new_fView.new_slide ul li .fv_box6 p.fv6_p4 {left:128px; top:229px;}
+#new_fView.new_slide ul li .fv_box6 p.fv6_p5 {left:72px; top:268px;}
+#new_fView.new_slide ul li .fv_box6 p.fv6_p6 {left:121px; top:339px;}
+
+/* ����Ʈ �� */
+#new_fView.new_slide ul li .fv_box7 {width:960px; height:530px; position:relative; background:url(../../images/product/feature/IM_A840S/fv7_bg1.jpg) no-repeat;}
+#new_fView.new_slide ul li .fv_box7 img {width:auto; height:auto;}
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 {width:158px; height:364px; position:absolute; left:480px; top:100px;  z-index:3; display:none; }
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 p {width:138px; height:279px; position:absolute; left:6px; top:30px; display:none;}
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 p.view1 {display:block; z-index:2;}
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 p.view2 {z-index:3;}
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 p.view3 {z-index:4;}
+#new_fView.new_slide ul li .fv_box7 .phone_ft1 p.view4 {z-index:5;}
+#new_fView.new_slide ul li .fv_box7 .phone_bk1 {width:162px; height:364px; position:absolute; right:0; top:90px; z-index:2; display:none; overflow:hidden;}
+#new_fView.new_slide ul li .fv_box7 .phone_bk1 p {position:relative;  left:0; top:0;}
+#new_fView.new_slide ul li .fv_box7 .phone_bk1 p img {width:162px; height:364px;}
+#new_fView.new_slide ul li .fv_box7 .t_icon {width:182px; height:109px; position:absolute; left:620px; top:10px; display:none; z-index:6;}
+#new_fView.new_slide ul li .fv_box7 .t_icon p {display:none; position:absolute;}
+#new_fView.new_slide ul li .fv_box7 .t_icon .p1 {width:37px; height:37px; left:0; top:20px; }
+#new_fView.new_slide ul li .fv_box7 .t_icon .p2 {width:18px; height:19px; left:70px; top:0;}
+#new_fView.new_slide ul li .fv_box7 .t_icon .p3 {width:38px; height:38px; left:130px; top:20px;}
+#new_fView.new_slide ul li .fv_box7 .t_icon2 {width:290px; height:221px; position:absolute; left:473px; top:53px; z-index:11; display:none;}
+#new_fView.new_slide ul li .fv_box7 .t_icon3 {width:119px; height:181px; position:absolute; left:653px; top:325px; z-index:11; display:none;}
+
+
+/* new_feature */
+.new_feature {position:relative; height:530px; margin-top:15px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.new_feature .nslide {position:relative; height:530px; width:960px; overflow:hidden;}
+.new_feature ul.new_slide_ul {position:absolute; top:0; left:0; height:530px; width:200%}
+.new_feature ul.new_slide_ul li.new_slide_li {float:left; width:960px; height:530px; position:relative;}
+.new_feature .dotPaging {position:absolute; bottom:20px; width:100%; text-align:center; font-size:0;}
+.new_feature .dotPaging a {display:inline-block; height:15px; width:15px; margin-left:7px; font-size:0; line-height:0; background:url(../../img/btn/bg_dot_paging02.png) no-repeat;}
+.new_feature .dotPaging a:first-child {margin-left:0;}
+.new_feature .dotPaging a span {display:inline-block; text-indent:-9000px;}
+.new_feature .dotPaging a.on {background-position:left bottom;}
+
+/* R3 Ư¡ �����̵� (2012-10-18) */
+.r3_feature {position:relative; height:530px; margin-top:15px; padding-bottom:10px; background:url(../../img/common/bg_shadow02.png) no-repeat left bottom;}
+.r3_feature .nslide {position:relative; height:530px; width:960px; overflow:hidden;}
+.r3_feature ul.r3_slide_ul {position:absolute; top:0; left:0; height:530px; width:200%}
+.r3_feature ul.r3_slide_ul li.r3_slide_li {float:left; width:960px; height:530px; position:relative;}
+.r3_feature .r3_dotPaging {position:absolute; bottom:20px; width:100%; text-align:center; font-size:0;}
+.r3_feature .r3_dotPaging a {display:inline-block; height:15px; width:15px; margin-left:7px; font-size:0; line-height:0; background:url(../../img/btn/bg_dot_paging02.png) no-repeat;}
+.r3_feature .r3_dotPaging a:first-child {margin-left:0;}
+.r3_feature .r3_dotPaging a span {display:inline-block; text-indent:-9000px;}
+.r3_feature .r3_dotPaging a.on {background-position:left bottom;}
+
+/* ��ȭ���� */
+#r3_fView.r3_slide ul li .r3_box2 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A850S/02.jpg) no-repeat 0 0; position:relative;}
+#r3_fView.r3_slide ul li .r3_box2 img {width:auto; height:auto;}
+#r3_fView.r3_slide ul li .r3_box2 .izoom_rg {position : absolute; height:50px; width:30px; top:0; left:0; z-index:999; cursor :pointer; overflow:visible;  z-index:6;}
+#r3_fView.r3_slide ul li .r3_box2 .izoom_rg .p1 {position:absolute; height:55px; width:56px; top:-3px; left:-2px;}
+#r3_fView.r3_slide ul li .r3_box2 .izoom_rg img {margin:0 -10px -10px -10px;}
+#r3_fView.r3_slide ul li .r3_box2 .izoom {width:30px; height:230px; position:absolute; left:405px; top:230px; z-index:5; }
+#r3_fView.r3_slide ul li .r3_box2 .izoom .p2 {width:56px; height:55px; position:absolute; left:-4px; top:13px; z-index:1000; cursor:pointer;}                                                  
+#r3_fView.r3_slide ul li .r3_box2 .zoom_v1 {position:absolute; left:300px; top:46px; width:191px; height:192px; background:url(../../upload/product/feature/IM_A850S/r3_box2_j1.jpg) no-repeat 100% 0;}
+
+/* ����Ʈ ���̽� */
+#r3_fView.r3_slide ul li .r3_box5 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A850S/05.jpg) no-repeat 0 0; position:relative;}
+#r3_fView.r3_slide ul li .r3_box5 .ibox1 {width:305px; height:173px; position:absolute; left:530px; top:188px;}
+#r3_fView.r3_slide ul li .r3_box5 .p1_click {width:39px; height:22px; position:absolute; left:506px; top:87px;}
+#r3_fView.r3_slide ul li .r3_box5 .p2_click {width:39px; height:22px; position:absolute; left:832px; top:460px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 {width:242px; height:92px; position:absolute; left:513px;top:82px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 {width:242px; height:92px; position:relative; z-index:5;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li {width:47px; height:50px; position:absolute; display:none;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li.li_f0 {left:0; top:42px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li.li_f1 {left:0; top:42px;  z-index:2;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li.li_f2 {left:48px; top:15px;  z-index:3;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li.li_f3 {left:100px; top:3px;  z-index:4;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul.face_ul1 li.li_f4 {left:152px; top:15px;  z-index:5;}
+/*
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul li.li_f0 {left:0; top:42px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul li.li_f1 {left:48px; top:15px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul li.li_f2 {left:100px; top:3px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul li.li_f3 {left:152px; top:15px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 ul li.li_f4 {left:200px; top:42px;}
+*/
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 {width:160px; height:72px; position:absolute; left:46px; top:55px;  z-index:1;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 li { position:absolute; z-index:16; display:none;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 .aw_li1 {top:30px; left:0;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 .aw_li2 {top:8px; left:40px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 .aw_li3 {top:2px; left:75px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 .aw_li4 {top:16px; left:105px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1 .arrow1 .aw_li5 {top:37px; left:128px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1f {width:101px; height:108px; position:absolute; left:576px; top:189px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1f .circle1 {width:101px; height:108px; position:absolute; left:0; top:0; z-index:4; display:none;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1f ul {width:101px; height:108px; position:relative;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box1f ul li {width:101px; height:108px; position:absolute;  display:none;}
+
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 {width:235px; height:88px; position:absolute; left:680px;top:370px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 {width:242px; height:92px; position:relative; z-index:5;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li {width:47px; height:50px; position:absolute; display:none;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li.li_f0 {left:0; top:0;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li.li_f1 {left:0; top:0; z-index:2;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li.li_f2 {left:47px; top:26px; z-index:3;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li.li_f3 {left:94px; top:38px; z-index:4;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul.face_ul2 li.li_f4 {left:141px; top:26px; z-index:5;}
+/*
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul li.li_f0 {left:0; top:0;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul li.li_f1 {left:47px; top:26px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul li.li_f2 {left:94px; top:38px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul li.li_f3 {left:141px; top:26px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 ul li.li_f4 {left:188px; top:0px;}
+*/
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 {width:160px; height:72px; position:absolute; left:33px; top:-45px; z-index:1;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 li {display:none; position:absolute;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 .aw_li1 {top:0; left:0;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 .aw_li2 {top:17px; left:32px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 .aw_li3 {top:29px; left:58px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 .aw_li4 {top:29px; left:87px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2 .arrow2 .aw_li5 {top:22px; left:120px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2f {width:101px; height:108px; position:absolute; left:740px; top:211px;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2f .circle2 {width:101px; height:108px; position:absolute; left:0; top:0; z-index:4; display:none;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2f ul {width:101px; height:108px; position:relative;}
+#r3_fView.r3_slide ul li .r3_box5 .face_box2f ul li {width:101px; height:108px; position:absolute;  display:none;}
+
+/* �ؽ�Ʈ �׼� */
+#r3_fView.r3_slide ul li .r3_box6 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A850S/06.jpg) no-repeat 0 0; position:relative;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c {width:198px; height:416px; position:absolute; left:587px; top:79px; z-index:5;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .p1 {width:41px; height:12px; position:absolute; left:46px; top:59px;  z-index:6; display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .p2 {width:20px; height:21px; position:absolute; left:71px; top:268px;  z-index:6; display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .p3 {width:49px; height:12px; position:absolute; left:46px; top:59px;  z-index:6; display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .p4 {width:20px; height:21px; position:absolute; left:19px; top:268px;  z-index:7; display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 {width:109px; height:50px; position:absolute; left:39px; top:146px;  z-index:6;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 li {display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li1 {width:18px; height:19px; position:absolute; left:0; top:30px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li2 {width:16px; height:19px; position:absolute; left:15px; top:29px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li3 {width:13px; height:23px; position:absolute; left:26px; top:23px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li4 {width:20px; height:31px; position:absolute; left:37px; top:13px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li5 {width:23px; height:25px; position:absolute; left:60px; top:7px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li6 {width:22px; height:25px; position:absolute; left:79px; top:0;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul1 .li7 {width:9px; height:20px; position:absolute; left:98px; top:0;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 {width:91px; height:74px; position:absolute; left:46px; top:145px;  z-index:6;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 li {display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li1 {width:18px; height:19px; position:absolute; left:0; top:25px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li2 {width:16px; height:19px; position:absolute; left:13px; top:20px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li3 {width:13px; height:23px; position:absolute; left:23px; top:19px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li4 {width:20px; height:31px; position:absolute; left:39px; top:18px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li5 {width:23px; height:25px; position:absolute; left:60px; top:9px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li6 {width:22px; height:25px; position:absolute; left:64px; top:6px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li7 {width:9px; height:20px; position:absolute; left:78px; top:0;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li8 {width:9px; height:20px; position:absolute; left:0; top:60px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li9 {width:9px; height:20px; position:absolute; left:14px; top:47px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li10 {width:9px; height:20px; position:absolute; left:29px; top:44px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li11 {width:9px; height:20px; position:absolute; left:46px; top:39px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .ul2 .li12 {width:9px; height:20px; position:absolute; left:57px; top:36px;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .dv1 {width:167px; height:299px; position:absolute; left:12px; top:29px;  z-index:7;overflow:hidden;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .dv1 p {width:167px; height:299px; display:none;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .dv2 {width:167px; height:299px; position:absolute; left:12px; top:29px;  z-index:7;overflow:hidden;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_c .dv2 p {width:167px; height:299px; display:none;}
+
+#r3_fView.r3_slide ul li .r3_box6 .ibox_l {width:191px; height:286px; position:absolute; left:456px; top:103px; z-index:2; overflow:hidden;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_l p {width:185px; height:286px; position:absolute; left:6px; top:0;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_r {width:188px; height:374px; position:absolute; left:696px; top:77px; z-index:2; overflow:hidden;}
+#r3_fView.r3_slide ul li .r3_box6 .ibox_r p {width:148px; height:374px; position:absolute; left:40px; top:0;}
+
+
+/* �˹����� */
+#r3_fView.r3_slide ul li .r3_box7 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A850S/07.jpg) no-repeat 0 0; position:relative;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 {width:183px; height:311px; position:absolute; left:50px; top:108px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 {width:100px; height:20px; position:absolute; left:11px; top:284px; z-index:2; background-color:#fff; display:none;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li {position:absolute; height:20px; background-color:#fff;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li.li1 {left:11px;top:0; width:14px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li.li2 {left:27px;top:0; width:12px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li.li3 {left:40px;top:0; width:13px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li.li4 {left:54px;top:0; width:12px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t1 ul li.li5 {left:66px;top:0; width:12px;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t2 {width:56px; height:56px; position:absolute; left:132px; top:267px; display:none;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t3 {width:131px; height:47px; position:absolute; left:50px; top:166px; display:none;}
+#r3_fView.r3_slide ul li .r3_box7 .ibox1 .ib_t4 {width:112px; height:34px; position:absolute; left:3px; top:227px; display:none;}
+
+
+/* �����ν� �޼��� */
+#r3_fView.r3_slide ul li .r3_box8 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A850S/08.jpg) no-repeat 0 0; position:relative;}
+#r3_fView.r3_slide ul li .r3_box8 .map_box {width:118px; height:206px; position:absolute; left:597px; top:147px;}
+#r3_fView.r3_slide ul li .r3_box8 .map_box .mb_t1 {width:72px; height:25px; position:absolute; left:0; top:0; z-index:4; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .map_box .mb_t2 {width:60px; height:58px; position:absolute; left:32px; top:32px; z-index:5; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .map_box .mb_t3 {width:50px; height:47px; position:absolute; left:68px; top:27px; z-index:3; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .map_box .mb_t4 {width:89px; height:0; position:absolute; left:21px; top:206px; z-index:2; background:url(../../upload/product/feature/IM_A850S/r3_box8_p1.png) no-repeat 0 100%; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .mb_t5 {width:21px; height:22px; position:absolute; left:678px; top:72px; z-index:2;display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .ibox1 {position:absolute; left:704px; top:215px; width:190px; height:164px; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .ibox2 {position:absolute; left:571px; top:71px; width:193px; height:306px; display:none;}
+#r3_fView.r3_slide ul li .r3_box8 .ibox3 {position:absolute; left:571px; top:71px; width:193px; height:306px; }
+#r3_fView.r3_slide ul li .r3_box8 .ibox3 .p1 {position:absolute; left:145px; top:258px; width:56px; height:55px; display:none;}
+
+/* 2013-01-24 상품  베너 추가 */
+.ptb_wrap {width:960px; margin:0 auto; position:absolute; left:0; top:0; height:auto; z-index:9;}
+
+/* No.6 (2013-02-15) ***********************************************/
+.no6_slide {height:530px;}
+.no6_slide li.no6_s_li {float:left; width:960px; height:530px;}
+
+/* 파노라마 */
+.no6_slide li.no6_s_li .no6_box6 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A860S/no6_b6_i1.jpg) no-repeat 0 0; position:relative;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 {position:absolute; left:75px; top:203px; width:356px; height:197px; background:url(../../upload/product/feature/IM_A860S/no6_b6_i1.png) no-repeat 0 0;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv1 {position:absolute; left:0; top:0; z-index:3; width:356px; height:197px;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv1 .p1 {position:absolute; left:248px; top:59px; z-index:3; width:60px; height:60px;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv1 .p2 {position:absolute; left:312px; top:34px; z-index:3; width:47px; height:41px;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv2 {position:absolute; left:35px; top:9px; z-index:2; width:260px; height:160px; overflow:hidden;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv2 ul {width:940px; height:160px; position:absolute; left:0; top:0;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv2 ul li {float:left;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont1 .dv2 ul li.li2 {position:absolute; left:410px; top:50px; width:263px; height:63px; display:none;}
+
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont2 {position:absolute; left:49px; top:400px; width:406px;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont2 .sp2 {position:absolute; right:0; top:0;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont2 ul {width:283px; height:13px; position:absolute; left:60px; top:7px;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont2 ul .li1 {width:283px; height:13px; position:absolute; left:0; top:0; background:url(../../upload/product/feature/IM_A860S/no6_b6_bar1.jpg) no-repeat 0 0;}
+.no6_slide li.no6_s_li .no6_box6 .n6b6_cont2 ul .li2 {width:10px; height:13px; position:absolute; left:0; top:0; background:url(../../upload/product/feature/IM_A860S/no6_b6_bar2.jpg) no-repeat 0 0;}
+
+/* unibody shape */
+.no6_slide li.no6_s_li .no6_box2 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A860S/no6_b2_i1.jpg) no-repeat 0 0; position:relative;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 {position:absolute; left:58px; top:49px; width:361px; height:388px; }
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front { position:absolute; top:0; left:0; width:361px; height:388px; text-align:right;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front ul {position:relative; top:0; left:0; width:361px; height:388px;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front ul li {position:absolute; top:0; left:0; width:361px; height:388px; text-align:right;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front .p1 {position:absolute; top:188px; left:283px; width:58px; height:17px; z-index:10;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front2 { position:absolute; top:0; left:0; width:361px; height:388px; text-align:right; display:none;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont1 .p_front3 { position:absolute; top:0; left:0; width:361px; height:388px; text-align:right; display:none;}
+
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont2 {position:absolute; left:431px; top:312px; width:23px; }
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont2 p {height:23px;}
+.no6_slide li.no6_s_li .no6_box2 .n6b2_cont2 ul li {text-align:center; height:26px; width:23px;}
+
+/* V 터치 */
+.no6_slide li.no6_s_li .no6_box4 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A860S/no6_b4_i1.jpg) no-repeat 0 0; position:relative;}
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont1 {position:absolute; left:489px; top:73px; width:210px; height:406px; }
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont1 .dv1 {position:absolute; left:19px; top:41px; width:171px; height:290px; overflow:hidden; }
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont1 .dv1 p {position:absolute; left:0; top:0; width:171px; height:437px;}
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont1 .dv2 {position:absolute; left:154px; top:316px; width:35px; height:15px; z-index:5;}
+
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont2 {position:absolute; left:701px; top:70px; width:211px; height:409px; }
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont2 .dv1 {position:absolute; left:75px; top:73px; width:63px; height:60px;}
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont2 .dv1 p {position:absolute; left:-23px; top:20px; width:203px; height:358px; cursor:pointer; } 
+.no6_slide li.no6_s_li .no6_box4 .n6b4_cont2 .dv1 p img {}
+
+/* 리모트샷 */
+.no6_slide li.no6_s_li .no6_box5 {width:960px; height:530px; background:url(../../upload/product/feature/IM_A860S/no6_b5_i1.jpg) no-repeat 0 0; position:relative;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont {position:absolute; left:396px; top:62px; width:534px; height:433px; }
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont1 {width:218px; height:124px; position:absolute; left:61px; top:38px;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont1 .p1 {width:218px; height:124px; position:absolute; left:0; top:0; z-index:3;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont1 .p2 {width:205px; height:124px; position:absolute; left:0; top:0; z-index:1;}
+
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 {width:220px; height:330px; position:absolute; left:343px; top:137px;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 .p1 {width:161px; height:108px; position:absolute; left:0; top:0; z-index:1;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 .p1_2 {width:161px; height:108px; position:absolute; left:0; top:0; z-index:3;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 .p2 {width:31px; height:34px; position:absolute; left:96px; top:131px; display:none;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 .p3 {width:176px; height:151px; position:absolute; left:45px; top:180px; display:none;}
+.no6_slide li.no6_s_li .no6_box5 .n6b5_cont .cont2 .p4 {width:35px; height:35px; position:absolute; left:63px; top:37px; z-index:4;}
+
+/* 2013-02-25 VEGA S5 색상 아이콘 추가  */
+.phoneList .thum2 {position:absolute; left:30px; top:28px;  width:103px; height:198px; overflow:hidden; }
+.phoneList .thum2 .ibox {position:absolute; left:0; top:0; width:309px;}
+.phoneList .thum2 .ibox img {width:309px;}
+.phoneList .thum2_color {position:absolute; left:30px; top:235px; width:50px; height:15px; }
+

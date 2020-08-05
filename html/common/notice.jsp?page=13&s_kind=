@@ -1,0 +1,214 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/common/notice.jsp">
+
+	<input type="hidden" name="page" value="13">
+
+	<input type="hidden" name="s_kind" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script type="text/javascript" src="/inc/js/common_web.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/common.css">
+<script language="javascript">
+<!--
+	function go_Sel(form)
+	{
+		form.target = "_self";
+		form.action = "notice.jsp";
+		form.submit();
+	}
+
+	function go_View(form,idx)
+	{
+		form.msgid.value = idx;
+		form.target = "_self";
+		form.action = "notice_view.jsp";
+		form.submit();
+	}
+//-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(7,0,0,0);</script></div>
+	<div id="Grid2">
+		<script>Mnav(6);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/common/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('7')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/common/notice_txt01.gif" width="569" height="74"></div>
+				<form method="post" name="sForm">
+					<input type="hidden" name="page" value="13">
+					<input type="hidden" name="msgid" value="">
+					<div class="m_t20 aR">
+						<select name="s_kind" class="sel01" style="width:100" onchange="javascript:go_Sel(sForm);">
+							<option value="">전체</option>
+							<option value="공지">공지</option>
+							<option value="뉴스">뉴스</option>
+						</select>
+					</div>
+				</form>
+
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list01 m_t10">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_date.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>166</td>
+						<td><a href="javascript:go_View(sForm,'rYav7euddPc~U6/ksZCsyBs~');">장마시즌 및 휴가철 휴대폰 안전 사용 5계명</a></td>
+						<td>2005/06/28</td>
+						<td>2024</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>165</td>
+						<td><a href="javascript:go_View(sForm,'5_md7cuAEsY~xeI6yH7HDsY~');">장마시즌 및 휴가철 휴대폰 안전 사용 5계명</a></td>
+						<td>2005/06/28</td>
+						<td>2024</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>164</td>
+						<td><a href="javascript:go_View(sForm,'bNF07SqSLag~8JiFSlzbU4Y~');">장마시즌 및 휴가철 휴대폰 안전 사용 5계명</a></td>
+						<td>2005/06/28</td>
+						<td>2024</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>163</td>
+						<td><a href="javascript:go_View(sForm,'Ro_A7ev6bh4~LBELdgK/A5I~');">장마시즌 및 휴가철 휴대폰 안전 사용 5계명</a></td>
+						<td>2005/06/28</td>
+						<td>2024</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>162</td>
+						<td><a href="javascript:go_View(sForm,'f/Ju7crdDO0~uWdoA7LSuwA~');">장마시즌 및 휴가철 휴대폰 안전 사용 5계명</a></td>
+						<td>2005/06/28</td>
+						<td>2024</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>161</td>
+						<td><a href="javascript:go_View(sForm,'4xSz7MlR9og~SukQVEjo9Dw~');">액세서리 판매 일시중단 안내</a></td>
+						<td>2005/06/27</td>
+						<td>1746</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>160</td>
+						<td><a href="javascript:go_View(sForm,'BdpF7SrvJ88~2RIJAnukPI8~');">뮤지컬 '사랑은 비를 타고'공연에 초대합니다.~~~</a></td>
+						<td>2005/06/24</td>
+						<td>733</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>159</td>
+						<td><a href="javascript:go_View(sForm,'Pj007QrSxZ0~Wpg9Nz3fLZI~');">소비자들 'SK텔레텍 휴대전화 디자인/기능 최고'</a></td>
+						<td>2005/06/15</td>
+						<td>8838</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="dot">
+						<td>158</td>
+						<td><a href="javascript:go_View(sForm,'GPs/7co6BxQ~F2tubwlNiXk~');">SK텔레텍 게임&#8226;DMB폰 판매 급증</a></td>
+						<td>2005/05/31</td>
+						<td>2393</td>
+					</tr>
+	
+					<!--// 반복 * 10 -->
+					<tr height="24" class="">
+						<td>157</td>
+						<td><a href="javascript:go_View(sForm,'nuIW7SpMIvY~lUCsAQt8cFA~');">SKY위력 `하늘 찌르네`</a></td>
+						<td>2005/05/19</td>
+						<td>1813</td>
+					</tr>
+
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					<tr height="4" class="line"><td colspan="4"></td></tr>
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<a href=notice.jsp?page=10&s_kind=><img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'></a><a href=notice.jsp?page=11&s_kind=>11</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=12&s_kind=>12</a>&nbsp;|&nbsp;&nbsp;<b>13</b>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=14&s_kind=>14</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=15&s_kind=>15</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=16&s_kind=>16</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=17&s_kind=>17</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=18&s_kind=>18</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=19&s_kind=>19</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=20&s_kind=>20</a>&nbsp;<a href=notice.jsp?page=21&s_kind=><img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width=36 height=10 class='aT'></a>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				<div id="ContR aT R" ><img src="http://www.isky.co.kr/source/img/member/right_bn01.gif" width="150" height="339" style="padding-left:10px;"></div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+<script language="javascript">
+<!--
+	document.sForm.s_kind.value = "";
+//-->
+</script>
+<script type="text/javascript" src="/inc/js/quick.js"></script>
+</body>
+</html>

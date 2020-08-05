@@ -1,0 +1,416 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/product/pop_compare.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/popup.css">
+<script type="text/javascript">
+function Compare(n) {
+	if(n==1) {
+		document.all.m1.src="http://www.isky.co.kr/source/img/global/popup/compare_tab01_.gif";
+		document.all.m2.src="http://www.isky.co.kr/source/img/global/popup/compare_tab02.gif";
+		document.all.Compare1.style.display="block";
+		document.all.Compare2.style.display="none";
+	} else {
+		document.all.m1.src="http://www.isky.co.kr/source/img/global/popup/compare_tab01.gif";
+		document.all.m2.src="http://www.isky.co.kr/source/img/global/popup/compare_tab02_.gif";
+		document.all.Compare1.style.display="none";
+		document.all.Compare2.style.display="block";
+	}
+}
+</script>
+</head>
+<body>
+<!-- 팝업 사이즈 707 * 500 -->
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top" height="100%"><td style="padding:13 11">
+<!-- 팝업 내용 //-->
+	<div class="tit5"><!-- 팝업 타이틀 //--><img src="http://www.isky.co.kr/source/img/global/popup/t_compare.gif"></div>
+
+	<div class="tab" style="width:660;margin:15 0 20 5"><a href="javascript:Compare(1)"><img src="http://www.isky.co.kr/source/img/global/popup/compare_tab01_.gif" height="32" name="m1"></a><a href="javascript:Compare(2)"><img src="http://www.isky.co.kr/source/img/global/popup/compare_tab02.gif" height="32" name="m2"></a></div>
+
+	<div style="width:685;height:360;overflow:auto;" class="scr">
+
+		<table id="Compare1" width="660" border="0" cellpadding="0" cellspacing="0" class="grid m_l5" style="display:block;">
+		<col width="88">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<tr>
+			<th>제품명</th>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-s110(1).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-S110</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-S100(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-S100</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-U110(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-U110</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-U100(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-U100</span>
+			</td>
+	
+		</tr>
+
+		<tr>
+			<th>지상파DMB</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>SHOW</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<!--<tr><td bgcolor="#ffffff" colspan=5><b>비교기본정보</b></td></tr>-->
+		
+		<tr>
+			<th>핵심기능</th>
+		
+				<td>3.2M Auto Focus 카메라를 내장한 Slim Folder&nbsp;</td>
+			
+				<td>2M Pixel 카메라를 내장한 반자동 슬라이드 폰&nbsp;</td>
+			
+				<td>1GB Memory Juke Box Phone&nbsp;</td>
+			
+				<td>Panorama 촬영이 가능한 카메라와 PMP 기능을 지원하는 Wide view Phone&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>LCD</th>
+		
+				<td>2.2&quot QVGA 262K Color TFT LCD &nbsp;</td>
+			
+				<td>2.2&quot QVGA LCD(광시야각)&nbsp;</td>
+			
+				<td>2.0&quot QVGA 260K color TFT-LCD &nbsp;</td>
+			
+				<td>2.6&quot Wide QVGA TFT LCD&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>카메라</th>
+		
+				<td>3.2M CMOS 내장형 카메라(자동초점, 접사,Flash LED 지원)&nbsp;</td>
+			
+				<td>2M CMOS 내장형 카메라(자동 초점, 접사 기능,반셔터 지원 2중 셔터)&nbsp;</td>
+			
+				<td>2.0 Mega-Pixel내장형 CMOS Camera With Auto-Focus&nbsp;</td>
+			
+				<td>2.0 Mega-Pixel내장형 CMOS CamerawithPanorama Shot&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>멜로디</th>
+		
+				<td>128화음 멜로디&nbsp;</td>
+			
+				<td>64화음 멜로디&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>64화음 멜로디&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>MP3</th>
+		
+				<td>MP3 Multi-tasking Back Ground Play&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>MP3 Full Multi-tasking Back Ground Play&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>부가서비스</th>
+		
+				<td>무선인터넷(NATE 동영상 서비스, 캐릭벨)&nbsp;</td>
+			
+				<td>무선 인터넷(NATE 및 JUNE)&nbsp;</td>
+			
+				<td>MONETA&nbsp;</td>
+			
+				<td>무선 인터넷(NATE 및 JUNE)&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>블루투스</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>DMB</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>PMP</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>PMP(씨즐)&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>스피커</th>
+		
+				<td>&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>17-pi 대형 Stereo Speaker&Free Stop 구조&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>메모리</th>
+		
+				<td>MicroSD 메모리 지원&nbsp;</td>
+			
+				<td>&nbsp;</td>
+			
+				<td>1.0 Giga Byte NAND Flash내장 Memory&nbsp;</td>
+			
+				<td>T-Flash 메모리 지원&nbsp;</td>
+			
+			</tr>
+		
+		<tr>
+			<th>기타</th>
+		
+				<td>멀티미디어 자료의 폴더 관리 기능(June 컨텐츠 제외), SPAM SMS차단 기능, 이어폰마이크 기능, 단축다이얼99개, 넘버플러스 기능, SMS 동보 전송 기능, 대기화면에 달력 설정 기능, 게임2종 등 ,User 메모리-110MB 이상 &nbsp;</td>
+			
+				<td>멀티미디어 자료의 폴더 관리 기능. 이어폰마이크 기능. 단축다이얼 98개, 넘버플러스 기능SMS 동보 전송 기능. 대기화면에 달력 설정 기능. 게임2종 등. &nbsp;</td>
+			
+				<td>멀티미디어 자료의 폴더 관리 기능. SPAM SMS 차단 기능. 이어폰마이크 기능. 단축다이얼99개, 넘버플러스 기능. SMS 동보 전송 기능. 대기화면에 달력 설정 기능. 게임1종 등. &nbsp;</td>
+			
+				<td>멀티미디어 자료의 폴더 관리 기능. SPAM SMS 차단 기능. 이어폰마이크 기능. 단축다이얼99개, 넘버플러스 기능. SMS 동보 전송 기능. 대기화면에 달력 설정 기능. 게임1종 등. &nbsp;</td>
+			
+			</tr>
+		
+
+		
+		</table>
+
+		<table id="Compare2" width="660" border="0" cellpadding="0" cellspacing="0" class="grid m_l5" style="display:none;">
+		<col width="88">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<col width="143" class="p7">
+		<tr>
+			<th>제품명</th>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-s110(1).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-S110</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-S100(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-S100</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-U110(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-U110</span>
+			</td>
+
+			<td>
+				<span style="width:60;" class="aM aC"><img src="http://file.isky.co.kr/upload/isky_phone/IM-U100(0).gif" width="42" height="42" class="m_b2"></span>
+				<span class="aM b">IM-U100</span>
+			</td>
+	
+		</tr>
+
+		<tr>
+			<th>Size/weight</th>
+		
+				<td>104.5 x 48.5 x 19.5mm / 110g(슬림형) <br>104.5 x 48.5 x 20.5mm / 120g(표준형)&nbsp;</td>
+			
+				<td>104.5 x 48.5 x 19.5mm(슬림형)<br>104.5 x 48.5 x 20.5mm(표준형)&nbsp;</td>
+			
+				<td>94 x 45x 26.31 (mm) /121.3 g <br>&nbsp;</td>
+			
+				<td>99 x 50x 22.9 (mm) /130g&nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>Color</th>
+		
+				<td>White,                Black, Pink&nbsp;</td>
+			
+				<td>블랙/화이트&nbsp;</td>
+			
+				<td>White&nbsp;</td>
+			
+				<td>White , Black&nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>Display</th>
+		
+				<td>2.2" QVGA(240 x 320)<br>26만 컬러 TFT 광시야각 LCD<br>12 Line (Icon, Help Line포함) x 11자(한글기준)<br>22 X 24 Dots 11자 한글표시(광수체, 고딕체)&nbsp;</td>
+			
+				<td>26만 컬러 TFT 광시야각 LCD&nbsp;</td>
+			
+				<td>2.0" QVGA TFT LCD<br>12 Line (Icon, Help Line포함) x 11자(한글기준)<br>22 X 24 Dots 11자 한글표시 (광수체, 고딕체)<br>&nbsp;</td>
+			
+				<td>2.6" Wide QVGA TFT LCD<br>16 Line x 11자(한글기준)<br>22 X 24 Dots 11자 한글표시 (광수체, 고딕체)&nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>Camera</th>
+		
+				<td>2M CMOS 내장형 카메라 (자동 초점 기능, 접사 기능 및 반 셔터 기능 제공)&nbsp;</td>
+			
+				<td>2M CMOS 내장형 카메라 (자동 초점 기능, 접사 기능 및 반 셔터 기능 제공)&nbsp;</td>
+			
+				<td>2Mega Pixel CMOS / Auto Focus<br>&nbsp;</td>
+			
+				<td>2Mega Pixel CMOS / Panorama shot &nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>Memory</th>
+		
+				<td>총 2,400개 저장용량의 다이어리 전화부 <br>1,200명분 전화번호부/ e-mail <br>착신 전화번호 40개 / 발신 전화번호 40개 저장 <br>수신 문자메시지 99개 저장/ 발신 문자메시지 40개 저장 <br>수신 음성메시지 30개 저장&nbsp;</td>
+			
+				<td>총 2,400개 저장용량의 다이어리 전화부<br>1,200명분 전화번호부/ e-mail<br>착신 전화번호 40개 / 발신 전화번호 40개 저장<br>수신 문자메시지 99개 저장/ 발신 문자메시지 40개 저장<br>수신 음성메시지 30개 저장&nbsp;</td>
+			
+				<td>총 2400개 저장용량의 다이어리 전화부<br>1200명분 전화번호부/e-mail<br>착신 전화번호 40개 저장<br>발신 전화번호 40개 저장<br>수신 문자메시지 99개 저장<br>발신 문자메시지 62개 저장<br>SPAM 메시지 10개 저장<br>수신 음성메시지 20개 저장<br>&nbsp;</td>
+			
+				<td>총 2400개 저장용량의 전화번호부 <br>1200명분 전화번호부/e-mail<br>착신 전화번호 40개 저장<br>발신 전화번호 40개 저장<br>수신 문자메시지 99개 저장<br>발신 문자메시지 62개 저장<br>SPAM 메시지 10개 저장<br>수신 음성메시지 20개 저장&nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>Battery</th>
+		
+				<td>연속통화 	약 187분&nbsp; 	약 270분&nbsp; <br>연속대기 	약 221시간&nbsp; 	약 317시간&nbsp; &nbsp;</td>
+			
+				<td>연속통화 표준형 약 187분 , 대용량 약 270분&nbsp;</td>
+			
+				<td>연속통화 	약 180분&nbsp; 	약 200분&nbsp; <br>연속대기 	약 214시간&nbsp; 	약 236시간&nbsp; &nbsp;</td>
+			
+				<td>연속통화 	약 186분&nbsp; <br>연속대기 	약 178시간&nbsp; &nbsp;</td>
+			
+		</tr>
+		
+		<tr>
+			<th>ETC</th>
+		
+				<td>이동통신 부가서비스<br>  June, Nate, Melon, Moneta, Nate-GPS<br><br> SAR (전자파흡수율)<br>  0.675w/kg&nbsp;</td>
+			
+				<td>June, Nate, Melon, Moneta, Nate-GPS&nbsp;</td>
+			
+				<td>이동통신 부가서비스<br>- June, Nate, Melon, MONETA, 1mm&nbsp;</td>
+			
+				<td>이동통신 부가서비스<br> June, Nate, Melon, MONETA, 1mm, Doozle&nbsp;</td>
+			
+		</tr>
+		
+
+		</table>
+	
+	</div>
+
+<!--// 팝업 내용 -->
+</td></tr>
+<tr height="23"><td class="btm" align="right"><a href="javascript:this.close();"><img src="http://www.isky.co.kr/source/img/global/popup/close.gif"></a></td></tr>
+</table>
+</body>
+</html>

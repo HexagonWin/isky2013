@@ -1,0 +1,241 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+<script language="javaScript">
+<!--
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event_450.jsp");
+	}
+//-->
+</script>
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0905"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function InputChk(){
+		var form = document.event;
+
+		if(form.intEventSeq.value == "" || form.intEventSeq.value == "null"){
+			
+			alert("이벤트정보가 맞지 않습니다.");
+			location.href = "/etc/event.sky";
+			return;
+		}
+		
+		var chk = false;
+
+		for(var i=0; i < form.radio.length; i++){
+			if(form.radio[i].checked == true){
+				chk = true;
+			}
+		}
+
+		if(chk == false){
+			alert("정답을 선택해 주세요");
+			return;
+		}else{
+			if(form.radio[1].checked != true){
+				alert("정답이 아닙니다. 다시 선택해 주세요");
+				return;
+			}
+		}
+		
+		form.target = "dataProcess";
+		form.action = "/etc/event_entry_insert.sky";
+		form.submit();
+	
+	}
+	
+	function Trim(string){
+	
+	    for(;string.indexOf(" ")!= -1;){
+	     	string = string.replace(" ","");
+	    }
+	 
+	 	return string;
+	}
+	
+	function LoginChk(){
+		LoginPop("/etc/event_450.sky");
+		return;
+	}	
+</script>
+<style type="text/css">
+<!--
+img { border:0; }
+.event_cont01 { width:710px; padding:0px 0px 0px 0px; }
+.event_cont02 { width:710px; height:410px; padding:0px 0px 12px 0px; background-image:url(/static/images/event/u450/bg_01.jpg); background-repeat:no-repeat; position:relative; }
+.event_cont02 .hommage01 { width:332px; padding:0px 10px 0px 31px; position:absolute; }
+.event_cont02 .hommage02 { width:378px; padding:0px 30px 0px 298px; position:absolute; }
+.event_cont02 .hommage02 .vod01 { width:378px; padding:0px 0px 0px 33px; position:absolute; }
+.event_cont02 .hommage02 .event01 { width:378px; padding:282px 0px 0px 38px; position:absolute; }
+.event_cont03 { width:597px; height:335px; padding:30px 80px 30px 55px; background-image:url(/static/images/event/u450/bg_02.jpg); background-repeat:no-repeat; position:relative; z-index:3; }
+.event_cont03 dl { padding:0px 0px 0px 0px; }
+.event_cont03 dl.line01 { border-bottom:#FFFFFF solid 1px; text-align:center; padding:1px 0px 18px 20px; }
+.event_cont03 dl.btn01 { text-align:center; padding:20px 0px 0px 25px; }
+.event_cont03 dt { padding:0px 0px 0px 0px; }
+.event_cont03 dd.text01 { height:16px; padding:15px 0px 0px 50px; }
+.event_cont03 dd.text02 { height:16px; padding:10px 0px 0px 50px; }
+.event_cont03 .btn02 { position:absolute; top:30px; right:95px; width:68px; height:124px; }
+-->
+</style>
+</head>
+<body>
+<form name='event'>
+	<input type='hidden' name='intEventSeq' id='intEventSeq' value='287'>
+	<div id="Wrap" class="cols2">
+			<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0905&LogSess=N','740','26','','','transparent','')</script></div>
+		<div id="Container">
+					<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0905','222','500','','','transparent','')</script></div>
+		</div>
+		
+			<div id="Content">
+						<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0905&LogSess=N','740','81','','','transparent','')</script></div>
+		
+				<!-- [s] page title 2 -->
+				<div class="ptitle2">
+					<ul>
+						<li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li>
+					</ul>
+				</div>
+				<!-- [e] page title 2 -->
+				<div class="event_cont01"><img src="/static/images/event/u450/img_01.jpg" alt="IM-U450L 출시기념 EVENT" title="IM-U450L 출시기념 EVENT" /></div>
+				<div class="event_cont02">
+					<div class="hommage01"><img src="/static/images/event/u450/img_02.jpg"></div>
+					<div class="hommage02">
+						<div class="vod01">
+							<script>swf_include('/static/flash/event/u450/flv.swf?flvPath=/static/flash/event/u450/450L.flv','348','262','always','','transparent','')</script>
+						</div>
+						<div class="event01"><img src="/static/images/event/u450/img_03.jpg"></div>
+						</ul>
+					</div>
+				</div>
+				<div class="event_cont03">
+					<div class="btn02"><a href="http://www.isky.co.kr/product/feature.sky?telCode=LGT&dispNum=0103&seq=DXTfV6w82aE%7ExwCygE7exO4%7E" target="_blank"><img src="/static/images/event/u450/img_04.jpg" /></a></div>
+					<div>
+						<dl>
+							<dt><img src="/static/images/event/u450/img_qna.jpg" /></dt>
+							<dd class="text01">
+								<input name="radio" type="radio" id="radio1" value="1" />
+								<img src="/static/images/event/u450/text_01.jpg" /> </dd>
+							<dd class="text02">
+								<input type="radio" name="radio" id="radio2" value="2" />
+								<img src="/static/images/event/u450/text_02.jpg" /> </dd>
+							<dd class="text02">
+								<input type="radio" name="radio" id="radio3" value="3" />
+								<img src="/static/images/event/u450/text_03.jpg" /> </dd>
+							<dd class="text02">
+								<input type="radio" name="radio" id="radio4" value="4" />
+								<img src="/static/images/event/u450/text_04.jpg" /> </dd>
+							<dd class="text02">
+								<input type="radio" name="radio" id="radio5" value="5" />
+								<img src="/static/images/event/u450/text_05.jpg" /> </dd>
+						</dl>
+						<dl class="line01">
+						</dl>
+						<dl class="btn01">
+							
+							<a href="javascript:LoginChk()">
+							<img src="/static/images/event/u450/btn_01.jpg" /></a>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+	</div>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

@@ -1,0 +1,207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/event/skyevent_view.jsp">
+
+	<input type="hidden" name="eventid" value="mpuQ1tNm7mY~t5Z2bFvToKQ~">
+
+	<input type="hidden" name="flag" value="ing">
+
+	<input type="hidden" name="flag1" value="1">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script language=javascript>
+	function goList(form,flag,flag1){
+		if(flag1 == "1") {
+			form.action = "skyevent.jsp";
+		} else {
+			form.action = "skyevent_prize.jsp";
+		}
+		form.flag.value = flag;
+		form.submit();
+	}
+	function goView(form, eventid){
+		form.action = "skyevent_view.jsp";
+		form.eventid.value = eventid;
+		form.submit();
+	}
+	function goIns(form, eventid){
+		form.action = "skyevent_proc.jsp";
+		form.eventid.value = eventid;
+		form.submit();
+	}
+	function goIns1(form){
+		form.action = "member_join.jsp";
+		form.submit();
+	}
+	function goIns2(form){
+		form.action = "openevent2_1.jsp";
+		form.submit();
+	}
+	function goPrize(form, eventid,flag,flag1){
+		form.action = "skyevent_prize_view.jsp";
+		form.eventid.value = eventid;
+		form.flag.value = flag;
+		form.flag1.value = flag1;
+		form.submit();
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,1,3);</script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_skyevent.gif" height="52"></div>
+				<div id="Path"><script>path('2_1_2')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+				<form name="form" method=post>
+					<input type="hidden" name="eventid" value="55">
+				</form>
+				<form name=iForm method=post>
+					<input type="hidden" name="page" value="1">
+					<input type="hidden" name="s_kind" value="">
+					<input type="hidden" name="s_value" value="">
+					<input type="hidden" name="eventid">
+					<input type="hidden" name="flag" value="ing">
+					<input type="hidden" name="flag1" value="1">
+				</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="51">
+					<col width="68" class="p_t3 p_l10">
+					<col width="70">
+					<col width="178" class="p_t3 p_l10">
+					<col width="45">
+					<col width="65" class="p_t3 p_l10">
+					<col width="42">
+					<col width="45" class="p_t3 p_l10">
+					<tr height="24">
+						<th colspan="8">New House Tea Party!</th>
+					</tr>
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_no.gif"></th>
+						<td>55</td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_eventperiod.gif"></th>
+						<td>2006/10/09 ~ 2006/10/28</td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_type.gif"></th>
+						<td><!--<img src="http://www.isky.co.kr/source/img/bbs/b2_ing.gif">완료-->
+						진행
+
+						</td>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_hit.gif"></th>
+						<td>16727</td>
+					</tr>
+					<tr class="line"><td colspan="8"></td></tr>
+					<tr><td class="p_t10 p_b8 aC" colspan="8">
+						<!-- 이벤트 최대 가로 사이즈 : 569 <img src="http://www.isky.co.kr/source/img/withsky/event/tmp02.gif" width="562" height="615">-->
+						<HTML><HEAD>
+<META content="MSHTML 6.00.2800.1561" name=GENERATOR></HEAD>
+<BODY style="FONT-SIZE: 9pt; MARGIN: 5px; LINE-HEIGHT: 14pt; FONT-FAMILY: 굴림; BACKGROUND-COLOR: #ffffff">
+<DIV><IMG height=575 src="http://www.isky.co.kr/source/img/withsky/event/openvent02.gif" width=569 useMap=#MOpenEvent></DIV><MAP name=MOpenEvent><AREA shape=RECT coords=377,377,548,421 href="javascript:goPrize(iForm,'cV6h9wQPyEE~_3Gskaodqpo~','prize',1)"></MAP></BODY></HTML>
+					</td></tr>
+					<tr class="line"><td colspan="8"></td></tr>
+					</table>
+
+					<!-- 이전글/다음글 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="72" class="p_t3">
+					<col class="p_t3 p_l10">
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_prev.gif"></th>
+
+						<td>이전글이 없습니다</td>
+					</tr>
+					<tr class="line"><td colspan="2"></td></tr>
+					<tr height="24">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_next.gif"></th>
+
+						<td><a href="javascript:goView(document.iForm, '3Lr07JXqJW8~w5V8RLKD0VI~','ing','1')">스카이 멤버 신고식</a></td>
+					</tr>
+					<tr height="3" class="line"><td colspan="2"></td></tr>
+					</table>
+					<!--// 이전글/다음글 -->
+
+					<div class="btn2">
+						<a href="javascript:goList(iForm,'ing',1)"><img src="http://www.isky.co.kr/source/img/bbs/btn1_list.gif" height="23"></a>
+					</div>
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday.jsp"><img src="http://file.isky.co.kr/upload/r_banner/04(1).gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/leader/glory.jsp"><img src="http://file.isky.co.kr/upload/r_banner/03.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+<script type="text/javascript" src="/inc/js/quick.js"></script>
+</body>
+</html>

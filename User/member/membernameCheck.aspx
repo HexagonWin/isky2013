@@ -1,0 +1,1 @@
+<meta http-equiv='refresh' content='0; url=http://www.isky.co.kr/html/member/join.jsp; TARGET=index'>

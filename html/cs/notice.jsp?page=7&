@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/notice.jsp">
+
+	<input type="hidden" name="page" value="7">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script language="javascript">
+<!--
+	function goView(form, idx)
+	{
+		form.action = "notice_view.jsp";
+		form.msgid.value = idx;
+		form.submit();
+	}
+//-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,6);var gocn=4;</script><script language="javascript"  src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('4_6')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/cs/notice_img01.gif" width="570" height="73"></div>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="7">
+	<input type="hidden" name="msgid" value="">
+</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04 m_t20">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_date.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+					<!-- 반복 * 10 , 마지막 라인은 class="dot" 제외 //-->
+	
+					<tr height="26" class="dot">
+						<td>60</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'fsN4z04f8MY~RhMkC1i6oJM~')">6/24일 조기 업무 종료 서비스 센터 공지 (6개소)</a>
+						</td>
+						<td>2006/06/23</td>
+						<td>2428</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>59</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'tyZnzy4CjpU~_/_9HJycyNw~')">IM-S100 최신 S/W 버전 배포</a>
+						</td>
+						<td>2006/06/22</td>
+						<td>10410</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>58</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'pAVtz462rlA~s7EZOipXkRA~')">하절기 A/S 연장 운영 안내</a>
+						</td>
+						<td>2006/06/08</td>
+						<td>3195</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>57</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'F8xJz0586u0~sMEZkIXFXVY~')">신촌 서비스센터 주차 관련</a>
+						</td>
+						<td>2006/03/10</td>
+						<td>4100</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>56</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '7Qz0zy/rniA~sYD_SwqnTjo~')">IM-8700 최신 S/W 업그레이드</a>
+						</td>
+						<td>2006/02/07</td>
+						<td>10211</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>55</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '2uv5z4_fv9s~ble4WKafC4g~')">연휴 기간 고객 서비스 안내</a>
+						</td>
+						<td>2006/01/27</td>
+						<td>2435</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>54</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'TLLWz09l_3g~EB4LiMKk4V4~')">A/S 개편 안내</a>
+						</td>
+						<td>2006/01/18</td>
+						<td>11253</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>53</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'hhXFzy9ImUc~ADftGGzz8no~')">통합 서비스 센터 구축으로 인한 서비스 안내</a>
+						</td>
+						<td>2006/01/13</td>
+						<td>4008</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>52</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'YNPQz__w2r0~uhuQbz0YpIo~')">SKY 서비스센터 고객의견 공모</a>
+						</td>
+						<td>2005/10/28</td>
+						<td>4539</td>
+					</tr>
+	
+					<tr height="26" class="">
+						<td>51</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '5bqnz0/C9Z8~/gcMqNp3c2I~')">사이버 상담관련 공지</a>
+						</td>
+						<td>2005/10/26</td>
+						<td>2802</td>
+					</tr>
+
+					<!--// 반복 * 10 -->
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<a href=notice.jsp?page=4&><img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'></a><a href=notice.jsp?page=5&>5</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=6&>6</a>&nbsp;|&nbsp;&nbsp;<b>7</b>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=8&>8</a>&nbsp;<a href=notice.jsp?page=9&><img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'></a>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="javascript:link(4,1)"><img src="http://www.isky.co.kr/source/img/global/right_cs_selfupgrade.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,4)"><img src="http://www.isky.co.kr/source/img/global/right_cs_cscenter.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,5)"><img src="http://www.isky.co.kr/source/img/global/right_cs_diagnosis.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+</body>
+</html>

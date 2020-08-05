@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=56255" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPElNQi0xMDAwIOygnOyViDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8U0tZ6riw64qlOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzsnbTrj5nsp4Q7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDM7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU2MjU1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMDA1LTA1LTA1Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDwyMzE7Pj47Pjs7Pjt0PDtsPGk8MT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8XGU7Pj47Pjs7Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPFw8UFw+7KCE7ZmU66W8IOqxuOq4sCDsnITtlbQg7LKY7J2MIOuyiO2YuOulvCDsnoXroKXtlaDrlYwgTENEIOyXkCDrsojtmLjsnoXroKXssL3snbQg64KY7Jik7KeA7JesLlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+6re465+w642wLOyghO2ZlOulvCDqsbjqs6DrgpjshJwg7Ya17ZmU7KSR7JeQIOuyiO2YuOulvCDriITrpbwg7J287J20IOyeiOyngOyXrCAuLlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+7J2065WM64+EIExDRCDrsojtmLjsnoXroKXsnYQg7ZWgIOyImCDsnojsnLzrqbQg7KKL6rKg7Iq164uI64ukLlw8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+7JWE66y0656Y64+EIOq4sO2MqOuTnCDriIzrn6zshJwg67KI7Zi47J6F66Cl7ZWY64qU6rKMIOu2iO2OuO2VmOyXrCBMQ0Qg66W8IOyTsOuKlOuNsCxcPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuuBneq5jOyngCBMQ0Qg66GcIOyTuCDsiJgg7J6I7Jy866m0IOyii+qyoOyKteuLiOuLpC5cPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuq3uOumrOqzoCDrsojtmLjsnoXroKXsi5zsl5AgUCDrmJDripQgVCDrpbwg7J6F66Cl7ZWY6rOgIOyLtuydgOuNsCxcPC9QXD5cPEJSXD5cPFBcPiZuYnNwXDtcPC9QXD5cPEJSXD5cPFBcPuustOyXh+ydhCDriIzrn6zslbwg7ZWY64KY7JesP1w8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPlw8QlJcPlw8UFw+Jm5ic3BcO1w8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">IMB-1000 제안</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">SKY기능</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">이동진</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">3</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">56255</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-05-05</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">231</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>전화를 걸기 위해 처음 번호를 입력할때 LCD 에 번호입력창이 나오지여.</P><BR><P>&nbsp;</P><BR><P>그런데,전화를 걸고나서 통화중에 번호를 누를 일이 있지여 ..</P><BR><P>&nbsp;</P><BR><P>이때도 LCD 번호입력을 할 수 있으면 좋겠습니다.</P><BR><P>&nbsp;</P><BR><P>아무래도 기패드 눌러서 번호입력하는게 불편하여 LCD 를 쓰는데,</P><BR><P>&nbsp;</P><BR><P>끝까지 LCD 로 쓸 수 있으면 좋겠습니다.</P><BR><P>&nbsp;</P><BR><P>그리고 번호입력시에 P 또는 T 를 입력하고 싶은데,</P><BR><P>&nbsp;</P><BR><P>무엇을 눌러야 하나여?</P><BR><P>&nbsp;</P><BR><P>&nbsp;</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

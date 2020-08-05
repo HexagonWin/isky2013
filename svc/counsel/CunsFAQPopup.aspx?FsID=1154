@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1154" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFvtnLTrjIDtj7Dso7zshozroZ1d7KCcIO2VuOuTnO2PsOyXkCDsnojripQg7KCE7ZmU67KI7Zi466W8IOuTseuhne2VmOqzoCDsi7bslrTsmpQ/ICjsiqTsubTsnbQg7Jyg7KCAKTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w866qo65OgIO2VuOuTnO2PsOyXkOyEnCDsgqzsnbTtirgg7KO87IaM66Gd7JeQIFw8YnJcPu2VnOuyiOyXkCDrk7HroZ3snbQg6rCA64ql7ZWp64uI64ukLlw8YnJcPuyKpOy5tOydtOycoOyggOydmCDqsr3smrDsmYAg7Iqk7Lm07J207Jyg7KCA6rCAIOyVhOuLjCDqsr3smrAgXDxiclw+65GQIOqwgOyngOuhnCDrgpjriITslrTsp5Hri4jri6QuXDxiclw+7Iqk7Lm07J20IOycoOyggOydmCDqsr3smrDsl5DripQg642w7J207YSw66ek64uI7KCA7JeQIFw8YnJcPuuovOyggCDtj7Dsl5Ag7J6I64qUIO2VuOuTnO2PsOyjvOyGjOuhneydhCDsmKzrprAg7ZuE7JeQIFw8YnJcPuuNsOydtO2EsOunpOuLiOyggOydmCDrqZTribQg7KSR7JeQIOuCtOuztOuCtOq4sOulvCDsnbTsmqntlZjsi5zrqbQg65Cp64uI64ukLlw8YnJcPuuCtOuztOuCtOq4sOulvCDtlaAg65WM64qUIOq8rSBDU1btmJXtg5zsnZgg7YyM7J2866GcIOyggOyepSDtm4QgXDxiclw+7IKs7J207Yq47J2YIO2ctOuMgO2PsCDso7zshozroZ3sl5DshJxcPGJyXD7so7zshozroZ0g65Ox66Gd7JeQIO2MjOydvCDssqjrtoDrpbwg7ZWY7Iuc66m0IOuQqeuLiOuLpC5cPGJyXD4o7ZiE7J6sIOuNsOydtO2EsCDrp6Tri4jsoIDripQgSU0tNTMwMOydtOyDgSDrsoTsoITrtoDthLAg7Jew64+Z7J20IOqwgOuKpe2VqeuLiOuLpC4pXDxiclw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">[휴대폰주소록]제 핸드폰에 있는 전화번호를 등록하고 싶어요? (스카이 유저)</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">모든 핸드폰에서 사이트 주소록에 <br>한번에 등록이 가능합니다.<br>스카이유저의 경우와 스카이유저가 아닌 경우 <br>두 가지로 나누어집니다.<br>스카이 유저의 경우에는 데이터매니저에 <br>먼저 폰에 있는 핸드폰주소록을 올린 후에 <br>데이터매니저의 메뉴 중에 내보내기를 이용하시면 됩니다.<br>내보내기를 할 때는 꼭 CSV형태의 파일로 저장 후 <br>사이트의 휴대폰 주소록에서<br>주소록 등록에 파일 첨부를 하시면 됩니다.<br>(현재 데이터 매니저는 IM-5300이상 버전부터 연동이 가능합니다.)<br></span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,416 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/productAll.sky?telCode=ALL[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/productAll.sky?telCode=ALL[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/productAll.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100725");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/product/product.js"></script>
+<script>var dispNum="0100"; var firstDepth="01"</script>
+<script language="javascript">
+	function AllProduct(){
+		var url = "/product/productAll.sky?telCode=ALL";
+
+		location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="productPage">
+	<input type="hidden" name="targetPage">
+	<input type="hidden" name="targetGroup">
+	<input type="hidden" name="telCode" value="ALL">
+</form>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0100&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0100','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0100','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0100.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<!-- [s] stit -->
+			<div id="bd_stit01"><h3><img src="/static/images/product/product_stit_01.gif" border="0" alt="제품 목록" title="제품 목록" /></h3>
+			<dl>
+				<dd><img src="/static/images/common/btn/bd_compare.gif" border="0" alt="제품 비교" title="제품 비교" onClick="checkCompare();" style="cursor:hand;" /></dd>
+				<dt><img src="/static/images/product/product_txt_01.gif" alt="제품을 선택하세요.(최대3개)" title="제품을 선택하세요.(최대3개)" /></dt>
+			</dl>
+			</div>
+			<!-- [e] stit -->
+
+			<!-- [s] List -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_ProductList">
+				<form name="productList">
+				<input type="hidden" name="dispNum" value="0100">
+				<input type="hidden" name="targetPage" value="1">
+				<input type="hidden" name="targetGroup" value="1">
+				<colgroup>
+					<col width="153">
+					<col width="153">
+					<col width="153">
+					<col width="153">
+					<col width="128">
+				</colgroup>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=c7rwlCI0ZIY~EMDAxDuCuo0~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=LUzKwR3crgg%7Eo7h5SMcW%2FUA%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA650S_list[1].gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY Vega</li
+						><li class="model">IM-A650S<span><input type="checkbox" name="compareSeq" value="tXlQx3vRuNI~00Bxyxqtf_s~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=ZsOuApkkwyI~ejP/VII3aXI~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0102&amp;seq=MQhV6rzvtH8%7Emt8XCUdh800%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA630K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 이자르</li
+						><li class="model">IM-A630K<span><input type="checkbox" name="compareSeq" value="VASfK6tM3IE~cymrI45xK_g~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0103&seq=7xEJEX2BSL0~27LGLkqFnj4~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0103&amp;seq=IDM1R0Z5jSQ%7EpkAdzDF1nFg%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU620L_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 웹파이</li
+						><li class="model">IM-U620L<span><input type="checkbox" name="compareSeq" value="h5HeG/4zj_Q~IXU3YL5BSKA~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=PaosbIYpVl8~RpqN5LFvECk~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=Y7rMa_0hmBM%7EWMRWMD%2FLe2U%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU580S_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">IM-U580S</li
+						><li class="model">IM-U580S<span><input type="checkbox" name="compareSeq" value="6/g9JTJn97U~8Y/BeeChBKA~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=YvhgTb7aOj4~NwzAXIe8kQ0~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0102&amp;seq=aubUTYQUGM4%7EBibdE0kqXOw%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMS610K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 체크메이트</li
+						><li class="model">IM-S610K<span><input type="checkbox" name="compareSeq" value="6KnA67vzJ7w~bCglmnPWaAs~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=ECUsS/0vm5Y~fn1Pa86MjN8~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=DXJb0WnV6xU%7EtlQQS%2FkriSI%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU590S_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 판도라</li
+						><li class="model">IM-U590S<span><input type="checkbox" name="compareSeq" value="jyD79J3S5K8~r9YJ972HhL0~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=iYhZ/HxPlho~44xLQmMB3Io~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=aQTnSWtxq1w%7E1O5d4PFdzo4%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMA600S_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 시리우스</li
+						><li class="model">IM-A600S<span><input type="checkbox" name="compareSeq" value="nkt/ZV5c0ok~S3KBtHVX9fg~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=JZfcN_BdxBw~5G1DUkWwqwo~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=SYnlDzQ_8C4%7EJgrjKsRsxdc%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU585S_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 테라피</li
+						><li class="model">IM-U585S<span><input type="checkbox" name="compareSeq" value="90NrzWMKC2M~cQkaQSRKH5E~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=045Nl2zr0xk~lEWytLHUyLA~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0102&amp;seq=AMn1wUmTlK8%7EIt2vBSuXdNY%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU570K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 웹홀릭</li
+						><li class="model">IM-U570K<span><input type="checkbox" name="compareSeq" value="HxefNtfWaug~0oS0A0FZrcY~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=Ts8OzYx3Cm4~h3Yk8Jx1KkQ~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0102&amp;seq=yRt7XMFvPK4%7EiChUCeHTI9s%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU560K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 톡톡</li
+						><li class="model">IM-U560K<span><input type="checkbox" name="compareSeq" value="F/zQm6ct0q0~heMjQp4FqZs~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=rkrF/C_70vY~b5SkWz4WltU~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=cCJJA8vzPIs%7EZIAhHJn8uSI%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMS550S_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 잼밴드</li
+						><li class="model">IM-S550S<span><input type="checkbox" name="compareSeq" value="tp9RoL_E1Io~I8gRkw4NdY0~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0103&seq=m4hvxwZwvR4~6aqztrAT11o~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0103&amp;seq=t2Cy1AADho8%7E1HYWt%2FZkye4%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU540L_list[1].gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY 스포티브</li
+						><li class="model">IM-U540L<span><input type="checkbox" name="compareSeq" value="2hFQZ10tgVQ~6cwSiwrqjyc~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=SAKgSJ/ecZc~6pCx58RDBPc~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=Os1wrnp1sDY%7Ea5VQsWuBMGM%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMR520S_list[2].gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">큐브릭II</li
+						><li class="model">IM-R520S<span><input type="checkbox" name="compareSeq" value="ps//J7VqJeU~wupB2_uhD0E~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=NX7ZBWtfsvw~3E/Ujg/n_Ls~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0102&amp;seq=b3ZLxszY6i8%7Er3BVBwJUKb8%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU530K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SEXY BACK</li
+						><li class="model">IM-U530K<span><input type="checkbox" name="compareSeq" value="IWy12StRLNI~IrmK9Lvd77Q~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0101&seq=N846E09udXM~sxsaxjIfguo~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky?telCode=ALL&amp;dispNum=0101&amp;seq=v%2FuZTBuGHnU%7EqQsdHxB5UnM%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMU510LE_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">S.T.Dupont</li
+						><li class="model">IM-U510LE<span><input type="checkbox" name="compareSeq" value="cCLu0Zoapc4~FBOzwbrDIy0~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+				</form>
+			</table>
+			<!-- [e] List -->
+			
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+						
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</body>
+</html>

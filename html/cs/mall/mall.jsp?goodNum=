@@ -1,0 +1,169 @@
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<SCRIPT language=JavaScript src="/html/shop/js/common3.js"></SCRIPT> 
+
+<script language="javascript">
+	function goLogin(){
+		top.goLogin();
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">		
+
+		<SCRIPT language=JavaScript src="http://pgweb.dacom.net/js/DACOMEscrow.js"></SCRIPT> 
+
+
+		<SCRIPT language=javascript> 
+			// ESCROW 구매 확인
+		function linkESCROW2(ord_no, stl_seq) 
+		{ 
+			oid = "LSNTS86_"+ord_no+'-'+lpadc(stl_seq,9,'0');
+			//alert(oid);
+			linkESCROW(oid);
+		} 
+		function linkESCROW(oid) 
+		{ 
+			var merturl = "http://www.shopping.com/escrowsave.jsp" ; 
+			checkDacomESC ('LSNTS86', oid, ''); 
+			// flash 화면 갱신
+			//location.reload(); 
+			
+			var Obj = document.Mall;
+			//alert(result);
+			// ESCROW 구매 확인 완료 알림
+			Obj.SetVariable("callByEscrowResult","");
+		} 
+		</SCRIPT> 
+</head>
+<script language="javascript">
+		// 결제 시작
+		function openPayWindow(params)
+		{
+			alert(params);
+			removeAllElement(document.mainForm);
+			
+			ar = params.split('&');
+			appendInputElementParams('hidden',ar,'=',document.mainForm);
+			
+			//document.all.result_frame.innerText = "결제 처리중...";
+			window.open("","payWindow","width=330, height=430, status=yes, scrollbars=no,resizable=yes, menubar=no");
+			//document.mainForm.action="/html/shop/ORD/ORD2127P.jsp"+"?"+params;
+			document.mainForm.action="/html/shop/ORD/ORD2127P.jsp";
+			document.mainForm.target = "payWindow";
+			document.mainForm.submit();
+		}
+		
+		
+		
+		// 결제 승인 취소(주문 취소) : 고객
+		function openCancelWindow(params)
+		{
+			alert(params);
+			removeAllElement(document.mainForm);
+			
+			ar = params.split('&');
+			appendInputElementParams('hidden',ar,'=',document.mainForm);
+			
+			//document.all.result_frame.innerText = "전액 환불 처리중...";
+			window.open("","cancelWindow","width=330, height=430, status=yes, scrollbars=no,resizable=yes, menubar=no");
+			//document.mainForm.action="/html/shop/ORD/ORD2150P.jsp"+"?"+params;
+			document.mainForm.action="/html/shop/ORD/ORD2150P.jsp";
+			document.mainForm.target = "cancelWindow";
+			document.mainForm.submit();
+		}
+		
+		
+		
+		// 환불 결제(부분반품)
+		function openRefundmentWindow(params)
+		{
+			removeAllElement(document.mainForm);
+			
+			ar = params.split('&');
+			appendInputElementParams('hidden',ar,'=',document.mainForm);
+			
+			//document.all.result_frame.innerText = "반품 환불 처리중...";
+			window.open("","refundmentWindow","width=330, height=430, status=yes, scrollbars=no,resizable=yes, menubar=no");
+			//document.mainForm.action="/html/shop/ADM/ADM1232P.jsp"+"?"+params;
+			document.mainForm.action="/html/shop/ADM/ADM1232P.jsp";
+			document.mainForm.target = "refundmentWindow";
+			document.mainForm.submit();
+		}
+		
+		
+		
+		
+		// 결제 결과 처리 및 Flash에 알림 : 고객용
+		function setResult(result)
+		{
+			removeAllElement(document.mainForm);
+			
+			var Obj = document.Mall;
+			//alert(result);
+			if(result != "N"){
+				Obj.SetVariable("callByPgResult",result);
+			}else{
+				Obj.SetVariable("callByPgResult","N");
+			}
+		}
+		// 주문 취소 처리 및 Flash에 알림 : 고객용
+		function setResultCancel(result)
+		{
+			removeAllElement(document.mainForm);
+			
+			var Obj = document.Mall;
+			//alert(result);
+			if(result != "N"){
+				Obj.SetVariable("callByPgResult1",result);
+			}else{
+				Obj.SetVariable("callByPgResult1","N");
+			}
+		}
+		// 환불 결제 처리 및 Flash에 알림 : 고객용
+		function setResultRefundment(result)
+		{
+			removeAllElement(document.mainForm);
+			
+			var Obj = document.Mall;
+			//alert(result);
+			if(result != "N"){
+				Obj.SetVariable("callByPgResult2",result);
+			}else{
+				Obj.SetVariable("callByPgResult2","N");
+			}
+		}
+
+		function flashLogin(){
+			window.document.Mnav.TPlay("/remoteMc");
+		}
+</script>
+
+		
+<body class="iframe_t" style="margin:0" onload="top.document.all.mall.height = document.body.scrollHeight;" >
+<div>
+
+<script type="text/javascript">Flash('Mall','http://www.isky.co.kr/source/fla/cs/mall.swf?goodNum=&chk=1','100%','584px','#FFFFFF','transparent');</script></div>
+
+<!-- 결제/취소/환불  begin-->
+<!-- 결제/취소/환불 전송 폼 begin-->
+<form name="mainForm" method="POST" action=""></form>
+<!-- 결제/취소/환불 전송 폼 end-->
+<br>
+<span id='result_frame' name='result_frame'></span>
+<br>
+<!-- 결제/취소/환불  end-->
+
+</body>
+</html>

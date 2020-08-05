@@ -1,0 +1,265 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 공통 js -css 영역 -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/select.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/rollover.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/ScripSelect.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="http://file.isky.co.kr/js/flash_menu_mobile.js"></SCRIPT>
+<SCRIPT language="JavaScript" src="/mobile/include/js/function.js"></SCRIPT>
+
+
+<!-- 공통 js -css 영역 -->
+<script language="JavaScript" src="./js/sms.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+	function senegiChange(no){//오늘의 새내기
+		location.href="http://www.isky.co.kr/mobile/bell/sky_bell_list.asp?original="+no+"&category=207";
+	}
+//-->
+</script>
+</HEAD>
+
+
+
+<body onLoad="resize_iframes();" "MM_preloadImages('images/main_bell_tab3d_2.gif','images/main_bell_tab3d_1.gif','images/main_bell_tabOrigin_2.gif','images/main_bell_tabMidi_2.gif')">
+
+<iframe name="zzim" src="about:blank"  marginwidth="0" marginheight="0" height="0" width="0" scrolling="no" border="0" frameborder="0"></iframe>
+			<table cellSpacing="0" cellPadding="0" width="728" border="0">
+				<tr>
+					<td>
+
+					<!-- 컨텐츠 BODY 역역 START -->
+
+				<!-- 게시판 리스트 -->
+
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+	<tr>
+		<td>
+
+<table width="340" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="110"><a href="javascript:senegiChange(2)"><img src="http://file.isky.co.kr/images/mobile/main_bell_tab3d_2.gif" width="110" height="29" border="0"></a></td>
+    <td width="115"><a href="javascript:senegiChange(1)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ORIGINAL1','','http://file.isky.co.kr/images/mobile/main_bell_tabOrigin_2.gif',1)"><img src="http://file.isky.co.kr/images/mobile/main_bell_tabOrigin_1.gif" name="ORIGINAL1" width="115" height="29" border="0"></a></td>
+    <td width="115"><a href="javascript:senegiChange(0)" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MIDI1','','http://file.isky.co.kr/images/mobile/main_bell_tabMidi_2.gif',1)"><img src="http://file.isky.co.kr/images/mobile/main_bell_tabMidi_1.gif" name="MIDI1" width="115" height="29" border="0"></a></td>
+  </tr>
+</table>
+
+
+		</td>
+		<td align=right>
+&nbsp;
+					</TD>
+	</tr>
+</table>
+
+
+				<TABLE CELLPADDING="0" CELLSPACING="1" WIDTH="690" BGCOLOR="#E7D2D2">
+				<TR HEIGHT="27" bgcolor="#F5E9F3">
+					<TD WIDTH="100" align=center><img src="http://file.isky.co.kr/images/mobile/bell_table_tab_11.gif"></TD>
+					<TD align=center><img src="http://file.isky.co.kr/images/mobile/bell_table_tab_2.gif"></TD>
+					<!-- TD WIDTH="100" align=center><img src="http://file.isky.co.kr/images/mobile/bell_table_tab_99.gif"></TD-->
+					<!--TD WIDTH="59" align=center><img src="http://file.isky.co.kr/images/mobile/bell_table_tab_4.gif"></TD-->
+					<TD WIDTH="143" align=center><img src="http://file.isky.co.kr/images/mobile/bell_table_tab_6.gif"></TD>
+				</TR>
+
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">Shot You Down(IM-S110)</TD>
+					<!--TD></TD-->
+					<!--TD>831</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('10367');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('10367');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('10367');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">American Girl(IM-U110)</TD>
+					<!--TD></TD-->
+					<!--TD>407</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('9518');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('9518');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('9518');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">Don't Cha(IM-U100)</TD>
+					<!--TD></TD-->
+					<!--TD>5973</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('7666');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('7666');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('7666');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">Family Affair(IM-6100)</TD>
+					<!--TD></TD-->
+					<!--TD>872</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('7646');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('7646');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('7646');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">You Showed Me(IM-8500)</TD>
+					<!--TD></TD-->
+					<!--TD>1292</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('7494');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('7494');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('7494');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+				<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF" onmouseover="this.style.background='#f9f9f9'" onmouseout="this.style.background='#ffffff'">
+					<TD><IMG SRC='http://file.isky.co.kr/images/mobile/icon_3D.gif' ALIGN='ABSMIDDLE'><IMG SRC='http://file.isky.co.kr/images/mobile/icon_best_month.gif' ALIGN='ABSMIDDLE'>
+						<!--<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">-->
+					</TD>
+					<TD CLASS="BBS_LIST_TT">Four To The Floor(IM-7400)</TD>
+					<!--TD></TD-->
+					<!--TD>712</TD-->
+					<TD>
+						<A HREF="javascript:bell_pop01('7493');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="javascript:bell_pop02('7493');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="javascript:YesNo('7493');"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>
+
+
+				<!--<TR HEIGHT="28" STYLE="PADDING-TOP:4PX;" ALIGN="CENTER" BGCOLOR="#FFFFFF">
+					<TD>
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_recom.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/bullet_icon.gif" ALIGN="ABSMIDDLE">
+						<IMG SRC="http://file.isky.co.kr/images/mobile/icon_original.gif" ALIGN="ABSMIDDLE">
+					</TD>
+					<TD CLASS="BBS_LIST_TT">어머나</TD>
+					<TD>장윤정</TD>
+					<TD>2121</TD>
+					<TD>sky</TD>
+					<TD>
+						<A HREF="#"><IMG SRC="http://file.isky.co.kr/images/mobile/button_listen.gif"></A>
+						<A HREF="#"><IMG SRC="http://file.isky.co.kr/images/mobile/button_send.gif"></A>
+						<A HREF="#"><IMG SRC="http://file.isky.co.kr/images/mobile/button_wish.gif"></A><BR>
+					</TD>
+				</TR>-->
+				</TABLE>
+
+
+
+				<!-- 페이징 & 버튼 -->
+				<!--<TABLE ID="BBS_LIST" CELLPADDING="0" CELLSPACING="0" STYLE="MARGIN-TOP:10PX;" WIDTH="100%">
+				<TR>
+					<TD WIDTH="25%"></TD>
+					<TD WIDTH="50%" ALIGN="CENTER">
+					</TD>
+					<TD ALIGN="RIGHT" WIDTH="25%">
+					</TD>
+				</TR>
+				</TABLE>-->
+
+
+					<!-- 컨텐츠 BODY 역역 END -->
+
+		</td>
+	</tr>
+</table>
+</div>
+</BODY>
+</HTML>
+<script language="javascript">
+	function bell_pop01(param) {		
+	var popup	= window.open("./bell_pop01.asp?event=Y&"+"bell_code="+param+"&poly=64", "frenp","height=200,width=400,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+	popup.focus();
+	}
+
+	function bell_pop02(param) {		
+	var popup	= window.open("./bell_pop02.asp?event=Y&"+"bell_code="+ param+"&poly=64","frenp01","height=700,width=400,toolbar=no,menubar=no,location=no,scrollbars=no,resizable=no,top=0,left=0");
+	popup.focus();
+	}
+
+	function YesNo(code) 	{
+		if (confirm("마이찜에 등록 하시겠습니까?")) {
+			document.frames['zzim'].location.href = "./bell_zzim.asp?code=" + code;
+		}
+	}
+	
+	function changeForm(obj) {
+		location.href="./bell_list.asp?sort=" + obj.value
+	}
+
+		
+</script>
+
+<script language="JavaScript">
+function resize_iframes() {
+ if(document.body.scrollHeight > 0) {
+  self.resizeTo(document.body.scrollWidth, document.body.scrollHeight);
+ }
+}
+</script>

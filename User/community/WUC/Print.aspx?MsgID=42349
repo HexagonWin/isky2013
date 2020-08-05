@@ -1,0 +1,92 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+	<TITLE>:: isky.co.kr :: </TITLE>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<script language="javascript">
+				<!--
+					//프리트 실행
+					function Print()
+					{
+						window.print();
+					}
+					
+					//윈도우 화면 크기 리사이즈
+					function SelfResize()
+					{
+						var conSize = document.all.ContDiv.scrollHeight;
+
+						self.resizeTo(610 , conSize + 220);
+					}
+				
+				//-->
+		</script>
+</HEAD>
+<body leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onload="javascript:SelfResize();">
+<form name="Form1" method="post" action="Print.aspx?MsgID=42349" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTcxMjk5NzU1Mzt0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47PjtsPHQ8cDxwPGw8VGV4dDs+O2w87J2MLi47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDUvMDQvMjA7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOyhsOqyveydgDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8SU0tNzIwMDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w87ZqM7JuQ64G866asIFEmQTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD44MTAwIOydgCDstpzsi5zqsIAgP++mrOirrj8uIOqwgOqyqeydgCA2MOunjOybkCDstIgg7ZuE67CYIOygleuPhCDtlaDqu43ri4jri6QuLlw8L1BcPg0KXDxQXD44MzAw7J2AIOu5oOultOuptCA07JuU66eQIOuKpuycvOuptCA17JuU7LSIIOygleuPhCDrkKDrk68g7ZWY6rOg7JqULiDqsIDqsqnsnYAgNjDtm4TrsJjrmJDripQgNzDrp4zsm5DrjIAg7KCV64+EIC4uLuyDneqwgeuQqeuLiOuLpC4gXi1eIFw8L1BcPg0KXDxQXD4mbmJzcFw7XDwvUFw+DQpcPFBcPuq3uOumrOqzoCA4MzAw7IKs7KeE7J2EIOuztOyLpOugpOuptFw8L1BcPg0KXDxQXD5cPEEgaHJlZj0iaHR0cDovL3d3dy5tdW5jbGUuY29tL211bmNsZS9waG9uZS9tb2JpbGVfcmV2aWV3LmpzcD9tb2RlbF9ubz1TS1ktSU04MzAwJmFtcFw7ZmxhZz1SIlw+aHR0cDovL3d3dy5tdW5jbGUuY29tL211bmNsZS9waG9uZS9tb2JpbGVfcmV2aWV3LmpzcD9tb2RlbF9ubz1TS1ktSU04MzAwJmFtcFw7ZmxhZz1SXDwvQVw+XDwvUFw+DQpcPFBcPiZuYnNwXDtcPC9QXD4NClw8UFw+6re466as6rOgIFNLWeyXkOyEnCDrgpjsmKggSU1CLTEwMDDsgqzsp4TsnYQg67O07Iuk66Ck66m0IFw8L1BcPg0KXDxQXD4mbmJzcFw7XDxBIGhyZWY9Imh0dHA6Ly93d3cubXVuY2xlLmNvbS9tdW5jbGUvcGhvbmUvbW9iaWxlX3Jldmlldy5qc3A/bW9kZWxfbm89U0tZIElNQi0xMDAwJmFtcFw7ZmxhZz1SIlw+aHR0cDovL3d3dy5tdW5jbGUuY29tL211bmNsZS9waG9uZS9tb2JpbGVfcmV2aWV3LmpzcD9tb2RlbF9ubz1TS1kgSU1CLTEwMDAmYW1wXDtmbGFnPVJcPC9BXD5cPC9QXD4NClw8UFw+7J6F64uI64ukLlw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+<!-- width:600 -->
+<center>
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="BORDER-RIGHT:#e7d2d2 1px solid; BORDER-TOP:#e7d2d2 1px solid; BORDER-LEFT:#e7d2d2 1px solid; BORDER-BOTTOM:#e7d2d2 1px solid; BACKGROUND-COLOR:#f5f0f1">
+<tr>
+	<td width="80%" style="PADDING-RIGHT:0px; PADDING-LEFT:12px; PADDING-BOTTOM:0px; PADDING-TOP:2px"><span class="brown_search">
+		<b><span id="lblTitle">음..</span></b></span>
+	</td>
+	<td width="20%" align=right style="PADDING-RIGHT:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+<table width="580" height=26 cellpadding="0" cellspacing="0">
+  <tr height=3>
+    <td></td>
+  </tr>
+  <tr>
+    <td><div align="right">작성일 :
+          <span id="lblRegDate">2005/04/20</span>        
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;작성자 :
+          <span id="lblName">조경은</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;모델명 : 
+          <span id="lblHPModel">IM-7200</span>
+          <span style="COLOR:#e7d2d2">|</span>&nbsp;출처 :
+          <span id="lblBbsName">회원끼리 Q&A</span>
+    </div></td>
+    </tr>
+  <tr height=1>
+    <td background="http://file.isky.co.kr/images/user/community/popup_line_bg.gif"><FONT face="굴림"></FONT></td>
+  </tr>
+</table>
+<table width="580" cellpadding="0" cellspacing="0">
+<Tr>
+	<td style="PADDING-RIGHT:10px; PADDING-LEFT:10px; PADDING-BOTTOM:30px; PADDING-TOP:20px">
+	<div id="ContDiv">
+	<span id="lblContent"><P>8100 은 출시가 ?怜諮?. 가격은 60만원 초 후반 정도 할껍니다..</P>
+<P>8300은 빠르면 4월말 늦으면 5월초 정도 될듯 하고요. 가격은 60후반또는 70만원대 정도 ...생각됩니다. ^-^ </P>
+<P>&nbsp;</P>
+<P>그리고 8300사진을 보실려면</P>
+<P><A href="http://www.muncle.com/muncle/phone/mobile_review.jsp?model_no=SKY-IM8300&amp;flag=R">http://www.muncle.com/muncle/phone/mobile_review.jsp?model_no=SKY-IM8300&amp;flag=R</A></P>
+<P>&nbsp;</P>
+<P>그리고 SKY에서 나온 IMB-1000사진을 보실려면 </P>
+<P>&nbsp;<A href="http://www.muncle.com/muncle/phone/mobile_review.jsp?model_no=SKY IMB-1000&amp;flag=R">http://www.muncle.com/muncle/phone/mobile_review.jsp?model_no=SKY IMB-1000&amp;flag=R</A></P>
+<P>입니다.</P></span>
+	</div>
+	</td>
+</Tr>
+
+<tr height=1 bgcolor="#e1e1e1"><td></td></tr>
+<tr height=15><td></td></tr>
+
+<tr><td align=center><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+</table>
+</center>
+</form>
+</BODY>
+</HTML>

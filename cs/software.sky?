@@ -1,0 +1,265 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+<script language="javaScript">
+<!--
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/software.jsp");
+	}
+//-->
+</script>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="050202"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/selector.basic.js"></script>
+<script language="JavaScript" src="/static/js/selector.html.js"></script>
+<script language="javaScript" src="/static/js/cs/searchList.js"></script>
+<script language="javaScript" src="/static/js/cs/searchSelect.js"></script>
+<script>
+	var dispNum="050202";
+	var firstDepth ="05";
+
+		window.onload = function() {
+
+			var telecomName = "";
+			var seriesName = "";
+			var prdName = "";
+			var intSeriesSeq = "0";
+			var intPrdSeq = "0";
+
+
+			if(document.getElementById("searchPrdName").value != ""){
+				prdName = document.getElementById("searchPrdName").value;
+				document.getElementById("searchPrdName").style.backgroundImage = 'none';
+			}
+
+			var tn = document.getElementById("telecomList");
+			var sn = document.getElementById("series");
+			var mn = document.getElementById("model");
+
+			if(telecomName != ''){
+
+				for ( var i = 0 ; i < tn.length ; i++ ) {
+					if(tn[i].value == telecomName){
+						tn[i].selected = true;
+					}
+				}
+			}
+
+			if(seriesName != ''){
+				while (sn.childNodes.length > 0) {
+					sn.removeChild(sn.childNodes[0]);
+				}
+				option = document.createElement("option");
+				option.value =seriesName;
+				option.appendChild(document.createTextNode(seriesName));
+				sn.appendChild(option);
+			}
+
+			if(prdName != ''){
+
+				while (mn.childNodes.length > 0) {
+					mn.removeChild(mn.childNodes[0]);
+				}
+
+				option = document.createElement("option");
+				option.value =prdName;
+				option.appendChild(document.createTextNode(prdName));
+				mn.appendChild(option);
+			}
+
+			if(prdName == ''){
+				list.goFrameList(telecomName,seriesName,prdName,intSeriesSeq,intPrdSeq);
+			}else{
+				list.goFrameListPrd(prdName);
+			}
+
+		}
+</script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=050202&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_SW.swf?PageCode=050202','222','600','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=050202','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle"><ul
+				><li><img src="/static/images/cs/d3title_software.gif" border="0" alt="소프트웨어" title="소프트웨어" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="software_cont01"><img src="/static/images/cs/software_txt_01.gif" alt="S/W를 직접 바로바로" title="S/W를 직접 바로바로" /></div>
+
+			<!-- [s] STEP검색 -->
+			<form name="searchList" method="post">
+			<div id="roundbox" style="width:740px;">
+				<div class="roundbox_01"><img src="/static/images/cs/roundbox_01.gif" /></div>
+				<div class="searchBox2">
+
+					<ul
+					><li class="tit"><img src="/static/images/cs/selfupgrade_tit_01.gif" alt="STEP 검색" title="STEP 검색" /></li
+					><li class="select">
+					<select name="telecomList" id="telecomList" style="width:205px;" onChange="getSeries(this.value);">
+							<option value="">통신사 선택</option>
+							<option value="SKT">SKT</option>
+							<option value="KTF">KTF</option>
+							<option value="LGT">LGT</option>
+						</select>
+					</li><li class="select">
+						<select name="series" id="series" style="width:205px;" onChange="getModel(this.options[this.selectedIndex].text);">
+							<option value="">제품계열 선택</option>
+						</select>
+					</li><li class="select">
+						<select name="model" id="model" style="width:205px;" onChange="serchSelectList(this.options[this.selectedIndex].text);">
+							<option value="">모델명 선택</option>
+						</select></li
+				></ul>
+				</div>
+				<script type="text/javascript">
+					/*var s1;
+					var s2;
+					var s3;
+					function loadSelecBox(){
+						s1 = new Selectbox('telecomList', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+						s2 = new Selectbox('series', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+						s3 = new Selectbox('model', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+					}
+					if ( window.attachEvent )
+						window.attachEvent('onload', loadSelecBox);
+					else
+						window.addEventListener('load', loadSelecBox, false);*/
+				</script>
+				<div class="searchBox3"><ul
+					><li class="tit"><img src="/static/images/cs/selfupgrade_tit_02.gif" /></li
+					><li class="input">
+						<input type="text" name="searchPrdName" id="searchPrdName" class="input_text"
+							onfocus="this.style.backgroundImage = 'none'" ONKEYPRESS=" if(event.keyCode == 13){ serchModelName(); return false;}"
+							style="width:575px;height:14px;background:#FFFFFF url('/static/images/cs/selfupgrade_txt_04.gif') 5px 5px no-repeat;" value=''/>
+						</li
+					><li><a href="JavaScript:onClick=serchModelName()"><img src="/static/images/common/btn/1_search.gif" /></a></li
+				></ul></div>
+				<div class="roundbox_03"><img src="/static/images/cs/roundbox_03.gif" /></div>
+			</div>
+			</form>
+			<!-- [e] STEP검색 -->
+
+			<div class="blank40"></div>
+
+			<div class="selfupgrade_cont01">
+				<iframe name="list" src="/cs/softWareList.sky" style="border:0px" width="740" height="480" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+			</div>
+
+			<div class="selfupgrade_cont02"><h5><img src="/static/images/cs/selfupgrade_tit_04.gif" alt="소프트웨어 설명" title="소프트웨어 설명" /></h5>
+			<img src="/static/images/cs/software_txt_02.gif" border="0" usemap="#mapSoftware" />
+			<map name="mapSoftware" id="mapSoftware">
+				<area shape="rect" coords="78,86,221,105" href="javascript:popCwin('/cs/popup_selfupgrade.sky', 'selfUpgrade', '820', '590', 'yes');" alt="셀프업그레이드 설치방법" />
+				<area shape="rect" coords="449,86,608,105" href="javascript:popCwin('/cs/popup_datamanager.sky', 'dataManager', '820', '590', 'yes');" alt="데이터매니저 PLUS 설치방법" />
+				<area shape="rect" coords="78,192,221,211" href="javascript:popCwin('/cs/popup_usbdriver.sky', 'useDriver', '820', '590', 'yes');" alt="USB 드라이버 설치방법" />
+			</map></div>
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+</body>
+</html>

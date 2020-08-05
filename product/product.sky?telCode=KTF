@@ -1,0 +1,359 @@
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/product/product.js"></script>
+<script>var dispNum="0102"; var firstDepth="01"</script>
+<script language="javascript">
+	function AllProduct(){
+		var url = "/product/productAll.sky?telCode=ALL";
+
+		location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="productPage">
+	<input type="hidden" name="targetPage">
+	<input type="hidden" name="targetGroup">
+	<input type="hidden" name="telCode" value="KTF">
+</form>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0102&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0102','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0102','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0102.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_visual"><script>swf_include('/static/flash/product.swf?dispNum=0102','740','250','','','','')</script></div>
+
+			<!-- [s] stit -->
+			<div id="bd_stit01"><h3><img src="/static/images/product/product_stit_01.gif" border="0" alt="제품 목록" title="제품 목록" /></h3>
+			<dl>
+				<dd>
+					<img src="/static/images/common/btn/bd_compare.gif" border="0" alt="제품 비교" title="제품 비교" onClick="checkCompare();" style="cursor:hand;" />
+					<img src="/static/images/common/btn/bd_vline.gif" style="margin:0 13px 0 10px;" /><a href="javascript:AllProduct()"><img src="/static/images/common/btn/bd_allView.gif" border="0" alt="전체제품 보기" title="전체제품 보기" /></a>
+				</dd>
+				<dt><img src="/static/images/product/product_txt_01.gif" alt="제품을 선택하세요.(최대3개)" title="제품을 선택하세요.(최대3개)" /></dt>
+			</dl>
+			</div>
+			<!-- [e] stit -->
+
+			<!-- [s] List -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_ProductList">
+				<form name="productList">
+				<input type="hidden" name="dispNum" value="0102">
+				<input type="hidden" name="targetPage" value="1">
+				<input type="hidden" name="targetGroup" value="1">
+				<colgroup>
+					<col width="153">
+					<col width="153">
+					<col width="153">
+					<col width="153">
+					<col width="128">
+				</colgroup>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=nvfHlI3HGjc~eIXdQDAiQv4~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=hYaiVUyUZ1s%7EaoSmFwtw75I%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IMS410red_K_list[1].gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">WHOOO</li
+						><li class="model">IM-S410K<span><input type="checkbox" name="compareSeq" value="PbrANx3UzaM~esuKbf3Nwe4~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=Zs/w/drGmyU~vi8hvY1XVbk~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=E%2FDFxaC8WZc%7EplEErQdGMgQ%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-U310K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">SKY Presto</li
+						><li class="model">IM-U310K<span><input type="checkbox" name="compareSeq" value="XolnXfUtHyU~PrZ6UQ1GL5k~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=sOei_Lh18e0~T2FAobWappo~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=0jJPsWkHV%2F8%7E0bgbLn_tUnM%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S380K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">Twosome</li
+						><li class="model">IM-S380K<span><input type="checkbox" name="compareSeq" value="0wMd3cBigxA~sm6vV2zoPwM~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=m4icGXj3T/I~FWPq_5L36pI~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=5ZYO_GA8NCY%7EvNCRIdbiRzo%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-U300K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">네온사인</li
+						><li class="model">IM-U300K<span><input type="checkbox" name="compareSeq" value="BGXjDjRsNyw~4mCNHd41Tj4~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=FtepmcoVuJ8~apJLFBeC6wQ~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=zfEDU42Dih4%7EX0SARkyLFuc%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S330K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">M</li
+						><li class="model">IM-S330K<span><input type="checkbox" name="compareSeq" value="P3cYnKX_O3g~spKqB6sLWKg~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=1uNaU0HpxVI~zpF663kL0L8~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=LYiqHcBHHSA%7EIhaPg7gQ3Pw%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S320K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">블레이드</li
+						><li class="model">IM-S320K<span><input type="checkbox" name="compareSeq" value="fmgkN9RitR0~7gyhUR8acK4~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=QcpwgjJTx0U~ZkLEwj0z9HM~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=itql_FZVKm0%7E%2FeqqCWj2j0E%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S240K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">레인 스트라이프</li
+						><li class="model">IM-S240K<span><input type="checkbox" name="compareSeq" value="8l5spjYfzp4~0qd4DtlyE4A~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=mqLpXs6riQ0~vFLa6vVDjdE~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=gSa%2Fa2OfrS8%7EMIHYVkY7PA0%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-U220K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">돌핀 슬라이드</li
+						><li class="model">IM-U220K<span><input type="checkbox" name="compareSeq" value="7SZozLPtHkY~P/wquueelQ8~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=_JVqzhvuUZo~vwr4vxhxXcg~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=%2FXdPuTI9sRM%7EYJlRv9OOT2U%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-U210K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">HSDPA T-DMB</li
+						><li class="model">IM-U210K<span><input type="checkbox" name="compareSeq" value="bZvH6kxJUuY~3Bq8B5Lapic~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=62L4xsNyJz4~CqRyYMw/T/E~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=_2ZZn1r0t2Y%7Ejk6oXOEnA2s%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-R200K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">매직 키패드</li
+						><li class="model">IM-R200K<span><input type="checkbox" name="compareSeq" value="ADVuyT9/mwY~OoggSwb/9jY~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+					<tr valign="top">
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=3faR3_mecsE~NpGCZ85kKBk~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=qnZ7jO1Mb4o%7E1r2Fk4A10Ys%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S200k_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">스카이 핸디</li
+						><li class="model">IM-S200K<span><input type="checkbox" name="compareSeq" value="IQLV5DzVS6w~NlPZ064z5B8~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=odt/bSqQDWs~J55XJKfJlRY~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=9gl3PLhObWY%7EMtesu_Q46xw%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-U160K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">붐붐</li
+						><li class="model">IM-U160K<span><input type="checkbox" name="compareSeq" value="grcXBuanyvw~JSHMmkfXaZE~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=/16vGgChrQ0~GUtgYxnLy/c~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=kFqYlwcJJzg%7EC46K6Y6Db0M%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S130K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">슬림 슬라이드</li
+						><li class="model">IM-S130K<span><input type="checkbox" name="compareSeq" value="dWaGshAramw~Dnag2y7Xzw4~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					
+				
+					
+					
+						
+						
+										
+					<td><ul class="productList"
+						><li><div class="gradientBox792"><div class="rt79"><img src="/static/images/common/gradient/79_rt.gif" /></div><div class="lb79"><img src="/static/images/common/gradient/79_lb.gif" /></div>
+							<div class="imgBox127"><div onMouseOver="imgBox_over(this);" onMouseOut="imgBox_out(this);" onclick=goView("/product/feature.sky?dispNum=0102&seq=9H5p0pr8yR8~q5V3VA8Q1LY~"); style="cursor:pointer;"><div style="position:absolute;"></div><a href="/product/feature.sky;www=TJvCJ2ZL6Lh5z7p43sPmfSX8rCJnC66r6FxvzthjwdZ2ztpvntmy!1508526135!-1348084934?telCode=KTF&amp;dispNum=0102&amp;seq=XrjFKZpWaHI%7E494HENmejkc%7E"><img src="http://file.isky.co.kr/upload/product/imageAflash/IM-S110K_list.gif" border="0"width="43" height="102" class="thumb" /></a></div></div></div></li
+						><li class="nick">슬림 폴더</li
+						><li class="model">IM-S110K<span><input type="checkbox" name="compareSeq" value="g4IJ5xT2bWA~innuZiqrQcc~" onClick="limitCheckedCnt(this)"/></span></li
+					></ul></td>					
+					</tr>
+				
+				</form>
+			</table>
+			<!-- [e] List -->
+			
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+						
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+</div>
+</body>
+</html>

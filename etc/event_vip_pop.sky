@@ -1,0 +1,166 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" CONTENT="no">
+<title>iSKY</title>
+<style type="text/css">
+<!--
+img { border:0;}
+.avi { background:url(/static/images/event/vip/avi_bg.jpg); background-repeat:no-repeat; background-position:center; }
+.border { border:1px solid #a0201a; padding:10px 5px 10px 5px; background-color:#1f1f1f; }
+.border2 { border:1px solid #a0201a; background-color:#1f1f1f; }
+.qna { background:url(/static/images/event/vip/img03.jpg); background-position:center; background-repeat:no-repeat; width:962px; height:67px; }
+.textfield {background-image:url(/static/images/event/vip/textfield.jpg); width:127px; height:17px; border:0; }
+//-->
+</style>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function InputChk(){
+		var form = document.event;
+
+		if(form.strContent.value == ""){
+			alert('정답을 입력해 주세요');
+			form.strContent.focus();
+			return;
+		}
+
+		var strContent = Trim(form.strContent.value);
+		
+		if(strContent == "오마주" || strContent.toLowerCase() == "hommage"){
+
+			form.target = "dataProcess";
+			form.action = "/etc/event_vip_insert.sky";
+			form.submit();
+
+		}else{
+			alert("정답이 아닙니다. 다시 입력해 주세요");
+			form.strContent.value = "";
+			form.strContent.focus();
+			return;
+		}
+		
+	}
+
+	function Trim(string){
+
+	    for(;string.indexOf(" ")!= -1;){
+	     	string = string.replace(" ","");
+	    }
+	 
+	 	return string;
+	}
+
+	function LoginChk(){
+		LoginPop("/etc/event_vip_pop.sky");
+		return;
+	}	
+</script>
+</head>
+
+<body topmargin="0" leftmargin="0">
+<form name='event'>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#131313">
+    <tr>
+        <td valign="top"><img src="/static/images/event/vip/img01.jpg" /></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="964" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td width="403" align="center"><img src="/static/images/event/vip/title_01.jpg" /></td>
+                    <td width="12" rowspan="2"></td>
+                    <td align="center"><img src="/static/images/event/vip/title_02.jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="border">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                            <tr>
+                                <td width="283" height="191" class="avi" style="padding:0px 0px 3px 57px;">
+                                <script>swf_include('/static/flash/event/vip/flv.swf?flvPath=/static/flash/event/vip/yugo.flv','275','184','always','','transparent','')</script>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding-top:7px;"><a href="http://www.horrorschool.co.kr/index.htm" target="_blank"><img src="/static/images/event/vip/btn_01.jpg" /></a></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><img src="/static/images/event/vip/blink.jpg" /></td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="padding:15px 0px 3px 0px;"><img src="/static/images/event/vip/img02.jpg" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="border">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td><img src="/static/images/event/vip/img05.jpg" /></td>
+                                <td width="12" align="center"><img src="/static/images/event/vip/bar.jpg" /></td>
+                                <td><img src="/static/images/event/vip/img06.jpg" /></td>
+                                <td width="12" align="center"><img src="/static/images/event/vip/bar.jpg" /></td>
+                                <td><img src="/static/images/event/vip/img07.jpg" /></td>
+                                <td width="12" align="center"><img src="/static/images/event/vip/bar.jpg" /></td>
+                                <td><img src="/static/images/event/vip/img08.jpg" /></td>
+                                <td width="12" align="center"><img src="/static/images/event/vip/bar.jpg" /></td>
+                                <td><img src="/static/images/event/vip/img09.jpg" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="6"></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="964" border="0" cellspacing="0" cellpadding="0" align="center" class="border2 qna">
+                <tr>
+                    <td>
+                        <table width="704" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="556" style="padding:22px 0px 0px 429px;">
+                                    <input class="textfield" type="text" name="strContent" id="strContent" />
+                                </td>
+                                <td width="148" style="padding:22px 50px 0px 0px;"><a href="http://www.isky.co.kr/product/feature.sky?telCode=SKT&amp;dispNum=0101&amp;seq=ASIgrUn_S6I%7E0AYdvwg6pJg%7E" target="_blank"><img src="/static/images/event/vip/btn_02.jpg" /></a></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="260" style="padding:5px 0px 2px 5px;"><a href="javascript:LoginChk()"><img src="/static/images/event/vip/btn_03.jpg" /></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="24" align="center"><img src="/static/images/event/vip/img04.jpg" /></td>
+    </tr>
+</table>
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

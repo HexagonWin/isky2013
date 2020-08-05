@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1261" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOy5mOujjOulvCDtlojripTrjbAg67CU7J2065+s7Iqk6rCAIOqzhOyGjSDrgqjslYTsnojsirXri4jri6QuIOyWtOuWu+qyjCDtlZjso6A/Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzslYXshLEg67CU7J2065+s7Iqk6riwIOuVjOusuOyXkCDsnbzrsJgg67Cx7IugIO2UhOuhnOq3uOueqChWMyzri6TsnqHslYQg65OxLi4p7Jy866Gc64qUIOyZhOuyve2eiCDsuZjro4zrkJjsp4Ag7JWK64qUIOqyveyasOqwgCDrp47sirXri4jri6QuIOyViOyyoOyImCDrsLHsi6Ag7ZSE66Gc6re4656o7Jy866GcIOy5mOujjOulvCDtlZjshajrjZTrnbzrj4Qg7J2867CY66qo65Oc7JeQ7IScIOyCreygnO2VnCDqsr3smrDsl5DripQg7JmE7KCE7Z6IIOy5mOujjOuQmOyngCDslYrsnYQg7IiYIOyeiOq4sCDrlYzrrLjsl5AgXDxTVFJPTkdcPuyViOyghOuqqOuTnFw8L1NUUk9OR1w+7JeQ7IScIOyekeyXhe2VmOyLnOuKlCDqsoPsnbQg7KKL7Iq164uI64ukLjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">치료를 했는데 바이러스가 계속 남아있습니다. 어떻게 하죠?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">악성 바이러스기 때문에 일반 백신 프로그램(V3,다잡아 등..)으로는 완벽히 치료되지 않는 경우가 많습니다. 안철수 백신 프로그램으로 치료를 하셨더라도 일반모드에서 삭제한 경우에는 완전히 치료되지 않을 수 있기 때문에 <STRONG>안전모드</STRONG>에서 작업하시는 것이 좋습니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=56789" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPO2PtOuNlOyViOunjOuTpOyWtOyXrD8/Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzquLDtg4A7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOydtOydmOyXtDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NTY3ODk7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDUtMDUtMDc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDU4Oz4+Oz47Oz47dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFxlOz4+Oz47Oz47Pj47dDxwPHA8bDxUZXh0Oz47bDxcPFBcPiZuYnNwXDsg7JqU7IOIIO2GoH7smLl+IO2PtOuNlOyViOunjOuTpOuNmOuNsCDtj7TrjZTquLDri6TroLjri6TqsIDripQg64iI7J20IO2GoH7smKUg7Yuw64KY7Jik6rOgIOyCtOydtCDrubx+67m8fuuniOultOqyoOyWtOyXrC4uLi42MTAwIOyTsOuKlOuNsCDsnbTqsbDsnbTrn6zri6QgMTAwMOuyiOuMgCDrqqjrjbjrgpjsmKzrlYzquYzsp4Ag7I2o7JW87ZWY64KYLi4uLlw8L1BcPlw8QlJcPlw8UFw+7KeA6riI65GQIOyngO2YvOyekCDqurzsoYzri6Qg7Lyc7KGM64ukIO2VtOyEnCDsp5zspp3snbQg66eM66as7J6l7ISx7J24642wLi4uLi5cPC9QXD5cPEJSXD5cPFBcPu2VmOujqOu5qOumrCDtj7TrjZQg7Lac7IKw7ZaI7J2MIOyii+qyoOyKtOuLpC4uLlw8L1BcPlw8QlJcPlw8UFw+7JesIOuztOuLiOq5jCDtj7TrjZQg6riw64uk66as7Iuc64qUIOu2hOuTpOunjuycvOyLnOuNmOuNsCBcPC9QXD5cPEJSXD5cPFBcPuq3gOuLtOyVhCDrk6TslrTsl6wuLi4uLi4uXDwvUFw+XDxCUlw+XDxQXD7qt7jrg6Ug64yAfn5+7LapIH5+fn4g7J206rmM7J6H6ruP65OkIC4uLi4uXDwvUFw+XDxCUlw+XDxQXD7snbTrnbwg7IOd6rCB66eQ6rWsIFw8L1BcPlw8QlJcPlw8UFw+7J6Yfu2VtH5+fuu0heyLnOuLpCEhXDwvUFw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">폴더안만들어여??</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">기타</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">이의열</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">56789</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-05-07</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">58</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; 요새 토~옹~ 폴더안만들던데 폴더기다렸다가는 눈이 토~옥 티나오고 살이 빼~빼~마르겠어여....6100 쓰는데 이거이러다 1000번대 모델나올때까지 써야하나....</P><BR><P>지금두 지혼자 꺼졌다 켜졌다 해서 짜증이 만리장성인데.....</P><BR><P>하루빨리 폴더 출산했음 좋겠슴다...</P><BR><P>여 보니까 폴더 기다리시는 분들많으시던데 </P><BR><P>귀담아 들어여.......</P><BR><P>그냥 대~~~충 ~~~~ 이까잇껏들 .....</P><BR><P>이라 생각말구 </P><BR><P>잘~해~~~봅시다!!</P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

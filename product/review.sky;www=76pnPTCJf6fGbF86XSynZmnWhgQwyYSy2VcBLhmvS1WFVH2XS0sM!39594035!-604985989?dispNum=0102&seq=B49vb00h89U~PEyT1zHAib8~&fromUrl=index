@@ -1,0 +1,485 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/review.sky?dispNum=0102[AND]fromUrl=index[AND]seq=B49vb00h89U~PEyT1zHAib8~[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/review.sky?dispNum=0102[AND]fromUrl=index[AND]seq=B49vb00h89U~PEyT1zHAib8~[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/review.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120318");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script>var dispNum="0102";</script>
+<script language="javascript">
+	function Write(){
+		location.href = "/product/review/review_write.sky?dispNum=0104&strTelecomCode=11002&intSeriesSeq=241&intPrdSeq=504";
+	}
+
+	function goList(targetPage, targetGroup) {
+
+		var obj = document.reviewPage;
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/product/review.sky";
+		obj.submit();
+	}
+
+	function detail(intReviewSeq){
+		
+		var targetPage = $('targetPage');
+		var targetGroup = $('targetGroup');
+
+		var url = "/product/review/review_view.sky?intReviewSeq=" + intReviewSeq + "&dispNum=0104&targetPage=" + targetPage.value + "&targetGroup=" + targetGroup.value;
+		
+		location.href = url;
+	}
+
+	function List(){
+		var dispNum = $('dispNum');
+		var telCode = $('telCode');
+		var seq = $('seq');
+
+		var url = "/product/product.sky?seq=" + seq.value + "&dispNum=" + dispNum.value + "&telCode=" + telCode.value;
+		
+		location.href = url;
+	}
+</script>
+</head>
+
+<body>
+<form name="reviewPage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" id="dispNum" value="0102">
+	<input type="hidden" name="telCode" id="telCode" value="">
+	<input type="hidden" name="seq" id="seq" value="B49vb00h89U~PEyT1zHAib8~">
+</form>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0102&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash">
+				<script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0102','222','420','','','transparent','')</script>
+				<ul class="snsBanner">
+					<li><a href="http://www.facebook.com/vega.kr" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner01.jpg" alt="Facebook 바로가기" /></a></li>
+					<li><a href="https://twitter.com/skyandroian" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner02.jpg" alt="Twitter 바로가기" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0102','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0102.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_view_visual"><script>swf_include("http://file.isky.co.kr/upload/product/imageAflash/102_IMA630K[10].swf?intTvSeq=48g9nKBh9_s~LzMeTxakPiA~&strTeYN=Y","740","424","always","","","")</script></div>
+			<div class="product_view_tab">
+				<ul>
+					
+					<li>
+						
+							
+							
+						
+						<a href="/product/feature.sky;www=jh8YPltJjF05SBkN9fbvBjT5zt8bYw8ssstqPTzHHy532skhNC2G!728676114!1685713564?dispNum=0102&amp;seq=B49vb00h89U%7EPEyT1zHAib8%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_01.gif" border="0" alt="FEATURE" title="FEATURE" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/spec.sky;www=jh8YPltJjF05SBkN9fbvBjT5zt8bYw8ssstqPTzHHy532skhNC2G!728676114!1685713564?dispNum=0102&amp;seq=B49vb00h89U%7EPEyT1zHAib8%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_02.gif" border="0" alt="SPEC" title="SPEC" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/review.sky;www=jh8YPltJjF05SBkN9fbvBjT5zt8bYw8ssstqPTzHHy532skhNC2G!728676114!1685713564?dispNum=0102&amp;seq=B49vb00h89U%7EPEyT1zHAib8%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_03_.gif" border="0" alt="REVIEW" title="REVIEW" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/swdownload.sky;www=jh8YPltJjF05SBkN9fbvBjT5zt8bYw8ssstqPTzHHy532skhNC2G!728676114!1685713564?dispNum=0102&amp;seq=B49vb00h89U%7EPEyT1zHAib8%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_04.gif" border="0" alt="S/W DOWNLOAD" title="S/W DOWNLOAD" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/accessory.sky;www=jh8YPltJjF05SBkN9fbvBjT5zt8bYw8ssstqPTzHHy532skhNC2G!728676114!1685713564?dispNum=0102&amp;seq=B49vb00h89U%7EPEyT1zHAib8%7E&amp;fromUrl=index">
+							<img src="/static/images/product/product_vTab_05.gif" border="0" alt="ACCESSORY" title="ACCESSORY" />
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			<div class="product_view_cont01">
+			<!-- [s] List -->
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_review_L">
+			<colgroup>
+				<col width="480" />
+				<col width="80" />
+				<col width="80" />
+				<col width="80" />
+			</colgroup>
+				<tr valign="top">
+					<th>제목</th>
+					<th>작성자</th>
+					<th>등록일</th>
+					<th>조회</th>
+				</tr>
+
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('RWeFgs6enDQ~p99tAL3gA7Y~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">이자르 산지 1개월 ？습니다.<span class="comment">(20)</span></dd>
+						<dd class="text">화이트 샀구요 갤스 아이폰 따위 안부러움 ㅋㅋㅋㅋㅋㅋㅋㅋ ...</dd>
+					</dl></a>
+					<td class="name">iwin1209</td>
+					<td class="tit">2011-07-19</td>
+					<td class="tit">1102</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('tQBfzlcoGyA~8o_iD7iMft4~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">이자르~~~캬캬캬<span class="comment">(15)</span></dd>
+						<dd class="text">&nbsp;
+음... 이 폰도 스마트폰으로 들어가는 거죠!!??
+&nb...</dd>
+					</dl></a>
+					<td class="name">pjc0000</td>
+					<td class="tit">2011-07-07</td>
+					<td class="tit">622</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('L8GAqFw1Kqs~/9uMjQPBe6A~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">ㅎㅎ<span class="comment">(22)</span></dd>
+						<dd class="text">&nbsp;우왕~!
+저는.. 이자르 폰을 산지 5개월 정도 됐구요.....</dd>
+					</dl></a>
+					<td class="name">dpwls960507</td>
+					<td class="tit">2011-06-07</td>
+					<td class="tit">941</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('8DhtvX7Y9F4~WufgXzZsP/I~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">어제 개통 ^^<span class="comment">(26)</span></dd>
+						<dd class="text">어제 개통해서 하루사용중인데 아직 잘 모르겠어요 스마트폰 ...</dd>
+					</dl></a>
+					<td class="name">loveletter05</td>
+					<td class="tit">2011-05-17</td>
+					<td class="tit">1012</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('MLZ2NPVog7w~X_xRrAeu93E~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">이자르폰!! <span class="comment">(10)</span></dd>
+						<dd class="text">개인적으로 디자인이나 기능성이나 다른 안드로이드폰 부럽지...</dd>
+					</dl></a>
+					<td class="name">hnj0730</td>
+					<td class="tit">2011-05-14</td>
+					<td class="tit">805</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('Jpr0qWQgyeA~Zc1B7U0Fny0~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">폰트적용제한<span class="comment">(18)</span></dd>
+						<dd class="text">&nbsp;
+다른 스마트 폰들이랑 다르게 이자르는 폰트적용이  ...</dd>
+					</dl></a>
+					<td class="name">bshgod</td>
+					<td class="tit">2011-04-19</td>
+					<td class="tit">1449</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('fYyo3jnPB1U~Xl_5DzV_gh8~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">제대로 된 제품을 출시 하시길...<span class="comment">(21)</span></dd>
+						<dd class="text">제가 sk에 10년정도 있다가 이자르 폰을 저렴하게 준다고 하 ...</dd>
+					</dl></a>
+					<td class="name">orions</td>
+					<td class="tit">2011-04-16</td>
+					<td class="tit">1244</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('/WgHKeEQt3g~VWU/ivxvivk~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">이자르증말정말짱나!!!<span class="comment">(20)</span></dd>
+						<dd class="text">폰쓴지5개월가량된것같은데정말짱나요....
+D.M.B는아예뜰생 ...</dd>
+					</dl></a>
+					<td class="name">eflj</td>
+					<td class="tit">2011-04-15</td>
+					<td class="tit">1456</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('IpWlCt2vQOU~i42RC7G8Sjw~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">아휴~~~짜증나.....<span class="comment">(9)</span></dd>
+						<dd class="text">저는 6개월 사용중인데
+정말 돈주고는 살만한것은 못됩니다...</dd>
+					</dl></a>
+					<td class="name">amy1020</td>
+					<td class="tit">2011-04-03</td>
+					<td class="tit">1019</td>
+				</tr>
+						
+				<tr align="center">
+					<td class="title2"><a href="javascript:detail('mn0HQL71iSo~jddTz1UALZY~')"><dl>
+						<dt><span class="model">SKY 이자르 <span class="eng">IM-A630K</span></span></dt>
+						<dd class="subject">이자르폰 렉 많이 걸려요<span class="comment">(12)</span></dd>
+						<dd class="text">&nbsp;
+뭐 조금만 해도 계속 렉걸려요=_=</dd>
+					</dl></a>
+					<td class="name">teotc0418</td>
+					<td class="tit">2011-03-27</td>
+					<td class="tit">921</td>
+				</tr>
+				
+
+				
+
+			</table>
+			<!-- [e] List -->
+
+			<!-- [s] button -->
+			<div id="bd_btnVLB"><table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_btnB">
+				<tr valign="top">
+					<td align="right"><span><a href="javascript:List()"><img src="/static/images/common/btn/bd_list.gif" border="0" alt="제품목록보기" title="제품목록보기" /></a></span>
+					
+					<span><a href="javascript:LoginConfirm(current_url)"><img src="/static/images/common/btn/bd_writeReview.gif" border="0" alt="리뷰쓰기" title="리뷰쓰기" /></a></span></td>
+				</tr>
+			</table></div>
+			<!-- [e] button -->
+			
+			<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('20','2')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			
+			</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+</body>
+</html>

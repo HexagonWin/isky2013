@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/product/review.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/product.css">
+</head>
+<script>
+<!--
+function fdown(form){
+
+		form.target = "inner_recom_log";
+		form.action = "/common/include_recom_log.jsp";
+		form.submit();
+}
+function go_login()
+{
+	
+		if(confirm("로그인 후 리뷰를 작성 할 수 있습니다.\n로그인 하시겠습니까?"))
+		{
+			goLogin();
+		}
+	
+}
+//-->
+</script> 
+<body onload="fdown(logForm);">
+<iframe name="inner_recom_log" method="post" width=0 height=0></iframe>
+<form name="logForm" method="post">
+	<input type="hidden" name="log_gubun" value="PT03">
+	<input type="hidden" name="log_tname" value="ISKY_P_COMMENT">
+	<input type="hidden" name="log_p_name" value="IM-S110">
+	<input type="hidden" name="log_p_idx" value="1jJTVhHi6ek~ytfiQHUym3I~">
+	<input type="hidden" name="log_s_value" value="">
+</form>
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td style="backgruond:url(http://www.isky.co.kr/source/img/product/blank.gif) no-repeat;height:715px;">
+	<script type="text/javascript">Flash('FunctionFla','/html/flash/review.swf?p_idx=1jJTVhHi6ek~ytfiQHUym3I~&hn=2&sn=3','100%','100%','#000000','none')</script>
+	</td>
+</tr>
+</table>
+</body>
+</html>

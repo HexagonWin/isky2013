@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1241" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOq1rOyehe2VnCDsg4HtkojsnZgg67CY7ZKIIO2bhCDtmZjrtojsnYAg7Ja065a76rKMIOuwm+uCmOyalD87Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOuwmO2SiCDsoJHsiJgg7ZuEIOydteydvCDtmZjrtojtlbQg65Oc66a964uI64ukLlw8YnJcPuuLqCwg7IOB7ZKI7J2YIO2VmOyekOyXrOu2gCwg7IKs7Jqp7Jes67aAIOuTseydmCDtlYTsmpTtlZwg6rK97Jqw64qUIOyDge2SiCDtmozsiJgg7ZuEIO2ZmOu2iCDsspjrpqzrkKnri4jri6QuXDxiclw+XDzqsrDsoJwg7Jyg7ZiV7JeQIOuUsOuluCDtmZjrtogg7IaM7JqUIOq4sOqwhCDslYjrgrRcPlw8YnJcPuOEsSkg7Lm065OcIOqysOygnOyLnDog7Lm065OcIOy3qOyGjCDssq3qtazrpbwg7IOB7ZKIIO2ajOyImCDtm4Qg7KaJ7IucIOygkeyImO2VmOyYpOuCmCwgXDxiclw+7Lm065Oc7IKsIOyCrOygleyXkCDrlLDrnbwg7ZmV7J24IO2bhCAx7J287J2YIOyKueyduOy3qOyGjCDquLDqsITsnbQg7IaM7JqU65CY66mwLCDsgqzsmqkg7ZWc64+EIOuzteq1rOuKlCAzfjXsnbwg7KCV64+EIOyGjOyalCDrkKAg7IiYIOyeiOyKteuLiOuLpC5cPGJyXD7jhLQpIO2PrOyduO2KuDog7KaJ7IucIO2ZmOybkOuQqeuLiOuLpC5cPGJyXD4q7ZS87ZW0IOuztOyDgSDqt5zsoJU6IO2UvO2VtOuztOyDgeq4sOykgOydgCDshozruYTsnpAg7ZS87ZW067O07IOB6rec7KCVKOyerOygleqyveygnOu2gCDqs6Dsi5wp7J2EIOyggeyaqe2VqeuLiOuLpC47Pj47Pjs7Pjs+Pjs+Pjs+" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">구입한 상품의 반품 후 환불은 어떻게 받나요?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">반품 접수 후 익일 환불해 드립니다.<br>단, 상품의 하자여부, 사용여부 등의 필요한 경우는 상품 회수 후 환불 처리됩니다.<br><결제 유형에 따른 환불 소요 기간 안내><br>ㄱ) 카드 결제시: 카드 취소 청구를 상품 회수 후 즉시 접수하오나, <br>카드사 사정에 따라 확인 후 1일의 승인취소 기간이 소요되며, 사용 한도 복구는 3~5일 정도 소요 될 수 있습니다.<br>ㄴ) 포인트: 즉시 환원됩니다.<br>*피해 보상 규정: 피해보상기준은 소비자 피해보상규정(재정경제부 고시)을 적용합니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

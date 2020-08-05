@@ -1,0 +1,80 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK title=SKTT href="http://file.isky.co.kr/css/default.css" type=TEXT/CSS rel=STYLESHEET>
+	</HEAD>
+	<body MS_POSITIONING="GridLayout" leftMargin="0" topMargin="0" marginwidth="0" marginheight="0">
+		<form name="Form1" method="post" action="VocPrint.aspx?idx=49417" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjA4NDMxMTU2OTt0PDtsPGk8MD47PjtsPHQ8O2w8aTwxPjtpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+O2k8MTM+O2k8MTU+O2k8MTc+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOKYhiDqsJXrgqgg67O47IKsIGEvcyDshLzthLAg4piGOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxBL1M7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPOq5gOuCqO2YlTs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8NDk0MTc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDIwMDUtMDQtMDUgMDk6MTc7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDYxNTs+Pjs+Ozs+O3Q8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcZTs+Pjs+Ozs+Oz4+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD4mbmJzcFw7IFw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+7Iqk7Lm07J20IDgxMDAg7JWh7KCV7JeQIOuovOyngOqwgCDrhIjrrLQg66eO7J20IOuTpOyWtOqwgOyEnCwsXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyDthqDsmpwg7Jik7KCE7JeQIOqwleuCqOyXrSDshJzruYTsiqTshLzthLDrpbwg64uk64WA7JmU64qU642wLi4uLuq3uCDri7TrgqAg7ZWY66Oo64+EIOyxhCDsp4Drgpjsp4Ag7JWK7JWEXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyZuYnNwXDvrqLzsp4DqsIAg65iQIOyMk+ydtOuKlCDqsbDsl5DsmpQuLuq3uOuemOyEnCwg7JuU7Jqc7JeQIOuzuOyCrCDshJzruYTsiqQg7IS87YSw6rCAIOy5nOygiCDtlZjsi5zri6Tqs6AgXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyDtlbTshJwg66mA66as6rmM7KeAIOqwlOyXiOyjoH5+ISDshpTsp4Htnogg7Ja065a76rKMIOu0kOyjvOyFqOq4uOuemCDrqLzsp4DqsIAg65iR6rCZ7J20IOuYkCDsjJPsnbTrgphcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7IOu2iOunjOydhCDqsIDsp4Dqs6Ag66eQ7J207KOgLi4g7JSp7JSpIOqxsOumrOqzoCDqsIQg6rCV64KoIOuzuOyCrCDshLzthLDripQg65Ok7Ja06rCIIOuVjCDrtoDthLAgXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyZuYnNwXDvrqqjrk6Ag67aI66eM7J2EIOuFueyXrOyjvOyXiOyWtOyalC4uIOuqqOuToCDsp4Hsm5DrtoTrk6TsnZgg7Lmc7KCI7ZWoLi7quajrgZftlZwg7Iuc7ISkLi7sg4HshLjtlZwg7ISk66qFLi5cPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7IOydtCDrqqjrk6Ag6rKD65Ok7J20IOyggOydmCDrp5jsnYQg7ZKA7Ja07KO87JeI7KOgLi4g7KCc6rCAIOqwgOuzuCDqsJXrgqjsl60g7IS87YSw64qUIOyImOumrOyLpOuRkCBcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7IOyViOyXkCDsnojslrTshJwg6riw7IKs64uY65Ok7J20IOyImOumrOulvCDtlZjsi5zripTsp4AuLuutmCDtlZjsi5zripTsp4Ag7JWM7KeA65GQIOuztOydtOyngOuRkCDslYrslZjripTrjbBcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7IOyXrOq4tCDrhJPqs6Ag7YOBIO2KuOyduCDqs7XqsITsl5Ag6riw7IKs64uY65Ok7J20IOytiOyasX4g7JWJ7Jy87IWU7IScIOqzoOyzkOyjvOyLnOqzoCDrjIDquLAg7Iuc6rCE65GQIFw8L0ZPTlRcPlw8L1NUUk9OR1w+XDwvUFw+XDxCUlw+XDxQXD5cPFNUUk9OR1w+XDxGT05UIGNvbG9yPSMwMDgwNDBcPiZuYnNwXDsg7KeA7Lyc7IScIOyImOumrO2VtOyjvOyLnOqzoCDqs6DqsJ3ri5jrk6TsnZgg7ISx7ZWo7J2EIOu2iOufrOyjvOqzoCDsm5Dsnbjqs7wg7IiY66as64K07Jet7J2EIOyekOyEuO2eiCBcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7Jm5ic3BcO+yEpOuqhe2VtOyjvOyFqOyWtOyalH5eXiDsoJwg7ZW47Y+w7JeQIOyeiOuKlCDslaHsoJXrqLzsp4Drpbwg64ukIOygnOqxsCDtlbQg7KO87Ius7J2AIOusvOuhoCwsXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyDsoJwg7J6Y66q77Jy866GcIOyVoeygleu2gOu2hOqzvCDslaHsoJUg67CU6rmlIO2FjOuRkOumrOu2gOu2hOyXkCDquLDsiqTrgpwg6rKD64+EIOustOyDgeycvOuhnCDqtZDssrQg7ZW0Jm5ic3BcOyBcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPlw8QlJcPlw8UFw+XDxTVFJPTkdcPlw8Rk9OVCBjb2xvcj0jMDA4MDQwXD4mbmJzcFw7IOyjvOyFlOyEnCDqsJDsgqztlojslrTsmpQuLuygnOqwgCDrr7jsspgg6riw7IKs64uYIOyEse2VqOydhCDrqrsg67O06rOgIOuCmOyZlOyngOunjC4u7JWe7Jy866Gc64+EIFw8L0ZPTlRcPlw8L1NUUk9OR1w+XDwvUFw+XDxCUlw+XDxQXD5cPFNUUk9OR1w+XDxGT05UIGNvbG9yPSMwMDgwNDBcPiZuYnNwXDsg7J206rOz7J2EIOydtOyaqe2VoCDsg53qsIHsnbTsl5DsmpR+ISDrhIjrrLQg6rCQ7IKs65Oc66Ck7JqUfiEgXDwvRk9OVFw+XDwvU1RST05HXD5cPC9QXD5cPEJSXD5cPFBcPlw8U1RST05HXD5cPEZPTlQgY29sb3I9IzAwODA0MFw+Jm5ic3BcOyBcPC9GT05UXD5cPEZPTlQgY29sb3I9IzAwZmYwMFw+7IK87ISx64+ZIOuzuOyCrCBhL3PshLzthLAg6rCV7LaU7J6F64uI64u3ISFeXipcPC9GT05UXD5cPC9TVFJPTkdcPlw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+
+			
+			<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="6" CLASS="BBS_READ_TT"><span id="lblVocTitle">☆ 강남 본사 a/s 센터 ☆</span></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">분류</TD>
+												<TD WIDTH="171" CLASS="BBS_READ_TAB"><span id="lblVocCateName">A/S</span></TD>
+												<TD WIDTH="108" CLASS="BBS_READ_TAB2">작성자</TD>
+												<TD WIDTH="134" CLASS="BBS_READ_TAB"><span id="lblUserName">김남형</span></TD>
+												<TD WIDTH="58" CLASS="BBS_READ_TAB2">추천</TD>
+												<TD WIDTH="91" CLASS="BBS_READ_TAB"><span id="lblRecCnt">0</span>
+												</TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											<TR HEIGHT="28" STYLE="PADDING-TOP:4px">
+												<TD CLASS="BBS_READ_TAB2">번호</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocID">49417</span></TD>
+												<TD CLASS="BBS_READ_TAB2">작성일</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblVocRegDate">2005-04-05 09:17</span></TD>
+												<TD CLASS="BBS_READ_TAB2">조회</TD>
+												<TD CLASS="BBS_READ_TAB"><span id="lblHitCnt">615</span></TD>
+											</TR>
+											<TR>
+												<TD COLSPAN="6" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+											
+											
+											
+										</TABLE>
+										<DIV ID="BBS_READ_CON" style="height:300">
+											<span id="lblContent"><P>&nbsp; <STRONG><FONT color=#008040>스카이 8100 액정에 먼지가 너무 많이 들어가서,,</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 토욜 오전에 강남역 서비스센터를 다녀왔는데....그 담날 하루도 채 지나지 않아</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp;&nbsp;먼지가 또 쌓이는 거에요..그래서, 월욜에 본사 서비스 센터가 친절 하시다고 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 해서 멀리까지 갔었죠~~! 솔직히 어떻게 봐주셨길래 먼지가 똑같이 또 쌓이나</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 불만을 가지고 말이죠.. 씩씩 거리고 간 강남 본사 센터는 들어갈 때 부터 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp;&nbsp;모든 불만을 녹여주었어요.. 모든 직원분들의 친절함..깨끗한 시설..상세한 설명..</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 이 모든 것들이 저의 맘을 풀어주었죠.. 제가 가본 강남역 센터는 수리실두 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 안에 있어서 기사님들이 수리를 하시는지..뭘 하시는지 알지두 보이지두 않았는데</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 여긴 넓고 탁 트인 공간에 기사님들이 쭈욱~ 앉으셔서 고쳐주시고 대기 시간두 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 지켜서 수리해주시고 고객님들의 성함을 불러주고 원인과 수리내역을 자세히 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp;&nbsp;설명해주셨어요~^^ 제 핸폰에 있는 액정먼지를 다 제거 해 주심은 물론,,</FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 제 잘못으로 액정부분과 액정 바깥 테두리부분에 기스난 것도 무상으로 교체 해&nbsp; </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 주셔서 감사했어요..제가 미처 기사님 성함을 못 보고 나왔지만..앞으로도 </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; 이곳을 이용할 생각이에요~! 너무 감사드려요~! </FONT></STRONG></P><BR><P><STRONG><FONT color=#008040>&nbsp; </FONT><FONT color=#00ff00>삼성동 본사 a/s센터 강추입니닷!!^^*</FONT></STRONG></P></span><BR>
+										</DIV>
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%">
+											<TR>
+												<TD COLSPAN="2" HEIGHT="4" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										<!-- 버튼들 -->
+										<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="100%" STYLE="MARGIN-BOTTOM:7px">
+											<TR>
+												<TD ALIGN="right" HEIGHT="43" STYLE="PADDING-TOP:6px">
+												<table cellSpacing="0" cellPadding="0" border=0 align="right">
+												<tr>
+												<td>	
+													<A HREF="javascript:window.print();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_print.gif"></A>
+            												</td>            						
+												<td>&nbsp;														
+													<A HREF="javascript:window.close();"><IMG SRC="http://file.isky.co.kr/images/com/bbs_button_close.gif"></A>
+												</td>
+												</tr>
+												</table>
+												            
+												</TD>
+											</TR>
+											<TR>
+												<TD HEIGHT="1" BGCOLOR="#e7d2d2"></TD>
+											</TR>
+										</TABLE>
+										
+		</form>
+	</body>
+</HTML>

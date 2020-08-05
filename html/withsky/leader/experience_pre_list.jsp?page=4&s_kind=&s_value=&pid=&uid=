@@ -1,0 +1,410 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/leader/experience_pre_list.jsp">
+
+	<input type="hidden" name="page" value="4">
+
+	<input type="hidden" name="uid" value="">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="s_value" value="">
+
+	<input type="hidden" name="pid" value="">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,2,1);var gocn=2;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_experience.gif" height="52"></div>
+				<div id="Path"><script>path('2_2_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+					<table width="560" border="0" cellpadding="0" cellspacing="0">
+					  <tr>
+					    <td>
+						<h2 style="margin-top:0;"><img src="http://www.isky.co.kr/source/img/withsky/leader/experience_pre_ts01.gif" align="absmiddle"> 10<img src="http://www.isky.co.kr/source/img/withsky/leader/experience_pre_ts01_2.gif" align="absmiddle" hspace="3"></h2></td>
+
+
+					  </tr>
+					</table>
+
+					<div class="box1_2 m_t8 m_b20 ">
+						<div><img src="http://www.isky.co.kr/source/img/global/box1_top2.gif" width="567" height="10"></div>
+						<div>
+						<div class="L  p_t5 violet2 b m_t5" style="padding-left:12px;">
+							<img src="http://www.isky.co.kr/source/img/withsky/bl_h3.gif" width="4" height="4" align="absmiddle" class="m_b2">
+							10<img src="http://www.isky.co.kr/source/img/withsky/leader/experience_pre_txt02.gif" align="absmiddle" class="m_b2 m_l2"></div>
+						<div class="R p_r10 m_b5 m_t5">
+						<!-- 검색 //-->
+							<img src="http://www.isky.co.kr/source/img/bbs/th2_select.gif" align="absmiddle">
+							<select class="sel01" onChange="location.href='experience_pre_list.jsp?pid=' + this.value">
+								<OPTION VALUE='IM-U220,IM-U220K' selected>IM-U220,IM-U220K기수</OPTION>
+								<OPTION VALUE='IM-U200'>IM-U200기수</OPTION>
+								<OPTION VALUE='IM-S110,S110K'>IM-S110,S110K 기수</OPTION>
+								<OPTION VALUE='IM-U100'>IM-U100 기수</OPTION>
+								<OPTION VALUE='IM-U110'>IM-U110 기수</OPTION>
+								<OPTION VALUE='IM-8500,8500L'>IM-8500,8500L 기수</OPTION>
+								<OPTION VALUE='IM-8400'>IM-8400 기수</OPTION>
+								<OPTION VALUE='IM-8300'>IM-8300 기수</OPTION>
+								<OPTION VALUE='IM-8100'>IM-8100 기수</OPTION>
+								<OPTION VALUE='IM-7700'>IM-7700 기수</OPTION>
+								<OPTION VALUE='IM-7400'>IM-7400 기수</OPTION>
+							</select>
+						<!--// 검색 -->
+						</div>
+						<span class="clear"></span>
+					</div>
+					<table cellpadding="0" cellspacing="0" border="0" style="margin-left:10px;"><tr><td height="2"><img src="http://www.isky.co.kr/source/img/withsky/leader/experience_pre_line.gif"></td></tr></table>
+					<div style="padding:5px 17px 0px 17px" class="l16">
+김현웅,
+류능하,
+송원길,
+오동건,
+오수민,
+오종민,
+우상욱,
+이윤성,
+이은희,
+이종현,
+이주홍,
+정상범,
+정필호,
+<br>
+차기성,
+최준호,
+최홍석,
+최효선
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box1_btm2.gif" width="567" height="10"></div>
+					</div>
+
+					<h3>
+						<img src="http://www.isky.co.kr/source/img/withsky/bl_h3.gif" width="4" height="4" align="absmiddle" class="m_b2">
+						10<img src="http://www.isky.co.kr/source/img/withsky/leader/experience_pre_txt03.gif" align="absmiddle" class="m_b2 m_l2">
+					</h3>
+
+<!-- 					<table width="569" border="0" cellpadding="0" cellspacing="0" class="write01 m_b20">
+					<col width="450" class="p_l10 p_t3">
+					<col width="119" align="center" class="p_t3">
+					<tr height="25">
+						<td class="bar"><img src="http://www.isky.co.kr/source/img/bbs/ico_notice.gif" align="absmiddle" class="m_b2" hspace="2"> <a href="#">[공지] 체험기와 외부활동 제출시 지켜야 할 유의사항!</a></td>
+						<td>2006/07/26</td>
+					</tr>
+					<tr class="dot"><td colspan="2"></td></tr>
+					<tr height="25">
+						<td class="bar"><img src="http://www.isky.co.kr/source/img/bbs/ico_notice.gif" align="absmiddle" class="m_b2" hspace="2"> <a href="#">[공지] 체험기와 외부활동 제출시 지켜야 할 유의사항!</a></td>
+						<td>2006/07/26</td>
+					</tr>
+					</table>
+ -->
+					<div class="box5">
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_top.gif" height="10"></div>
+						<div style="padding:5 10">
+
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list04" style="border-bottom:0px;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="22">
+								<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+								<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_writer.gif"></th>
+								<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+								<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_recom.gif"></th>
+								<th><img src="http://www.isky.co.kr/source/img/bbs/th_wdate.gif"></th>
+							</tr>
+							</table>
+	
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list01 m_t5" style="border:1px solid #A5A5A5;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="25" class="light">
+								<td><a href="experience_pre_view.jsp?msgid=tnUqtlQfUoo~MrtCkVtTJCE~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">IM-U220K의 장단점.. <font class='violet'>[75]</font></a></td>
+								<td>jollabba</td>
+								<td>603</td>
+								<td>139</td>
+								<td>2007/11/11</td>
+							</tr>
+							<tr class="line"><td colspan="5"></td></tr>
+							<tr style="padding:10px 0;"><td colspan="5">
+								<div class="L p_l10"><a href="experience_pre_view.jsp?msgid=PF0BtrMwbWw~23v5eKcd6PU~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value="><img src='http://file.isky.co.kr/upload/leader_exp/40836704202.jpg' width='94' height='75' class='gborder'></a></div>
+								<table cellspacing="0" cellpadding="0" border="0" align=left>
+									<tr>
+										<td height="48"><div class="L p_l15 aL l16"><a href="experience_pre_view.jsp?msgid=dcDvtZMTCzs~aaFGSKhw_Go~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">SHOW매장에서 느낀 IM-U220K..</a></td>
+									</tr>
+								
+								</table>
+								</div>
+							</td></tr>
+							</table>
+	
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list01 m_t5" style="border:1px solid #A5A5A5;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="25" class="light">
+								<td><a href="experience_pre_view.jsp?msgid=Yp/1tfPHK/Y~_g2xqrfW6Jw~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">커브슬라이드! 스카이 돌핀폰 리뷰! 사진만땅<font class='violet'>[981]</font></a></td>
+								<td>keii1</td>
+								<td>2838</td>
+								<td>1939</td>
+								<td>2007/11/11</td>
+							</tr>
+							<tr class="line"><td colspan="5"></td></tr>
+							<tr style="padding:10px 0;"><td colspan="5">
+								<div class="L p_l10"><a href="experience_pre_view.jsp?msgid=/yQotdIes2A~OfnKqKwEqzk~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value="><img src='http://file.isky.co.kr/upload/leader_exp/4isky.gif' width='94' height='75' class='gborder'></a></div>
+								<table cellspacing="0" cellpadding="0" border="0" align=left>
+									<tr>
+										<td height="48"><div class="L p_l15 aL l16"><a href="experience_pre_view.jsp?msgid=hAz/tDEwzkI~tJSYde0kxEM~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">기존 스카이 사용자로서 돌핀에 대한 느낌을 리뷰로 적어보았습니다 ^^;
+스카이 신형/KTF로서의 차이점 사용후의 느낌을 사진과 함께 담았습니다.
+질문은 언제든지 환영합니다. ^^</a></td>
+									</tr>
+								
+									<tr valign="bottom">
+										<td>
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td colspan="2" height="8"></td>
+												</tr>
+												<tr>
+													<td height="21" style="padding-left:15px;"></td>
+													<td><img src='http://www.isky.co.kr/source/img/withsky/leader/blog_btn.gif' align="absmiddle"> <a href='http://blog.naver.com/keii1' target='_blank'><font color='C5C5C5'>http://blog.naver.com/keii1</font></a></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								
+								</table>
+								</div>
+							</td></tr>
+							</table>
+	
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list01 m_t5" style="border:1px solid #A5A5A5;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="25" class="light">
+								<td><a href="experience_pre_view.jsp?msgid=vm/ttBETbBE~ywCXoXWZ_fU~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">Swim with ME! I'M Dolphin! - IM-U220K 사용기<font class='violet'>[162]</font></a></td>
+								<td>pump0980</td>
+								<td>884</td>
+								<td>358</td>
+								<td>2007/11/11</td>
+							</tr>
+							<tr class="line"><td colspan="5"></td></tr>
+							<tr style="padding:10px 0;"><td colspan="5">
+								<div class="L p_l10"><a href="experience_pre_view.jsp?msgid=q07ztHHHjMw~Nb4pkIbBZMQ~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value="><img src='http://file.isky.co.kr/upload/leader_exp/snap.jpg' width='94' height='75' class='gborder'></a></div>
+								<table cellspacing="0" cellpadding="0" border="0" align=left>
+									<tr>
+										<td height="48"><div class="L p_l15 aL l16"><a href="experience_pre_view.jsp?msgid=5LHhtFGqKps~9HdtYj/WNMM~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">Swim with ME! I'm Dolphin! SKY IM-U220K 사용기
+written by cube/정상범</a></td>
+									</tr>
+								
+									<tr valign="bottom">
+										<td>
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td colspan="2" height="8"></td>
+												</tr>
+												<tr>
+													<td height="21" style="padding-left:15px;"></td>
+													<td><img src='http://www.isky.co.kr/source/img/withsky/leader/blog_btn.gif' align="absmiddle"> <a href='http://blog.bycube.net/lab/' target='_blank'><font color='C5C5C5'>http://blog.bycube.net/lab/</font></a></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								
+								</table>
+								</div>
+							</td></tr>
+							</table>
+	
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list01 m_t5" style="border:1px solid #A5A5A5;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="25" class="light">
+								<td><a href="experience_pre_view.jsp?msgid=Bnd0tbJHXOE~sWDiNJOJLX8~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">깜찍발랄 내친구 돌핀을 소개합니다아!!!<font class='violet'>[122]</font></a></td>
+								<td>suniby</td>
+								<td>731</td>
+								<td>228</td>
+								<td>2007/11/11</td>
+							</tr>
+							<tr class="line"><td colspan="5"></td></tr>
+							<tr style="padding:10px 0;"><td colspan="5">
+								<div class="L p_l10"><a href="experience_pre_view.jsp?msgid=QNpitZIq_q8~VN07CyW4WMc~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value="><img src='http://file.isky.co.kr/upload/leader_exp/lub.jpg' width='94' height='75' class='gborder'></a></div>
+								<table cellspacing="0" cellpadding="0" border="0" align=left>
+									<tr>
+										<td height="48"><div class="L p_l15 aL l16"><a href="experience_pre_view.jsp?msgid=GZhutVKTOyY~0eniTYXQHXE~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">스카이돌핀 리뷰 짝짝!!</a></td>
+									</tr>
+								
+								</table>
+								</div>
+							</td></tr>
+							</table>
+	
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="list01 m_t5" style="border:1px solid #A5A5A5;">
+							<col width="257" class="p_t3 p_l20">
+							<col width="92" align="center" class="p_t3">
+							<col width="66" align="center" class="p_t3">
+							<col width="64" align="center" class="p_t3">
+							<col width="90" align="center" class="p_t3">
+							<tr height="25" class="light">
+								<td><a href="experience_pre_view.jsp?msgid=ZhxXtdLBuDk~rj1l6Jw_6kY~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">스카이리더 10기 1주차 미션~ 전문리뷰어가 되어볼까?<font class='violet'>[150]</font></a></td>
+								<td>rheeys</td>
+								<td>734</td>
+								<td>292</td>
+								<td>2007/11/10</td>
+							</tr>
+							<tr class="line"><td colspan="5"></td></tr>
+							<tr style="padding:10px 0;"><td colspan="5">
+								<div class="L p_l10"><a href="experience_pre_view.jsp?msgid=7AMutTLT0xs~mZ5xtGrbUbQ~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value="><img src='http://file.isky.co.kr/upload/leader_exp/topimg.jpg' width='94' height='75' class='gborder'></a></div>
+								<table cellspacing="0" cellpadding="0" border="0" align=left>
+									<tr>
+										<td height="48"><div class="L p_l15 aL l16"><a href="experience_pre_view.jsp?msgid=bnY/uhuKD6c~DcIHBlGaoy8~&pid=IM-U220,IM-U220K&uid=&page=4&s_kind=&s_value=">스카이리더 10기 미션1. 전문 리뷰어 되어보기
+제가 느낀 U220의 매력 그리고 불편한 점에 관해서 적어보았습니다. </a></td>
+									</tr>
+								
+									<tr valign="bottom">
+										<td>
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td colspan="2" height="8"></td>
+												</tr>
+												<tr>
+													<td height="21" style="padding-left:15px;"></td>
+													<td><img src='http://www.isky.co.kr/source/img/withsky/leader/blog_btn.gif' align="absmiddle"> <a href='http://blog.naver.com/fernando98' target='_blank'><font color='C5C5C5'>http://blog.naver.com/fernando98</font></a></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								
+								</table>
+								</div>
+							</td></tr>
+							</table>
+
+							<!-- page //-->
+							<div class="page">
+								<img src='http://www.isky.co.kr/source/img/bbs/page_prev.gif' width='36' height='10' class='aT'><a href=experience_pre_list.jsp?page=1&s_kind=&s_value=&pid=&uid=>1</a>&nbsp;|&nbsp;&nbsp;<a href=experience_pre_list.jsp?page=2&s_kind=&s_value=&pid=&uid=>2</a>&nbsp;|&nbsp;&nbsp;<a href=experience_pre_list.jsp?page=3&s_kind=&s_value=&pid=&uid=>3</a>&nbsp;|&nbsp;&nbsp;<b>4</b>&nbsp;|&nbsp;&nbsp;<a href=experience_pre_list.jsp?page=5&s_kind=&s_value=&pid=&uid=>5</a>&nbsp;<img src='http://www.isky.co.kr/source/img/bbs/page_next.gif' width='36' height='10' class='aT'>
+							</div>
+							<!--// page -->
+
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_btm.gif" height="10"></div>
+					</div>
+
+					<!-- 검색 //-->
+					<div class="box5 m_t20">
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_top.gif" height="10"></div>
+						<div class="aC">
+							<form name=frm style="margin:0">
+							<input type=hidden name=pid value="IM-U220,IM-U220K">
+							<img src="http://www.isky.co.kr/source/img/bbs/th2_title.gif" align="absmiddle"><input type="radio" name="s_kind" value="title" class="radio">
+							<img src="http://www.isky.co.kr/source/img/bbs/th2_cont.gif" align="absmiddle" class="m_l5"><input type="radio" name="s_kind" value="content" class="radio">
+							<input type="text" name="s_value" value="" style="width:150"> <input type=image src="http://www.isky.co.kr/source/img/bbs/b2_find.gif" height="17" align="absmiddle" class="inputbtn" style="height:17">
+							</form>
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_btm.gif" height="10"></div>
+					</div>
+					<!--// 검색 -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_view.jsp?eventid=kiHPVTmBdiA~5c6hTNwQmik~&flag=ing&flag1=1"><img src="http://file.isky.co.kr/upload/r_banner/071119_isky_leader10th_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?eventid=1U2FUb9Ewxc~HCVQOAe_bcc~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/sktday_result_bn(0).gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	document.frm.s_kind[0].checked = true;
+//-->
+</SCRIPT>

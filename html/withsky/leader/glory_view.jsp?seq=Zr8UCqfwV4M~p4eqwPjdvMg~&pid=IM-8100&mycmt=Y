@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/leader/glory_view.jsp">
+
+	<input type="hidden" name="seq" value="Zr8UCqfwV4M~p4eqwPjdvMg~">
+
+	<input type="hidden" name="mycmt" value="Y">
+
+	<input type="hidden" name="pid" value="IM-8100">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+			goLogin();
+		//-->
+		</SCRIPT>

@@ -1,0 +1,833 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+<s:if test="session.loggedIn.equalsIgnoreCase('true')">
+	<s:set name="loginStatus" value="'true'"/>
+	<s:set name="iSkyUserId" value="session.iSkyUserid"/>
+	<s:set name="iSkyUserIp" value="session.iSkyIp"/>
+	<s:set name="iSkyUserName" value="session.iSkyName"/>
+	<s:set name="LogSess" value="'Y'"/>
+	<s:set name="badUser" value="session.badUser"/>
+	<s:set name="EventPollYN" value="session.EventPollYN"/>  
+</s:if>
+<s:else>
+	<s:set name="loginStatus" value="'false'"/>
+	<s:set name="iSkyUserId" value=""/>
+	<s:set name="iSkyUserIp" value=""/>
+	<s:set name="iSkyUserName" value=""/>
+	<s:set name="LogSess" value="'N'"/>
+	<s:set name="badUser" value=""/>
+	<s:set name="EventPollYN" value="N"/>  
+</s:else>
+
+ <!-- <s:property value='session.iSkyUserid' escape="false"/><br/> -->
+ <!--
+session.loggedIn : <s:property value='session.loggedIn' escape="false"/> -->
+<!-- <br/><br/><br/><br/><br/>
+dddd:<s:property value='#session.EventPollYN' escape="false"/> -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/privacy.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/privacy.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/privacy.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120626");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="1002"; var firstDepth ="10";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=1002&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash">
+				<script>swf_include('/static/flash/leftNavi/leftNavi_Util_Guide.swf?PageCode=1002','222','500','','','transparent','')</script>
+				<ul class="snsBanner">
+					<li><a href="http://www.facebook.com/vega.kr" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner01.jpg" alt="Facebook 바로가기" /></a></li>
+					<li><a href="https://twitter.com/skyandroian" target="_blank"><img src="http://www.isky.co.kr/static/images/common/snsBanner02.jpg" alt="Twitter 바로가기" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=1002&LogSess=N','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/etc/d3title_privacy.gif" border="0" alt="개인정보취급방침" title="개인정보취급방침" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="privacy_cont">
+				<div class="stit"><img src="/static/images/etc/privacy_stit_01.gif" /></div>
+
+				<p class="cont_01">㈜팬택(이하 “회사”)은 회원의 개인정보를 중요시하며, "정보통신망 이용촉진 및 정보보호 등에 관한 법률"등  개인정보와 관련된 법령상의 개인정보보호규정 및 방송통신위원회가 제정한 "개인정보보호지침"을 준수하고 있습니다.<br />
+				회사는 개인정보취급방침을 통하여 회원님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려 드립니다.<br />
+				회사의 '개인정보취급방침'은 관련 법률 및 지침의 변경 또는 내부 운영방침의 변경에 따라 변경될 수 있습니다. '개인정보취급방침'이 변경될 경우 변경된 '개인정보취급방침'의 사항을 회사 홈페이지(www.isky.co.kr)을 통하여 공지합니다.</p>
+
+				<div class="listBox">
+					<ul class="listLeft">
+						<li>1. <a href="#a1">개인정보의 수집범위</a></li>
+						<li>2. <a href="#a2">개인정보 수집에 대한 동의</a></li>
+						<li>3. <a href="#a3">개인정보의 수집목적 및 이용목적</a></li>
+						<li>4. <a href="#a4">쿠키에 의한 개인정보 수집</a></li>
+						<li>5. <a href="#a5">목적 외 사용 또는 제 3자에 대한 제공 및 공유</a></li>
+						<li>6. <a href="#a6">고지, 명시, 공개, 공지 또는 통지방법</a></li>
+						<li>7. <a href="#a7">개인정보의 열람 증명 또는 정정</a></li>
+						<li>8. <a href="#a8">개인정보 수집, 이용 또는 제공에 대한 동의철회(가입해지)</a></li>
+						<li>9. <a href="#a9">개인정보 파기 절차 및 방법</li>
+					</ul>
+					<ul class="listRight">
+						<li>10. <a href="#a10">아동에 관한 특별조치</a></li>
+						<li>11. <a href="#a11">개인정보의 보유기간 및 이용기간</a></li>
+						<li>12. <a href="#a12">개인정보취급을 위한 기술적 및 관리적 대책</a></li>
+						<li>13. <a href="#a13">링크사이트</a></li>
+						<li>14. <a href="#a14">개인정보의 위탁처리</a></li>
+						<li>15. <a href="#a15">의견수렴 및 불만처리</a></li>
+						<li>16. <a href="#a16">개인정보관리책임자 및 담당자</a></li>
+						<li>17. <a href="#a17">광고성 정보전송</a></li>
+						<li>18. <a href="#a18">고지의 의무</li>
+					</ul>
+				</div>
+
+				<div class="cont_txt">
+					<h3 class="first"><a name="a1">1. 개인정보의 수집범위</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사에서는 적법하고 공정한 수단에 의하여 서비스 제공에 직접적으로 필요한, 성명, 연락처 등 최소한의 정보만을 수집하고 있습니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회원께서는 회사가 제공하는 서비스를 이용하고자 하실 경우 아래의 개인정보를 제공해주셔야 하며, 그 중 선택 항목을 제공하시지 않아도 기본적인 서비스를 이용하실 수 있습니다.
+							<ol>
+								<li><strong>&middot;</strong> 서비스 이용 신청 시 수집하는 개인정보의 범위</li>
+								<li>- 성명, 주민등록번호, 이메일주소, 주소, 전화번호, 휴대전화번호, 사용 단말기 모델명 등</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사에서는 인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 및 성생활 등 회원의 기본적 인권을 현저하게 침해할 우려가 있는 개인정보를 수집하지 않습니다.<br />
+							회사는 회원가입, 상담, 서비스 신청 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
+							<ol>
+								<li><strong><span class="first_letter">가.</span>
+								수집항목</strong>
+									<ol>
+										<li><span class="first_letter">ㄱ.</span>
+										필수 항목 : 이름, 실명확인값, i-Pin, 주민등록번호(14세미만 가입시, 법정대리인정보) 로그인 ID 비밀번호, 이메일 주소</li>
+										<li><span class="first_letter">ㄴ.</span>
+										선택 항목 : 휴대전화번호, 전화번호, 주소, 휴대폰 정보, 접속 로그 , 결제기록 등</li>
+									</ol>
+								</li>
+								<li class="b"><strong><span class="first_letter">나.</span>
+								개인정보 수집방법 : 홈페이지(회원가입) , 전화/팩스를 통한 회원가입(외국인회원)</strong>
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a2">2. 개인정보 수집에 대한 동의</a></h3>
+					<ol>
+						<li>
+							회사를 통해 회원께서 서비스 이용 신청서를 작성함으로써 회사 홈페이지(www.isky.co.kr)에 공개된 개인정보취급 방침 및 이용약관에 따른 개인정보 수집에 대해 동의한 것으로 봅니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a3">3. 개인정보의 수집목적 및 이용목적</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 아래와 같은 목적을 위하여 개인정보를 수집하고 있습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									성명, 주민등록번호 : 서비스 이용에 따른 본인 식별 절차에 이용</li>
+								<li>
+									<span class="first_letter">나.</span>
+									이메일주소, 주소, 전화번호 : 고지사항 전달, 본인 의사 확인, 불만 처리 등 원활한 의사소통 경로의 확보, 새로운 서비스/신상품이나 이벤트 정보 안내, 물품배송 및 경품 배송 시 정확한 배송지 확보</li>
+								<li>
+									<span class="first_letter">다.</span>
+									주민등록번호, 주소 : 인구통계학적 분석 자료(서비스 이용 회원의 연령별, 성별, 지역별 통계분석 등)</li>
+								<li>
+									<span class="first_letter">라.</span> 그 외 항목 : 개인맞춤 서비스를 제공하기 위한 자료 등</li>
+								<li>
+									<span class="first_letter">마.</span> 보호자(법정대리인)의 이름, 주민등록번호, 이메일주소
+									: 만 14세 미만 어린이 가입 시 법정대리인 동의여부확인, 추후 법정대리인 본인확인</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사는 회원서비스를 보다 활성화하여 최적화된 서비스를 제공하고, 신상품이나 이벤트 정보안내, 설문조사 등 회원 지향적인 마케팅을 수행하기 위하여 회원께서 제공한 정보 및 서비스 이용과 관련된 정보를 활용합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a4">4. 쿠키에 의한 개인정보 수집</a></h3>
+					<ol>
+						<li>
+							회사는 귀하의 정보를 수시로 저장하고 찾아내는 쿠키(cookie) 등을 운영합니다. 쿠키란 회사의 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 귀하의 컴퓨터 하드디스크에 저장됩니다. 회사는 다음과 같은 목적을 위하여 쿠키를 사용합니다.<br /><br />
+							<ol class="two">
+								<li>
+									<span class="first_letter">가. 쿠키 등 사용 목적</span><br />
+									개인의 관심 분야에 따라 차별화된 정보 제공, 회원과 비회원의 접속빈도 또는 머문 시간 등을 분석하여 이용자의 취향과 관심분야를 파악하여 타켓(target) 마케팅에 활용, 각종 이벤트 참여 정도 및 방문 횟수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공, 유료서비스 이용 시 이용기간 안내, 회원들의 습관 분석하여 서비스 개편 등의 척도로 활용 등<br /><br />
+								</li>
+								<li>
+									<span class="first_letter">나. 쿠키 설정 거부 방법</span><br />
+									이용자는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서 쿠키 설정을 거부하는 방법으로는 이용자가 사용하는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다. <br /><br />
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">※</span>설정 방법 예시 (인터넷 익스플로어의 경우): 웹 브라우저의 상단의 도구 > 인터넷 옵션 > 개인정보에서 변경. 단, 이용자가 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a5">5. 목적 외 사용 또는 제 3자에 대한 제공 및 공유</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 회원의 개인정보를 '개인정보의 수집목적 및 이용목적'에서 고지한 범위 또는 서비스이용약관에 명시한 범위 내에서 사용하며, 동 범위를 넘어 이용하거나 제3자에게 제공하지 않습니다. 특히, 다음의 경우에는 최선의 주의를 기울여 개인정보를 제공할 것입니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									제휴관계<br />
+									회사는 회원의 동의가 있거나 관련 법령의 규정에 의한 경우를 제외하고는 어떠한 경우에도 『개인 정보의 수집 및 이용목적』에서 고지한 범위를 넘어 회원의 개인정보를 이용하거나 제3자에게 제공하지 않습니다.<br /> 
+									다만, 다음의 경우는 보다 나은 서비스 제공을 위하여 회원의 개인정보를 이용 및 제공할 수 있습니다. 
+									<div class="masterBox">
+										<div class="inner">
+											<ul class="cs">
+												<li class="b">제휴사</li>
+												<li>(주)팬택씨앤아이(Lots 쇼핑몰에 한함)</li>
+												<li></li>
+												<li></li>
+												<li></li>
+												<li></li>
+											</ul>
+											<ul class="privacy">
+												<li class="b">이용목적</li>
+												<li>- 포인트 거래에 필요한 본인 확인</li>
+												<li>- 포인트 거래 대금 정산</li>
+												<li>- 고객문의 및 불만에 대한 해결</li>
+												<li>- 제휴행사 및 서비스 홍보</li>
+											</ul>
+											<ul class="cs" style="margin-top:15px">
+												<li class="b">제공하는 개인정보 항목</li>
+												<li>- 이름, 주민번호, 이메일</li>
+												<li>- 거래정보</li>
+												<li>- 자택/직장 주소, 자택/휴대전화</li>
+											</ul>
+											<ul class="privacy" style="margin-top:15px">
+												<li class="b">보유 및 이용기간</li>
+												<li>- 회원 탈퇴 및 제휴 종료시까지</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									개인정보처리의 위탁<br />
+									보다 나은 서비스 제공, 회원편의 제공 등 원활한 업무수행을 위해 타인에게 회원의 개인정보의 수집·저장·편집·검색·갱신·관리 등을 위탁하는 경우에는 반드시 사전에 수탁자, 위탁 기간, 수탁자와의 관계 및 책임범위 등에 관한 사항을 고지합니다.
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									개인정보의 제공 및 공유<br />
+									회원의 “상품 구매서비스” 이용에 따라 입점(회사가 판매대행하는 업체)업체에 제공되는 회원의 결제 및 배송과 관련된 정보에 한하여 이용자가 구매 시에 정보 제공에 관한 동의 의사를 표한 것으로 간주하여 구매처리 및 배송을 위한 최소한의 개인정보를 제공합니다. 이 때 회사는 이용자의 구매 과정 중에 해당 “상품 구매”가 회사가 아닌 타업체에서 배송된다는 것을 고합니다. 이에 따라 입점 업체의 경우 별도의 제휴관계사로서의 관계 정보를 약관 및 개인정보취급방침에 고지하지 않습니다.
+								</li>
+								<li>
+									<span class="first_letter">라.</span>
+									매각·인수합병 등<br />
+									영업의 전부 또는 일부를 양도하거나, 합병·상속 등으로 서비스제공자의 권리·의무를 이전·승계하는 경우 개인정보보호 관련 회원의 권리를 보장하기 위하여 반드시 그 사실 및 승계한 자의 인적사항 등을 회원에게 통지합니다.
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사는 회원서비스를 보다 활성화하여 최적화된 서비스를 제공하고, 신상품이나 이벤트 정보안내, 설문조사 등 회원 지향적인 마케팅을 수행하기 위하여 회원께서 제공한 정보 및 서비스 이용과 관련된 정보를 활용합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									서비스 제공에 따른 요금정산을 위하여 필요한 경우(위 지침 제9조 제1항 제1호)
+								</li>
+								<li>
+									<span class="first_letter">나.</span>
+									통계작성<strong>&middot;</strong>학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 알아볼 수 없는 형태로 가공하여 연구단체, 설문조사<strong>&middot;</strong>리서치 기관, 광고주, 제휴<strong>&middot;</strong>협력사 등 제3자에게 제공하는 경우
+								</li>
+								<li>
+									<span class="first_letter">다.</span>
+									금융실명거래 및 비밀보장에 관한 법률, 신용정보의 이용 및 보호에 관한 법률, 전기통신기본법, 전기통신사업법, 지방세법, 소비자보호법, 한국은행법, 형사소송법 등 법률에 특별한 규정이 있는 경우 단, '법률에 특별한 규정이 있는 경우'로 행정목적이나 수사목적으로 행정관청 또는 수사기관이 요구해 온 경우라도 무조건 회원의 개인정보를 제공하지 않으며, 관계 법률에 규된 바에 따라 영장 또는 기관장의 직인이 날인된 서면에 의한 경우 등의 적법한 절차를 거친 경우에만 회원의 개인정보를 제공합니다.
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a6">6. 고지, 명시, 공개, 공지 또는 통지방법</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사에서 개인정보 수집을 위해 회원의 동의를 받고자 하는 경우에는 서면 또는 홈페이지(www.isky.co.kr) 등을 통하여 고지사항을 회원에게 고지하거나 서비스이용약관에 명시합니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사의 개인정보취급방침은 서면 또는 홈페이지(www.isky.co.kr) 등을 통하여 회원에게 공개됩니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사의 개인정보취급방침 중 중요한 사항이 변경되는 경우에는 변경되는 개인정보취급방침을 시행하기 전에 홈페이지(www.isky.co.kr) 등을 통하여 변경이유 및 내용을 회원에게 공지합니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							회사에서 개인정보 수집 시 고지한 범위 또는 서비스이용약관에 명시한 범위를 넘어 회원의 개인정보를 이용하거나 제3자에게 제공하기 위해 회원의 동의를 얻고자 하는 때에는 미리 회원에게 개별적으로 서면, 전자우편, 전화 등으로 고지사항을 고지합니다.</li>
+						<li>
+							<span class="first_letter">5.</span>
+							타인에게 회원의 개인정보의 수집<strong>&middot;</strong>취급<strong>&middot;</strong>관리 등을 위탁하는 경우에는 서면, 전자우편, 전화 또는 홈페이지 (www.isky.co.kr)를 통하여 미리 그 사실을 회원에게 고지합니다.</li>
+						<li>
+							<span class="first_letter">6.</span>
+							회사가 영업의 전부 또는 일부를 양도하거나 합병<strong>&middot;</strong>상속 등으로 그 권리<strong>&middot;</strong>의무를 이전하는 경우 서면<strong>&middot;</strong>전자우편 등을 통하여 회원에게 개별적으로 통지함과 동시에 홈페이지(www.isky.co.kr) 첫 화면에서 식별할 수 있도록 표기하여 30일 이상 그 사실을 공지합니다. 다만, 서면<strong>&middot;</strong>전자우편 기타의 방법에 의한 통지는 과실 없이 회원의 연락처를 알지 못하거나 천재<strong>&middot;</strong>지변 기타 통지할 수 없는 정당한 이유가 있는 경우에는 2곳 이상의 중앙일간지(회원의 대부분이 특정 지역에 거주하는 경우에는 그 지역을 보급구역으로 하는 일간지로 할 수 있습니다)에 1회 이상 공고하는 것으로 갈음합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a7">7. 개인정보의 열람 증명 또는 정정</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사에서 개인정보 수집을 위해 회원의 동의를 받고자 하는 경우에는 서면 또는 홈페이지(www.isky.co.kr) 등을 통하여 고지사항을 회원에게 고지하거나 서비스이용약관에 명시합니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사의 개인정보취급방침은 서면 또는 홈페이지(www.isky.co.kr) 등을 통하여 회원에게 공개됩니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사의 개인정보취급방침 중 중요한 사항이 변경되는 경우에는 변경되는 개인정보취급방침을 시행하기 전에 홈페이지(www.isky.co.kr) 등을 통하여 변경이유 및 내용을 회원에게 공지합니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							회사에서 개인정보 수집 시 고지한 범위 또는 서비스이용약관에 명시한 범위를 넘어 회원의 개인정보를 이용하거나 제3자에게 제공하기 위해 회원의 동의를 얻고자 하는 때에는 미리 회원에게 개별적으로 서면, 전자우편, 전화 등으로 고지사항을 고지합니다.</li>
+						<li>
+							<span class="first_letter">5.</span>
+							타인에게 회원의 개인정보의 수집<strong>&middot;</strong>취급<strong>&middot;</strong>관리 등을 위탁하는 경우에는 서면, 전자우편, 전화 또는 홈페이지 (www.isky.co.kr)를 통하여 미리 그 사실을 회원에게 고지합니다.</li>
+					</ol>
+
+
+					<h3><a name="a8">8. 개인정보 수집, 이용 또는 제공에 대한 동의철회(가입해지)</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회원은 회사와 위탁업무계약을 맺은 업체에 방문하여 개인정보의 수집, 이용 또는 제공에 대한 동의를 철회할 수 있습니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회원이 방문하여 개인정보의 수집, 이용 또는 제공에 대한 동의를 철회하는 경우에는 본인 여부를 확인하고 법령에 다르게 규정하고 있는 경우를 제외하고는 당해 개인정보를 파기하는 등 지체 없이 필요한 조치를 취합니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회원이 개인정보의 수집, 이용 또는 제공에 대한 동의를 철회하는 것은 회원이 서비스 이용의사를 철회하는 것이므로 가입 해지를 요구하는 것과 같은 효력이 발생합니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+							<ol class="three">
+								<li>- 이용자들이 사전에 동의한 경우<br />
+								- 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a9">9. 개인정보 파기 절차 및 방법</a></h3>
+					<ol>
+						<li>
+							회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 파기절차 및 방법은 다음과 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									파기절차<br />
+									회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유기간 및 이용기간 참조) 일정 기간 저장된 후 파기되어집니다. 개인정보는 법률에 의한 경우가 아니고서는 보유 되어 지는 이외의 다른 목적으로 이용되지 않습니다.</li>
+								<li>
+									<span class="first_letter">나.</span>
+									파기방법<br />
+									전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a10">10. 아동에 관한 특별조치</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사 및 이로부터 개인정보를 제공받는 자가 만 14세 미만의 아동으로부터 아동의 개인정보를 수집하거나, 인터넷 홈페이지 또는 이용약관에 명시된 범위를 넘어 개인정보를 이용하거나 제3자에게 정보를 제공하는 경우에는, 해당 아동의 법정대리인의 동의를 얻어야 합니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							위의 동의를 얻기 위하여 회사 등은 법정대리인의 성명, 연락처 등 필요한 최소한의 정보를 요구할 수 있으며, 이 경우 아동이 쉽게 이해할 수 있는 평이한 표현으로 개인정보의 수집, 이용 또는 제공목적과 법정대리인의 동의가 필요하다는 사실을 아동에게 고지합니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사 등은 법정대리인의 정보를 법정대리인의 동의 여부를 확인하는 목적 외의 용도로 사용하거나 제3자에게 제공하지 않습니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							만 14세 미만 아동의 개인정보 수집<strong>&middot;</strong>이용 또는 동 정보를 제3자에게 제공하기 위하여 법정대리인의 동의를 받고자 하는 경우에는 전화, 팩스. 우편, 아동으로 하여금 통지내용을 법정대리인에게 제출하게 하는 방법, 법정대리인에게 이메일을 보내면서 회사 홈페이지(www.isky.co.kr)의 개인정보취급방침을 볼 수 있도록 연결(하이퍼링크)시키는 방법 또는 기타 법정대인에게 고지내용이 도달할 수 있는 합리적인 방법을 통하여 고지사항을 법정대리인에게 고지합니다.</li>
+						<li>
+							<span class="first_letter">5.</span>
+							법정대리인은 만 14세 미만 아동의 개인정보 수집<strong>&middot;</strong>이용 또는 제공에 대한 동의를 철회할 수 있으며, 만 14세 미만 아동이 제공한 개인정보에 대한 열람 또는 오류의 정정을 요구할 수 있습니다.</li>
+					</ol>
+
+
+					<h3><a name="a11">11. 개인정보의 보유기간 및 이용기간</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회원의 개인정보는 회사가 회원에게 서비스를 제공하는 기간 동안에 한하여 보유 및 이용됩니다.<br />
+							다만, 국세기본법, 법인세법, 부가가치세법 등 관계법령의 규정에 의하여 보존할 필요성이 있는 경우에는 관계법령에 따라 보존합니다.
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							관계법령의 규정에 의하여 보존할 필요성이 있는 경우는 아래와 같습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									국세기본법 제85조의 3(장부 등의 비치 및 보존)에 따라 모든 거래에 관한 장부 및 증빙서류를 법정신고기한이 경과한 날로부터 5년간 보존합니다.
+									</li>
+								<li>
+									<span class="first_letter">나.</span>
+									국세기본법 제26조의2(국세부과의 제척기간)에 따라 일부 채권의 경우 민법상 소멸시효(3년)가 완성된 날이 속하는 연도의 다음 연도로부터 5년간 대손처리에 관한 증빙서류를 보존합니다.</li>
+								<li>
+									<span class="first_letter">다.</span>
+									법인세법 제112조(장부의 비치<strong>&middot;</strong>기장)에 따라 장부와 관계 있는 중요한 증빙서류를 신고기한이 경과한 날부터 5년간 보존합니다.</li>
+								<li>
+									<span class="first_letter">라.</span>
+									법인세법 제116조(지출증빙서류의 수취 및 보관) 등에 따라 모든 거래에 관한 증빙서류를 신고기한이 경과한 날부터 5년간 보존합니다.</li>
+								<li>
+									<span class="first_letter">마.</span>
+									부가가치세법 제31조(기장)에 따라 장부와 교부한 세금계산서 또는 영수증을 확정신고일로부터 5년간 보존합니다.
+									<ol class="two">
+										<li>
+											<span class="first_letter">※</span>
+											&nbsp;관계법령의 규정에 의하여 보존할 필요성이 있는 정보 및 보유기간은 아래와 같습니다.<br />
+											국세기본법, 법인세법, 부가가치세법에 따른 성명, 주민등록번호, (해지)이동전화번호, 청구서 배달 주소, 요금 등 거래내역 관련 정보 : 5년</li>
+									</ol>
+								</li>
+								<li>
+									<span class="first_letter">바.</span>
+									다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.
+									<ol class="two">
+										<li>
+											<span class="first_letter">ㄱ.</span>
+											보존 항목 : 이름 , 로그인ID , 주민등록번호</li>
+										<li>
+											<span class="first_letter">ㄴ. 보존 근거 : 중복 가입 체크 및 확인을 위해</li>
+										<li>
+											<span class="first_letter">ㄷ. 보존 기간 : 5년</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a12">12. 개인정보취급을 위한 기술적 및 관리적 대책</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							기술적 대책<br />
+							회사를 이용하는 회원의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 아래와 같은 기술적 대책을 적용하고 있습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									회원의 개인정보는 외부 망에서 접근 및 침입이 불가능한 내부 망을 활용하여 관리되고 있으며, 파일 및 전송데이터를 암호화하거나 파일 잠금 기능(Lock)을 사용하여 중요한 데이터는 별도의 보안기능을 통해 철저하게 보호되고 있습니다.</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회사는 백신프로그램을 이용하여 컴퓨터바이러스에 의한 피해를 방지하기 위한 조치를 취하고 있습니다. 백신프로그램은 주기적으로 업데이트되며 갑작스런 바이러스가 출현할 경우 백신이 나오는 즉시 이를 적용함으로써 개인정보가 침해되는 것을 방지하고 있습니다.</li>
+								<li>
+									<span class="first_letter">다.</span>
+									회사는 암호알고리즘 등의 이용을 통하여 네트워크상에서 개인정보를 안전하게 전송할 수 있는 보안장치를 채택하고 있습니다.</li>
+								<li>
+									<span class="first_letter">라.</span>
+									해킹 등 외부침입에 대비하여 침입차단시스템 및 침입탐지시스템을 운영하여 사내 네트워크를 보호하고, 각 서버마다 접근제어시스템을 설치하여 보안을 강화하고 있습니다.
+								</li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">2.</span>
+							관리적 대책
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									회사는 개인정보의 안전한 보호를 위하여 주요 시스템 및 설비에 대하여 외부 전문기관으로부터 정보보호관리체계 인증 등 객관적인 인증을 받아 운영되고 있습니다.</li>
+								<li>
+									<span class="first_letter">나.</span>
+									회사에 회원의 개인정보에 대한 접근 및 관리에 필요한 절차 등을 마련하여 소속 직원으로 하여금 이를 숙지하고 준수하도록 하고 있습니다.</li>
+								<li>
+									<span class="first_letter">다.</span>
+									회사는 회원의 개인정보를 취급할 수 있는 자를 최소한으로 제한하고 있습니다. 회원의 개인정보를 취급할 수 있는 자는 아래와 같습니다.
+									<ol class="three">
+										<li>- 회원을 직<strong>&middot;</strong>간접 상대로 하여 마케팅 업무를 수행하는 자</li>
+										<li>- 개인정보관리책임자 및 개인정보보호담당자 등 개인정보관리<strong>&middot;</strong>보호업무를 수행하는 자</li>
+										<li>- 기타 업무상 개인정보의 취급이 불가피한 자</li>
+									</ol></li>
+								<li>
+									<span class="first_letter">라.</span>
+									회사에서 컴퓨터를 이용하여 회원의 개인정보를 처리하는 경우 개인정보에 대한 접근권한을 가진 담당자를 지정하여 식별부호(ID) 및 비밀번호를 부여하고, 해당 비밀번호를 정기적으로 갱신하고 있습니다.</li>
+								<li>
+									<span class="first_letter">마.</span>
+									개인정보를 취급하는 직원을 대상으로 새로운 보안 기술 습득 및 개인정보보호 의무 등에 관해 정기적인 사내 교육 및 외부 위탁교육을 실시하고 있습니다.</li>
+								<li>
+									<span class="first_letter">바.</span>
+									신규직원 채용 시 정보보호서약서 또는 개인정보보호서약서에 서명함으로써 직원에 의한 정보유출을 사전에 방지하고 개인정보취급방침에 대한 이행사항 및 직원의 준수여부를 감사하기 위한 내부절차를 마련하여 지속적으로 시행하고 있습니다.</li>
+								<li>
+									<span class="first_letter">사.</span>
+									직원 퇴직 시 비밀유지서약서에 서명함으로써 회원의 개인정보를 취급하였던 자가 직무상 알게 된 개인정보를 훼손<strong>&middot;</strong>침해 또는 누설하지 않도록 하고 있습니다.</li>
+								<li>
+									<span class="first_letter">아.</span>
+									개인정보 취급자의 업무 인수인계는 보안이 유지된 상태에서 철저하게 이뤄지고 있으며, 입사 및 퇴사 후 개인정보 침해사고에 대한 책임을 명확하게 규정하고 있습니다.</li>
+								<li>
+									<span class="first_letter">자.</span>
+									전산실 및 자료보관실 등을 특별 보호구역으로 설정하여 출입 통제 등 출입관리절차를 시행하고 있습니다.</li>
+								<li>
+									<span class="first_letter">차.</span>
+									서비스이용계약체결 또는 서비스제공을 위하여 회원의 신용카드번호, 은행결제계좌 등 대금결제에 관한 정보를 수집하거나 회원에게 제공하는 경우 당해 회원이 본인임을 확인하기 위하여 필요한 조치를 취하고 있습니다.</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a13">13. 링크사이트</a></h3>
+					<ol>
+						<li>
+							회사에서는 회원께 다른 회사의 홈페이지 또는 자료에 대한 링크를 제공할 수 있습니다. 이 경우 회사는 외부사이트 및 자료에 대한 아무런 통제권이 없으므로 그로부터 제공받는 서비스나 자료의 유용성에 대해 책임질 수 없으며 보증할 수 없습니다. 회사가 포함하고 있는 링크를 클릭(click)하여 타 사이트(site)의 페이지로 옮겨갈 경우 해당 사이트의 개인정보취급방침은 회사의 개인정보취급방침과 무관하므로 새로 방문한 사이트의 정책을 검토해 보시기 바랍니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a14">14. 개인정보의 위탁처리</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 보다 나은 서비스 제공, 회원편의 제공 등 원활한 업무 수행을 위해 타인에게 회원의 개인정보의 수집<strong>&middot;</strong>저장<strong>&middot;</strong>편집<strong>&middot;</strong>검색<strong>&middot;</strong>갱신<strong>&middot;</strong>관리 등을 위탁하는 경우에는 반드시 사전에 수탁자, 위탁 기간, 수탁자와의 관계 및 책임범위 등에 관한 사항을 고지합니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사는 서비스 이용계약의 대행 및 그 부대업무, 이용회원의 유지 및 관리, 서비스제공에 따른 요금정산 등을 위하여 회사와 위탁업무 계약을 맺은 지점, 대리점, 회원센터, CRM센터 등에 개인정보의 수집<strong>&middot;</strong>저장<strong>&middot;</strong>편집<strong>&middot;</strong>검색<strong>&middot;</strong>갱신<strong>&middot;</strong>관리 등의 업무를 위탁업무계약이 종료되는 시점까지 위탁하고 있습니다.</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사는 위탁업무계약서 등을 통하여 개인정보보호 관련 지침엄수, 개인정보에 관한 비밀유지, 제3자 제공에 대한 금지, 사고시의 책임부담, 위탁기간, 처리 종료 후의 개인정보의 반환 또는 파기 의무 등을 규정하고, 이를 준수하도록 권고하고 있습니다.</li>
+						<li>
+							<span class="first_letter">4.</span>
+							회사는 서비스 이행을 위해 아래와 같이 외부 전문업체에 위탁하여 운영하고 있습니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									위탁 대상자 및 위탁업무 내용 : (주)팬택씨앤아이, (주)인픽스 / 사이트의 전반적인 모든 운영</li>
+								<li>
+									<span class="first_letter">나.</span>
+									위탁 대상자 및 위탁업무 내용 : (주)커니드 / 온라인 상담, AS 센터 문의, 콜센터 등 민원처리</li>
+								<li>
+									<span class="first_letter">다.</span>
+									위탁 대상자 및 위탁업무 내용 : (주)팬택씨앤아이 / 구매, 물품배송, 금융거래 본인 인증 및 금융 서비스 등</li>
+								<li>
+									<span class="first_letter">라.</span>
+									위탁 받는 자 및 위탁업무 내용: (주)엠가온 / 모바일 관련 금융거래 본인 인증 및 서비스, 민원처리, 모바일 컨텐츠 관련 이벤트 당첨 연락, 웹사이트 및 시스템 관리</li>
+								<li>
+									<span class="first_letter">마.</span>
+									위탁 받는 자 및 위탁업무 내용: 한국신용평가정보 주식회사 / 본인 인증</li>
+
+
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a15">15. 의견수렴 및 불만처리</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 회원의 의견을 가장 소중하게 생각합니다. 회원께서 iSKY에 문의사항이 있을 경우 지점, 대리점을 방문하시거나 회원센터 등에 연락을 하여 문의하시면 신속?정확한 답변을 드리겠습니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사는 회원과의 원활한 의사소통을 위해 지점, 대리점, 회원센터 등 회원상담창구를 운영하고 있으며, 회원센터의 연락처는 다음과 같습니다.
+							<ol class="three">
+								<li>- 전화번호 : (국번없이) 1588-9111</li>
+								<li>- 전자우편 : skymaster@pantech.com</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a16">16. 개인정보관리책임자 및 담당자</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 회원의 개인정보보호를 가장 중요시하며, 회원의 개인정보가 훼손?침해 또는 누설되지 않도록 최선을 다하고 있습니다. 또한, 회원의 개인정보보호 관련 문의 시 지점, 대리점, 회원센터에서 신속하고 성실하게 답변을 드리도록 하고 있습니다. 그리고, 회원께서 회사의 개인정보보호 담당자와 연락을 원하실 경우 지점, 대리점, 회원센터에 메모를 남기시면 다른 업무에 선하여 각 해당 부서의 개인정보보호 담당자와 연락을 취할 수 있도록 하고 있습니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회원께서 회사의 총괄부서 개인정보관리담당자와 연락을 원하실 경우 아래의 연락처로 연락을 주시면 개인정보 관련 문의사항에 대하여 신속하고 성실하게 답변해드리겠습니다. 다만, 아래 담당자와 연락처는 사정상 바뀔 수 있으며, 이 경우 최대한 빠른 시간 내에 수정하도록 하겠습니다.
+							<div class="masterBox">
+								<div class="inner">
+									<ul class="cs">
+										<li class="b">고객서비스 담당 부서</li>
+										<li>부서명 : 마케팅전략팀, CS기획팀 </li>
+										<li>전   화 : 02-2030-3912</li>
+										<li>메   일 : <a href="mailto:iskymaster@pantech.com">iskymaster@pantech.com </a></li>
+									</ul>
+									<ul class="privacy">
+										<li class="b">개인정보관리책임자</li>
+										<li>성명 : 김은정</li>
+										<li>전화 : 02-2030-3912</li>
+										<li>메일 : <a href="mailto:iskymaster@pantech.com">iskymaster@pantech.com</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다. 기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									개인분쟁조정위원회 (www.1336.or.kr/1336)</li>
+								<li>
+									<span class="first_letter">나.</span>
+									정보보호마크인증위원회 (www.eprivacy.or.kr/02-580-0533~4)</li>
+								<li>
+									<span class="first_letter">다.</span>
+									대검찰청 인터넷범죄수사센터 (http://icic.sppo.go.kr/02-3480-3600)</li>
+								<li>
+									<span class="first_letter">라.</span>
+									경찰청 사이버테러대응센터 (www.ctrc.go.kr/02-392-0330)</li>
+							</ol>
+						</li>
+					</ol>
+
+
+					<h3><a name="a17">17. 광고성 정보전송</a></h3>
+					<ol>
+						<li>
+							<span class="first_letter">1.</span>
+							회사는 회원의 명시적인 수신거부의사에 반하여 영리목적의 광고성 정보를 전송하지 않습니다.</li>
+						<li>
+							<span class="first_letter">2.</span>
+							회사는 회원이 뉴스레터 등 영리목적의 광고성 정보가 아닌 정보의 전자우편 전송에 대한 동의를 한 경우 이메일 ‘제목란 및 본문’란에 아래와 같이 회원이 쉽게 알아 볼 수 있도록 조치합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									이메일 제목란 : '(광고)'라는 문구를 제목란에 표시하지 않을 수 있으며 전자우편 본문란의 주요 내용을 표시합니다.</li>
+								<li>
+									<span class="first_letter">나.</span>
+									이메일 본문란 :
+									<ol class="three">
+										<li>- 회원이 수신거부의 의사표시를 할 수 있는 전송자의 명칭, 전자우편주소, 전화번호 및 주소를 명시합니다.</li>
+										<li>- 회원이 수신 거부의 의사를 쉽게 표시할 수 있는 방법을 한글 및 영문으로 각각 명시합니다.</li>
+									</ol></li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">3.</span>
+							회사는 신상품이나 이벤트 정보안내 등 회원 지향적인 마케팅을 수행하기 위하여 광고성 정보를 전자우편으로 전송하는 경우 전자우편의 제목란 및 본문란에 아래와 같이 회원이 쉽게 알아 볼 수 있도록 조치합니다.
+							<ol class="two">
+								<li>
+									<span class="first_letter">가.</span>
+									전자우편의 제목란 : '(광고)' 또는 '(성인광고)'라는 문구를 제목란의 처음에 빈칸 없이 한글로 표시하고 이어서 전자우편 본문란의 주요 내용을 표시합니다.</li>
+								<li>
+									<span class="first_letter">나.</span>
+									전자우편의 본문란 :
+									<ol class="three">
+										<li>- 회원이 수신거부의 의사표시를 할 수 있는 전송자의 명칭, 전자우편주소, 전화번호 및 주소를 명시합니다.</li>
+										<li>- 회원이 수신거부의 의사를 쉽게 표시할 수 있는 방법을 한글 및 영문으로 각 각 명시합니다.</li>
+									</ol></li>
+							</ol>
+						</li>
+						<li>
+							<span class="first_letter">4.</span>
+							광고수신에 동의한 회원에게 팩스?휴대폰 문자전송 등 이메일 이외의 문자전송을 통해 영리목적의 광고성 정보를 전송하는 경우에도 전송자의 명칭을 표기하는 등 필요한 조치를 취합니다.
+						</li>
+					</ol>
+
+
+					<h3><a name="a18">18. 고지의 의무</a></h3>
+					<ol>
+						<li>회사의 개인정보취급방침은 정부의 정책 또는 보안기술의 변경에 따라 내용의 추가 삭제 및 수정이 있을 시에는 <br/>서면 또는 홈페이지(www.isky.co.kr)를 통해 고지할 것입니다.</li>
+					</ol>
+
+					<div class="operationDate">
+						* 개인정보취급방침 시행일자 : 2009년 04월 13일 <a href="privacy_old.sky"><font style="color:blue;">[이전 약관 보기]</font></a><br/>
+						* 개인정보취급방침 개정일자 : 2010년 10월 01일
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+<s:if test="isFlag.equalsIgnoreCase('false')">
+
+
+
+
+
+
+
+</s:if>
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://cloudlive.vegalive.co.kr" target="_blank">CLOUD LIVE</a></li>
+				<li><a href="http://medialive.vegalive.co.kr" target="_blank">MEDIA LIVE</a></li>
+				<li><a href="http://appsplay.vegalive.co.kr" target="_blank">AppsPlay</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+
+</body>
+</html>

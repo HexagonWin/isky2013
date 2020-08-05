@@ -1,0 +1,461 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/software/softwareCS.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/software/softwareCS.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/software/softwareCS.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100904");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="050202"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script type="text/javascript" src="/static/js/requester.js"></script>
+<script type="text/javascript" src="/static/js/schedule.js"></script>
+<script language='javascript' src="/static/js/cs/photoSlide.js"></script>
+<script>
+	//XMLHttpRequest 객체 생성
+	var requester = new Requester();
+
+	schedule("window", initialize);
+
+
+	var fromUrl = "";
+
+	var tempStrTelecomCode = "";
+	var tempIntPrdSeq = "";
+	var tempKeyword = "";
+	var tempStrPrdName = "";
+	var tempStrTelecomName = "";
+
+
+
+
+	if(fromUrl == "index"){
+
+		tempStrTelecomCode = "";
+		tempIntPrdSeq = "0";
+		tempKeyword = "";
+		tempStrPrdName = "";
+		tempStrTelecomName = "";
+	}else{
+
+	}
+
+	//alert(tempStrTelecomCode);
+
+	function initialize(){
+
+		Get_TelecomCode_Request();
+
+	}
+
+	function Get_TelecomCode_Request(){
+		url = '/cs/software/getTelecomList.sky';
+		cgi = "";
+		requester.setAction(Get_TelecomCode_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_TelecomCode_Response(){
+		var lists = requester.getXML().getElementsByTagName("getTelecomList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+		newOptions.push( new Option("통신사 선택", "") );
+
+		var sel = false;
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strName1');
+			var value = getElementContent(entries[i],'strCode');
+
+			newOptions.push( new Option(text, value, sel) );
+		}
+
+		//$('s1').length = 0;
+		//$('s2').length = 1;
+		var optionsObj = $('s1').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+		if(fromUrl == "index" && tempStrTelecomCode != ""){
+
+			$('s1').value = tempStrTelecomCode;
+
+			Get_Product_Request(tempStrTelecomCode);
+		}else{
+			Get_Product_Request("all");
+		}
+
+
+	}
+
+	function getElementContent(element,tagName) {
+		var childElement = element.getElementsByTagName(tagName)[0];
+		return childElement.text != undefined ? childElement.text : childElement.textContent;
+	}
+
+	function Get_Product_Request(value){
+
+		if(value == ""){
+			value = "all";
+		}
+
+		url = '/cs/software/getProductList.sky';
+		cgi = "strTelecomCode=" + value;
+
+		requester.setAction(Get_Product_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+
+	function Get_Product_Response(){
+		var lists = requester.getXML().getElementsByTagName("getProductList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+
+		newOptions.push( new Option("모델명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strPrdName');
+			var value = getElementContent(entries[i],'intPrdSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('s2').length = 0;
+		var optionsObj = $('s2').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+
+		var rollData = $('rollData');
+		var rollHtml = "";
+		var count = 0;
+		var rollNumber = 1;
+
+		for ( var j = 0 ; j < entries.length ; j++ ) {
+
+
+			var PrdName  = getElementContent(entries[j],'strPrdName');
+			var PrdSeq = getElementContent(entries[j],'intPrdSeq');
+			var PrdNName = getElementContent(entries[j],'strPrdNName');
+			var ImgName = getElementContent(entries[j],'strImgName');
+			var TelecomCode = getElementContent(entries[j],'strTelecomCode');
+
+			if(count == 0 || (count % 6) == 0){
+
+				if(rollNumber == 1){
+					display = "block";
+				}else{
+					display = "none";
+				}
+
+				if((count % 6) == 0){
+					rollHtml += "</ul>";
+				}
+
+				rollHtml += "<ul style=\"display:"+display+";\" id=\"topic"+ rollNumber +"\" onMouseover='topic.pause();' onMouseout='topic.resume();'>";
+
+				rollNumber++;
+
+
+
+			}
+
+			rollHtml += "<li><dl>";
+			rollHtml += "					<dt class=\"product\"><a href=\"javascript:Search_Roll('"+PrdSeq+"','"+PrdName+"','"+TelecomCode+"')\"><img width='24' height='60' src='"+ImgName+"'/></a></dt";
+			rollHtml += "					><dd class=\"tit\">"+PrdNName+"</dd";
+			rollHtml += "					><dd>"+PrdName+"</dd>";
+			rollHtml += "				</dl></li";
+			rollHtml += "				>";
+
+			count++;
+		}
+
+		rollHtml += "</ul>";
+
+		topic = new pic_roll();
+		topic.name = 'topic';
+		topic.show_sec = 3;
+
+
+		topic.last_idx = rollNumber-1;
+
+		rollData.innerHTML = rollHtml;
+
+		$('keyword').value = "";
+
+		if(fromUrl == "index" && tempIntPrdSeq != ""){
+			$('s2').value = tempIntPrdSeq;
+		}
+
+		if(fromUrl == "index" && tempKeyword != ""){
+			$('keyword').style.backgroundImage = 'none';
+			$('keyword').value = tempKeyword;
+		}
+
+
+		Search();
+
+	}
+
+	function Search(){
+
+		if($('keyword').value != ""){
+
+			$('s1').value = "";
+			$('s2').value = "";
+			$('strTelecomCode').value = "";
+			$('intPrdSeq').value = "";
+			$('strTelecomName').value = "";
+			$('strPrdName').value = "";
+
+		}else{
+
+			if($('s1').value != ""){
+				var i = $('s1').options.selectedIndex;
+
+				$('strTelecomCode').value = $('s1').options[i].value;
+				$('strTelecomName').value = $('s1').options[i].text;
+			}
+
+			if($('s2').value != ""){
+
+				var i = $('s2').options.selectedIndex;
+
+				$('intPrdSeq').value = $('s2').options[i].value;
+				$('strPrdName').value = $('s2').options[i].text;
+			}else{
+
+				$('intPrdSeq').value = "";
+				$('strPrdName').value = "";
+			}
+
+		}
+
+
+		fromUrl = "";
+		tempStrTelecomCode = "";
+		tempIntPrdSeq = "";
+		tempKeyword = "";
+		tempStrPrdName = "";
+		tempStrTelecomName = "";
+
+		var form = $('search');
+		form.action = "/cs/software/getSoftWareListCS.sky";
+		form.target = "list";
+		form.method = "post";
+		form.submit();
+
+	}
+
+	function Search_Roll(intPrdSeq, strPrdName, strTelecomCode){
+
+		var form = $('search');
+
+		$('strTelecomCode').value = strTelecomCode;
+		$('intPrdSeq').value = intPrdSeq;
+		$('strPrdName').value = strPrdName;
+		$('keyword').value = "";
+
+		if(strTelecomCode == "11001"){
+			$('strTelecomName').value = "SKT";
+		}else if(strTelecomCode == "11002"){
+			$('strTelecomName').value = "KT";
+		}else if(strTelecomCode == "11003"){
+			$('strTelecomName').value = "LGT";
+		}
+
+		fromUrl = "";
+		tempStrTelecomCode = "";
+		tempIntPrdSeq = "";
+		tempKeyword = "";
+		tempStrPrdName = "";
+		tempStrTelecomName = "";
+
+
+		form.action = "/cs/software/getSoftWareListCS.sky";
+		form.target = "list";
+		form.method = "post";
+		form.submit();
+
+	}
+
+
+	//아이 프레임 리사이즈
+	function resizeFrame(iframeObj){
+		var innerBody = iframeObj.contentWindow.document.body;
+
+		var innerHeight = innerBody.scrollHeight + (innerBody.offsetHeight - innerBody.clientHeight);
+		var innerWidth = innerBody.scrollWidth + (innerBody.offsetWidth - innerBody.clientWidth);
+
+		iframeObj.style.height = innerHeight;
+		iframeObj.style.width = innerWidth;
+	}
+</script>
+</head>
+
+<body>
+
+<div class="cols4">
+
+	<div>
+
+		<div id="Content">
+
+			<!-- [s] page title 2 -->
+			<div class="ptitle"><ul
+				><li><img src="/static/images/cs/d3title_software.gif" border="0" alt="소프트웨어" title="소프트웨어" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="software_cont01">
+			<a href="#software_txt"><img src="/static/images/cs/software_btn_01.gif" alt="S/W종류 및 설명 자세히보기" class="btn" /></a
+			><img src="/static/images/cs/software_txt_01_cs.gif" alt="S/W를 직접 바로바로" title="S/W를 직접 바로바로" /></div>
+
+			<div class="software_search"><h5><img src="/static/images/cs/software_tit_03_cs.gif" alt="소프트웨어 검색" title="소프트웨어 검색" /></h5></div>
+			<!-- [s] STEP검색 -->
+			<form name="search" id="search" method="post">
+			<input type="hidden" name="dispNum" value="">
+			<input type="hidden" name="strTelecomName" id="strTelecomName" value="">
+			<input type="hidden" name="strPrdName" id="strPrdName" value="">
+			<input type="hidden" name="strTelecomCode" id="strTelecomCode" value="">
+			<input type="hidden" name="intPrdSeq" id="intPrdSeq" value="">
+
+
+			<div id="roundbox2">
+				<div class="searchBox2"><ul
+					><li class="tit" style="width:106px;"><img src="/static/images/cs/selfupgrade_tit_06.gif" alt="STEP 다운로드" /></li
+					><li class="select"><select name="s1" id="s1" style="width:129px;" onChange="Get_Product_Request(this.value)">
+					</select></li
+					><li class="select"><select name="s2" id="s2" style="width:173px;" onchange="javascript:Search()">
+					</select></li
+					></ul>
+				<script type="text/javascript" src="/static/js/selector.basic.js"></script>
+				<script type="text/javascript" src="/static/js/selector.html.js"></script>
+				<div class="roundbox_03"></div>
+				</div>
+				<div class="searchBox3"><ul
+					><li class="tit"><img src="/static/images/cs/selfupgrade_tit_05.gif" alt="빠른검색" /></li
+					><li class="input" style="width:185px;">
+						<input type="text" name="keyword" id="keyword" class="input_text"
+							onfocus="this.style.backgroundImage = 'none'" ONKEYPRESS=" if(event.keyCode == 13){ Search(); return false;}"
+							style="width:175px;height:14px;background:#FFFFFF url('/static/images/cs/selfupgrade_txt_04.gif') 5px 5px no-repeat;" />
+						</li
+					><li><a href="javascript:Search()"><img src="/static/images/common/btn/1_search.gif" alt="검색" /></a></li
+				></ul>
+				<div class="roundbox_03"></div>
+				</div>
+			</div>
+			</form>
+			<!-- [e] STEP검색 -->
+			<div class="searchImg">
+				<!-- [s] 제품이미지검색 -->
+				<div class="productListImg">
+				<img src="/static/images/cs/productListImg_tit_01.gif" alt="제품이미지로검색" class="tit" />
+					<div class="btn1"><a href='javascript:topic.prev_pic();'><img src="/static/images/cs/selfupgrade_btn_01.gif" alt="앞으로" /></a></div>
+						<div id="rollData">
+						</div>
+					<div class="btn2"><a href='javascript:topic.next_pic();'><img src="/static/images/cs/selfupgrade_btn_02.gif" alt="뒤로" /></a></div>
+				</div>
+				<div class="roundbox_03"></div>
+				<!-- [e] 제품이미지검색 -->
+			</div>
+			<div class="searchTxt"><ul
+				><li><span><img src="/static/images/common/ico_01.gif" alt="!" /></span><strong>STEP검색</strong> – 통신사, 모델명 등 상세 정보를 알고 있을 경우에 가장 정확하게 원하는 S/W를 한번에 검색 가능</li
+				><li><strong>빠른검색</strong> – 펫네임(예.크리스탈, 큐브릭) 이나 제품명(예. IM-U470S)만을 알고 있을 경우 쉽게 검색 가능</li
+				><li><strong>제품 이미지로 검색</strong> – 휴대폰 정보를 거의 모를 경우, 제품 이미지를 찾아서 검색 가능</li
+				></ul
+			></div>
+			<div class="blank40"></div>
+
+			<div class="selfupgrade_cont01">
+				<iframe name="list" src="/cs/software/getSoftWareListCS.sky" style="border:0px" width="740" height="480" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" onload="resizeFrame(this)"></iframe>
+			</div>
+
+			<div class="selfupgrade_cont02"><h5><a name="software_txt"><img src="/static/images/cs/selfupgrade_tit_04_cs.gif" alt="소프트웨어 설명" title="소프트웨어 설명" /></a></h5>
+			<img src="/static/images/cs/software_txt_03.gif" border="0" usemap="#mapSoftware" />
+			<map name="mapSoftware" id="mapSoftware">
+				<area shape="rect" coords="68,78,190,94" href="javascript:popCwin('/cs/popup_selfupgrade.sky', 'selfUpgrade', '820', '590', 'yes');" alt="셀프업그레이드 설치방법" />
+				<area shape="rect" coords="296,76,420,92" href="javascript:popCwin('/cs/popup_usbdriver.sky', 'useDriver', '820', '590', 'yes');" alt="USB 드라이버 설치방법" />
+				<area shape="rect" coords="536,78,674,94" href="javascript:popCwin('/cs/popup_datamanager.sky', 'dataManager', '820', '590', 'yes');" alt="데이터매니저 PLUS 설치방법" />
+			</map></div>
+		</div>
+	</div>
+
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+</body>
+</html>

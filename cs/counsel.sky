@@ -1,0 +1,697 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/counsel.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/counsel.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/counsel.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100727");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="050101"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<!-- <script language="JavaScript" src="/static/js/selector.basic.js"></script>
+<script language="JavaScript" src="/static/js/selector.html.js"></script> -->
+
+<script type="text/javascript" src="/static/js/requester.js"></script>
+<script type="text/javascript" src="/static/js/schedule.js"></script>
+
+<script language="javaScript" src="/static/js/cs/counsel/counsel.js"></script>
+<script>
+	window.onload = function checkLogin(){
+		var loginCheck = "";
+
+		if(loginCheck != 'true'){
+			LoginConfirmReturn(current_url);
+		}
+	}
+
+	var requester = new Requester();
+
+	//대분류 선택
+	function Gubun_Chk(obj){
+
+		var categoryView = document.getElementById("categoryView");
+		var mcode = document.getElementById("mcode");
+		var scode = document.getElementById("scode");
+
+		//사이트 이용문의
+		if(obj.checked == true){
+
+			if(obj.value == "42001"){
+
+				categoryView.style.display = "none";
+				mcode.value = "43001";
+				scode.value = "23001";
+
+			}else if(obj.value == "42002"){
+
+				categoryView.style.display = "none";
+				mcode.value = "43002";
+				scode.value = "23002";
+
+			}else if(obj.value == "42003"){
+
+				categoryView.style.display = "block";
+				mcode.value = "";
+				scode.value = "";
+
+			}
+
+		}
+	}
+
+
+	function Get_SCode_Request(value){
+		var mcode = document.getElementById("mcode");
+		var scode = document.getElementById("scode");
+
+		url = '/cs/getSCode.sky';
+		cgi = "mcode=" + value;
+
+		mcode.value = value;
+		scode.value = "";
+
+		requester.setAction(Get_SCode_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_SCode_Response(){
+		var lists = requester.getXML().getElementsByTagName("getSCode")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+		newOptions.push( new Option("상담 질문 카테고리 소분류", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strName1');
+			var value = getElementContent(entries[i],'strCode');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('code2').length = 0;
+		var optionsObj = $('code2').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+	}
+
+	function SelectSCode(obj){
+		var scode = document.getElementById("scode");
+
+		scode.value = obj.value;
+	}
+
+	function getElementContent(element,tagName) {
+		var childElement = element.getElementsByTagName(tagName)[0];
+		return childElement.text != undefined ? childElement.text : childElement.textContent;
+	}
+
+	function Get_Series_Request(value){
+		url = '/cs/getSeriesCode.sky';
+		cgi = "strTelecomCode=" + value;
+
+		requester.setAction(Get_Series_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_Series_Response(){
+		var lists = requester.getXML().getElementsByTagName("getSeriesCode")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+		newOptions.push( new Option("계열명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strSeriesName');
+			var value = getElementContent(entries[i],'intSeriesSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('series').length = 0;
+		var optionsObj = $('series').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+	}
+
+
+	function Get_Product_Request(value){
+		var strTelecomCode = $('telecomList');
+
+		url = '/cs/getProductCode.sky';
+		cgi = "strTelecomCode=" + strTelecomCode.value + "&intSeriesSeq=" + value;
+
+		requester.setAction(Get_Product_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_Product_Response(){
+		var lists = requester.getXML().getElementsByTagName("getProductCode")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+		newOptions.push( new Option("모델명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strPrdName');
+			var value = getElementContent(entries[i],'intPrdSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('model').length = 0;
+		var optionsObj = $('model').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+	}
+
+
+	function doSubmit(){
+		var obj = document.counSelForm;
+		var u_idx = document.all.userTelecomName.selectedIndex;
+
+		obj.strUserEmail.value = document.all.userEmail1.value+'@'+document.all.userEmail2.value;
+		obj.strUserTelecomCode.value = document.all.userTelecomName.options[u_idx].value;
+		obj.strUserHpNo.value = document.all.userHpNo1.value+'-'+document.all.userHpNo2.value+'-'+document.all.userHpNo3.value;
+
+		obj.intPrdSerialCode.value = document.all.series.value;
+		obj.intPrdCode.value = document.all.model.value;
+
+		obj.strPrdName.value = document.all.model.options[document.all.model.selectedIndex].text;
+
+		//obj.strQueCategory.value = obj.queCategoryBig.value;
+		obj.strSubject.value = obj.queSubject.value;
+		obj.strContent.value = obj.queContent.value;
+		//obj.strQueCategoryName.value = obj.queCategoryBig.options[obj.queCategoryBig.selectedIndex].text;
+
+		//상담 카테고리 분류
+		//alert(obj.queCategoryBig.value);
+		//alert(document.all.file1);
+
+		/**파일 셋팅 **/
+		var uploadFilePath1 = obj.uploadFilePath1.value;
+		var uploadFilePath2 = obj.uploadFilePath2.value;
+
+		if(uploadFilePath1 != null && uploadFilePath1 != ''){
+
+			obj.uploadFileName1.value = setFileName(uploadFilePath1,'');
+
+		}
+
+		if(uploadFilePath2 != null && uploadFilePath2 != ''){
+
+				obj.uploadFileName2.value = setFileName(uploadFilePath2,'');
+
+		}
+
+
+		formCheck();
+
+
+
+	}
+
+
+
+	function formCheck(){
+		var userEmail1 = document.all.userEmail1.value
+		var userEmail2 = document.all.userEmail2.value;
+		var userTeleCom = document.all.userTelecomName.value
+		var userHp1 = document.all.userHpNo1.value;
+		var userHp2 = document.all.userHpNo2.value;
+		var selectTelecom = document.all.telecomList.value;
+		var selectSeries = document.all.series.value;
+		var selectModel = document.all.model.value;
+		//var queCategory = document.counSelForm.queCategoryBig.value;
+		var queSubject = document.counSelForm.queSubject.value;
+		var queContent = document.counSelForm.queContent.value;
+		var userId = document.counSelForm.strUserId.value;
+
+		var lcode = document.getElementsByName('lcode');
+		var chk = false;
+		var gubun = "";
+
+		for(var i=0; i < lcode.length; i++){
+
+			if(lcode[i].checked == true){
+
+				if(lcode[i].value == "42003"){
+
+					gubun = "2";
+
+					if($('code1').value == "" || $('code2').value == ""){
+						alert('상담 질문 분류를 선택해 주세요');
+						return;
+					}
+
+				}else if(lcode[i].value == "42001" || lcode[i].value == "42002"){
+					gubun = "1";
+				}
+
+				chk = true;
+				break;
+			}
+		}
+
+		if(chk == false){
+			alert('상담 분류를 선택해 주세요');
+			lcode.focus();
+			return;
+		}
+
+		if(userEmail1 == ''){
+			alert('이메일을 입력해주세요!');
+			document.all.userEmail1.focus();
+			return;
+		}
+
+		if(userEmail2 == ''){
+			alert('이메일을 입력해주세요!');
+			document.all.userEmail2.focus();
+			return;
+		}
+
+		if(userHp1 == ''){
+			alert('핸드폰 번호를 입력해주세요!');
+			document.all.userHpNo1.focus();
+			return;
+		}
+
+		if(userHp2 == ''){
+			alert('핸드폰 번호를 입력해주세요!');
+			document.all.userHpNo2.focus();
+			return ;
+		}
+
+
+		if(gubun == '1'){
+
+			if(selectTelecom == ''){
+				alert('통신사를 선택해주세요!');
+				return ;
+			}
+
+			if(selectSeries == ''){
+				alert('제품계열을 선택해주세요!');
+				return ;
+			}
+
+			if(selectModel == ''){
+				alert('모델을 선택해주세요!');
+				return ;
+			}
+		}
+
+
+
+		if(queSubject == ''){
+			alert('제목이 없습니다!');
+			document.counSelForm.queSubject.focus();
+			return ;
+		}
+
+		if(queContent == ''){
+			alert('내용이 없습니다!');
+			document.counSelForm.queSubject.focus();
+			return ;
+		}
+
+		document.counSelForm.target = "filedownload";
+		document.counSelForm.submit();
+	}
+</script>
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=050101&LogSess=N','740','26','','','transparent','')</script></div>
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_Blank.swf?PageCode=050101','222','630','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=050101','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle"><ul
+				><li><img src="/static/images/cs/d3title_counsel.gif" border="0" alt="온라인상담" title="온라인상담" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<div class="counsel_cont01"><img src="/static/images/cs/counsel_txt_01.gif" alt="문의전, 꼭! 확인해주세요" title="문의전, 꼭! 확인해주세요" /><br /><img src="/static/images/cs/counsel_txt_02.gif" /></div>
+
+			<div class="blank40"></div>
+
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_counsel">
+			<colgroup>
+				<col width="106"></col>
+				<col width="609"></col>
+			</colgroup>
+
+				<form name="counSelForm" action="/cs/counselWrie.sky" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="strUserName" value=""/>
+				<input type="hidden" name="strUserId" value="">
+				<input type="hidden" name="strQueCategory" />
+				<input type="hidden" name="strSubject" />
+				<input type="hidden" name="strContent" />
+				<input type="hidden" name="strUserEmail"/>
+				<input type="hidden" name="strUserHpNo"/>
+				<input type="hidden" name="strUserTelecomCode" />
+				<input type="hidden" name="intPrdSerialCode" />
+				<input type="hidden" name="strPrdName" />
+				<input type="hidden" name="intPrdCode" />
+
+				<input type="hidden" name="strQueCategoryName"/>
+				<!-- 중분류 -->
+				<input type="hidden" name="mcode" id="mcode">
+
+				<!-- 소분류 -->
+				<input type="hidden" name="scode" id="scode">
+
+
+
+
+				<tr valign="top">
+					<th class="selcount firstcount">상담 선택</th>
+					<td class="selcount firstcount"><ul
+						><li><input type="radio" name="lcode" value='42001' onclick="Gubun_Chk(this)"/> 제품/소프트웨어
+					</li><li>
+						<input type="radio" name="lcode" value='42002' onclick="Gubun_Chk(this)"/> 서비스센터 관련
+					</li><li>
+						<input type="radio" name="lcode" value='42003' onclick="Gubun_Chk(this)"/> 사이트 이용문의
+						</li>
+						</ul></td>
+				</tr>
+
+				<tr valign="top" id="categoryView" style="display:none;">
+					<th class="catecount">상담 카테고리</th>
+					<td class="catecount"><ul
+						><li class="sel">
+						<select name="code1" id="code1" style="width:213px;" onChange="Get_SCode_Request(this.value);">
+							<option value="">상담 질문 카테고리 중분류</option>
+							
+								<option value="43003" >사이트이용문의</option>
+							
+								<option value="43004" >LIVE메시지 이용문의</option>
+							
+								<option value="43005" >IT 스토어[폰꾸미기]이용문의</option>
+							
+								<option value="43006" >IT 스토어[액세사리]이용문의</option>
+							
+								<option value="43007" >IT 스토어[스페셜샵] 이용문의</option>
+							
+								<option value="43008" >기타</option>
+							
+						</select></li>
+						<li class="sel">
+						<select name="code2" id="code2" style="width:213px;" onChange="SelectSCode(this)">
+						</select></li>
+						</ul></td>
+				</tr>
+
+				<tr valign="top">
+					<th class="seltype">이메일</th>
+					<td class="seltype"><ul>
+						<li><input type="text" name="userEmail1" class="input_text" style="width:175px;height:14px;" value=""/>
+							@
+							<input type="text" name="userEmail2" class="input_text" style="width:125px;height:14px;" value=""/></li>
+						<li class="sel">
+							<select name="userEmailAddr" id="s1" style="width:153px;" onChange="checkMail(this.value)">
+								<option value="">이메일 선택</option>
+								<option value="daum.net" >daum.net</option>
+								<option value="yahoo.co.kr" >yahoo.co.kr</option>
+								<option value="paran.com" >paran.com</option>
+								<option value="hanmail.net">hanmail.net</option>
+								<option value="hanmir.co.kr">hanmir.co.kr</option>
+								<option value="lycos.co.kr">lycos.co.kr</option>
+								<option value="naver.com">naver.com</option>
+							</select>
+						</li>
+					</td>
+				</tr>
+				<tr valign="top">
+					<th>휴대폰번호</th>
+					<td>
+						<ul>
+							<li class="sel">
+								<select name="userTelecomName" id="s2" style="width:63px;" >
+									
+									
+									
+
+									<option value="11001" >SKT</option>
+									<option value="11002" >KT</option>
+									<option value="11003" >LGT</option>
+
+								</select>
+							</li>
+							<li class="sel">
+								<select name="userHpNo1" id="s3" style="width:63px;" >
+									
+									
+									
+									
+									
+									
+
+									<option value="010"  >010</option>
+									<option value="011"  >011</option>
+									<option value="016"  >016</option>
+									<option value="017"  >017</option>
+									<option value="018"  >018</option>
+									<option value="019"  >019</option>
+								</select>
+							</li>
+							<li><input type="text" name="userHpNo2" class="input_text" style="width:45px;height:14px;" onkeypress="javascript:onlyNumber(this);" onkeyup="javascript:onlyNumber(this);" value="" maxlength="4" /></li>
+							<li><input type="text" name="userHpNo3" class="input_text" style="width:45px;height:14px;" onkeypress="javascript:onlyNumber(this);" onkeyup="javascript:onlyNumber(this);" value="" maxlength="4" /></li>
+					</ul></td>
+				</tr>
+				<!-- <form name="searchSelect">
+
+				</form> -->
+				<tr valign="top">
+					<th>모델명</th>
+					<td><ul
+						><li class="sel"><select name="telecomList" id="telecomList" style="width:123px;" onChange="Get_Series_Request(this.value);">
+							<option value="">통신사 선택</option>
+							<option value="11001">SKT</option>
+							<option value="11002">KT</option>
+							<option value="11003">LGT</option>
+						</select>
+					</li><li class="select">
+						<select name="series" id="series" style="width:123px;" onChange="Get_Product_Request(this.value);">
+							<option value="">제품계열 선택</option>
+						</select>
+					</li><li class="select">
+						<select name="model" id="model" style="width:123px;">
+							<option value="">모델명 선택</option>
+						</select>
+					</li></ul></td>
+				</tr>
+
+				<script type="text/javascript">
+//					var s1;
+//					var s2;
+//					var s3;
+//					var s4;
+//					var s5;
+//					var s6;
+//					var s7;
+//					var s8;
+//					function loadSelecBox(){
+//
+//						s1 = new Selectbox('s1', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s2 = new Selectbox('s2', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s3 = new Selectbox('s3', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s4 = new Selectbox('telecomList', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s5 = new Selectbox('series', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s6 = new Selectbox('model', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s7 = new Selectbox('queCategoryBig', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						s8 = new Selectbox('queCategoryMid', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//					}
+//					if ( window.attachEvent )
+//						window.attachEvent('onload', loadSelecBox);
+//					else
+//						window.addEventListener('load', loadSelecBox, false);
+				</script>
+				<tr valign="top">
+					<th>상담제목</th>
+					<td><input type="text" name="queSubject" class="input_text" style="width:595px;height:14px;" onKeyUp="javascript:checkTitle(this);"/></td>
+				</tr>
+				<tr valign="top">
+					<th>상담내용</th>
+					<td><textarea name="queContent" rows="8" cols="72" class="input_text" style="width:595px;height:114px;"></textarea></td>
+				</tr>
+				<tr valign="top">
+					<th>파일첨부</th>
+					<input type="hidden" name="uploadFileName1"/>
+					<input type="hidden" name="uploadFileName2"/>
+					<td><ul
+						><li class="fn"><table width="" cellpadding="0" cellspacing="0" border="0">
+								<tr valign="top">
+									<td style="border:0;padding:1px 5px 1px 0;"><input class="input" type="text" name="uploadFilePath1" style="width:550px; height:15px;"/></td>
+									<td style="border:0;padding:1px 0 1px 0;"><div style="width:43px;height:20px;position: absolute;overflow: hidden;background-image:url(/static/images/common/btn/1_search2.gif); ">
+							       <input type="file" name="file1" style="cursor:hand;font-size:20px;right:0px;position:absolute;top:0px;filter:alpha(opacity=0);" onchange="javascript:file1.click();document.all.uploadFilePath1.value=document.all.file1.value;">
+							       </div></td>
+								</tr>
+							</table>
+						</li>
+						<li class="fn"><table width="" cellpadding="0" cellspacing="0" border="0">
+							<tr valign="top">
+								<td style="border:0;padding:1px 5px 1px 0;"><input class="input" type="text" name="uploadFilePath2" style="width:550px; height:15px;"/></td>
+								<td style="border:0;padding:1px 0 1px 0;"><div style="width:43px;height:20px;position: absolute;overflow: hidden;background-image:url(/static/images/common/btn/1_search2.gif); ">
+							       <input type=file name="file2" style="cursor:hand;font-size:20px;right:0px;position:absolute;top:0px;filter:alpha(opacity=0);" onchange="javascript:file2.click();document.all.uploadFilePath2.value=document.all.file2.value;">
+							       </div></td>
+							</tr>
+						</table>
+						</li>
+						<li class="txt">* 파일 첨부는 2개까지 가능하며, 파일 용량은 500kb 이내여야 합니다.</li
+					></ul>
+					</td>
+				</tr>
+				</form>
+			</table>
+			<div id="bd_btnFB"><span class="Acctxt"><img src="/static/images/common/ico_01.gif" />이름/이메일/휴대폰번호를 수정하셔도 고객님의 실제 회원정보는 변경되지 않습니다.</span><span class="btn"><a href="javascript:doSubmit()"><img src="/static/images/common/btn/bd_send.gif" border="0" alt="보내기" title="보내기" /></a></span></div>
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+</body>
+</html>

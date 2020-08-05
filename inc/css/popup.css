@@ -1,0 +1,80 @@
+@import url(/inc/css/global.css);
+
+/* 기본링크 */
+A {color:#666;text-decoration:none;}
+A:link {color:#666;}
+A:visited {color:#666;}
+A:hover { color:#333;}
+
+.tit1 { height:46;background:url(http://www.isky.co.kr/source/img/global/popup/titlebg1.gif) no-repeat right top; }
+.tit2 { height:46;background:url(http://www.isky.co.kr/source/img/global/popup/titlebg2.gif) no-repeat right top; }
+.tit3 { height:46;background:url(http://www.isky.co.kr/source/img/global/popup/titlebg3.gif) no-repeat  top; }
+.tit4 { height:46;background:url(http://www.isky.co.kr/source/img/global/popup/titlebg4.gif) no-repeat right top; }
+.tit5 { height:46;background:url(http://www.isky.co.kr/source/img/global/popup/titlebg5.gif) no-repeat right top; }
+
+.usbg { background:url(http://www.isky.co.kr/source/img/global/popup/usb_bg.gif) no-repeat  top; }
+.usbbg { background:url(http://www.isky.co.kr/source/img/global/popup/usb_bg01.gif) no-repeat  top; }
+.sbg { background:url(http://www.isky.co.kr/source/img/global/popup/service_bg.gif) no-repeat  top; }
+.btm { background:#A5A5A5; }
+.btm2 { background:url(http://www.isky.co.kr/source/img/global/popup/btmbg2.gif) repeat-x left bottom; }
+.boxm { background:url(http://www.isky.co.kr/source/img/global/popup/boxm.gif) repeat-y left top; }
+
+.li01 { background:url(http://www.isky.co.kr/source/img/global/popup/li01.gif) no-repeat left 6;padding-left:7;color:#000;}
+.li02 { background:url(http://www.isky.co.kr/source/img/global/popup/li02.gif) no-repeat left 3;padding-left:10;color:#333333;}
+
+ul { list-style-type:none;margin:0}
+.li03 li { background:url(http://www.isky.co.kr/source/img/global/li01.gif) no-repeat left 8px;padding-left:9px;line-height:18px;}
+
+.btn { margin:10 0 0 0;text-align:center; }
+.btn2 { margin:10 0 0 0;text-align:right; }
+
+/**************** 테이블 스타일 ******************/
+table.join { border-top:3px solid #B2B2B2;border-bottom:3px solid #B2B2B2; }
+table.join th { background:#B0B0B0;padding-left:10;text-align:left; }
+table.join td.right { background:#F5F5F5;padding:3 0 3 12;color:#4C4C4C; }
+table.join .dot td { background:url(http://www.isky.co.kr/source/img/bbs/th_dot.gif) repeat-x left bottom;}
+
+table.join2 th { background:#B0B0B0;padding-left:10;text-align:left; }
+table.join2 td.right { background:url(http://www.isky.co.kr/source/img/bbs/th_bg2.gif);padding:3 0 3 12;color:#4C4C4C; }
+table.join2 .dot td { background:url(http://www.isky.co.kr/source/img/bbs/th_dot.gif) repeat-x left bottom;}
+
+table.list01 th { background:#B0B0B0;padding-top:3;padding-bottom:3; }
+table.list01 th.bar { background:url(http://www.isky.co.kr/source/img/bbs/th_bar4.gif) #B0B0B0 no-repeat right top;padding-top:3;padding-bottom:3; }
+table.list01 td.light { background:#F5F5F5; }
+table.list01 .light td { background:url(http://www.isky.co.kr/source/img/bbs/th_bg2.gif); }
+table.list01 .line td { background:url(http://www.isky.co.kr/source/img/bbs/th_line.gif) repeat left bottom; }
+table.list01 .dot td { background:url(http://www.isky.co.kr/source/img/bbs/th_dot.gif) repeat-x left bottom; }
+
+table.list02 th { background:#BDBDBD;padding-top:2; }
+table.list02 th.rbd { border-right:1px solid #E8E8E8;background:#BDBDBD;padding-top:2; }
+table.list02 th.bbd { border-bottom:1px solid #E8E8E8;background:url(http://www.isky.co.kr/source/img/bbs/th_bg.gif);padding-top:2; }
+table.list02 td.rbbd { border-right:1px solid #AEAEAE;border-bottom:1px solid #AEAEAE; }
+table.list02 td.bbd { border-bottom:1px solid #AEAEAE; }
+
+table.list04 { border-bottom:3px solid #C3C3C3; }
+table.list04 th { background:#B0B0B0;padding-top:3;padding-bottom:3; }
+table.list04 th.bar { background:url(http://www.isky.co.kr/source/img/bbs/th_bar4.gif) no-repeat right top;padding-top:3;padding-bottom:3; }
+table.list04 td.light { background:url(http://www.isky.co.kr/source/img/bbs/th_bg2.gif);padding-left:10; }
+table.list04 .dot td { background:url(http://www.isky.co.kr/source/img/bbs/th_dot.gif) repeat-x left bottom; }
+table.list04 .line td { background:B0B0B0;height:1px; }
+
+table.grid { border-left:1px solid #ABABAB;border-top:1px solid #ABABAB;color:#343434; }
+table.grid th { background:url(http://www.isky.co.kr/source/img/bbs/th_bg3.gif);border-right:1px solid #ABABAB;border-bottom:1px solid #ABABAB;font-weight:normal; }
+table.grid td { border-right:1px solid #ABABAB;border-bottom:1px solid #ABABAB; }
+
+table.tline { border-top:1px solid #AEAEAE; }
+
+.page { text-align:center;margin:15 0; }
+.puline { border-bottom:1px solid #B3B3B3; }
+.ptline { border-top:1px solid #FFF; }
+
+.boxm2 { background:url(http://www.isky.co.kr/source/img/global/popup/boxm_2.gif) repeat-y left top; }
+.line1 { background:url(http://www.isky.co.kr/source/img/global/popup/img_line.gif) repeat-x left bottom; }
+.line2 { background:url(http://www.isky.co.kr/source/img/global/popup/img_line2.gif) repeat-x left top; }
+
+#num .a:visited{font-weight:normal;}
+
+.bg6 { background:url(http://www.isky.co.kr/source/img/global/bg06.gif) repeat left top; }
+
+/*2007-01-26 추가 */
+.box3 { background:url(http://www.isky.co.kr/source/img/global/popup/boxm3.gif) repeat-y left top; }

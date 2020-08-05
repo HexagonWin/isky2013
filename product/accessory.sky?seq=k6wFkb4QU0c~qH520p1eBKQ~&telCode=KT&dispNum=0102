@@ -1,0 +1,296 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/product/accessory.sky?dispNum=0102[AND]telCode=KT[AND]seq=k6wFkb4QU0c~qH520p1eBKQ~[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/product/accessory.sky?dispNum=0102[AND]telCode=KT[AND]seq=k6wFkb4QU0c~qH520p1eBKQ~[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/product/accessory.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20110707");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="0102";</script>
+<script language="javascript">
+function ProductList(){
+	var telCode = "";
+
+	
+
+	
+		telCode = "KT";
+	
+
+	
+
+	var url = "/product/product.sky?telCode=" + telCode;
+
+	location.href = url;
+}
+
+//아이 프레임 리사이즈
+function resizeFrame(iframeObj){
+	var innerBody = iframeObj.contentWindow.document.body;
+
+	var innerHeight = innerBody.scrollHeight + (innerBody.offsetHeight - innerBody.clientHeight);
+	var innerWidth = innerBody.scrollWidth + (innerBody.offsetWidth - innerBody.clientWidth);
+	
+	if(window.JSON){
+		innerHeight+=15;
+	}
+
+	iframeObj.style.height = innerHeight;
+	iframeObj.style.width = innerWidth;
+}
+</script>
+</head>
+<form name="Frm" method="post" action="myOrder_accessory.jsp" onSubmit="return OnMainSearch();">
+<input type="hidden" name="h"/>
+<input type="hidden" name="v"/>
+</form>
+<body>
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=0102&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0102','222','570','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0102','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0102.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_view_visual"><script>swf_include("http://file.isky.co.kr/upload/product/imageAflash/103_IMU660K[2].swf?intTvSeq=j/ARw7kUAEQ~Xa5GIOMn7og~&strTeYN=N","740","424","always","","","")</script></div>
+			<div class="product_view_tab">
+				<ul>
+					
+					<li>
+						
+							
+							
+						
+						<a href="/product/feature.sky;www=QcJ8TV4Vhxx7bDTxFxvJk3CKJCls6SlTQYB2rC2HghjQ7y87pM1V!1846148227!1049333674?seq=k6wFkb4QU0c%7EqH520p1eBKQ%7E&amp;telCode=KT&amp;dispNum=0102">
+							<img src="/static/images/product/product_vTab_01.gif" border="0" alt="FEATURE" title="FEATURE" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/spec.sky;www=QcJ8TV4Vhxx7bDTxFxvJk3CKJCls6SlTQYB2rC2HghjQ7y87pM1V!1846148227!1049333674?seq=k6wFkb4QU0c%7EqH520p1eBKQ%7E&amp;telCode=KT&amp;dispNum=0102">
+							<img src="/static/images/product/product_vTab_02.gif" border="0" alt="SPEC" title="SPEC" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/review.sky;www=QcJ8TV4Vhxx7bDTxFxvJk3CKJCls6SlTQYB2rC2HghjQ7y87pM1V!1846148227!1049333674?seq=k6wFkb4QU0c%7EqH520p1eBKQ%7E&amp;telCode=KT&amp;dispNum=0102">
+							<img src="/static/images/product/product_vTab_03.gif" border="0" alt="REVIEW" title="REVIEW" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/swdownload.sky;www=QcJ8TV4Vhxx7bDTxFxvJk3CKJCls6SlTQYB2rC2HghjQ7y87pM1V!1846148227!1049333674?seq=k6wFkb4QU0c%7EqH520p1eBKQ%7E&amp;telCode=KT&amp;dispNum=0102">
+							<img src="/static/images/product/product_vTab_04.gif" border="0" alt="S/W DOWNLOAD" title="S/W DOWNLOAD" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/accessory.sky;www=QcJ8TV4Vhxx7bDTxFxvJk3CKJCls6SlTQYB2rC2HghjQ7y87pM1V!1846148227!1049333674?seq=k6wFkb4QU0c%7EqH520p1eBKQ%7E&amp;telCode=KT&amp;dispNum=0102">
+							<img src="/static/images/product/product_vTab_05_.gif" border="0" alt="ACCESSORY" title="ACCESSORY" />
+						</a>
+					</li>
+					
+					
+					
+				</ul>
+			</div>
+
+			<div class="product_view_cont01">
+				<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_productAccessory">
+				<colgroup>
+					<col width="369"></col>
+					<col width="370"></col>
+				</colgroup>
+					<tr valign="top">
+						<th>기본</th>
+						<th class="nl">옵션(별도구매)</th>
+					</tr>
+					<tr valign="top">
+						<td><dl><dd>표준형 배터리 (BAT-6400M)</dd><dd>배터리 커버</dd><dd>배터리 충전 거치대(BTH-2800)</dd><dd>스테레오 이어마이크 (EM-1200)</dd><dd>충전용 젠더 (TRP-400)</dd><dd>액정보호필름(WPT-U660)</dd><dd>터치펜 (TID-300)</dd><dd>사용자 설명서 (ML-U620L) </dd></dl>&nbsp;</td>
+						<td class="nl"><dl><dd>데이터매니지 케이블(IMCBL-1410)</dd><dd>원형 젠더(TRP-210)</dd><dd>멀티젠더(TRP-300C)</dd></dl>&nbsp;</td>
+					</tr>
+				</table>
+			</div>			
+			<iframe name="mallFrame" id="mallFrame" src="http://store.isky.co.kr/accessory/accessoryRelation.asp?Uid=562&telCode=KT" frameborder="0" width="100%" height=""  marginwidth="0" marginheight="0" scrolling="no" onload="resizeFrame(this)"></iframe>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+ function exPageResize(){
+ document.Frm.action="http://store.isky.co.kr/accessory/accessoryRelation.asp?Uid=562&telCode=KT";
+ document.Frm.target ="mallFrame";
+ document.Frm.h.value=document.body.scrollHeight;
+ document.Frm.submit();
+ }
+ 
+//exPageResize();
+
+//-->
+</SCRIPT>
+			<div class="tar p15t"><a href="javascript:ProductList()"><img src="/static/images/common/btn/bd_list.gif" border="0" alt="목록보기" /></a></div>			
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.pantech.com/" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</body>
+</html>

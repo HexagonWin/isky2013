@@ -1,0 +1,252 @@
+@charset "utf-8";
+/************************************************************
+*
+*  Cascading Style Sheets  (common)
+*
+************************************************************/
+
+html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+ul,li,dt,dd,dl { margin: 0;padding:0; list-style-type:none;}
+
+/************************************************************
+*   LINK
+************************************************************/
+A {color:#5e5e5e ; text-decoration: none; }
+A:hover {color:#5e5e5e ; text-decoration: none;}
+
+/************************************************************
+*   TAG
+************************************************************/
+body,td,form,option,select,input,textarea,p,br,th,div,span,pre,blockquote,center,dt,dd,ul,li {color: #5e5e5e ; }
+
+.body_none {background:none;}
+
+textarea { border: solid 1px #727272;} 
+
+img { border: 0 ; }
+
+
+
+/************************************************************
+*   CUSTOM       
+************************************************************/
+
+
+/* TABLE ******************/
+.fixed { table-layout: fixed }
+.break { word-break: break-all ; word-wrap:break-word }
+.keep { word-break: keep-all }
+
+/* FORM ******************/
+.nobb { border: 0 ; background: none;}
+.input_text { border: solid 1px #c8c8c8;background-color:#ffffff;margin:0;font-size:0.95em;color:#a1a0a0;padding:4px 0 0 5px;}
+.input_searchBox {background:#f2f2f2 url('/WiMAX/static/images/searchBox_bg.gif') no-repeat;border:solid 1px #d9d9d9;color:#666666; padding: 0 5px 0 5px;}
+
+/* BOLD ******************/
+.b { font-weight: bold }
+
+.c_5 {color:#555555;}
+.c_6 {color:#666666;}
+.c_e {color:#e5e8f6;}
+.c_f {color:#FFFFFF;}
+.c_39 {color:#3944ca}
+
+
+/* PADDING **********/
+.p3t {padding-top:3px;}
+.p5t {padding-top:5px;}
+.p15t {padding-top:15px;}
+.p20t {padding-top:20px;}
+.p30t {padding-top:30px;}
+.p40t {padding-top:40px;}
+.p45t {padding-top:45px;}
+.p50t {padding-top:50px;}
+.p3r {padding-right:3px;}
+.p5r {padding-right:5px;}
+.p10r {padding-right:10px;}
+.p15r {padding-right:15px;}
+.p20r {padding-right:20px;}
+.p2b {padding-bottom:2px;}
+.p5b {padding-bottom:5px;}
+.p7b {padding-bottom:7px;}
+.p10b {padding-bottom:10px;}
+.p15b {padding-bottom:15px;}
+.p20b {padding-bottom:20px;}
+.p22b {padding-bottom:22px;}
+.p25b {padding-bottom:25px;}
+.p30b {padding-bottom:30px;}
+.p40b {padding-bottom:40px;}
+.p50b {padding-bottom:50px;}
+.p60b {padding-bottom:60px;}
+.p40b {padding-bottom:40px;}
+.p15b {padding-bottom:15px;}
+.p5l {padding-left:5px;}
+.p8l {padding-left:8px;}
+.p10l {padding-left:10px;}
+.p13l {padding-left:13px;}
+.p15l {padding-left:15px;}
+.p20l {padding-left:20px;}
+.p25l {padding-left:25px;}
+.p20l {padding-left:20px;}
+.p30l {padding-left:30px;}
+
+.m0 {margin:0;}
+.m1t {margin:1px;}
+.m3t {margin-top:3px;}
+.m10t {margin-top:10px;}
+.m20t {margin-top:20px;}
+.m30t {margin-top:30px;}
+.m10b {margin-bottom:10px;}
+.m5l {margin-left:5px;}
+.m10l {margin-left:10px;}
+
+.tac {text-align:center;}
+.tar {text-align:right;}
+.tal {text-align:left;}
+
+.vam {vertical-align:middle;}
+
+
+/* Calendar
+.popCalendar {position:absolute;left:0;top:0;width:147px;}
+.popCalendar .month {margin:0 auto;height:29px;background:url('/static/images/common/calendar/topBg.gif') no-repeat;}
+.popCalendar .month .monthNum {font-family:tahoma;font-weight:bold;font-size:0.9em;color:#FFFFFF;}
+.popCalendar .day {padding:5px 0 5px 0;background:url('/static/images/common/calendar/middleBg.gif') repeat-y;}
+.popCalendar .day th, .popCalendar .day td {text-align:center;}
+.popCalendar .day td {font-family:tahoma;font-size:0.75em;color:#999999;}
+.popCalendar .day td.today {background:url('/static/images/common/calendar/todayBg.gif') no-repeat;color:#FFFFFF;font-weight:bold;}
+.popCalendar .day td.week {color:#f98020;}
+ */
+.popCalendar {position:absolute;left:0;top:0;width:147px;}
+.popCalendar .month {height:29px;padding:0 0 0 12px;background:url('/static/images/common/calendar/topBg.gif') no-repeat;}
+.popCalendar .month table {margin:0 auto;}
+.popCalendar .month .monthNum {font-family:tahoma;font-weight:bold;font-size:0.75em;color:#FFFFFF;}
+.popCalendar .day {padding:5px 0 5px 10px;background:url('/static/images/common/calendar/middleBg.gif') repeat-y;}
+.popCalendar .day table {margin:0 auto;}
+.popCalendar .day th, .popCalendar .day td {text-align:center;}
+.popCalendar .day td {font-family:tahoma;font-size:0.6em;color:#999999;}
+.popCalendar .day td.today {background:url('/static/images/common/calendar/todayBg.gif') no-repeat;color:#FFFFFF;font-weight:bold;}
+.popCalendar .day td.week {color:#f98020;}
+
+/* filedownifrm */
+.filedownifrm {visibility:hidden;display:none;}
+
+/* imgBox border layer */
+.thumb_layer_on {position:absolute;border:solid 3px #455ac9;display:block;width:113px;height:113px;left:0;top:0;} /* Normal */
+.thumb_layer01050101_on {position:absolute;border:solid 3px #455ac9;display:block;width:169px;height:138px;left:0;top:0;} /*TVCF*/
+.thumb_layer01_on {position:absolute;border:solid 3px #455ac9;display:block;width:113px;height:121px;left:0;top:0;} /* Product List */
+.adPrintList_layer_on {position:absolute;border:solid 3px #455ac9;display:block;width:100px;height:95px;left:0;top:0;} /* Ad Print List */
+.cs_mainOn {position:absolute;border:solid 3px #455ac9;display:block;width:179px;height:180px;left:0;top:0;z-index:10;}
+
+/* 7 9 그림자박스 - pc accesory */
+.gradientBox79 {position:relative;width:126px;height:128px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;z-index:1;}
+.gradientBox79 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox79 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox79 .imgBox {position:relative;width:119px;height:119px;background:url('/static/images/product/imgBox119119.gif') right bottom no-repeat;z-index:3;}
+.gradientBox79 .imgBoxPhone {position:relative;width:119px;height:119px;background:url('/static/images/product/imgBox119119.gif') right bottom no-repeat;z-index:3;}
+.gradientBox79 .imgBox img.thumb {margin:9px 0 0 9px;}
+.gradientBox79 .imgBox img.thumb2 {margin:12px 0 0 12px;}
+.gradientBox79 .imgBox img.thumbPhone {margin:15px 0 0 36px;}
+.gradientBox79 .hotcon {position:absolute;width:38px;height:38px;z-index:4;} /* Hot */
+
+/* 7 9 그림자박스 - product list */
+.gradientBox792 {position:relative;width:126px;height:136px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;z-index:1;}
+.gradientBox792 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox792 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox792 .imgBox127 {position:relative;width:119px;height:127px;background:url('/static/images/product/imgBox119127.gif') right bottom no-repeat; text-align:center;z-index:3;}
+.gradientBox792 .imgBox127 img.thumb {margin:24px 0 0 0;}
+
+/* 7 9 그림자박스 - 광고갤러리 - tv cf */
+.gradientBox793 {position:relative;width:182px;height:153px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;z-index:1;}
+.gradientBox793 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox793 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox793 .imgBox175 {position:relative;width:175px;height:144px;background:url('/static/images/product/imgBox175144.gif') right bottom no-repeat;z-index:3;}
+.gradientBox793 .imgBox175 img.thumb {margin:25px 0 0 25px;border:solid 2px #000;}
+
+/* 7 9 그림자박스 - 광고갤러리 - 인쇄광고 */
+.gradientBox794 {position:relative;width:396px;height:563px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;margin:0 auto;z-index:1;}
+.gradientBox794 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox794 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox794 .imgBox369 {position:relative;width:389px;height:554px;background:url('/static/images/product/imgBox369534.gif') right bottom no-repeat;z-index:3;}
+.gradientBox794 .imgBox369 img.thumb {margin:10px 0 0 10px;}
+
+.gradientBox795 {position:relative;width:113px;height:110px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;margin:0 auto;z-index:1;}
+.gradientBox795 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox795 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox795 .imgBox106 {position:relative;width:106px;height:101px;background:url('/static/images/product/imgBox106101.gif') right bottom no-repeat;z-index:3;}
+.gradientBox795 .imgBox106 img.thumb {margin:11px 0 0 11px;}
+
+/* 7 9 그림자박스 - PC Accessory- wallpaper */
+.gradientBox796 {position:relative;width:499px;height:365px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;margin:0 auto;z-index:1;}
+.gradientBox796 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox796 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox796 .imgBox492 {position:relative;width:492px;height:356px;background:url('/static/images/product/imgBox492356.gif') right bottom no-repeat;z-index:3;}
+.gradientBox796 .imgBox492 img.thumb {margin:21px 0 0 21px;}
+
+
+/* 7 9 그림자박스 - musthave main- emoticon */
+.gradientBox797 {position:relative;width:101px;height:103px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;margin:0 auto;z-index:1;}
+.gradientBox797 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox797 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox797 .imgBox50 {position:relative;width:94px;height:94px;background:url('/static/images/product/imgBox9494.gif') right bottom no-repeat;z-index:3;} /* musthave main emoticon */
+.gradientBox797 .imgBox50 img.thumb {margin:21px 0 0 21px;border:solid 1px #91b6dd;}
+.gradientBox797 .hotcon {position:absolute;width:38px;height:38px;z-index:4;} /* Hot */
+
+.gradientBox797N {position:relative;width:101px;height:103px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;z-index:1;}
+.gradientBox797N .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox797N .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox797N .imgBox50 {position:relative;width:94px;height:94px;background:url('/static/images/product/imgBox9494.gif') right bottom no-repeat;z-index:3;} /* musthave main emoticon */
+.gradientBox797N .imgBox50 img.thumb {margin:21px 0 0 21px;border:solid 1px #91b6dd;}
+
+
+/* 7 9 그림자박스 - product list */
+.gradientBox798 {position:relative;width:126px;height:136px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;z-index:1;}
+.gradientBox798 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox798 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+
+.gradientBox798 .imgBox127 {position:relative;width:119px;height:127px;background:url('/static/images/product/imgBox119127.gif') right bottom no-repeat; text-align:center;z-index:3;}
+.gradientBox798 .imgBox127 img.thumb {margin:8px 0 0 0;}
+
+
+/* 7 9 그림자박스 - 아이디비밀번호찾기 */
+.gradientBox490 {position:relative;width:498px;height:110px;background:url('/static/images/common/gradient/79_box.gif') right bottom no-repeat;text-align:left;margin:0 auto;z-index:1;}
+.gradientBox490 .rt79 {position:absolute;width:7px;height:9px;right:0;top:0;z-index:2;}
+.gradientBox490 .lb79 {position:absolute;width:9px;height:9px;left:0;bottom:0;z-index:2;}
+.gradientBox490 .conttxt {width:488px;height:59px;border:solid 1px #969696;text-align:center;padding:40px 0 0 0 ;}
+.gradientBox490 .conttxt span {font-weight:bold;font-size:1.2em;color:#496cbb;}
+.gradientBox490 .conttxt span img {vertical-align:text-bottom;}
+.gradientBox490 .conttxt2 {width:488px;height:59px;border:solid 1px #969696;text-align:center;padding:35px 0 5px 0 ;}
+.gradientBox490 .conttxt2 span.name {font-weight:bold;font-size:1.2em;color:#496cbb;}
+.gradientBox490 .conttxt2 span.name img {vertical-align:text-bottom;}
+.gradientBox490 .conttxt2 span.email {display:block;font-weight:bold;font-size:1em;color:#496cbb;padding:10px 0 0 0;}
+.gradientBox490 .conttxt2 span.email img {vertical-align:text-bottom;}
+.gradientBox490 .conttxt3 {width:488px;height:99px;border:solid 1px #969696;text-align:center;}
+.gradientBox490 .conttxt3 td {font-weight:bold;color:#496cbb;}
+.gradientBox490 .conttxt3 td img {vertical-align:middle;margin-left:10px;}
+
+
+
+/* 3 3 그림자박스 - product searchResult */
+.gradientBox33 {position:relative;width:713px;background:url('/static/images/common/gradient/33_box.gif') right bottom no-repeat;z-index:1;}
+.gradientBox33 .rt33 {position:absolute;width:3px;height:3px;right:0;top:0;z-index:2;*right:-1px;}
+.gradientBox33 .lb33 {position:absolute;width:3px;height:3px;left:0;bottom:0;z-index:2;*bottom:-1px}
+
+
+
+/* error page */
+.errorPage {position:relative;width:606px;height:215px;margin:0 auto;padding:200px 0 0 0;background:url('/static/images/common/error/error.gif') 0 200px no-repeat;}
+.errorPage .btn {position:absolute;right:0;bottom:0;}
+.errorPage .btn ul {width:400px;float:right;}
+.errorPage .btn li {float:left;}
+.errorPage .btn li.pre {width:134px;}
+.errorPage .btn li.main {width:136px;}
+.errorPage .btn li.center {width:130px;}

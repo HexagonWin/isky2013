@@ -1,0 +1,221 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/leader/glory_view.jsp">
+
+	<input type="hidden" name="seq" value="vA1l8UMkS58~JQwe5_YIBRA~">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function chkfrm()
+{
+
+		goLogin();
+
+	document.frm.act.value = "cmtwrite";
+}
+
+function delcmt(seq)
+{
+	if(confirm("정말로 삭제하시겠습니까?"))
+	{
+		document.frm.act.value = "cmtdel";
+		document.frm.seq.value = seq;
+		document.frm.submit();
+	}
+}
+
+function chgTh(seq)
+{
+	if(seq != "")
+		location.href = "glory_view.jsp?seq=" + seq;
+}
+//-->
+</SCRIPT>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,2,2);var gocn=2;</script><script language="javascript" src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_glory.gif" height="52"></div>
+				<div id="Path"><script>path('2_2_2')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div class="box5">
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_top.gif" height="10"></div> 
+						<!-- 검색 //-->
+					<div class="aR m_b10 m_r15">
+						<img src="http://www.isky.co.kr/source/img/bbs/th2_select.gif">
+						<select class="sel01" onChange="chgTh(this.value)">
+							<option value="">다른 기수인터뷰</option>
+
+							<option value="i/T2IhPMOd4~K4XyiTAtq2A~">IM-S110,S110K기수 박철희님</option>
+
+							<option value="xFflIvOu16w~crTwuuZTwnQ~">IM-S110,S110K기수 조영경님</option>
+
+
+						</select>
+					</div>
+					<!--// 검색 -->
+						<div style="padding:5 10;">
+							<div><HTML><HEAD>
+<META content="MSHTML 6.00.2800.1578" name=GENERATOR></HEAD>
+<BODY style="FONT-SIZE: 9pt; MARGIN: 0px; LINE-HEIGHT: 14pt; FONT-FAMILY: 굴림">
+<TABLE cellSpacing=0 cellPadding=0 width=549 align=center border=0>
+<TBODY>
+<TR class=line vAlign=top>
+<TD>
+<DIV><IMG src="http://www.isky.co.kr/source/img/withsky/honorview1_01.gif" useMap=#interviewMap></DIV>
+<DIV><IMG src="http://www.isky.co.kr/source/img/withsky/honorview1_02.gif"></DIV>
+<DIV><IMG src="http://www.isky.co.kr/source/img/withsky/honorview1_03.gif"></DIV>
+<DIV><IMG src="http://www.isky.co.kr/source/img/withsky/honorview1_04.gif"></DIV></TD></TR></TBODY></TABLE><MAP name=interviewMap><AREA shape=RECT coords=13,147,130,176 href="experience_pre_list.jsp?pid=IM-S110,S110K&amp;uid=myth0409"></MAP></BODY></HTML></div>
+
+							<!-- 이전글/다음글 //-->
+							<table width="549" border="0" cellpadding="0" cellspacing="0" class="view01 m_t15" align="center">
+							<col width="70" class="p_t3">
+							<col width="479" class="p_t3 p_l10">
+							<tr class="line"><td colspan="2"></td></tr>
+
+							<tr class="line"><td colspan="2"></td></tr>
+
+							<tr height="25">
+								<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_next.gif"></th>
+								<td><a href="glory_view.jsp?seq=rWEAIlE03Co~eUmJfMzTVZo~">8기 명예리더 조영경 인터뷰</a></td>
+							</tr>
+
+							<tr height="3" class="line"><td colspan="2"></td></tr>
+							</table>
+							<!--// 이전글/다음글 -->
+
+						</div>
+						<div><img src="http://www.isky.co.kr/source/img/global/box5_btm.gif" height="10"></div>
+					</div>
+
+					<!-- 한줄리플 //-->
+					<div class="m_t15">
+						<div class="L p_t8"><h3 style="margin:0;"><img src="http://www.isky.co.kr/source/img/withsky/leader/glory_view_tss02.gif" align="absmiddle" class="m_b3"><font class="violet2 b"> 1</font><img src="http://www.isky.co.kr/source/img/withsky/leader/glory_view_tss02_2.gif" class="m_l2 m_b3" align="absmiddle"></h3></div>
+	
+						<div class="R"><a href="glory_view.jsp?seq=5sTuITEXevk~6xvz/94yK0I~&pid=IM-8100&mycmt=Y"><img src="http://www.isky.co.kr/source/img/bbs/btn1_myreply.gif" height="23"></a></div>
+
+						<span class="clear"></span>
+					</div>
+
+					<div class="reply m_t5">
+						<div class="reply_top">
+							<!-- 한줄 쓰기 //-->
+							<div class="m_l3">
+<iframe id=ifrm name=ifrm width=0 height=0></iframe>
+<form name=frm method=post target=ifrm action="glory_exec.jsp" style="margin:0" onSubmit="return chkfrm()">
+<input type=hidden name="act" value="cmtwrite">
+<input type=hidden name="glory_seq" value="4">
+<input type=hidden name="seq">
+								<input type="text" name="content" style="width:493"> <input type=image src="http://www.isky.co.kr/source/img/bbs/btn4_submit.gif" height="17" align="absmiddle" class="inputbtn" style="height:17">
+</form>
+							</div>
+						</div>
+						<div class="reply_btm">
+
+							<table border="0" cellpadding="0" cellspacing="0" class="m_t20">
+							<col width="80" class="p_t3 p_l10">
+							<col width="390" class="p_t3 p_l10">
+							<col width="73" align="center" class="p_t3">
+
+	
+							<tr height="26">
+								<td class="b">lee2031913</td>
+								<td class="lbar">ㅎㅎㅎ 글을 읽고 있으니 저도 한번 꼭 해보고 싶은 맘이 드네요! ^^
+
+								</td>
+								<td>2007/02/01</td>
+							</tr>
+
+							</table>
+						</div>
+					</div>
+					<!--// 한줄리플 -->
+
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_prize_view.jsp?eventid=VbEbbM3lMek~yG0lpLZisZ0~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/skyleader_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/brandstory/sponsor/superpreview.jsp"><img src="http://file.isky.co.kr/upload/r_banner/superpreview.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

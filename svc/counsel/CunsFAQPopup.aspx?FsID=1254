@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1254" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFVTQuuTnOudvOydtOuyhOqwgCDrqqjrkZAg7ISk7LmY65CY7Ja0IOyeiOqzoCDrqZzroaAg7ZSM66CI7J207Ja064+EIOygleyDgeyggeycvOuhnCDrj5nsnpHtlZjqs6Ag7J6I7Iq164uI64ukLiDqt7jrn7DrjbAgVVNC7Y+s7Yq4IOyduOyLneydtCDrkJjsp4Ag7JWK6rOgIOyXsOqysOydtCDrkJjsp4Ag7JWK7Iq164uI64ukLjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxGT05UIHNpemU9Mlw+6rOg6rCd64uY6ruY7IScIOyCrOyaqe2VmOqzoCDsnojripQg7Lu07ZOo7YSw6rCAIFdpbi1TcHl3YXJlL2lHdWFyZOudvOqzoCDtlZjripQgVVNCIOq0gOugqCDrsJTsnbTrn6zsiqTsl5Ag6rCQ7Je865CcIOqyveyasOyeheuLiOuLpC4mbmJzcFw7IOydtCDrsJTsnbTrn6zsiqTripQg7J247YSw64S37J2EIO2Gte2VtCDqs6DqsJ3ri5jsnZgg7Lu07ZOo7YSw66GcIOy5qO2IrOulvCDtlZjqsozrkJjrqbAg66qo646A7Y+s7Yq47J2YIOqwkuydhCDsnoTsnZjroZwg67OA6rK97ZWY7JesIOuNsOydtO2EsCDrp6Tri4jsoIDsl5DshJwgVVNC7Y+s7Yq4IOqygOyDieydhCDrsKntlbTtlanri4jri6QuXDwvRk9OVFw+Oz4+Oz47Oz47Pj47Pj47Pg==" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">USB드라이버가 모두 설치되어 있고 멜론 플레이어도 정상적으로 동작하고 있습니다. 그런데 USB포트 인식이 되지 않고 연결이 되지 않습니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent"><FONT size=2>고객님께서 사용하고 있는 컴퓨터가 Win-Spyware/iGuard라고 하는 USB 관련 바이러스에 감염된 경우입니다.&nbsp; 이 바이러스는 인터넷을 통해 고객님의 컴퓨터로 침투를 하게되며 모뎀포트의 값을 임의로 변경하여 데이터 매니저에서 USB포트 검색을 방해합니다.</FONT></span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

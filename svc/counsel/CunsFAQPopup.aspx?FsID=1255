@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1255" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFdpbi1TcHl3YXJlL2lHdWFyZCDrsJTsnbTrn6zsiqTripQgUEPsmYAg642w7J207YSwIOunpOuLiOyggCDtlITroZzqt7jrnqgg7KSRIOyWtOuKkOyqveyXkCDsuajtiKztlZjsl6wg67Cc7IOd7ZWcIOqyg+yduOyngOyalD8gOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxQQ+yeheuLiOuLpC4g66y47KCc7J2YIOuwlOydtOufrOyKpOuKlCDsnbjthLDrhLfsnYQg7Ya17ZW0IOyCrOyaqeyekOydmCBQQ+yXkCDsuajtiKztlZjsl6wg7IKs7Jqp7J6QIFBD7J2YIOugiOyngOyKpO2EsCDqsJLsnYQg67OA6rK97ZWp64uI64ukLiDqt7jrnpjshJwg7LKY7J2M7JeQIOygleyDgeyggeyduCDrj5nsnpHsnbQg6rCA64ql7ZaI642YIFBD64+EIOuwlOydtOufrOyKpOyXkCDqsJDsl7zrkJwg7J207ZuE7JeQ64qUIOyXsOqysOydtCDrkJjsp4Ag7JWK7Iq164uI64ukLjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">Win-Spyware/iGuard 바이러스는 PC와 데이터 매니저 프로그램 중 어느쪽에 침투하여 발생한 것인지요? </span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent">PC입니다. 문제의 바이러스는 인터넷을 통해 사용자의 PC에 침투하여 사용자 PC의 레지스터 값을 변경합니다. 그래서 처음에 정상적인 동작이 가능했던 PC도 바이러스에 감염된 이후에는 연결이 되지 않습니다.</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

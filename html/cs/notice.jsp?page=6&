@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/cs/notice.jsp">
+
+	<input type="hidden" name="page" value="6">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/cs.css">
+<script language="javascript">
+<!--
+	function goView(form, idx)
+	{
+		form.action = "notice_view.jsp";
+		form.msgid.value = idx;
+		form.submit();
+	}
+//-->
+</script>
+</head>
+<body>
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(4,6);var gocn=4;</script><script language="javascript"  src="/inc/js/quick.js"></script></div>
+	<div id="Grid2">
+		<script>Mnav(4);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/cs/t_notice.gif" height="52"></div>
+				<div id="Path"><script>path('4_6')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div><img src="http://www.isky.co.kr/source/img/cs/notice_img01.gif" width="570" height="73"></div>
+<form name=iForm method=post>
+	<input type="hidden" name="page" value="6">
+	<input type="hidden" name="msgid" value="">
+</form>
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="list04 m_t20">
+					<col width="61" align="center" class="l18 p_t2"/>
+					<col width="324" class="p_l10 l18 p_t2"/>
+					<col width="116" align="center" class="l18 p_t2"/>
+					<col width="68" align="center" class="l18 p_t2"/>
+					<tr height="22">
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_no.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_title.gif"></th>
+						<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th_date.gif"></th>
+						<th><img src="http://www.isky.co.kr/source/img/bbs/th_hit.gif"></th>
+					</tr>
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+
+					<!-- 반복 * 10 , 마지막 라인은 class="dot" 제외 //-->
+	
+					<tr height="26" class="dot">
+						<td>70</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'rHxSApyvelI~tkRduWcI47A~')">IM-S110K 최신 S/W 배포</a>
+						</td>
+						<td>2006/10/04</td>
+						<td>17402</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>69</td>
+						<td>
+
+							<a href="javascript:goView(iForm, '5t9AAnySGCE~KH5V89CmZeY~')">IM-S100 최신 S/W 배포</a>
+						</td>
+						<td>2006/09/22</td>
+						<td>18111</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>68</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'CKXTAt0vSmc~Edf/qSbOEwM~')">서비스 센터 임시 휴무 (9/23)</a>
+						</td>
+						<td>2006/09/18</td>
+						<td>6653</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>67</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'QQjCAr0S6DU~kKRoRLzoFZ8~')">용산 서비스센터 임시 휴무 (9/18일)</a>
+						</td>
+						<td>2007/02/21</td>
+						<td>833</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>66</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'G8bNAn17Kaw~LwHxC6CWUhE~')">IM-H100 사용관련 FAQ</a>
+						</td>
+						<td>2006/09/07</td>
+						<td>3183</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>65</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'oa2kAt2MRI4~z3a3wiu8QZc~')">IM-S110 최신 S/W 배포</a>
+						</td>
+						<td>2006/08/24</td>
+						<td>17843</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>64</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'e2uwAp31hQQ~lCNC2Rgg7xo~')">온라인 쇼핑몰 오픈 예정(8/7)</a>
+						</td>
+						<td>2006/08/04</td>
+						<td>6194</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>63</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'tM6eAn3YI9M~hDS_MlcWqps~')">용산 서비스센터 임시 휴무 (8/7일)</a>
+						</td>
+						<td>2006/08/03</td>
+						<td>1029</td>
+					</tr>
+	
+					<tr height="26" class="dot">
+						<td>62</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'ndi5AdtdKFE~hArIL3ZwslI~')">특별 재난 지역에 대한 무상 서비스 행사 실시</a>
+						</td>
+						<td>2006/07/20</td>
+						<td>6254</td>
+					</tr>
+	
+					<tr height="26" class="">
+						<td>61</td>
+						<td>
+
+							<a href="javascript:goView(iForm, 'd5bFAZvGacc~qJQUJPYFOno~')">IM-8700 최신 S/W 배포</a>
+						</td>
+						<td>2006/07/04</td>
+						<td>5668</td>
+					</tr>
+
+					<!--// 반복 * 10 -->
+					<tr height="3"><td colspan="4"><!-- space --></td></tr>
+					</table>
+
+					<!-- page //-->
+					<div class="page">
+						<a href=notice.jsp?page=4&><img src=http://www.isky.co.kr/source/img/bbs/page_prev.gif width='36' height='10' class='aT'></a><a href=notice.jsp?page=5&>5</a>&nbsp;|&nbsp;&nbsp;<b>6</b>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=7&>7</a>&nbsp;|&nbsp;&nbsp;<a href=notice.jsp?page=8&>8</a>&nbsp;<a href=notice.jsp?page=9&><img src=http://www.isky.co.kr/source/img/bbs/page_next.gif width='36' height='10' class='aT'></a>
+					</div>
+					<!--// page -->
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_cs_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="javascript:link(4,1)"><img src="http://www.isky.co.kr/source/img/global/right_cs_selfupgrade.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,4)"><img src="http://www.isky.co.kr/source/img/global/right_cs_cscenter.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="javascript:link(4,5)"><img src="http://www.isky.co.kr/source/img/global/right_cs_diagnosis.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div>
+				<!--// 우측 배너 -->
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+</body>
+</html>

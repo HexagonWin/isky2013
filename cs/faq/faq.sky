@@ -1,0 +1,380 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/faq.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/faq.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/faq.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100330");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="0501"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/static/js/selector.basic.js"></script>
+<script type="text/javascript" src="/static/js/selector.html.js"></script>
+<script language="JavaScript" src="/static/js/cs/faq/faq.js"></script>
+</head>
+
+<body >
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0501&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_Blank.swf?PageCode=0501','222','630','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=0501','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/cs/d3title_faq.gif" border="0" alt="차주찾는도움말" title="차주찾는도움말" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			
+			<form name="faqForm" method="post">
+			<input type="hidden" name="dispNum"/>
+			<input type="hidden" name="targetPage"/>
+			<input type="hidden" name="pagePerArticleCnt"/>
+			<input type="hidden" name="targetGroup"/>
+			<input type="hidden" name="searchCategoryBigCode" value=""/>
+			<input type="hidden" name="searchCategoryBigName" value=""/>
+			<input type="hidden" name="searchCategoryMidCode" value=""/>
+			<input type="hidden" name="searchCategoryMidName" value=""/>
+			<!-- 현재 선택되어진 텝 번호  -->
+			<input type="hidden" name="selectTabNum" value="0"/>
+
+			<div id="roundbox">
+				<div class="roundbox_01"><img src="/static/images/cs/roundbox_01.gif" /></div>
+				<div class="searchBox"><ul
+					><li class="tit"><img src="/static/images/cs/faqsearch_tit.gif" /></li
+					><li class="select2"><select name="selectCategoryBig" id="s1" style="width:143px;" onChange="getCategoryMid(this.value);" >
+						<option value="">대 분류</option>
+						
+						<option value="21001">제품/소프트웨어</option>
+						
+						<option value="21002">사이트이용</option>
+						
+						<option value="21003">LIVE 메시지</option>
+						
+						<option value="21004">IT 스토어</option>
+						
+						<option value="21005">기타</option>
+						
+					</select></li
+					><li class="select2">
+					<select name="selectCategoryMid" id="s2" style="width:143px;" >
+						<option value="" >중 분류</option>
+					</select>
+					</li>
+					<li class="input"><input type="text" name="searchTitle" class="input_text" style="width:285px;" onKeyDown="if (event.keyCode == 13)doSubmit();"/></li>
+					<li class="btn"><a href="javascript:doSubmit();"><img src="/static/images/common/btn/1_search.gif" border="0" alt="검색" /></a></li>
+					</ul>
+				<script type="text/javascript">
+					var s1;
+					var s2;
+					function loadSelecBox(){
+						s1 = new Selectbox('s1', {fontSize:12,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+						s2 = new Selectbox('s2', {fontSize:12,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+					}
+					if ( window.attachEvent )
+						window.attachEvent('onload', loadSelecBox);
+					else
+						window.addEventListener('load', loadSelecBox, false);
+				</script>
+				</div>
+				<div class="roundbox_03"><img src="/static/images/cs/roundbox_03.gif" /></div>
+			</div>
+			<!-- [e] s/w 다운로드 -->
+
+			<div class="blank20"></div>
+			<div overflow:hidden>
+			<!-- 
+			<iframe name="list" src="/cs/faq/faqList.sky" style="border:0px" width="750" height="480" frameborder="0" marginwidth="0" marginheight="0"  ></iframe>
+			-->
+			<div id="faqCnt" class="faqTab"><ul
+				><li><a href="#faqCnt1" onclick="goTab(1);return false;"><img src="/static/images/cs/faq_tab_01.gif" border="0" alt="전체" title="전체" /></a></li
+				><li><a href="#faqCnt2" onclick="goTab(2);return false;"><img src="/static/images/cs/faq_tab_02.gif" border="0" alt="제품/SW" title="제품/SW" /></a></li
+				><li><a href="#faqCnt3" onclick="goTab(3);return false;"><img src="/static/images/cs/faq_tab_03.gif" border="0" alt="사이트이용" title="사이트이용" /></a></li
+				><li><a href="#faqCnt4" onclick="goTab(4);return false;"><img src="/static/images/cs/faq_tab_04.gif" border="0" alt="Live 메시지" title="Live 메시지" /></a></li
+				><li><a href="#faqCnt5" onclick="goTab(5);return false;"><img src="/static/images/cs/faq_tab_05.gif" border="0" alt="IT 스토어" title="IT 스토어" /></a></li
+				><li><a href="#faqCnt6" onclick="goTab(6);return false;"><img src="/static/images/cs/faq_tab_06.gif" border="0" alt="기타" title="기타" /></a></li
+			></ul></div>
+			<!-- [s] faqCnt1 -->
+			<div id="faqCnt1">
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_csFAQ">
+			<colgroup>
+				<col width="55"></col>
+				<col width="105"></col>
+				<col width="580"></col>
+			</colgroup>
+				<!-- 검색 리스트 시작  -->
+				
+				
+				
+				<tr valign="top">
+					<td align="center">113</td>
+					<td class="category">기타</td>
+					<td><a href ="javascript:viewContents('faq1_113');">[문서다운로드] 휴대폰 비밀번호 분실 시 해제동의서 및 위임장 양식</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_113">
+					<td colspan="3" width="740" class="faqAnswer">휴대폰 비밀번호 분실 시 필요한 서류입니다.<br>고객님의 여건에 따라 필요한 서류를 확인하시고 서비스센터에 방문하시어 불편함 없으시길 바랍니다.<br><br><img src="/images/support/faq_img_etc_pw.jpg" width="685" height="253" border="0" alt="" usemap="#download"><map name="download"><area shape="rect" coords="169,108,232,125" href="/images/support/해제동의서_및_위임장.ppt" target="_blank"></map><br><br> ▶ 미성년자의 경우 신분증은 학생증 및 여권으로 대체할 수 있음.(반드시 사진이 부착되어 신분 확인이 되어야 함)<br> ▶ 사업자별 가입 증명서는 각 이동통신사 직영 대리점 (또는 지점)에서 출력 가능함. (SKT의 경우 T월드에서 출력 가능함)  <br> ▶ * 해제동의서(확약서)- 미개통 단말기 비밀번호 해제시 필요하며, 서비스센터에 구비되어 있는 양식을 이용함.  <br><br><br>  * 해제동의서 및 위임장 <a href="/images/support/해제동의서_및_위임장.ppt" target="_blank" class="c_39">  ▶ Download</a><br></td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">112</td>
+					<td class="category">주문/배송</td>
+					<td><a href ="javascript:viewContents('faq1_112');">스카이액세서리와 스페셜샵은 같이 주문 안되나요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_112">
+					<td colspan="3" width="740" class="faqAnswer">스카이액세서리와 스페셜샵 상품은 별도 업체의 별도 관리를 통해 제공되고 있습니다. <br>따라서 <b>두 카테고리의 상품들은 같이 구매하실 수 없으며</b><br>배송/교환/환불 등의 정책도 일부 차등적으로 적용되고 있으니 반드시 확인하신 후 구매해주시기 바랍니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">111</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_111');">상품을 반품하고 싶은데 어느 택배사를 이용해야 하나요? </a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_111">
+					<td colspan="3" width="740" class="faqAnswer">반품 접수 시 주문하신 상품의 배송 업체마다 이용하는 택배사가 다르므로, <br>업체 확인 후 안내해 드리고 있으며 안내 받으신 택배사로 고객님께서 직접 접수해 주셔야 합니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">110</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_110');">접수 후 운영자의 답변에 따라 상품을 반송하려고 하는데, 택배사에서 연락이 없어요.</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_110">
+					<td colspan="3" width="740" class="faqAnswer">반품/교환 신청 접수 후 운영자의 답변에 따라 반송 절차가 진행될 경우  2~3일내로 택배 기사님께서 연락드리고 방문해 드립니다.<br>혹시라도 3일(연휴 및 주말 제외) 이상 아무런 연락이 없이 회수가 지연될 경우에는 저희 '고객지원 > 온라인상담'으로 연락을 주시면 택배사에 확인 및 재요청을 드리겠습니다.<br><br>또는 고객님께서 직접 택배를 이용하시어 반품하시는 경우 택배사에 문의하시고 회수지연을 알려주신 후 빠른 시일내에 수거될 수 있도록 요청해 주시기 바랍니다.</td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">109</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_109');">여러 건 상품을 함께 주문했는데, 일부만 취소/반품/교환할 수 있나요? </a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_109">
+					<td colspan="3" width="740" class="faqAnswer">IT 스토어에서는 주문에 대한 전체 취소/반품/교환만 가능합니다. <br><br>일부 상품의 취소만 원하실 경우 전체 취소후 다시 주문해주실 것을 부탁드리며, <br>반품/교환의 경우 반품/교환신청 접수 시 반품/교환을 원하는 상품에 대한 정보를 정확히 기재해주신 후 운영자의 답변에 따라 반품/교환을 진행해주시길 바랍니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">108</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_108');">신용카드 결제 후 주문취소 시 현금환불을 받을 수 있나요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_108">
+					<td colspan="3" width="740" class="faqAnswer">환불 시 동일 결제 수단으로만 환불이 가능합니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">107</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_107');">반품/교환 가능 또는 불가능 조건이 있나요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_107">
+					<td colspan="3" width="740" class="faqAnswer">■ 주문 후 배송이 완료된 상품의 경우 아래의 경우에 한해서만 배송완료일 후 7일 이내에 반품/교환을 해드리고 있습니다. <br>- 공급받으신 상품이 상품정보에서 표기, 광고된 내용과 다른 경우 - 공급받으신 상품에 하자가 있는 경우 <br><br>■ 아래의 경우에는 정책적으로 반품/교환을 해드릴 수 없습니다. <br>- 단순변심 <br>- 공급받으신 상품의 훼손 및 상품가치가 떨어진 경우 (박스 개봉, 상품의 사용으로 상품 가치가 훼손된 경우) <br><br>단, 상품의 특성에 따라 기간 및 조건에 일부 차이가 있을 수 있습니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">106</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_106');">교환 시 상품 재배송은 어떻게 확인 하나요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_106">
+					<td colspan="3" width="740" class="faqAnswer">교환 상품의 배송은 IT 스토어에서 확인은 어렵습니다. <br>주문번호와 교환 상품을 보내신 운송장번호를 확인하시어 '고객지원 > 온라인상담'으로 문의 주시면 진행 여부 확인하여 친절히 상담해 드리겠습니다. <br>(교환 접수 절차 없이 임의로 상품을 반송 할 경우, 교환 내용 확인이 어려워 처리가 지연될 수 있습니다.) </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">105</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_105');">반품 운송장번호가 뭔가요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_105">
+					<td colspan="3" width="740" class="faqAnswer">반품 운송장번호는 고객님께서 반품 하신 상품을 회수 할때 택배기사가 드리는 용지에 기재되어 있는 일련번호입니다. <br>반품 운송장번호는 수거된 상품의 위치 파악과 도착 여부를 확인할 수 있는 중요한 정보입니다. <br>반품접수 후 환불 완료 전까지는 반품 운송장번호를 잘 보관해 주시기 바랍니다. </td>
+				</tr>
+				
+				<tr valign="top">
+					<td align="center">104</td>
+					<td class="category">환불/반품</td>
+					<td><a href ="javascript:viewContents('faq1_104');">불량제품을 받았어요. 교환 시 배송비는 어떻게 되나요?</a></td>
+				</tr>
+				<tr style="display:none;" id="faq1_104">
+					<td colspan="3" width="740" class="faqAnswer">제품 불량 및 오배송일 경우 배송비는 착불(판매자 부담)입니다. <br>단, 교환 시 교환상품이 품절일 경우, 교환은 불가하며 반품만 가능합니다. </td>
+				</tr>
+				
+				
+				<!-- 검색 리스트 끝 -->
+			</table>
+			</div>
+			<!-- 페이징 시작  -->
+			
+			<div class="paging">
+				<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('12','2')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			</div>
+			
+			<!-- 페이징 끝 -->
+			
+			<!-- [e] faqCnt1 -->
+			<script>selectTab();</script>
+			<div class="counselApply"><img src="/static/images/cs/faq_img_counselApply.gif" alt="원하는 답변을 못 찾으셨나요?" border="0" usemap="#csMap" title="원하는 답변을 못 찾으셨나요?" />
+			<map name="csMap" id="csMap">
+				<area shape="rect" coords="559,28,680,59" href="javascript:menuLink('050101');" alt="온라인 상담 신청" />
+			</map></div>
+			
+		</form>
+		</div>
+	</div>
+	</div>
+	<div class="blank0"></div>
+<script type="text/javascript">
+window.onload = function rUrl(){
+	var reqUrl = "";
+	 if(reqUrl == "Y"){
+		 viewContents('faq1_1');
+	 }
+};
+</script>
+	
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+<iframe id="filedownload" name="filedownload" width="0" height="0"></iframe>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>It's different, SKY</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+		<meta content=C# name=CODE_LANGUAGE>
+		<meta content=JavaScript name=vs_defaultClientScript>
+		<meta content=http://schemas.microsoft.com/intellisense/ie5 name=vs_targetSchema><LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="CunsFAQPopup.aspx?FsID=1149" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwyMDQ4Mjk4MzgyO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxGQVE7Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFvrrLjsnpBdMTAwMOyekCDrqZTshLjsp4DqsIAg662Q7JiI7JqUPzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxQXD7tmITsnqwg64uo66y4IOuplOyLnOyngOuKlCDstZzrjIAgNDDsnpAoODBieXRlKeq5jOyngCDsgqzsmqnsnbQg6rCA64ql7ZWp64uI64ukLlw8QlJcPu2VmOyngOunjCAxMDAw7J6QIOuplOyLnOyngOulvCDsnbTsmqntlZjsi5zrqbQg7ZWc67KI7JeQIOuNlCDrp47snYAg66mU7Iuc7KeA66W8IOyghOyGoe2VoCDsiJgg7J6I7Iq164uI64ukLlw8QlJcPuuqqOuToCDsnbTthrXsgqzsl5Ag7KCE7Iah7J20IOqwgOuKpe2VqeuLiOuLpC5cPEJSXD5cPC9QXD4NClw8UFw+6re465+s64KYIOyImOyLoOyekOqwgCBTS1TqsIDsnoXsnpAg7J28IOuVjOuKlCBlLXN0YXRpb27sl5Ag6rCA7J6F65CY7Ja0IOyeiOyWtOyVvCDsiJjsi6DqsIDriqUg7ZWp64uI64ukLlw8QlJcPlw8L1BcPjs+Pjs+Ozs+Oz4+Oz4+Oz4=" />
+<FONT face=굴림></FONT>
+			<table align=center>
+				<tr>
+					<td><IMG height=10 src="http://file.isky.co.kr/images/com/spacer.gif" width=1 ><BR>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=0 cellPadding=0 width=580>
+							<tr>
+								<td width="20%"><FONT face=굴림></FONT></td>
+								<td align=center width="60%"><span class=brown_search><b><span id="lblName"><b>FAQ</b></span></b></span></td>
+								<td style="PADDING-RIGHT: 7px" align=right width="20%"><A href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif" ></A></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #f5f0f1" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>Q</font></b></td>
+								<td width="90%"><span id="lblTitle">[문자]1000자 메세지가 뭐예요?</span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align=center width="10%"><b><font size=3>A</font></b></td>
+								<td width="90%"><span id="lblContent"><P>현재 단문 메시지는 최대 40자(80byte)까지 사용이 가능합니다.<BR>하지만 1000자 메시지를 이용하시면 한번에 더 많은 메시지를 전송할 수 있습니다.<BR>모든 이통사에 전송이 가능합니다.<BR></P>
+<P>그러나 수신자가 SKT가입자 일 때는 e-station에 가입되어 있어야 수신가능 합니다.<BR></P></span></td>
+							</tr>
+						</table>
+						<table style="BORDER-RIGHT: #e7d2d2 1px solid; BORDER-TOP: #e7d2d2 1px solid; BORDER-LEFT: #e7d2d2 1px solid; BORDER-BOTTOM: #e7d2d2 1px solid; BACKGROUND-COLOR: #FFFFFF" height=26 cellSpacing=10 cellPadding=0 width=580>
+							<tr>
+								<td align="center"><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>

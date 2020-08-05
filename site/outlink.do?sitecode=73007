@@ -1,0 +1,28 @@
+
+
+
+
+ 
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>iSKY | 아웃링크</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+var outlink = 'http://medialive.vegalive.co.kr';
+if(outlink == ''){
+	alert("아웃링크에 등록되어 있지 않은 사이트 입니다.");
+	window.close();
+}else{
+	location.href = outlink;
+}
+</script>
+</head>
+<body>
+</body>
+</html>

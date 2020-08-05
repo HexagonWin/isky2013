@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<title>
+			It's different, SKY
+		</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=euc-kr">
+		<LINK REL="STYLESHEET" HREF="http://file.isky.co.kr/css/default.css" TYPE="TEXT/CSS" TITLE="SKTT">
+			<SCRIPT LANGUAGE="JavaScript" SRC="http://file.isky.co.kr/js/default.js"></SCRIPT>
+			<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/AceCounterRun.js"></SCRIPT>
+			<script language="javascript">
+			 function WinClose()
+			 { self.close(); }
+			</script>
+	</HEAD>
+	<BODY>
+		<DIV align="center">
+			<table width="400" cellpadding="0" cellspacing="0" align="center">
+				<tr>
+					<td><IMG SRC="http://file.isky.co.kr/images/presscenter/pop_img_top_left.gif" WIDTH="4" HEIGHT="40"></td>
+					<td width="400" bgcolor="#691c1c">
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td><IMG SRC="http://file.isky.co.kr/images/presscenter/popup_paper_title.gif"></td>
+								<td align="right"><a href="javascript:WinClose();"><IMG SRC="http://file.isky.co.kr/images/presscenter/pop_btn_close.gif" WIDTH="38" HEIGHT="11" border=0></a></td>
+							</tr>
+						</table>
+					</td>
+					<td><IMG SRC="http://file.isky.co.kr/images/presscenter/pop_img_top_right.gif" WIDTH="4" HEIGHT="40"></td>
+				</tr>
+			</table>
+		</DIV>
+		<DIV align="center">
+			<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="20"></DIV>
+		<DIV align="center">
+			<img id="imgContent" width="400" /><BR>
+		</DIV>
+	</BODY>
+</HTML>

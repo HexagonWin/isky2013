@@ -1,0 +1,618 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/cs/index.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/cs/index.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/cs/index.jsp");
+	}
+
+//-->
+</script>
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20120423");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+<!-- Site Trafic Checker -->
+<!--<script type="text/javascript"  charset="euc-kr" src="http://log.inside.daum.net/dwi_log/js/dwi.js"></script>
+<script type="text/javascript" >
+	_dwiPID="d-Uvv-321";
+	if(typeof(_dwiCatch) == "function") { _dwiCatch();}
+</script>
+ -->
+
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Cs.css" />
+<script>var dispNum="05"; var firstDepth ="05";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script type="text/javascript" src="/static/js/requester.js"></script>
+<script type="text/javascript" src="/static/js/schedule.js"></script>
+<script language="javascript">
+
+	//XMLHttpRequest 객체 생성
+	var requester = new Requester();
+
+	schedule("window", initialize);
+
+	function initialize(){
+
+		Get_TelecomCode_Request();
+
+
+
+	}
+
+	function Get_TelecomCode_Request(){
+		url = '/cs/software/getTelecomList.sky';
+		cgi = "";
+
+		requester.setAction(Get_TelecomCode_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+	function Get_TelecomCode_Response(){
+		var lists = requester.getXML().getElementsByTagName("getTelecomList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+		newOptions.push( new Option("통신사 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strName1');
+			var value = getElementContent(entries[i],'strCode');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('s1').length = 0;
+		var optionsObj = $('s1').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+		Get_Product_Request("all");
+
+
+	}
+
+	function getElementContent(element,tagName) {
+		var childElement = element.getElementsByTagName(tagName)[0];
+		return childElement.text != undefined ? childElement.text : childElement.textContent;
+	}
+
+	function Get_Product_Request(value){
+
+		if(value == ""){
+			value = "all";
+		}
+
+		url = '/cs/software/getProductList.sky';
+		cgi = "strTelecomCode=" + value;
+
+		requester.setAction(Get_Product_Response);
+		requester.loadDATA(url, cgi);
+	}
+
+
+	function Get_Product_Response(){
+		var lists = requester.getXML().getElementsByTagName("getProductList")[0];
+		var outhtml = "";
+		var items = lists.getElementsByTagName("codeList");
+
+		var newOptions = [];
+		var entries = lists.getElementsByTagName('codeList');
+
+
+		newOptions.push( new Option("모델명 선택", "") );
+
+		for ( var i = 0 ; i < entries.length ; i++ ) {
+			var text  = getElementContent(entries[i],'strPrdName');
+			var value = getElementContent(entries[i],'intPrdSeq');
+			newOptions.push( new Option(text, value) );
+		}
+
+		$('s2').length = 0;
+		var optionsObj = $('s2').options;
+		for ( var i = 0 ; i < newOptions.length ; i++ ){
+			optionsObj.add( newOptions[i] );
+		}
+
+
+		$('keyword').value = "";
+		//Search();
+
+	}
+
+	function Search(){
+
+		if($('keyword').value != ""){
+
+			$('s1').value = "";
+			$('s2').value = "";
+			$('strTelecomCode').value = "";
+			$('intPrdSeq').value = "";
+			$('strTelecomName').value = "";
+			$('strPrdName').value = "";
+
+		}else{
+
+			if($('s1').value != ""){
+				var i = $('s1').options.selectedIndex;
+
+				$('strTelecomCode').value = $('s1').options[i].value;
+				$('strTelecomName').value = $('s1').options[i].text;
+			}
+
+			if($('s2').value != ""){
+
+				var i = $('s2').options.selectedIndex;
+
+				$('intPrdSeq').value = $('s2').options[i].value;
+				$('strPrdName').value = $('s2').options[i].text;
+			}else{
+
+				$('intPrdSeq').value = "";
+				$('strPrdName').value = "";
+			}
+
+		}
+
+
+		var form = $('search');
+		form.action = "/cs/software/software.sky";
+		form.method = "post";
+		form.submit();
+
+	}
+
+	function NoticeDetail(intSeq){
+
+		var url = "/etc/notice_view.sky?intSeq=" + intSeq + "&dispNum=&targetPage=1&targetGroup=1";
+
+		location.href = url;
+	}
+
+	function FaqDetail(intSeq){
+
+		var url = "/cs/faq.sky?reqUrl=Y&searchIdx=" + intSeq + "&dispNum=&targetPage=1&targetGroup=1";
+
+		location.href = url;
+	}
+
+
+
+    function getCookie(name) {
+		var nameOfCookie = name + "=";
+		var x = 0;
+
+		while ( x <= document.cookie.length ) {
+			var y = (x+nameOfCookie.length);
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+			if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) endOfCookie = document.cookie.length;
+			return unescape( document.cookie.substring( y, endOfCookie ) );
+			}
+
+			x = document.cookie.indexOf( " ", x ) + 1;
+			if ( x == 0 ) break;
+		}
+
+		return "";
+
+    }
+
+
+/* 20100721  동해점 7/24일 종료*/
+	if(__int_today_yyyymmdd < 20100725 && getCookie("popup20100721") != "done") {
+		var popwin = window.open("/cs/popup/20100721.jsp","popup20100721","width=400,height=377,left=0,top=0");
+	}
+
+/* 20100713 구리점 신규 오픈안내*/
+//	if(getCookie("popup20100713") != "done") {
+//		var popwin = window.open("/cs/popup/20100713.jsp","popup20100713","width=400,height=377,left=0,top=0");
+//	}
+
+/* 20100705 용산 서비스센터 휴무 */
+//	if(getCookie("popup20100705") != "done") {
+//		var popwin = window.open("/cs/popup/20100705.jsp","popup20100705","width=400,height=377,left=0,top=0");
+//	}
+
+/* 20100610 남아공월드컵 이벤트*/
+//	if(getCookie("popup20100610") != "done") {
+//		var popwin = window.open("/cs/popup/20100610.jsp","popup20100610","width=400,height=370,left=0,top=0");
+//	}
+
+/* 20100527   이수점 신규오픈*/
+//	if(getCookie("popup20100527") != "done") {
+//		var popwin = window.open("/cs/popup/20100527.jsp","popup20100527","width=400,height=360,left=0,top=0");
+//	}
+
+/* 20100507강서점 신규서비스센타오픈
+//	if(getCookie("popup20100507") != "done") {
+//		var popwin = window.open("/cs/popup/20100507.jsp","popup20100507","width=400,height=380,left=0,top=0");
+//	}
+ */
+/* 2009.06.22 휴무안내 */
+//	if(getCookie("popup20090622") != "done") {
+//		var popwin = window.open("/cs/popup/20090622.jsp","popup20090622","width=400,height=377,left=410,top=0");
+//	}
+
+/* 2009.08.07 동절기 운영시간 변경 안내 */
+//	if(getCookie("popup20090807") != "done") {
+//		var popwin = window.open("/cs/popup/20090807.jsp","popup20090807","width=400,height=377,left=0,top=0");
+//	}
+
+/* 2009.08.17 지하철9호선및추가노선업데이트안내 */
+//	if(getCookie("popup20090817") != "done") {
+//		var popwin = window.open("/cs/popup/20090817.jsp","popup20090817","width=400,height=377,left=0,top=0");
+//	}
+
+/* 2009.09.17  셀프업그레이드 안내 팝업*/
+//	if(getCookie("popup20090917") != "done") {
+//		var popwin = window.open("/cs/popup/20090917.jsp","popup20090917","width=400,height=440,left=0,top=0");
+//	}
+
+
+/* 2009.06.26 센터관련 팝업
+		if(getCookie("popup20091228") != "done") {
+			var popwin = window.open("/popup/20091228.jsp","popup20091228","width=400,height=400,left=0,top=0");
+		}
+*/
+
+/* 2010.02.11~2010.02.16 설연휴 서비스안내 팝업 */
+		if(__int_today_yyyymmdd <= 20100216 && getCookie("popup20100210") != "done") {
+			var popwin = window.open("/popup/20100210.jsp","popup20091228","width=400,height=446,left=0,top=0");
+		}
+
+
+/* 2009.09.28
+	var date = new Date();
+	var year = date.getYear().toString();
+	var month = (date.getMonth() + 1).toString();
+	var day = date.getDate().toString();
+	var hour = date.getHours().toString();
+
+	var today = parseInt(year + dayChk(month) + dayChk(day) + dayChk(hour));
+
+
+	if(today < 2009100508){
+		if(getCookie("popup20090928") != "done") {
+			var popwin = window.open("/cs/popup/20090928.jsp","popup20090928","width=400,height=377,left=410,top=0");
+		}
+	}
+
+
+	function dayChk(str){
+		if(str.length == 1){
+			return str = "0"+str;
+		}else{
+			return str;
+		}
+	}
+*/
+</script>
+</head>
+
+<body>
+<form name="search" id="search">
+<input type="hidden" name="dispNum" value="">
+<input type="hidden" name="strTelecomName" id="strTelecomName" value="">
+<input type="hidden" name="strPrdName" id="strPrdName" value="">
+<input type="hidden" name="strTelecomCode" id="strTelecomCode" value="">
+<input type="hidden" name="intPrdSeq" id="intPrdSeq" value="">
+<input type="hidden" name="fromUrl" id="fromUrl" value="index">
+
+
+<div id="Wrap" class="cols2">
+<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+<div id="skyNavi" style="min-width:980px;"><script>swf_include('/static/flash/topNavi_v2.swf?PageCode=05&LogSess=N','100%','60','','','transparent','')</script></div> 
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Support.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Support_Blank.swf?PageCode=05','222','630','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Support.swf?PageCode=05','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/cs/d3title_05.gif" border="0" alt="고객지원" title="고객지원" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<!-- [s] 서브박스 -->
+			<ul class="csMainBox"><li><div onMouseOver="selThumb('0');" onMouseOut="imgBox_out(this);" style="position:relative;cursor:pointer;"><div onclick="menuLink('0501');" style="position:absolute;" id="adPrintList_0"></div><a href="javascript:menuLink('0501');"><img src="/static/images/cs/support_img_01.gif" border="0" alt="자주 찾는 도움말" title="자주 찾는 도움말" /></a></div></li><li><div onMouseOver="selThumb('1');" onMouseOut="imgBox_out(this);" style="position:relative;cursor:pointer;"><div onclick="menuLink('0502');" style="position:absolute;" id="adPrintList_1"></div><a href="javascript:menuLink('0502');"><img src="/static/images/cs/support_img_02.gif" border="0" alt="소프트웨어다운로드" title="소프트웨어다운로드" /></a></div></li><li><div onMouseOver="selThumb('2');" onMouseOut="imgBox_out(this);" style="position:relative;cursor:pointer;"><div onclick="menuLink('0503');" style="position:absolute;" id="adPrintList_2"></div><a href="javascript:menuLink('0503');"><img src="/static/images/cs/support_img_03.gif" border="0" alt="서비스센터" title="서비스센터" /></a></div></li><li><div onMouseOver="selThumb('3');" onMouseOut="imgBox_out(this);" style="position:relative;cursor:pointer;"><div onclick="menuLink('050101');" style="position:absolute;" id="adPrintList_3"></div><a href="javascript:menuLink('050101');"><img src="/static/images/cs/support_img_04.gif" border="0" alt="온라인상담" title="온라인상담" /></a></div></li></ul>
+
+			<script type="text/javascript">
+			<!--
+			var totalCnt  	 = 4;
+
+			function selThumb(slideNum,totalCnt) {
+				for( i=0; i<totalCnt; i++ ){
+					document.getElementById("adPrintList_"+i).className = "";
+				}
+					document.getElementById("adPrintList_"+slideNum).className = "cs_mainOn";
+			}
+			//-->
+			</script>
+			<!-- [e] 서브박스 -->
+
+			<div class="blank20"></div>
+
+			<!-- [s] STEP검색 -->
+			<div id="roundbox">
+				<div class="searchBox2"><ul
+					><li class="tit" style="width:106px;"><img src="/static/images/cs/selfupgrade_tit_06.gif" alt="STEP 다운로드" /></li
+					><li class="select"><select name="s1" id="s1" style="width:129px;" onChange="Get_Product_Request(this.value)">
+					</select></li
+					><li class="select"><select name="s2" id="s2" style="width:173px;" onchange="javascript:Search()">
+					</select></li
+					></ul>
+				<script type="text/javascript" src="/static/js/selector.basic.js"></script>
+				<script type="text/javascript" src="/static/js/selector.html.js"></script>
+				<script type="text/javascript">
+//					var s1;
+//					var s2;
+//					function loadSelecBox(){
+//						new Selectbox('strTelecomCode', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//						new Selectbox('intPrdSeq', {fontSize:11,optTxtColor:'#666',optTxtHover:'#000',optBgHover:'#DEDEE0'});
+//					}
+//					if ( window.attachEvent )
+//						window.attachEvent('onload', loadSelecBox);
+//					else
+//						window.addEventListener('load', loadSelecBox, false);
+				</script>
+				<div class="roundbox_03"></div>
+				</div>
+				<div class="searchBox3"><ul
+					><li class="tit"><img src="/static/images/cs/selfupgrade_tit_05.gif" alt="빠른검색" /></li
+					><li class="input" style="width:185px;">
+						<input type="text" name="keyword" id="keyword" class="input_text"
+							onfocus="this.style.backgroundImage = 'none'" ONKEYPRESS=" if(event.keyCode == 13){ Search(); return false;}"
+							style="width:175px;height:14px;background:#FFFFFF url('/static/images/cs/selfupgrade_txt_04.gif') 5px 5px no-repeat;" />
+						</li
+					><li><a href="javascript:Search()"><img src="/static/images/common/btn/1_search.gif" alt="검색" /></a></li
+				></ul>
+				<div class="roundbox_03"></div>
+				</div>
+			</div>
+			<!-- [e] STEP검색 -->
+
+
+			<div class="blank40"></div>
+
+			<!--[s] BEST 자주묻는질문 -->
+			<div id="csLeft">
+				<div id="bestFAQ_all"><h5><img src="/static/images/cs/cs_tit_01.gif" border="0" alt="BEST 자주 묻는 질문" title="BEST 자주 묻는 질문" /><a href="javascript:menuLink('0501');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<table width="434" cellpadding="0" cellspacing="0" border="0" class="tbl_csBestFAQ">
+					<colgroup>
+						<col width="25"></col>
+						<col width="91"></col>
+						<col width="318"></col>
+					</colgroup>
+					
+					<tr valign="top">
+						<td class="no" height="21"><img src="/static/images/cs/ico_no01.gif" /></td>
+						<td class="category">기타</td>
+						<td><a href="javascript:FaqDetail('241')">[문서다운로드] 휴대폰 비밀번호 분실 시 해제동의...</a></td>
+					</tr>
+					
+					<tr valign="top">
+						<td class="no" height="21"><img src="/static/images/cs/ico_no02.gif" /></td>
+						<td class="category">주문/배송</td>
+						<td><a href="javascript:FaqDetail('236')">스카이액세서리와 스페셜샵은 같이 주문 안되나요?</a></td>
+					</tr>
+					
+					<tr valign="top">
+						<td class="no" height="21"><img src="/static/images/cs/ico_no03.gif" /></td>
+						<td class="category">환불/반품</td>
+						<td><a href="javascript:FaqDetail('235')">상품을 반품하고 싶은데 어느 택배사를 이용해야  ...</a></td>
+					</tr>
+					
+					<tr valign="top">
+						<td class="no" height="21"><img src="/static/images/cs/ico_no04.gif" /></td>
+						<td class="category">환불/반품</td>
+						<td><a href="javascript:FaqDetail('234')">접수 후 운영자의 답변에 따라 상품을 반송하려고 ...</a></td>
+					</tr>
+					
+					<tr valign="top">
+						<td class="no" height="21"><img src="/static/images/cs/ico_no05.gif" /></td>
+						<td class="category">환불/반품</td>
+						<td><a href="javascript:FaqDetail('233')">여러 건 상품을 함께 주문했는데, 일부만 취소/반 ...</a></td>
+					</tr>
+					
+				</table></div>
+			</div>
+			<!--[e] BEST 자주묻는질문 -->
+			<!--[s] 공지사항 -->
+			<div id="csRight"><h5><img src="/static/images/cs/cs_tit_02.gif" alt="공지사항" title="공지사항" /><a href="javascript:menuLink('08');" class="more"><img src="/static/images/common/btn/3_more.gif" border="0" alt="more" title="more" /></a></h5>
+				<div class="notice">
+					<ul>
+						
+						<li><a href="javascript:NoticeDetail('8fNLqZwaJ/E~CnSqL88jouA~')">SKY Pluszone 영주점 폐점 안내</a></a></li>
+						
+						<li><a href="javascript:NoticeDetail('gNL6X2qCghU~/t7fy2EHQvs~')">SKY Pluszone 종로점 임시 이전 안내</a></a></li>
+						
+						<li><a href="javascript:NoticeDetail('5Uw5r3hT6S8~ZXG_GgPsWWs~')">휴대폰의 잠금 비밀번호 분실시, Pluszone 방문 필...</a></a></li>
+						
+						<li><a href="javascript:NoticeDetail('I0Umc1pesxA~yShc76ibudU~')">SKY pluszone 삼성점 이전 안내</a></a></li>
+						
+						<li><a href="javascript:NoticeDetail('uJlTOWanr48~J4uc6xVZxMg~')">서비스 점검 안내</a></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<!--[e] 공지사항 -->
+			<div class="blank0"></div>
+
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+<script type="text/javascript">
+// familysite
+function familySubLayer(viewHidden) {
+	var linkList = document.getElementById('familySubList');
+	var linkBtn = document.getElementById('familySubBtn');
+	if (viewHidden == 'view'){
+		linkList.style.display = 'block';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOn.jpg';
+	}
+	else if (viewHidden == 'hidden'){
+		linkList.style.display = 'none';
+		linkBtn.src = 'http://www.isky.co.kr/static/images/common/familySubOff.jpg';
+	}
+}
+</script>
+<style type="text/css">
+.familySubLink {position:absolute; right:0px; top:15px; height:18px; cursor:pointer; background:#fff;}
+.familySubLink .familyList {position:absolute; left:0px; bottom:17px;border:1px solid #c6c6c6; width:112px; display:none; background:#fff;}
+.familySubLink .familyList li {list-style:none; text-align:left;}
+.familySubLink .familyList li a {color:#5f5f5f; font-size:11px; text-decoration:none; display:block; padding:3px 10px;}
+.familySubLink .familyList li a:hover {border:0px;background:#5f5f5f; color:#fff; }
+</style>
+<div id="container-foot" style="border-top:solid 1px #889ec9;">
+	<div id="foot">
+		<img src="http://www.isky.co.kr/static/images/common/footer.gif" border="0" usemap="#footerMap01" />
+		<!-- family Site -->
+		<div class="familySubLink" onmouseover="javascript:familySubLayer('view');" onmouseout="javascript:familySubLayer('hidden');">
+			<img id="familySubBtn" src="http://www.isky.co.kr/static/images/common/familySubOff.jpg" alt="family Site"/>
+			<ul class="familyList" id="familySubList">
+				<li><a href="http://www.pantech.co.kr" target="_blank">팬택계열</a></li>
+				<li><a href="http://www.androians.com" target="_blank">Androians</a></li>
+				<li><a href="http://www.skyservice.co.kr" target="_blank">SKY 서비스센터</a></li>
+				<li><a href="http://www.sky9.co.kr" target="_blank">SKY9</a></li>
+				<li><a href="http://www.lotsshop.com" target="_blank">LOTS</a></li>
+				<li><a href="http://cloudlive.vegalive.co.kr" target="_blank">CLOUD LIVE</a></li>
+				<li><a href="http://medialive.vegalive.co.kr" target="_blank">MEDIA LIVE</a></li>
+			</ul>
+			<map name="footerMap01">
+				<area shape="rect" coords="579,13,636,35" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+				<area shape="rect" coords="636,13,725,35" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+				<area shape="rect" coords="725,13,799,35" href="http://iaudit.pantech.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+				<area shape="rect" coords="799,13,853,35" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+			</map>
+		</div>
+		<!-- //family Site -->
+	</div>
+</div>
+</div>
+<iframe name="filedownload" width="0" height="0"></iframe>
+</form>
+</body>
+</html>

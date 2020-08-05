@@ -1,0 +1,85 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" > 
+
+<html>
+  <head>
+    <title>It's different, SKY</title>
+    <meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+    <meta name="CODE_LANGUAGE" Content="C#">
+    <meta name=vs_defaultClientScript content="JavaScript">
+    <meta name=vs_targetSchema content="http://schemas.microsoft.com/intellisense/ie5">
+    <LINK title=SKTT href="http://file.isky.co.kr/css/default.css" 
+type=TEXT/CSS rel=STYLESHEET>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/default.js"></SCRIPT>
+		<SCRIPT language=JavaScript src="http://file.isky.co.kr/js/select.js"></SCRIPT>
+  </head>
+  <body MS_POSITIONING="GridLayout">
+	
+    <form name="Form1" method="post" action="SvcCenterPopup_Center.aspx?idx=41" id="Form1">
+<input type="hidden" name="__VIEWSTATE" value="dDwtNDEwNTQ5MzAzO3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDA+O2k8MT47aTwyPjtpPDM+O2k8ND47aTw1Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDzrtoTri7kg7ISc67mE7IqkIOyEvO2EsDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDxJTUcgU1JDPSdodHRwOi8vZmlsZS5pc2t5LmNvLmtyL0FUVDAxLzIwMDUvU1ZDLzQwNy9zZW9uZ25hbV9idW5kYW5nWzIwMDUwMzE4MTAwNjA3XS5naWYnXD47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPDAzMS03MTktMDAzMzs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8MDMxLTcxOS0xMTg2Oz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDzqsr3quLAg7ISx64Ko7IucIOu2hOuLueq1rCDsiJjrgrTrj5kgNC0yIOuRkOyCsOychOu4jOyEvO2LsOybgCAx64+ZIDIwOO2YuDs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w867aE64uo7ISgIOyImOuCtOyXrSA067KI7Lac6rWsIOu2hOuLueq1rOyyrSDrsKntlqUgNzBNIFNLIFRlbGVjb20g7JiGIOuRkOyCsCDsnITruIxcPEJSXD7rtoTri7nqtazssq0g7KCV6rGw7J6lIO2VmOywqCwgNjYtMSwgMjAyLCAyMDItMSwgNjIwNiwgMTAwNS01LCAxMTY7Pj47Pjs7Pjs+Pjs+Pjs+" />
+
+
+
+<center>
+
+<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="1" HEIGHT="10"><BR>
+<table width="580" height=26 cellpadding="0" cellspacing="0" style="border:#E7D2D2 solid 1; background-color:#F5F0F1">
+<tr>
+	<td width=20%></td>
+	<td width=60% align=center><span class="brown_search"><b><span id="lblName"><b>분당 서비스 센터</b></span></b></span></td>
+	<td width=20% align=right style="padding-right:7px"><a href="javascript:self.close()"><img src="http://file.isky.co.kr/images/svc/popup_center_close.gif"></a></td>
+</tr>
+</table>
+
+
+
+
+
+<table width="600" cellpadding="0" cellspacing="0">
+<Tr>
+	<Td align=center><span id="lblMapImgName"><IMG SRC='http://file.isky.co.kr/ATT01/2005/SVC/407/seongnam_bundang[20050318100607].gif'></span></td>
+</tr>
+</table>
+
+
+<TABLE CELLPADDING="0" CELLSPACING="0" WIDTH="550" align=center>
+<col width=90></col><col width=460 style="padding-top:3px"></col>
+
+<tr height=28>
+	<td><img src="http://file.isky.co.kr/images/svc/center_table_st_1.gif"></td>
+	<td>
+		<span id="lblTelNo">031-719-0033</span>
+		<IMG SRC="http://file.isky.co.kr/images/com/spacer.gif" WIDTH="50" HEIGHT="1" align=absmiddle>
+		<IMG SRC="http://file.isky.co.kr/images/svc/center_table_st_2.gif" align=absmiddle> <span id="lblFaxNo">031-719-1186</span>
+	</td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+
+<tr height=28>
+	<td><img src="http://file.isky.co.kr/images/svc/center_table_st_4.gif"></td>
+	<td><span id="lblAddr">경기 성남시 분당구 수내동 4-2 두산위브센티움 1동 208호</span></td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+
+<tr valign=top>
+	<td style="padding-top:7px"><img src="http://file.isky.co.kr/images/svc/center_table_st_5.gif"></td>
+	<td style="padding-top:7px;padding-bottom:7px">
+		<span id="lblTrafficInfo">분단선 수내역 4번출구 분당구청 방향 70M SK Telecom 옆 두산 위브<BR>분당구청 정거장 하차, 66-1, 202, 202-1, 6206, 1005-5, 116</span>
+	</td>
+</tr>
+<tr height=1 bgcolor="#E1E1E1"><td colspan=2></td></tr>
+<tr height=20><td colspan=2></td></tr>
+
+<tr><td align=center colspan=2><a href="#" onclick="window.print()"><img src="http://file.isky.co.kr/images/com/bbs_button_print.gif"></a></td></tr>
+
+</table>
+
+
+
+</center>
+
+
+     </form>
+	
+  </body>
+</html>

@@ -1,0 +1,606 @@
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Product.css" />
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script>var dispNum="0101";</script>
+<script language="javascript">
+function ProductList(){
+	var telCode = "";
+
+	
+		telCode = "SKT";
+	
+
+	
+
+	
+
+	var url = "/product/product.sky?telCode=" + telCode;
+
+	location.href = url;
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0101&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_Sky.swf','200','83','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Product_Blank.swf?PageCode=0101','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Product.swf?PageCode=0101','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/product/d3title_0101.gif" border="0" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+			<div class="product_view_visual"><script>swf_include("http://file.isky.co.kr/upload/product/imageAflash/IM-R200[3].swf?intTvSeq=BsaMGnCU3Sk~B94MTaEfnE8~","740","424","always","","","")</script></div>
+			<div class="product_view_tab">
+				<ul>
+					
+					
+					
+					<li>
+						
+							
+							
+						
+						<a href="/product/spec.sky?seq=EhmcyfZonRk%7EzXWGmezmO7M%7E&amp;telCode=SKT&amp;dispNum=0101">
+							<img src="/static/images/product/product_vTab2_02_.gif" border="0" alt="SPEC" title="SPEC" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/review.sky?seq=EhmcyfZonRk%7EzXWGmezmO7M%7E&amp;telCode=SKT&amp;dispNum=0101">
+							<img src="/static/images/product/product_vTab2_03.gif" border="0" alt="REVIEW" title="REVIEW" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/swdownload.sky?seq=EhmcyfZonRk%7EzXWGmezmO7M%7E&amp;telCode=SKT&amp;dispNum=0101">
+							<img src="/static/images/product/product_vTab2_04.gif" border="0" alt="S/W DOWNLOAD" title="S/W DOWNLOAD" />
+						</a>
+					</li>
+					<li>
+						
+							
+							
+						
+						<a href="/product/accessory.sky?seq=EhmcyfZonRk%7EzXWGmezmO7M%7E&amp;telCode=SKT&amp;dispNum=0101">
+							<img src="/static/images/product/product_vTab2_05.gif" border="0" alt="ACCESSORY" title="ACCESSORY" />
+						</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+
+			
+				<div class="product_view_cont01">
+					<h5><img src="/static/images/product/product_spec_stit_01.gif" alt="주요기능" title="주요기능" /></h5>
+					<ul class="spec">
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/active-keypad.gif" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/product_spec_txt_070.gif" /></dt>
+								<dd>IM-R200시리즈의 ‘액티브 키패드’는 블루라인, 엘로우포인트, 모노오렌지, 라이트박스 등 사용자의 입맛에 따라 4가지 타입으로 설정이 가능합니다. 또한 평상시 숫자와 한글, 알파벳의 조합으로 되어 있는 키패드를 자주 사용하는 특정 전화번호만으로 구성할 수 있게 해 단 한 번의 버튼만으로도 전화걸기나 SMS 등을 신속하고 편리하게 이용할 수 있게 했으며, 사용성을 높이는 진동 Feedback을 설정할 수 있습니다. </dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/2Mega-camera.gif" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/product_spec_txt_102.gif" /></dt>
+								<dd>더욱 향상된 성능으로 다양한 기능과 고화질의 이미지를 제공하는 2M 화소급 오토포커스 Camera와 30만 화소급 Self Camera 카메라 내장! 접사기능으로 가까운 피사체는 더욱 선명하게, 자동초점으로 좀더 빠르게 동영상 촬영으로 남기고 싶은 추억도 담아보세요. 또한 사용자의 얼굴 윤곽을 인식하는 안면 인식 엔진을 탑재하여 다양한 특수 효과를 더욱 미려하게 즐길수 있습니다. 나만의 사진첩을 만들 수 있으며, 사진과 동영상 전송 및 사진인화를 바로 신청할 수 있습니다.</dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/2.0QVGA-LCD.gif" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/product_spec_txt_034.gif" /></dt>
+								<dd>2.0" QVGA 광시야각 LCD를 탑재하여 더욱 향상된 화질을 제공하며 262K color 고화질 TFT 광시야각 LCD로 어느 각도에서나 선명하게 멀티미디어 동영상과 카메라를 즐기실 수 있습니다. </dd>
+							</dl>
+						</li>
+						
+						<li>
+							<h3><img src="http://file.isky.co.kr/upload/product/title/plus-gineung(0).gif" /></h3>
+							<dl>
+								<dt><img src="http://file.isky.co.kr/upload/product/title/product_spec_txt_079.gif" /></dt>
+								<dd>문서뷰어 : 데이터매니저 프로그램을 통해 CSD파일로 자동변환된 PC의 문서파일을 전송하여 휴대폰에서 확인할 수 있습니다. <br/>전자사전 : 33만 단어의 영한/한영사전을 제공하며, 내가 찾은 단어를 단어장에 저장하고 대기화면에 설정하여 학습 효과를 높일 수 있습니다. </dd>
+							</dl>
+						</li>
+						
+					</ul>
+				</div>
+			
+
+			<div class="product_view_cont01">
+				<h5><img src="/static/images/product/product_spec_stit_02.gif" alt="상세 SPEC" title="상세 SPEC" /></h5>
+				<table width="" cellpadding="0" cellspacing="0" border="0">
+					<tr valign="top">
+						<td><img src="/static/images/product/product_spec_box_01.gif" /></td>
+					</tr>
+					<tr valign="top">
+						<td style="background:url('/static/images/product/product_spec_box_02.gif') repeat-y;">
+							<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_productSpec">
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="first">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_34(0).gif" alt="product_spec_tit_34(0).gif" title="product_spec_tit_34(0).gif" />
+									</td>										
+									<td width="607" class="first">
+										표준형 : <br/>102.7 X 46.5 X 16.9 (mm)<br/>104 (g) 
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_35(0).gif" alt="product_spec_tit_35(0).gif" title="product_spec_tit_35(0).gif" />
+									</td>										
+									<td width="607" class="">
+										Black
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_02.gif" alt="product_spec_tit_02.gif" title="product_spec_tit_02.gif" />
+									</td>										
+									<td width="607" class="">
+										2.0" 광시야각 LCD :<br/>2,0인치 QVGA 광시야각 LCD를 탑재하여 더욱 향상된 화질을 제공하며 262K color 고화질 TFT 광시야각 LCD로 어느 각도에서나 선명하게 멀티미디어 동영상과 카메라를 즐기실 수 있습니다.   
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_03.gif" alt="product_spec_tit_03.gif" title="product_spec_tit_03.gif" />
+									</td>										
+									<td width="607" class="">
+										2M Auto Focus 카메라 :<br/>내장된 2M 화소급 오토포커스 Camera와 30만 화소급 Self Camera 카메라로 나만의 사진첩을 만들 수 있으며, 동영상 촬영으로 남기고 싶은 추억을 담을 수 있습니다. 더욱 향상된 성능으로 다양한 기능과 고화질의 이미지를 제공합니다. 자동 초점 기능을 사용하여 대상을 보다 선명하게 촬영할 수 있으며, 사진/동영상 전송과 사진인화신청을 할 수 있습니다. 또한 사용자의 얼굴 윤곽을 인식하는 안면 인식 엔진을 탑재하여 다양한 특수 효과를 더욱 미려하게 즐길수 있습니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_05.gif" alt="product_spec_tit_05.gif" title="product_spec_tit_05.gif" />
+									</td>										
+									<td width="607" class="">
+										대기화면 : <br/>대기화면에 달력/단어장 설정 기능 등 다양한 대기화면 Style로 나만의 개성을 살릴 수 있습니다. 향상된 효과음으로 더욱 실감나게 기능을 찾을 수 있으며, 인체공학적 메뉴 구조로 User의 편리성을 증가시켜 쉽게 원하는 기능을 찾을 수 있으며 SKY의 다양한 기능을 100% 활용할 수 있습니다 
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_06.gif" alt="product_spec_tit_06.gif" title="product_spec_tit_06.gif" />
+									</td>										
+									<td width="607" class="">
+										128화음 멜로디 :<br/>발라드와 댄스, 그리고 힙합까지... 다양한 장르의 원음벨 소리를 제공하며, 고음질의 멜로디 IC를 장착하여 생생한 128화음 멜로디를 즐길 수 있습니다.  
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_28.gif" alt="product_spec_tit_28.gif" title="product_spec_tit_28.gif" />
+									</td>										
+									<td width="607" class="">
+										3D 사운드와 비주얼 이퀄라이저를 탑재, 고음질의 MP3를 감상할 수 있습니다. 멀티태스킹 기능을 제공하여 SMS 등의 기능과 함께 음악을 청취할수 있습니다(일부기능제외). 기본으로 3종이 제공되며 사용자 설정이 가능한 스킨으로 청취의 재미가 더욱 늘었습니다.   
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_07.gif" alt="product_spec_tit_07.gif" title="product_spec_tit_07.gif" />
+									</td>										
+									<td width="607" class="">
+										VOD / MOD 지원 :<br/>고화질 영상 체험, 모바일 방송을 체험할 수 있습니다. 고음질의 음악파일을 벨소리로 설정할 수 있는 Live Bell, 고화질의 동영상을 대기화면으로 설정할 수 있는 Live Screen, Music Video, 영화, 방송 등을 통해 백만 볼트의 재미를 만끽하실 수 있습니다. <br/><br/>폴더 관리 기능 :<br/>각종 멀티미디어 자료를 폴더별로 관리할 수 있습니다. (Fimm 컨텐츠 제외)
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_11.gif" alt="product_spec_tit_11.gif" title="product_spec_tit_11.gif" />
+									</td>										
+									<td width="607" class="">
+										무선적외선통신 :<br/>적외선포트를 장착한 SKY휴대폰끼리 전화번호부, 멜로디, 사진 등을 교환할 수 있습니다. 
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_12.gif" alt="product_spec_tit_12.gif" title="product_spec_tit_12.gif" />
+									</td>										
+									<td width="607" class="">
+										CDMA :<br/>1x EV-DO MSM 6550의 탑재로 2.4Mbps의 CDMA1x EV-DO 고속 통신 기능 실현하여 언제 어느 곳에서든 SKY를 컴퓨터에 연결하면 인터넷을 초고속으로 검색하거나 멀티미디어로 데이터를 빠르게 다운로드 할 수 있습니다.  <br/><br/>Pict Bridge :<br/>휴대폰으로 찍고, Pict Bridge로 뽑고~컴퓨터와 연결 없이 인물, 풍경, 흑백, 야경, 동물사진까지 내 맘대로 골라 Pict Bridge 프린터로 인화할 수 있습니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_13.gif" alt="product_spec_tit_13.gif" title="product_spec_tit_13.gif" />
+									</td>										
+									<td width="607" class="">
+										Jumping Pop, PUZBUZ Game 탑재
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_39.gif" alt="product_spec_tit_39.gif" title="product_spec_tit_39.gif" />
+									</td>										
+									<td width="607" class="">
+										메모, 녹음기, 계산기, 스톱워치, 세계시각 등의 편의 기능을 제공합니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_14(0).gif" alt="product_spec_tit_14(0).gif" title="product_spec_tit_14(0).gif" />
+									</td>										
+									<td width="607" class="">
+										달력, 할일, 모닝콜, 알람, 스페셜 데이, 시간표 등의 기능을 제공합니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_15.gif" alt="product_spec_tit_15.gif" title="product_spec_tit_15.gif" />
+									</td>										
+									<td width="607" class="">
+										33만 단어의 영한/한영사전을 제공하며, 내가 찾은 단어를 단어장에 저장하고 대기화면에 설정하여 학습 효과를 높일 수 있습니다. 
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_16.gif" alt="product_spec_tit_16.gif" title="product_spec_tit_16.gif" />
+									</td>										
+									<td width="607" class="">
+										개인정보관리(PIM) 전화번호부 :<br/>다이어리식 전화번호부로 전자메일계정, 기념일, 메모 등을 함께 저장가능<br/>전화부 저장 : 1,200명 / 2,400개<br/>E-mail : 600명
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_40.gif" alt="product_spec_tit_40.gif" title="product_spec_tit_40.gif" />
+									</td>										
+									<td width="607" class="">
+										착신전화번호 : 40개<br/>발신전화번호 : 40개 <br/>단축다이얼 : 99개
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_30.gif" alt="product_spec_tit_30.gif" title="product_spec_tit_30.gif" />
+									</td>										
+									<td width="607" class="">
+										수신메시지 : 200개<br/>발신메시지 : 60개<br/>수신음성메시지함 : 20개<br/>동보전송기능 : 20개 <br/>스팸차단기능
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_17.gif" alt="product_spec_tit_17.gif" title="product_spec_tit_17.gif" />
+									</td>										
+									<td width="607" class="">
+										원터치 기능 :<br/>자동응답 / 에티켓 / 녹음 기능을 원터치 버튼으로 빠르게 활용할 수 있습니다.   
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_18.gif" alt="product_spec_tit_18.gif" title="product_spec_tit_18.gif" />
+									</td>										
+									<td width="607" class="">
+										문서뷰어 : <br/>데이터매니저 프로그램을 통해 CSD파일로 자동변환된 PC의 문서파일을 전송하여 휴대폰에서 확인할 수 있습니다. 또한 텍스트 뷰어가 있어 e-book 기능으로 활용할 수 있습니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_20.gif" alt="product_spec_tit_20.gif" title="product_spec_tit_20.gif" />
+									</td>										
+									<td width="607" class="">
+										이어폰 마이크 기능 :<br/>이어폰 마이크를 사용할 수 있습니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_21.gif" alt="product_spec_tit_21.gif" title="product_spec_tit_21.gif" />
+									</td>										
+									<td width="607" class="">
+										NATE/ JUNE/ MelOn<br/><br/>NATE/ JUNE :<br/>무선인터넷을 통해 다양한 멀티미디어 컨텐츠를 다운로드 받으실 수 있습니다. 동영상 등의 다채로운 멀티미디어 컨텐츠를 SKY에 다운로드하여 언제 어디서나 실감나는 무선 인터넷을 백배로 즐길 수 있습니다. 
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_22.gif" alt="product_spec_tit_22.gif" title="product_spec_tit_22.gif" />
+									</td>										
+									<td width="607" class="">
+										연속통화 : <br/>표준형 : 약 160분 / 대용량 : 약 210분<br/><br/>연속대기 : <br/>표준형 : 약 190시간 / 대용량 : 약 250시간 <br/><br/>VOD 재생시 : <br/>표준형 : 약 175분 / 대용량 : 약 230분 <br/><br/>GAME 사용시 : <br/>표준형 : 약 210분 / 대용량 : 약 270분 <br/><br/>카메라 사용시 : <br/>표준형 : 약 180분 / 대용량 : 약 235분  
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_23.gif" alt="product_spec_tit_23.gif" title="product_spec_tit_23.gif" />
+									</td>										
+									<td width="607" class="">
+										사용자메모리 : <br/>94.7MB<br/><br/>외장메모리 지원 :<br/>microSD 메모리(별도구매)를 지원하여 대용량의 다양한 멀티미디어 컨텐츠를 재생할 수 있습니다.
+									</td>										
+																	
+								</tr>
+							
+								<colgroup>
+									<col width="106"></col>
+									<col width="607"></col>
+								</colgroup>
+								<tr valign="top">
+								
+									<td width="106" class="last">
+										<img src="http://file.isky.co.kr/upload/product/title/product_spec_tit_24.gif" alt="product_spec_tit_24.gif" title="product_spec_tit_24.gif" />
+									</td>										
+									<td width="607" class="last">
+										표준형 배터리 BAT-4700M  <br/>대용량 배터리 BAT-4700L  <br/>배터리 충전 거치대 BTH-800  <br/>핸드 스트링 HCS-500  <br/>이어폰 마이크 EM-860C  <br/>4극 젠더 TRP-110C  <br/>데이터매니져 케이블 IMCBL-1010
+									</td>										
+																	
+								</tr>
+							
+							</table>
+						</td>
+					</tr>
+					<tr valign="top">
+						<td><img src="/static/images/product/product_spec_box_03.gif" /></td>
+					</tr>
+				</table>
+					
+			</div>
+			
+			<div class="tar p15t"><a href="javascript:ProductList()"><img src="/static/images/common/btn/bd_list.gif" border="0" alt="목록보기" /></a></div>
+			
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div></div>
+<map name="footerMap01">
+	<area shape="rect" coords="780,18,836,30" href="javascript:menuLink('100101');" alt="이용약관">
+	<area shape="rect" coords="837,18,924,30" href="javascript:menuLink('1002');" alt="개인정보취급방침">
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵">
+</map>
+</div>
+</body>
+</html>

@@ -1,0 +1,484 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+<!-- iSkyUserId : <br/>
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event/event_cristmas.sky";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/event/event_cristmas.sky";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event/event_cristmas.jsp");
+	}
+
+//-->
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+
+<!-- AceCounter Log Gathering Script V.71.2009090102 -->
+<script language='javascript'>
+if(typeof _GUL == 'undefined'){
+var _GUL = 'gtp15.acecounter.com';var _GPT='8080'; var _AIMG = new Image(); var _bn=navigator.appName; var _PR = location.protocol=="https:"?"https://"+_GUL:"http://"+_GUL+":"+_GPT;if( _bn.indexOf("Netscape") > -1 || _bn=="Mozilla"){ setTimeout("_AIMG.src = _PR+'/?cookie';",1); } else{ _AIMG.src = _PR+'/?cookie'; };
+document.writeln("<scr"+"ipt language='javascript' src='/acecounter/acecounter_V70.js'></scr"+"ipt>");
+}
+</script>
+<noscript><img src='http://gtp15.acecounter.com:8080/?uid=AB6A35009738974&je=n&' border=0 width=0 height=0></noscript>
+<!-- AceCounter Log Gathering Script End --> 
+
+
+<title>iSKY</title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0901"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+
+
+<style type="text/css">
+<!--
+div.evcrist h1,div.evcrist h2,div.evcrist h3,div.evcrist legend,evcrist dl,div.evcrist dd,div.evcrist dt,div.evcrist p,div.evcrist fieldset,div.evcrist legend  {margin:0;padding:0;border:none;}
+.evcrist {width:710px;padding-bottom:79px;background:url('/static/images/poll/20091203/event_bg01.jpg') left bottom no-repeat #6e0c0d;}
+.evcrist .quiz {position:relative;width:710px;background:url('/static/images/poll/20091203/event_quiz01.jpg') left top no-repeat }
+.evcrist .quiz ul {padding:19px 0 23px 100px;}
+.evcrist .quiz li {padding:7px 0;vertical-align:top;}
+.evcrist .quiz li img {*margin-top:-5px;}
+.evcrist .quiz input {height:15px;font-size:12px;color:#999;font-family:돋움;padding-top:3px;background:#fff;border:1px solid #6a1a19;}
+.evcrist .quiz .btn {position:absolute;top:19px;left:544px;}
+.evcrist .comment {width:636px;padding-bottom:20px;margin:33px auto 0 auto;background:#fff;}
+.evcrist .comment ul {margin:12px 12px 0 12px;}
+.evcrist .comment li {padding:11px 0;color:#5e5e5e;border-bottom:1px solid #dedede;}
+.evcrist .comment p {padding-left:97px;width:500px;}
+.evcrist .comment .del {position:absolute;margin-left:500px;}
+.evcrist .comment strong {position:absolute;width:87px;margin-left:-97px;}
+.evcrist .comment .reason,.evcrist .comment .keyword {font-weight:bold;}
+.evcrist .comment .date {font-family:tahoma;font-size:9px;}
+-->
+</style>
+</head>
+<script language="javascript">
+
+	
+	
+	var isLogin = false;
+	
+
+	function goList(targetPage, targetGroup) {
+
+		var obj = $('event');
+
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/event/event_cristmas.sky";
+		obj.submit();
+	}
+	
+	function Event_Chk(){
+		var form1 = $('event');
+		
+		if($('strAnswer').value == "5글자 이하"){
+			$('strAnswer').value = "";
+		}
+
+		if($('strComment').value == "50자 이하로 작성해 주세요"){
+			$('strComment').value = "";
+		}
+
+		if($('strAnswer').value == ""){
+			alert('내용을 입력해 주세요');
+			$('strAnswer').focus();
+			return;
+		}
+
+		if($('strComment').value == ""){
+			alert('내용을 입력해 주세요');
+			$('strComment').focus();
+			return;
+		}
+
+		
+		//var ans = confirm('응모 하시겠습니까?');
+
+		//if(ans == true){
+
+			form1.action = "event_cristmas_insert.sky";
+			//form1.target = "dataProcess";
+			form1.method = "post";
+			form1.submit();
+		//}else{
+		//	return;
+		//}
+	}
+
+	function DelComment(intSeq){
+		var form = $('event');
+		
+		var ans = confirm('삭제 하시겠습니까?');
+
+		if(ans == true){
+			form.action = "event_cristmas_delete.sky?intSeq=" + intSeq;;
+			//form1.target = "dataProcess";
+			form.method = "post";
+			form.submit();
+		}else{
+			return;
+		}
+
+	}
+	
+	function LoginChk(obj){
+
+		if(obj.value == "5글자 이하" || obj.value == "50자 이하로 작성해 주세요"){
+			obj.value = "";
+		}
+		
+		if(isLogin == false){
+			LoginConfirm('http://www.isky.co.kr/etc/event/event_cristmas.sky');
+			return;
+		}
+	}
+	
+
+	function maxlengthLimit(input, gubunflag, maxByte){
+		
+		if(event.keyCode < 37 || event.keyCode > 40){
+			var strCount = 0;
+			var tempStr, tempStr2;
+			for(i=0; i < input.value.length; i++){
+				tempStr = input.value.charAt(i);
+				if(escape(tempStr).length > 4) strCount +=2;
+				else strCount +=1;
+			}
+			
+			//alert(strCount);
+
+			if(strCount > maxByte){
+				
+				if(gubunflag == 1){
+					alert('5자 이하로 작성해 주세요');
+				}
+
+				if(gubunflag == 2){
+					alert('50자 이하로 작성해 주세요.');
+				}
+
+				strCount = 0; 
+				tempStr2 = "";
+
+				for(i=0; i < input.value.length; i++){
+					tempStr = input.value.charAt(i);
+					if(escape(tempStr).length > 4) strCount +=2;
+					else strCount += 1;
+					if(strCount > maxByte){
+						if(escape(tempStr).length > 4) strCount -=2;
+						else strCount -=1;
+						break;
+					}
+					else tempStr2 += tempStr;
+				}
+
+				input.value = tempStr2;
+				document.hiddenFocusFrm.hiddenFocusObj.focus();
+				input.focus();
+
+				input.value = tempStr2;
+
+				return false;
+			}
+		}
+	
+	}
+	
+
+
+
+</script>
+<body>
+
+
+
+
+<form name="event" id="event">
+<input type="hidden" name="intEventSeq" value='387'>
+<input type="hidden" name="targetPage" id="targetPage" value="1">
+<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+<input type="hidden" name="dispNum" id="dispNum" value="">
+
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0901&LogSess=N','740','26','','','transparent','')</script></div>
+<div id="Container">
+			<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0901','222','500','','','transparent','')</script></div>
+		</div>
+		
+	<div id="Content">
+				<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0901&LogSess=N','740','81','','','transparent','')</script></div>
+		
+		<!-- [s] page title 2 -->
+		<div class="ptitle2">
+			<ul>
+				<li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li>
+			</ul>
+		</div>
+		<!-- [e] page title 2 -->
+
+		<!-- [s] event contents -->
+		<div class="evcrist">
+			<h1><img src="/static/images/poll/20091203/event_top01.jpg" alt="인기웹툰작가 나이스진과 함께하는 Christmas Event" /></h1>
+			<h2><img src="/static/images/poll/20091203/event_top02.jpg" alt="나는 크리스마스가 ㅁㅁㅁ같다" /></h2>
+			<p><img src="/static/images/poll/20091203/event_top03.jpg" alt="달콤 살벌했던 지난 크리스마스의 악몽을 모두 잊고, 원더풀 메리 크리스마스를 꿈꾸며, 댓글 이벤트에 참여하세요. 참여하시는 분 중 추첨을 통해 2010 나이스진 다이어리를 드립니다." /></p>
+			<p><img src="/static/images/poll/20091203/event_top04.jpg" alt="이벤트기간 : 12월 7일~21일 당첨자발표 : 12월 24일 경품 : 나이스진 다이어리(45명)" usemap="#more" /></p>
+			
+			<div class="quiz">
+				<ul>
+					<li>
+						<img src="/static/images/poll/20091203/event_quiz02.jpg" alt="나는 크리스마스가" style="vertical-align:middle;" />
+						<input type="text" name="strAnswer" id="strAnswer" style="width:114px;" value="5글자 이하" onfocus="LoginChk(this)" onkeyup="javascript:maxlengthLimit(this,1,10);"/>
+						<img src="/static/images/poll/20091203/event_quiz03.jpg" alt="같다" style="vertical-align:middle;" />
+					</li>
+					<li>
+						<img src="/static/images/poll/20091203/event_quiz04.jpg" alt="왜?" style="vertical-align:middle;" />
+						<input type="text" name="strComment" id="strComment" style="width:360px;" value="50자 이하로 작성해 주세요" onfocus="LoginChk(this)" onkeyup="javascript:maxlengthLimit(this,2,100);" onkeydown="javascript:if(event.keyCode == '13'){ Event_Chk(); }"/>
+					</li>
+				</ul>
+				<a href="javascript:Event_Chk()"><img src="/static/images/poll/20091203/bt_event.jpg" alt="응모하기" class="btn" /></a>
+			</div>
+	
+			<div class="comment">
+				<ul>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>ajs0531</strong>
+							나는 크리스마스가 <span class="keyword">파티의날</span> 같다! <span class="reason">의무적으로 파티를 하게 되는날이므로...</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>hanringo</strong>
+							나는 크리스마스가 <span class="keyword">일요일</span> 같다! <span class="reason">티비도 재방송만 하고 별 다를게 없다..</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>sehwan0212</strong>
+							나는 크리스마스가 <span class="keyword">기적의날</span> 같다! <span class="reason">나의 새로운 여자친구인 그녀와 생애 첨 함께 보내는 크리스마스라서..</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>kimjoo1018</strong>
+							나는 크리스마스가 <span class="keyword">주말</span> 같다! <span class="reason">내인생 17년 크리스마스 파티고뭐고 선물도 없이 살아와서; 엄마 선물좀;;;;;</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>kimjoo1018</strong>
+							나는 크리스마스가 <span class="keyword">케빈오는날</span> 같다! <span class="reason">항상나와!  나홀로집에;;;;ㄷㄷㄷ</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>kimjoo1018</strong>
+							나는 크리스마스가 <span class="keyword">성탄절인것</span> 같다! <span class="reason">12월 25일은 크리스마슨데 성탄절이라 써있어서 ㅋㅋㅋ</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>caudeun</strong>
+							나는 크리스마스가 <span class="keyword">용서되는날</span> 같다! <span class="reason">다이어트는 평생 숙제이지만 이날만큼은 달콤한 케익을 먹어도 후회하지 않을테니까 ㅋㅋ안먹으면불쌍</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>mh930426</strong>
+							나는 크리스마스가 <span class="keyword">교도소</span> 같다! <span class="reason">여친도 있어도 하루종일 집에만 있어야하니까 슬픈 고딩인생.......</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>ky0710</strong>
+							나는 크리스마스가 <span class="keyword">탁구공</span> 같다! <span class="reason">크리스마스만 되면 내 기분도 탁구공처럼 퐁퐁 튀기때문이다. 정말 기분 좋은 날^^ </span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+					<li>
+						<p>
+							<span class="del">&nbsp;</span>
+							<strong>rokasf007</strong>
+							나는 크리스마스가 <span class="keyword">특별할 것</span> 같다! <span class="reason">이번 크리스마스에 결혼할 여친에게 프로포즈를 하니까~!!!</span>
+							<span class="date">2009.12.14</span>
+						</p>
+					</li>
+					
+					
+				</ul>
+				<div class="paging">
+<a class="img" class="first img"><img src="/static/images/common/paging/prev2.gif" border="0"></a>
+<a class="img" class="img"><img src="/static/images/common/paging/prev.gif" border="0"></a>
+<a class="current">1</a>
+<a href="javaScript:goList('2','1')" class="img">2</a>
+<a href="javaScript:goList('3','1')" class="img">3</a>
+<a href="javaScript:goList('4','1')" class="img">4</a>
+<a href="javaScript:goList('5','1')" class="img">5</a>
+<a href="javaScript:goList('6','1')" class="img">6</a>
+<a href="javaScript:goList('7','1')" class="img">7</a>
+<a href="javaScript:goList('8','1')" class="img">8</a>
+<a href="javaScript:goList('9','1')" class="img">9</a>
+<a href="javaScript:goList('10','1')" class="img">10</a>
+<a href="javaScript:goList('11','2')" class="img"><img src="/static/images/common/paging/next.gif" border="0"></a>
+<a href="javaScript:goList('266','27')" class="img"><img src="/static/images/common/paging/next2.gif" border="0"></a>
+</div>
+
+			</div>
+			<map name="more" id="more">
+				<area coords="533,602,679,632" href="http://blog.naver.com/nicejintime/50074209451" shape="rect" alt="자세히보기" target="_blank" />
+			</map>
+		</div>
+		<!-- [e] event contents -->
+	</div>
+	</div>
+	
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+</form>
+<form name="hiddenFocusFrm">
+<input type="text" name="hiddenFocusObj" style="width:0px;height:0px;">
+</form>
+<iframe name="dataProcess" id="dataProcess" width="0" height="0"></iframe>
+</body>
+</html>

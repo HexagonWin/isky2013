@@ -1,0 +1,209 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	  
+
+
+ <!-- <br/> -->
+ <!--
+session.loggedIn :  -->
+<!-- <br/><br/><br/><br/><br/>
+dddd: -->
+
+<script language="JavaScript" src="/static/js/fixed.js"></script>
+
+
+<!-- 20090624 수정
+/static/js/Menu.js 내용 이동 (와이즈로그 분석을 위한) by yeon kyu hwan //-->
+<!-- wize log script file -->
+<script language='javascript' src='/static/js/log/makePCookie.js'></script>
+
+
+
+<script language="javaScript">
+<!--
+	//현재 페이지 전역변수
+	var current_url = "http://www.isky.co.kr:80/etc/event_view.sky?targetPage=1[AND]dispNum=[AND]rnum=1[AND]targetGroup=1[AND]intSeq=XZBpOTqgXmw~6kU9Gc2OouU~[AND]";
+
+	function go_login(){
+		var url = "http://www.isky.co.kr/login.sky";
+
+		url += "?p_url=http://www.isky.co.kr:80/etc/event_view.sky?targetPage=1[AND]dispNum=[AND]rnum=1[AND]targetGroup=1[AND]intSeq=XZBpOTqgXmw~6kU9Gc2OouU~[AND]";
+
+
+		location.href = url;
+	}
+
+	function go_mall(){
+		framCheckUrl("http://store.isky.co.kr/default.asp?pgurl=http://www.isky.co.kr:80/etc/event_view.jsp");
+	}
+
+//-->
+</script>
+
+
+<script type="text/javascript">
+
+	var __int_today_yyyymmdd = parseInt("20100501");
+</script>
+
+<link rel="shortcut icon" href="http://www.isky.co.kr/favicon.ico" />
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/static/css/Etc.css" />
+<script>var dispNum="0901"; var firstDepth ="09";</script>
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script language="JavaScript" src="/static/js/prototype.js"></script>
+<script language="javascript">
+	function goList(targetPage, targetGroup) {
+	
+		var obj = $('eventPage');
+	
+		obj.targetPage.value = targetPage;
+		obj.targetGroup.value = targetGroup;
+		obj.action = "/etc/event_view_list.sky";
+		obj.submit();
+	}
+
+	function List(){
+		location.href = "/etc/event.sky?dispNum=";
+	}
+</script>
+</head>
+
+<body>
+<form name="eventPage">
+	<input type="hidden" name="targetPage" id="targetPage" value="1">
+	<input type="hidden" name="targetGroup" id="targetGroup" value="1">
+	<input type="hidden" name="dispNum" value="">
+</form>
+<div id="Wrap" class="cols2">
+	<script language="javaScript">
+<!--
+	if (parent.frames.length > 0) {
+
+		var arrUrl = location.href.split("/");
+		
+		if (arrUrl[3] != "mymessage") {
+			top.location.href = location.href;
+		}
+	}
+//-->
+</script>
+	<div id="skyNavi"><script>swf_include('/static/flash/topNavi.swf?PageCode=0901&LogSess=N','740','26','','','transparent','')</script></div>
+
+	<div id="Container">
+		<div id="SnbLeft">
+			<div id="Logo"><script>swf_include('/static/flash/Label_iSKY.swf','200','79','','','transparent','')</script></div>
+			<div id="SnbLeftFlash"><script>swf_include('/static/flash/leftNavi/leftNavi_Util_Event.swf?PageCode=0901','222','500','','','transparent','')</script></div>
+		</div>
+		
+		<div id="Content">
+		<div id="d2Navi"><script>swf_include('/static/flash/middle/middle_Util.swf?PageCode=0901&LogSess=N','740','81','','','transparent','')</script></div>
+		
+			<!-- [s] page title 2 -->
+			<div class="ptitle2"><ul
+				><li><img src="/static/images/etc/d3title_event.gif" border="0" alt="진행중인 이벤트" title="진행중인 이벤트" /></li
+			></ul></div>
+			<!-- [e] page title 2 -->
+
+			<table width="740" cellpadding="0" cellspacing="0" border="0" class="tbl_eventV">
+			<colgroup>
+				<col width="54" />
+				<col width="516" />
+				<col width="160" />
+			</colgroup>
+				<tr valign="top">
+					<th>번호</th>
+					<th>제목</th>
+					<th>이벤트기간</th>
+				</tr>
+
+				<tr valign="top">
+					<td class="num">1</td>
+					<td class="title">IM-A600S 출시기념 이벤트 </td>
+					<td class="num">2010.04.15 ~ 2010.04.30</td>
+				</tr>
+
+				<tr valign="top">
+					<td colspan="3" class="contents"><body topmargin="0" leftmargin="0"><table width="710" border="0" cellspacing="0" cellpadding="0">	<tr>		<td style="border:none;padding:0px;"><img src="http://www.isky.co.kr/images/product/event/current/sirius_event02.jpg" border="0" usemap="#Map" /></td>	</tr></table><map name="Map">	<area shape="rect" coords="196,665,501,705" href="javascript:;" onclick="window.open('http://event.isky.co.kr/ef10s','full','fullscreen=yes,scrollbars=0');" alt="시리우스 영상보기" />	<area shape="rect" coords="194,1009,504,1051" href="javascript:;" onclick="window.open('http://event.isky.co.kr/ef10s','full','fullscreen=yes,scrollbars=0');" alt="메신저 대화명 안드로이안어로 바꾸기" /></map></body></td>
+				</tr>
+			</table>
+
+			<div class="btnArea01"><a href="javascript:List()"><img src="/static/images/common/btn/1_list.gif" border="0" alt="목록보기" title="목록보기" /></a></div>
+			
+			<iframe name='listFrame' 
+				src="/etc/event_view_list.sky?dispNum=&targetPage=1&targetGroup=1" 
+				frameborder=0 width="100%" height="400"  marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				
+		</div>
+	</div>
+
+
+<script language="javascript">
+function setPng24(obj) {
+	var request_os = window.navigator.userAgent;
+	var os_array = request_os.split(";");
+
+	if(os_array[1] != " MSIE 7.0") {
+	obj.width=obj.height=1;
+	obj.className=obj.className.replace(/png24/i,'');
+	obj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='"+ obj.src +"',sizingMethod='image');";
+	obj.src='';
+	}
+
+	return '';
+}
+
+function flag_insert(flagNo){
+	
+		popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp', 'openEvent', '1014', '690', 'no');
+				
+	
+	
+	setTimeout("location.reload()",3000);
+	
+}
+
+function event_open(){
+	popCwin('http://www.isky.co.kr/event/openEvent/eventPop.jsp?mode=list', 'openEvent', '1014', '690', 'no');
+}
+
+</script>
+<style type="text/css">
+.png24 {tmp:expression(setPng24(this));}
+</style>
+
+
+<iframe id="flagProcess" name="flagProcess" width="0" height="0"></iframe>
+	<div id="container-foot"><div id="foot" style="border-top:solid 1px #889ec9;"><img src="/static/images/common/footer/footer_01.gif" border="0" usemap="#footerMap01" /></div>
+</div>
+<map name="footerMap01">
+	<area shape="rect" coords="706,18,762,30" href="javascript:menuLink('100101');" alt="이용약관" onfocus="this.blur();" />
+	<area shape="rect" coords="764,18,851,30" href="javascript:menuLink('1002');" alt="개인정보취급방침" onfocus="this.blur();" />
+	<area shape="rect" coords="853,18,923,30" href="http://iaudit.curitel.com/page.jsp?rel=i12" target="_blank" alt="사이버신문고" onfocus="this.blur();" />
+	<area shape="rect" coords="925,18,978,30" href="javascript:menuLink('1003');" alt="사이트맵" onfocus="this.blur();" />
+</map>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2097 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/html/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/html/withsky/leader/experience_pre_view.jsp">
+
+	<input type="hidden" name="page" value="1">
+
+	<input type="hidden" name="uid" value="">
+
+	<input type="hidden" name="s_kind" value="">
+
+	<input type="hidden" name="msgid" value="7mecSltvit4~fWoD4TtEAOg~">
+
+	<input type="hidden" name="s_value" value="">
+
+	<input type="hidden" name="pid" value="IM-U220,IM-U220K">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=euc-kr">
+<meta http-equiv="imagetoolbar" content="no">
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="/inc/css/withsky.css">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function chkfrm()
+{
+
+		goLogin();
+
+	document.frm.act.value = "cmtwrite";
+}
+
+function delcmt(cmtid)
+{
+	if(confirm("정말로 삭제하시겠습니까?"))
+	{
+		document.frm.act.value = "cmtdel";
+		document.frm.cmtid.value = cmtid;
+		document.frm.submit();
+	}
+}
+
+function recom()
+{
+
+		goLogin();
+
+}
+//-->
+</SCRIPT>
+
+<script type="text/javascript">
+
+function EXBlank() {
+	document.all.EXBlank.style.height = document.body.scrollHeight - 150;
+}
+
+</script>
+<script>
+var initBody;
+function beforePrint()
+{
+	initBody=document.body.innerHTML;
+	document.body.innerHTML=idPrint.innerHTML;
+}
+function afterPrint()
+{
+	document.body.innerHTML=initBody;
+}
+
+window.onbeforeprint = beforePrint;
+window.onafterprint = afterPrint;
+</script>
+</head>
+<body onload="EXBlank()">
+
+<div id="Container">
+	<div id="Grid1"><script>Snav(2,2,1);</script></div>
+	<div id="Grid2">
+		<script>Mnav(2);</script>
+		<div id="Contents">
+		<!-- Contents //-->
+
+			<div id="Header">
+				<div id="Tit"><img src="http://www.isky.co.kr/source/img/withsky/t_experience.gif" height="52"></div>
+				<div id="Path"><script>path('2_2_1')</script></div>
+			</div>
+
+			<div id="Cont">
+				<div id="ContL">
+				<!-- Cont //-->
+
+					<div style="position:absolute;z-index:1;">
+
+					<!-- 검색 //-->
+					<div class="aR m_b5" style="width:569">
+						<img src="http://www.isky.co.kr/source/img/bbs/th2_select.gif" align="absmiddle">
+							<select class="sel01" onChange="location.href='experience_pre_list.jsp?pid=' + this.value">
+								<OPTION VALUE='IM-U220,IM-U220K' selected>IM-U220,IM-U220K기수</OPTION>
+								<OPTION VALUE='IM-U200'>IM-U200 기수</OPTION>
+								<OPTION VALUE='IM-S110,S110K'>IM-S110,S110K 기수</OPTION>
+								<OPTION VALUE='IM-U100'>IM-U100 기수</OPTION>
+								<OPTION VALUE='IM-U110'>IM-U110 기수</OPTION>
+								<OPTION VALUE='IM-8500,8500L'>IM-8500,8500L 기수</OPTION>
+								<OPTION VALUE='IM-8400'>IM-8400 기수</OPTION>
+								<OPTION VALUE='IM-8300'>IM-8300 기수</OPTION>
+								<OPTION VALUE='IM-8100'>IM-8100 기수</OPTION>
+								<OPTION VALUE='IM-7700'>IM-7700 기수</OPTION>
+								<OPTION VALUE='IM-7400'>IM-7400 기수</OPTION>
+							</select>
+					</div>
+					<!--// 검색 -->
+
+					<div style="position:relative;" id="idPrint">
+						<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01 m_t10">
+						<col width="72" class="p_t3">
+						<col width="210" class="p_t3 p_l10">
+						<col width="50" class="p_t3">
+						<col width="95" class="p_t3 p_l10">
+						<col width="43" class="p_t3">
+						<col width="99" class="p_t3 p_l10">
+						<tr height="22">
+							<th colspan="6" class="b">사랑은 곡선이다. 스카이 돌핀 슬라이드 IM-U220</th>
+						</tr>
+						
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_no.gif"></th>
+							<td>110544</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_writer.gif"></th>
+							<td>np75</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_recom.gif"></th>
+							<td>342</td>
+						</tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_wdate.gif"></th>
+							<td colspan="3">2007/11/13 10:11:14</td>
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_hit.gif"></th>
+							<td>1082</td>
+						</tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/bbs/th2_addfile.gif"></th>
+							<td colspan=5>
+
+
+							</td>
+						</tr>
+
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr height="25">
+							<th class="bar"><img src="http://www.isky.co.kr/source/img/withsky/leader/blog_view_title.gif"></th>
+							<td colspan=5><a href='http://blog.naver.com/np75' target='_blank'>http://blog.naver.com/np75</a></td>
+						</tr>
+
+						<tr class="line"><td colspan="6"></td></tr>
+						<tr><td colspan="6" class="summary">
+							<div class="L"><img src='http://file.isky.co.kr/upload/leader_exp/skyU220-logo.jpg' width='94' height='75' class='gborder'></div>
+							<div class="L p_l10 aL l16">
+								물위를 뛰어노는 돌고래 처럼...보급형 3G폰의 선두에 있는 돌핀 슬라이드 U220
+							</div>
+						</td></tr>
+						<tr class="line"><td colspan="6"></td></tr>
+						</table>
+
+						<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01 m_t20">
+						<tr><td class="detail" style="width:569">
+							<HTML><HEAD></HEAD>
+<BODY style="FONT-SIZE: 9pt;  #fff">
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 680px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-13/skyU220-face.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_2.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_3.jpg" border=0><IMG style="WIDTH: 550px; HEIGHT: 540px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_4(0).jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 218px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_5(0).jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_6.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_10_1.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 710px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_7(1).jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 579px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-13/skyU220-Key_set_1.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 429px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-13/skyU220-Key_set_2(0).jpg" border=0><IMG style="WIDTH: 550px; HEIGHT: 369px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_10.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 430px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_11.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 467px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_12.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 390px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_13(2).jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 432px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_13_1.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_14(0).jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 776px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_15.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_16.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 550px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_17.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 990px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_18.jpg" border=0></DIV>
+<DIV><IMG style="WIDTH: 550px; HEIGHT: 368px" src="http://file.isky.co.kr/upload/HTML_EDITOR/2007-11-14/skyU220-review_19.jpg" border=0>&nbsp;</DIV></BODY></HTML>
+						</td></tr>
+						</table>
+					</div>
+
+					<!-- 이전글/다음글 //-->
+					<table width="569" border="0" cellpadding="0" cellspacing="0" class="view01">
+					<col width="70" class="p_t3">
+					<col width="499" class="p_t3 p_l10">
+					<tr height="2" class="line"><td colspan="2"></td></tr>
+
+					<tr class="line"><td colspan="2"></td></tr>
+
+					<tr height="1" class="line"><td colspan="2"></td></tr>
+					</table>
+					<!--// 이전글/다음글 -->
+
+					<div class="btn2" style="width:569">
+						<a href="javascript:;" onclick="window.print()"><img src="http://www.isky.co.kr/source/img/bbs/btn1_print2.gif" height="23"></a>
+						<a href="javascript:recom()"><img src="http://www.isky.co.kr/source/img/bbs/btn1_recom.gif" height="23"></a>
+						<a href="experience_pre_list.jsp?pid=IM-U220,IM-U220K&uid=&page=1&s_kind=&s_value="><img src="http://www.isky.co.kr/source/img/bbs/btn1_list.gif" height="23"></a>
+					</div>
+
+					<!-- 한줄리플 //-->
+					<div class="m_t15">
+						<div class="L p_t8"><h3 style="margin:0;"><img src="http://www.isky.co.kr/source/img/withsky/tss_reply.gif"></h3></div>
+	
+						<div class="R"><a href="experience_pre_view.jsp?msgid=Nm1fMn4n7hQ~vC_POLcbVh8~&pid=IM-U220,IM-U220K&uid=&page=1&s_kind=&s_value=&mycmt=Y"><img src="http://www.isky.co.kr/source/img/bbs/btn1_myreply.gif" height="23"></a></div>
+
+						<span class="clear"></span>
+					</div>
+					<div class="reply m_t5" style="width:569">
+						<div class="reply_top">
+							<!-- 한줄 쓰기 //-->
+							<div class="m_l3">
+<iframe id=ifrm name=ifrm width=0 height=0></iframe>
+<form name=frm method=post target=ifrm action="experience_pre_exec.jsp" style="margin:0" onSubmit="return chkfrm()">
+<input type=hidden name="act" value="cmtwrite">
+<input type=hidden name="msgid" value="ud9wN2feKaA~3oFS6E7JDWc~">
+<input type=hidden name="cmtid">
+								<input type="text" name="content" style="width:493"> <input type=image src="http://www.isky.co.kr/source/img/bbs/btn4_submit.gif" height="17" align="absmiddle" class="inputbtn" style="height:17">
+</form>
+							</div>
+						</div>
+						<div class="reply_btm">
+
+							<table border="0" cellpadding="0" cellspacing="0">
+							<col width="80" class="p_t3 p_l10">
+							<col width="390" class="p_t3 p_l10">
+							<col width="73" align="center" class="p_t3">
+							<!-- 반복, 마지막 라인은 class="w_dot1" tr행 제외 //-->
+	
+							<tr height="26">
+								<td class="b">thing2</td>
+								<td class="lbar">좋아좋아 스카이 U220
+
+								</td>
+								<td>2007/11/26</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">freecom</td>
+								<td class="lbar">깔끔하게 잘정리하셨네요. 부러워요... 장단점을 너무 잘 표현하셨네요.
+
+								</td>
+								<td>2007/11/26</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wotlrtkfkdgo</td>
+								<td class="lbar">부럽삼~
+
+								</td>
+								<td>2007/11/26</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">trueman66</td>
+								<td class="lbar">문자에 관해서는 진짜 공감입니다. 예전엔 편했는데 왜 바꼈을까....
+
+								</td>
+								<td>2007/11/26</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kjh82</td>
+								<td class="lbar">아직 기능을 파악하지 못한 나에게 많은 도움이 되었네요~!!ㅋㅋ돌핀폰 죠아요~!!
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ktma7397</td>
+								<td class="lbar">울 여친 돌핀슬라이드 보고 반했는데, 오늘 윗 글 읽고 나서 나두 완전 반함. 안그래두 지금 레이져폰 고장나서 바꾸려고 고민중인데...
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dbfla89</td>
+								<td class="lbar">저도 쓰고 싶게 만드네요 ㅎ 짱
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">byunch</td>
+								<td class="lbar">각구싶다,,돌고래같은 스마트한(맵시있는) 디자인,, 우리나라는 왜이렇게 휴대폰을 잘 만들지?
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">chlaldud333</td>
+								<td class="lbar">이거 가서 보긴했는데 제대로 안봤는데 기능이 많네요ㅋㅋ
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">bakkk123</td>
+								<td class="lbar">저도 쓰고 싶어요 ㅋ 너무 잘만드신거 같네요 ㅋ 추천!~!
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">puriest</td>
+								<td class="lbar">정말 잘썼네요 장점을 딱 담았어요 ㅋㅋ
+
+								</td>
+								<td>2007/11/25</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">whiteheart85</td>
+								<td class="lbar">저도 쓰고 싶어요. ㅋㅋ 재밌네요. 추천
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ksh11103</td>
+								<td class="lbar">나도 나도 갖고 싶다 흑흑
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kbkr5600</td>
+								<td class="lbar">이 휴대폰에 대해 잘 몰랐는데 이 사진들 보고 설명들도 보니까 갑자기 갖고 싶어지네요.     나도 휴대폰 갖고 싶습니다
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">filaman3</td>
+								<td class="lbar">폰바꾼지얼마 되지는 않았지만 바꾸고 싶은 충동이 생기네요..ㅡㅡ
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">oimjhk</td>
+								<td class="lbar">그리고 사진 보니까 전 스카이보다 기능도 좋아진것 같고 좋은것 같아요 스카이 최고
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">oimjhk</td>
+								<td class="lbar">역시 스카이인지 너무 예쁘구요,,, 그리고 깔끔하고 예쁜것 같아요~~ 당첨되신분들은 좋으시겟어요
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hanubae</td>
+								<td class="lbar">제품 외부부터 인터페이스까지 깔끔하게 정리해 놓으셨네요~
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sangmi907</td>
+								<td class="lbar">우아ㅠㅠ 추천이여~
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ddazang</td>
+								<td class="lbar">재미있게 잘 봤어요 추천임다. 
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">akyung002</td>
+								<td class="lbar">설명 너무 잘 해놓으신거 같아요~ 추천이요~!!
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">god-900511</td>
+								<td class="lbar">진짜 사진액자 잇어도 얼굴 &#47583;추기 어려워서 쓰기 어려운데....요건 물건일세!!
+
+								</td>
+								<td>2007/11/24</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">joo9512</td>
+								<td class="lbar">깔끔한 디자인 바꾸고 싶네요
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">arehu0</td>
+								<td class="lbar">아..문자보내기랑 확인하기 순서가 바꼈나보네요ㅠㅠ 그건 좀 불편할 듯..;; 좋은 정보 감사합니다~!!
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jmg800</td>
+								<td class="lbar">와~ 짱
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">tpdlrks</td>
+								<td class="lbar">정말 알뜰한 내용이네요^^ 잘 보고갑니당
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">willy8566</td>
+								<td class="lbar">설명을 요모조모 잘 해주셨네요...^^  잘 보고 갑니당..^^.
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dltmf0391</td>
+								<td class="lbar">추천하구가세요 > <//
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dltmf0391</td>
+								<td class="lbar">너무좋아요 > </// 갖고싶어요 ㅠ 
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dltmf0391</td>
+								<td class="lbar">너무좋아요 > </// 갖고싶어요 ㅠ 
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">slslcx</td>
+								<td class="lbar">갖고 싶게 만드네요
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ambitus</td>
+								<td class="lbar">초보자들이 보기에는 딱 요점만 간단히 써줬네요. 관찰력 대단하십니다 ^^
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">toyissay</td>
+								<td class="lbar">설명을 너무 잘해주셨어요~ㅎㅎ갑자기 막 끌리는데요~
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">chlwldus8925</td>
+								<td class="lbar">디자인심플하고좋네여..
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">muscle12</td>
+								<td class="lbar">우와~ 이정도면 뽐뿌가 확실히 느껴지는 체험기네요. 실제로 돌핀을 봤는데... 생각보다 작고 이쁜 디자인이 빠졌습니다. 암튼, 추천합니다.
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dnwjd04</td>
+								<td class="lbar">그림으로 쫙 정리를 해주시니 훨씬 보기가 좋은네요..모양두 여러 각도로 볼수있고..스카이 안의 내장화면은 깔끔 그 자체네요^^ 스카이 하얀색두 완전 깔끔...스카이를 하늘색 하면 이상하려나요?ㅋ*^^*
+
+								</td>
+								<td>2007/11/23</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">Endless0117</td>
+								<td class="lbar">IM-U210K쓰는데 220부럽네요 쩝;; 추천드립니다.^^
+
+								</td>
+								<td>2007/11/22</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ksd40511</td>
+								<td class="lbar">추천 꾹~~~~~~~ ^^
+
+								</td>
+								<td>2007/11/22</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">leejisu</td>
+								<td class="lbar">저두  사구싶네여 ㅋㅋ
+
+								</td>
+								<td>2007/11/22</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ldj0408</td>
+								<td class="lbar">너무 이쁘고 대만족입니다!
+
+								</td>
+								<td>2007/11/22</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">pang9058</td>
+								<td class="lbar">저도 구입했습니다~~좋아요^^
+
+								</td>
+								<td>2007/11/22</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">queen0202</td>
+								<td class="lbar">광고 화면보다 본 모습을 더 자세히 볼수 있어서 좋았구여~ 많이 정성들여 하신점 칭찬드리구 싶네여
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">cdmam72</td>
+								<td class="lbar">확실히 쓸만하다........!!!!
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kjk3612</td>
+								<td class="lbar">한표 확실하게 보냅니다~ ^^;;
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">active9819</td>
+								<td class="lbar">한표 넌지시 보냅니다.
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">mina89</td>
+								<td class="lbar">문자 보내기 불편하다는 점에 완전 공감
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">praisetl</td>
+								<td class="lbar">저도 이거 가지고 싶습니다.. 좋은 후기 감사해요~ 맘에 들었엉 ^^ ㅋ
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">dykim2</td>
+								<td class="lbar">스카이를 사용하고 있는데 IM-U220을 보니 바로 바꾸고싶네요,,너무 설명이 좋아여~~
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sky750783</td>
+								<td class="lbar">원츄원츄 ^^ 작렬입니다~~ 나두 살래용^.~
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">lspraise</td>
+								<td class="lbar">정말 정리를 깔끔하게 잘 하셨네요~~ 추천~
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">gouest2000</td>
+								<td class="lbar">와우. 상당히 강츄
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">crens</td>
+								<td class="lbar">다른 리뷰를 며칠전에 추천했는데, 폰 뒷부분을 냉장고에 비유한 것 때문에 다시 추천해드리고 싶습니다! 정말 확 와닿네요. 냉장고 비유...강추!!
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ededa</td>
+								<td class="lbar">이폰 하자폰이 많습니다. 통화중간 전화 저절로 끊어지고 목소리 중간중간 끊기구... 안테나 수신불안정하고. 정말 사용하기 불편하네요
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">monaku1</td>
+								<td class="lbar">디자인 진짜 깔끔하게 나왔네요. 성능, 디자인 대비 가격도 많이 착한거 같구~ 체험기 잘 봤습니다.
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">rnfmanl0486</td>
+								<td class="lbar">제품에 대해 쓰는 용도까지 자세히 사용자의쪽에서 말하니깐 편하고 사고싶은 맘이 조금씩 드네요'-'고마워요~
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">warm80</td>
+								<td class="lbar">wow이분글도 참 보기편하고 좋네요~ 체험기를 이리 잘쓰니 제품이 궁금했던 저의 경우 정말 편하게 상품을 알아볼수있으니 좋네요. 나도 갖고 싶어진당*^^*
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">finkltopstar</td>
+								<td class="lbar">폰바꾸고 싶다
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">rhythmic</td>
+								<td class="lbar">이쁘네요..
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">4001ohus</td>
+								<td class="lbar">u100쓰고 있는데 마니 비교되네요 나날이 발전하는 핸폰들 ㅎ
+
+								</td>
+								<td>2007/11/21</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">yukijin</td>
+								<td class="lbar">보면 볼 수록 갖고 싶네요~ s130 쓰는데이것도 좋지만 ㅋ ㅋ암튼 후배쓰는거 보고 반함^^ 
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">whdgur7755</td>
+								<td class="lbar">정말 갖고 싶다
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">leejaeyol</td>
+								<td class="lbar">하하하..좋아요..설명 굿~~
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">thdusd123</td>
+								<td class="lbar">설명이 정말 깔끔하네요~^^ 이거보고나니 산지 얼마안됐는데 또 바꾸고 싶다는...ㅋ
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">adcome</td>
+								<td class="lbar">재미있네요..냉장고 팍팍 느낌이 오는데요...ㅋㅋㅋ
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">shkjudo</td>
+								<td class="lbar">한 눈에 쏙 들어오게 설명이 잘 되어 있네요^^
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">khz1020</td>
+								<td class="lbar">냉장고와바른생활사나이어쩔ㅋㅋㅋ너무센스있으신데요?
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jiniccoya</td>
+								<td class="lbar">사고 싶어지네요..
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ye814</td>
+								<td class="lbar">ㅋㅋㅋ이미 구매해서 너무나 잘 쓰고 있죠 >_<)/ 강추 합니다^-^*ㅋㅋㅋ
+
+								</td>
+								<td>2007/11/20</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wotlr112</td>
+								<td class="lbar">그런데여 제가이걸쓰고있는데 데이터매니저에연결하는걸사라고하는데..그건약간 안좋은것같아요 잘설명해주셔서감사해요
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">9701467</td>
+								<td class="lbar">정말 멋지네요 
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">skycat91</td>
+								<td class="lbar">깔끔하네요 ㅎㅎ
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">fang09</td>
+								<td class="lbar">다른 체험기에 비해 부족한점이 없진 않지만 모두모두 한눈에 쏙쏙 들어오네요 감사합니다
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">gawon26</td>
+								<td class="lbar">재잘 긴 글만 빼고는 알기 쉽게 잘 설명되고, 사진까지보조자료로첨부되어 좋은것 같아요
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wp90mm886</td>
+								<td class="lbar">글씨체가 휴대폰 장사하는것 같지만 그것 빼고 대단히 잘 만드셨네요
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">celestesky</td>
+								<td class="lbar">설명이 쏙쏙 들어오는데요 ㅎㅎ 이 제품을 사고자 할때 설명을 원한다면 이것으로 설명하면 될 것 같네요 ㅎㅎ 
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">gagi1891</td>
+								<td class="lbar">너무 잘 만드셨네요...굿~~~
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">igimi6</td>
+								<td class="lbar">돌고래의 표현과 냉장고의 표현이 정말 와닿네요...ㅎㅎ 그래서인지 더 친근감이 드는거 같아요...정말 사고 싶어요...ㅋㅋ
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">myrjikimi</td>
+								<td class="lbar">역쉬 스카이!!
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">yj21love</td>
+								<td class="lbar">역시 스카이~~짱입니다요~~ㅋㅋ^^
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">frankgirl16</td>
+								<td class="lbar">3G 기능이 마음에 드네요 
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">h20kjh</td>
+								<td class="lbar">실버보다 화이트 색상이 예쁜거 같아요.
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sweetsks</td>
+								<td class="lbar">냉장고 표현이 너무 맘에 드러요 ㅋㅋㅋ 추처나고 갑니당ㅋㅋㅋ
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kimaxotn</td>
+								<td class="lbar">설명 잘하시는 듯
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">yun2314</td>
+								<td class="lbar">감탄사가 절로 나오는 설명이네요~~  
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">syl820809</td>
+								<td class="lbar">수고하셨어용~~ㅋ
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">fishjjang</td>
+								<td class="lbar">돌핀폰 좋네요.. 당참되면 꼭 사용하고 말거야
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jangsan75</td>
+								<td class="lbar">잼있게 읽었습니다. 제품 참고에 도움이 많이 되었네요^^
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ehkook</td>
+								<td class="lbar">후기 잘 있었네요~ 굿~~
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hiyoko4625</td>
+								<td class="lbar">흠... 돌핀폰이라... 매끄러운 곡선이 맘에 드네요 아악~지르고 싶당 ㅠ;;
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">bms00001</td>
+								<td class="lbar">굿...
+
+								</td>
+								<td>2007/11/19</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">continue24</td>
+								<td class="lbar">이 Im-U220은 깔끔한 디자인이 너무 끌리는듯..ㅡㅜ 핸드폰 바꾸고싶네;;ㅠㅠ
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wye000202</td>
+								<td class="lbar">올만에 스카이가 제대로 된 제품 만들었네여~~ 넘 저아~!! 진짜 가꼬싶다,,,ㅇ
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">f3135mm</td>
+								<td class="lbar">날로번창하는 스카이 짱이다...넘좋은거같다.
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jily2002</td>
+								<td class="lbar">이름 부터 맘에 드는 이아이.......저암ㄹ 스카이는 핸드폰의 제왕이랄까ㅋㅋㅋㅋㅋㅋ 디자인 너무좋고 기능도 무시못하는 스카이!!!!! 역시 내폰이 스카이인게 자랑스럽고 또 자랑스럽다!@!!!!!!!!!!1
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ljh7448</td>
+								<td class="lbar">디자인 굿... 기능두 읽어보닌깐 괜찮네요^^ 
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">asdfg6788</td>
+								<td class="lbar">추천합니다~  잘만들었어요 ㅠㅠㅠ 
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hantop88</td>
+								<td class="lbar">와...잘만드셨다,
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">live255</td>
+								<td class="lbar">으와 정말 기능도 많구 디자인도 이쁘고 좋네요
+
+								</td>
+								<td>2007/11/18</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">knr0511</td>
+								<td class="lbar">디자인 최고!!!!곡선이 자연스러운데다가 기능두 많고 최고에여^^ 갖고싶어지네여 ㅠㅠㅠㅠ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">achel03</td>
+								<td class="lbar">멀티 어댑터 맘에 드는데.. 
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">benchwarmer</td>
+								<td class="lbar">휴대폰 너무 귀여워요.. 작은데 어쩜 저렇게 기능이 많은지.. ㅋㅋ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">pureyoung2</td>
+								<td class="lbar">휴대폰을 보고 완전 놀랐어요~ 진짜 손에 착착 감기는 느낌 ㅋㅋㅋ 좋야요 ㅋㅋ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wsm0520</td>
+								<td class="lbar">음 살려고 찜은해두었던건데...총알이 좀 마니 모자라 충전하고 있는 멋진 폰 언제 내손에 들어 올려나...
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">uijisong</td>
+								<td class="lbar">사고싶어요 ㅜ_ㅜ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">lyb0602</td>
+								<td class="lbar">재미있게 사용하네요
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">joylue</td>
+								<td class="lbar">우와~ 후기 굿! ㅋㅋ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ramses0224</td>
+								<td class="lbar">님글 보니깐 사고싶어져요
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">mdv246</td>
+								<td class="lbar">갖고 싶네요^^사고싶고요^^ㅎㅎ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">clickwonhee</td>
+								<td class="lbar">사고싶어요 ㅋ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">birthday98</td>
+								<td class="lbar">넘넘 이뻐요~ 꼭 구입해야겠어요^^
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kal266</td>
+								<td class="lbar">정말이쁘다갓고십당
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">oilyttaeng2</td>
+								<td class="lbar">진짜 이쁘네요~^^ 이렇게 자세하게 설명해 주시니까 IM-U220 장단점에 대해 잘 알수 있었습니다~^^
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">gogisalang</td>
+								<td class="lbar">핸드폰 직접 판매하셔도 되겠어요^^
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">minu0322</td>
+								<td class="lbar">ㅋㅋㅋㅋㅋㅋㅋㅋ쓰신거재미잇넹 ㅋㅋ잘읽엇어욤~^^
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sthe81</td>
+								<td class="lbar">wow 최거~
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">csj1029</td>
+								<td class="lbar">장점들 들어보니까 점점더 사구싶엉 ~~ㅋㅋ
+
+								</td>
+								<td>2007/11/17</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ghwjdtndjs</td>
+								<td class="lbar">내 스타일얌~~~~ 갖고잡당 ^^&*
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">csjang</td>
+								<td class="lbar">내공이 느껴지는 리뷰...^&^
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kieos00</td>
+								<td class="lbar">너무자세하게 쓰셔서 메뉴엘 필요없음...
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">knjgl</td>
+								<td class="lbar">완전 자세하게 쓰셨다ㅋㅋㅋㅋSKY판매사업하셔도 성공하실꺼같은ㅋㅋㅋ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">home9207</td>
+								<td class="lbar">와설명짱이다사고싶다~~~설명이너무좋아서사고싶어요ㅋㅋㅋㅋ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">eundokki</td>
+								<td class="lbar">아따~ ㅋ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">alstmd2000</td>
+								<td class="lbar">엄청 설명을 잘해놓으셨네요 ^^ 이핸드폰 궁금한게 많았는데 세세하게 다 일일히 써주시고 감사합니다^^
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">preedoll</td>
+								<td class="lbar">재미만추구한게아니라 설명까지꼼꼼하게해주셔서 많은도움이 되었어요^^추천하구갑니다
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sudgi</td>
+								<td class="lbar">강추입니다 너무 쉽게 설명하여서 설명서를 볼 필요가 없이 할머니들한테도 너무 좋군요
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">zombie9562</td>
+								<td class="lbar">자세한 설명 감사합니다......추천이요^^
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wjsdbwjd3046</td>
+								<td class="lbar">꼼꼼하니 사고 싶어져요^^
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">oh-inter</td>
+								<td class="lbar">자세한 설명 ㄳ 
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ninenine1004</td>
+								<td class="lbar">설명이 쏙쏙 들어오는데요 ㅎㅎ 이 제품을 사고자 할때 설명을 원한다면 이것으로 설명하면 될 것 같네요 ㅎㅎ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wjhwon</td>
+								<td class="lbar">설명이 쏙쏙들어오네... 이대로 제품판매해도 되겠습니다
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hun9</td>
+								<td class="lbar">자세한 설명 고맙습니다 .나도이제품으로 바꿀까 고민했는데.......
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">wavepss</td>
+								<td class="lbar">추천 했습니다. 잘만드셨고 리뷰 다운 리뷰네요^^
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">miro7474</td>
+								<td class="lbar">정말 꼼꼼하게 하셨네요.ㅋ 구매욕구가 막 생기네요.ㅋ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">lhy7942</td>
+								<td class="lbar">진짜스카이멋지네요^^ㅋ스카이의 디자인이랑 기능또한 멋지고요...지금도 제가쓰는폰이 스카이인데요..이게너무더이쁜것같고 가지고싶네요..^^ㅋ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sogood1229</td>
+								<td class="lbar">설명이 쉽고 재미있네요^^ 역시 우리 스카이는 디자인도 기능도 최고!! 완소 스카이 라인이 아름다운 돌핀!! 이거 너무 갖고싶어요.ㅠ_ㅠ
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">loveyou3096</td>
+								<td class="lbar">하나하나..자세하게 설명 잘되어있네요.. 근데 각 메뉴의 기능에 대해서 좀더 자세하게 나왔으면 더 좋았을겁니다.. 그리고 각 구성품도 더 자세히 나왔으면 좋을것같네요
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">mai2828</td>
+								<td class="lbar">아......예쁘다~새로운 게 나올때마다 두근거리는 게 영~심장에 안좋은 거 같아요!
+
+								</td>
+								<td>2007/11/16</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jasminone</td>
+								<td class="lbar">설명 잘보고 갑니다 나도 이걸로 바꿀까하고 고민되네요 ^^*
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">sm-my</td>
+								<td class="lbar">저도 지금 스카이 쓰고 있는데.. 새로 나온 이 모델 너무 갖고싶어요. 왕 부럽~~~~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">onesoteria</td>
+								<td class="lbar">스카이 가지고 싶습니다.^-^원츄원츄~~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">aksenwhgdk</td>
+								<td class="lbar">냉장고비유 짱이요 카메라 기능 좋고 역시 영상통화가 젤 부럽다
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">fjqmdfjqmd</td>
+								<td class="lbar">아 저 얼굴인식게임 ㅋㅋ 탐나 ㅋㅋㅋㅋㅋㅋㅋ 
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">noah10</td>
+								<td class="lbar">사고싶어요...저는 스카이만 쓰는뎁....너무 사고 싶어요....
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">q5285p</td>
+								<td class="lbar">스카이를 몇번 써보면서 느낀거지만 내구성이 어떤지 알면 좋겠는데 ㅎㅎ 역시 스펙 만큼은 구매욕구를 가지게 만드는 ㅠ.ㅠ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kimchacan</td>
+								<td class="lbar">깔끔하게 후기 작성 해주셨네요^^* 재밌게 잘 보고갑니다^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">chiltech</td>
+								<td class="lbar">깔끔하게 잘 정리하셨네요...편집하느라 힘드셨겠어요..잘읽고 갑니다.
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kiss2139</td>
+								<td class="lbar">아주좋은 정보입니다 ㅋㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">skyting1112</td>
+								<td class="lbar">되게 귀엽게 잘만드셨네요 ㅎ 내용도 상세하고.. 되게 재밋게 잘봐써요 ㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hj9262</td>
+								<td class="lbar">설명 잘 보았습니다 ㅋ 이해가 잘 가넹 ㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kyuhahaha</td>
+								<td class="lbar">정보가 아주 유용하네요^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ark-kill</td>
+								<td class="lbar">이분것을 보니 사고싶은 쪽으로 맘이 더 가는데요...ㅋㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">valenti85</td>
+								<td class="lbar">글씨체도 더 다양했으면 좋겠공, 참고로 검정색도 나왔으면 좋겠습니다^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">chagoon</td>
+								<td class="lbar">후하~ 멋진데..ㅋㅋㅋ 실속있는 스카이구만 ㅋㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">cone777</td>
+								<td class="lbar">와우 진짜 구체적으로 잘 하셨네요 ~~ 사진과 함께.~~~구매의욕이 막 솟아 나는데요 ~~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jong3864</td>
+								<td class="lbar">아주 훌륭하다 ☏ 갖고싶다~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">hhk9110</td>
+								<td class="lbar">갖고 싶네요 ㅠ 잘보고갑니다~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">prodigy27</td>
+								<td class="lbar">실속있는 정보가 사진과 잘 곁들여져 있는 점이 이 사용기를 추천한 동기. 예전부터 스카이만 쓰다가 이번에 모토"쓰는데 그리워지네요ㅜㅜ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">jessica74</td>
+								<td class="lbar">모 기업의 "바나나폰"과 같은 유형의 폰 인거 같네요~디카 기능이 130만 화소라 좀 아쉬워요~
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">mhfamily3</td>
+								<td class="lbar">설명 잘해주셨네요^^ 저는 210유저인데...설명을 듣고서 보니 220도 괜찮다는 생각이 들어요..매장에서 볼때는 보지도 않았던터라...추천에 한방!!
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">qink2</td>
+								<td class="lbar">단점에 대한 설명 부족하지만 어쨋든 유머러스 하고 알아듣기쉬운 설명이네요^ㅁ^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">neozon2</td>
+								<td class="lbar">훌륭하네요 쓰고싶은 폰입니다. 
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">rugrats</td>
+								<td class="lbar">멀티태스킹?그거왜이렇게좋아여?슈팅스타는.. 뭐져..
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">ibbaek</td>
+								<td class="lbar">정말 갖고 싶은폰.. 강추...
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">fire0o0</td>
+								<td class="lbar">잘보고 가요
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">namsoos</td>
+								<td class="lbar">설명 정말 잘해주셨네요 ㅎㅎ 설명듣고나니 갖고싶어지는... ㅡ,.ㅠ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">kikiloo</td>
+								<td class="lbar">설면 진짜 자세해요~ 지금 u160 쓰고 있는데 또 바꾸고 싶네요~~ 좋은 하루 보내세요.
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">koolhhop</td>
+								<td class="lbar">^-^ 와~ 설명이 굉장히 자세하네요~ 잘보고 갑니다~ 좋은하루 되세요~ㅎㅎ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">2mulder</td>
+								<td class="lbar">설명이 알록달록 너무 쉽게 잘해준것 같아요 한눈에 잘 들어오는게 최대장점 ^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">elaine85</td>
+								<td class="lbar">설명도 잘해주셨고~ 제품에 대해 많은 생각을 해보셨다는 걸 느낄수가 있네요 +ㅁ + 추천~!
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">yong127</td>
+								<td class="lbar">잘 보았습니다... ^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">leebw5</td>
+								<td class="lbar">설명~완전~잘해주시네요^^ㅋ감솨~^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">tamptation</td>
+								<td class="lbar">훌륭한 설명 잘보았습니다.^-^ 추천!
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">maria8875</td>
+								<td class="lbar">잘 보고갑니다 추천해드릴께요^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">yesk3250</td>
+								<td class="lbar">재밋게 잘 쓰셨네요.. ㅎㅎㅎ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">tkdals1503</td>
+								<td class="lbar">글 올리는데 시간좀 걸리 셨겠네요~~ㅋ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">cjkpj1004</td>
+								<td class="lbar">설명 자세히 잘하셨네요 ^^
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">manypay</td>
+								<td class="lbar">우왕 ㅎㅎ 폰사진에 설명에서 조목조목 설명까지 ㅎㅎ 한눈에 제품을 알아볼수있고 얼마나 좋은핸드폰인지 새삼느끼고갑니다.저도사고싶은데ㅠ돈이없다는..ㅠㅠ
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<tr height="1"><td colspan="3" class="w_dot1"></td></tr>
+	
+							<tr height="26">
+								<td class="b">keii1</td>
+								<td class="lbar">오랜 기다림 끝에 올려주신만큼 내용이 상당하네요, 사진도 잘찍어주셨구요 ^^; 잘 보고 갑니다~! (마지막에 싸고 쓸만하다는 되게 슬픈 코멘트네요 ㅜㅜ 언제부터 스카이가 가격대 성능비를 외쳤었는지;; )
+
+								</td>
+								<td>2007/11/15</td>
+							</tr>
+
+							<!--// 반복 -->
+							</table>
+						</div>
+					</div>
+					<!--// 한줄리플 -->
+
+					</div>
+
+					<div id="EXBlank" style="width:569;height:400"></div>
+
+				<!--// Cont -->
+				</div>
+
+				<!-- 우측 배너 //-->
+				
+				<div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_event_t.gif" width="150" height="28"></div>
+					<div class="outline">
+						<div class="inline">
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyevent_view.jsp?eventid=kiHPVTmBdiA~5c6hTNwQmik~&flag=ing&flag1=1"><img src="http://file.isky.co.kr/upload/r_banner/071119_isky_leader10th_bn.gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+							<!--<a href="javascript:link(2,1,2)"><img src="http://www.isky.co.kr/source/img/global/right_event_phone.gif" width="128" height="67" class="wborder m_b8"></a><br>-->
+							<a href="http://www.isky.co.kr/html/withsky/event/skyday_prize_prmgoods_view.jsp?eventid=1U2FUb9Ewxc~HCVQOAe_bcc~&flag=prize&flag1=2"><img src="http://file.isky.co.kr/upload/r_banner/sktday_result_bn(0).gif" width="128" height="67" class="wborder m_b8"></a><br>
+
+						</div>
+					</div>
+				</div>
+				
+				<!--div id="ContR">
+					<div><img src="http://www.isky.co.kr/source/img/global/right_today_t.gif" width="150" height="36"></div>
+					<div class="outline">
+						<div class="inline">
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livehotclip.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_djmix.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_mms.gif" width="128" height="67" class="wborder m_b8"></a><br>
+							<a href="#"><img src="http://www.isky.co.kr/source/img/global/right_today_livescreen.gif" width="128" height="67" class="wborder m_b8"></a><br>
+						</div>
+					</div>
+				</div-->
+
+				<!--// 우측 배너 -->
+
+			</div>
+
+		<!--// Contents -->
+		</div>
+		<script>Bottom();</script>
+	</div>
+</div>
+
+</body>
+</html>

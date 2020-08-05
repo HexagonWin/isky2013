@@ -1,0 +1,173 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form name="AutoLoginForm" method="post" action="/member/login.jsp">
+<input type="hidden" name="top_method" value="GET">
+<input type="hidden" name="top_url" value="/cs/swDownload_login.jsp">
+
+</form>
+
+
+<script language="javascript">
+	function goLogin(){
+		//document.AutoLoginForm.submit();
+	}
+</script>
+
+
+
+
+<html>
+<head>
+<title> iSKY </title>
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel="stylesheet" type="text/css" href="/static/css/popup_style.css">
+<script language="JavaScript" src="/static/js/Menu.js"></script>
+<script language="JavaScript" src="/static/js/script.js"></script>
+<script type="text/javascript" src="/inc/js/common.js"></script>
+<script type="text/javascript" src="/inc/js/member.js"></script>
+<script language="javascript">
+	//document.domain = "isky.co.kr";
+	this.focus();
+	
+	var commonPopWin = null;
+	var loginWin = null;
+	var downflag = "N";
+
+	var global_d		= "";
+	var global_d_type	= "";
+	var global_idx		= "";
+	var global_m_name	= "";
+	var global_userid	= "";
+		
+	String.prototype.trim = function(){
+		return this.replace(/(^\s*)|(\s*$)/g, "");
+	}
+
+	function getFileName(url) {
+		url = url.trim();
+		var arrFile=("file:///"+url.replace(/ /gi,"%20").replace(/\\/gi,"/")).split("/");
+		return strFileName = arrFile[arrFile.length-1];
+	}
+
+	function getFileNameExt(strFileName) {
+		strFileName = strFileName.trim();
+		var arrFileName = strFileName.split(".");
+		return arrFileName[arrFileName.length-1].toLowerCase();
+	}
+
+	function fldown(d,d_type,idx,m_name,userid){
+		location.href = d;
+		
+		if(userid != "PIC"){
+			downloadLog.location.href="/common/download_newlog.jsp?prdid=" + m_name + "&swtype=" + d_type + "&userid=" + userid;
+			Data_Process.location.href = "/common/download_log_pop.jsp?url="+d+"&d_type="+d_type+"&idx="+idx+"&prdid="+m_name+"&userid="+userid;
+		}else{
+			//window.close();
+			//self.setInterval("window.close()",3000);
+		}
+		
+	}
+
+
+	function Global_FileDown(){
+
+		notice();
+		
+		strExt = getFileNameExt(getFileName(global_d));
+		
+		if (strExt=='asp' || strExt=='jsp' || strExt=='php') {
+
+			if(!commonPopWin || commonPopWin.closed){ 
+					popCwin(global_d+"?userid="+global_userid+"&hpno=", 'self_up', '720', '480', 'no');
+					//fldown(global_d,global_d_type,global_idx,global_m_name,global_userid);
+			}else{ 
+				alert('이미 셀프업그레드가 진행중입니다.');
+				return;
+			}
+			
+			window.close();
+
+		} else {
+			fldown(global_d,global_d_type,global_idx,global_m_name,global_userid);
+		}
+	}
+
+	function notice() {
+		if('' == 'IM-S330' && '' == 'UMF') {
+			alert("셀프업그레이드 시 기존에 설정/저장된 SKY 메인메뉴를 삭제하고 기본 메뉴로 설정됩니다.");
+//			셀프업그레이드로 인해 사용하시던 SKY메인메뉴 및 SKY다이얼이 삭제될 수 있습니다.\n"
+//			+ "이런 경우, PC에 있는 기존 메인메뉴와 다이얼 파일을 삭제한 후\n"
+//			+ "새로운 데이터매니저와 SKY메인메뉴, SKY다이얼을 다운로드해서 사용하시기 바랍니다.");
+		} else if('' == 'IM-S310L' && '' == 'UMF') {
+			alert("셀프업그레이드 후에는 벨소리, 에티켓, 대기화면 설정이 초기화 됩니다.\n설정값을  확인하시기 바랍니다.(삭제되는 컨텐츠는 없습니다.)");
+		} else if('' == 'IM-S320K' && ('' == 'TOP' || '' == 'DIA')) {
+			alert("다운로드 시 ‘셀프업그레이드 버전 업그레이드 및 Data Manager’ 신규 버전을 설치해야 됩니다.");
+		}
+	}
+
+
+</script>
+</head>
+<!--  팝업 사이즈 : 340*410 -->
+<iframe name="Data_Process" id="Data_Process" FRAMEBORDER=0 SCROLLING=yes SRC="" width=0 height=0></iframe>
+<iframe name="downloadLog" id="downloadLog" FRAMEBORDER=0 SCROLLING=yes SRC="" width=0 height=0></iframe>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:7px solid #cfd0d2; background-color:#ffffff;">
+	<tr>
+		<td valign="top" style="padding:15px 9px 0 9px;">
+			<table width="308" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td valign="top"><img src="/static/images/cs/popup/title_swdown.gif"></td>
+				</tr>
+				<tr>
+					<td valign="top" class="p20t b" align="right"><img src="/static/images/cs/popup/swdown_tit_01.gif" align="absmiddle"></td>
+				</tr>
+				<tr>
+					<td valign="top" class="p5t"><table width="308" cellpadding="0" cellspacing="0" border="0">
+						<tr valign="top">
+							<td style="padding:13px 18px 10px 18px;border:1px solid #c2c2c2;">
+								<table width="268" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="top">
+										<td><img src="/static/images/cs/popup/swdown_txt_04.gif"></td>
+									</tr>
+								</table>
+								
+								<table width="268" cellpadding="0" cellspacing="0" border="0">
+									<tr valign="top">
+										<td align="center" style="padding-top:7px;"><a href="javascript:Global_FileDown()"><img src="/static/images/cs/popup/btn_download.gif" border="0" ></a></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" class="p10t"></td>
+				</tr>
+				
+				<!-- 닫기 버튼 -->			
+				<tr>
+					<td valign="top" align="right" style="padding-top:20px;"><a href="javascript:window.close();"><img src="/static/images/member/popup/close.gif" border="0"></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

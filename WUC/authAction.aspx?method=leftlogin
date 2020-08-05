@@ -1,0 +1,1 @@
+<script>alert('존재 하지 않는 ID입니다.');document.location.href = '/WUC/leftLogin.aspx?wbSurl=http%3a%2f%2fwww.isky.co.kr%2f'</script>
